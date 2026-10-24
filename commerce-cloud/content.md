@@ -1,0 +1,28 @@
+# Commerce Cloud — Content
+
+Synthesis written independently from the source index below (not copied text).
+
+Developer documentation for Salesforce Commerce Cloud, covering B2C Commerce headless REST APIs (SCAPI), Open Commerce APIs (OCAPI, deprecated), B2B Commerce developer guide, Commerce SDK, PWA Kit for React-based storefronts, and MCP server tools for agentic commerce integrations.
+
+Section breakdown:
+- **B2C Commerce** — 1257 pages
+- **B2C Commerce API** — 680 pages
+- **B2B Commerce Aura to LWR Migration Guide** — 5 pages
+- **B2C Commerce Einstein API** — 16 pages
+- **B2C Commerce Solutions** — 678 pages
+- **B2C Commerce Storefront Reference Architecture** — 678 pages
+- **Commerce Marketplace** — 4 pages
+- **Agentforce Commerce Vibes** — 678 pages
+- **Storefront Next** — 678 pages
+- **Composable Storefront** — 681 pages
+- **Salesforce Commerce Extensions** — 6 pages
+- **B2B Commerce Developer Guide** — 1402 pages
+- **Point of Sale for Developers** — 46 pages
+- **Salesforce Order Management Developer Guide** — 24 pages
+- **Salesforce Commerce Plug-In CLI Command Reference** — 11 pages
+
+*Source: [`llms-commerce-cloud.txt`](https://developer.salesforce.com/docs/llms-commerce-cloud.txt) — official aggregated index (developer doc page), overview section.*
+
+## Extraction notes
+
+Built from the index file's own "Overview" blurb and section listing — one fetch, programmatic extraction, no deep page-by-page review. See [index.md](index.md) for the full 6844-page link list.

@@ -1,0 +1,65 @@
+# Salesforce Developer Documentation — Content List
+
+Source: [`https://developer.salesforce.com/docs/llms.txt`](https://developer.salesforce.com/docs/llms.txt) (aggregated index, llmstxt.org standard)
+Captured: 2026-10-24
+
+This is the full list of product-specific `llms.txt` sections published under the Developer Documentation Portal, each a separate aggregated index for that product's docs.
+
+| # | Product | llms.txt URL | Description |
+|---|---------|---------------|--------------|
+| 1 | Agentforce Conversation Client | [llms-agentforce-conversation-client.txt](https://developer.salesforce.com/docs/llms-agentforce-conversation-client.txt) | Front-end SDK (ACC) for embedding employee-agent chat in Salesforce Lightning and external web apps: streaming responses, Lightning Types rendering, style customization, programmatic panel control. |
+| 2 | Agentforce Operations | [llms-agentforce-operations.txt](https://developer.salesforce.com/docs/llms-agentforce-operations.txt) | REST API Get Started guide and API reference for Agentforce Operations. |
+| 3 | Agentforce Partners | [llms-agentforce-partners.txt](https://developer.salesforce.com/docs/llms-agentforce-partners.txt) | Partner onboarding, Agentforce enablement/deployment best practices, Agentforce Voice setup (SIP, TLS certs). |
+| 4 | Analytics | [llms-analytics.txt](https://developer.salesforce.com/docs/llms-analytics.txt) | CRM Analytics dashboard embedding (Lightning/Aura), dashboard interactions/bindings, Tableau Next REST APIs and Embedding SDK, App Template Framework, Tableau Next ISV/developer guides. |
+| 5 | Api Catalog | [llms-api-catalog.txt](https://developer.salesforce.com/docs/llms-api-catalog.txt) | API Catalog Connect REST API — automate management of APIs and MCP servers. |
+| 6 | Backup Recover Api | [llms-backup-recover-api.txt](https://developer.salesforce.com/docs/llms-backup-recover-api.txt) | Own API reference: data backup automation, restore, data privacy workflows, audit log monitoring, export job management. |
+| 7 | Bot Api | [llms-bot-api.txt](https://developer.salesforce.com/docs/llms-bot-api.txt) | Einstein Bots: REST API for bot sessions/messages, Java SDK and channel connector framework, versioned specs (v4–v5.1). |
+| 8 | Cms | [llms-cms.txt](https://developer.salesforce.com/docs/llms-cms.txt) | Salesforce CMS: custom content types, CMS extensions (Lightning/Marketing Cloud), CMS Connect, content delivery to Experience Builder/B2C Commerce, REST API via connected apps. |
+| 9 | Code Analyzer | [llms-code-analyzer.txt](https://developer.salesforce.com/docs/llms-code-analyzer.txt) | Open-source static analysis for Apex/JS/Flow (PMD, ESLint, RetireJS, Flow Scanner, Regex, Graph Engine) via CLI, VS Code, CI/CD. |
+| 10 | Commerce Cloud | [llms-commerce-cloud.txt](https://developer.salesforce.com/docs/llms-commerce-cloud.txt) | B2C Commerce headless REST (SCAPI), OCAPI (deprecated), B2B Commerce guide, Commerce SDK, PWA Kit, MCP server tools for agentic commerce. |
+| 11 | Connect Rest | [llms-connect-rest.txt](https://developer.salesforce.com/docs/llms-connect-rest.txt) | (no description provided) |
+| 12 | Data Ae | [llms-data-ae.txt](https://developer.salesforce.com/docs/llms-data-ae.txt) | End-to-end tutorials for Agentic Enterprise solutions: loan prequalification with Data 360 Document AI, resume processing/contact enrichment, grounding Agentforce on custom content via Data 360 connectors/search indexes. |
+| 13 | Data Cloud | [llms-data-cloud.txt](https://developer.salesforce.com/docs/llms-data-cloud.txt) | Data 360 (formerly Data Cloud): Connect REST API, developer/query guides, data ingestion/integration, DMOs and mappings, Code Extensions, Engagement Mobile SDK, Interactions SDK, Agentforce Coworker AI search, Tableau Semantics Layer APIs. |
+| 14 | Dataloader | [llms-dataloader.txt](https://developer.salesforce.com/docs/llms-dataloader.txt) | (no description provided) |
+| 15 | Diagrams | [llms-diagrams.txt](https://developer.salesforce.com/docs/llms-diagrams.txt) | Data model diagrams for Salesforce products/features — entity relationships and object structures across the Platform. |
+| 16 | Einstein Personalization | [llms-einstein-personalization.txt](https://developer.salesforce.com/docs/llms-einstein-personalization.txt) | Salesforce Personalization (formerly Interaction Studio): real-time behavioral tracking, AI decisioning, campaign config, web/mobile SDK integration. |
+| 17 | Einstein Vision Language | [llms-einstein-vision-language.txt](https://developer.salesforce.com/docs/llms-einstein-vision-language.txt) | Image classification, object detection, NLP (intent, sentiment, NER), multi-label classification via REST API. |
+| 18 | Event Bus | [llms-event-bus.txt](https://developer.salesforce.com/docs/llms-event-bus.txt) | Pub/Sub API (gRPC/HTTP2, Avro) for platform events and CDC; Event Relay to AWS. |
+| 19 | Genai | [llms-genai.txt](https://developer.salesforce.com/docs/llms-genai.txt) | Agentforce/Einstein generative AI: Agentforce Developer Guide, Agent API, Models API (REST/Apex), Agentforce DX tooling, Mobile SDK, Agent Script authoring, Testing API. |
+| 20 | Graphql Api | [llms-graphql-api.txt](https://developer.salesforce.com/docs/llms-graphql-api.txt) | (no description provided) |
+| 21 | Headless Experience Layer | [llms-headless-experience-layer.txt](https://developer.salesforce.com/docs/llms-headless-experience-layer.txt) | (no description provided) |
+| 22 | Headless Three Sixty | [llms-headless-three-sixty.txt](https://developer.salesforce.com/docs/llms-headless-three-sixty.txt) | Documentation hub for Salesforce Headless Toolkit. |
+| 23 | Hosted Mcp Servers | [llms-hosted-mcp-servers.txt](https://developer.salesforce.com/docs/llms-hosted-mcp-servers.txt) | Salesforce Hosted MCP Servers: connecting AI agents/LLM apps via Model Context Protocol, auth setup, supported clients, MCP tool references. |
+| 24 | Industries Core | [llms-industries-core.txt](https://developer.salesforce.com/docs/llms-industries-core.txt) | Consumer Goods Cloud Integration Service API for Trade Promotion Management (TPM), multiple API versions. |
+| 25 | Industries Integrations | [llms-industries-integrations.txt](https://developer.salesforce.com/docs/llms-industries-integrations.txt) | REST/RAML API references: Automotive, Communications (TM Forum), Energy & Utilities, Financial Services, Healthcare (FHIR R4), Life Sciences, Loyalty Management, Manufacturing, Media Cloud. |
+| 26 | Industries | [llms-industries.txt](https://developer.salesforce.com/docs/llms-industries.txt) | Industries REST APIs: CPQ, Enterprise Product Catalog (EPC), Digital Commerce APIs (Communications/Media/Energy-CME), Financial Services Cloud integration, Healthcare FHIR R4, other industry-vertical integration points. |
+| 27 | Lightning Base Components | [llms-lightning-base-components.txt](https://developer.salesforce.com/docs/llms-lightning-base-components.txt) | Prebuilt LWC/Aura base components implementing SLDS styling: component APIs, utility modules, usage patterns. |
+| 28 | Lightning Type Systems | [llms-lightning-type-systems.txt](https://developer.salesforce.com/docs/llms-lightning-type-systems.txt) | Custom Lightning Types (JSON-based metadata) for Agentforce, Flows, Prompt Builder, Experience Builder: schema definition, LightningTypeBundle authoring, Metadata API deployment. |
+| 29 | Lwc | [llms-lwc.txt](https://developer.salesforce.com/docs/llms-lwc.txt) | Lightning Web Components framework, Lightning Web Security, SLDS Linter/Validator, UI Test Automation Model (UTAM). |
+| 30 | Lwr Node | [llms-lwr-node.txt](https://developer.salesforce.com/docs/llms-lwr-node.txt) | Lightning Web Runtime (LWR) on Node.js: server-side/client-side routing, CLI reference, package/module configuration. |
+| 31 | Marketing Cloud Mobilepush | [llms-marketing-cloud-mobilepush.txt](https://developer.salesforce.com/docs/llms-marketing-cloud-mobilepush.txt) | Engagement SDK (iOS/Android): mobile app messaging, geofence/beacon campaigns, Personalization and Data Cloud integration. |
+| 32 | Marketing Cloud | [llms-marketing-cloud.txt](https://developer.salesforce.com/docs/llms-marketing-cloud.txt) | Marketing Cloud Next REST/Bulk APIs, Engagement REST/SOAP APIs (AMPscript, Handlebars), Einstein Content Selection API, Engagement Mobile SDK, MCP Server for LLM-driven marketing automation. |
+| 33 | Metadata Coverage | [llms-metadata-coverage.txt](https://developer.salesforce.com/docs/llms-metadata-coverage.txt) | Metadata Coverage Report: supported metadata components across Metadata API, source tracking, managed/unlocked packages, scratch orgs (API v47.0–v67.0). |
+| 34 | Mobile Sdk | [llms-mobile-sdk.txt](https://developer.salesforce.com/docs/llms-mobile-sdk.txt) | Native iOS/Android/React Native apps accessing Platform data: online/offline operation, OAuth, full UI customization. |
+| 35 | Multi Framework | [llms-multi-framework.txt](https://developer.salesforce.com/docs/llms-multi-framework.txt) | (no description provided) |
+| 36 | My Trust Center | [llms-my-trust-center.txt](https://developer.salesforce.com/docs/llms-my-trust-center.txt) | My Trust Center API: incidents, maintenance, patch releases, informational messages affecting Salesforce tenants. |
+| 37 | Pardot | [llms-pardot.txt](https://developer.salesforce.com/docs/llms-pardot.txt) | Account Engagement (formerly Pardot): Object API, Export API, Import API (v3–v5). |
+| 38 | Personalization | [llms-personalization.txt](https://developer.salesforce.com/docs/llms-personalization.txt) | Marketing Cloud Personalization: real-time behavioral analytics, AI-driven personalization, web SDK, iOS/Android SDK, A/B testing config. |
+| 39 | Platform Field Ref | [llms-platform-field-ref.txt](https://developer.salesforce.com/docs/llms-platform-field-ref.txt) | (description placeholder in source: "Write a brief description of the repository.") |
+| 40 | Platform Pkg Exchange | [llms-platform-pkg-exchange.txt](https://developer.salesforce.com/docs/llms-platform-pkg-exchange.txt) | (no description provided) |
+| 41 | Platform | [llms-platform.txt](https://developer.salesforce.com/docs/llms-platform.txt) | (no description provided) |
+| 42 | Revenue Cloud | [llms-revenue-cloud.txt](https://developer.salesforce.com/docs/llms-revenue-cloud.txt) | Salesforce Subscription Management (REST API, headless eCommerce, recurring billing, invoicing, payments, subscription lifecycle) and Salesforce CPQ Developer Guide/Plugins reference. |
+| 43 | Sales Cloud | [llms-sales-cloud.txt](https://developer.salesforce.com/docs/llms-sales-cloud.txt) | Sales Engagement API (cadences/targets), Enablement developer guide (Lightning/Experience Cloud sites), Spiff APIs (incentive compensation/commissions). |
+| 44 | Salesforce Functions | [llms-salesforce-functions.txt](https://developer.salesforce.com/docs/llms-salesforce-functions.txt) | Salesforce Functions (retired) — JS/TypeScript/Java Functions-as-a-Service, kept for migration reference. |
+| 45 | Salesforce Slack Sdk | [llms-salesforce-slack-sdk.txt](https://developer.salesforce.com/docs/llms-salesforce-slack-sdk.txt) | Apex SDK for Slack (Beta): building Slack apps with Apex, Slack surfaces, events/interactions, Salesforce data/workflow integration. |
+| 46 | Salesforcedx | [llms-salesforcedx.txt](https://developer.salesforce.com/docs/llms-salesforcedx.txt) | Salesforce Extensions for VS Code, Agentforce Vibes developer guide/IDE, Salesforce CLI plugin development, Web Console browser-based IDE. |
+| 47 | Security | [llms-security.txt](https://developer.salesforce.com/docs/llms-security.txt) | Named Credentials for secure callouts/authentication; Salesforce Connect adapter for GraphQL to access Amazon RDS as external objects. |
+| 48 | Service Cloud | [llms-service-cloud.txt](https://developer.salesforce.com/docs/llms-service-cloud.txt) | Enhanced In-App Chat (iOS/Android SDK), Enhanced Web Chat, Messaging Object Model API and ConversationEntry schema. |
+| 49 | Salesforce Product Documentation | [llms-product-docs.txt](https://developer.salesforce.com/docs/llms-product-docs.txt) | Apex, Metadata API, Object Reference, and more — core product documentation index. |
+
+## Notes
+
+- 10 entries (`Connect Rest`, `Dataloader`, `Graphql Api`, `Headless Experience Layer`, `Multi Framework`, `Platform Pkg Exchange`, `Platform`) had no description in the source index — only the product name and URL are confirmed.
+- `Platform Field Ref` still carries a placeholder description in the live source (`"Write a brief description of the repository."`), not yet filled in by Salesforce.
+- This list catalogs the **index files** (`llms-*.txt`), not the underlying documentation pages each index links to — each entry is itself an aggregated list of further doc links, per the [llmstxt.org](https://llmstxt.org) standard.
+- Source instructs LLM agents to prefer these official indexes and to default to the latest API/feature version unless the user specifies otherwise.

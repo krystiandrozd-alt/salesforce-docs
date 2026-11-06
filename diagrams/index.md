@@ -1,10 +1,10 @@
-# Diagrams — Index
+# Diagrams -- Index
 
-Source: [`llms-diagrams.txt`](https://developer.salesforce.com/docs/llms-diagrams.txt).
+Source: [llms-diagrams.txt](https://developer.salesforce.com/docs/llms-diagrams.txt).
 
-Full link list (270 pages across 1 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (283 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
-## Data Model Gallery (270 pages)
+## Data Model Gallery (283 pages)
 
 | Page | URL |
 |---|---|
@@ -16,6 +16,11 @@ Full link list (270 pages across 1 sections), extracted programmatically.
 | Action Plan Framework | https://developer.salesforce.com/docs/platform/data-models/guide/action-plan-framework.md |
 | Activity Plans | https://developer.salesforce.com/docs/platform/data-models/guide/activity-plans.md |
 | Advanced Approvals | https://developer.salesforce.com/docs/platform/data-models/guide/advanced-approvals.md |
+| Advanced Orders for Telesales â€“ Account | https://developer.salesforce.com/docs/platform/data-models/guide/advanced-orders-account.md |
+| Advanced Orders for Telesales â€“ Assortment | https://developer.salesforce.com/docs/platform/data-models/guide/advanced-orders-assortment.md |
+| Advanced Orders for Telesales â€“ Internal Organization Unit | https://developer.salesforce.com/docs/platform/data-models/guide/advanced-orders-internal-organization-unit.md |
+| Advanced Orders for Telesales â€“ Order | https://developer.salesforce.com/docs/platform/data-models/guide/advanced-orders-order.md |
+| Advanced Orders for Telesales â€“ Product | https://developer.salesforce.com/docs/platform/data-models/guide/advanced-orders-product.md |
 | Advanced Therapy Management | https://developer.salesforce.com/docs/platform/data-models/guide/advanced-therapy-management.md |
 | Adverse Events | https://developer.salesforce.com/docs/platform/data-models/guide/adverse-events.md |
 | Advertising Campaign Opportunity | https://developer.salesforce.com/docs/platform/data-models/guide/advertising-campaign-opportunity.md |
@@ -92,6 +97,7 @@ Full link list (270 pages across 1 sections), extracted programmatically.
 | Energy Sales | https://developer.salesforce.com/docs/platform/data-models/guide/energy-sales.md |
 | Engagement Overview | https://developer.salesforce.com/docs/platform/data-models/guide/engagement.md |
 | Enterprise Quoting | https://developer.salesforce.com/docs/platform/data-models/guide/enterprise-quoting.md |
+| Error Observability for Ad Operations | https://developer.salesforce.com/docs/platform/data-models/guide/error-observability-for-ad-operations.md |
 | Event Management | https://developer.salesforce.com/docs/platform/data-models/guide/event-management.md |
 | Faculty Access Management | https://developer.salesforce.com/docs/platform/data-models/guide/faculty-access-management.md |
 | Field Email | https://developer.salesforce.com/docs/platform/data-models/guide/field-email.md |
@@ -185,18 +191,21 @@ Full link list (270 pages across 1 sections), extracted programmatically.
 | Orders | https://developer.salesforce.com/docs/platform/data-models/guide/orders.md |
 | Other Diagrams | https://developer.salesforce.com/docs/platform/data-models/guide/other-diagrams-category.md |
 | Participant Management | https://developer.salesforce.com/docs/platform/data-models/guide/participant-management.md |
+| Partner | https://developer.salesforce.com/docs/platform/data-models/guide/partner-cloud-category.md |
 | Party Overview | https://developer.salesforce.com/docs/platform/data-models/guide/party-overview.md |
 | Billing Payments | https://developer.salesforce.com/docs/platform/data-models/guide/payments.md |
 | Penny Perfect Pricing | https://developer.salesforce.com/docs/platform/data-models/guide/penny-perfect-pricing.md |
 | Pharmacy Benefits Verification | https://developer.salesforce.com/docs/platform/data-models/guide/pharmacy-benefits-verification.md |
 | Platform | https://developer.salesforce.com/docs/platform/data-models/guide/platform-category.md |
 | Flow Approval Process | https://developer.salesforce.com/docs/platform/data-models/guide/platform-flow-approval-process.md |
+| Pricing | https://developer.salesforce.com/docs/platform/data-models/guide/pricing.md |
 | Privacy Consent | https://developer.salesforce.com/docs/platform/data-models/guide/privacy-consent.md |
 | Privacy | https://developer.salesforce.com/docs/platform/data-models/guide/privacy-overview.md |
 | Process Compliance Navigator | https://developer.salesforce.com/docs/platform/data-models/guide/process-compliance-navigator.md |
 | Product and Pricing | https://developer.salesforce.com/docs/platform/data-models/guide/product-and-pricing.md |
 | Product & Catalog Management | https://developer.salesforce.com/docs/platform/data-models/guide/product-catalog-management.md |
 | Product Catalog Management | https://developer.salesforce.com/docs/platform/data-models/guide/product-catalog-mgmt.md |
+| Product Catalog | https://developer.salesforce.com/docs/platform/data-models/guide/product-catalog.md |
 | Product Management | https://developer.salesforce.com/docs/platform/data-models/guide/product-management.md |
 | Product & Price Book | https://developer.salesforce.com/docs/platform/data-models/guide/product-price-book.md |
 | Product Pricing | https://developer.salesforce.com/docs/platform/data-models/guide/product-pricing.md |
@@ -214,6 +223,7 @@ Full link list (270 pages across 1 sections), extracted programmatically.
 | Public Sector Overview | https://developer.salesforce.com/docs/platform/data-models/guide/pss-overview.md |
 | Public Complaint | https://developer.salesforce.com/docs/platform/data-models/guide/public-complaint.md |
 | Public Sector | https://developer.salesforce.com/docs/platform/data-models/guide/public-sector-solutions-category.md |
+| Quotes | https://developer.salesforce.com/docs/platform/data-models/guide/quotes.md |
 | Rate Management | https://developer.salesforce.com/docs/platform/data-models/guide/rate-management.md |
 | Real-Time Offer Management: Offers | https://developer.salesforce.com/docs/platform/data-models/guide/real-time-offer-mgmt-offers.md |
 | Real-Time Offer Management: Promotions | https://developer.salesforce.com/docs/platform/data-models/guide/real-time-offer-mgmt-promotions.md |
@@ -224,6 +234,7 @@ Full link list (270 pages across 1 sections), extracted programmatically.
 | Retail Execution | https://developer.salesforce.com/docs/platform/data-models/guide/retail-execution.md |
 | Revenue Management | https://developer.salesforce.com/docs/platform/data-models/guide/revenue-cloud-category.md |
 | Revenue Schedules | https://developer.salesforce.com/docs/platform/data-models/guide/revenue-schedules.md |
+| RFP Management | https://developer.salesforce.com/docs/platform/data-models/guide/rfp-management.md |
 | Route, Tour, and Warehouse | https://developer.salesforce.com/docs/platform/data-models/guide/route-tour-and-warehouse.md |
 | Sales Agreements | https://developer.salesforce.com/docs/platform/data-models/guide/sales-agreements.md |
 | Sales | https://developer.salesforce.com/docs/platform/data-models/guide/sales-cloud-category.md |
@@ -245,6 +256,8 @@ Full link list (270 pages across 1 sections), extracted programmatically.
 | Service Level Objective for Network Assets | https://developer.salesforce.com/docs/platform/data-models/guide/service-level-objective-for-network-assets.md |
 | Site Management | https://developer.salesforce.com/docs/platform/data-models/guide/site-management.md |
 | Social Program Management | https://developer.salesforce.com/docs/platform/data-models/guide/social-program-management.md |
+| Stock Rotation Incentive | https://developer.salesforce.com/docs/platform/data-models/guide/stock-rotation-incentive.md |
+| Store Check | https://developer.salesforce.com/docs/platform/data-models/guide/store-check.md |
 | Student Financials | https://developer.salesforce.com/docs/platform/data-models/guide/student-financials.md |
 | Student Success | https://developer.salesforce.com/docs/platform/data-models/guide/student-success.md |
 | Subject Management | https://developer.salesforce.com/docs/platform/data-models/guide/subject-management.md |

@@ -1,10 +1,10 @@
-# Hosted Mcp Servers — Index
+# Hosted Mcp Servers -- Index
 
-Source: [`llms-hosted-mcp-servers.txt`](https://developer.salesforce.com/docs/llms-hosted-mcp-servers.txt).
+Source: [llms-hosted-mcp-servers.txt](https://developer.salesforce.com/docs/llms-hosted-mcp-servers.txt).
 
-Full link list (61 pages across 1 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (64 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
-## Hosted MCP Servers (61 pages)
+## Hosted MCP Servers (64 pages)
 
 | Page | URL |
 |---|---|
@@ -35,6 +35,7 @@ Full link list (61 pages across 1 sections), extracted programmatically.
 | General Best Practices | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/general-best-practices.md |
 | Headless 360 (Beta) | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/headless-360-mcp.md |
 | Get Started | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.md |
+| Insurance Design Advisor | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/insurance-design-advisor.md |
 | Invocable Actions | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/invocable-actions.md |
 | Log Into Your Org | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/log-into-org.md |
 | Metadata Grounding (Beta) | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/metadata-grounding.md |
@@ -44,6 +45,7 @@ Full link list (61 pages across 1 sections), extracted programmatically.
 | Prompt Builder | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/prompt-builder.md |
 | Reference | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/references-overview.md |
 | Security Best Practices | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/security-best-practices.md |
+| Find Your Server URL | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/server-urls.md |
 | Standard Servers | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.md |
 | Set Up Your Org | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/setup-overview.md |
 | SObject All | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/sobject-all.md |
@@ -61,6 +63,7 @@ Full link list (61 pages across 1 sections), extracted programmatically.
 | Data 360 Legacy | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/references/reference/data-cloud-sql.md |
 | Data 360 | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/references/reference/data360-mcp.md |
 | Headless 360 (Beta) | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/references/reference/headless-360-mcp.md |
+| Insurance Design Advisor | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/references/reference/insurance-design-advisor.md |
 | Metadata Grounding (Beta) | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/references/reference/metadata-grounding.md |
 | Overview | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/references/reference/references-overview.md |
 | Standard Servers | https://developer.salesforce.com/docs/platform/hosted-mcp-servers/references/reference/servers-reference.md |

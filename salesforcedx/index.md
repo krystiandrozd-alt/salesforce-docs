@@ -1,8 +1,8 @@
-# Salesforcedx — Index
+# Salesforcedx -- Index
 
-Source: [`llms-salesforcedx.txt`](https://developer.salesforce.com/docs/llms-salesforcedx.txt).
+Source: [llms-salesforcedx.txt](https://developer.salesforce.com/docs/llms-salesforcedx.txt).
 
-Full link list (853 pages across 12 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (857 page links across 12 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Salesforce Extensions for Visual Studio Code (58 pages)
 
@@ -67,7 +67,7 @@ Full link list (853 pages across 12 sections), extracted programmatically.
 | Command Palette | https://developer.salesforce.com/docs/platform/sfvscode-extensions/guide/vscode-commands.md |
 | Salesforce Extensions for Visual Studio Code | https://developer.salesforce.com/docs/platform/sfvscode-extensions/guide/vscode-overview.md |
 
-## Agentforce Vibes Developer Guide (48 pages)
+## Agentforce Vibes Developer Guide (49 pages)
 
 | Page | URL |
 |---|---|
@@ -98,6 +98,7 @@ Full link list (853 pages across 12 sections), extracted programmatically.
 | Build a Lightning App | https://developer.salesforce.com/docs/platform/agentforcevibes/guide/afv-lexapp-overview.md |
 | MCP Servers | https://developer.salesforce.com/docs/platform/agentforcevibes/guide/afv-mcp-servers.md |
 | Metadata Experts MCP Server | https://developer.salesforce.com/docs/platform/agentforcevibes/guide/afv-mdexperts.md |
+| Metadata Grounding MCP Server(Beta) | https://developer.salesforce.com/docs/platform/agentforcevibes/guide/afv-mdgrounding.md |
 | Model Selection | https://developer.salesforce.com/docs/platform/agentforcevibes/guide/afv-model-selection.md |
 | Agentforce Vibes Overview | https://developer.salesforce.com/docs/platform/agentforcevibes/guide/afv-overview.md |
 | Permissions and Safety | https://developer.salesforce.com/docs/platform/agentforcevibes/guide/afv-permissions-safety.md |
@@ -292,13 +293,15 @@ Full link list (853 pages across 12 sections), extracted programmatically.
 | Use Libraries | https://developer.salesforce.com/docs/platform/salesforce-cli-plugin/guide/use-libraries.md |
 | Use Yarn Scripts | https://developer.salesforce.com/docs/platform/salesforce-cli-plugin/guide/yarn-scripts.md |
 
-## Salesforce Development Plugin for Claude Code (7 pages)
+## Salesforce Development Plugin (9 pages)
 
 | Page | URL |
 |---|---|
 | Install the Salesforce Development Plugin | https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/install-salesforce-development.md |
 | Use AI Skills for Salesforce Development | https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/overview.md |
+| MCP Servers and Project Context | https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/salesforce-development-mcp-servers.md |
 | Overview of the Salesforce Development Plugin | https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/salesforce-development-overview.md |
+| Salesforce Development Plugin Reference | https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/salesforce-development-reference.md |
 | Set Up a Salesforce DX Project and Development Org | https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/set-up-salesforce-project-org.md |
 | Troubleshoot the Salesforce Development Plugin | https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/troubleshoot-salesforce-development.md |
 | Understand Usage Telemetry and Privacy | https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/usage-telemetry-privacy.md |
@@ -336,13 +339,14 @@ Full link list (853 pages across 12 sections), extracted programmatically.
 | Introduction to Web Console | https://developer.salesforce.com/docs/platform/webconsole/guide/what-is-web-console.md |
 | Work with Apex Code | https://developer.salesforce.com/docs/platform/webconsole/guide/work-with-code.md |
 
-## Metadata Visualizer Extension (3 pages)
+## Metadata Visualizer Extension (4 pages)
 
 | Page | URL |
 |---|---|
 | Access Visualization Capabilities | https://developer.salesforce.com/docs/platform/md-visualizer/guide/mdv-accessing-visualization-capabilities.md |
 | Overview | https://developer.salesforce.com/docs/platform/md-visualizer/guide/mdv-overview.md |
 | Set Up the Metadata Visualizer Extension | https://developer.salesforce.com/docs/platform/md-visualizer/guide/mdv-setup-visualizer-extension.md |
+| Edit Metadata Through Visualizations | https://developer.salesforce.com/docs/platform/md-visualizer/guide/mdv-vibes-editing.md |
 
 ## Salesforce CLI Command Reference (285 pages)
 

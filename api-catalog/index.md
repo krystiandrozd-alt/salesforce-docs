@@ -1,8 +1,8 @@
-# Api Catalog — Index
+# Api Catalog -- Index
 
-Source: [`llms-api-catalog.txt`](https://developer.salesforce.com/docs/llms-api-catalog.txt).
+Source: [llms-api-catalog.txt](https://developer.salesforce.com/docs/llms-api-catalog.txt).
 
-Full link list (3 pages across 1 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (3 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## API Catalog Connect REST API (3 pages)
 

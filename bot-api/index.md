@@ -1,8 +1,8 @@
-# Bot Api — Index
+# Bot Api -- Index
 
-Source: [`llms-bot-api.txt`](https://developer.salesforce.com/docs/llms-bot-api.txt).
+Source: [llms-bot-api.txt](https://developer.salesforce.com/docs/llms-bot-api.txt).
 
-Full link list (37 pages across 1 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (37 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Einstein Bots API and SDK (37 pages)
 
@@ -29,7 +29,7 @@ Full link list (37 pages across 1 sections), extracted programmatically.
 | Get Started | https://developer.salesforce.com/docs/service/einstein-bot-api/guide/prerequisites.md |
 | End a Bot Session | https://developer.salesforce.com/docs/service/einstein-bot-api/guide/sdk-basic-bot-client-end-session.md |
 | Pass Custom or Context Variables | https://developer.salesforce.com/docs/service/einstein-bot-api/guide/sdk-basic-bot-client-pass-custom-context-variables.md |
-| Retrieve the Bot's Response | https://developer.salesforce.com/docs/service/einstein-bot-api/guide/sdk-basic-bot-client-retrieve-bots-response.md |
+| Retrieve the Botâ€™s Response | https://developer.salesforce.com/docs/service/einstein-bot-api/guide/sdk-basic-bot-client-retrieve-bots-response.md |
 | Send a Message to the Bot | https://developer.salesforce.com/docs/service/einstein-bot-api/guide/sdk-basic-bot-client-send-message.md |
 | Set Up the Basic Bot Client | https://developer.salesforce.com/docs/service/einstein-bot-api/guide/sdk-basic-bot-client-set-up.md |
 | Start a Session | https://developer.salesforce.com/docs/service/einstein-bot-api/guide/sdk-basic-bot-client-start-a-session.md |

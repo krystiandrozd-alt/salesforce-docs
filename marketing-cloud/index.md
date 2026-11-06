@@ -1,8 +1,8 @@
-# Marketing Cloud — Index
+# Marketing Cloud -- Index
 
-Source: [`llms-marketing-cloud.txt`](https://developer.salesforce.com/docs/llms-marketing-cloud.txt).
+Source: [llms-marketing-cloud.txt](https://developer.salesforce.com/docs/llms-marketing-cloud.txt).
 
-Full link list (2174 pages across 10 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (2177 page links across 10 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Marketing Cloud Next (65 pages)
 
@@ -74,7 +74,7 @@ Full link list (2174 pages across 10 sections), extracted programmatically.
 | Security | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-security.md |
 | Summary | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/references/mc-summary/mc-summary.md |
 
-## Marketing Cloud Engagement APIs and Programmatic Languages (1134 pages)
+## Marketing Cloud Engagement APIs and Programmatic Languages (1137 pages)
 
 | Page | URL |
 |---|---|
@@ -201,6 +201,8 @@ Full link list (2174 pages across 10 sections), extracted programmatically.
 | Authentication | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/authentication.md |
 | Authorization Code Reference | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/authorization-code.md |
 | Automation Studio Events | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/automation_studio_events.md |
+| Automation Activity Types | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/automation-activity-types.md |
+| Automation Schedules | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/automation-schedules.md |
 | Automation Studio API | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/automation-studio-api.md |
 | Automation | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/automation.md |
 | AutomationActivity | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/automationactivity.md |
@@ -504,6 +506,7 @@ Full link list (2174 pages across 10 sections), extracted programmatically.
 | MonthOfYearEnum | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/monthofyearenum.md |
 | NotSentEvent | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/notsentevent.md |
 | NullAPIProperty | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/nullapiproperty.md |
+| Automatic Revocation of Compromised Client Secrets | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/oauth-secret-revocation.md |
 | ObjectDefinition | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/objectdefinition.md |
 | ObjectDefinitionRequest | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/objectdefinitionrequest.md |
 | ObjectExtension | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/objectextension.md |

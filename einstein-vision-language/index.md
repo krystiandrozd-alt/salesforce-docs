@@ -1,8 +1,8 @@
-# Einstein Vision Language — Index
+# Einstein Vision Language -- Index
 
-Source: [`llms-einstein-vision-language.txt`](https://developer.salesforce.com/docs/llms-einstein-vision-language.txt).
+Source: [llms-einstein-vision-language.txt](https://developer.salesforce.com/docs/llms-einstein-vision-language.txt).
 
-Full link list (48 pages across 1 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (48 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Einstein Vision and Language (48 pages)
 

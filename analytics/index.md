@@ -2,7 +2,7 @@
 
 Source: [llms-analytics.txt](https://developer.salesforce.com/docs/llms-analytics.txt).
 
-Full link list extracted programmatically from the live source file (1003 page links across 16 sections) -- reproduced in full per explicit instruction, even though this is one of the largest indexes in the catalog.
+Full link list extracted programmatically from the live source file (1013 page links across 16 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Analytics Dashboard Component (17 pages)
 
@@ -621,7 +621,7 @@ Full link list extracted programmatically from the live source file (1003 page l
 | replace(str, old_str, new_str) | https://developer.salesforce.com/docs/analytics/bi-dev-guide-sql/guide/bi-sql-string-replace.md |
 | starts_with(source_str, search_str) | https://developer.salesforce.com/docs/analytics/bi-dev-guide-sql/guide/bi-sql-string-starts-with.md |
 | substring(str FROM start FOR length) | https://developer.salesforce.com/docs/analytics/bi-dev-guide-sql/guide/bi-sql-string-substring.md |
-| trim(LEADING | TRAILING | BOTH, chars, str) | https://developer.salesforce.com/docs/analytics/bi-dev-guide-sql/guide/bi-sql-string-trim.md |
+| trim(LEADING \| TRAILING \| BOTH, chars, str) | https://developer.salesforce.com/docs/analytics/bi-dev-guide-sql/guide/bi-sql-string-trim.md |
 | upper(str) | https://developer.salesforce.com/docs/analytics/bi-dev-guide-sql/guide/bi-sql-string-upper.md |
 | Subquery | https://developer.salesforce.com/docs/analytics/bi-dev-guide-sql/guide/bi-sql-subquery.md |
 | TIMESERIES | https://developer.salesforce.com/docs/analytics/bi-dev-guide-sql/guide/bi-sql-timeseries.md |
@@ -833,7 +833,7 @@ Full link list extracted programmatically from the live source file (1003 page l
 | Access Date Functions with Time Zone Enabled | https://developer.salesforce.com/docs/analytics/bi-dev-guide-saql/guide/bi-saql-functions-timezone-access.md |
 | Calculate the Time Between Two Dates | https://developer.salesforce.com/docs/analytics/bi-dev-guide-saql/guide/bi-saql-functions-timezone-between.md |
 | date_diff(datepart, startdate, enddate) | https://developer.salesforce.com/docs/analytics/bi-dev-guide-saql/guide/bi-saql-functions-timezone-date-diff.md |
-| date_to_string(DateTime | DateOnly, format) | https://developer.salesforce.com/docs/analytics/bi-dev-guide-saql/guide/bi-saql-functions-timezone-date2string.md |
+| date_to_string(DateTime \| DateOnly, format) | https://developer.salesforce.com/docs/analytics/bi-dev-guide-saql/guide/bi-saql-functions-timezone-date2string.md |
 | toDateOnly(epoch) | https://developer.salesforce.com/docs/analytics/bi-dev-guide-saql/guide/bi-saql-functions-timezone-dateonly-epoch.md |
 | toDateOnly(string, format) | https://developer.salesforce.com/docs/analytics/bi-dev-guide-saql/guide/bi-saql-functions-timezone-dateonly-string.md |
 | toDateTime(epoch) | https://developer.salesforce.com/docs/analytics/bi-dev-guide-saql/guide/bi-saql-functions-timezone-datetime-epoch.md |

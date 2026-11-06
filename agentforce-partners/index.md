@@ -1,15 +1,17 @@
-# Agentforce Partners — Index
+# Agentforce Partners -- Index
 
-Source: [`llms-agentforce-partners.txt`](https://developer.salesforce.com/docs/llms-agentforce-partners.txt).
+Source: [llms-agentforce-partners.txt](https://developer.salesforce.com/docs/llms-agentforce-partners.txt).
 
-## Agentforce Partner Onboarding Guide
+Full link list extracted programmatically from the live source file (7 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+
+## Agentforce Partner Onboarding Guide (7 pages)
 
 | Page | URL |
 |---|---|
-| Get Started | https://developer.salesforce.com/docs/ai/agentforce-partner/guide/get-started.md |
 | Agentforce Voice | https://developer.salesforce.com/docs/ai/agentforce-partner/guide/agentforce-voice-overview.md |
-| Support Agentforce Voice with SIP | https://developer.salesforce.com/docs/ai/agentforce-partner/guide/agentforce-voice-sip-setup.md |
 | SIP Partner Regional Availability Chart | https://developer.salesforce.com/docs/ai/agentforce-partner/guide/agentforce-voice-sip-partner-regional-availability.md |
+| Support Agentforce Voice with SIP | https://developer.salesforce.com/docs/ai/agentforce-partner/guide/agentforce-voice-sip-setup.md |
 | SIP Signaling Configuration Form | https://developer.salesforce.com/docs/ai/agentforce-partner/guide/agentforce-voice-sip-signaling-config.md |
 | TLS Certificate Management Requirements | https://developer.salesforce.com/docs/ai/agentforce-partner/guide/agentforce-voice-tls-certificate-management.md |
+| Get Started | https://developer.salesforce.com/docs/ai/agentforce-partner/guide/get-started.md |
 | Release Notes | https://developer.salesforce.com/docs/ai/agentforce-partner/guide/release-notes.md |

@@ -1,10 +1,10 @@
-# Genai — Index
+# Genai -- Index
 
-Source: [`llms-genai.txt`](https://developer.salesforce.com/docs/llms-genai.txt).
+Source: [llms-genai.txt](https://developer.salesforce.com/docs/llms-genai.txt).
 
-Full link list (345 pages across 2 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (351 page links across 2 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
-## Agentforce Developer Guide (187 pages)
+## Agentforce Developer Guide (193 pages)
 
 | Page | URL |
 |---|---|
@@ -34,22 +34,23 @@ Full link list (345 pages across 2 sections), extracted programmatically.
 | Limits | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-auraenabled-limits.md |
 | Prerequisites | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-auraenabled-prerequisites.md |
 | Create Actions from Apex Controller Methods | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-auraenabled.md |
-| Manage Data Libraries | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-adl.md |
+| Ground Your Agent with Data Libraries | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-adl.md |
 | API v 67 and Earlier | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-api-v67-earlier.md |
 | Create a Non-Agent Script Agent From a Spec (Legacy) | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-create-agent-spec.md |
 | Create an Agent Without Using Agent Script (Legacy) | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-create-agent.md |
 | Move an Agent to a New Org | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-deploy-metadata.md |
 | Generate an Agent Spec | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-generate-agent-spec.md |
-| Manage an Agent | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-manage.md |
+| Activate or Deactivate an Agent | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-manage.md |
 | Manage MCP Servers | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-mcp.md |
 | Customize an Agent That Doesn't Use Agent Script (Legacy) | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-modify.md |
 | Generate an Authoring Bundle | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-nga-authbundle.md |
 | Author an Agent | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-nga-author-agent.md |
 | Preview and Debug an Agent | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-nga-preview.md |
-| Publish an Authoring Bundle to Your Org | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-nga-publish.md |
+| Publish an Agent | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-nga-publish.md |
 | Code Your Agent | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-nga-script.md |
 | Reference | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-reference.md |
 | Release Notes | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-release-notes.md |
+| Retrieve and Deploy Agent Metadata | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-retrieve-deploy.md |
 | Set Up Your DX Environment | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-set-up-env.md |
 | Synchronize Your Org with Your DX Project | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-synch.md |
 | Create an Agent Test from the Spec | https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-test-create.md |
@@ -116,8 +117,11 @@ Full link list (345 pages across 2 sections), extracted programmatically.
 | Troubleshooting | https://developer.salesforce.com/docs/ai/agentforce/guide/custom-connections-troubleshooting.md |
 | Build a Custom Chat Client with Custom Connections | https://developer.salesforce.com/docs/ai/agentforce/guide/custom-connections.md |
 | Inline Mode in Enhanced Chat v2 | https://developer.salesforce.com/docs/ai/agentforce/guide/enhanced-chat-inline-mode.md |
+| Summarization Action Errors | https://developer.salesforce.com/docs/ai/agentforce/guide/error-ref-abstractive-summarization.md |
 | Agent Service Reasoner Errors | https://developer.salesforce.com/docs/ai/agentforce/guide/error-ref-agent-svc-reasoner.md |
 | Agentforce Data Library Service Errors | https://developer.salesforce.com/docs/ai/agentforce/guide/error-ref-agentforce-data-library.md |
+| AI Enrichment Realtime Service Errors | https://developer.salesforce.com/docs/ai/agentforce/guide/error-ref-ai-enrichment-realtime.md |
+| AI Metadata Service Errors | https://developer.salesforce.com/docs/ai/agentforce/guide/error-ref-ai-metadata-service.md |
 | Authentication Service Errors | https://developer.salesforce.com/docs/ai/agentforce/guide/error-ref-auth-service.md |
 | Einstein Compute Service Errors | https://developer.salesforce.com/docs/ai/agentforce/guide/error-ref-ccp-service.md |
 | General Agentforce Service Errors | https://developer.salesforce.com/docs/ai/agentforce/guide/error-ref-common.md |
@@ -127,6 +131,8 @@ Full link list (345 pages across 2 sections), extracted programmatically.
 | Language Detection Service Errors | https://developer.salesforce.com/docs/ai/agentforce/guide/error-ref-language-detection.md |
 | ML Lake Service Errors | https://developer.salesforce.com/docs/ai/agentforce/guide/error-ref-mllake.md |
 | Prediction Service Errors | https://developer.salesforce.com/docs/ai/agentforce/guide/error-ref-prediction.md |
+| Prompt Builder Errors | https://developer.salesforce.com/docs/ai/agentforce/guide/error-ref-prompt-builder.md |
+| Agentforce Testing Center Errors | https://developer.salesforce.com/docs/ai/agentforce/guide/error-ref-sf-eval.md |
 | Generate with Models API | https://developer.salesforce.com/docs/ai/agentforce/guide/generate-with-models-api.md |
 | Agentforce Actions | https://developer.salesforce.com/docs/ai/agentforce/guide/get-started-actions.md |
 | Agentforce APIs and SDKs | https://developer.salesforce.com/docs/ai/agentforce/guide/get-started-agents.md |

@@ -1,8 +1,8 @@
-# Event Bus — Index
+# Event Bus -- Index
 
-Source: [`llms-event-bus.txt`](https://developer.salesforce.com/docs/llms-event-bus.txt).
+Source: [llms-event-bus.txt](https://developer.salesforce.com/docs/llms-event-bus.txt).
 
-Full link list (49 pages across 1 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (49 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Pub/Sub API (49 pages)
 

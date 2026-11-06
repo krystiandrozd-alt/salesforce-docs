@@ -1,8 +1,8 @@
-# Lwr Node — Index
+# Lwr Node -- Index
 
-Source: [`llms-lwr-node.txt`](https://developer.salesforce.com/docs/llms-lwr-node.txt).
+Source: [llms-lwr-node.txt](https://developer.salesforce.com/docs/llms-lwr-node.txt).
 
-Full link list (146 pages across 2 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (146 page links across 2 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Lightning Web Runtime (71 pages)
 
@@ -46,7 +46,7 @@ Full link list (146 pages across 2 sections), extracted programmatically.
 | Summary | https://developer.salesforce.com/docs/platform/lwr/references/cli-reference/cli-reference.md |
 | lwr build | https://developer.salesforce.com/docs/platform/lwr/references/cli-reference/lwr-build.md |
 | lwr dev | https://developer.salesforce.com/docs/platform/lwr/references/cli-reference/lwr-dev.md |
-| lwr start|preview | https://developer.salesforce.com/docs/platform/lwr/references/cli-reference/lwr-start-lwr-preview.md |
+| lwr start\|preview | https://developer.salesforce.com/docs/platform/lwr/references/cli-reference/lwr-start-lwr-preview.md |
 | createRouter() | https://developer.salesforce.com/docs/platform/lwr/references/csr-reference/createrouter.md |
 | Summary | https://developer.salesforce.com/docs/platform/lwr/references/csr-reference/csr-reference.md |
 | CurrentPageReference | https://developer.salesforce.com/docs/platform/lwr/references/csr-reference/currentpagereference.md |

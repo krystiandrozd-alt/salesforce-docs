@@ -1,4 +1,9 @@
-# Lightning Web Components (LWC) -- Index\r\n\r\nSource: [llms-lwc.txt](https://developer.salesforce.com/docs/llms-lwc.txt).\r\n\r\nFull link list (829 pages across 5 sections), extracted programmatically.\r\n
+# Lwc -- Index
+
+Source: [llms-lwc.txt](https://developer.salesforce.com/docs/llms-lwc.txt).
+
+Full link list extracted programmatically from the live source file (829 page links across 5 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+
 ## Lightning Web Components Developer Guide (689 pages)
 
 | Page | URL |

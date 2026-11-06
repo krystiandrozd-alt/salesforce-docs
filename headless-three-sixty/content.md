@@ -11,6 +11,9 @@ Section breakdown:
 
 *Source: [`llms-headless-three-sixty.txt`](https://developer.salesforce.com/docs/llms-headless-three-sixty.txt) — official aggregated index (developer doc page), overview section.*
 
+
+*Last refreshed 2026-11-06: 3 pages in 1 sections (counts from the live source).*
+
 ## Extraction notes
 
 Built from the index file's own "Overview" blurb and section listing — one fetch, programmatic extraction, no deep page-by-page review. See [index.md](index.md) for the full 3-page link list.

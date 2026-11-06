@@ -1,8 +1,8 @@
-# Platform Pkg Exchange — Index
+# Platform Pkg Exchange -- Index
 
-Source: [`llms-platform-pkg-exchange.txt`](https://developer.salesforce.com/docs/llms-platform-pkg-exchange.txt).
+Source: [llms-platform-pkg-exchange.txt](https://developer.salesforce.com/docs/llms-platform-pkg-exchange.txt).
 
-Full link list (762 pages across 4 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (763 page links across 4 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Application Installation Guide (20 pages)
 
@@ -29,7 +29,7 @@ Full link list (762 pages across 4 sections), extracted programmatically.
 | App Rollout | https://developer.salesforce.com/docs/platform/appexchange-install-guide/guide/appexchange-install-rollout.md |
 | What Is AgentExchange? | https://developer.salesforce.com/docs/platform/appexchange-install-guide/guide/appexchange-install-whatis.md |
 
-## ISVforce Guide (403 pages)
+## ISVforce Guide (404 pages)
 
 | Page | URL |
 |---|---|
@@ -328,6 +328,7 @@ Full link list (762 pages across 4 sections), extracted programmatically.
 | Understand Invoices and Payouts | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-payouts-invoices.md |
 | Partner Payouts Overview | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-payouts.md |
 | Understand Products in the Go-To-Market App | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-product-types.md |
+| Create a New Version of a Partner Provisionable Product | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-psl-versioning.md |
 | Use Permission Set Licenses to Sell Tier-Based Products | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-psl.md |
 | Secure Your Agentforce Custom Actions | https://developer.salesforce.com/docs/platform/isvforce/guide/secure-agentforce-actions.md |
 | Validate User-Controlled Data Added to a Prompt | https://developer.salesforce.com/docs/platform/isvforce/guide/secure-agentforce-prompt-injection-data.md |

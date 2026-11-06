@@ -1,8 +1,8 @@
-# Industries Integrations — Index
+# Industries Integrations -- Index
 
-Source: [`llms-industries-integrations.txt`](https://developer.salesforce.com/docs/llms-industries-integrations.txt).
+Source: [llms-industries-integrations.txt](https://developer.salesforce.com/docs/llms-industries-integrations.txt).
 
-Full link list (278 pages across 10 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (284 page links across 10 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Automotive Cloud Integrations API (16 pages)
 
@@ -25,7 +25,7 @@ Full link list (278 pages across 10 sections), extracted programmatically.
 | Vehicle Specifications BOD | https://developer.salesforce.com/docs/industries/automotive/guide/vehicle-specification-bod.md |
 | Vehicle Specifications Resource Mapping | https://developer.salesforce.com/docs/industries/automotive/guide/vehicle-specifications-resource-mapping.md |
 
-## Communications Cloud TM Forum API (210 pages)
+## Communications Cloud TM Forum API (216 pages)
 
 | Page | URL |
 |---|---|
@@ -148,6 +148,10 @@ Full link list (278 pages across 10 sections), extracted programmatically.
 | Use Cases | https://developer.salesforce.com/docs/industries/communications/guide/TMF637use-cases.md |
 | Use Cases | https://developer.salesforce.com/docs/industries/communications/guide/TMF637v5-use-cases.md |
 | TMF637 v5 Product Inventory Management | https://developer.salesforce.com/docs/industries/communications/guide/TMF637v5.md |
+| Resource Mappings | https://developer.salesforce.com/docs/industries/communications/guide/tmf641_resource_mapping.md |
+| TMF641 v4 Service Order Management | https://developer.salesforce.com/docs/industries/communications/guide/tmf641.md |
+| Resource Mappings | https://developer.salesforce.com/docs/industries/communications/guide/tmf645_resource_mapping.md |
+| TMF645 v4 Service Qualification | https://developer.salesforce.com/docs/industries/communications/guide/tmf645.md |
 | Apex Resources | https://developer.salesforce.com/docs/industries/communications/guide/tmf648_apex_interfaces.md |
 | Custom Metadata | https://developer.salesforce.com/docs/industries/communications/guide/tmf648_custom_metadata.md |
 | Data Mappers | https://developer.salesforce.com/docs/industries/communications/guide/tmf648_data_mappers.md |
@@ -169,6 +173,8 @@ Full link list (278 pages across 10 sections), extracted programmatically.
 | Resource Mappings | https://developer.salesforce.com/docs/industries/communications/guide/tmf671_resource_mapping.md |
 | TMF671 v4 Promotion Management | https://developer.salesforce.com/docs/industries/communications/guide/TMF671.md |
 | Use Cases | https://developer.salesforce.com/docs/industries/communications/guide/TMF671use-cases.md |
+| Resource Mappings | https://developer.salesforce.com/docs/industries/communications/guide/tmf673_resource_mapping.md |
+| TMF673 v4 Geographic Address Management | https://developer.salesforce.com/docs/industries/communications/guide/tmf673.md |
 | Resource Mappings | https://developer.salesforce.com/docs/industries/communications/guide/tmf674_resource_mapping.md |
 | TMF674 v4 Geographic Site | https://developer.salesforce.com/docs/industries/communications/guide/TMF674.md |
 | Resource Mappings | https://developer.salesforce.com/docs/industries/communications/guide/tmf675_resource_mapping.md |

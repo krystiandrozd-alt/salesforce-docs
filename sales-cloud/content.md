@@ -7,11 +7,14 @@ Developer documentation for Salesforce Sales Cloud, covering the Sales Engagemen
 Section breakdown:
 - **Sales Engagement** — 6 pages
 - **Sales Programs and Partner Tracks with Enablement** — 13 pages
-- **Salesforce Spiff** — 6 pages
+- **Salesforce Spiff** — 8 pages
 - **Channel Revenue Management Developer Guide** — 83 pages
 - **Salesforce Maps Apex Developer Guide** — 17 pages
 
 *Source: [`llms-sales-cloud.txt`](https://developer.salesforce.com/docs/llms-sales-cloud.txt) — official aggregated index (developer doc page), overview section.*
+
+
+*Last refreshed 2026-11-06: 127 pages in 5 sections (counts from the live source).*
 
 ## Extraction notes
 

@@ -1,8 +1,8 @@
-# Headless Three Sixty — Index
+# Headless Three Sixty -- Index
 
-Source: [`llms-headless-three-sixty.txt`](https://developer.salesforce.com/docs/llms-headless-three-sixty.txt).
+Source: [llms-headless-three-sixty.txt](https://developer.salesforce.com/docs/llms-headless-three-sixty.txt).
 
-Full link list (3 pages across 1 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (3 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Get Started (3 pages)
 

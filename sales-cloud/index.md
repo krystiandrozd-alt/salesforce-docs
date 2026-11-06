@@ -1,8 +1,8 @@
-# Sales Cloud — Index
+# Sales Cloud -- Index
 
-Source: [`llms-sales-cloud.txt`](https://developer.salesforce.com/docs/llms-sales-cloud.txt).
+Source: [llms-sales-cloud.txt](https://developer.salesforce.com/docs/llms-sales-cloud.txt).
 
-Full link list (125 pages across 5 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (127 page links across 5 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Sales Engagement (6 pages)
 
@@ -33,7 +33,7 @@ Full link list (125 pages across 5 sections), extracted programmatically.
 | Create a Managed Package for Enablement Programs and Dependencies | https://developer.salesforce.com/docs/sales/enablement/guide/enablement-package.md |
 | Developer Tools | https://developer.salesforce.com/docs/sales/enablement/references/enablement-resources/enablement-developer-tools.md |
 
-## Salesforce Spiff (6 pages)
+## Salesforce Spiff (8 pages)
 
 | Page | URL |
 |---|---|
@@ -43,6 +43,8 @@ Full link list (125 pages across 5 sections), extracted programmatically.
 | Limits for Reporting API | https://developer.salesforce.com/docs/sales/spiff/guide/reporting-api-limits.md |
 | Get Started with System Activity Log Export API | https://developer.salesforce.com/docs/sales/spiff/guide/system-activity-log-export-api-get-started.md |
 | Get Started with Webhook API | https://developer.salesforce.com/docs/sales/spiff/guide/webhook-api-get-started.md |
+| Sandbox Limitations for Webhook API | https://developer.salesforce.com/docs/sales/spiff/guide/webhook-api-sandbox.md |
+| Troubleshoot Webhook Requests | https://developer.salesforce.com/docs/sales/spiff/guide/webhook-api-troubleshoot.md |
 
 ## Channel Revenue Management Developer Guide (83 pages)
 

@@ -1,8 +1,8 @@
-# Data Cloud — Index
+# Data Cloud -- Index
 
-Source: [`llms-data-cloud.txt`](https://developer.salesforce.com/docs/llms-data-cloud.txt).
+Source: [llms-data-cloud.txt](https://developer.salesforce.com/docs/llms-data-cloud.txt).
 
-Full link list (4282 pages across 12 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (4322 page links across 12 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Data 360 Connect REST API (10 pages)
 
@@ -48,7 +48,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Quick Start | https://developer.salesforce.com/docs/data/data-cloud-dev/guide/dc-quick-start.md |
 | Packages and Data Kits | https://developer.salesforce.com/docs/data/data-cloud-dev/guide/packages-data-kits.md |
 
-## Data 360 Query Guide (334 pages)
+## Data 360 Query Guide (332 pages)
 
 | Page | URL |
 |---|---|
@@ -167,7 +167,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Comparison Operators and Predicates | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/comparison-func.md |
 | Comparison Operators | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/comparison-operators.md |
 | CONCAT | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/concat.md |
-| String Concatenation Operator (||) | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/concatenation-operator.md |
+| String Concatenation Operator (\|\|) | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/concatenation-operator.md |
 | Conditional Expressions | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/conditional-func.md |
 | CONTAINS / ICONTAINS | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/contains.md |
 | COPY FROM | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/copy-from.md |
@@ -230,7 +230,6 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Data Type Formatting Functions | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/formatting-func.md |
 | generate_series (Time-based) | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/generate-series-time.md |
 | generate_series (Numerical) | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/generate-series.md |
-| GETDATE | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/getdate.md |
 | Querying with GRAPH_TABLE and MATCH | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/graph-table-match.md |
 | GREATEST and LEAST | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/greatest-least.md |
 | GROUPING | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/grouping.md |
@@ -284,7 +283,6 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | MONTH | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/month.md |
 | MONTHNAME | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/monthname.md |
 | NOT IN | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/not-in.md |
-| NOW | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/now.md |
 | NTH_VALUE | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/nth-value.md |
 | NTILE | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/ntile.md |
 | Null and Boolean Predicates | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/null-bool-predicates.md |
@@ -387,7 +385,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | YEAR | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/year.md |
 | ZEROIFNULL | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/zeroifnull.md |
 
-## Data 360 Integration Guide (909 pages)
+## Data 360 Integration Guide (910 pages)
 
 | Page | URL |
 |---|---|
@@ -928,6 +926,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Create External Credentials for the Pipedrive Connector | https://developer.salesforce.com/docs/data/data-cloud-int/guide/c360-a-pipedrive-cred.md |
 | Pipedrive Connector Objects (V1 Schema) | https://developer.salesforce.com/docs/data/data-cloud-int/guide/c360-a-pipedrive-objects-v1.md |
 | Pipedrive Connector Objects (V2 Schema) | https://developer.salesforce.com/docs/data/data-cloud-int/guide/c360-a-pipedrive-objects-v2.md |
+| Prepare Your Adobe Analytics Connection | https://developer.salesforce.com/docs/data/data-cloud-int/guide/c360-a-prepare-adobeanalytics-connection.md |
 | Prepare Your Confluence Unstructured Connection | https://developer.salesforce.com/docs/data/data-cloud-int/guide/c360-a-prepare-confluence-unstructured-connection.md |
 | Prepare for a GitHub Connection | https://developer.salesforce.com/docs/data/data-cloud-int/guide/c360-a-prepare-fora-github-connection.md |
 | Prepare Your Google Drive Unstructured Data Connection | https://developer.salesforce.com/docs/data/data-cloud-int/guide/c360-a-prepare-googledrive-unstructured-connection.md |
@@ -1301,12 +1300,14 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Validating the Signature | https://developer.salesforce.com/docs/data/data-cloud-int/references/webhook-data-action-targets/c360a-api-validating-the-signature.md |
 | Webhook Data Action Targets in Data 360 | https://developer.salesforce.com/docs/data/data-cloud-int/references/webhook-data-action-targets/c360a-api-webhook-data-action-targets-in-customer-data-platform.md |
 
-## Data 360 DMO and Mapping Guide (2791 pages)
+## Data 360 DMO and Mapping Guide (2830 pages)
 
 | Page | URL |
 |---|---|
 | Data 360 Extensibility Readiness Matrix | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360a-api-isv-readiness-data.md |
 | Legacy Data Bundles | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360a-starter-data-bundles.md |
+| AbnExperiment DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-abnexperiment_dmo_mappings.md |
+| AbnExperimentCohort DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-abnexperimentcohort_dmo_mappings.md |
 | AcademicCredential DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-academiccredential_dmo_mappings.md |
 | AcademicInterest DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-academicinterest_dmo_mappings.md |
 | AcademicSession DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-academicsession_dmo_mappings.md |
@@ -1348,6 +1349,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Agent Work DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-agent-work-dmo.md |
 | Agent Work Skill DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-agent-work-skill-dmo.md |
 | AgentWork DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-agentwork_dmo_mappings.md |
+| AgentWorkConversationalData DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-agentworkconversationaldata_dmo_mappings.md |
 | AgentWorkSkill DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-agentworkskill_dmo_mappings.md |
 | Salesforce CRM: Conversation Mapping | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-ai-conversation.md |
 | Salesforce CRM: ConversationParticipant Mapping | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-ai-conversationparticipant.md |
@@ -1398,6 +1400,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | AssetActionSource DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-assetactionsource_dmo_mappings.md |
 | AssetContactParticipant DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-assetcontactparticipant_dmo_mappings.md |
 | AssetDepreciation DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-assetdepreciation_dmo_mappings.md |
+| AssetLocation DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-assetlocation_dmo_mappings.md |
 | AssetMilestone DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-assetmilestone_dmo_mappings.md |
 | AssetStatePeriod DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-assetstateperiod_dmo_mappings.md |
 | AssetTitle DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-assettitle_dmo_mappings.md |
@@ -1418,6 +1421,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Authorization Form DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-authorization-form-dmo.md |
 | Authorization Form Text DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-authorization-form-text-dmo.md |
 | AuthorizationTierDefinition DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-authorizationtierdefinition_dmo_mappings.md |
+| AuthorizationTierObject DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-authorizationtierobject_dmo_mappings.md |
 | AuthTierDataUsePurpose DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-authtierdatausepurpose_dmo_mappings.md |
 | Award DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-award_dmo_mappings.md |
 | B2C Commerce: Bundles Product Mapping | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-b2ccommerce-bundlesproduct.md |
@@ -1582,6 +1586,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | CodeSetBundle DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-codesetbundle_dmo_mappings.md |
 | CollectionPlan DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-collectionplan_dmo_mappings.md |
 | CollectionPlanItem DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-collectionplanitem_dmo_mappings.md |
+| CollectionPlanMilestone DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-collectionplanmilestone_dmo_mappings.md |
 | CollectionPlanReason DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-collectionplanreason_dmo_mappings.md |
 | Commerce: Account Mapping | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-commerce-account.md |
 | Commerce: Coupon Mapping | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-commerce-coupon.md |
@@ -1659,6 +1664,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | ContactEncounterParticipant DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-contactencounterparticipant_dmo_mappings.md |
 | ContactPointAddress DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-contactpointaddress_dmo_mappings.md |
 | ContactPointEmail DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-contactpointemail_dmo_mappings.md |
+| ContactPointOttSvc DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-contactpointottsvc_dmo_mappings.md |
 | ContactPointPhone DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-contactpointphone_dmo_mappings.md |
 | ContactProfile DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-contactprofile_dmo_mappings.md |
 | ContactRequest DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-contactrequest_dmo_mappings.md |
@@ -2152,6 +2158,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Commerce: Location Group Product Inventory Change Mapping | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-oci-locationgroupproductinventorychange.md |
 | Commerce: Location Product Inventory Change Mapping | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-oci-locationproductinventorychange.md |
 | Offer DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-offer_dmo_mappings.md |
+| OfferEngagementLimit DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-offerengagementlimit_dmo_mappings.md |
 | OfferGroup DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-offergroup_dmo_mappings.md |
 | OfferGroupAssignedOffer DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-offergroupassignedoffer_dmo_mappings.md |
 | OfferMarketSegment DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-offermarketsegment_dmo_mappings.md |
@@ -2231,6 +2238,10 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Person Life Event DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-person-life-event-dmo.md |
 | PersonAcademicCredential DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-personacademiccredential_dmo_mappings.md |
 | PersonAffinity DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-personaffinity_dmo_mappings.md |
+| PersonalizationDecision DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-personalizationdecision_dmo_mappings.md |
+| PersonalizationPoint DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-personalizationpoint_dmo_mappings.md |
+| PersonalizationRecommender DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-personalizationrecommender_dmo_mappings.md |
+| PersonalizationSchema DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-personalizationschema_dmo_mappings.md |
 | PersonCompetency DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-personcompetency_dmo_mappings.md |
 | PersonDisability DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-persondisability_dmo_mappings.md |
 | PersonEducation DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-personeducation_dmo_mappings.md |
@@ -2384,6 +2395,16 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | RelaAnlssNodeRelaEvid DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-relaanlssnoderelaevid_dmo_mappings.md |
 | RelaAnlssSource DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-relaanlsssource_dmo_mappings.md |
 | RelationshipAnalysis DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-relationshipanalysis_dmo_mappings.md |
+| Repossession DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-repossession_dmo_mappings.md |
+| RepossessionActivity DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-repossessionactivity_dmo_mappings.md |
+| RepossessionItem DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-repossessionitem_dmo_mappings.md |
+| RepossessionItemCost DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-repossessionitemcost_dmo_mappings.md |
+| RepossessionItemCostDetail DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-repossessionitemcostdetail_dmo_mappings.md |
+| RepossessionItemUser DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-repossessionitemuser_dmo_mappings.md |
+| RepossessionItemVendor DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-repossessionitemvendor_dmo_mappings.md |
+| RepossessionItmProcHld DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-repossessionitmprochld_dmo_mappings.md |
+| RepossessionNoticeLog DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-repossessionnoticelog_dmo_mappings.md |
+| RepossessionNoticeRule DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-repossessionnoticerule_dmo_mappings.md |
 | ResourceAbsence DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-resourceabsence_dmo_mappings.md |
 | RetailLocationGroup DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-retaillocationgroup_dmo_mappings.md |
 | RetailStore DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-retailstore_dmo_mappings.md |
@@ -2419,6 +2440,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | ServiceCampaignMember DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-servicecampaignmember_dmo_mappings.md |
 | ServiceCampaignMemberItem DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-servicecampaignmemberitem_dmo_mappings.md |
 | ServiceContract DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-servicecontract_dmo_mappings.md |
+| ServicePoint DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-servicepoint_dmo_mappings.md |
 | ServicePresenceStatus DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-servicepresencestatus_dmo_mappings.md |
 | ServiceRequest DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-servicerequest_dmo_mappings.md |
 | ServiceResource DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-serviceresource_dmo_mappings.md |
@@ -2431,11 +2453,11 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Shopping Cart Event Type DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-shopping-cart-event-type-dmo.md |
 | Shopping Cart Product Engagement DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-shopping-cart-product-engagement-dmo.md |
 | Abn Experimentation Cohort Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-abnexperimentationcohortsummarydmo-dmo.md |
-| Abn Experimentation Daily Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-abnexperimentationdailysummarydmo-dmo.md |
-| Abn Experimentation Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-abnexperimentationsummarydmo-dmo.md |
-| Abn Experiment Cohort DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-abnexperimentcohortdmo-dmo.md |
-| Abn Experiment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-abnexperimentdmo-dmo.md |
-| Abn Experiment Log DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-abnexperimentlogdmo-dmo.md |
+| Experimentation Daily Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-abnexperimentationdailysummarydmo-dmo.md |
+| Experimentation Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-abnexperimentationsummarydmo-dmo.md |
+| Experiment Cohort DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-abnexperimentcohortdmo-dmo.md |
+| Experiment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-abnexperimentdmo-dmo.md |
+| Experiment Log DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-abnexperimentlogdmo-dmo.md |
 | Academic Credential DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-academiccredentialdmo-dmo.md |
 | Academic Interest DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-academicinterestdmo-dmo.md |
 | Academic Session Attendance DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-academicsessionattendancedmo-dmo.md |
@@ -2443,7 +2465,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Academic Target DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-academictargetdmo-dmo.md |
 | Academic Term DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-academictermdmo-dmo.md |
 | Academic Term Enrollment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-academictermenrollmentdmo-dmo.md |
-| Academic Term Regstrn Timeline DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-academictermregstrntimelinedmo-dmo.md |
+| Academic Term Registration Timeline DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-academictermregstrntimelinedmo-dmo.md |
 | Academic Year DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-academicyeardmo-dmo.md |
 | Acad Term Enrl Policy Rule Log DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-acadtermenrlpolicyrulelogdmo-dmo.md |
 | Account Contact DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-accountcontactdmo-dmo.md |
@@ -2463,8 +2485,6 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Account Relationship DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-accountrelationshipdmo-dmo.md |
 | Account Role DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-accountroledmo-dmo.md |
 | Account Score Adjustment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-accountscoreadjustmentdmo-dmo.md |
-| Account Tier Assignment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-accounttierassignmentdmo-dmo.md |
-| Account Tier Definition DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-accounttierdefinitiondmo-dmo.md |
 | Actionable List DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-actionablelistdmo-dmo.md |
 | Actionable List Member DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-actionablelistmemberdmo-dmo.md |
 | Action Candidate DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-actioncandidatedmo-dmo.md |
@@ -2495,36 +2515,36 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Adverse Event Outcome DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-adverseeventoutcomedmo-dmo.md |
 | Adverse Event Party DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-adverseeventpartydmo-dmo.md |
 | Adverse Event Resulting Effect DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-adverseeventresultingeffectdmo-dmo.md |
-| Adverse Event Support Info DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-adverseeventsupportinfodmo-dmo.md |
+| Adverse Event Supporting Information DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-adverseeventsupportinfodmo-dmo.md |
 | Affiliation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-affiliationdmo-dmo.md |
 | Age Band Hlth Rsk Adj Fctr DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-agebandhlthrskadjfctrdmo-dmo.md |
 | Agent Service Presence DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-agentservicepresencedmo-dmo.md |
 | Agent Work DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-agentworkdmo-dmo.md |
 | Agent Work Skill DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-agentworkskilldmo-dmo.md |
-| Ai Agent Action DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentactiondmo-dmo.md |
+| AI Agent Action DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentactiondmo-dmo.md |
 | Ai Agent Generative Ai Usage DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentgenerativeaiusagedmo-dmo.md |
-| Ai Agent Interaction DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentinteractiondmo-dmo.md |
-| Ai Agent Interaction Message DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentinteractionmessagedmo-dmo.md |
-| Ai Agent Interaction Step DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentinteractionstepdmo-dmo.md |
+| AI Agent Interaction DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentinteractiondmo-dmo.md |
+| AI Agent Interaction Message DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentinteractionmessagedmo-dmo.md |
+| AI Agent Interaction Step DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentinteractionstepdmo-dmo.md |
 | Ai Agent Message Attachment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentmessageattachmentdmo-dmo.md |
-| Ai Agent Moment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentmomentdmo-dmo.md |
-| Ai Agent Moment Interaction DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentmomentinteractiondmo-dmo.md |
+| AI Agent Moment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentmomentdmo-dmo.md |
+| AI Agent Moment Interaction DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentmomentinteractiondmo-dmo.md |
 | Ai Agent Session Attachment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentsessionattachmentdmo-dmo.md |
-| Ai Agent Session DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentsessiondmo-dmo.md |
+| AI Agent Session DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentsessiondmo-dmo.md |
 | Ai Agent Session Log DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentsessionlogdmo-dmo.md |
-| Ai Agent Session Participant DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentsessionparticipantdmo-dmo.md |
-| Ai Agent Tag Association DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagenttagassociationdmo-dmo.md |
+| AI Agent Session Participant DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentsessionparticipantdmo-dmo.md |
+| AI Agent Tag Association DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagenttagassociationdmo-dmo.md |
 | Ai Agent Tag Assoc Log DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagenttagassoclogdmo-dmo.md |
-| Ai Agent Tag Definition Association DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagenttagdefinitionassociationdmo-dmo.md |
-| Ai Agent Tag Definition DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagenttagdefinitiondmo-dmo.md |
-| Ai Agent Tag DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagenttagdmo-dmo.md |
-| Ai Agent Topic DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagenttopicdmo-dmo.md |
+| AI Agent Tag Definition Association DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagenttagdefinitionassociationdmo-dmo.md |
+| AI Agent Tag Definition DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagenttagdefinitiondmo-dmo.md |
+| AI Agent Tag DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagenttagdmo-dmo.md |
+| AI Agent Topic DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagenttopicdmo-dmo.md |
 | Ai Gateway Req Model Diag DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aigatewayreqmodeldiagdmo-dmo.md |
 | Ai Gateway Req Obj Rec Ctn DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aigatewayreqobjrecctndmo-dmo.md |
 | Ai Gateway Req Obj Rec DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aigatewayreqobjrecdmo-dmo.md |
 | Ai Participant Insight DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiparticipantinsightdmo-dmo.md |
-| Ai Retriever Quality Metric DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-airetrieverqualitymetricdmo-dmo.md |
-| Air Travel Emissions Factor DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-airtravelemissionsfactordmo-dmo.md |
+| AI Retriever Quality Metric DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-airetrieverqualitymetricdmo-dmo.md |
+| Air Travel Emission Factor DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-airtravelemissionsfactordmo-dmo.md |
 | Air Travel Energy Use DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-airtravelenergyusedmo-dmo.md |
 | Allergy Intolerance DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-allergyintolerancedmo-dmo.md |
 | Alternate Payment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-alternatepaymentdmo-dmo.md |
@@ -2532,7 +2552,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Annual Emissions Inventory DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-annualemissionsinventorydmo-dmo.md |
 | Annual Emssn Inventory Extension DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-annualemssninventoryextensiondmo-dmo.md |
 | Annual Emssn Rdctn Target DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-annualemssnrdctntargetdmo-dmo.md |
-| Anti Corruption Initiative Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-anticorruptioninitiativesummarydmo-dmo.md |
+| Anti-Corruption Initiative Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-anticorruptioninitiativesummarydmo-dmo.md |
 | Applicant DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-applicantdmo-dmo.md |
 | Application Decision DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-applicationdecisiondmo-dmo.md |
 | Application DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-applicationdmo-dmo.md |
@@ -2575,6 +2595,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Asset Allocation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-assetallocationdmo-dmo.md |
 | Asset Depreciation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-assetdepreciationdmo-dmo.md |
 | Asset DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-assetdmo-dmo.md |
+| Asset Location DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-assetlocationdmo-dmo.md |
 | Asset Milestone DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-assetmilestonedmo-dmo.md |
 | Asset Operation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-assetoperationdmo-dmo.md |
 | Asset Operation Operator Behavior DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-assetoperationoperatorbehaviordmo-dmo.md |
@@ -2582,7 +2603,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Asset Performance Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-assetperformancesummarydmo-dmo.md |
 | Asset Sales Action DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-assetsalesactiondmo-dmo.md |
 | Asset Service Action DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-assetserviceactiondmo-dmo.md |
-| Asset Service Level Objective Consequence DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-assetservicelevelobjectiveconsequencedmo-dmo.md |
+| Asset Service Level Objective Cnsqnc DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-assetservicelevelobjectiveconsequencedmo-dmo.md |
 | Asset Service Level Objective DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-assetservicelevelobjectivedmo-dmo.md |
 | Asset State Period DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-assetstateperioddmo-dmo.md |
 | Asset Telematics Event DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-assettelematicseventdmo-dmo.md |
@@ -2600,7 +2621,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Attendance Source Type DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-attendancesourcetypedmo-dmo.md |
 | Attribute Definition DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-attributedefinitiondmo-dmo.md |
 | Attribute Value DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-attributevaluedmo-dmo.md |
-| Auth Location Permit Schedule DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-authlocationpermitscheduledmo-dmo.md |
+| Authorized Location Permit Schedule DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-authlocationpermitscheduledmo-dmo.md |
 | Authorization Application Asset DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-authorizationapplicationassetdmo-dmo.md |
 | Authorization Application DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-authorizationapplicationdmo-dmo.md |
 | Authorization Application Place DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-authorizationapplicationplacedmo-dmo.md |
@@ -2609,6 +2630,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Authorization Form DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-authorizationformdmo-dmo.md |
 | Authorization Form Text DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-authorizationformtextdmo-dmo.md |
 | Authorization Tier Definition DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-authorizationtierdefinitiondmo-dmo.md |
+| Authorization Tier Object DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-authorizationtierobjectdmo-dmo.md |
 | Auth Tier Data Use Purpose DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-authtierdatausepurposedmo-dmo.md |
 | Banker DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-bankerdmo-dmo.md |
 | Bank Transfer Tender DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-banktransfertenderdmo-dmo.md |
@@ -2623,7 +2645,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Benefit Disbursement Period DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-benefitdisbursementperioddmo-dmo.md |
 | Benefit DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-benefitdmo-dmo.md |
 | Benefit Item Code DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-benefititemcodedmo-dmo.md |
-| Benefit Prvd Searchable Fld DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-benefitprvdsearchableflddmo-dmo.md |
+| Benefit Provider Searchable Field DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-benefitprvdsearchableflddmo-dmo.md |
 | Benefit Schedule Assignment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-benefitscheduleassignmentdmo-dmo.md |
 | Benefit Schedule DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-benefitscheduledmo-dmo.md |
 | Benefit Session DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-benefitsessiondmo-dmo.md |
@@ -2637,7 +2659,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Billing Schedule Group DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-billingschedulegroupdmo-dmo.md |
 | Billing Schedule Group Relationship DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-billingschedulegrouprelationshipdmo-dmo.md |
 | Billing Treatment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-billingtreatmentdmo-dmo.md |
-| Billing Treatment Item DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-billingtreatmentitemdmo-dmo.md |
+| BillingTreatment Item DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-billingtreatmentitemdmo-dmo.md |
 | Biodiversity Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-biodiversitysummarydmo-dmo.md |
 | Bldg Enrgy Intensity Val DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-bldgenrgyintensityvaldmo-dmo.md |
 | Bldg Size Category DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-bldgsizecategorydmo-dmo.md |
@@ -2669,7 +2691,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Business Type DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-businesstypedmo-dmo.md |
 | Business Unit Chnl Type Rate DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-businessunitchnltyperatedmo-dmo.md |
 | Bus Oper Proc Cmpl Plcy Cl Ver DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-busoperproccmplplcyclverdmo-dmo.md |
-| Bus Reg Auth Type Dependency DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-busregauthtypedependencydmo-dmo.md |
+| Business Reg Auth Type Dependency DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-busregauthtypedependencydmo-dmo.md |
 | Buyer Intent DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-buyerintentdmo-dmo.md |
 | Buying Committee Campaign DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-buyingcommitteecampaigndmo-dmo.md |
 | Buying Committee Content DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-buyingcommitteecontentdmo-dmo.md |
@@ -2688,7 +2710,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Capture Payment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-capturepaymentdmo-dmo.md |
 | Carbon Emission Scope Allocation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-carbonemissionscopeallocationdmo-dmo.md |
 | Card Account DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-cardaccountdmo-dmo.md |
-| Care Barrier2 DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-carebarrier2dmo-dmo.md |
+| Care Barrier DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-carebarrier2dmo-dmo.md |
 | Care Barrier Determinant DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-carebarrierdeterminantdmo-dmo.md |
 | Care Barrier Type DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-carebarriertypedmo-dmo.md |
 | Care Determinant DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-caredeterminantdmo-dmo.md |
@@ -2699,7 +2721,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Care Observation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-careobservationdmo-dmo.md |
 | Care Observation Identifier DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-careobservationidentifierdmo-dmo.md |
 | Care Observation Item DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-careobservationitemdmo-dmo.md |
-| Care Pgm Prov Healthcare Provider DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-carepgmprovhealthcareproviderdmo-dmo.md |
+| Care Program Healthcare Provider DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-carepgmprovhealthcareproviderdmo-dmo.md |
 | Care Plan Activity Detail DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-careplanactivitydetaildmo-dmo.md |
 | Care Plan Activity DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-careplanactivitydmo-dmo.md |
 | Care Plan Detail DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-careplandetaildmo-dmo.md |
@@ -2854,6 +2876,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Code Set DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-codesetdmo-dmo.md |
 | Collection Plan DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-collectionplandmo-dmo.md |
 | Collection Plan Item DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-collectionplanitemdmo-dmo.md |
+| Collection Plan Milestone DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-collectionplanmilestonedmo-dmo.md |
 | Collection Plan Reason DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-collectionplanreasondmo-dmo.md |
 | Commodity Usage DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-commodityusagedmo-dmo.md |
 | Communication Subscription Channel Type DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-communicationsubscriptionchanneltypedmo-dmo.md |
@@ -2874,7 +2897,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Compliance Evidence Artifact DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-complianceevidenceartifactdmo-dmo.md |
 | Compliance Evidence Request DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-complianceevidencerequestdmo-dmo.md |
 | Compliance Evidence Request Artifact DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-complianceevidrqstartifactdmo-dmo.md |
-| Compliance Plcy Cmpl Cl Ver DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-complianceplcycmplclverdmo-dmo.md |
+| Compliance Policy Cmpl Clause Ver DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-complianceplcycmplclverdmo-dmo.md |
 | Compliance Policy Clause DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-compliancepolicyclausedmo-dmo.md |
 | Compliance Policy Clause Version DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-compliancepolicyclauseversiondmo-dmo.md |
 | Compliance Policy Communication DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-compliancepolicycommsdmo-dmo.md |
@@ -2915,12 +2938,12 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Content Taxonomy Term Rel Type DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-contenttaxonomytermreltypedmo-dmo.md |
 | Contract DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-contractdmo-dmo.md |
 | Contract Document Version DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-contractdocumentversiondmo-dmo.md |
-| Contract Doc Ver Content Doc DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-contractdocvercontentdocdmo-dmo.md |
+| Contract Doc Version Content Doc DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-contractdocvercontentdocdmo-dmo.md |
 | Contract Line DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-contractlinedmo-dmo.md |
 | Conv Billing Outcome Ptcp Agent DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-convbillingoutcomeptcpagentdmo-dmo.md |
 | Conv Channel Engagement Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-convchannelengagementsummarydmo-dmo.md |
-| Conv Channel Engmt Summary Subject DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-convchannelengmtsummarysubjectdmo-dmo.md |
-| Conv Chnl Engmt Summary Ptcp DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-convchnlengmtsummaryptcpdmo-dmo.md |
+| Conv Channel Engagement Summary Subject DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-convchannelengmtsummarysubjectdmo-dmo.md |
+| Conv Chnl Engmt Summary Participant DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-convchnlengmtsummaryptcpdmo-dmo.md |
 | Conversation Billing Outcome DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-conversationbillingoutcomedmo-dmo.md |
 | Conversation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-conversationdmo-dmo.md |
 | Conversation Entry DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-conversationentrydmo-dmo.md |
@@ -2928,7 +2951,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Conversation Reason Category DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-conversationreasoncategorydmo-dmo.md |
 | Conversation Reason DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-conversationreasondmo-dmo.md |
 | Conversion Engagement Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-conversionengagementsummarydmo-dmo.md |
-| Conv Reason Report Definition DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-convreasonreportdefinitiondmo-dmo.md |
+| Conversation Reason Report Definition DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-convreasonreportdefinitiondmo-dmo.md |
 | Conv Reason Report Segment Def DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-convreasonreportsegmentdefdmo-dmo.md |
 | Cost Book DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-costbookdmo-dmo.md |
 | Cost Book Entry DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-costbookentrydmo-dmo.md |
@@ -2940,13 +2963,13 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Course Offering DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-courseofferingdmo-dmo.md |
 | Course Offering Participant DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-courseofferingparticipantdmo-dmo.md |
 | Course Offering Participation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-courseofferingparticipationdmo-dmo.md |
-| Course Offering Ptcp Result DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-courseofferingptcpresultdmo-dmo.md |
+| Course Offering Participant Result DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-courseofferingptcpresultdmo-dmo.md |
 | Course Offering Relationship DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-courseofferingrelationshipdmo-dmo.md |
 | Course Offering Rgstr Timeline DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-courseofferingrgstrtimelinedmo-dmo.md |
 | Course Offering Rubric DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-courseofferingrubricdmo-dmo.md |
 | Course Offering Schedule DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-courseofferingscheduledmo-dmo.md |
-| Course Offering Schedule Tmpl DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-courseofferingscheduletmpldmo-dmo.md |
-| Course Ofr Ptcp Activity Grade DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-courseofrptcpactivitygradedmo-dmo.md |
+| Course Offering Schedule Template DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-courseofferingscheduletmpldmo-dmo.md |
+| Course Offering Ptcp Activity Grade DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-courseofrptcpactivitygradedmo-dmo.md |
 | Coverage Benefit DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-coveragebenefitdmo-dmo.md |
 | Coverage Benefit Item DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-coveragebenefititemdmo-dmo.md |
 | Coverage Benefit Item Limit DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-coveragebenefititemlimitdmo-dmo.md |
@@ -2977,10 +3000,10 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Data Use Purpose DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-datausepurposedmo-dmo.md |
 | Dcsn Optimization Option Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-dcsnoptimizationoptionsummarydmo-dmo.md |
 | Dcsn Optimization Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-dcsnoptimizationsummarydmo-dmo.md |
-| Dedup Engmt Anlss Text Insight Assoc DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-dedupengmtanlsstextinsightassocdmo-dmo.md |
-| Dedup Engmt Anlss Text Insight DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-dedupengmtanlsstextinsightdmo-dmo.md |
+| Dedup Engagement Anlss Txt Insight Assoc DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-dedupengmtanlsstextinsightassocdmo-dmo.md |
+| Dedup Engagement Analysis Text Insight DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-dedupengmtanlsstextinsightdmo-dmo.md |
 | Delivery Engagement Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-deliveryengagementsummarydmo-dmo.md |
-| Delivery Verification Engmt Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-deliveryverificationengmtsummarydmo-dmo.md |
+| Delivery Verification Engagement Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-deliveryverificationengmtsummarydmo-dmo.md |
 | Deposit Account DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-depositaccountdmo-dmo.md |
 | Depreciation Plan DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-depreciationplandmo-dmo.md |
 | Device Application Engagement DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-deviceapplicationengagementdmo-dmo.md |
@@ -3022,7 +3045,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Education Application DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-educationapplicationdmo-dmo.md |
 | Educ Institution Offering DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-educinstitutionofferingdmo-dmo.md |
 | Educ Inst Searchable Profile DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-educinstsearchableprofiledmo-dmo.md |
-| Electricity Emissions Factor Set DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-electricityemissionsfactorsetdmo-dmo.md |
+| Electricity Emission Factor Set DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-electricityemissionsfactorsetdmo-dmo.md |
 | Electr Lifecycl Emssn Fctr Set DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-electrlifecyclemssnfctrsetdmo-dmo.md |
 | Electronic Media DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-electronicmediadmo-dmo.md |
 | Email Content DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-emailcontentdmo-dmo.md |
@@ -3077,11 +3100,12 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Enterprise User Activity DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-enterpriseuseractivitydmo-dmo.md |
 | Enterprise User Activity Ptcp DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-enterpriseuseractivityptcpdmo-dmo.md |
 | Standard DMOs | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-entity-interface-dmos-introduction.md |
-| Entp User DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-entpuserdmo-dmo.md |
-| Entp User Email DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-entpuseremaildmo-dmo.md |
-| Entp User Identification DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-entpuseridentificationdmo-dmo.md |
+| Enterprise User DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-entpuserdmo-dmo.md |
+| Enterprise User Email DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-entpuseremaildmo-dmo.md |
+| Enterprise User Identification DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-entpuseridentificationdmo-dmo.md |
 | Environmental Risk DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-environmentalriskdmo-dmo.md |
 | Error Engagement DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-errorengagementdmo-dmo.md |
+| Estimated Expense DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-estimatedexpensedmo-dmo.md |
 | Estmt Energy Use Criteria DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-estmtenergyusecriteriadmo-dmo.md |
 | Estmt Energy Use Job Run DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-estmtenergyusejobrundmo-dmo.md |
 | Event Management Participant Type DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-eventmanagementparticipanttypedmo-dmo.md |
@@ -3094,6 +3118,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Event Mgmt Status DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-eventmgmtstatusdmo-dmo.md |
 | Event Plan DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-eventplandmo-dmo.md |
 | Examination DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-examinationdmo-dmo.md |
+| Expense DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-expensedmo-dmo.md |
 | Expense Type DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-expensetypedmo-dmo.md |
 | Expert DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-expertdmo-dmo.md |
 | External Assessment Definition DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-externalassessmentdefinitiondmo-dmo.md |
@@ -3126,7 +3151,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Financial Security DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-financialsecuritydmo-dmo.md |
 | Fincl Acct Asset Und Mgmt Snpsht DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-finclacctassetundmgmtsnpshtdmo-dmo.md |
 | Financial Account Custodian Advisor DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-finclacctcustodianadvisordmo-dmo.md |
-| Financial Asset Portfolio Target Allocation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-finclassetportfoliotargetallocationdmo-dmo.md |
+| Financial Asset Portfolio Tgt Allocation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-finclassetportfoliotargetallocationdmo-dmo.md |
 | Financial Holding Closed Position DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-finclholdingclosedpositiondmo-dmo.md |
 | Fiscal Calendar DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-fiscalcalendardmo-dmo.md |
 | Fld Svc Obj Chg DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-fldsvcobjchgdmo-dmo.md |
@@ -3153,8 +3178,8 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Freight Hauling Emission Factor DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-freighthaulingemissionfactordmo-dmo.md |
 | Freight Hauling Energy Use DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-freighthaulingenergyusedmo-dmo.md |
 | Fulfillment Order DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-fulfillmentorderdmo-dmo.md |
-| Fulfillment Order Price Adj DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-fulfillmentorderpriceadjdmo-dmo.md |
-| Fulfillment Order Price Adj Tax DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-fulfillmentorderpriceadjtaxdmo-dmo.md |
+| Fulfillment Order Price Adjustment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-fulfillmentorderpriceadjdmo-dmo.md |
+| Fulfillment Order Price Adjustment Tax DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-fulfillmentorderpriceadjtaxdmo-dmo.md |
 | Fulfillment Order Product DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-fulfillmentorderproductdmo-dmo.md |
 | Fulfillment Order Product Price Adj DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-fulfillmentorderproductpriceadjdmo-dmo.md |
 | Fulfillment Order Product Tax DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-fulfillmentorderproducttaxdmo-dmo.md |
@@ -3195,7 +3220,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Gift Actuarial Entry DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-giftactuarialentrydmo-dmo.md |
 | Gift Agreement DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-giftagreementdmo-dmo.md |
 | Gift Batch DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-giftbatchdmo-dmo.md |
-| Gift Cmt Change Attr Log DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-giftcmtchangeattrlogdmo-dmo.md |
+| Gift Commitment Change Attribution Log DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-giftcmtchangeattrlogdmo-dmo.md |
 | Gift Commitment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-giftcommitmentdmo-dmo.md |
 | Gift Commitment Schedule DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-giftcommitmentscheduledmo-dmo.md |
 | Gift Default Designation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-giftdefaultdesignationdmo-dmo.md |
@@ -3206,7 +3231,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Gift Stewardship Activity DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-giftstewardshipactivitydmo-dmo.md |
 | Gift Stewardship DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-giftstewardshipdmo-dmo.md |
 | Gift Transaction Designation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-gifttransactiondesignationdmo-dmo.md |
-| Gift Transaction DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-gifttransactiondmo-dmo.md |
+| GiftTransaction DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-gifttransactiondmo-dmo.md |
 | Gift Value Forecast DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-giftvalueforecastdmo-dmo.md |
 | Glb Tenant Consumption Insights DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-glbtenantconsumptioninsightsdmo-dmo.md |
 | Glb Tenant Entitlement Transaction DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-glbtenantentitlementtransactiondmo-dmo.md |
@@ -3215,7 +3240,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Goal Definition DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-goaldefinitiondmo-dmo.md |
 | Goal Definition Product DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-goaldefinitionproductdmo-dmo.md |
 | Goods Product DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-goodsproductdmo-dmo.md |
-| Gov Financial Assistance Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-govfinancialassistancesummarydmo-dmo.md |
+| Government Financial Assistance Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-govfinancialassistancesummarydmo-dmo.md |
 | Ground Travel Emission Factor DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-groundtravelemissionfactordmo-dmo.md |
 | Ground Travel Energy Use DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-groundtravelenergyusedmo-dmo.md |
 | Harmonized Content Association DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-harmonizedcontentassociationdmo-dmo.md |
@@ -3242,7 +3267,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Healthcare Service Detail DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-healthcareservicedetaildmo-dmo.md |
 | Healthcare Service DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-healthcareservicedmo-dmo.md |
 | Healthcare Taxonomy DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-healthcaretaxonomydmo-dmo.md |
-| Health Cond Definition Relationship DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-healthconddefinitionrelationshipdmo-dmo.md |
+| Health Condition Definition Relationship DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-healthconddefinitionrelationshipdmo-dmo.md |
 | Health Condition Definition DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-healthconditiondefinitiondmo-dmo.md |
 | Health Risk Eval Detail DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-healthriskevaldetaildmo-dmo.md |
 | Health Risk Evaluation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-healthriskevaluationdmo-dmo.md |
@@ -3298,7 +3323,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Involvement Group DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-involvementgroupdmo-dmo.md |
 | Involvement Group Member DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-involvementgroupmemberdmo-dmo.md |
 | Issue Relationship DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-issuerelationshipdmo-dmo.md |
-| Job Appln Searchable Field DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-jobapplnsearchablefielddmo-dmo.md |
+| Job Application Searchable Field DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-jobapplnsearchablefielddmo-dmo.md |
 | Job Position Assignment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-jobpositionassignmentdmo-dmo.md |
 | Job Position DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-jobpositiondmo-dmo.md |
 | Job Position Pay Grade DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-jobpositionpaygradedmo-dmo.md |
@@ -3328,7 +3353,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Learner Profile DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-learnerprofiledmo-dmo.md |
 | Learner Program DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-learnerprogramdmo-dmo.md |
 | Learner Program Requirement DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-learnerprogramrequirementdmo-dmo.md |
-| Learner Program Rqmt Progress DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-learnerprogramrqmtprogressdmo-dmo.md |
+| Learner Program Requirement Progress DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-learnerprogramrqmtprogressdmo-dmo.md |
 | Learning Achievement DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-learningachievementdmo-dmo.md |
 | Learning Course DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-learningcoursedmo-dmo.md |
 | Learning DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-learningdmo-dmo.md |
@@ -3338,10 +3363,10 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Learning Outcome Item DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-learningoutcomeitemdmo-dmo.md |
 | Learning Pathway Template DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-learningpathwaytemplatedmo-dmo.md |
 | Learning Pathway Template Item DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-learningpathwaytemplateitemdmo-dmo.md |
-| Learning Pathway Tmpl Pgm Plan DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-learningpathwaytmplpgmplandmo-dmo.md |
+| Learning Pathway Template Program Plan DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-learningpathwaytmplpgmplandmo-dmo.md |
 | Learning Program DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-learningprogramdmo-dmo.md |
 | Learning Program Plan DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-learningprogramplandmo-dmo.md |
-| Learning Program Plan Rqmt DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-learningprogramplanrqmtdmo-dmo.md |
+| Learning Program Plan Requirement DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-learningprogramplanrqmtdmo-dmo.md |
 | Legal Entity Accounting Period DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-legalentyaccountingperioddmo-dmo.md |
 | Legal Entity DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-legalentydmo-dmo.md |
 | Life Science Drug Distribution Data DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-lifesciencedrugdistributiondatadmo-dmo.md |
@@ -3353,12 +3378,12 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Location DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-locationdmo-dmo.md |
 | Location Group Assignment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-locationgroupassignmentdmo-dmo.md |
 | Location Group DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-locationgroupdmo-dmo.md |
-| Location Group Prod Excl Chg DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-locationgroupprodexclchgdmo-dmo.md |
-| Location Group Prod Inv Chg DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-locationgroupprodinvchgdmo-dmo.md |
+| Location Group Product Exclusion Change DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-locationgroupprodexclchgdmo-dmo.md |
+| Location Group Product Inventory Change DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-locationgroupprodinvchgdmo-dmo.md |
 | Location Product Inventory Change DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-locationproductinventorychangedmo-dmo.md |
 | Location Product Inventory DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-locationproductinventorydmo-dmo.md |
 | Location Shipping Carrier Method DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-locationshippingcarriermethoddmo-dmo.md |
-| Loyalty Aggregated Point Expiration Ledger DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-loyaltyaggregatedptexpirationledgerdmo-dmo.md |
+| Loyalty Aggr Point Expiration Ledger DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-loyaltyaggregatedptexpirationledgerdmo-dmo.md |
 | Loyalty Benefit DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-loyaltybenefitdmo-dmo.md |
 | Loyalty Benefit Type DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-loyaltybenefittypedmo-dmo.md |
 | Loyalty Journal Subtype DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-loyaltyjournalsubtypedmo-dmo.md |
@@ -3376,8 +3401,8 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Loyalty Program Currency Tier DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-loyaltyprogramcurrencytierdmo-dmo.md |
 | Loyalty Program DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-loyaltyprogramdmo-dmo.md |
 | Loyalty Program Engagement Attribute DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-loyaltyprogramengagementattributedmo-dmo.md |
-| Loyalty Program Engmt Attribute Promotion DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-loyaltyprogramengmtattributepromotiondmo-dmo.md |
-| Loyalty Program Group Member Relationship DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-loyaltyprogramgroupmemberrelationshipdmo-dmo.md |
+| Loyalty Pgm Engmt Attribute Promotion DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-loyaltyprogramengmtattributepromotiondmo-dmo.md |
+| Loyalty Pgm Group Member Relationship DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-loyaltyprogramgroupmemberrelationshipdmo-dmo.md |
 | Loyalty Program Member Attribute Value DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-loyaltyprogrammemberattributevaluedmo-dmo.md |
 | Loyalty Program Member Badge DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-loyaltyprogrammemberbadgedmo-dmo.md |
 | Loyalty Program Member Case DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-loyaltyprogrammembercasedmo-dmo.md |
@@ -3426,7 +3451,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Market Segment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-marketsegmentdmo-dmo.md |
 | Master Product DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-masterproductdmo-dmo.md |
 | Materiality Topic DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-materialitytopicdmo-dmo.md |
-| Materiality Topic Doc Clause Set DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-materialitytopicdocclausesetdmo-dmo.md |
+| Materiality Topic Document Clause Set DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-materialitytopicdocclausesetdmo-dmo.md |
 | Materiality Topic Reference DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-materialitytopicreferencedmo-dmo.md |
 | Meal Card Activity DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-mealcardactivitydmo-dmo.md |
 | Measure Definition DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-measuredefinitiondmo-dmo.md |
@@ -3447,7 +3472,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Message Template DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-messagetemplatedmo-dmo.md |
 | Messaging Session DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-messagingsessiondmo-dmo.md |
 | Metadata Search Record DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-metadatasearchrecorddmo-dmo.md |
-| Mgd Event Sess Subject Assignment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-mgdeventsesssubjectassignmentdmo-dmo.md |
+| Managed Event Session Subject Assignment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-mgdeventsesssubjectassignmentdmo-dmo.md |
 | Mkt Expert Channel Rate Table DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-mktexpertchannelratetabledmo-dmo.md |
 | Monthly Usage Trkg Data Gap DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-monthlyusagetrkgdatagapdmo-dmo.md |
 | Network DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-networkdmo-dmo.md |
@@ -3486,7 +3511,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Organization Incident Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-organizationincidentsummarydmo-dmo.md |
 | Org Payment Prac Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-orgpaymentpracsummarydmo-dmo.md |
 | Other Emission Factor Set Item DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-otheremissionfactorsetitemdmo-dmo.md |
-| Other Emissions Factor Set DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-otheremissionsfactorsetdmo-dmo.md |
+| Other Emission Factor Set DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-otheremissionsfactorsetdmo-dmo.md |
 | Othr Lifecycl Emssn Fctr Set DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-othrlifecyclemssnfctrsetdmo-dmo.md |
 | Othr Lifecycl Emssn Fctr Set Item DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-othrlifecyclemssnfctrsetitemdmo-dmo.md |
 | Outcome Activity DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-outcomeactivitydmo-dmo.md |
@@ -3528,9 +3553,9 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Patient Immunization Identifier DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-patientimmunizationidentifierdmo-dmo.md |
 | Patient Medical Procedure Detail DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-patientmedicalproceduredetaildmo-dmo.md |
 | Patient Medical Procedure DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-patientmedicalproceduredmo-dmo.md |
-| Patient Medical Procedure Identifier DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-patientmedicalprocedureidentifierdmo-dmo.md |
+| PatientMedicalProcedureIdentifier DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-patientmedicalprocedureidentifierdmo-dmo.md |
 | Patient Medication Administration DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-patientmedicationadministrationdmo-dmo.md |
-| Patient Medication Administration Dtl DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-patientmedicationadministrationdtldmo-dmo.md |
+| Patient Medication Administration Detail DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-patientmedicationadministrationdtldmo-dmo.md |
 | Patient Medication Dispense DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-patientmedicationdispensedmo-dmo.md |
 | Patient Medication Dosage DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-patientmedicationdosagedmo-dmo.md |
 | Patient Medication Reconciliation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-patientmedicationreconciliationdmo-dmo.md |
@@ -3539,7 +3564,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Patient Medication Statement DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-patientmedicationstatementdmo-dmo.md |
 | Patient Medication Statement Identifier DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-patientmedicationstatementidentifierdmo-dmo.md |
 | Patient Med Recile Stmt Recommendation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-patientmedrecilestmtrecommendationdmo-dmo.md |
-| Patient Med Recon Recommendation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-patientmedreconrecommendationdmo-dmo.md |
+| Patient Medication Recon Recommendation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-patientmedreconrecommendationdmo-dmo.md |
 | Patient Registered Device DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-patientregistereddevicedmo-dmo.md |
 | Patient Registered Device Identifier DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-patientregistereddeviceidentifierdmo-dmo.md |
 | Pay Grade DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-paygradedmo-dmo.md |
@@ -3576,7 +3601,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Person Location Availability DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-personlocationavailabilitydmo-dmo.md |
 | Person Name DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-personnamedmo-dmo.md |
 | Person Public Profile DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-personpublicprofiledmo-dmo.md |
-| Person Public Profile Pref Set DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-personpublicprofileprefsetdmo-dmo.md |
+| Person Public Profile Preference Set DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-personpublicprofileprefsetdmo-dmo.md |
 | Person Skill DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-personskilldmo-dmo.md |
 | Person Trait DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-persontraitdmo-dmo.md |
 | Petitionable Outcome DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-petitionableoutcomedmo-dmo.md |
@@ -3683,7 +3708,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Provider Activity Measure Type DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-provideractivitymeasuretypedmo-dmo.md |
 | Provider Offering DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-providerofferingdmo-dmo.md |
 | Provider Visit DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-providervisitdmo-dmo.md |
-| Provider Visit Dtl Product Message DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-providervisitdtlproductmessagedmo-dmo.md |
+| Provider Visit Detailing Product Message DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-providervisitdtlproductmessagedmo-dmo.md |
 | Provider Visit Marketing Item DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-providervisitmarketingitemdmo-dmo.md |
 | Provider Visit Product Detailing DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-providervisitproductdetailingdmo-dmo.md |
 | Provider Visit Product Discussion DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-providervisitproductdiscussiondmo-dmo.md |
@@ -3733,7 +3758,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Regulatory Authority DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-regulatoryauthoritydmo-dmo.md |
 | Regulatory Authorization Type DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-regulatoryauthorizationtypedmo-dmo.md |
 | Regulatory Auth Type Product DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-regulatoryauthtypeproductdmo-dmo.md |
-| Regulatory Code Assessment Ind DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-regulatorycodeassessmentinddmo-dmo.md |
+| Regulatory Code Assessment Indicator DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-regulatorycodeassessmentinddmo-dmo.md |
 | Regulatory Code DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-regulatorycodedmo-dmo.md |
 | Regulatory Code Relation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-regulatorycoderelationdmo-dmo.md |
 | Regulatory Code Violation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-regulatorycodeviolationdmo-dmo.md |
@@ -3744,9 +3769,19 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Rela Anlss Node Rela Evid DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-relaanlssnoderelaeviddmo-dmo.md |
 | Rela Anlss Source DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-relaanlsssourcedmo-dmo.md |
 | Relationship Analysis DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-relationshipanalysisdmo-dmo.md |
-| Rental Car Emissions Factor DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-rentalcaremissionsfactordmo-dmo.md |
+| Rental Car Emission Factor DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-rentalcaremissionsfactordmo-dmo.md |
 | Rental Car Energy Use DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-rentalcarenergyusedmo-dmo.md |
 | Reported Consumption DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-reportedconsumptiondmo-dmo.md |
+| Repossession Activity DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-repossessionactivitydmo-dmo.md |
+| Repossession DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-repossessiondmo-dmo.md |
+| Repossession Item Cost Detail DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-repossessionitemcostdetaildmo-dmo.md |
+| Repossession Item Cost DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-repossessionitemcostdmo-dmo.md |
+| Repossession Item DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-repossessionitemdmo-dmo.md |
+| Repossession Item User DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-repossessionitemuserdmo-dmo.md |
+| Repossession Item Vendor DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-repossessionitemvendordmo-dmo.md |
+| Repossession Itm Proc Hld DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-repossessionitmprochlddmo-dmo.md |
+| Repossession Notice Log DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-repossessionnoticelogdmo-dmo.md |
+| Repossession Notice Rule DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-repossessionnoticeruledmo-dmo.md |
 | Required Document DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-requireddocumentdmo-dmo.md |
 | Required Product DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-requiredproductdmo-dmo.md |
 | Required Skill DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-requiredskilldmo-dmo.md |
@@ -3764,12 +3799,12 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Retail Store Product DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-retailstoreproductdmo-dmo.md |
 | Retail Visit KPI DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-retailvisitkpidmo-dmo.md |
 | Return Order DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-returnorderdmo-dmo.md |
-| Return Order Prod Price Adj DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-returnorderprodpriceadjdmo-dmo.md |
+| Return Order Product Price Adjustment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-returnorderprodpriceadjdmo-dmo.md |
 | Return Order Product DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-returnorderproductdmo-dmo.md |
 | Return Order Product Tax DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-returnorderproducttaxdmo-dmo.md |
 | Revenue Transaction Error Log DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-revenuetransactionerrorlogdmo-dmo.md |
-| Rglty Code Reg Clause Ver DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-rgltycoderegclauseverdmo-dmo.md |
-| Rglty Code Viol Reg Cl Ver DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-rgltycodeviolregclverdmo-dmo.md |
+| Regulatory Code Regulation Clause Ver DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-rgltycoderegclauseverdmo-dmo.md |
+| Regulatory Code Viol Reg Clause Ver DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-rgltycodeviolregclverdmo-dmo.md |
 | Risk Cmpl Ctl Version DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-riskcmplctlversiondmo-dmo.md |
 | Risk DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-riskdmo-dmo.md |
 | Risk Eval Survey Invt DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-riskevalsurveyinvtdmo-dmo.md |
@@ -3793,18 +3828,18 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Sales Order Product Price Adjustment Tax DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-salesorderproductpriceadjustmenttaxdmo-dmo.md |
 | Sales Order Product Tax DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-salesorderproducttaxdmo-dmo.md |
 | Sales Store DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-salesstoredmo-dmo.md |
-| Sales Territory Account Prodt Msg Score DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-salesterritoryaccountprodtmsgscoredmo-dmo.md |
-| Sales Territory Account Rcmd Action DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-salesterritoryaccountrcmdactiondmo-dmo.md |
+| Sales Territory Acct Prodt Message Score DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-salesterritoryaccountprodtmsgscoredmo-dmo.md |
+| Sales Territory Acct Recommended Action DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-salesterritoryaccountrcmdactiondmo-dmo.md |
 | Sales Territory Account Score DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-salesterritoryaccountscoredmo-dmo.md |
 | Sales Territory Business Plan DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-salesterritorybusinessplandmo-dmo.md |
 | Sales Territory DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-salesterritorydmo-dmo.md |
 | Sales Transaction Fulfillment Request DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-salestransactionfulfillmentrequestdmo-dmo.md |
 | Saved Application Reference DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-savedapplicationreferencedmo-dmo.md |
 | Scheduling Policy DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-schedulingpolicydmo-dmo.md |
-| Scope3Carbon Footprint DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-scope3carbonfootprintdmo-dmo.md |
-| Scope3Emissions Source DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-scope3emissionssourcedmo-dmo.md |
-| Scope3Procurement Item DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-scope3procurementitemdmo-dmo.md |
-| Scope3Procurement Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-scope3procurementsummarydmo-dmo.md |
+| Scope 3 Carbon Footprint DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-scope3carbonfootprintdmo-dmo.md |
+| Scope 3 Emissions Source DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-scope3emissionssourcedmo-dmo.md |
+| Scope 3 Procurement Item DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-scope3procurementitemdmo-dmo.md |
+| Scope 3 Procurement Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-scope3procurementsummarydmo-dmo.md |
 | Searchable Reference Document DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-searchablereferencedocumentdmo-dmo.md |
 | Search Resource DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-searchresourcedmo-dmo.md |
 | Service Appointment Assigned Resource DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-serviceappointmentassignedresourcedmo-dmo.md |
@@ -3864,11 +3899,11 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | State Province DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-stateprovincedmo-dmo.md |
 | Stationary Asset Carbon Footprint DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-stationaryassetcarbonfootprintdmo-dmo.md |
 | Stationary Asset Energy Use DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-stationaryassetenergyusedmo-dmo.md |
-| Stationary Asset Env Source DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-stationaryassetenvsourcedmo-dmo.md |
+| Stationary Asset Environmental Source DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-stationaryassetenvsourcedmo-dmo.md |
 | Stationary Asset Water Activity DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-stationaryassetwateractivitydmo-dmo.md |
 | Stnry Asset Annual Fact DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-stnryassetannualfactdmo-dmo.md |
 | Stnry Asset Crbn Ftprnt Itm DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-stnryassetcrbnftprntitmdmo-dmo.md |
-| Stnry Asset Water Footprint DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-stnryassetwaterfootprintdmo-dmo.md |
+| Stationary Asset Water Footprint DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-stnryassetwaterfootprintdmo-dmo.md |
 | Stnry Asset Wtr Ftprnt Itm DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-stnryassetwtrftprntitmdmo-dmo.md |
 | Store Product Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-storeproductsummarydmo-dmo.md |
 | Subject Assignment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-subjectassignmentdmo-dmo.md |
@@ -3904,6 +3939,8 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Svc Schd Request Terr Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-svcschdrequestterrsummarydmo-dmo.md |
 | Task DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taskdmo-dmo.md |
 | Tax Account DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxaccountdmo-dmo.md |
+| Tax Account Notice DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxaccountnoticedmo-dmo.md |
+| Tax Account Notice Document DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxaccountnoticedocumentdmo-dmo.md |
 | Tax Disclosure Summary DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxdisclosuresummarydmo-dmo.md |
 | Tax DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxdmo-dmo.md |
 | Tax Document DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxdocumentdmo-dmo.md |
@@ -3912,6 +3949,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Tax Filing Assessment Document DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxfilingassessmentdocumentdmo-dmo.md |
 | Tax Filing Assessment Line Item DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxfilingassessmentlineitemdmo-dmo.md |
 | Tax Filing Assessment Line Itm Doc DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxfilingassessmentlineitmdocdmo-dmo.md |
+| Tax Filing Contact Point DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxfilingcontactpointdmo-dmo.md |
 | Tax Filing DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxfilingdmo-dmo.md |
 | Tax Filing Document DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxfilingdocumentdmo-dmo.md |
 | Tax Filing Line Item DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxfilinglineitemdmo-dmo.md |
@@ -3919,6 +3957,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Tax Filing Participant DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxfilingparticipantdmo-dmo.md |
 | Tax Filing Payment Instrument DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxfilingpaymentinstrumentdmo-dmo.md |
 | Tax Filing Tax Account DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxfilingtaxaccountdmo-dmo.md |
+| Tax Notice Code DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxnoticecodedmo-dmo.md |
 | Tax Payment DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxpaymentdmo-dmo.md |
 | Tax Policy DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxpolicydmo-dmo.md |
 | Tax Refund DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-taxrefunddmo-dmo.md |
@@ -3937,12 +3976,12 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Tracked Communication Detail DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-trackedcommunicationdetaildmo-dmo.md |
 | Tracked Communication DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-trackedcommunicationdmo-dmo.md |
 | Trade In Tender DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-tradeintenderdmo-dmo.md |
-| Unitof Measure Conversion DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-unitofmeasureconversiondmo-dmo.md |
-| Unit Of Measure DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-unitofmeasuredmo-dmo.md |
+| Unit of Measure Conversion DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-unitofmeasureconversiondmo-dmo.md |
+| Unit of Measure DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-unitofmeasuredmo-dmo.md |
 | User DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-userdmo-dmo.md |
 | User Group DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-usergroupdmo-dmo.md |
 | User Group Relationship DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-usergrouprelationshipdmo-dmo.md |
-| User Role DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-userroledmo-dmo.md |
+| Role DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-userroledmo-dmo.md |
 | User Sales Territory DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-usersalesterritorydmo-dmo.md |
 | Vehicle Asset Carbon Footprint DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-vehicleassetcarbonfootprintdmo-dmo.md |
 | Vehicle Asset Emissions Source DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-vehicleassetemissionssourcedmo-dmo.md |
@@ -3957,7 +3996,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Vetting Evaluation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-vettingevaluationdmo-dmo.md |
 | Video Call DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-videocalldmo-dmo.md |
 | Violation Enforcement Action DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-violationenforcementactiondmo-dmo.md |
-| Violation Type Assessment Ind DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-violationtypeassessmentinddmo-dmo.md |
+| Violation Type Assessment Indicator DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-violationtypeassessmentinddmo-dmo.md |
 | Violation Type DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-violationtypedmo-dmo.md |
 | Violation Type Relation DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-violationtyperelationdmo-dmo.md |
 | Visit DMO | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-visitdmo-dmo.md |
@@ -4089,7 +4128,6 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | WorkOrderLineItem DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-workorderlineitem_dmo_mappings.md |
 | WorkType DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-worktype_dmo_mappings.md |
 | WorkTypeGroupRole DLO Mappings | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-worktypegrouprole_dmo_mappings.md |
-| CMS Advanced | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/CmsAdvanced.md |
 | CMS Base | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/CmsBase.md |
 | CMS Base Search | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/CmsBaseSearch.md |
 | Standard Data Bundles | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/file-based-data-kits-introduction.md |
@@ -4097,7 +4135,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Messaging Consent Objects | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/MessagingConsentObjects.md |
 | Service | https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/ServiceDK.md |
 
-## Agentforce Coworker (29 pages)
+## Agentforce Coworker (31 pages)
 
 | Page | URL |
 |---|---|
@@ -4112,6 +4150,7 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Billing Considerations for Agentforce Coworker | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-billing-considerations.md |
 | Make Data 360 Objects Searchable in Agentforce Coworker | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-connect-to-existing-data-sources.md |
 | Make Slack Searchable in Agentforce Coworker | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-connect-to-new-data-sources.md |
+| Create a Quick Page with Agentforce Coworker (Beta) | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-create-quick-page.md |
 | Search Agent and Agent Delegation in Agentforce Coworker | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-customize-delegate-agent.md |
 | Customize the Agentforce Coworker Results and Layout | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-customize-results-and-layout.md |
 | Agentforce Coworker Data in Data 360 | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-data.md |
@@ -4122,10 +4161,11 @@ Full link list (4282 pages across 12 sections), extracted programmatically.
 | Agentforce Coworker Limits and Guidelines | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-limits-and-guidelines.md |
 | Add or Remove User Access in Agentforce Coworker | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-manage-user-access.md |
 | Monitor Agentforce Coworker Credit Consumption in Digital Wallet | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-monitor-consumption.md |
-| Search or Create and Modify Records with Agentforce Coworker | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-navigate-the-experience.md |
+| Search, Ask, and Update Records with Agentforce Coworker | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-navigate-the-experience.md |
 | Review Agentforce Coworker Responses in Data 360 | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-query-audit-trail.md |
 | Query Agentforce Coworker Usage and Adoption Data in Data 360 | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-query-usage-data.md |
 | Rename a Data Source in Agentforce Coworker | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-rename-data-source.md |
+| Resume, Rename, or Delete Chats in Agentforce Coworker | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-resume-rename-delete-chats.md |
 | Review Agentforce Coworker User Mapping | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-review-user-mapping.md |
 | Set Up Agentforce Coworker in a Companion Org | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-setup-dc1-companion.md |
 | Turn Off or Remove a Data Source in Agentforce Coworker | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-turn-off-remove-source.md |

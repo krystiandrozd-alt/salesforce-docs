@@ -7,10 +7,10 @@ Comprehensive developer documentation for Salesforce Data 360 (formerly Data Clo
 Section breakdown:
 - **Data 360 Connect REST API** — 10 pages
 - **Data 360 Developer Guide** — 24 pages
-- **Data 360 Query Guide** — 334 pages
-- **Data 360 Integration Guide** — 909 pages
-- **Data 360 DMO and Mapping Guide** — 2791 pages
-- **Agentforce Coworker** — 29 pages
+- **Data 360 Query Guide** — 332 pages
+- **Data 360 Integration Guide** — 910 pages
+- **Data 360 DMO and Mapping Guide** — 2830 pages
+- **Agentforce Coworker** — 31 pages
 - **Data 360 Code Extension Guide** — 38 pages
 - **Data 360 Code Extension CLI Reference** — 6 pages
 - **Data 360 Engagement Mobile SDK** — 53 pages
@@ -19,6 +19,9 @@ Section breakdown:
 - **Tableau Semantics Layer APIs** — 29 pages
 
 *Source: [`llms-data-cloud.txt`](https://developer.salesforce.com/docs/llms-data-cloud.txt) — official aggregated index (developer doc page), overview section.*
+
+
+*Last refreshed 2026-11-06: 4322 pages in 12 sections (counts from the live source).*
 
 ## Extraction notes
 

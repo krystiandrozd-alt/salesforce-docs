@@ -7,7 +7,7 @@ Developer documentation for Salesforce Service Cloud messaging integrations, cov
 Section breakdown:
 - **Enhanced In-App Chat** — 72 pages
 - **Enhanced Web Chat** — 31 pages
-- **Messaging Object Model and Data Access** — 8 pages
+- **Messaging Object Model and Data Access** — 9 pages
 - **Enhanced Chat API** — 22 pages
 - **Bring Your Own Channel for Messaging** — 26 pages
 - **Bring Your Own Channel for CCaaS** — 43 pages
@@ -35,6 +35,9 @@ Section breakdown:
 - **Service Cloud Chat Developer Guide** — 57 pages
 
 *Source: [`llms-service-cloud.txt`](https://developer.salesforce.com/docs/llms-service-cloud.txt) — official aggregated index (developer doc page), overview section.*
+
+
+*Last refreshed 2026-11-06: 2586 pages in 28 sections (counts from the live source).*
 
 ## Extraction notes
 

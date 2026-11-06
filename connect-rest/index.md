@@ -1,8 +1,8 @@
-# Connect Rest — Index
+# Connect Rest -- Index
 
-Source: [`llms-connect-rest.txt`](https://developer.salesforce.com/docs/llms-connect-rest.txt).
+Source: [llms-connect-rest.txt](https://developer.salesforce.com/docs/llms-connect-rest.txt).
 
-Full link list (49 pages across 1 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (81 page links across 4 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Connect REST API Developer Guide (49 pages)
 
@@ -57,3 +57,50 @@ Full link list (49 pages across 1 sections), extracted programmatically.
 | Quick Start | https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.md |
 | Retired Resources | https://developer.salesforce.com/docs/platform/connect-rest-api/guide/retired_resources.md |
 | About the API Families | https://developer.salesforce.com/docs/platform/connect-rest-api/references/connect-rest-api-about/about.md |
+
+## CRM Analytics REST API Developer Guide (15 pages)
+
+| Page | URL |
+|---|---|
+| Authenticate to Your Trailhead Playground Org | https://developer.salesforce.com/docs/platform/crm-analytics/guide/authenticate-to-your-trailhead-playground-org.md |
+| Backup and Restore Previous Versions of CRM Analytics Assets with History API | https://developer.salesforce.com/docs/platform/crm-analytics/guide/bi-asset-history.md |
+| Configure Your Trailhead Org | https://developer.salesforce.com/docs/platform/crm-analytics/guide/bi-configure-your-trailhead-org.md |
+| Query CRM Analytics Data with the Query API | https://developer.salesforce.com/docs/platform/crm-analytics/guide/bi-rest-api-query-data.md |
+| API End-of-Life Policy | https://developer.salesforce.com/docs/platform/crm-analytics/guide/bi-rest-api-rest-eol.md |
+| Connect REST API Authorization | https://developer.salesforce.com/docs/platform/crm-analytics/guide/bi-rest-authentication.md |
+| CRM Analytics Lightning Web Components | https://developer.salesforce.com/docs/platform/crm-analytics/guide/bi-rest-lwc.md |
+| CRM Analytics REST API Overview | https://developer.salesforce.com/docs/platform/crm-analytics/guide/bi-rest-overview.md |
+| Release Notes | https://developer.salesforce.com/docs/platform/crm-analytics/guide/bi-rest-releasenotes.md |
+| Run, Schedule, and Sync CRM Analytics Data with REST APIs | https://developer.salesforce.com/docs/platform/crm-analytics/guide/bi-run-schedule-sync-data.md |
+| Use Postman to Send a CRM Analytics Request | https://developer.salesforce.com/docs/platform/crm-analytics/guide/bi-send-postman-request.md |
+| Examples | https://developer.salesforce.com/docs/platform/crm-analytics/guide/crm-analytics-examples.md |
+| Quick Start | https://developer.salesforce.com/docs/platform/crm-analytics/guide/crma-rest-api-quick-start.md |
+| Prerequisites | https://developer.salesforce.com/docs/platform/crm-analytics/guide/prerequisites.md |
+| Set Up Your Postman Collection | https://developer.salesforce.com/docs/platform/crm-analytics/guide/set-up-postman-collection.md |
+
+## Einstein Discovery REST API Developer Guide (11 pages)
+
+| Page | URL |
+|---|---|
+| Manage Prediction Jobs | https://developer.salesforce.com/docs/platform/einstein-discovery/guide/bi-edd-prediction-service-job.md |
+| Manage Models | https://developer.salesforce.com/docs/platform/einstein-discovery/guide/bi-edd-prediction-service-model.md |
+| Query Prediction History | https://developer.salesforce.com/docs/platform/einstein-discovery/guide/bi-edd-prediction-service-predict-history.md |
+| Get Predictions | https://developer.salesforce.com/docs/platform/einstein-discovery/guide/bi-edd-prediction-service-predict.md |
+| Manage Prediction Definitions | https://developer.salesforce.com/docs/platform/einstein-discovery/guide/bi-edd-prediction-service-prediction-definition.md |
+| Manage Model Refresh Jobs | https://developer.salesforce.com/docs/platform/einstein-discovery/guide/bi-edd-prediction-service-refresh-job.md |
+| API End-of-Life Policy | https://developer.salesforce.com/docs/platform/einstein-discovery/guide/bi-rest-api-rest-eol.md |
+| Connect REST API Authorization | https://developer.salesforce.com/docs/platform/einstein-discovery/guide/bi-rest-authentication.md |
+| Einstein Discovery REST API Overview | https://developer.salesforce.com/docs/platform/einstein-discovery/guide/bi-rest-sdd-overview.md |
+| Release Notes | https://developer.salesforce.com/docs/platform/einstein-discovery/guide/bi-rest-sdd-releasenotes.md |
+| Examples | https://developer.salesforce.com/docs/platform/einstein-discovery/guide/einstein-discovery-examples.md |
+
+## Data Prep Recipe REST API Developer Guide (6 pages)
+
+| Page | URL |
+|---|---|
+| API End-of-Life Policy | https://developer.salesforce.com/docs/platform/data-prep-recipe/guide/bi-rest-api-rest-eol.md |
+| Connect REST API Authorization | https://developer.salesforce.com/docs/platform/data-prep-recipe/guide/bi-rest-authentication.md |
+| Manage, Schedule, and Run Recipes with REST APIs | https://developer.salesforce.com/docs/platform/data-prep-recipe/guide/sforce-build-manage-recipes.md |
+| Examples | https://developer.salesforce.com/docs/platform/data-prep-recipe/guide/sforce-recipes-api-examples.md |
+| Data Prep Recipe REST API Overview | https://developer.salesforce.com/docs/platform/data-prep-recipe/guide/sforce-recipes-api-overview.md |
+| Release Notes | https://developer.salesforce.com/docs/platform/data-prep-recipe/guide/sforce-recipes-api-releasenotes.md |

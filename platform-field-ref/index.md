@@ -1,8 +1,8 @@
-# Platform Field Ref — Index
+# Platform Field Ref -- Index
 
-Source: [`llms-platform-field-ref.txt`](https://developer.salesforce.com/docs/llms-platform-field-ref.txt).
+Source: [llms-platform-field-ref.txt](https://developer.salesforce.com/docs/llms-platform-field-ref.txt).
 
-Full link list (2712 pages across 1 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (2712 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Salesforce Field Reference Guide (2712 pages)
 

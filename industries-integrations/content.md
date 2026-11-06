@@ -6,7 +6,7 @@ Documentation for Salesforce Industries Integration APIs, covering REST and RAML
 
 Section breakdown:
 - **Automotive Cloud Integrations API** — 16 pages
-- **Communications Cloud TM Forum API** — 210 pages
+- **Communications Cloud TM Forum API** — 216 pages
 - **Employee Service Integrations API** — 3 pages
 - **Energy and Utilities Cloud API** — 4 pages
 - **Agentforce Financial Services** — 2 pages
@@ -17,6 +17,9 @@ Section breakdown:
 - **Media Cloud AdTech Integration API** — 2 pages
 
 *Source: [`llms-industries-integrations.txt`](https://developer.salesforce.com/docs/llms-industries-integrations.txt) — official aggregated index (developer doc page), overview section.*
+
+
+*Last refreshed 2026-11-06: 284 pages in 10 sections (counts from the live source).*
 
 ## Extraction notes
 

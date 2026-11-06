@@ -1,8 +1,8 @@
-# Dataloader — Index
+# Dataloader -- Index
 
-Source: [`llms-dataloader.txt`](https://developer.salesforce.com/docs/llms-dataloader.txt).
+Source: [llms-dataloader.txt](https://developer.salesforce.com/docs/llms-dataloader.txt).
 
-Full link list (24 pages across 1 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (24 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Dataloader from MuleSoft (24 pages)
 

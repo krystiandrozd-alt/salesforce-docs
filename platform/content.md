@@ -31,8 +31,12 @@ Section breakdown:
 - **Setting Up Your .NET Developer Environment** — 8 pages
 - **Setting Up Your Java Developer Environment** — 12 pages
 - **Ant Migration Tool Guide** — 31 pages
+- **Salesforce Connect Developer Guide** — 10 pages
 
 *Source: [`llms-platform.txt`](https://developer.salesforce.com/docs/llms-platform.txt) — official aggregated index (developer doc page), overview section.*
+
+
+*Last refreshed 2026-11-06: 2882 pages in 27 sections (counts from the live source).*
 
 ## Extraction notes
 

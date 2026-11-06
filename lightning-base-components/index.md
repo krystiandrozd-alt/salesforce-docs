@@ -1,8 +1,8 @@
-# Lightning Base Components — Index
+# Lightning Base Components -- Index
 
-Source: [`llms-lightning-base-components.txt`](https://developer.salesforce.com/docs/llms-lightning-base-components.txt).
+Source: [llms-lightning-base-components.txt](https://developer.salesforce.com/docs/llms-lightning-base-components.txt).
 
-Full link list (443 pages across 1 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (443 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Lightning Component Reference (443 pages)
 

@@ -7,9 +7,12 @@ Documentation for Salesforce Hosted MCP Servers, covering how to connect AI agen
 **This area is already covered in depth** in [headless-toolkit/hosted-mcp-servers](https://github.com/krystiandrozd-alt/headless-toolkit/tree/master/hosted-mcp-servers), including the paraphrased full MCP server capability table (Headless 360, Data 360, SObject*, Tableau, etc.). Treat that repo as primary; this folder keeps the per-`llms.txt` catalog complete.
 
 Section breakdown:
-- **Hosted MCP Servers** — 61 pages
+- **Hosted MCP Servers** — 64 pages
 
 *Source: [`llms-hosted-mcp-servers.txt`](https://developer.salesforce.com/docs/llms-hosted-mcp-servers.txt) — official aggregated index (developer doc page), overview section.*
+
+
+*Last refreshed 2026-11-06: 64 pages in 1 sections (counts from the live source).*
 
 ## Extraction notes
 

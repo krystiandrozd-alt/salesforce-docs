@@ -2,12 +2,15 @@
 
 Synthesis written independently from the source index below (not copied text).
 
-Write a brief description of the repository. This description is used in llms.txt.
+No overview text in source (llms.txt shows an unfilled template description). Field-level reference for standard objects.
 
 Section breakdown:
 - **Salesforce Field Reference Guide** — 2712 pages
 
 *Source: [`llms-platform-field-ref.txt`](https://developer.salesforce.com/docs/llms-platform-field-ref.txt) — official aggregated index (developer doc page), overview section.*
+
+
+*Last refreshed 2026-11-06: 2712 pages in 1 sections (counts from the live source).*
 
 ## Extraction notes
 

@@ -6,7 +6,7 @@ Documentation for Salesforce Marketing Cloud developer tools and APIs, covering 
 
 Section breakdown:
 - **Marketing Cloud Next** — 65 pages
-- **Marketing Cloud Engagement APIs and Programmatic Languages** — 1134 pages
+- **Marketing Cloud Engagement APIs and Programmatic Languages** — 1137 pages
 - **Einstein for Marketing Cloud Engagement** — 11 pages
 - **Engagement Mobile SDK** — 1 pages
 - **AMPscript for Marketing Cloud** — 201 pages
@@ -17,6 +17,9 @@ Section breakdown:
 - **Real-Time Offer Management Developer Guide** — 146 pages
 
 *Source: [`llms-marketing-cloud.txt`](https://developer.salesforce.com/docs/llms-marketing-cloud.txt) — official aggregated index (developer doc page), overview section.*
+
+
+*Last refreshed 2026-11-06: 2177 pages in 10 sections (counts from the live source).*
 
 ## Extraction notes
 

@@ -1,8 +1,8 @@
-# Service Cloud — Index
+# Service Cloud -- Index
 
-Source: [`llms-service-cloud.txt`](https://developer.salesforce.com/docs/llms-service-cloud.txt).
+Source: [llms-service-cloud.txt](https://developer.salesforce.com/docs/llms-service-cloud.txt).
 
-Full link list (2585 pages across 28 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (2586 page links across 28 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Enhanced In-App Chat (72 pages)
 
@@ -117,7 +117,7 @@ Full link list (2585 pages across 28 sections), extracted programmatically.
 | User Verification API | https://developer.salesforce.com/docs/service/messaging-web/references/m4w-reference/userVerificationAPI.md |
 | Utilities API | https://developer.salesforce.com/docs/service/messaging-web/references/m4w-reference/utilAPI.md |
 
-## Messaging Object Model and Data Access (8 pages)
+## Messaging Object Model and Data Access (9 pages)
 
 | Page | URL |
 |---|---|
@@ -126,6 +126,7 @@ Full link list (2585 pages across 28 sections), extracted programmatically.
 | Messaging Object Model | https://developer.salesforce.com/docs/service/messaging-object-model/guide/messaging-object-model.md |
 | Overview | https://developer.salesforce.com/docs/service/messaging-object-model/guide/overview.md |
 | Release Notes | https://developer.salesforce.com/docs/service/messaging-object-model/guide/release-notes.md |
+| ConversationAction | https://developer.salesforce.com/docs/service/messaging-object-model/references/messaging-object-model-conversationAction/messaging-object-model-conversationaction.md |
 | ConversationEntry | https://developer.salesforce.com/docs/service/messaging-object-model/references/messaging-object-model-conversationEntry/messaging-object-model-conversationentry.md |
 | Introduction | https://developer.salesforce.com/docs/service/messaging-object-model/references/mob-reference/messaging-object-model-off-platform-schemas.md |
 | RelatedRecord | https://developer.salesforce.com/docs/service/messaging-object-model/references/mob-reference2/messaging-object-model-relatedrecord.md |
@@ -2586,7 +2587,7 @@ Full link list (2585 pages across 28 sections), extracted programmatically.
 | Previous Versions | https://developer.salesforce.com/docs/service/voice-dev-guide/guide/voice-dev-guide-pdf-archive.md |
 | Retry Contact Record Sync for Voice Call Records | https://developer.salesforce.com/docs/service/voice-dev-guide/guide/voice-example-ctr-retry.md |
 | Customize Synced Contact Record Fields | https://developer.salesforce.com/docs/service/voice-dev-guide/guide/voice-example-ctrdatasync.md |
-| Disable Contact Record Sync for Voice Call RecordsÂ  | https://developer.salesforce.com/docs/service/voice-dev-guide/guide/voice-example-disable-ctr-sync.md |
+| Disable Contact Record Sync for Voice Call RecordsÂ | https://developer.salesforce.com/docs/service/voice-dev-guide/guide/voice-example-disable-ctr-sync.md |
 | Disable Call Recording | https://developer.salesforce.com/docs/service/voice-dev-guide/guide/voice-example-disable-recording.md |
 | Pass Data from the IVR System | https://developer.salesforce.com/docs/service/voice-dev-guide/guide/voice-example-interactive-voice-response.md |
 | Link Case to Voice Call Record | https://developer.salesforce.com/docs/service/voice-dev-guide/guide/voice-example-link-case-to-record.md |

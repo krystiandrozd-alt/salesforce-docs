@@ -7,10 +7,13 @@ No overview text in source — title-only index.
 **This area is already covered in depth** in [headless-toolkit/multi-framework-microfrontend](https://github.com/krystiandrozd-alt/headless-toolkit/tree/master/multi-framework-microfrontend), including the UIBundle metadata model, Multi-Framework-vs-LWC comparison, and the April 2026 React launch announcement. Treat that repo as primary; this folder keeps the per-`llms.txt` catalog complete.
 
 Section breakdown:
-- **Salesforce Multi-Framework** — 34 pages
+- **Salesforce Multi-Framework** — 35 pages
 - **Salesforce Microfrontend (UI Embedding)** — 18 pages
 
 *Source: [`llms-multi-framework.txt`](https://developer.salesforce.com/docs/llms-multi-framework.txt) — official aggregated index (developer doc page), overview section.*
+
+
+*Last refreshed 2026-11-06: 53 pages in 2 sections (counts from the live source).*
 
 ## Extraction notes
 

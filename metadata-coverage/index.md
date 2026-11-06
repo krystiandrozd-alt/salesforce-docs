@@ -1,8 +1,8 @@
-# Metadata Coverage — Index
+# Metadata Coverage -- Index
 
-Source: [`llms-metadata-coverage.txt`](https://developer.salesforce.com/docs/llms-metadata-coverage.txt).
+Source: [llms-metadata-coverage.txt](https://developer.salesforce.com/docs/llms-metadata-coverage.txt).
 
-Full link list (42 pages across 1 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (42 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Metadata Coverage Report (42 pages)
 

@@ -1,8 +1,8 @@
-# Revenue Cloud — Index
+# Revenue Cloud -- Index
 
-Source: [`llms-revenue-cloud.txt`](https://developer.salesforce.com/docs/llms-revenue-cloud.txt).
+Source: [llms-revenue-cloud.txt](https://developer.salesforce.com/docs/llms-revenue-cloud.txt).
 
-Full link list (1870 pages across 7 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (1870 page links across 7 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Salesforce Subscription Management (15 pages)
 

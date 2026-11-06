@@ -1,8 +1,8 @@
-# Headless Experience Layer — Index
+# Headless Experience Layer -- Index
 
-Source: [`llms-headless-experience-layer.txt`](https://developer.salesforce.com/docs/llms-headless-experience-layer.txt).
+Source: [llms-headless-experience-layer.txt](https://developer.salesforce.com/docs/llms-headless-experience-layer.txt).
 
-Full link list (46 pages across 1 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (46 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Headless Experience Layer Developer Guide (Beta) (46 pages)
 

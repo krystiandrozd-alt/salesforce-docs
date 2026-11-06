@@ -1,8 +1,8 @@
-# Salesforce Slack Sdk — Index
+# Salesforce Slack Sdk -- Index
 
-Source: [`llms-salesforce-slack-sdk.txt`](https://developer.salesforce.com/docs/llms-salesforce-slack-sdk.txt).
+Source: [llms-salesforce-slack-sdk.txt](https://developer.salesforce.com/docs/llms-salesforce-slack-sdk.txt).
 
-Full link list (107 pages across 1 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (107 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Apex SDK for Slack (Beta) (107 pages)
 

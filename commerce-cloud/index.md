@@ -1,10 +1,10 @@
-# Commerce Cloud — Index
+# Commerce Cloud -- Index
 
-Source: [`llms-commerce-cloud.txt`](https://developer.salesforce.com/docs/llms-commerce-cloud.txt).
+Source: [llms-commerce-cloud.txt](https://developer.salesforce.com/docs/llms-commerce-cloud.txt).
 
-Full link list (6844 pages across 15 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (6864 page links across 15 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
-## B2C Commerce (1257 pages)
+## B2C Commerce (1271 pages)
 
 | Page | URL |
 |---|---|
@@ -443,6 +443,7 @@ Full link list (6844 pages across 15 sections), extracted programmatically.
 | Remote Includes | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/remote-includes.md |
 | Rendering | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/rendering.md |
 | Reports & Dashboards | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/reports-and-dashboards.md |
+| SCAPI Response Compression | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/response-compression.md |
 | Maintenance Response Codes | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/response-handling.md |
 | Retail React App | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/retail-react-app.md |
 | Routing | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/routing.md |
@@ -736,6 +737,10 @@ Full link list (6844 pages across 15 sections), extracted programmatically.
 | Alert | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.alert.Alert.md |
 | Alerts | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.alert.Alerts.md |
 | dw.alert | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.alert.md |
+| FraudAppHooks | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.apps.checkout.hooks.FraudAppHooks.md |
+| GiftCardHooks | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.apps.checkout.hooks.GiftCardHooks.md |
+| dw.apps.checkout.hooks | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.apps.checkout.hooks.md |
+| PaymentAppHooks | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.apps.checkout.hooks.PaymentAppHooks.md |
 | ABTest | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.campaign.ABTest.md |
 | ABTestMgr | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.campaign.ABTestMgr.md |
 | ABTestSegment | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.campaign.ABTestSegment.md |
@@ -891,6 +896,10 @@ Full link list (6844 pages across 15 sections), extracted programmatically.
 | ShopperContextException | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.customer.shoppercontext.ShopperContextException.md |
 | ShopperContextMgr | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.customer.shoppercontext.ShopperContextMgr.md |
 | Wallet | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.customer.Wallet.md |
+| EventManager | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.event.EventManager.md |
+| EventQueueFullException | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.event.EventQueueFullException.md |
+| EventRateLimitExceededException | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.event.EventRateLimitExceededException.md |
+| dw.event | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.event.md |
 | AspectAttributeValidationException | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.experience.AspectAttributeValidationException.md |
 | CMSRecord | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.experience.cms.CMSRecord.md |
 | dw.experience.cms | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.experience.cms.md |
@@ -920,11 +929,14 @@ Full link list (6844 pages across 15 sections), extracted programmatically.
 | dw.extensions.paymentrequest | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.paymentrequest.md |
 | PaymentRequestHookResult | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.paymentrequest.PaymentRequestHookResult.md |
 | PaymentRequestHooks | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.paymentrequest.PaymentRequestHooks.md |
+| GiftCardPaymentDetails | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.payments.GiftCardPaymentDetails.md |
+| GiftCardTransactionDetails | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.payments.GiftCardTransactionDetails.md |
 | dw.extensions.payments | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.payments.md |
 | SalesforceAdyenPaymentIntent | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.payments.SalesforceAdyenPaymentIntent.md |
 | SalesforceAdyenSavedPaymentMethod | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.payments.SalesforceAdyenSavedPaymentMethod.md |
 | SalesforceBancontactPaymentDetails | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.payments.SalesforceBancontactPaymentDetails.md |
 | SalesforceCardPaymentDetails | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.payments.SalesforceCardPaymentDetails.md |
+| SalesforceCardTransactionDetails | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.payments.SalesforceCardTransactionDetails.md |
 | SalesforceEpsPaymentDetails | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.payments.SalesforceEpsPaymentDetails.md |
 | SalesforceIdealPaymentDetails | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.payments.SalesforceIdealPaymentDetails.md |
 | SalesforceKlarnaPaymentDetails | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.payments.SalesforceKlarnaPaymentDetails.md |
@@ -943,6 +955,7 @@ Full link list (6844 pages across 15 sections), extracted programmatically.
 | SalesforcePayPalOrderPayer | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.payments.SalesforcePayPalOrderPayer.md |
 | SalesforcePayPalPaymentDetails | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.payments.SalesforcePayPalPaymentDetails.md |
 | SalesforceSepaDebitPaymentDetails | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.payments.SalesforceSepaDebitPaymentDetails.md |
+| SalesforceTransactionDetails | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.payments.SalesforceTransactionDetails.md |
 | SalesforceVenmoPaymentDetails | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.payments.SalesforceVenmoPaymentDetails.md |
 | dw.extensions.pinterest | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.pinterest.md |
 | PinterestAvailability | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.extensions.pinterest.PinterestAvailability.md |
@@ -1035,6 +1048,7 @@ Full link list (6844 pages across 15 sections), extracted programmatically.
 | OrderMgr | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.order.OrderMgr.md |
 | OrderPaymentInstrument | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.order.OrderPaymentInstrument.md |
 | OrderProcessStatusCodes | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.order.OrderProcessStatusCodes.md |
+| OrderTransitionResult | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.order.OrderTransitionResult.md |
 | PaymentCard | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.order.PaymentCard.md |
 | PaymentInstrument | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.order.PaymentInstrument.md |
 | PaymentMethod | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.order.PaymentMethod.md |
@@ -1210,7 +1224,7 @@ Full link list (6844 pages across 15 sections), extracted programmatically.
 | Port | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.ws.Port.md |
 | WebReference2 | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.ws.WebReference2.md |
 | WSUtil | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/dw.ws.WSUtil.md |
-| B2C Commerce Script API 26.8 | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/index.md |
+| B2C Commerce Script API 26.10 | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/index.md |
 | APIException | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/TopLevel.APIException.md |
 | arguments | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/TopLevel.arguments.md |
 | Array | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/TopLevel.Array.md |
@@ -1266,7 +1280,7 @@ Full link list (6844 pages across 15 sections), extracted programmatically.
 | XMLList | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/TopLevel.XMLList.md |
 | XMLStreamError | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/TopLevel.XMLStreamError.md |
 
-## B2C Commerce API (680 pages)
+## B2C Commerce API (681 pages)
 
 | Page | URL |
 |---|---|
@@ -1705,6 +1719,7 @@ Full link list (6844 pages across 15 sections), extracted programmatically.
 | Remote Includes | https://developer.salesforce.com/docs/commerce/commerce-api/guide/remote-includes.md |
 | Rendering | https://developer.salesforce.com/docs/commerce/commerce-api/guide/rendering.md |
 | Reports & Dashboards | https://developer.salesforce.com/docs/commerce/commerce-api/guide/reports-and-dashboards.md |
+| SCAPI Response Compression | https://developer.salesforce.com/docs/commerce/commerce-api/guide/response-compression.md |
 | Maintenance Response Codes | https://developer.salesforce.com/docs/commerce/commerce-api/guide/response-handling.md |
 | Retail React App | https://developer.salesforce.com/docs/commerce/commerce-api/guide/retail-react-app.md |
 | Routing | https://developer.salesforce.com/docs/commerce/commerce-api/guide/routing.md |
@@ -1982,7 +1997,7 @@ Full link list (6844 pages across 15 sections), extracted programmatically.
 | Use GDPR Delete | https://developer.salesforce.com/docs/commerce/einstein-api/guide/use-gdpr-delete.md |
 | Zone Component | https://developer.salesforce.com/docs/commerce/einstein-api/guide/zone-component.md |
 
-## B2C Commerce Solutions (678 pages)
+## B2C Commerce Solutions (679 pages)
 
 | Page | URL |
 |---|---|
@@ -2421,6 +2436,7 @@ Full link list (6844 pages across 15 sections), extracted programmatically.
 | Remote Includes | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/remote-includes.md |
 | Rendering | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/rendering.md |
 | Reports & Dashboards | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/reports-and-dashboards.md |
+| SCAPI Response Compression | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/response-compression.md |
 | Maintenance Response Codes | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/response-handling.md |
 | Retail React App | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/retail-react-app.md |
 | Routing | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/routing.md |
@@ -2665,7 +2681,7 @@ Full link list (6844 pages across 15 sections), extracted programmatically.
 | Why Use SCAPI | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/why-use-scapi.md |
 | Build Baskets and Place Orders | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/work-with-baskets-orders.md |
 
-## B2C Commerce Storefront Reference Architecture (678 pages)
+## B2C Commerce Storefront Reference Architecture (679 pages)
 
 | Page | URL |
 |---|---|
@@ -3104,6 +3120,7 @@ Full link list (6844 pages across 15 sections), extracted programmatically.
 | Remote Includes | https://developer.salesforce.com/docs/commerce/sfra/guide/remote-includes.md |
 | Rendering | https://developer.salesforce.com/docs/commerce/sfra/guide/rendering.md |
 | Reports & Dashboards | https://developer.salesforce.com/docs/commerce/sfra/guide/reports-and-dashboards.md |
+| SCAPI Response Compression | https://developer.salesforce.com/docs/commerce/sfra/guide/response-compression.md |
 | Maintenance Response Codes | https://developer.salesforce.com/docs/commerce/sfra/guide/response-handling.md |
 | Retail React App | https://developer.salesforce.com/docs/commerce/sfra/guide/retail-react-app.md |
 | Routing | https://developer.salesforce.com/docs/commerce/sfra/guide/routing.md |
@@ -3357,7 +3374,7 @@ Full link list (6844 pages across 15 sections), extracted programmatically.
 | Marketplace Integration Toolkit Configuration | https://developer.salesforce.com/docs/commerce/marketplace/guide/marketplace-toolkit-config.md |
 | About the API | https://developer.salesforce.com/docs/commerce/marketplace/references/marketplace-about/about.md |
 
-## Agentforce Commerce Vibes (678 pages)
+## Agentforce Commerce Vibes (679 pages)
 
 | Page | URL |
 |---|---|
@@ -3796,6 +3813,7 @@ Full link list (6844 pages across 15 sections), extracted programmatically.
 | Remote Includes | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/remote-includes.md |
 | Rendering | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/rendering.md |
 | Reports & Dashboards | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/reports-and-dashboards.md |
+| SCAPI Response Compression | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/response-compression.md |
 | Maintenance Response Codes | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/response-handling.md |
 | Retail React App | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/retail-react-app.md |
 | Routing | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/routing.md |
@@ -4040,7 +4058,7 @@ Full link list (6844 pages across 15 sections), extracted programmatically.
 | Why Use SCAPI | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/why-use-scapi.md |
 | Build Baskets and Place Orders | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/work-with-baskets-orders.md |
 
-## Storefront Next (678 pages)
+## Storefront Next (679 pages)
 
 | Page | URL |
 |---|---|
@@ -4479,6 +4497,7 @@ Full link list (6844 pages across 15 sections), extracted programmatically.
 | Remote Includes | https://developer.salesforce.com/docs/commerce/sfnext/guide/remote-includes.md |
 | Rendering | https://developer.salesforce.com/docs/commerce/sfnext/guide/rendering.md |
 | Reports & Dashboards | https://developer.salesforce.com/docs/commerce/sfnext/guide/reports-and-dashboards.md |
+| SCAPI Response Compression | https://developer.salesforce.com/docs/commerce/sfnext/guide/response-compression.md |
 | Maintenance Response Codes | https://developer.salesforce.com/docs/commerce/sfnext/guide/response-handling.md |
 | Retail React App | https://developer.salesforce.com/docs/commerce/sfnext/guide/retail-react-app.md |
 | Routing | https://developer.salesforce.com/docs/commerce/sfnext/guide/routing.md |
@@ -4723,7 +4742,7 @@ Full link list (6844 pages across 15 sections), extracted programmatically.
 | Why Use SCAPI | https://developer.salesforce.com/docs/commerce/sfnext/guide/why-use-scapi.md |
 | Build Baskets and Place Orders | https://developer.salesforce.com/docs/commerce/sfnext/guide/work-with-baskets-orders.md |
 
-## Composable Storefront (681 pages)
+## Composable Storefront (682 pages)
 
 | Page | URL |
 |---|---|
@@ -5162,6 +5181,7 @@ Full link list (6844 pages across 15 sections), extracted programmatically.
 | Remote Includes | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/remote-includes.md |
 | Rendering | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/rendering.md |
 | Reports & Dashboards | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/reports-and-dashboards.md |
+| SCAPI Response Compression | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/response-compression.md |
 | Maintenance Response Codes | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/response-handling.md |
 | Retail React App | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/retail-react-app.md |
 | Routing | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/routing.md |

@@ -1,8 +1,8 @@
-# Lightning Type Systems — Index
+# Lightning Type Systems -- Index
 
-Source: [`llms-lightning-type-systems.txt`](https://developer.salesforce.com/docs/llms-lightning-type-systems.txt).
+Source: [llms-lightning-type-systems.txt](https://developer.salesforce.com/docs/llms-lightning-type-systems.txt).
 
-Full link list (15 pages across 1 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (15 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Lightning Types Developer Guide (15 pages)
 

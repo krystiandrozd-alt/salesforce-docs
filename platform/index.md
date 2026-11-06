@@ -1,8 +1,8 @@
-# Platform — Index
+# Platform -- Index
 
-Source: [`llms-platform.txt`](https://developer.salesforce.com/docs/llms-platform.txt).
+Source: [llms-platform.txt](https://developer.salesforce.com/docs/llms-platform.txt).
 
-Full link list (2872 pages across 26 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (2882 page links across 27 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Publisher and Quick Action Developer Guide (25 pages)
 
@@ -394,15 +394,10 @@ Full link list (2872 pages across 26 sections), extracted programmatically.
 | Debug Mobile Components | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-debug-mobile-components.md |
 | Install ESLint Rules for Mobile Lightning Web Components | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-eslint-rules-install.md |
 | Use ESLint Rules in Visual Studio Code | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-eslint-rules-vscode.md |
-| Test Harness Compatibility | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-harness-app-compatibility.md |
 | Debug in Android | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-harness-app-debug-android.md |
 | Enable Debugging for LWC Developers | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-harness-app-debug-enable.md |
 | Debug in iOS | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-harness-app-debug-ios.md |
 | Debug Lightning Web Components | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-harness-app-debug.md |
-| Download and Install â€” Android | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-harness-app-install-android.md |
-| Download and Install â€” iOS | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-harness-app-install-ios.md |
-| Install the Test Harness App | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-harness-app-install.md |
-| Test Harness Prerequisites | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-harness-app-prerequisites.md |
 | Create a Quick Action with an LWC | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-harness-app-usage-create-quick-action.md |
 | Display and Run an LWC from a Quick Action | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-harness-app-usage-display-run-lwc.md |
 | Use the Test Harness App | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-harness-app-usage.md |
@@ -411,7 +406,12 @@ Full link list (2872 pages across 26 sections), extracted programmatically.
 | Test Harness Home Tab | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-harness-app-ux-home.md |
 | Test Harness Overview | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-harness-app-ux-overview.md |
 | Test Harness SObjects Tab | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-harness-app-ux-sobjects.md |
-| Develop Offline-Ready LWCs with the LWC Offline Test Harness | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-harness-app.md |
+| LWC Offline Test Harness (Retired) | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-harness-app.md |
+| Mobile Development Plugin Dependencies | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-mobile-dev-plugin-dependencies.md |
+| Install the Salesforce Mobile Development Plugin | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-mobile-dev-plugin-install.md |
+| Mobile Development Plugin Skills Reference | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-mobile-dev-plugin-skills.md |
+| Troubleshoot the Mobile Development Plugin | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-mobile-dev-plugin-troubleshoot.md |
+| Use the Salesforce Mobile Development Plugin | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-mobile-dev-plugin.md |
 | Mobile MCP Tools Reference | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-mobile-mcp-tools-ref.md |
 | Use MCP Tools for Mobile LWC and Offline Development (Beta) | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-mobile-mcp-tools.md |
 | Use the mobile-core Toolset | https://developer.salesforce.com/docs/platform/mobile-offline/guide/dx-mobile-mcp-toolset-core.md |
@@ -1804,7 +1804,6 @@ Full link list (2872 pages across 26 sections), extracted programmatically.
 | Knowledge | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-guidelines-knowledge.md |
 | Person Account Record Types | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-guidelines-personaccounts.md |
 | External Objects | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-guidelines-platform-connect.md |
-| Implementing Salesforce Integrations on Lightning Platform | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-guidelines-yourtools.md |
 | AllOrNoneHeader | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-header-allornoneheader.md |
 | AllowFieldTruncationHeader | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-header-allowfieldtruncation.md |
 | AssignmentRuleHeader | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-header-assignmentruleheader.md |
@@ -1816,6 +1815,7 @@ Full link list (2872 pages across 26 sections), extracted programmatically.
 | LimitInfoHeader | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-header-limitinfo.md |
 | LocaleOptions | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-header-localeheader.md |
 | LoginScopeHeader | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-header-loginscopeheader.md |
+| MetadataWarningsHeader | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-header-metadatawarningsheader.md |
 | MruHeader | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-header-mruheader.md |
 | OwnerChangeOptions | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-header-ownerchangeoptions.md |
 | PackageVersionHeader | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-header-packageversionheader.md |
@@ -3005,3 +3005,18 @@ Full link list (2872 pages across 26 sections), extracted programmatically.
 | Running Tests in a Deployment | https://developer.salesforce.com/docs/platform/salesforce-migration-guide/guide/meta-deploy-running-tests.md |
 | Ant Migration Tool | https://developer.salesforce.com/docs/platform/salesforce-migration-guide/guide/meta-development.md |
 | Previous Versions | https://developer.salesforce.com/docs/platform/salesforce-migration-guide/guide/salesforce-migration-guide-pdf-archive.md |
+
+## Salesforce Connect Developer Guide (10 pages)
+
+| Page | URL |
+|---|---|
+| Salesforce Connect Developer Guide | https://developer.salesforce.com/docs/platform/sf-connect-dev-guide/guide/sf-connect-intro.md |
+| Selecting the Right Cross-Org Authentication Options | https://developer.salesforce.com/docs/platform/sf-connect-dev-guide/guide/sf-connect-xorg-auth-options.md |
+| Display Acme Order Data in Salesforce | https://developer.salesforce.com/docs/platform/sf-connect-dev-guide/guide/sf-connect-xorg-display-order-data.md |
+| Get Started with the Salesforce Connect Cross-Org Adapter | https://developer.salesforce.com/docs/platform/sf-connect-dev-guide/guide/sf-connect-xorg-get-started.md |
+| Understanding the Cross-Org Adapter Org Configuration | https://developer.salesforce.com/docs/platform/sf-connect-dev-guide/guide/sf-connect-xorg-org-config.md |
+| Set Up the Publisher Org | https://developer.salesforce.com/docs/platform/sf-connect-dev-guide/guide/sf-connect-xorg-set-up-pub-org.md |
+| Set Up the Subscriber Org with Browser Flow (Per-User Authentication) | https://developer.salesforce.com/docs/platform/sf-connect-dev-guide/guide/sf-connect-xorg-set-up-sub-org-bf.md |
+| Set Up the Subscriber Org with Client Credentials Flow | https://developer.salesforce.com/docs/platform/sf-connect-dev-guide/guide/sf-connect-xorg-set-up-sub-org-cc.md |
+| Troubleshooting the Cross-Org Adapter Configuration | https://developer.salesforce.com/docs/platform/sf-connect-dev-guide/guide/sf-connect-xorg-troubleshooting.md |
+| Why Cross-Org? | https://developer.salesforce.com/docs/platform/sf-connect-dev-guide/guide/sf-connect-xorg-why-xorg.md |

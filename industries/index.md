@@ -1,8 +1,8 @@
-# Industries — Index
+# Industries -- Index
 
-Source: [`llms-industries.txt`](https://developer.salesforce.com/docs/llms-industries.txt).
+Source: [llms-industries.txt](https://developer.salesforce.com/docs/llms-industries.txt).
 
-Full link list (4010 pages across 15 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (4021 page links across 15 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
 ## Communications, Media, Energy and Utilities APIs (Managed Package) (435 pages)
 
@@ -430,7 +430,7 @@ Full link list (4010 pages across 15 sections), extracted programmatically.
 | Get Line Items by ID | https://developer.salesforce.com/docs/industries/cme/guide/std_comms-get-line-items-by-id.md |
 | Get List of Products | https://developer.salesforce.com/docs/industries/cme/guide/std_comms-get-list-of-products.md |
 | Get Template | https://developer.salesforce.com/docs/industries/cme/guide/std_comms-get-template.md |
-| Multi Edit Cart Items  | https://developer.salesforce.com/docs/industries/cme/guide/std_comms-multi-edit.md |
+| Multi Edit Cart Items | https://developer.salesforce.com/docs/industries/cme/guide/std_comms-multi-edit.md |
 | Remove Items from a Cart | https://developer.salesforce.com/docs/industries/cme/guide/std_comms-remove-items-from-cart.md |
 | Replace Offers | https://developer.salesforce.com/docs/industries/cme/guide/std_comms-replace-offers.md |
 | Run Pricing for Items to Cart | https://developer.salesforce.com/docs/industries/cme/guide/std_comms-run-pricing-for-items-to-cart.md |
@@ -578,7 +578,7 @@ Full link list (4010 pages across 15 sections), extracted programmatically.
 | AccountingModelConfig | https://developer.salesforce.com/docs/industries/asl-dev-guide/guide/sforce-api-objects-accountingmodelconfig.md |
 | TransactionJournal | https://developer.salesforce.com/docs/industries/asl-dev-guide/guide/sforce-api-objects-transactionjournal.md |
 
-## Education Cloud Developer Guide (381 pages)
+## Education Cloud Developer Guide (391 pages)
 
 | Page | URL |
 |---|---|
@@ -653,7 +653,14 @@ Full link list (4010 pages across 15 sections), extracted programmatically.
 | Learnings Graph (POST, PATCH) | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-resources-learning-graph.md |
 | Benefit Assignment (POST) | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-resources-mentoring-benefit-assignment.md |
 | Learner Restriction Violation (GET, POST) | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-resources-restriction-violation.md |
+| Student Academic Charges (GET) | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-resources-student-academic-charges.md |
+| Student Academic Invoices (GET) | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-resources-student-academic-invoices.md |
+| Student Financial Summary (GET) | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-resources-student-financial-summary.md |
 | Transactions Payment Updates (POST) | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-resources-transaction-payment-update.md |
+| Student Academic Charges | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-responses-academic-charge-output.md |
+| Student Academic Invoice | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-responses-academic-invoice.md |
+| Student Academic Invoices | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-responses-academic-invoices.md |
+| Student Academic Order Item | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-responses-academic-order-item-output.md |
 | Action Plan | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-responses-action-pla.md |
 | Associated Rule | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-responses-associated-rul.md |
 | Commitment Payment Updates | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-responses-commitment-payment-updates-output.md |
@@ -675,6 +682,8 @@ Full link list (4010 pages across 15 sections), extracted programmatically.
 | Custom Field | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-responses-custom-field.md |
 | API Error Details | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-responses-education-api-error-detail.md |
 | Error Details | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-responses-error-detail.md |
+| Student Financial Summary by Currency | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-responses-financial-summary-by-currency-output.md |
+| Student Financial Summary | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-responses-financial-summary-output.md |
 | Get Learning | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-responses-get-learning-output.md |
 | Gift Campaign Default Designation Record Output | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-responses-gift-campaign-default-designation-record-output.md |
 | Gift Campaign Default Designations Output | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/connect-responses-gift-campaign-default-designations-output.md |
@@ -740,6 +749,7 @@ Full link list (4010 pages across 15 sections), extracted programmatically.
 | PlannedGift | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/fundraising-api-objects-plannedgift.md |
 | PlannedGiftAnnuityRate | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/fundraising-api-objects-plannedgiftannuityrate.md |
 | PlannedGiftPerformance | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/fundraising-api-objects-plannedgiftperformance.md |
+| FieldMappingConfig | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/fundraising-fieldmappingconfig-metadata-api.md |
 | Flow for Fundraising | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/fundraising-flow-metadata-api.md |
 | Fundraising Metadata API Types | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/fundraising-metadata-api-parent.md |
 | DelegateAccessDataSet | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/meta-delegateaccessdataset.md |
@@ -2938,7 +2948,7 @@ Full link list (4010 pages across 15 sections), extracted programmatically.
 | RequestForPrpsSummaryVer | https://developer.salesforce.com/docs/industries/media-developer-guide/guide/sforce-api-objects-requestforprpssummaryver.md |
 | Media Cloud Fields on UnitOfMeasure | https://developer.salesforce.com/docs/industries/media-developer-guide/guide/sforce-api-objects-unitofmeasure.md |
 
-## Nonprofit Cloud Developer Guide (330 pages)
+## Nonprofit Cloud Developer Guide (331 pages)
 
 | Page | URL |
 |---|---|
@@ -3086,6 +3096,7 @@ Full link list (4010 pages across 15 sections), extracted programmatically.
 | PlannedGift | https://developer.salesforce.com/docs/industries/nonprofit-cloud/guide/fundraising-api-objects-plannedgift.md |
 | PlannedGiftAnnuityRate | https://developer.salesforce.com/docs/industries/nonprofit-cloud/guide/fundraising-api-objects-plannedgiftannuityrate.md |
 | PlannedGiftPerformance | https://developer.salesforce.com/docs/industries/nonprofit-cloud/guide/fundraising-api-objects-plannedgiftperformance.md |
+| FieldMappingConfig | https://developer.salesforce.com/docs/industries/nonprofit-cloud/guide/fundraising-fieldmappingconfig-metadata-api.md |
 | Flow for Fundraising | https://developer.salesforce.com/docs/industries/nonprofit-cloud/guide/fundraising-flow-metadata-api.md |
 | Fundraising Metadata API Types | https://developer.salesforce.com/docs/industries/nonprofit-cloud/guide/fundraising-metadata-api-parent.md |
 | IndustriesSettings | https://developer.salesforce.com/docs/industries/nonprofit-cloud/guide/grantmaking-industriessettings.md |

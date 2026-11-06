@@ -1,10 +1,10 @@
-# Multi Framework — Index
+# Multi Framework -- Index
 
-Source: [`llms-multi-framework.txt`](https://developer.salesforce.com/docs/llms-multi-framework.txt).
+Source: [llms-multi-framework.txt](https://developer.salesforce.com/docs/llms-multi-framework.txt).
 
-Full link list (52 pages across 2 sections), extracted programmatically.
+Full link list extracted programmatically from the live source file (53 page links across 2 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
 
-## Salesforce Multi-Framework (34 pages)
+## Salesforce Multi-Framework (35 pages)
 
 | Page | URL |
 |---|---|
@@ -22,6 +22,7 @@ Full link list (52 pages across 2 sections), extracted programmatically.
 | GraphQL Mutate Parameters | https://developer.salesforce.com/docs/platform/multiframework/guide/data-sdk-mutate.md |
 | GraphQL Query Parameters | https://developer.salesforce.com/docs/platform/multiframework/guide/data-sdk-query.md |
 | Per-Request Headers | https://developer.salesforce.com/docs/platform/multiframework/guide/data-sdk-request-headers.md |
+| Handle an Expired Session | https://developer.salesforce.com/docs/platform/multiframework/guide/data-sdk-session-expiry.md |
 | Use Skills for Data Access | https://developer.salesforce.com/docs/platform/multiframework/guide/data-sdk-skills.md |
 | Access Salesforce Data and Platform Capabilities | https://developer.salesforce.com/docs/platform/multiframework/guide/data-sdk-usage.md |
 | Manage the Host UI | https://developer.salesforce.com/docs/platform/multiframework/guide/data-sdk-view.md |

@@ -2,7 +2,7 @@
 
 Source: [llms-platform.txt](https://developer.salesforce.com/docs/llms-platform.txt).
 
-Full link list extracted programmatically from the live source file (2882 page links across 27 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (2882 page links across 27 sections). Last refreshed 2026-11-12 by `scripts/refresh_from_llms.py`.
 
 ## Publisher and Quick Action Developer Guide (25 pages)
 
@@ -460,7 +460,7 @@ Full link list extracted programmatically from the live source file (2882 page l
 | Navigation User Experience | https://developer.salesforce.com/docs/platform/mobile-offline/guide/navigation-user-experience.md |
 | Navigation | https://developer.salesforce.com/docs/platform/mobile-offline/guide/navigation.md |
 | Offline Environment Details | https://developer.salesforce.com/docs/platform/mobile-offline/guide/offline-considerations.md |
-| What Happens When Something Isnâ€™t Primed (Preloaded) | https://developer.salesforce.com/docs/platform/mobile-offline/guide/offline-not-primed.md |
+| What Happens When Something Isn’t Primed (Preloaded) | https://developer.salesforce.com/docs/platform/mobile-offline/guide/offline-not-primed.md |
 | Create Components with Offline Analysis In Mind | https://developer.salesforce.com/docs/platform/mobile-offline/guide/offline-static-analysis.md |
 | Determine Online or Offline Status | https://developer.salesforce.com/docs/platform/mobile-offline/guide/offline-status.md |
 | Android Emulator Setup | https://developer.salesforce.com/docs/platform/mobile-offline/guide/quickstart-lwc-action-android-setup.md |
@@ -484,10 +484,10 @@ Full link list extracted programmatically from the live source file (2882 page l
 | Compatibility and Requirements | https://developer.salesforce.com/docs/platform/mobile-offline/guide/use-barcodescanner-compatibility.md |
 | Considerations and Limitations | https://developer.salesforce.com/docs/platform/mobile-offline/guide/use-barcodescanner-considerations.md |
 | Create a Self-Service Kiosk Application | https://developer.salesforce.com/docs/platform/mobile-offline/guide/use-barcodescanner-create-self-service-application.md |
-| BarcodeScanner Exampleâ€”Continuous Scanning (Legacy) | https://developer.salesforce.com/docs/platform/mobile-offline/guide/use-barcodescanner-example-continuous.md |
-| BarcodeScanner Exampleâ€”Self-Service Kiosk (Legacy) | https://developer.salesforce.com/docs/platform/mobile-offline/guide/use-barcodescanner-example-kiosk.md |
-| BarcodeScanner Exampleâ€“Modern Scanning API | https://developer.salesforce.com/docs/platform/mobile-offline/guide/use-barcodescanner-example-modern.md |
-| BarcodeScanner Exampleâ€”Single Scan (Legacy) | https://developer.salesforce.com/docs/platform/mobile-offline/guide/use-barcodescanner-example.md |
+| BarcodeScanner Example—Continuous Scanning (Legacy) | https://developer.salesforce.com/docs/platform/mobile-offline/guide/use-barcodescanner-example-continuous.md |
+| BarcodeScanner Example—Self-Service Kiosk (Legacy) | https://developer.salesforce.com/docs/platform/mobile-offline/guide/use-barcodescanner-example-kiosk.md |
+| BarcodeScanner Example–Modern Scanning API | https://developer.salesforce.com/docs/platform/mobile-offline/guide/use-barcodescanner-example-modern.md |
+| BarcodeScanner Example—Single Scan (Legacy) | https://developer.salesforce.com/docs/platform/mobile-offline/guide/use-barcodescanner-example.md |
 | Use the BarcodeScanner API | https://developer.salesforce.com/docs/platform/mobile-offline/guide/use-barcodescanner-in-a-lightning-component.md |
 | Barcode Scanning User Experience | https://developer.salesforce.com/docs/platform/mobile-offline/guide/use-barcodescanner-intro.md |
 | Understand BarcodeScanner Modern and Legacy APIs | https://developer.salesforce.com/docs/platform/mobile-offline/guide/use-barcodescanner-scan-barcodes.md |
@@ -656,8 +656,8 @@ Full link list extracted programmatically from the live source file (2882 page l
 | SOSL Syntax | https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-sosl-syntax.md |
 | toLabel(fields) | https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-sosl-tolabel.md |
 | Typographical Conventions in This Document | https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-sosl-typos.md |
-| Update an Articleâ€™s Keyword Tracking with SOSL | https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-sosl-update-tracking.md |
-| Update an Articleâ€™s Viewstat with SOSL | https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-sosl-update-viewstat.md |
+| Update an Article’s Keyword Tracking with SOSL | https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-sosl-update-tracking.md |
+| Update an Article’s Viewstat with SOSL | https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-sosl-update-viewstat.md |
 | USING Listview= | https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-sosl-using-listview.md |
 | WHERE | https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-sosl-where.md |
 | WITH DATA CATEGORY DataCategorySpec | https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-sosl-with-data-category.md |
@@ -780,7 +780,7 @@ Full link list extracted programmatically from the live source file (2882 page l
 | Change Event Body Fields | https://developer.salesforce.com/docs/platform/change-data-capture/guide/cdc-event-fields-body.md |
 | ChangeEventHeader Fields | https://developer.salesforce.com/docs/platform/change-data-capture/guide/cdc-event-fields-header.md |
 | Conversions That Generate a Gap Event | https://developer.salesforce.com/docs/platform/change-data-capture/guide/cdc-field-conversion-gap-event.md |
-| Conversions That Donâ€™t Generate Events | https://developer.salesforce.com/docs/platform/change-data-capture/guide/cdc-field-conversion-no-events.md |
+| Conversions That Don’t Generate Events | https://developer.salesforce.com/docs/platform/change-data-capture/guide/cdc-field-conversion-no-events.md |
 | Conversions That Generate a Change Event | https://developer.salesforce.com/docs/platform/change-data-capture/guide/cdc-field-conversion-single-event.md |
 | Change Events for Custom Field Type Conversions | https://developer.salesforce.com/docs/platform/change-data-capture/guide/cdc-field-conversions.md |
 | Filter Expressions in Channel Members | https://developer.salesforce.com/docs/platform/change-data-capture/guide/cdc-filter-add.md |
@@ -927,7 +927,7 @@ Full link list extracted programmatically from the live source file (2882 page l
 | Bulk API 2.0 | https://developer.salesforce.com/docs/platform/api-asynch/guide/bulk-api-2-0.md |
 | Job States | https://developer.salesforce.com/docs/platform/api-asynch/guide/bulk-api-2-job-states.md |
 | Bulk API End-of-Life Policy | https://developer.salesforce.com/docs/platform/api-asynch/guide/bulk-common-api-end-of-life.md |
-| Whatâ€™s the Difference Between Bulk API 2.0 and Bulk API? | https://developer.salesforce.com/docs/platform/api-asynch/guide/bulk-common-diff-two-versions.md |
+| What’s the Difference Between Bulk API 2.0 and Bulk API? | https://developer.salesforce.com/docs/platform/api-asynch/guide/bulk-common-diff-two-versions.md |
 | Limits | https://developer.salesforce.com/docs/platform/api-asynch/guide/bulk-common-limits.md |
 | Upload Complete | https://developer.salesforce.com/docs/platform/api-asynch/guide/close-job.md |
 | Create a Job | https://developer.salesforce.com/docs/platform/api-asynch/guide/create-job.md |
@@ -1107,7 +1107,7 @@ Full link list extracted programmatically from the live source file (2882 page l
 | Embed a Flow in a Custom Aura Component | https://developer.salesforce.com/docs/platform/aura-platform/guide/components-using-flow-cmp.md |
 | Reference Flow Output Variable Values in a Wrapper Aura Component | https://developer.salesforce.com/docs/platform/aura-platform/guide/components-using-flow-inputs-get.md |
 | Set Flow Input Variable Values from a Wrapper Aura Component | https://developer.salesforce.com/docs/platform/aura-platform/guide/components-using-flow-inputs-set.md |
-| Control a Flowâ€™s Finish Behavior by Wrapping the Flow in a Custom Aura Component | https://developer.salesforce.com/docs/platform/aura-platform/guide/components-using-flow-onfinish.md |
+| Control a Flow’s Finish Behavior by Wrapping the Flow in a Custom Aura Component | https://developer.salesforce.com/docs/platform/aura-platform/guide/components-using-flow-onfinish.md |
 | Resume a Flow Interview from an Aura Component | https://developer.salesforce.com/docs/platform/aura-platform/guide/components-using-flow-resume.md |
 | Display Flow Stages by Wrapping a Progress Indicator | https://developer.salesforce.com/docs/platform/aura-platform/guide/components-using-flow-stages-wrapper.md |
 | Display Flow Stages with an Aura Component | https://developer.salesforce.com/docs/platform/aura-platform/guide/components-using-flow-stages.md |
@@ -1287,7 +1287,7 @@ Full link list extracted programmatically from the live source file (2882 page l
 | Creating a Namespace in Your Organization | https://developer.salesforce.com/docs/platform/aura-platform/guide/namespaces-creating.md |
 | Component Namespace | https://developer.salesforce.com/docs/platform/aura-platform/guide/namespaces-intro.md |
 | Using the Default Namespace in Organizations with No Namespace Set | https://developer.salesforce.com/docs/platform/aura-platform/guide/namespaces-using-default.md |
-| Using Your Organizationâ€™s Namespace | https://developer.salesforce.com/docs/platform/aura-platform/guide/namespaces-using-organization.md |
+| Using Your Organization’s Namespace | https://developer.salesforce.com/docs/platform/aura-platform/guide/namespaces-using-organization.md |
 | Abstract Components | https://developer.salesforce.com/docs/platform/aura-platform/guide/oo-abstract-cmp.md |
 | Inherited Component Attributes | https://developer.salesforce.com/docs/platform/aura-platform/guide/oo-cmp-attributes.md |
 | Favor Composition Over Inheritance | https://developer.salesforce.com/docs/platform/aura-platform/guide/oo-favor-composition.md |
@@ -1300,9 +1300,9 @@ Full link list extracted programmatically from the live source file (2882 page l
 | Performance | https://developer.salesforce.com/docs/platform/aura-platform/guide/perf-intro.md |
 | Enable Secure Browser Caching | https://developer.salesforce.com/docs/platform/aura-platform/guide/perf-secure-browser-caching.md |
 | Performance Settings | https://developer.salesforce.com/docs/platform/aura-platform/guide/perf-settings-intro.md |
-| <aura:if> â€”Clean Unrendered Body â€”Clean Unrendered Body | https://developer.salesforce.com/docs/platform/aura-platform/guide/perf-warnings-if.md |
+| <aura:if> —Clean Unrendered Body —Clean Unrendered Body | https://developer.salesforce.com/docs/platform/aura-platform/guide/perf-warnings-if.md |
 | Fixing Performance Warnings | https://developer.salesforce.com/docs/platform/aura-platform/guide/perf-warnings-intro.md |
-| <aura:iteration> â€”Multiple Items Set â€”Multiple Items Set | https://developer.salesforce.com/docs/platform/aura-platform/guide/perf-warnings-iteration.md |
+| <aura:iteration> —Multiple Items Set —Multiple Items Set | https://developer.salesforce.com/docs/platform/aura-platform/guide/perf-warnings-iteration.md |
 | Trailhead: Explore Lightning Aura Components Resources | https://developer.salesforce.com/docs/platform/aura-platform/guide/qs-aotp-app.md |
 | Before You Begin | https://developer.salesforce.com/docs/platform/aura-platform/guide/qs-aotp-prereq.md |
 | Quick Start | https://developer.salesforce.com/docs/platform/aura-platform/guide/qs-intro.md |
@@ -1472,7 +1472,7 @@ Full link list extracted programmatically from the live source file (2882 page l
 | Extending Tokens Bundles | https://developer.salesforce.com/docs/platform/aura-platform/guide/tokens-extending.md |
 | Styling with Design Tokens and Styling Hooks | https://developer.salesforce.com/docs/platform/aura-platform/guide/tokens-intro.md |
 | Standard Design Tokens for Experience Builder Sites | https://developer.salesforce.com/docs/platform/aura-platform/guide/tokens-standard-communities.md |
-| Standard Design Tokensâ€” force:base | https://developer.salesforce.com/docs/platform/aura-platform/guide/tokens-standard-force-base.md |
+| Standard Design Tokens— force:base | https://developer.salesforce.com/docs/platform/aura-platform/guide/tokens-standard-force-base.md |
 | Overriding Standard Tokens (Deprecated) | https://developer.salesforce.com/docs/platform/aura-platform/guide/tokens-standard-overrides.md |
 | Using Standard Design Tokens | https://developer.salesforce.com/docs/platform/aura-platform/guide/tokens-standard.md |
 | Defining and Using Tokens | https://developer.salesforce.com/docs/platform/aura-platform/guide/tokens-using.md |
@@ -1527,7 +1527,7 @@ Full link list extracted programmatically from the live source file (2882 page l
 | Panels Container | https://developer.salesforce.com/docs/platform/communities-dev/guide/communities-dev-panel-css.md |
 | Previous Versions | https://developer.salesforce.com/docs/platform/communities-dev/guide/communities-dev-pdf-archive.md |
 | Personalization Target Developer and Group Names | https://developer.salesforce.com/docs/platform/communities-dev/guide/communities-dev-personalization-names.md |
-| Comply with a Userâ€™s Personal Information Visibility Settings | https://developer.salesforce.com/docs/platform/communities-dev/guide/communities-dev-pii-settings.md |
+| Comply with a User’s Personal Information Visibility Settings | https://developer.salesforce.com/docs/platform/communities-dev/guide/communities-dev-pii-settings.md |
 | Record Banner Component | https://developer.salesforce.com/docs/platform/communities-dev/guide/communities-dev-record-banner-css.md |
 | Record Detail Component | https://developer.salesforce.com/docs/platform/communities-dev/guide/communities-dev-record-detail-css.md |
 | Encrypt Record IDs for Guest Users | https://developer.salesforce.com/docs/platform/communities-dev/guide/communities-dev-record-id-encryption-for-guest-users.md |
@@ -2143,7 +2143,7 @@ Full link list extracted programmatically from the live source file (2882 page l
 | Using Custom Controllers within Visualforce Email Templates | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-email-templates-with-apex.md |
 | Embed Flows in Visualforce Pages | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-flows-adding.md |
 | An Advanced Example of Using <flow:interview> | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-flows-advanced.md |
-| Customize a Flowâ€™s User Interface | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-flows-customize-runtime-ui.md |
+| Customize a Flow’s User Interface | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-flows-customize-runtime-ui.md |
 | Configure the finishLocation Attribute in a Flow | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-flows-finishlocation.md |
 | Get Flow Variable Values to a Visualforce Page | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-flows-getting-values.md |
 | Render Flows with Visualforce | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-flows-intro.md |
@@ -2151,7 +2151,7 @@ Full link list extracted programmatically from the live source file (2882 page l
 | Control Whether Users Can Pause a Flow from a Visualforce Page | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-flows-pause.md |
 | Customize How Users Resume Paused Flow Interviews | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-flows-pausedid.md |
 | Set Flow Variable Values from a Visualforce Page | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-flows-setting-values.md |
-| Creating an Empty HTML5 â€œContainerâ€ Page | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-html-container-page.md |
+| Creating an Empty HTML5 “Container” Page | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-html-container-page.md |
 | HTML Comments and IE Conditional Comments | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-html-features-ie-conditional-comments.md |
 | Setting Custom HTML Attributes on Visualforce Components | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-html-features-pass-through-attributes.md |
 | HTML Tags Added or Modified by Visualforce | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-html-features-tags-auto.md |
@@ -2268,7 +2268,7 @@ Full link list extracted programmatically from the live source file (2882 page l
 | Cross Site Scripting (XSS) | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-security-tips-xss.md |
 | Extending Salesforce Styles with Stylesheets | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-styling-adding-stylesheets.md |
 | Change the MIME type of Your Visualforce Page | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-styling-content-type.md |
-| Defining Styles for a Componentâ€™s DOM ID | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-styling-custom-using-component-id.md |
+| Defining Styles for a Component’s DOM ID | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-styling-custom-using-component-id.md |
 | Using Custom Styles | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-styling-custom.md |
 | Using a Custom Doctype | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-styling-doctype.md |
 | Determining the Salesforce Style That Users See in JavaScript | https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-styling-javascript-identifying-theme.md |
@@ -2494,7 +2494,7 @@ Full link list extracted programmatically from the live source file (2882 page l
 | Get the Event Schema with REST API | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-event-schema-rest-api.md |
 | Get the Event Schema | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-event-schema.md |
 | Identify and Match Event Messages with the EventUuid Field | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-event-uuid.md |
-| Obtain an Eventâ€™s Subscribers by Querying EventBusSubscriber | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-eventbussubscriber.md |
+| Obtain an Event’s Subscribers by Querying EventBusSubscriber | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-eventbussubscriber.md |
 | End-to-End Example Using Flows | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-example-printervendor.md |
 | Examples | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-examples.md |
 | Filter Expressions in Channel Members | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-filter-add.md |
@@ -2508,12 +2508,12 @@ Full link list extracted programmatically from the live source file (2882 page l
 | Subscribe to the Channel and Receive the Filtered Event Stream | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-filter-subscribe.md |
 | Add a Filter with Tooling API | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-filter-tooling-api-add-filter.md |
 | Platform Event Filters | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-filters.md |
-| View and Manage an Eventâ€™s Subscribers on the Platform Eventâ€™s Detail Page | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-get-subscribers-apex.md |
+| View and Manage an Event’s Subscribers on the Platform Event’s Detail Page | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-get-subscribers-apex.md |
 | Obtain Processes That Subscribe to a Platform Event in Metadata API | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-get-subscribers-process.md |
-| Obtain a Platform Eventâ€™s Subscribers | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-get-subscribers.md |
+| Obtain a Platform Event’s Subscribers | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-get-subscribers.md |
 | Event-Driven Software Architecture | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-intro-architecture.md |
 | Enterprise Messaging Platform Events | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-intro-emp.md |
-| Whatâ€™s the Difference Between the Salesforce Events? | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-intro-other-events.md |
+| What’s the Difference Between the Salesforce Events? | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-intro-other-events.md |
 | Platform Events Developer Guide | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-intro.md |
 | Common Platform Event Allocations | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-limits-common.md |
 | Default Platform Event Allocations for Event Publishing and Delivery | https://developer.salesforce.com/docs/platform/platform-events/guide/platform-events-limits-default.md |
@@ -2890,7 +2890,7 @@ Full link list extracted programmatically from the live source file (2882 page l
 | Configure Who Can Access the Canvas App | https://developer.salesforce.com/docs/platform/canvas-framework/guide/quick-start-intro-config-access.md |
 | Create the Canvas App | https://developer.salesforce.com/docs/platform/canvas-framework/guide/quick-start-intro-create.md |
 | Package the Canvas App | https://developer.salesforce.com/docs/platform/canvas-framework/guide/quick-start-intro-package.md |
-| Quick Startâ€”Advanced | https://developer.salesforce.com/docs/platform/canvas-framework/guide/quick-start-intro.md |
+| Quick Start—Advanced | https://developer.salesforce.com/docs/platform/canvas-framework/guide/quick-start-intro.md |
 | Package the External Client App for Canvas | https://developer.salesforce.com/docs/platform/canvas-framework/guide/quick-start-package-canvas-app-eca.md |
 | Package the Connected App for Canvas | https://developer.salesforce.com/docs/platform/canvas-framework/guide/quick-start-package-canvas-app.md |
 | Prerequisites | https://developer.salesforce.com/docs/platform/canvas-framework/guide/quick-start-prereqs.md |
@@ -2906,8 +2906,8 @@ Full link list extracted programmatically from the live source file (2882 page l
 | Record Object Examples | https://developer.salesforce.com/docs/platform/canvas-framework/guide/record-object-examples.md |
 | Record | https://developer.salesforce.com/docs/platform/canvas-framework/guide/record-object.md |
 | SignedRequest | https://developer.salesforce.com/docs/platform/canvas-framework/guide/signed-request-object.md |
-| Canvas App User Flowâ€”OAuth | https://developer.salesforce.com/docs/platform/canvas-framework/guide/user-flow-oauth.md |
-| Canvas App User Flowâ€”Signed Request | https://developer.salesforce.com/docs/platform/canvas-framework/guide/user-flow-signed-request.md |
+| Canvas App User Flow—OAuth | https://developer.salesforce.com/docs/platform/canvas-framework/guide/user-flow-oauth.md |
+| Canvas App User Flow—Signed Request | https://developer.salesforce.com/docs/platform/canvas-framework/guide/user-flow-signed-request.md |
 | User | https://developer.salesforce.com/docs/platform/canvas-framework/guide/user-object.md |
 | Version | https://developer.salesforce.com/docs/platform/canvas-framework/guide/version-object.md |
 

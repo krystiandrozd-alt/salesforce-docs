@@ -2,7 +2,7 @@
 
 Source: [llms-marketing-cloud-mobilepush.txt](https://developer.salesforce.com/docs/llms-marketing-cloud-mobilepush.txt).
 
-Full link list extracted programmatically from the live source file (607 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (607 page links across 1 sections). Last refreshed 2026-11-12 by `scripts/refresh_from_llms.py`.
 
 ## Salesforce Engagement SDK (607 pages)
 
@@ -31,7 +31,7 @@ Full link list extracted programmatically from the live source file (607 page li
 | Installation | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/flutter-install-and-configure.md |
 | Migration Checklist | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/flutter-migration-checklist.md |
 | Flutter Unified Plugin | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/flutter-setup.md |
-| Unified Platform Support | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/hybrid-platform-support-for-unified-mobile-sdk.md |
+| Hybrid Platform Support | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/hybrid-platform-support-for-unified-mobile-sdk.md |
 | Installation | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/install-and-configure.md |
 | Analytics on Android | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_analytics_android_implement.md |
 | Track Cart Contents on Android | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_analytics_android_recommendations_integrate_cart_track.md |

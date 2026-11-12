@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """Refresh this catalog from the official Salesforce llms.txt files.
 
-Usage (needs Playwright + Chromium; plain HTTP to developer.salesforce.com returns 403):
-  pip install playwright && python -m playwright install chromium
+Usage:
   python3 scripts/refresh_from_llms.py [--date YYYY-MM-DD]
+
+Fetches over plain HTTPS first (standard library only). If developer.salesforce.com
+answers 403 (bot protection seen from some networks), it falls back to a headless
+Chromium via Playwright:
+  pip install playwright && python -m playwright install chromium
 
 What it does:
 - reads https://developer.salesforce.com/docs/llms.txt and every llms-<area>.txt it lists;
@@ -30,20 +34,68 @@ LINK = re.compile(r"^\s*- \[(.+?)\]\((https?://[^)\s]+)\)(?::\s*(.*))?$")
 LIST_FILE = ROOT / "salesforce-platform-docs-content-list.md"
 
 
+# Salesforce's bot protection answers 403 to a spoofed browser User-Agent sent without a
+# real browser, but accepts plain tool agents. Try the stdlib default first, then curl's.
+USER_AGENTS = (None, "curl/8.5.0")
+
+
+def http_get(url: str) -> str:
+    """Plain HTTPS GET with the standard library; raises on non-200."""
+    import urllib.request
+
+    last = None
+    for ua in USER_AGENTS:
+        headers = {"Accept": "text/plain, text/markdown, */*"}
+        if ua:
+            headers["User-Agent"] = ua
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=120) as r:
+                return r.read().decode("utf-8", errors="replace")
+        except Exception as e:  # HTTPError (403...) or network error: try the next agent
+            last = e
+    raise RuntimeError(f"{url}: {last}")
+
+
+class BrowserGetter:
+    """Lazy Playwright fallback, only started if plain HTTPS is refused."""
+
+    def __init__(self):
+        self.pw = self.browser = self.page = None
+
+    def __call__(self, url: str) -> str:
+        if self.page is None:
+            from playwright.sync_api import sync_playwright
+
+            self.pw = sync_playwright().start()
+            self.browser = self.pw.chromium.launch(headless=True, args=["--no-sandbox"])
+            self.page = self.browser.new_page()
+        r = self.page.goto(url, wait_until="domcontentloaded", timeout=120000)
+        if not r or r.status != 200:
+            raise RuntimeError(f"{url}: HTTP {r.status if r else '?'}")
+        return self.page.evaluate("document.body.innerText")
+
+    def close(self):
+        if self.browser:
+            self.browser.close()
+            self.pw.stop()
+
+
 def fetch_all() -> tuple[list[tuple[str, str, str]], dict[str, str]]:
-    from playwright.sync_api import sync_playwright
-
     areas, texts = [], {}
-    with sync_playwright() as p:
-        b = p.chromium.launch(headless=True, args=["--no-sandbox"])
-        page = b.new_page()
+    browser = BrowserGetter()
+    use_browser = False
 
-        def get(url: str) -> str:
-            r = page.goto(url, wait_until="domcontentloaded", timeout=120000)
-            if not r or r.status != 200:
-                raise RuntimeError(f"{url}: HTTP {r.status if r else '?'}")
-            return page.evaluate("document.body.innerText")
+    def get(url: str) -> str:
+        nonlocal use_browser
+        if not use_browser:
+            try:
+                return http_get(url)
+            except Exception as e:  # 403 / blocked: switch to the browser for the rest of the run
+                print(f"plain HTTPS failed ({e}); falling back to Playwright", file=sys.stderr)
+                use_browser = True
+        return browser(url)
 
+    try:
         for line in get(LLMS).splitlines():
             m = LINK.match(line)
             if not m or "/docs/llms-" not in m.group(2):
@@ -52,7 +104,8 @@ def fetch_all() -> tuple[list[tuple[str, str, str]], dict[str, str]]:
             areas.append((slug, m.group(1).strip(), clean(m.group(3) or "")))
             print(f"fetch {slug}", file=sys.stderr)
             texts[slug] = get(m.group(2))
-        b.close()
+    finally:
+        browser.close()
     return areas, texts
 
 
@@ -141,6 +194,17 @@ def write_content(slug: str, title: str, overview: str, sections, today: str, n:
     return False
 
 
+def strip_counts(desc: str) -> str:
+    """Remove page counts written into older descriptions so only the fresh one is appended.
+
+    Handles "**1,234 links.**", "**853 links across 12 sections.**",
+    "**23,053 links — by far the largest ...**" and a trailing "(3.79 MB `index.md`)".
+    """
+    d = re.sub(r"\s*\*\*[\d,]+ links\b[^*]*\*\*", "", desc)
+    d = re.sub(r"\s*\([\d.,]+ [KM]B `index\.md`\)\.?", "", d)
+    return d.strip()
+
+
 def old_descriptions() -> dict[str, str]:
     d = {}
     if LIST_FILE.exists():
@@ -165,7 +229,7 @@ def main() -> int:
         if write_content(slug, title, overview, sections, today, n):
             created.append(slug)
         d = clean(descs.get(slug, "")) or desc or overview or "No overview text in source."
-        d = re.sub(r"\s*\*\*[\d,]+ links\.\*\*", "", d).strip()
+        d = strip_counts(d)
         if n >= 1000:
             d += f" **{n:,} links.**"
         rows.append(f"| {i} | ✅ | {title} | [folder]({slug}/) | {d} |")

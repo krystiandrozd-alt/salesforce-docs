@@ -10,7 +10,8 @@ Section breakdown:
 *Source: [`llms-metadata-coverage.txt`](https://developer.salesforce.com/docs/llms-metadata-coverage.txt) — official aggregated index (developer doc page), overview section.*
 
 
-*Last refreshed 2026-11-06: 42 pages in 1 sections (counts from the live source).*
+
+*Last refreshed 2026-11-12: 42 pages in 1 sections (counts from the live source).*
 
 ## Extraction notes
 

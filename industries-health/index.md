@@ -2,9 +2,9 @@
 
 Source: [llms-industries-health.txt](https://developer.salesforce.com/docs/llms-industries-health.txt).
 
-Full link list extracted programmatically from the live source file (1851 page links across 2 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (1852 page links across 2 sections). Last refreshed 2026-11-12 by `scripts/refresh_from_llms.py`.
 
-## Health Cloud Developer Guide (1063 pages)
+## Health Cloud Developer Guide (1064 pages)
 
 | Page | URL |
 |---|---|
@@ -25,6 +25,7 @@ Full link list extracted programmatically from the live source file (1851 page l
 | Schedule Home Visits Manually Action | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/actions-obj-schedule-home-visits-manually.md |
 | Schedule Recurring Home Visit Action | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/actions-obj-schedule-recurring-home-visit.md |
 | Update Appointment Action | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/actions-obj-update-appointment.md |
+| Schedule Home Health Care Visits Action | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/actions-schedule-home-healthcare-visits.md |
 | attributeName | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/apex-class-docai-attribute-attributename.md |
 | confidenceScore | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/apex-class-docai-attribute-confidencescore.md |
 | fieldApiName | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/apex-class-docai-attribute-fieldapiname.md |
@@ -407,20 +408,20 @@ Full link list extracted programmatically from the live source file (1851 page l
 | EhrDevice__c to CareRegisteredDevice and Asset | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrdevice.md |
 | EhrDosageInstruction__c to PatientMedicationDosage | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrdosageinstruction.md |
 | EhrEncounter__c to ClinicalEncounter | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrencounter.md |
-| EhrEncounterParticipantâ€‹__c to ClinicalEncounterProvider | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrencounterparticipant__c.md |
-| EhrImmunizationâ€‹__c to PatientImmunization | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrimmunization__c.md |
-| EhrImmunizationReactionâ€‹__c to PatientHealthReaction | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrimmunizationreaction__c.md |
-| EhrMedicationPrescription__c to Medicationâ€‹â€‹Request | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrmedicationprescription__c.md |
-| EhrMedicationStatementâ€‹__c to Medicationâ€‹Statement | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrmedicationstatement__c.md |
+| EhrEncounterParticipant​__c to ClinicalEncounterProvider | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrencounterparticipant__c.md |
+| EhrImmunization​__c to PatientImmunization | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrimmunization__c.md |
+| EhrImmunizationReaction​__c to PatientHealthReaction | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrimmunizationreaction__c.md |
+| EhrMedicationPrescription__c to Medication​​Request | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrmedicationprescription__c.md |
+| EhrMedicationStatement​__c to Medication​Statement | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrmedicationstatement__c.md |
 | EhrObservation__c to CareObservation | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrobservation__c.md |
 | EhrPatient__c to Person Account | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrpatient__c.md |
-| EhrPatientCareProvider__c to Contactâ€‹Contactâ€‹Relation__câ€‹ | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrpatientcareprovider__c.md |
-| EhrPatientContact__c to Contactâ€‹Contactâ€‹Relation__c | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrpatientcontact__c.md |
+| EhrPatientCareProvider__c to Contact​Contact​Relation__c​ | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrpatientcareprovider__c.md |
+| EhrPatientContact__c to Contact​Contact​Relation__c | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrpatientcontact__c.md |
 | EhrPractitioner__c to PersonAccount and HealthcareProvider and PersonAccount | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrpractitioner__c.md |
 | EhrPractitionerQualification__c to BoardCertification | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrpractitionerqualification__c.md |
 | EhrPractitionerRole__c to HealthcarePractitionerFacility | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrpractitionerrole__c.md |
 | EhrProcedure__c to PatientMedicalProcedure | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrprocedure__c.md |
-| EhrRelatedObservationâ€‹__c to CareOberservationComponent | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrrelatedobservation__c.md |
+| EhrRelatedObservation​__c to CareOberservationComponent | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrrelatedobservation__c.md |
 | EhrVaccinationProtocol__c to Patient Immunization | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-ehrvaccinationprotocol__c.md |
 | EhrProcedurePerformer__c to CarePerformer | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-procedure-performer__c.md |
 | EhrProcedureRequest__c to ClinicalServiceRequest | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/ehr-cdm-procedure-request__c.md |
@@ -661,11 +662,11 @@ Full link list extracted programmatically from the live source file (1851 page l
 | ProgramEnrollment | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/lsc-sforce-api-objects-programenrollment.md |
 | Address | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-address.md |
 | AdverseEvent | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-adverseevents.md |
-| Allergyâ€‹Intolerance | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-allergyintolerance.md |
+| Allergy​Intolerance | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-allergyintolerance.md |
 | Annotation | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-annotation.md |
 | Attachment | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-attachment.md |
-| Careâ€‹Plan | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-careplan.md |
-| Codeableâ€‹Concept | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-codeableconcept.md |
+| Care​Plan | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-careplan.md |
+| Codeable​Concept | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-codeableconcept.md |
 | Coding | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-coding.md |
 | CommunicationRequest | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-communicationrequest.md |
 | Condition | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-condition.md |
@@ -674,24 +675,24 @@ Full link list extracted programmatically from the live source file (1851 page l
 | CRDMetricData | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-crdmetricdata.md |
 | Device | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-device.md |
 | DiagnosticReport | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-diagnosticreport.md |
-| Documentâ€‹Reference | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-documentreference.md |
+| Document​Reference | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-documentreference.md |
 | Dosage | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-dosage.md |
 | DTRMetricData | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-dtrmetricdata.md |
 | DTRQuestionnaireResponse | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-dtrquestionnaireresponse.md |
 | DTRStdQuestionnaire | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-dtrstdquestionnaire.md |
 | Encounter | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-encounter.md |
 | EpisodeOfCare | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-episodeofcare.md |
-| â€‹Flag | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-flag.md |
+| ​Flag | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-flag.md |
 | Goal | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-goal.md |
-| Humanâ€‹Name | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-humanname.md |
+| Human​Name | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-humanname.md |
 | Identifier | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-identifier.md |
-| â€‹Immunization | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-immunization.md |
+| ​Immunization | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-immunization.md |
 | InformationOrigin | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-informationorigin.md |
 | Location | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-location.md |
-| â€‹Medication | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-medication.md |
-| â€‹Medicationâ€‹â€‹Request | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-medicationrequest.md |
-| Medicationâ€‹Statement | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-medicationstatement.md |
-| â€‹Observation | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-observation.md |
+| ​Medication | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-medication.md |
+| ​Medication​​Request | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-medicationrequest.md |
+| Medication​Statement | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-medicationstatement.md |
+| ​Observation | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-observation.md |
 | Organization | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-organization.md |
 | Mapping FHIR v4.0 to Salesforce Standard Objects | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-overview.md |
 | PASClaim | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-pasclaim.md |
@@ -700,10 +701,10 @@ Full link list extracted programmatically from the live source file (1851 page l
 | Patient | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-patient.md |
 | Practitioner | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-practitioner.md |
 | PractitionerRole | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-practitionerrole.md |
-| â€‹Procedure | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-procedure.md |
+| ​Procedure | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-procedure.md |
 | RelatedPerson | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-related-person.md |
 | ResearchStudy | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-researchstudy.md |
-| Serviceâ€‹Request | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-servicerequest.md |
+| Service​Request | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-servicerequest.md |
 | Subscription | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-subscription.md |
 | SubscriptionTopic | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-subscriptiontopic.md |
 | Timing | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/map-fhir-timing.md |
@@ -1467,11 +1468,11 @@ Full link list extracted programmatically from the live source file (1851 page l
 | SearchResultActionConfig | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/lsc-tooling-api-objects-searchresultactionconfig.md |
 | Address | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-address.md |
 | AdverseEvent | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-adverseevents.md |
-| Allergyâ€‹Intolerance | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-allergyintolerance.md |
+| Allergy​Intolerance | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-allergyintolerance.md |
 | Annotation | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-annotation.md |
 | Attachment | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-attachment.md |
-| Careâ€‹Plan | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-careplan.md |
-| Codeableâ€‹Concept | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-codeableconcept.md |
+| Care​Plan | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-careplan.md |
+| Codeable​Concept | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-codeableconcept.md |
 | Coding | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-coding.md |
 | CommunicationRequest | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-communicationrequest.md |
 | Condition | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-condition.md |
@@ -1479,30 +1480,30 @@ Full link list extracted programmatically from the live source file (1851 page l
 | ContactPoint | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-contactpoint.md |
 | Device | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-device.md |
 | DiagnosticReport | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-diagnosticreport.md |
-| Documentâ€‹Reference | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-documentreference.md |
+| Document​Reference | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-documentreference.md |
 | Dosage | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-dosage.md |
 | Encounter | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-encounter.md |
 | EpisodeOfCare | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-episodeofcare.md |
-| â€‹Flag | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-flag.md |
+| ​Flag | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-flag.md |
 | Goal | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-goal.md |
-| Humanâ€‹Name | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-humanname.md |
+| Human​Name | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-humanname.md |
 | Identifier | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-identifier.md |
-| â€‹Immunization | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-immunization.md |
+| ​Immunization | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-immunization.md |
 | InformationOrigin | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-informationorigin.md |
 | Location | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-location.md |
-| â€‹Medication | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-medication.md |
-| â€‹Medicationâ€‹â€‹Request | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-medicationrequest.md |
-| Medicationâ€‹Statement | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-medicationstatement.md |
-| â€‹Observation | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-observation.md |
+| ​Medication | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-medication.md |
+| ​Medication​​Request | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-medicationrequest.md |
+| Medication​Statement | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-medicationstatement.md |
+| ​Observation | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-observation.md |
 | Organization | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-organization.md |
 | Mapping FHIR v4.0 to Salesforce Standard Objects | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-overview.md |
 | Patient | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-patient.md |
 | Practitioner | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-practitioner.md |
 | PractitionerRole | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-practitionerrole.md |
-| â€‹Procedure | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-procedure.md |
+| ​Procedure | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-procedure.md |
 | RelatedPerson | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-related-person.md |
 | ResearchStudy | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-researchstudy.md |
-| Serviceâ€‹Request | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-servicerequest.md |
+| Service​Request | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-servicerequest.md |
 | Timing | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-fhir-timing.md |
 | AL1 - Patient Allergy Information | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-hl7-al1.md |
 | CE - Coded Element | https://developer.salesforce.com/docs/industries/life-sciences-dev-guide/guide/map-hl7-ce.md |

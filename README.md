@@ -20,19 +20,34 @@ Every product-specific `llms-*.txt` section now has its own folder here. See [`s
 
 | Product | Links | `index.md` size |
 |---|---|---|
-| [product-docs](product-docs/) | 12,977 | 1.87 MB |
-| [commerce-cloud](commerce-cloud/) | 6,864 | 900 KB |
-| [data-cloud](data-cloud/) | 4,322 | 615 KB |
+| [product-docs](product-docs/) | 12,979 | 1.87 MB |
+| [commerce-cloud](commerce-cloud/) | 6,878 | 902 KB |
+| [data-cloud](data-cloud/) | 4,329 | 616 KB |
 | [industries](industries/) | 4,021 | 592 KB |
 | [platform-field-ref](platform-field-ref/) | 2,712 | 444 KB |
-| [platform-apex](platform-apex/) | 2,881 | 442 KB |
+| [platform-apex](platform-apex/) | 2,879 | 441 KB |
 | [platform](platform/) | 2,882 | 399 KB |
 | [service-cloud](service-cloud/) | 2,586 | 373 KB |
-| [platform-obj-meta-tool](platform-obj-meta-tool/) | 2,498 | 351 KB |
-| [marketing-cloud](marketing-cloud/) | 2,177 | 303 KB |
+| [platform-obj-meta-tool](platform-obj-meta-tool/) | 2,576 | 365 KB |
+| [marketing-cloud](marketing-cloud/) | 2,181 | 303 KB |
 
 These are reproduced **in full**, not condensed, per explicit instruction — including `product-docs`, the largest single index.
 
+## Using it with Claude (or any agent)
+
+`scripts/sfdocs.py` turns the catalog into a working lookup tool (standard library only):
+
+```bash
+python3 scripts/sfdocs.py search "TMF622 product ordering" --area industries-integrations
+python3 scripts/sfdocs.py fetch https://developer.salesforce.com/docs/industries/communications/guide/TMF622.md
+python3 scripts/sfdocs.py areas
+python3 scripts/sfdocs.py sections revenue-cloud
+```
+
+- `search` ranks all page links by title, section, URL path and area (offline, about 0.3 s).
+- `fetch` downloads the official page as Markdown, follows legacy `atlas.en-us` redirects to the new `.md` page, and caches it in `.cache/pages/`.
+- The Claude Code skill [`.claude/skills/salesforce-docs`](.claude/skills/salesforce-docs/SKILL.md) tells Claude when to use it and how to cite: search, fetch, answer only from fetched text. [`CLAUDE.md`](CLAUDE.md) points every session in this repo to it.
+
 ## Source
 
-All entries trace back to `developer.salesforce.com/docs/llms-*.txt` and the pages they link to. Captured starting 2026-10-24. Last refreshed 2026-11-06 with [`scripts/refresh_from_llms.py`](scripts/refresh_from_llms.py).
+All entries trace back to `developer.salesforce.com/docs/llms-*.txt` and the pages they link to. Captured starting 2026-10-24. Last refreshed 2026-11-12 with [`scripts/refresh_from_llms.py`](scripts/refresh_from_llms.py).

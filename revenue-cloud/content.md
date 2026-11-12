@@ -16,7 +16,8 @@ Section breakdown:
 *Source: [`llms-revenue-cloud.txt`](https://developer.salesforce.com/docs/llms-revenue-cloud.txt) — official aggregated index (developer doc page), overview section.*
 
 
-*Last refreshed 2026-11-06: 1870 pages in 7 sections (counts from the live source).*
+
+*Last refreshed 2026-11-12: 1870 pages in 7 sections (counts from the live source).*
 
 ## Extraction notes
 

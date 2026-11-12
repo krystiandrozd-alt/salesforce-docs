@@ -10,7 +10,8 @@ Analytics is the largest single index in this catalog: 1,003 page links across 1
 *Source: [`llms-analytics.txt`](https://developer.salesforce.com/docs/llms-analytics.txt) — official aggregated index (developer doc page), overview section.*
 
 
-*Last refreshed 2026-11-06: 1013 pages in 16 sections (counts from the live source).*
+
+*Last refreshed 2026-11-12: 1013 pages in 16 sections (counts from the live source).*
 
 ## Extraction notes
 

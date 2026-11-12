@@ -2,9 +2,9 @@
 
 Source: [llms-commerce-cloud.txt](https://developer.salesforce.com/docs/llms-commerce-cloud.txt).
 
-Full link list extracted programmatically from the live source file (6864 page links across 15 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (6878 page links across 15 sections). Last refreshed 2026-11-12 by `scripts/refresh_from_llms.py`.
 
-## B2C Commerce (1271 pages)
+## B2C Commerce (1273 pages)
 
 | Page | URL |
 |---|---|
@@ -176,6 +176,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | SFRA Modules | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/b2c-sfra-modules.md |
 | SFRA Standards Compliance | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/b2c-sfra-standards-compliance.md |
 | SFRA Versions and Releases | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/b2c-sfra-versions.md |
+| Build a Cartridge to Integrate Express Checkout with the B2C Shopper Agent on SFRA Storefronts | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/b2c-shopper-agent-express-checkout-cartridge.md |
 | Site Performance | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/b2c-site-performance.md |
 | Specify Customer Service Center Settings | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/b2c-specifying-customer-service-center-settings.md |
 | Start Customer Service Center | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/b2c-starting-customer-service-center.md |
@@ -282,6 +283,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | Use Environment Variables in React.js | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/env-var-feature-access.md |
 | Environment Variables | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/environment-variables.md |
 | HTTP Status Codes and Errors | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/error-response-codes.md |
+| Integrate Express Checkout with the B2C Shopper Agent on PWA Kit Storefronts | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/express-checkout.md |
 | Extend | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/extend.md |
 | Extensibility via Hooks | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/extensibility_via_hooks.md |
 | Fraud Commerce Apps | https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/fraud.md |
@@ -1280,7 +1282,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | XMLList | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/TopLevel.XMLList.md |
 | XMLStreamError | https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-script-api/TopLevel.XMLStreamError.md |
 
-## B2C Commerce API (681 pages)
+## B2C Commerce API (683 pages)
 
 | Page | URL |
 |---|---|
@@ -1452,6 +1454,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | SFRA Modules | https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-sfra-modules.md |
 | SFRA Standards Compliance | https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-sfra-standards-compliance.md |
 | SFRA Versions and Releases | https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-sfra-versions.md |
+| Build a Cartridge to Integrate Express Checkout with the B2C Shopper Agent on SFRA Storefronts | https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-shopper-agent-express-checkout-cartridge.md |
 | Site Performance | https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-site-performance.md |
 | Specify Customer Service Center Settings | https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-specifying-customer-service-center-settings.md |
 | Start Customer Service Center | https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-starting-customer-service-center.md |
@@ -1558,6 +1561,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | Use Environment Variables in React.js | https://developer.salesforce.com/docs/commerce/commerce-api/guide/env-var-feature-access.md |
 | Environment Variables | https://developer.salesforce.com/docs/commerce/commerce-api/guide/environment-variables.md |
 | HTTP Status Codes and Errors | https://developer.salesforce.com/docs/commerce/commerce-api/guide/error-response-codes.md |
+| Integrate Express Checkout with the B2C Shopper Agent on PWA Kit Storefronts | https://developer.salesforce.com/docs/commerce/commerce-api/guide/express-checkout.md |
 | Extend | https://developer.salesforce.com/docs/commerce/commerce-api/guide/extend.md |
 | Extensibility via Hooks | https://developer.salesforce.com/docs/commerce/commerce-api/guide/extensibility_via_hooks.md |
 | Fraud Commerce Apps | https://developer.salesforce.com/docs/commerce/commerce-api/guide/fraud.md |
@@ -1997,7 +2001,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | Use GDPR Delete | https://developer.salesforce.com/docs/commerce/einstein-api/guide/use-gdpr-delete.md |
 | Zone Component | https://developer.salesforce.com/docs/commerce/einstein-api/guide/zone-component.md |
 
-## B2C Commerce Solutions (679 pages)
+## B2C Commerce Solutions (681 pages)
 
 | Page | URL |
 |---|---|
@@ -2169,6 +2173,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | SFRA Modules | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/b2c-sfra-modules.md |
 | SFRA Standards Compliance | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/b2c-sfra-standards-compliance.md |
 | SFRA Versions and Releases | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/b2c-sfra-versions.md |
+| Build a Cartridge to Integrate Express Checkout with the B2C Shopper Agent on SFRA Storefronts | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/b2c-shopper-agent-express-checkout-cartridge.md |
 | Site Performance | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/b2c-site-performance.md |
 | Specify Customer Service Center Settings | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/b2c-specifying-customer-service-center-settings.md |
 | Start Customer Service Center | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/b2c-starting-customer-service-center.md |
@@ -2275,6 +2280,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | Use Environment Variables in React.js | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/env-var-feature-access.md |
 | Environment Variables | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/environment-variables.md |
 | HTTP Status Codes and Errors | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/error-response-codes.md |
+| Integrate Express Checkout with the B2C Shopper Agent on PWA Kit Storefronts | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/express-checkout.md |
 | Extend | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/extend.md |
 | Extensibility via Hooks | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/extensibility_via_hooks.md |
 | Fraud Commerce Apps | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/fraud.md |
@@ -2681,7 +2687,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | Why Use SCAPI | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/why-use-scapi.md |
 | Build Baskets and Place Orders | https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/work-with-baskets-orders.md |
 
-## B2C Commerce Storefront Reference Architecture (679 pages)
+## B2C Commerce Storefront Reference Architecture (681 pages)
 
 | Page | URL |
 |---|---|
@@ -2853,6 +2859,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | SFRA Modules | https://developer.salesforce.com/docs/commerce/sfra/guide/b2c-sfra-modules.md |
 | SFRA Standards Compliance | https://developer.salesforce.com/docs/commerce/sfra/guide/b2c-sfra-standards-compliance.md |
 | SFRA Versions and Releases | https://developer.salesforce.com/docs/commerce/sfra/guide/b2c-sfra-versions.md |
+| Build a Cartridge to Integrate Express Checkout with the B2C Shopper Agent on SFRA Storefronts | https://developer.salesforce.com/docs/commerce/sfra/guide/b2c-shopper-agent-express-checkout-cartridge.md |
 | Site Performance | https://developer.salesforce.com/docs/commerce/sfra/guide/b2c-site-performance.md |
 | Specify Customer Service Center Settings | https://developer.salesforce.com/docs/commerce/sfra/guide/b2c-specifying-customer-service-center-settings.md |
 | Start Customer Service Center | https://developer.salesforce.com/docs/commerce/sfra/guide/b2c-starting-customer-service-center.md |
@@ -2959,6 +2966,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | Use Environment Variables in React.js | https://developer.salesforce.com/docs/commerce/sfra/guide/env-var-feature-access.md |
 | Environment Variables | https://developer.salesforce.com/docs/commerce/sfra/guide/environment-variables.md |
 | HTTP Status Codes and Errors | https://developer.salesforce.com/docs/commerce/sfra/guide/error-response-codes.md |
+| Integrate Express Checkout with the B2C Shopper Agent on PWA Kit Storefronts | https://developer.salesforce.com/docs/commerce/sfra/guide/express-checkout.md |
 | Extend | https://developer.salesforce.com/docs/commerce/sfra/guide/extend.md |
 | Extensibility via Hooks | https://developer.salesforce.com/docs/commerce/sfra/guide/extensibility_via_hooks.md |
 | Fraud Commerce Apps | https://developer.salesforce.com/docs/commerce/sfra/guide/fraud.md |
@@ -3374,7 +3382,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | Marketplace Integration Toolkit Configuration | https://developer.salesforce.com/docs/commerce/marketplace/guide/marketplace-toolkit-config.md |
 | About the API | https://developer.salesforce.com/docs/commerce/marketplace/references/marketplace-about/about.md |
 
-## Agentforce Commerce Vibes (679 pages)
+## Agentforce Commerce Vibes (681 pages)
 
 | Page | URL |
 |---|---|
@@ -3546,6 +3554,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | SFRA Modules | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/b2c-sfra-modules.md |
 | SFRA Standards Compliance | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/b2c-sfra-standards-compliance.md |
 | SFRA Versions and Releases | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/b2c-sfra-versions.md |
+| Build a Cartridge to Integrate Express Checkout with the B2C Shopper Agent on SFRA Storefronts | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/b2c-shopper-agent-express-checkout-cartridge.md |
 | Site Performance | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/b2c-site-performance.md |
 | Specify Customer Service Center Settings | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/b2c-specifying-customer-service-center-settings.md |
 | Start Customer Service Center | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/b2c-starting-customer-service-center.md |
@@ -3652,6 +3661,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | Use Environment Variables in React.js | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/env-var-feature-access.md |
 | Environment Variables | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/environment-variables.md |
 | HTTP Status Codes and Errors | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/error-response-codes.md |
+| Integrate Express Checkout with the B2C Shopper Agent on PWA Kit Storefronts | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/express-checkout.md |
 | Extend | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/extend.md |
 | Extensibility via Hooks | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/extensibility_via_hooks.md |
 | Fraud Commerce Apps | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/fraud.md |
@@ -4058,7 +4068,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | Why Use SCAPI | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/why-use-scapi.md |
 | Build Baskets and Place Orders | https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/work-with-baskets-orders.md |
 
-## Storefront Next (679 pages)
+## Storefront Next (681 pages)
 
 | Page | URL |
 |---|---|
@@ -4230,6 +4240,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | SFRA Modules | https://developer.salesforce.com/docs/commerce/sfnext/guide/b2c-sfra-modules.md |
 | SFRA Standards Compliance | https://developer.salesforce.com/docs/commerce/sfnext/guide/b2c-sfra-standards-compliance.md |
 | SFRA Versions and Releases | https://developer.salesforce.com/docs/commerce/sfnext/guide/b2c-sfra-versions.md |
+| Build a Cartridge to Integrate Express Checkout with the B2C Shopper Agent on SFRA Storefronts | https://developer.salesforce.com/docs/commerce/sfnext/guide/b2c-shopper-agent-express-checkout-cartridge.md |
 | Site Performance | https://developer.salesforce.com/docs/commerce/sfnext/guide/b2c-site-performance.md |
 | Specify Customer Service Center Settings | https://developer.salesforce.com/docs/commerce/sfnext/guide/b2c-specifying-customer-service-center-settings.md |
 | Start Customer Service Center | https://developer.salesforce.com/docs/commerce/sfnext/guide/b2c-starting-customer-service-center.md |
@@ -4336,6 +4347,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | Use Environment Variables in React.js | https://developer.salesforce.com/docs/commerce/sfnext/guide/env-var-feature-access.md |
 | Environment Variables | https://developer.salesforce.com/docs/commerce/sfnext/guide/environment-variables.md |
 | HTTP Status Codes and Errors | https://developer.salesforce.com/docs/commerce/sfnext/guide/error-response-codes.md |
+| Integrate Express Checkout with the B2C Shopper Agent on PWA Kit Storefronts | https://developer.salesforce.com/docs/commerce/sfnext/guide/express-checkout.md |
 | Extend | https://developer.salesforce.com/docs/commerce/sfnext/guide/extend.md |
 | Extensibility via Hooks | https://developer.salesforce.com/docs/commerce/sfnext/guide/extensibility_via_hooks.md |
 | Fraud Commerce Apps | https://developer.salesforce.com/docs/commerce/sfnext/guide/fraud.md |
@@ -4742,7 +4754,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | Why Use SCAPI | https://developer.salesforce.com/docs/commerce/sfnext/guide/why-use-scapi.md |
 | Build Baskets and Place Orders | https://developer.salesforce.com/docs/commerce/sfnext/guide/work-with-baskets-orders.md |
 
-## Composable Storefront (682 pages)
+## Composable Storefront (684 pages)
 
 | Page | URL |
 |---|---|
@@ -4914,6 +4926,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | SFRA Modules | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/b2c-sfra-modules.md |
 | SFRA Standards Compliance | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/b2c-sfra-standards-compliance.md |
 | SFRA Versions and Releases | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/b2c-sfra-versions.md |
+| Build a Cartridge to Integrate Express Checkout with the B2C Shopper Agent on SFRA Storefronts | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/b2c-shopper-agent-express-checkout-cartridge.md |
 | Site Performance | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/b2c-site-performance.md |
 | Specify Customer Service Center Settings | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/b2c-specifying-customer-service-center-settings.md |
 | Start Customer Service Center | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/b2c-starting-customer-service-center.md |
@@ -5020,6 +5033,7 @@ Full link list extracted programmatically from the live source file (6864 page l
 | Use Environment Variables in React.js | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/env-var-feature-access.md |
 | Environment Variables | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/environment-variables.md |
 | HTTP Status Codes and Errors | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/error-response-codes.md |
+| Integrate Express Checkout with the B2C Shopper Agent on PWA Kit Storefronts | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/express-checkout.md |
 | Extend | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/extend.md |
 | Extensibility via Hooks | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/extensibility_via_hooks.md |
 | Fraud Commerce Apps | https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/fraud.md |

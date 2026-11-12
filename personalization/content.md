@@ -10,7 +10,8 @@ Section breakdown:
 *Source: [`llms-personalization.txt`](https://developer.salesforce.com/docs/llms-personalization.txt) — official aggregated index (developer doc page), overview section.*
 
 
-*Last refreshed 2026-11-06: 614 pages in 1 sections (counts from the live source).*
+
+*Last refreshed 2026-11-12: 614 pages in 1 sections (counts from the live source).*
 
 ## Extraction notes
 

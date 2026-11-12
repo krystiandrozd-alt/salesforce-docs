@@ -2,7 +2,7 @@
 
 Source: [llms-platform-pkg-exchange.txt](https://developer.salesforce.com/docs/llms-platform-pkg-exchange.txt).
 
-Full link list extracted programmatically from the live source file (763 page links across 4 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (765 page links across 4 sections). Last refreshed 2026-11-12 by `scripts/refresh_from_llms.py`.
 
 ## Application Installation Guide (20 pages)
 
@@ -29,7 +29,7 @@ Full link list extracted programmatically from the live source file (763 page li
 | App Rollout | https://developer.salesforce.com/docs/platform/appexchange-install-guide/guide/appexchange-install-rollout.md |
 | What Is AgentExchange? | https://developer.salesforce.com/docs/platform/appexchange-install-guide/guide/appexchange-install-whatis.md |
 
-## ISVforce Guide (404 pages)
+## ISVforce Guide (406 pages)
 
 | Page | URL |
 |---|---|
@@ -218,7 +218,7 @@ Full link list extracted programmatically from the live source file (763 page li
 | Manage Orders in the Channel Order App | https://developer.salesforce.com/docs/platform/isvforce/guide/coa-orders.md |
 | Channel Order App Permission Sets | https://developer.salesforce.com/docs/platform/isvforce/guide/coa-permission-sets.md |
 | Recall an Order | https://developer.salesforce.com/docs/platform/isvforce/guide/coa-recall-order.md |
-| Refresh the Channel Order Appâ€™s Connection to Salesforce | https://developer.salesforce.com/docs/platform/isvforce/guide/coa-refresh-connection.md |
+| Refresh the Channel Order App’s Connection to Salesforce | https://developer.salesforce.com/docs/platform/isvforce/guide/coa-refresh-connection.md |
 | Request Service Order Credentials for the Channel Order App | https://developer.salesforce.com/docs/platform/isvforce/guide/coa-request-credentials.md |
 | Partner Order Submit API | https://developer.salesforce.com/docs/platform/isvforce/guide/coa-serviceorderprocessor.md |
 | Display Customers in the Channel Order App | https://developer.salesforce.com/docs/platform/isvforce/guide/coa-show-customers-tab.md |
@@ -288,20 +288,20 @@ Full link list extracted programmatically from the live source file (763 page li
 | Export Data from AgentExchange Marketplace Analytics | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-export.md |
 | Does AgentExchange Marketplace Analytics Provide Aggregated Data for All Public Listings? | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-faq-aggregate.md |
 | Is There an AgentExchange Marketplace Analytics API? | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-faq-api.md |
-| Whatâ€™s the Earliest Date AgentExchange Marketplace Analytics Data Is Available? | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-faq-availability.md |
+| What’s the Earliest Date AgentExchange Marketplace Analytics Data Is Available? | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-faq-availability.md |
 | Can I View My Consulting Service Listing in AgentExchange Marketplace Analytics? | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-faq-consulting.md |
 | Can I Customize AgentExchange Marketplace Analytics Visualizations? | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-faq-customize.md |
 | Can I Import External Data into AgentExchange Marketplace Analytics? | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-faq-import.md |
-| Whatâ€™s the Difference Between a Get It Now Click and an Install in AgentExchange Marketplace Analytics? | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-faq-installs.md |
-| Why Doesnâ€™t the Sum of Installs, Demos, and Test Drives Match the Number of Leads in AgentExchange Marketplace Analytics? | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-faq-leads.md |
-| Why Doesnâ€™t the Number of License Records in the License Management App Match the Number of Installs in AgentExchange Marketplace Analytics? | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-faq-lma-records.md |
-| Why Doesnâ€™t Data Appear in My AgentExchange Marketplace Analytics Activity Summary or Visualization? | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-faq-no-data.md |
+| What’s the Difference Between a Get It Now Click and an Install in AgentExchange Marketplace Analytics? | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-faq-installs.md |
+| Why Doesn’t the Sum of Installs, Demos, and Test Drives Match the Number of Leads in AgentExchange Marketplace Analytics? | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-faq-leads.md |
+| Why Doesn’t the Number of License Records in the License Management App Match the Number of Installs in AgentExchange Marketplace Analytics? | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-faq-lma-records.md |
+| Why Doesn’t Data Appear in My AgentExchange Marketplace Analytics Activity Summary or Visualization? | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-faq-no-data.md |
 | Can I Grant Access to AgentExchange Marketplace Analytics but Not Other Publishing Features? | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-faq-publishing.md |
 | How Often Is AgentExchange Marketplace Analytics Data Updated? | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-faq-updates.md |
 | AgentExchange Marketplace Analytics FAQs | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-faq.md |
 | Filtering in AgentExchange Marketplace Analytics | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-filters.md |
 | Get Started with AgentExchange Marketplace Analytics | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-get-started.md |
-| Whatâ€™s the Difference Between Lead Events and Leads in AgentExchange Marketplace Analytics? | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-lead-events.md |
+| What’s the Difference Between Lead Events and Leads in AgentExchange Marketplace Analytics? | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-lead-events.md |
 | Lead Events Timeline in AgentExchange Marketplace Analytics | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-lead-timeline.md |
 | Lead Events in AgentExchange Marketplace Analytics | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-leads.md |
 | Measure Paid Media Promotion Impact | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-dashboard-measure-media.md |
@@ -321,6 +321,7 @@ Full link list extracted programmatically from the live source file (763 page li
 | Migrate Existing Orders to the Go-To-Market App | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-coa-transition.md |
 | Prerequisites and Considerations | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-considerations-prerequisites.md |
 | Your Customers and the Go-To-Market App | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-customers.md |
+| Edit Trial Length and Seats for 2GPs with PSLs in the Go-To-Market App | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-edit-trial-length.md |
 | Get Started with the AgentExchange Go-To-Market App | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-get-started.md |
 | AgentExchange Go-To-Market App Guide | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-intro.md |
 | Understand Licensing in the Go-To-Market App | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-licensing.md |
@@ -330,6 +331,7 @@ Full link list extracted programmatically from the live source file (763 page li
 | Understand Products in the Go-To-Market App | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-product-types.md |
 | Create a New Version of a Partner Provisionable Product | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-psl-versioning.md |
 | Use Permission Set Licenses to Sell Tier-Based Products | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-psl.md |
+| Trial, Management, and Subscriber Fields on Tenant License Records | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-trial-management-fields.md |
 | Secure Your Agentforce Custom Actions | https://developer.salesforce.com/docs/platform/isvforce/guide/secure-agentforce-actions.md |
 | Validate User-Controlled Data Added to a Prompt | https://developer.salesforce.com/docs/platform/isvforce/guide/secure-agentforce-prompt-injection-data.md |
 | Use Random Sequence Enclosures and Prompt Sandwiching | https://developer.salesforce.com/docs/platform/isvforce/guide/secure-agentforce-prompt-injection-enclosure.md |
@@ -477,7 +479,7 @@ Full link list extracted programmatically from the live source file (763 page li
 | Considerations for Feature Management | https://developer.salesforce.com/docs/platform/pkg1-dev/guide/fma-considerations.md |
 | Create Feature Parameters in Your Packaging Org | https://developer.salesforce.com/docs/platform/pkg1-dev/guide/fma-create-feature-parameters.md |
 | Set Up Feature Parameters | https://developer.salesforce.com/docs/platform/pkg1-dev/guide/fma-feature-parameters-setup.md |
-| Hide Custom Objects and Custom Permissions in Your Subscribersâ€™ Orgs | https://developer.salesforce.com/docs/platform/pkg1-dev/guide/fma-hide-custom-objects-permissions.md |
+| Hide Custom Objects and Custom Permissions in Your Subscribers’ Orgs | https://developer.salesforce.com/docs/platform/pkg1-dev/guide/fma-hide-custom-objects-permissions.md |
 | Install and Set Up the Feature Management App in Your License Management Org | https://developer.salesforce.com/docs/platform/pkg1-dev/guide/fma-install.md |
 | Use LMO-to-Subscriber Feature Parameters to Enable and Disable Features | https://developer.salesforce.com/docs/platform/pkg1-dev/guide/fma-lmo-to-subscriber.md |
 | Manage Features in First-Generation Managed Packages | https://developer.salesforce.com/docs/platform/pkg1-dev/guide/fma-manage-features.md |
@@ -504,7 +506,7 @@ Full link list extracted programmatically from the live source file (763 page li
 | Assign Permissions to the Subscriber Support Console | https://developer.salesforce.com/docs/platform/pkg1-dev/guide/lma-subscriber-org-permissions.md |
 | Troubleshoot Subscriber Issues | https://developer.salesforce.com/docs/platform/pkg1-dev/guide/lma-subscriber-support-overview.md |
 | Lead and License Records in the License Management App | https://developer.salesforce.com/docs/platform/pkg1-dev/guide/lma-terms-relationships.md |
-| Leads and Licenses Arenâ€™t Being Created in the License Management App | https://developer.salesforce.com/docs/platform/pkg1-dev/guide/lma-troubleshoot-no-leads-licenses.md |
+| Leads and Licenses Aren’t Being Created in the License Management App | https://developer.salesforce.com/docs/platform/pkg1-dev/guide/lma-troubleshoot-no-leads-licenses.md |
 | Proxy User Has Deactivated Message in the LMA | https://developer.salesforce.com/docs/platform/pkg1-dev/guide/lma-troubleshoot-proxy-user.md |
 | Troubleshoot the License Management App | https://developer.salesforce.com/docs/platform/pkg1-dev/guide/lma-troubleshoot.md |
 | Manage Versions of First-Generation Managed Packages | https://developer.salesforce.com/docs/platform/pkg1-dev/guide/managing-uploads.md |
@@ -683,7 +685,7 @@ Full link list extracted programmatically from the live source file (763 page li
 | Assign Permissions to the Subscriber Support Console | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/lma-subscriber-org-permissions.md |
 | Troubleshoot Subscriber Issues | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/lma-subscriber-support-overview.md |
 | Lead and License Records in the License Management App | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/lma-terms-relationships.md |
-| Leads and Licenses Arenâ€™t Being Created in the License Management App | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/lma-troubleshoot-no-leads-licenses.md |
+| Leads and Licenses Aren’t Being Created in the License Management App | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/lma-troubleshoot-no-leads-licenses.md |
 | Proxy User Has Deactivated Message in the LMA | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/lma-troubleshoot-proxy-user.md |
 | Troubleshoot the License Management App | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/lma-troubleshoot.md |
 | Editable Properties After Package Promotion or Installation | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/mdc-editable-property-definitions.md |
@@ -700,7 +702,7 @@ Full link list extracted programmatically from the live source file (763 page li
 | Permission Sets and Profile Settings in Packages | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/pd-distribution-perm-sets-profile-settings.md |
 | Check LMO-to-Subscriber Values in Your Code | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/pd-fma-check-lmo-to-subscriber-values.md |
 | Set Up Feature Parameters | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/pd-fma-feature-parameters-setup.md |
-| Hide Custom Objects and Custom Permissions in Your Subscribersâ€™ Orgs | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/pd-fma-hide-custom-objects-permissions.md |
+| Hide Custom Objects and Custom Permissions in Your Subscribers’ Orgs | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/pd-fma-hide-custom-objects-permissions.md |
 | Use LMO-to-Subscriber Feature Parameters to Enable and Disable Features | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/pd-fma-lmo-to-subscriber.md |
 | Track Preferences and Activation Metrics with Subscriber-to-LMO Feature Parameters | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/pd-fma-subscriber-to-lmo.md |
 | Install Notifications for Unauthorized Managed Packages | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/pd-packaging-install-notification.md |
@@ -755,7 +757,7 @@ Full link list extracted programmatically from the live source file (763 page li
 | Package Ancestors for Second-Generation Managed Packages | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/sfdx-dev-dev2gp-package-ancestor-intro.md |
 | Delete a Second-Generation Managed Package or Package Version | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/sfdx-dev-dev2gp-package-deletion.md |
 | Frequently Used Packaging Operations for Second-Generation Managed Packages | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/sfdx-dev-dev2gp-packaging-operations.md |
-| Whatâ€™s a Second-Generation Managed Package? | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/sfdx-dev-dev2gp-pkg-whats-a-package.md |
+| What’s a Second-Generation Managed Package? | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/sfdx-dev-dev2gp-pkg-whats-a-package.md |
 | Best Practices for Second-Generation Managed Packages | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/sfdx-dev-dev2gp-plan-best-practices.md |
 | Namespaces for Second-Generation Managed Packages | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/sfdx-dev-dev2gp-plan-namespaces.md |
 | Package IDs and Aliases for Second-Generation Managed Packages | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/sfdx-dev-dev2gp-plan-pkg-types-pkg-ids.md |

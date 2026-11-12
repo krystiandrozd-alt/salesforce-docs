@@ -2,7 +2,7 @@
 
 Source: [llms-analytics.txt](https://developer.salesforce.com/docs/llms-analytics.txt).
 
-Full link list extracted programmatically from the live source file (1013 page links across 16 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (1013 page links across 16 sections). Last refreshed 2026-11-12 by `scripts/refresh_from_llms.py`.
 
 ## Analytics Dashboard Component (17 pages)
 

@@ -2,19 +2,20 @@
 
 Source: [llms-data-cloud.txt](https://developer.salesforce.com/docs/llms-data-cloud.txt).
 
-Full link list extracted programmatically from the live source file (4322 page links across 12 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (4329 page links across 12 sections). Last refreshed 2026-11-12 by `scripts/refresh_from_llms.py`.
 
-## Data 360 Connect REST API (10 pages)
+## Data 360 Connect REST API (11 pages)
 
 | Page | URL |
 |---|---|
-| Data Streams | https://developer.salesforce.com/docs/data/connectapi/guide/data-stream-use-case.md |
+| Data Streams: Bulk Disable Salesforce CRM Fields | https://developer.salesforce.com/docs/data/connectapi/guide/data-stream-use-case.md |
+| Data Streams: Add Formula Fields to Marketing Cloud Bundles | https://developer.salesforce.com/docs/data/connectapi/guide/data-stream-use-case1.md |
 | Supported Component Types for Data Kit Deployment | https://developer.salesforce.com/docs/data/connectapi/guide/deploy-data-kit-payloads.md |
-| Data Model Objects | https://developer.salesforce.com/docs/data/connectapi/guide/dmo-use-case.md |
+| DMOs: Map External Subscriber Data | https://developer.salesforce.com/docs/data/connectapi/guide/dmo-use-case.md |
 | Supported Validations for DBT Segments | https://developer.salesforce.com/docs/data/connectapi/guide/features_cdp_dbt_validations.md |
 | Get Started | https://developer.salesforce.com/docs/data/connectapi/guide/get-started.md |
 | Postman Collection | https://developer.salesforce.com/docs/data/connectapi/guide/postman-collection.md |
-| Query | https://developer.salesforce.com/docs/data/connectapi/guide/query-use-case.md |
+| Query: Retrieve Campaign Engagement Records | https://developer.salesforce.com/docs/data/connectapi/guide/query-use-case.md |
 | Set Up the Collection | https://developer.salesforce.com/docs/data/connectapi/guide/set-up-the-collection.md |
 | Use Case Examples | https://developer.salesforce.com/docs/data/connectapi/guide/use-cases.md |
 | Use the Collection | https://developer.salesforce.com/docs/data/connectapi/guide/use-the-collection.md |
@@ -48,7 +49,7 @@ Full link list extracted programmatically from the live source file (4322 page l
 | Quick Start | https://developer.salesforce.com/docs/data/data-cloud-dev/guide/dc-quick-start.md |
 | Packages and Data Kits | https://developer.salesforce.com/docs/data/data-cloud-dev/guide/packages-data-kits.md |
 
-## Data 360 Query Guide (332 pages)
+## Data 360 Query Guide (333 pages)
 
 | Page | URL |
 |---|---|
@@ -113,13 +114,13 @@ Full link list extracted programmatically from the live source file (4322 page l
 | Aggregate Functions | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/aggregate.md |
 | AI_CLASSIFY | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/ai-classify.md |
 | AI Functions | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/ai-funcs.md |
-| AI_GENERATE_TEXT | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/ai-generate-text.md |
+| AI_GENERATE_TEXT (Beta) | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/ai-generate-text.md |
 | AI_SENTIMENT | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/ai-sentiment.md |
 | ALL | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/all.md |
 | ALTER SCHEMA | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/alter-schema.md |
 | ALTER TABLE | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/alter-table.md |
 | ANY, SOME, and ALL | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/any-some-all-array.md |
-| ANY and SOME | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/any-some.md |
+| ANY / SOME | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/any-some.md |
 | ANY_VALUE | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/any-value.md |
 | APPROX_COUNT_DISTINCT | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/approx-count-distinct.md |
 | ARRAY_AGG | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/array-agg.md |
@@ -139,9 +140,9 @@ Full link list extracted programmatically from the live source file (4322 page l
 | ARRAY_PREPEND | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/array-prepend.md |
 | ARRAY_REMOVE_AT | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/array-remove-at.md |
 | ARRAY_REMOVE | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/array-remove.md |
-| Array Slice | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/array-slice.md |
+| Array Slice ([start:end]) | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/array-slice.md |
 | ARRAY_SORT | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/array-sort.md |
-| Array Element Access | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/array-subscript.md |
+| Array Element Access ([]) | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/array-subscript.md |
 | ARRAY_TO_STRING | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/array-to-string.md |
 | ARRAY_TRANSFORM | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/array-transform.md |
 | Array Type | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/array.md |
@@ -150,7 +151,7 @@ Full link list extracted programmatically from the live source file (4322 page l
 | AVG | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/avg.md |
 | BETWEEN | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/between.md |
 | BINARY_QUANTIZE | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/binary-quantize.md |
-| Binary Type | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/binary.md |
+| Binary Data Type | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/binary.md |
 | BIT_AND | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/bit-and.md |
 | BIT_LENGTH | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/bit-length.md |
 | BIT_OR | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/bit-or.md |
@@ -167,7 +168,7 @@ Full link list extracted programmatically from the live source file (4322 page l
 | Comparison Operators and Predicates | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/comparison-func.md |
 | Comparison Operators | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/comparison-operators.md |
 | CONCAT | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/concat.md |
-| String Concatenation Operator (\|\|) | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/concatenation-operator.md |
+| String Concatenation (\|\|) | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/concatenation-operator.md |
 | Conditional Expressions | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/conditional-func.md |
 | CONTAINS / ICONTAINS | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/contains.md |
 | COPY FROM | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/copy-from.md |
@@ -186,14 +187,14 @@ Full link list extracted programmatically from the live source file (4322 page l
 | CUME_DIST | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/cume-dist.md |
 | CURRENT_DATE | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/current-date.md |
 | CURRENT_TIME | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/current-time.md |
-| CURRENT_TIMESTAMP | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/current-timestamp.md |
-| Data 360 SQL and Tableau Hyper API | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/data-cloud-sql-context.md |
+| CURRENT_TIMESTAMP, GETDATE, and NOW | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/current-timestamp.md |
+| Data 360 SQL Reference | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/data-cloud-sql-context.md |
 | Data Types | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/datatypes.md |
 | DATE_ADD | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/date-add.md |
 | DATE_TRUNC | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/date-trunc.md |
 | DATEDIFF | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/datediff.md |
 | Date/Time Functions and Operators | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/datetime-func.md |
-| Date Time Operators | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/datetime-operators.md |
+| Date/Time Operators | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/datetime-operators.md |
 | Date/Time Types | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/datetime.md |
 | DAY | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/day.md |
 | DAYNAME | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/dayname.md |
@@ -220,7 +221,7 @@ Full link list extracted programmatically from the live source file (4322 page l
 | External Locations | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/external-location.md |
 | Reading External Data in SQL | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/external-syntax.md |
 | external | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/external.md |
-| EXTRACT | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/extract.md |
+| EXTRACT and DATE_PART | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/extract.md |
 | FILTER Clause | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/filter-clause.md |
 | FIRST_VALUE (ordered-set aggregate) | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/first-value-ordered-set.md |
 | FIRST_VALUE (window function) | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/first-value.md |
@@ -317,7 +318,7 @@ Full link list extracted programmatically from the live source file (4322 page l
 | REGEXP_SUBSTR | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/regexp-substr.md |
 | REPEAT | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/repeat.md |
 | REPLACE | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/replace.md |
-| Result Modes | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/result-modes.md |
+| GRAPH_TABLE Result Modes | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/result-modes.md |
 | result_scan | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/result-scan.md |
 | REVERSE | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/reverse.md |
 | RIGHT | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/right.md |
@@ -358,7 +359,8 @@ Full link list extracted programmatically from the live source file (4322 page l
 | SUBSTR | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/substr.md |
 | SUBSTRING | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/substring.md |
 | SUM | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/sum.md |
-| Syntax | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/syntax.md |
+| Function and Operator Support Matrix | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/support-matrix.md |
+| SQL Language Elements | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/syntax.md |
 | SYSDATE | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/sysdate.md |
 | SQL Commands for Tableau Hyper API | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/tableau-sql-commands-context.md |
 | TO_BASE64 | https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/dc-sql-reference/to-base64.md |
@@ -4171,11 +4173,12 @@ Full link list extracted programmatically from the live source file (4322 page l
 | Turn Off or Remove a Data Source in Agentforce Coworker | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-turn-off-remove-source.md |
 | Turn On Agentforce Coworker | https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-turn-on-infrastructure.md |
 
-## Data 360 Code Extension Guide (38 pages)
+## Data 360 Code Extension Guide (43 pages)
 
 | Page | URL |
 |---|---|
 | Write and Validate Custom Script | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/author-custom-script.md |
+| Configure Data Lake Object Schema for DLO-DLO Transforms | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/configure-dlo-schema.md |
 | Configure Data Model Object Schema for DMO-DMO Transforms | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/configure-dmo-schema.md |
 | Considerations When Writing Code Extension | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/considerations-when-writing-custom-code.md |
 | Considerations When Writing Custom Chunking Functions | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/considerations-when-writing-custom-function.md |
@@ -4191,6 +4194,7 @@ Full link list extracted programmatically from the live source file (4322 page l
 | Run Code Extension by Running a Batch Data Transform | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/invoke.md |
 | Migrate Custom Script to Production | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/migrate-code-to-prod.md |
 | Migrate Custom Function to Production | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/migrate-custom-function-to-production.md |
+| Configure Named Credentials in Production for External Callouts | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/migrate-named-credentials-to-prod.md |
 | Monitor Custom Function Deployments | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/monitor-custom-function-deployments.md |
 | Query Code Extension Logs by Using the Query API | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/query-logs-api.md |
 | Query Code Extension Logs by Using Salesforce CLI | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/query-logs-cli.md |
@@ -4198,6 +4202,7 @@ Full link list extracted programmatically from the live source file (4322 page l
 | Quick Start | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/quickstart-custom-chunking.md |
 | Quick Start | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/quickstart.md |
 | Read Zero-Copy Data in Code Extension | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/read-zero-copy-sources.md |
+| Set Up External Callouts for Code Extension | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/set-up-external-callouts.md |
 | Set Up Salesforce CLI for Custom Functions | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/set-up-sdk-for-functions.md |
 | Set Up Salesforce CLI for Code Extension | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/set-up-sdk.md |
 | Execute the Code Extension Workflow by Using Agentforce Vibes | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/use-agentforce-vibes-ide-code-extension.md |
@@ -4206,6 +4211,8 @@ Full link list extracted programmatically from the live source file (4322 page l
 | Code Extension in Data 360 | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/use-custom-code.md |
 | Use Custom Functions in Data 360 | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/use-custom-function.md |
 | Use Custom Script in Data 360 | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/use-custom-script.md |
+| Call External Services in Code Extension Functions | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/use-external-callout-in-custom-function.md |
+| Call External Services in Code Extension Scripts | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/use-external-callout-in-custom-script.md |
 | Use LLM Gateway Calls in Custom Chunking Functions | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/use-llm-gateway-in-custom-function.md |
 | Call Generative AI Models in Batch Transform Scripts | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/use-llm-gateway-in-custom-script.md |
 | Use Predictive Model Calls in Custom Chunking Functions | https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/use-predictive-model-in-custom-function.md |

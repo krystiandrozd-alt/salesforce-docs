@@ -2,7 +2,7 @@
 
 Source: [llms-diagrams.txt](https://developer.salesforce.com/docs/llms-diagrams.txt).
 
-Full link list extracted programmatically from the live source file (283 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (283 page links across 1 sections). Last refreshed 2026-11-12 by `scripts/refresh_from_llms.py`.
 
 ## Data Model Gallery (283 pages)
 
@@ -16,11 +16,11 @@ Full link list extracted programmatically from the live source file (283 page li
 | Action Plan Framework | https://developer.salesforce.com/docs/platform/data-models/guide/action-plan-framework.md |
 | Activity Plans | https://developer.salesforce.com/docs/platform/data-models/guide/activity-plans.md |
 | Advanced Approvals | https://developer.salesforce.com/docs/platform/data-models/guide/advanced-approvals.md |
-| Advanced Orders for Telesales â€“ Account | https://developer.salesforce.com/docs/platform/data-models/guide/advanced-orders-account.md |
-| Advanced Orders for Telesales â€“ Assortment | https://developer.salesforce.com/docs/platform/data-models/guide/advanced-orders-assortment.md |
-| Advanced Orders for Telesales â€“ Internal Organization Unit | https://developer.salesforce.com/docs/platform/data-models/guide/advanced-orders-internal-organization-unit.md |
-| Advanced Orders for Telesales â€“ Order | https://developer.salesforce.com/docs/platform/data-models/guide/advanced-orders-order.md |
-| Advanced Orders for Telesales â€“ Product | https://developer.salesforce.com/docs/platform/data-models/guide/advanced-orders-product.md |
+| Advanced Orders for Telesales – Account | https://developer.salesforce.com/docs/platform/data-models/guide/advanced-orders-account.md |
+| Advanced Orders for Telesales – Assortment | https://developer.salesforce.com/docs/platform/data-models/guide/advanced-orders-assortment.md |
+| Advanced Orders for Telesales – Internal Organization Unit | https://developer.salesforce.com/docs/platform/data-models/guide/advanced-orders-internal-organization-unit.md |
+| Advanced Orders for Telesales – Order | https://developer.salesforce.com/docs/platform/data-models/guide/advanced-orders-order.md |
+| Advanced Orders for Telesales – Product | https://developer.salesforce.com/docs/platform/data-models/guide/advanced-orders-product.md |
 | Advanced Therapy Management | https://developer.salesforce.com/docs/platform/data-models/guide/advanced-therapy-management.md |
 | Adverse Events | https://developer.salesforce.com/docs/platform/data-models/guide/adverse-events.md |
 | Advertising Campaign Opportunity | https://developer.salesforce.com/docs/platform/data-models/guide/advertising-campaign-opportunity.md |

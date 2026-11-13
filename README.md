@@ -12,6 +12,12 @@ Every product-specific `llms-*.txt` section now has its own folder here. See [`s
 
 ## Format per product folder
 
+For targeted GitHub connector queries, source routing, and retrieval fallbacks, start with
+[`SEARCH.md`](SEARCH.md). Oversized indexes also have smaller, lossless copies in
+[`search-index/`](search-index/README.md). Rebuild them offline with
+`python3 scripts/build_search_index.py`; the normal refresh also rebuilds them.
+Check freshness with `python3 scripts/build_search_index.py --check`.
+
 - `index.md` — every page link from that product's `llms-{product}.txt`, extracted programmatically (not hand-copied) to make even the largest indexes tractable and accurate.
 - `scripts/refresh_from_llms.py` (repo root) — regenerates every `index.md`, the content list and README counts from the live `llms.txt`; keeps hand-written `content.md` prose.
 - `content.md` — a short synthesis from the index file's own overview text, with a section breakdown and a link back to `index.md` for the full list. Citations given per claim; no large verbatim copying (copyright).

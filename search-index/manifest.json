@@ -1,0 +1,322 @@
+{
+  "schema_version": 1,
+  "source_threshold_bytes": 320000,
+  "max_chunk_bytes": 200000,
+  "sources": [
+    {
+      "path": "commerce-cloud/index.md",
+      "bytes": 921728,
+      "sha256": "f6ee3703c6caea3d22a3ffcaba5297aa6318379d39723e8253d177c8f66ea934",
+      "chunks": [
+        {
+          "path": "search-index/commerce-cloud/part-001.md",
+          "start_line": 1,
+          "end_line": 1549,
+          "bytes": 199846,
+          "sha256": "3ee735c0511c9c5bd29f355dc20946b1556b2827bc4630c41a3276d827d8b964"
+        },
+        {
+          "path": "search-index/commerce-cloud/part-002.md",
+          "start_line": 1550,
+          "end_line": 3135,
+          "bytes": 199883,
+          "sha256": "37ce2abe9ce032c4dfe41c44b05efa1d9374593f0fe2d080a8c48be0d2d352e7"
+        },
+        {
+          "path": "search-index/commerce-cloud/part-003.md",
+          "start_line": 3136,
+          "end_line": 4753,
+          "bytes": 199860,
+          "sha256": "2b494f6722c92389f1c5f1baf17d9b6c08e640d75fbc3d65ee0aa0642242ebb5"
+        },
+        {
+          "path": "search-index/commerce-cloud/part-004.md",
+          "start_line": 4754,
+          "end_line": 6130,
+          "bytes": 199930,
+          "sha256": "54884754247436ced8523f173c36381dfdb9357b12134387acddcf6ed93b9f65"
+        },
+        {
+          "path": "search-index/commerce-cloud/part-005.md",
+          "start_line": 6131,
+          "end_line": 6944,
+          "bytes": 124049,
+          "sha256": "abf16dc215b3cad3cb86f45b7caeaf9880865691bc6c45960da8eaec2b30785d"
+        }
+      ]
+    },
+    {
+      "path": "data-cloud/index.md",
+      "bytes": 630164,
+      "sha256": "cb608fd8e693a572621b44c2e596b13fbca04157aa6e31a68afa0d3c9bd1d674",
+      "chunks": [
+        {
+          "path": "search-index/data-cloud/part-001.md",
+          "start_line": 1,
+          "end_line": 1440,
+          "bytes": 199862,
+          "sha256": "91b5a6838d0c087903783c239328790fb335b34ffde355941e32a0b5672f0d83"
+        },
+        {
+          "path": "search-index/data-cloud/part-002.md",
+          "start_line": 1441,
+          "end_line": 2779,
+          "bytes": 199926,
+          "sha256": "e28bb0c7dac9631a163abcc7e65fd42d84a0f34ba5e67bd0f9fc78a5ea2fb7ee"
+        },
+        {
+          "path": "search-index/data-cloud/part-003.md",
+          "start_line": 2780,
+          "end_line": 4150,
+          "bytes": 199928,
+          "sha256": "7f6a52fa497eb260ab0ae04e0787ce0bdaac62af3bc450237c2048fad32d0a92"
+        },
+        {
+          "path": "search-index/data-cloud/part-004.md",
+          "start_line": 4151,
+          "end_line": 4387,
+          "bytes": 31863,
+          "sha256": "807e0c3915d00dcff4d9f862861ff3d3a2b050834c17165f36eb8ea99b4fa390"
+        }
+      ]
+    },
+    {
+      "path": "industries/index.md",
+      "bytes": 606227,
+      "sha256": "4fedfc4a3637e7c29c1645d21a81009aa91f22f499d72810ef873f6b2f9e85c1",
+      "chunks": [
+        {
+          "path": "search-index/industries/part-001.md",
+          "start_line": 1,
+          "end_line": 1356,
+          "bytes": 199857,
+          "sha256": "98b8bcdefcc9bf06364a998ee068de2469bc729f1fd667c4b05fac2168b9a4ea"
+        },
+        {
+          "path": "search-index/industries/part-002.md",
+          "start_line": 1357,
+          "end_line": 2678,
+          "bytes": 199894,
+          "sha256": "20bf8c01054a5a18d8f017f2078c93b82e0544bf8127f1538353b21492c4ad19"
+        },
+        {
+          "path": "search-index/industries/part-003.md",
+          "start_line": 2679,
+          "end_line": 4049,
+          "bytes": 199891,
+          "sha256": "d35322a6128c928bfaa4ea5c515237279049085a29d98cc645fde41f5d964b7c"
+        },
+        {
+          "path": "search-index/industries/part-004.md",
+          "start_line": 4050,
+          "end_line": 4101,
+          "bytes": 8059,
+          "sha256": "d171b30ca960659652c56239973d4dcf1d50b0d13c529cb665a97556b05992f5"
+        }
+      ]
+    },
+    {
+      "path": "platform/index.md",
+      "bytes": 409205,
+      "sha256": "4fef9e5beaf1aaf21ebb7cb976d2aaf7e5c93d3ded1784c85d800dbd38677f5e",
+      "chunks": [
+        {
+          "path": "search-index/platform/part-001.md",
+          "start_line": 1,
+          "end_line": 1522,
+          "bytes": 199892,
+          "sha256": "f45f1098d16c97d9c616144aca6cb4a361cb21e6171f3b440c8809f5eaf73309"
+        },
+        {
+          "path": "search-index/platform/part-002.md",
+          "start_line": 1523,
+          "end_line": 2947,
+          "bytes": 199821,
+          "sha256": "4825357e22148fdb3a86ebd98c830d1277dbcef008850977a0f48baf6c037de1"
+        },
+        {
+          "path": "search-index/platform/part-003.md",
+          "start_line": 2948,
+          "end_line": 3022,
+          "bytes": 10547,
+          "sha256": "7802381c1f9defb08f42344140c481213760fad32c0bbdd2038dcafe38054426"
+        }
+      ]
+    },
+    {
+      "path": "platform-apex/index.md",
+      "bytes": 453100,
+      "sha256": "269c8d36165b0993c40685aac6954d79f437d67ef256c4d87c56c95a975f5fbd",
+      "chunks": [
+        {
+          "path": "search-index/platform-apex/part-001.md",
+          "start_line": 1,
+          "end_line": 1332,
+          "bytes": 199803,
+          "sha256": "ce429d09c92f25a7e09c66ad581e2d635baf58894a7edf7db37f12b18a5a709b"
+        },
+        {
+          "path": "search-index/platform-apex/part-002.md",
+          "start_line": 1333,
+          "end_line": 2519,
+          "bytes": 199871,
+          "sha256": "5b6c0c0a83aa110d6239b7e81cd015e72b892170ecca0c3769930e72c30f3c9c"
+        },
+        {
+          "path": "search-index/platform-apex/part-003.md",
+          "start_line": 2520,
+          "end_line": 2896,
+          "bytes": 54497,
+          "sha256": "4b87352a328ff8c951f6c4a3bb19f9a4aaa91436e2f70e77b72c6edb96c0ff38"
+        }
+      ]
+    },
+    {
+      "path": "platform-field-ref/index.md",
+      "bytes": 454702,
+      "sha256": "085cac4a3e4e14fa9581c42845210fc313cd19e51a297aa40388f38faa55d17c",
+      "chunks": [
+        {
+          "path": "search-index/platform-field-ref/part-001.md",
+          "start_line": 1,
+          "end_line": 1196,
+          "bytes": 199782,
+          "sha256": "255d952604aacdf8adc72673a4ce46df70b473421b4f772e708b179b5fcd480d"
+        },
+        {
+          "path": "search-index/platform-field-ref/part-002.md",
+          "start_line": 1197,
+          "end_line": 2379,
+          "bytes": 199764,
+          "sha256": "517eebefa7583cf8fc9f817474a324c3e8543797f92e05ddb92a778b6f78fc13"
+        },
+        {
+          "path": "search-index/platform-field-ref/part-003.md",
+          "start_line": 2380,
+          "end_line": 2722,
+          "bytes": 56296,
+          "sha256": "c24e2dd55e9d5d80908b90aa7ffdbe0e13aeb5234dc2a9876d26051a93a1b076"
+        }
+      ]
+    },
+    {
+      "path": "platform-obj-meta-tool/index.md",
+      "bytes": 360439,
+      "sha256": "bab148211f4db471eeed57d136443e68f6603a173c3cdbb70d757f29f2713d7b",
+      "chunks": [
+        {
+          "path": "search-index/platform-obj-meta-tool/part-001.md",
+          "start_line": 1,
+          "end_line": 1425,
+          "bytes": 199927,
+          "sha256": "77615de3f7571fd8a445b9d17c1b0ff3bbea4314e00f933ff970b77f8e43b7dc"
+        },
+        {
+          "path": "search-index/platform-obj-meta-tool/part-002.md",
+          "start_line": 1426,
+          "end_line": 2518,
+          "bytes": 161298,
+          "sha256": "71e7e75c041348a29e9ed1705096a53ad8b96046bc23a2bbd1bc38ebfdf6e8b4"
+        }
+      ]
+    },
+    {
+      "path": "product-docs/index.md",
+      "bytes": 1964955,
+      "sha256": "c9b9b80c3920f81b01e76e2918c77a64b762f37e5872a6efed4d8734519378e9",
+      "chunks": [
+        {
+          "path": "search-index/product-docs/part-001.md",
+          "start_line": 1,
+          "end_line": 1383,
+          "bytes": 199807,
+          "sha256": "4e8d808ab53fe42a05600f78eeae16d799c81c4b7747ade49be4e23de8ed70dc"
+        },
+        {
+          "path": "search-index/product-docs/part-002.md",
+          "start_line": 1384,
+          "end_line": 2536,
+          "bytes": 199811,
+          "sha256": "5b62de4665f513d16fca5f5214ed802aa4277893a623fb8597af61c399d21ff7"
+        },
+        {
+          "path": "search-index/product-docs/part-003.md",
+          "start_line": 2537,
+          "end_line": 3616,
+          "bytes": 199878,
+          "sha256": "4247f74c9c91e7e38ec28eef6b7e1c1aa6eaff9dab197921c6bca34a959e65c8"
+        },
+        {
+          "path": "search-index/product-docs/part-004.md",
+          "start_line": 3617,
+          "end_line": 4834,
+          "bytes": 199897,
+          "sha256": "89d292a0b183cc4150ca12f2102ce0c36f605c9191d177fa8a6830bb40302e1d"
+        },
+        {
+          "path": "search-index/product-docs/part-005.md",
+          "start_line": 4835,
+          "end_line": 6257,
+          "bytes": 199815,
+          "sha256": "7770e47a3dacabf5219972dc484e2e7b0bbb30a65063f1d620e70f326f08af97"
+        },
+        {
+          "path": "search-index/product-docs/part-006.md",
+          "start_line": 6258,
+          "end_line": 7665,
+          "bytes": 199895,
+          "sha256": "78807d004eaa085ef661bb0935e881042602bcffbdc6706693963d2633afe092"
+        },
+        {
+          "path": "search-index/product-docs/part-007.md",
+          "start_line": 7666,
+          "end_line": 9144,
+          "bytes": 199887,
+          "sha256": "b9162badf327b9fbbdd11bc2571e069eec605e1a82f54529b8e36b59452140ec"
+        },
+        {
+          "path": "search-index/product-docs/part-008.md",
+          "start_line": 9145,
+          "end_line": 10577,
+          "bytes": 199856,
+          "sha256": "2a9fdaf7d90d937a7a05e6b745f7414e21286048d45613d14944776b580570c2"
+        },
+        {
+          "path": "search-index/product-docs/part-009.md",
+          "start_line": 10578,
+          "end_line": 11835,
+          "bytes": 199827,
+          "sha256": "181b7ec03d42ff987bd6d2ff2410ee2b4342d61f93290bd50f930f1398d75560"
+        },
+        {
+          "path": "search-index/product-docs/part-010.md",
+          "start_line": 11836,
+          "end_line": 12987,
+          "bytes": 170433,
+          "sha256": "9cb72af7247d8c7c12d130067fb4f31e3759dd4594701244e32da07fb32df58f"
+        }
+      ]
+    },
+    {
+      "path": "service-cloud/index.md",
+      "bytes": 381979,
+      "sha256": "70f346cd8b282d0ee9603bc096d33553a5c4c881c304095c679e8b052770b752",
+      "chunks": [
+        {
+          "path": "search-index/service-cloud/part-001.md",
+          "start_line": 1,
+          "end_line": 1422,
+          "bytes": 199864,
+          "sha256": "9259e94c00f6cf4f57b66f1d9910e301f683c8c43c7a6bd92d52ddc0ce13fb69"
+        },
+        {
+          "path": "search-index/service-cloud/part-002.md",
+          "start_line": 1423,
+          "end_line": 2731,
+          "bytes": 182836,
+          "sha256": "b7ea3c93e7b04c8889857f1d735a2bc1070df36acb042b8890d0f5dd2da08f16"
+        }
+      ]
+    }
+  ]
+}

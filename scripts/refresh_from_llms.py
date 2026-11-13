@@ -24,6 +24,8 @@ import sys
 from datetime import date
 from pathlib import Path
 
+from build_search_index import rebuild as rebuild_search_index
+
 ROOT = Path(__file__).resolve().parent.parent
 LLMS = "https://developer.salesforce.com/docs/llms.txt"
 LINK = re.compile(r"^\s*- \[(.+?)\]\((https?://[^)\s]+)\)(?::\s*(.*))?$")
@@ -209,6 +211,8 @@ def main() -> int:
             "- `scripts/refresh_from_llms.py` (repo root) — regenerates every `index.md`, the content list and README counts from the live `llms.txt`; keeps hand-written `content.md` prose.\n- `content.md` —", 1)
     readme = re.sub(r"Captured starting 2026-10-24\.[^\n]*", f"Captured starting 2026-10-24. Last refreshed {today} with [`scripts/refresh_from_llms.py`](scripts/refresh_from_llms.py).", readme)
     (ROOT / "README.md").write_text(readme, encoding="utf-8")
+    search_changes = rebuild_search_index(ROOT)
+    print(f"search files updated: {len(search_changes)}")
     print(f"areas: {total}; new folders: {', '.join(created) or 'none'}; no longer listed: {', '.join(gone) or 'none'}")
     print(f"pages: {sum(s[1] for s in sizes):,}")
     return 0

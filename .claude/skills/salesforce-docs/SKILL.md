@@ -8,7 +8,9 @@ description: "Ground answers in official Salesforce developer documentation usin
 Find the exact official page in the local catalog, read it, then answer. The catalog
 holds links, not page text, so a search result alone is never evidence.
 
-All commands run from the repo root:
+If the `salesforce-docs` MCP server is connected, use its tools (`search_docs`,
+`fetch_page`, `list_areas`, `list_sections`): same functions, same workflow, works
+outside this repo. Otherwise run the CLI from the repo root:
 
 ```bash
 python3 scripts/sfdocs.py search "<query>" [--area <folder or prefix>] [--limit 10] [--all]
@@ -26,7 +28,7 @@ python3 scripts/sfdocs.py sections <area>
    `sections <area>` to browse.
 3. **Pick 1–3 URLs** whose title matches the concept, not a broad landing page.
    Prefer the newer `/docs/<product>/...md` page over a legacy `atlas.en-us` duplicate.
-4. **Fetch each page** with `fetch`. It returns Markdown, follows legacy atlas
+4. **Fetch each page** with `fetch` (MCP: `fetch_page`; read on with the `offset` it gives). It returns Markdown, follows legacy atlas
    redirects, and caches under `.cache/pages/`. Raise `--max-chars` (0 = all) when
    the answer is further down the page.
 5. **Check the page.** It counts as evidence only if the exact identifier or concept

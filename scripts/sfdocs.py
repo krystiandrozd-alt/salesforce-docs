@@ -47,23 +47,29 @@ def tokens(text: str) -> list[str]:
     return TOKEN.findall(text.lower())
 
 
+_ENTRIES: list[dict] | None = None
+
+
 def load_entries(area_filter: str | None = None) -> list[dict]:
-    entries = []
-    for index in sorted(ROOT.glob("*/index.md")):
-        area = index.parent.name
-        if area_filter and not area.startswith(area_filter):
-            continue
-        section = ""
-        for line in index.read_text(encoding="utf-8").splitlines():
-            if line.startswith("## "):
-                m = SECTION.match(line)
-                section = m.group(1) if m else line[3:]
-                continue
-            m = ROW.match(line)
-            if m and m.group(1) != "Page":
-                entries.append({"area": area, "section": section,
-                                "title": m.group(1).replace("\\|", "|").strip(), "url": m.group(2)})
-    return entries
+    """All catalog rows, parsed once per process (the MCP server reuses them)."""
+    global _ENTRIES
+    if _ENTRIES is None:
+        entries = []
+        for index in sorted(ROOT.glob("*/index.md")):
+            area, section = index.parent.name, ""
+            for line in index.read_text(encoding="utf-8").splitlines():
+                if line.startswith("## "):
+                    m = SECTION.match(line)
+                    section = m.group(1) if m else line[3:]
+                    continue
+                m = ROW.match(line)
+                if m and m.group(1) != "Page":
+                    entries.append({"area": area, "section": section,
+                                    "title": m.group(1).replace("\\|", "|").strip(), "url": m.group(2)})
+        _ENTRIES = entries
+    if not area_filter:
+        return _ENTRIES
+    return [e for e in _ENTRIES if e["area"].startswith(area_filter)]
 
 
 def score(entry: dict, qtokens: list[str], phrase: str) -> tuple[int, float]:
@@ -87,35 +93,48 @@ def score(entry: dict, qtokens: list[str], phrase: str) -> tuple[int, float]:
     return matched, s
 
 
-def cmd_search(a) -> int:
-    q = [t for t in tokens(a.query) if t not in STOP] or tokens(a.query)
+def search(query: str, area: str | None = None, limit: int = 10, require_all: bool = False) -> dict:
+    """Rank catalog pages for a query. Returns {"query_words", "total", "results"}."""
+    q = [t for t in tokens(query) if t not in STOP] or tokens(query)
     if not q:
-        print("empty query", file=sys.stderr)
-        return 2
-    phrase = " ".join(tokens(a.query))
-    entries = load_entries(a.area)
+        raise ValueError("empty query")
+    entries = load_entries(area)
     if not entries:
-        print(f"no area matches '{a.area}' (see: sfdocs.py areas)", file=sys.stderr)
-        return 2
-    need = len(q) if a.all else max(1, (len(q) + 1) // 2)
+        raise ValueError(f"no area matches '{area}' (list them with areas)")
+    phrase = " ".join(tokens(query))
+    need = len(q) if require_all else max(1, (len(q) + 1) // 2)
     ranked = []
     for e in entries:
-        m, s = score(e, q, phrase)
+        m, s_ = score(e, q, phrase)
         if m >= need:
-            ranked.append((m, s, e))
+            ranked.append((m, s_, e))
     ranked.sort(key=lambda r: (-r[0], -r[1], r[2]["url"]))
-    top = ranked[: a.limit]
-    if a.json:
-        print(json.dumps([{**e, "matched": m, "score": round(s, 2)} for m, s, e in top], indent=2))
-        return 0
+    results = [{**e, "matched": f"{m}/{len(q)}", "score": round(s_, 2)} for m, s_, e in ranked[:limit]]
+    return {"query_words": q, "total": len(ranked), "results": results}
+
+
+def format_search(query: str, area: str | None, res: dict) -> str:
+    top = res["results"]
     if not top:
-        print(f"no results for '{a.query}'" + (f" in area '{a.area}'" if a.area else ""))
-        return 1
-    print(f"{len(ranked)} matches for '{a.query}' (showing {len(top)}; query words used: {' '.join(q)})\n")
-    for i, (m, s, e) in enumerate(top, 1):
-        print(f"{i:>2}. {e['title']}  [{e['area']} / {e['section']}]  ({m}/{len(q)} words)")
-        print(f"    {e['url']}")
-    return 0
+        return f"no results for '{query}'" + (f" in area '{area}'" if area else "")
+    out = [f"{res['total']} matches for '{query}' (showing {len(top)}; query words used: {' '.join(res['query_words'])})", ""]
+    for i, e in enumerate(top, 1):
+        out.append(f"{i:>2}. {e['title']}  [{e['area']} / {e['section']}]  ({e['matched']} words)")
+        out.append(f"    {e['url']}")
+    return "\n".join(out)
+
+
+def cmd_search(a) -> int:
+    try:
+        res = search(a.query, a.area, a.limit, a.all)
+    except ValueError as e:
+        print(e, file=sys.stderr)
+        return 2
+    if a.json:
+        print(json.dumps(res["results"], indent=2))
+        return 0
+    print(format_search(a.query, a.area, res))
+    return 0 if res["results"] else 1
 
 
 def area_rows() -> list[tuple[str, str, str]]:
@@ -127,24 +146,34 @@ def area_rows() -> list[tuple[str, str, str]]:
     return rows
 
 
-def cmd_areas(a) -> int:
+def areas() -> list[dict]:
     counts = {}
     for e in load_entries():
         counts[e["area"]] = counts.get(e["area"], 0) + 1
-    for slug, title, desc in area_rows():
-        desc = re.sub(r"\s*\*\*[\d,]+ links\.\*\*", "", desc)
-        print(f"{slug:<34} {counts.get(slug, 0):>6} pages  {title} — {desc}")
+    return [{"area": slug, "title": title, "pages": counts.get(slug, 0),
+             "description": re.sub(r"\s*\*\*[\d,]+ links\.\*\*", "", desc)}
+            for slug, title, desc in area_rows()]
+
+
+def sections(area: str) -> list[str]:
+    if not re.fullmatch(r"[a-z0-9-]+", area or "") or not (ROOT / area / "index.md").exists():
+        raise ValueError(f"no folder '{area}' (list them with areas)")
+    return [line[3:] for line in (ROOT / area / "index.md").read_text(encoding="utf-8").splitlines()
+            if line.startswith("## ")]
+
+
+def cmd_areas(a) -> int:
+    for r in areas():
+        print(f"{r['area']:<34} {r['pages']:>6} pages  {r['title']} — {r['description']}")
     return 0
 
 
 def cmd_sections(a) -> int:
-    path = ROOT / a.area / "index.md"
-    if not path.exists():
-        print(f"no folder '{a.area}' (see: sfdocs.py areas)", file=sys.stderr)
+    try:
+        print("\n".join(sections(a.area)))
+    except ValueError as e:
+        print(e, file=sys.stderr)
         return 2
-    for line in path.read_text(encoding="utf-8").splitlines():
-        if line.startswith("## "):
-            print(line[3:])
     return 0
 
 
@@ -180,41 +209,63 @@ def looks_html(text: str) -> bool:
     return head.startswith(("<!doctype", "<html")) or "<head" in head
 
 
-def cmd_fetch(a) -> int:
-    url = a.url.strip()
+class FetchError(Exception):
+    pass
+
+
+def fetch(url: str, refresh: bool = False) -> dict:
+    """Return {"url", "source": live|cache, "text"} for one official page; raises FetchError."""
+    url = (url or "").strip()
     u = urllib.parse.urlparse(url)
     if u.scheme != "https" or u.hostname not in ALLOWED_HOSTS:
-        print(f"refusing {url}: only https://developer.salesforce.com pages are fetched", file=sys.stderr)
-        return 2
+        raise FetchError(f"refusing {url}: only https://developer.salesforce.com pages are fetched")
     if u.path.endswith(".html"):  # the .md twin is clean Markdown
         url = url[: -len(".html")] + ".md"
     CACHE.mkdir(parents=True, exist_ok=True)
     cached = CACHE / (hashlib.sha256(url.encode()).hexdigest()[:24] + ".md")
-    if cached.exists() and not a.refresh:
-        text, source = cached.read_text(encoding="utf-8"), "cache"
-    else:
-        try:
+    if cached.exists() and not refresh:
+        text = cached.read_text(encoding="utf-8")
+        first, _, rest = text.partition("\n")
+        if first.startswith("<!-- resolved: "):  # cached after an atlas redirect
+            return {"url": first[15:-4], "source": "cache", "text": rest}
+        return {"url": url, "source": "cache", "text": text}
+    requested = url
+    try:
+        text, final = http_get(url)
+        # legacy atlas .htm links redirect to new .html pages; their .md twin is clean Markdown
+        if looks_html(text) and urllib.parse.urlparse(final).path.endswith(".html"):
+            url = final[: -len(".html")] + ".md"
             text, final = http_get(url)
-            # legacy atlas .htm links redirect to new .html pages; their .md twin is clean Markdown
-            if looks_html(text) and urllib.parse.urlparse(final).path.endswith(".html"):
-                url = final[: -len(".html")] + ".md"
-                text, final = http_get(url)
-        except Exception as e:
-            print(f"FETCH FAILED for {url}: {e}\nDo not answer from this page; say the content was not verified.",
-                  file=sys.stderr)
-            return 1
-        if len(text.strip()) < 40 or looks_html(text):
-            print(f"FETCH RETURNED NO MARKDOWN for {url} (shell page or soft 404). Treat as unverified.",
-                  file=sys.stderr)
-            return 1
-        cached.write_text(text, encoding="utf-8")
-        source = "live"
-    print(f"<!-- source: {url} ({source}) -->")
-    if a.max_chars and len(text) > a.max_chars:
-        print(text[: a.max_chars])
-        print(f"\n<!-- truncated at {a.max_chars} of {len(text)} chars; rerun with --max-chars 0 for all -->")
-    else:
-        print(text)
+    except Exception as e:
+        raise FetchError(f"FETCH FAILED for {url}: {e}. Do not answer from this page; say the content was not verified.")
+    if len(text.strip()) < 40 or looks_html(text):
+        raise FetchError(f"FETCH RETURNED NO MARKDOWN for {url} (shell page or soft 404). Treat as unverified.")
+    cached.write_text((f"<!-- resolved: {url} -->\n" if url != requested else "") + text, encoding="utf-8")
+    return {"url": url, "source": "live", "text": text}
+
+
+def page_slice(text: str, offset: int = 0, max_chars: int = 20000) -> tuple[str, str]:
+    """Cut a window out of a long page; returns (chunk, note) where note says how to read on."""
+    offset = max(0, offset)
+    if not max_chars or max_chars <= 0:
+        return text[offset:], ""
+    chunk = text[offset: offset + max_chars]
+    end = offset + len(chunk)
+    note = f"<!-- chars {offset}-{end} of {len(text)}; continue with offset={end} -->" if end < len(text) else ""
+    return chunk, note
+
+
+def cmd_fetch(a) -> int:
+    try:
+        r = fetch(a.url, a.refresh)
+    except FetchError as e:
+        print(e, file=sys.stderr)
+        return 2 if str(e).startswith("refusing") else 1
+    chunk, note = page_slice(r["text"], a.offset, a.max_chars)
+    print(f"<!-- source: {r['url']} ({r['source']}) -->")
+    print(chunk)
+    if note:
+        print("\n" + note)
     return 0
 
 
@@ -234,7 +285,8 @@ def main() -> int:
     c.set_defaults(fn=cmd_sections)
     f = sub.add_parser("fetch", help="download one official page as Markdown (cached)")
     f.add_argument("url")
-    f.add_argument("--max-chars", type=int, default=20000)
+    f.add_argument("--max-chars", type=int, default=20000, help="0 = whole page")
+    f.add_argument("--offset", type=int, default=0, help="start reading at this character")
     f.add_argument("--refresh", action="store_true", help="ignore the cache")
     f.set_defaults(fn=cmd_fetch)
     a = ap.parse_args()

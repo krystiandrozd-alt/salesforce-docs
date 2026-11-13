@@ -10,7 +10,8 @@ Section breakdown:
 *Source: [`llms-einstein-personalization.txt`](https://developer.salesforce.com/docs/llms-einstein-personalization.txt) — official aggregated index (developer doc page), overview section.*
 
 
-*Last refreshed 2026-11-06: 50 pages in 1 sections (counts from the live source).*
+
+*Last refreshed 2026-11-12: 50 pages in 1 sections (counts from the live source).*
 
 ## Extraction notes
 

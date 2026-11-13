@@ -2,7 +2,7 @@
 
 Source: [llms-service-cloud.txt](https://developer.salesforce.com/docs/llms-service-cloud.txt).
 
-Full link list extracted programmatically from the live source file (2586 page links across 28 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (2586 page links across 28 sections). Last refreshed 2026-11-12 by `scripts/refresh_from_llms.py`.
 
 ## Enhanced In-App Chat (72 pages)
 
@@ -1252,7 +1252,7 @@ Full link list extracted programmatically from the live source file (2586 page l
 | lightning__conversationAgentSend | https://developer.salesforce.com/docs/service/api-console/guide/sforce-api-console-events-messaging-lwc-conversationagentsend.md |
 | lightning__conversationEnded | https://developer.salesforce.com/docs/service/api-console/guide/sforce-api-console-events-messaging-lwc-conversationchatended.md |
 | lightning__conversationEndUserMessage | https://developer.salesforce.com/docs/service/api-console/guide/sforce-api-console-events-messaging-lwc-conversationendusermessage.md |
-| lightning:omniChannelï»¿ConnectionError | https://developer.salesforce.com/docs/service/api-console/guide/sforce-api-console-events-omnichannelconnectionerror.md |
+| lightning:omniChannel﻿ConnectionError | https://developer.salesforce.com/docs/service/api-console/guide/sforce-api-console-events-omnichannelconnectionerror.md |
 | lightning:omniChannelLoginSuccess | https://developer.salesforce.com/docs/service/api-console/guide/sforce-api-console-events-omnichannelloginsuccess.md |
 | lightning:omniChannelLogout | https://developer.salesforce.com/docs/service/api-console/guide/sforce-api-console-events-omnichannellogout.md |
 | lightning:omniChannelStatusChanged | https://developer.salesforce.com/docs/service/api-console/guide/sforce-api-console-events-omnichannelstatuschanged.md |
@@ -2370,7 +2370,7 @@ Full link list extracted programmatically from the live source file (2586 page l
 | Using Estimated Wait Time Instead of Queue Position for a Chat Session (Beta) | https://developer.salesforce.com/docs/service/chat-rest/guide/live-agent-rest-estimated-wait-time.md |
 | Getting Started with the Chat REST API | https://developer.salesforce.com/docs/service/chat-rest/guide/live-agent-rest-getting-started.md |
 | Your Message Long Polling Loop | https://developer.salesforce.com/docs/service/chat-rest/guide/live-agent-rest-http-long-polling-loop.md |
-| Customize the Chat Visitorsâ€™ Experience | https://developer.salesforce.com/docs/service/chat-rest/guide/live-agent-rest-implement-chat-visitor-experience-requests.md |
+| Customize the Chat Visitors’ Experience | https://developer.salesforce.com/docs/service/chat-rest/guide/live-agent-rest-implement-chat-visitor-experience-requests.md |
 | Chat REST API Messages Response Objects | https://developer.salesforce.com/docs/service/chat-rest/guide/live-agent-rest-messages-responses-overview.md |
 | Messages | https://developer.salesforce.com/docs/service/chat-rest/guide/live-agent-rest-messages.md |
 | Monitor Chat Activity | https://developer.salesforce.com/docs/service/chat-rest/guide/live-agent-rest-monitor-chat-activity-requests.md |
@@ -2587,7 +2587,7 @@ Full link list extracted programmatically from the live source file (2586 page l
 | Previous Versions | https://developer.salesforce.com/docs/service/voice-dev-guide/guide/voice-dev-guide-pdf-archive.md |
 | Retry Contact Record Sync for Voice Call Records | https://developer.salesforce.com/docs/service/voice-dev-guide/guide/voice-example-ctr-retry.md |
 | Customize Synced Contact Record Fields | https://developer.salesforce.com/docs/service/voice-dev-guide/guide/voice-example-ctrdatasync.md |
-| Disable Contact Record Sync for Voice Call RecordsÂ | https://developer.salesforce.com/docs/service/voice-dev-guide/guide/voice-example-disable-ctr-sync.md |
+| Disable Contact Record Sync for Voice Call Records | https://developer.salesforce.com/docs/service/voice-dev-guide/guide/voice-example-disable-ctr-sync.md |
 | Disable Call Recording | https://developer.salesforce.com/docs/service/voice-dev-guide/guide/voice-example-disable-recording.md |
 | Pass Data from the IVR System | https://developer.salesforce.com/docs/service/voice-dev-guide/guide/voice-example-interactive-voice-response.md |
 | Link Case to Voice Call Record | https://developer.salesforce.com/docs/service/voice-dev-guide/guide/voice-example-link-case-to-record.md |

@@ -2,7 +2,7 @@
 
 Source: [llms-platform-obj-meta-tool.txt](https://developer.salesforce.com/docs/llms-platform-obj-meta-tool.txt).
 
-Full link list extracted programmatically from the live source file (2498 page links across 3 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (2576 page links across 3 sections). Last refreshed 2026-11-12 by `scripts/refresh_from_llms.py`.
 
 ## Metadata API Developer Guide (681 pages)
 
@@ -1011,7 +1011,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | WorkSkillRoutingAttribute | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-workskillroutingattribute.md |
 | Previous Version PDFs | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-previous-versions/v67.0/tooling-previous-versions-pdfs.md |
 
-## Object Reference for the Salesforce Platform (1501 pages)
+## Object Reference for the Salesforce Platform (1579 pages)
 
 | Page | URL |
 |---|---|
@@ -1059,6 +1059,84 @@ Full link list extracted programmatically from the live source file (2498 page l
 | Custom Metadata Type__mdt | https://developer.salesforce.com/docs/platform/object-reference/references/custom-objects/sforce-api-objects-custommetadatatype__mdt.md |
 | Custom Object__Feed | https://developer.salesforce.com/docs/platform/object-reference/references/custom-objects/sforce-api-objects-customobject__feed.md |
 | FSL__Time_Dependency__c | https://developer.salesforce.com/docs/platform/object-reference/references/custom-objects/sforce-api-objects-fsl__time-dependency__c.md |
+| EventLogFile Supported Event Types | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/eventlogfile-supported-event-types.md |
+| Apex Callout Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-apexcallout.md |
+| Apex Execution Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-apexexecution.md |
+| Apex Inline Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-apexinline.md |
+| Apex REST API Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-apexrestapi.md |
+| Apex SOAP Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-apexsoap.md |
+| Apex Trigger Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-apextrigger.md |
+| Apex Unexpected Exception Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-apexunexpectedexception.md |
+| API Total Usage | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-apitotalusage.md |
+| Asynchronous Report Run Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-asyncreportrun.md |
+| Blocked Redirect Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-blockedredirect.md |
+| Bulk API Request Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-bulkapi-request.md |
+| Bulk API Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-bulkapi.md |
+| Bulk API 2.0 Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-bulkapi2.md |
+| Change Set Operation Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-changesetoperation.md |
+| Composite API Subrequest Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-composite-api-subrequest.md |
+| Composite API Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-composite-api.md |
+| Concurrent Long-Running Apex Limit Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-concurrentlongrunningapexlimit.md |
+| Console Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-console.md |
+| Content Distribution Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-contentdistribution.md |
+| Content Document Link Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-contentdocument.md |
+| Content Transfer Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-contenttransfer.md |
+| Continuation Callout Summary Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-continuationcalloutsummary.md |
+| CORS Violation Record Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-cors-violation.md |
+| CSP Violation Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-cspviolation.md |
+| Dashboard Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-dashboard.md |
+| Database Save Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-databasesaveevent.md |
+| Document Attachment Downloads Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-documentattach.md |
+| External Cross-Org Callout Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-externalcrossorgcallout.md |
+| External Custom Apex Callout Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-externalcustomapexcallout.md |
+| External Data Source Callout Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-externaldatasourcecallout.md |
+| External OData Callout Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-externalodatacallout.md |
+| Flow Execution Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-flowexecution.md |
+| GraphQL Query Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-graphql-query.md |
+| Group Membership Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-groupmembership.md |
+| Hostname Redirects Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-hostnameredirects.md |
+| Insecure External Assets Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-insecureexternalassets.md |
+| Insufficient Access Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-insufficientaccess.md |
+| Invocable Action Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-invocableaction.md |
+| Knowledge Article View Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-knowledgearticleview.md |
+| Aura Request Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-lightning-component.md |
+| Lightning Error Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-lightningerror.md |
+| Lightning Interaction Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-lightninginteraction.md |
+| Lightning Logger Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-lightninglogger.md |
+| Lightning Page View Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-lightningpageview.md |
+| Lightning Performance Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-lightningperformance.md |
+| LOGIN_STATUS Values | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-login-status.md |
+| Login Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-login.md |
+| Login As Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-loginas.md |
+| Logout Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-logout.md |
+| Metadata API Operation Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-metadataapi.md |
+| Multiblock Report Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-multiblock.md |
+| Named Credential Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-namedcredential.md |
+| One Commerce Usage Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-onecommerceusage.md |
+| Package Install Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-packageinstall.md |
+| Permission Update Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-permissionupdate.md |
+| Platform Encryption Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-platformencryption.md |
+| Pricing Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-pricing.md |
+| Queued Execution Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-queuedexec.md |
+| Report Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-report.md |
+| Report Export Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-reportexport.md |
+| REST API Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-restapi.md |
+| Sandbox Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-sandbox.md |
+| Search Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-search.md |
+| Search Click Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-searchclick.md |
+| Sites Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-sites.md |
+| SOAP API Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-soapapi.md |
+| Time-Based Workflow Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-timebasedworkflow.md |
+| Transaction Security Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-transaction.md |
+| UI Telemetry Navigation Timing Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-uitelemetrynavigationtiming.md |
+| UI Telemetry Resource Timing Event | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-uitelemetryresourcetiming.md |
+| Unique Query Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-unique-query-event-elf.md |
+| URI Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-uri.md |
+| Visualforce Request Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-visualforce.md |
+| Wave Change Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-wavechange.md |
+| Wave Download Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-wavedownload.md |
+| Wave Interaction Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-waveinteraction.md |
+| Wave Performance Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-waveperformance.md |
 | Object Interfaces | https://developer.salesforce.com/docs/platform/object-reference/references/object-interfaces/object-interfaces-list.md |
 | PriceAdjustmentGroup | https://developer.salesforce.com/docs/platform/object-reference/references/object-interfaces/sforce-api-interfaces-priceadjustmentgroup.md |
 | PriceAdjustmentItem | https://developer.salesforce.com/docs/platform/object-reference/references/object-interfaces/sforce-api-interfaces-priceadjustmentitem.md |

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "salesforce-docs": {
+      "command": "python3",
+      "args": ["scripts/sfdocs_mcp.py"]
+    }
+  }
+}

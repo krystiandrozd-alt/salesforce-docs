@@ -2,7 +2,7 @@
 
 Source: [llms-industries.txt](https://developer.salesforce.com/docs/llms-industries.txt).
 
-Full link list extracted programmatically from the live source file (4021 page links across 15 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (4021 page links across 15 sections). Last refreshed 2026-11-12 by `scripts/refresh_from_llms.py`.
 
 ## Communications, Media, Energy and Utilities APIs (Managed Package) (435 pages)
 
@@ -487,7 +487,7 @@ Full link list extracted programmatically from the live source file (4021 page l
 | Standard Objects | https://developer.salesforce.com/docs/industries/advanced-orders-for-telesales/references/advanced-orders-for-telesales-objects/standard-objects.md |
 | StoreAssortment | https://developer.salesforce.com/docs/industries/advanced-orders-for-telesales/references/advanced-orders-for-telesales-objects/store-assortment.md |
 | UnitofMeasure | https://developer.salesforce.com/docs/industries/advanced-orders-for-telesales/references/advanced-orders-for-telesales-objects/unit-of-measure.md |
-| Advanced Order â€” Assortment Input | https://developer.salesforce.com/docs/industries/advanced-orders-for-telesales/references/advanced-orders-for-telesales-rest/advanced-order-assortment-input.md |
+| Advanced Order — Assortment Input | https://developer.salesforce.com/docs/industries/advanced-orders-for-telesales/references/advanced-orders-for-telesales-rest/advanced-order-assortment-input.md |
 | Advanced Order Delivery Date Input | https://developer.salesforce.com/docs/industries/advanced-orders-for-telesales/references/advanced-orders-for-telesales-rest/advanced-order-delivery-date-input.md |
 | Advanced Order Delivery Date Output | https://developer.salesforce.com/docs/industries/advanced-orders-for-telesales/references/advanced-orders-for-telesales-rest/advanced-order-delivery-date-output.md |
 | Advanced Order Product List Input | https://developer.salesforce.com/docs/industries/advanced-orders-for-telesales/references/advanced-orders-for-telesales-rest/advanced-order-product-list-input.md |

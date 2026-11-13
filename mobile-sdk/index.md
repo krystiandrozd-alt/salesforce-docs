@@ -2,7 +2,7 @@
 
 Source: [llms-mobile-sdk.txt](https://developer.salesforce.com/docs/llms-mobile-sdk.txt).
 
-Full link list extracted programmatically from the live source file (441 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (441 page links across 1 sections). Last refreshed 2026-11-12 by `scripts/refresh_from_llms.py`.
 
 ## Mobile SDK Development Guide (441 pages)
 
@@ -146,7 +146,7 @@ Full link list extracted programmatically from the live source file (441 page li
 | Using the MRU Sync Down Target | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/entity-framework-sync-down-target-mru.md |
 | Using the SOQL Sync Down Target | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/entity-framework-sync-down-target-soql.md |
 | Using the SOSL Sync Down Target | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/entity-framework-sync-down-target-sosl.md |
-| Handling â€œGhostâ€ Records After Sync Down Operations | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/entity-framework-sync-ghosts.md |
+| Handling “Ghost” Records After Sync Down Operations | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/entity-framework-sync-ghosts.md |
 | Defining Sync Names and Sync Configuration Files | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/entity-framework-sync-names-configs.md |
 | Syncing Related Records | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/entity-framework-sync-related.md |
 | About Sync Statuses | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/entity-framework-sync-statuses.md |
@@ -179,7 +179,7 @@ Full link list extracted programmatically from the live source file (441 page li
 | Updating Mobile SDK Apps (5.0 and Later) | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/general-update-app.md |
 | Build Apps with an Agent Skill | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/gs-build-skills.md |
 | Getting Started With Mobile SDK for iOS and Android | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/gs-getting-started.md |
-| Whatâ€™s New in Mobile SDK 14.0 | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/gs-whatsnew.md |
+| What’s New in Mobile SDK 14.0 | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/gs-whatsnew.md |
 | What Was New in Recent Releases | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/gs-whatswasnew.md |
 | Multi-Device Strategy | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/html5-cross-device.md |
 | Getting Started | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/html5-getting-started.md |
@@ -218,7 +218,7 @@ Full link list extracted programmatically from the live source file (441 page li
 | About Native, HTML, and Hybrid Development | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/intro-choose-scenario.md |
 | Developer Edition or Sandbox Environment? | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/intro-de-sandbox.md |
 | Authentication, Security, and Identity in Mobile Apps | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/intro-oauth.md |
-| Enough Talk; Iâ€™m Ready | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/intro-quickstart.md |
+| Enough Talk; I’m Ready | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/intro-quickstart.md |
 | Release Notes | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/intro-rn.md |
 | Customize the Salesforce Mobile App, or Create a Custom App? | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/intro-s1-vs-custom-apps.md |
 | Introduction to Salesforce Mobile SDK Development | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/intro.md |
@@ -239,7 +239,7 @@ Full link list extracted programmatically from the live source file (441 page li
 | iOS Native Template Apps | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/ios-native-template-apps.md |
 | Creating an iOS Project with Forceios | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/ios-new-force-project.md |
 | Add Mobile SDK Libraries to Your Project | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/ios-new-native-manual-clone-sdk.md |
-| Configure Your Projectâ€™s Build Settings | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/ios-new-native-manual-configure-build.md |
+| Configure Your Project’s Build Settings | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/ios-new-native-manual-configure-build.md |
 | Create an Xcode Swift Project | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/ios-new-native-manual-create-xcode-project.md |
 | Option 1: Import Mobile SDK Template Files | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/ios-new-native-manual-details.md |
 | Option 2: Add Mobile SDK Setup Code Manually | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/ios-new-native-no-template.md |
@@ -301,7 +301,7 @@ Full link list extracted programmatically from the live source file (441 page li
 | Customizing the iOS Login Screen Programmatically | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/oauth-hide-gear-icon.md |
 | OAuth 2.0 Authentication Flow | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/oauth-intro-flow.md |
 | Using MDM with Salesforce Mobile SDK Apps | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/oauth-mdm.md |
-| Mobile SDK Login and Authentication Flowâ€”Detailed Look | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/oauth-mobilesdk-detail.md |
+| Mobile SDK Login and Authentication Flow—Detailed Look | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/oauth-mobilesdk-detail.md |
 | Portal Authentication Using OAuth 2.0 and Salesforce Sites | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/oauth-portal-force-com-sites.md |
 | OAuth 2.0 Refresh Token Flow | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/oauth-refresh-token-flow.md |
 | OAuth Terminology | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/oauth-remote-access-terminology.md |
@@ -348,7 +348,7 @@ Full link list extracted programmatically from the live source file (441 page li
 | Get the Database Size | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/offline-soup-dbsize.md |
 | Reindex a Soup | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/offline-soup-reindex.md |
 | Remove a Soup | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/offline-soup-remove.md |
-| Retrieve a Soupâ€™s Index Specs | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/offline-soup-retrieve-index-specs.md |
+| Retrieve a Soup’s Index Specs | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/offline-soup-retrieve-index-specs.md |
 | Registering a Soup through Code | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/offline-soup.md |
 | Soup Specs | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/offline-soupspec.md |
 | SmartStore Stores | https://developer.salesforce.com/docs/platform/mobile-sdk/guide/offline-store-types.md |

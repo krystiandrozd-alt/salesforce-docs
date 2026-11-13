@@ -6,12 +6,13 @@ No overview text in source — title-only index.
 
 Section breakdown:
 - **Apex Developer Guide** — 550 pages
-- **Apex Reference Guide** — 2331 pages
+- **Apex Reference Guide** — 2329 pages
 
 *Source: [`llms-platform-apex.txt`](https://developer.salesforce.com/docs/llms-platform-apex.txt) — official aggregated index (developer doc page), overview section.*
 
 
-*Last refreshed 2026-11-06: 2881 pages in 2 sections (counts from the live source).*
+
+*Last refreshed 2026-11-12: 2879 pages in 2 sections (counts from the live source).*
 
 ## Extraction notes
 

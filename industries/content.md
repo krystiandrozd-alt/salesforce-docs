@@ -24,7 +24,8 @@ Section breakdown:
 *Source: [`llms-industries.txt`](https://developer.salesforce.com/docs/llms-industries.txt) — official aggregated index (developer doc page), overview section.*
 
 
-*Last refreshed 2026-11-06: 4021 pages in 15 sections (counts from the live source).*
+
+*Last refreshed 2026-11-12: 4021 pages in 15 sections (counts from the live source).*
 
 ## Extraction notes
 

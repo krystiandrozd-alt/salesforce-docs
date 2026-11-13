@@ -6,12 +6,13 @@ No overview text in source — title-only index.
 
 Section breakdown:
 - **Automotive Cloud Developer Guide** — 163 pages
-- **Manufacturing Cloud Developer Guide** — 237 pages
+- **Manufacturing Cloud Developer Guide** — 241 pages
 
 *Source: [`llms-industries-mfg-auto.txt`](https://developer.salesforce.com/docs/llms-industries-mfg-auto.txt) — official aggregated index (developer doc page), overview section.*
 
 
-*Last refreshed 2026-11-06: 400 pages in 2 sections (counts from the live source).*
+
+*Last refreshed 2026-11-12: 404 pages in 2 sections (counts from the live source).*
 
 ## Extraction notes
 

@@ -26,7 +26,8 @@ It organizes LWC resources into four groups:
 This index's **Security** section and the Developer Center's **Tools** both surface **two parallel security models**: Lightning Web Security (LWS, current) and Lightning Locker (legacy) — each with its own console/viewer pair (LWS Console + Distortion Viewer vs. Locker Console + API Viewer). Don't assume they're interchangeable; check which one an org/runtime actually uses before citing either tool.
 
 
-*Last refreshed 2026-11-06: 829 pages in 5 sections (counts from the live source).*
+
+*Last refreshed 2026-11-12: 829 pages in 5 sections (counts from the live source).*
 
 ## Extraction notes
 

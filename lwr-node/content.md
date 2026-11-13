@@ -11,7 +11,8 @@ Section breakdown:
 *Source: [`llms-lwr-node.txt`](https://developer.salesforce.com/docs/llms-lwr-node.txt) — official aggregated index (developer doc page), overview section.*
 
 
-*Last refreshed 2026-11-06: 146 pages in 2 sections (counts from the live source).*
+
+*Last refreshed 2026-11-12: 146 pages in 2 sections (counts from the live source).*
 
 ## Extraction notes
 

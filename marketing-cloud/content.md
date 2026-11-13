@@ -5,8 +5,8 @@ Synthesis written independently from the source index below (not copied text).
 Documentation for Salesforce Marketing Cloud developer tools and APIs, covering Marketing Cloud Next REST and Bulk APIs, Marketing Cloud Engagement REST and SOAP APIs with programmatic languages (AMPscript, Handlebars), the Einstein Content Selection API, the Engagement Mobile SDK, and the MCP Server for LLM-driven marketing automation.
 
 Section breakdown:
-- **Marketing Cloud Next** — 65 pages
-- **Marketing Cloud Engagement APIs and Programmatic Languages** — 1137 pages
+- **Marketing Cloud Next** — 71 pages
+- **Marketing Cloud Engagement APIs and Programmatic Languages** — 1135 pages
 - **Einstein for Marketing Cloud Engagement** — 11 pages
 - **Engagement Mobile SDK** — 1 pages
 - **AMPscript for Marketing Cloud** — 201 pages
@@ -19,7 +19,8 @@ Section breakdown:
 *Source: [`llms-marketing-cloud.txt`](https://developer.salesforce.com/docs/llms-marketing-cloud.txt) — official aggregated index (developer doc page), overview section.*
 
 
-*Last refreshed 2026-11-06: 2177 pages in 10 sections (counts from the live source).*
+
+*Last refreshed 2026-11-12: 2181 pages in 10 sections (counts from the live source).*
 
 ## Extraction notes
 

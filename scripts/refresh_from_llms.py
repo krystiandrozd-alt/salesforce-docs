@@ -14,7 +14,8 @@ What it does:
 - regenerates salesforce-platform-docs-content-list.md (keeps existing row
   descriptions, uses the official description for new rows) and the status,
   count and top-ten parts of README.md;
-- reports areas that disappeared from llms.txt (folders are left untouched).
+- reports areas that disappeared from llms.txt (folders are left untouched);
+- skips the folders in EXTRA_SOURCES (built from other llms.txt files; see README).
 """
 from __future__ import annotations
 
@@ -28,6 +29,9 @@ ROOT = Path(__file__).resolve().parent.parent
 LLMS = "https://developer.salesforce.com/docs/llms.txt"
 LINK = re.compile(r"^\s*- \[(.+?)\]\((https?://[^)\s]+)\)(?::\s*(.*))?$")
 LIST_FILE = ROOT / "salesforce-platform-docs-content-list.md"
+# Folders built from llms.txt files outside developer.salesforce.com (README, "Additional sources").
+# Not regenerated here and not reported as "no longer listed".
+EXTRA_SOURCES = {"agentforce-labs"}
 
 
 def fetch_all() -> tuple[list[tuple[str, str, str]], dict[str, str]]:
@@ -171,7 +175,7 @@ def main() -> int:
         rows.append(f"| {i} | ✅ | {title} | [folder]({slug}/) | {d} |")
         sizes.append((slug, n, (ROOT / slug / "index.md").stat().st_size))
     gone = sorted(p.name for p in ROOT.iterdir() if p.is_dir() and (p / "index.md").exists()
-                  and p.name not in {s for s, _, _ in areas})
+                  and p.name not in {s for s, _, _ in areas} and p.name not in EXTRA_SOURCES)
     total = len(areas)
     lst = [
         "# Salesforce Developer Documentation — Content List (Index)",

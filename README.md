@@ -33,6 +33,14 @@ Every product-specific `llms-*.txt` section now has its own folder here. See [`s
 
 These are reproduced **in full**, not condensed, per explicit instruction — including `product-docs`, the largest single index.
 
+## Additional sources (outside developer.salesforce.com)
+
+These folders are built from `llms.txt` files published outside `developer.salesforce.com`. They are snapshots: `scripts/refresh_from_llms.py` skips them (they are listed in its `EXTRA_SOURCES`), and they don't count toward the 54-product total above.
+
+| Folder | Source | Contents |
+|---|---|---|
+| [agentforce-labs](agentforce-labs/) | [labs.agentforce.com/llms.txt](https://labs.agentforce.com/llms.txt) | `index.md` (13 links), `content.md`, and [`org-configuration.md`](agentforce-labs/org-configuration.md): a reviewed synthesis of the [LabBox org configuration](https://labs.agentforce.com/chat/docs/org-configuration) page, with corrections to its replication scripts. Snapshot taken 2026-11-21. |
+
 ## Source
 
-All entries trace back to `developer.salesforce.com/docs/llms-*.txt` and the pages they link to. Captured starting 2026-10-24. Last refreshed 2026-11-06 with [`scripts/refresh_from_llms.py`](scripts/refresh_from_llms.py).
+All entries in the 54 product folders trace back to `developer.salesforce.com/docs/llms-*.txt` and the pages they link to. Folders under "Additional sources" name their own source in their `index.md`. Captured starting 2026-10-24. Last refreshed 2026-11-06 with [`scripts/refresh_from_llms.py`](scripts/refresh_from_llms.py).

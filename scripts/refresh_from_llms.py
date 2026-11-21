@@ -15,7 +15,7 @@ What it does:
   descriptions, uses the official description for new rows) and the status,
   count and top-ten parts of README.md;
 - reports areas that disappeared from llms.txt (folders are left untouched);
-- skips the folders in EXTRA_SOURCES (built from other llms.txt files; see README).
+- skips the folders in EXTRA_SOURCES (built from other sources; see README).
 """
 from __future__ import annotations
 
@@ -29,8 +29,8 @@ ROOT = Path(__file__).resolve().parent.parent
 LLMS = "https://developer.salesforce.com/docs/llms.txt"
 LINK = re.compile(r"^\s*- \[(.+?)\]\((https?://[^)\s]+)\)(?::\s*(.*))?$")
 LIST_FILE = ROOT / "salesforce-platform-docs-content-list.md"
-# Folders built from llms.txt files outside developer.salesforce.com (README, "Additional sources").
-# Not regenerated here and not reported as "no longer listed".
+# Folders built from sources outside developer.salesforce.com (README, "Additional sources"),
+# each with its own refresh script. Not regenerated here and not reported as "no longer listed".
 EXTRA_SOURCES = {"agentforce-labs"}
 
 

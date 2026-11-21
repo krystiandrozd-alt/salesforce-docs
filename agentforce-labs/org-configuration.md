@@ -141,7 +141,7 @@ MCP stands for Model Context Protocol ([src] §MCP Servers):
 | `metadata-experts` | 1 | Inspecting org metadata |
 | `salesforce-api-context` | 6 | Salesforce API reference for grounding agent responses |
 
-- **External MCP clients:** they authenticate through an External Client App (ECA) with OAuth scopes `api`, `sfap_api`, `refresh_token` and `einstein_gpt_api`. The page stresses keeping `refresh_token`; without it, clients disconnect often.
+- **External MCP clients:** they authenticate through an External Client App (ECA) with OAuth scopes `api`, `sfap_api`, `refresh_token` and `einstein_gpt_api`. The page stresses keeping `refresh_token`; without it, clients disconnect often. Salesforce's own guide lists different scopes; see [note 12](#review-notes--verify-before-reuse).
 - **Endpoints:** `https://api.salesforce.com/platform/mcp/v1/platform/<server>` for standard servers, `/v1/custom/<name>` for custom ones.
 - **Deeper coverage:** [../hosted-mcp-servers/](../hosted-mcp-servers/) and the companion `headless-toolkit` repo.
 
@@ -209,11 +209,12 @@ Facts are cited. **Inference** marks my own reading.
 9. **Release 262 is an internal release number.** **Inference:** it corresponds to Summer '26. That fits the page's note that the rename rolled out around early June.
 10. **"AWS Contact Center":** **Inference:** this means Amazon Connect, the AWS contact-centre service behind Service Cloud Voice.
 11. **No Industries content.** Nothing on the page suggests a LabBox includes Industries or Communications Cloud features. **Inference:** for Communications Cloud or Industries demos, plan a separate Industries-enabled org, and treat a LabBox as a sandbox for service agents.
+12. **The MCP client OAuth scopes don't match Salesforce's guide.** The page lists `api`, `sfap_api`, `refresh_token` and `einstein_gpt_api`. Salesforce's External Client App guide for hosted MCP servers specifies `mcp_api` (Access MCP servers) and `refresh_token` ([Create an External Client App][mcp-eca]); SF Pi's SF Integrate extension requests the same two ([../sf-pi/content.md](../sf-pi/content.md)). On activation, Salesforce's guide describes the Setup page only, which matches the page's "UI-only" statement ([Activate MCP Servers][mcp-activate]). SF Integrate, however, tries a Tooling object, `McpServerAccess`, when the org exposes one. **Recommendation:** use `mcp_api` and `refresh_token` for MCP client apps.
 
 ## Extraction notes
 
 - Built from one fetch of the HTML page and one of its Markdown version, both on 2026-11-21. Both have the same 17 top-level sections. Code blocks were read but not reproduced.
-- Notes 1, 3 and 4 were checked against the linked Salesforce sources on the same date. Notes 1, 2 and 8 were also cross-checked against the site's other pages. Everything else is as stated on the source page.
+- Notes 1, 3, 4 and 12 were checked against the linked Salesforce sources on the same date. Notes 1, 2 and 8 were also cross-checked against the site's other pages. Everything else is as stated on the source page.
 - The rest of the site is summarised in [content.md](content.md) and listed in full in [index.md](index.md).
 
 [src]: https://labs.agentforce.com/chat/docs/org-configuration
@@ -224,3 +225,5 @@ Facts are cited. **Inference** marks my own reading.
 [cors]: https://trailhead.salesforce.com/content/learn/modules/agentforce-deployment-quick-look/deploy-the-messaging-connection-to-a-website
 [coworker]: https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-turn-on-infrastructure.html
 [voice]: https://help.salesforce.com/s/articleView?id=ai.agentforce_voice_setup_prereqs.htm&type=5
+[mcp-eca]: https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/create-external-client-app.html
+[mcp-activate]: https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/activate-mcp-servers.html

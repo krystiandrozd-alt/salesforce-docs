@@ -31,7 +31,7 @@ LINK = re.compile(r"^\s*- \[(.+?)\]\((https?://[^)\s]+)\)(?::\s*(.*))?$")
 LIST_FILE = ROOT / "salesforce-platform-docs-content-list.md"
 # Folders built from sources outside developer.salesforce.com (README, "Additional sources"),
 # each with its own refresh script. Not regenerated here and not reported as "no longer listed".
-EXTRA_SOURCES = {"agentforce-labs"}
+EXTRA_SOURCES = {"agentforce-labs", "sf-pi"}
 
 
 def fetch_all() -> tuple[list[tuple[str, str, str]], dict[str, str]]:

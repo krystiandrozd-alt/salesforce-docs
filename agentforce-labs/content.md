@@ -30,7 +30,7 @@ The site is written for AI coding agents as much as for people:
   - Claude Code: the Agentforce ADLC plugin (skills to generate, test and observe agents) and the Salesforce Development plugin (Apex, Flow, metadata). The page says both are in Anthropic's official plugin marketplace.
   - Other coding tools: the Salesforce Skills Library (`forcedotcom/sf-skills`), which includes the same Agentforce skills.
   - ChatGPT: Salesforce's Agentforce Sales app (Beta).
-- **SF Pi:** Salesforce's open-source extension bundle for the Pi coding agent. You can run it in Labs or install it locally ([sf-pi]).
+- **SF Pi:** Salesforce's open-source extension bundle for the Pi coding agent. You can run it in Labs or install it locally ([sf-pi]). It has its own folder, built from its repository: [../sf-pi/](../sf-pi/content.md).
 
 ## 2. Agent Script and Agent API
 

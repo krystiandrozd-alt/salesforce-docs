@@ -1,6 +1,8 @@
 # Salesforce Flex Credit Calculator — functional specification (proposed)
 
-**Status:** SPECIFICATION ONLY — not an implemented calculator or official Salesforce quote.
+> **Current implementation status:** A command-line estimator is available at ../credit_calculator.py, with a versioned rate card, example JSON and offline tests. The full UI, negotiated terms and source-coverage pipeline remain specifications. See [Claude usage guide](../USAGE_WITH_CLAUDE.md).
+
+**Status:** IMPLEMENTED CLI SUBSET; FULL CALCULATOR SPECIFICATION BELOW — not an implemented calculator or official Salesforce quote.
 **As-of:** 2026-11-22. Pricing / multipliers must be versioned and reviewed for each calculation.
 
 ## Official references

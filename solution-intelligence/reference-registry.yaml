@@ -79,6 +79,24 @@ references:
     repository_key: solution_checkout
     path: pricing-intelligence/credit_calculator.py
     role: implementation
+  - reference_id: SOLUTION_RESOLVER_PILOT
+    repository_key: solution_checkout
+    path: solution-intelligence/resolver.py
+    role: structural_prototype
+    limits: "Synthetic-only structural resolution; not vendor licensing proof or pricing engine."
+  - reference_id: SOLUTION_RESOLVER_QUICKSTART
+    repository_key: solution_checkout
+    path: solution-intelligence/RESOLVER-QUICKSTART.md
+    role: instructions
+  - reference_id: SOLUTION_RESOLVER_SYNTHETIC_FIXTURE
+    repository_key: solution_checkout
+    path: solution-intelligence/examples/wholesale-quote-to-order.synthetic.json
+    role: synthetic_test_data
+    limits: "All graph claims fictional and UNKNOWN/INFERRED; never cite as Salesforce commercial evidence."
+  - reference_id: SOLUTION_RESOLVER_TESTS
+    repository_key: solution_checkout
+    path: solution-intelligence/tests/test_resolver.py
+    role: structural_contract_tests
   - reference_id: COMMERCIAL_SEED
     repository_key: commercial_catalog
     path: pricing-intelligence/data/seed-eu-2026-11-22.yaml

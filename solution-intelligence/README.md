@@ -39,7 +39,7 @@ The required trace is process/step → capability → implementation/functional 
 
 The target production resolver must support forward search and reverse impact lookup, explicit `ALL_OF` / `ANY_OF` prerequisites, existing-entitlement comparison and an evidence path for every output row. The current pilot now accepts process, step, capability **and functional-skill IDs**, but returns candidate offers, not verified customer orderability. Semantic search finds candidates; typed, scoped relationships establish supported conclusions. Unknown licensing, inclusion or billing remains unknown.
 
-**Implementation status:** the contract, source routing and prompts are present. A **synthetic-data structural resolver with 16 automated tests** is now available at [resolver.py](resolver.py); see [quickstart](RESOLVER-QUICKSTART.md). A verified/ingested commercial graph, complete licensing/allowance logic, cross-repository runtime adapters and an MCP/API endpoint are **not** implemented. The existing limited Flex Credit CLI is a separate working component.
+**Implementation status:** the contract, source routing and prompts are present. A **synthetic-data structural resolver with 24 automated synthetic contract tests** is now available at [resolver.py](resolver.py); see [quickstart](RESOLVER-QUICKSTART.md). A verified/ingested commercial graph, complete licensing/allowance logic, cross-repository runtime adapters and an MCP/API endpoint are **not** implemented. The existing limited Flex Credit CLI is a separate working component.
 
 ## Typical workflow
 

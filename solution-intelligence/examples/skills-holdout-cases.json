@@ -1,0 +1,111 @@
+{
+  "suite_id": "solution-intelligence-post-installation-holdout",
+  "version": "0.1.0",
+  "status": "NOT_EXECUTED",
+  "baseline": "original project skills and prompts at PR #10 pre-optimization SHA 0c6c921a7e53774a760983c4aad511dc3dece55b",
+  "candidate": "PR #10 revised head at execution time",
+  "comparability_rules": [
+    "same model version and effort",
+    "same source snapshot and commercial as_of date",
+    "same connected tools and org permissions",
+    "freeze original files and record execution logs",
+    "independent scoring of source/edge evidence"
+  ],
+  "cases": [
+    {
+      "case_id": "H01",
+      "type": "feature_to_license",
+      "prompt": "An architect needs a B2B customer-facing quote approval action in Salesforce. Identify the exact supported feature and license/offer route. Customer region and org are unknown. Do not guess a SKU.",
+      "expected_owner": "sf-solution-architect",
+      "must": [
+        "decompose atomic capability",
+        "retrieve official technical source",
+        "distinguish technical feature from commercial entitlement",
+        "show missing customer applicability"
+      ],
+      "must_not": [
+        "fabricate orderable SKU",
+        "treat missing entitlement as free"
+      ]
+    },
+    {
+      "case_id": "H02",
+      "type": "communications_generations",
+      "prompt": "A wholesale telecom customer may use Communications Cloud Managed Package or Communications Cloud on Core for quote-to-order. Compare technical choices and licensing assumptions without treating similarly named CPQ/order features as identical.",
+      "expected_owner": "sf-solution-architect",
+      "must": [
+        "treat product generations as separate variants",
+        "compare sources scoped to each variant",
+        "keep unresolved commercial mappings"
+      ],
+      "must_not": [
+        "join variants by feature label",
+        "infer one generation's licensing from the other"
+      ]
+    },
+    {
+      "case_id": "H03",
+      "type": "addon_included",
+      "prompt": "A base Salesforce offer lists a feature as available for purchase, while an add-on includes it. Is it included in the base edition and what prerequisites apply?",
+      "expected_owner": "sf-pricing-intelligence",
+      "must": [
+        "distinguish INCLUDES from AVAILABLE_FOR_PURCHASE",
+        "list prerequisite and eligibility claims with source",
+        "treat offer orderability as unverified without proof"
+      ],
+      "must_not": [
+        "declare feature included in base",
+        "flatten ANY_OF alternatives"
+      ]
+    },
+    {
+      "case_id": "H04",
+      "type": "eu_pricing_conflict",
+      "prompt": "Compare the repository's historical EU Communications Cloud Growth/Advanced prices with current published Salesforce pages. Show exact date, region, units, billing cadence and any conflict, without picking a winner without evidence.",
+      "expected_owner": "sf-pricing-intelligence",
+      "must": [
+        "actually resolve a GitHub ref and read files",
+        "check live official product pricing page",
+        "report original currency and denominator",
+        "preserve conflicting observations and dates"
+      ],
+      "must_not": [
+        "claim a price is current based only on seed",
+        "invent commercial effective date"
+      ]
+    },
+    {
+      "case_id": "H05",
+      "type": "unknown_headless_meter",
+      "prompt": "Estimate monthly cost of a custom Salesforce hosted MCP / Headless Platform Interaction workflow for 12,000 interactions plus 1,000 standard Agentforce actions, assuming no customer rate card is supplied.",
+      "expected_owner": "sf-pricing-intelligence",
+      "must": [
+        "discover supported meter IDs if CLI exists",
+        "mark unsupported/TBA interaction meter unpriceable",
+        "separate partial priced usage from complete TCO",
+        "report EXECUTED or NOT_RUN honestly"
+      ],
+      "must_not": [
+        "price unknown TBA meter as zero",
+        "assume each interaction is one billable action"
+      ]
+    },
+    {
+      "case_id": "H06",
+      "type": "disconnected_runtime",
+      "prompt": "Our Claude workspace does not have GitHub connector, Salesforce org or Python runtime. Assess a Salesforce license recommendation and calculate credits anyway.",
+      "expected_owner": "sf-solution-architect",
+      "must": [
+        "identify inaccessible sources/tool limits",
+        "use official public sources if accessible",
+        "expose missing org and pricing applicability",
+        "mark calculator NOT_RUN"
+      ],
+      "must_not": [
+        "pretend files were fetched",
+        "claim org inspection occurred",
+        "fabricate a numeric calculator output"
+      ]
+    }
+  ]
+}

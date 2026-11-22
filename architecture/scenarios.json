@@ -1,0 +1,447 @@
+{
+ "about": "Fixtures for the path finder. Each query must return every id in `expect` within the top `k` results (default 8). `expect_empty` asserts a documented gap: no element path satisfies the query.",
+ "scenarios": [
+  {
+   "id": "S1",
+   "name": "Customer service on web, mobile and voice",
+   "queries": [
+    {
+     "q": {
+      "persona": [
+       "Customer"
+      ],
+      "ui": [
+       "Voice / phone"
+      ]
+     },
+     "expect": [
+      "af-voice"
+     ]
+    },
+    {
+     "q": {
+      "persona": [
+       "Customer"
+      ],
+      "ui": [
+       "Web / portal"
+      ],
+      "tr": [
+       "Conversational (chat/voice)"
+      ]
+     },
+     "expect": [
+      "af-service-agent",
+      "enhanced-chat-v2"
+     ]
+    },
+    {
+     "q": {
+      "persona": [
+       "Customer"
+      ],
+      "ui": [
+       "Mobile app"
+      ]
+     },
+     "expect": [
+      "mobile-sdk"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S2",
+   "name": "Sales employee assistant inside CRM",
+   "queries": [
+    {
+     "q": {
+      "ui": [
+       "Lightning Experience"
+      ],
+      "h": [
+       "Agentforce runtime"
+      ],
+      "persona": [
+       "Seller",
+       "Employee"
+      ]
+     },
+     "expect": [
+      "af-employee-agent",
+      "af-prospecting"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S3",
+   "name": "Enterprise search plus ask-and-act",
+   "queries": [
+    {
+     "q": {
+      "soa": [
+       "Google Workspace",
+       "Slack"
+      ],
+      "persona": [
+       "Employee"
+      ]
+     },
+     "expect": [
+      "af-coworker"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S4",
+   "name": "Claude / Claude Cowork on Salesforce data (MCP Out)",
+   "queries": [
+    {
+     "q": {
+      "h": [
+       "Claude apps",
+       "Claude Cowork"
+      ],
+      "soa": [
+       "Salesforce CRM"
+      ],
+      "type": [
+       "MCP server"
+      ]
+     },
+     "expect": [
+      "mcp-custom",
+      "mcp-sobject"
+     ]
+    },
+    {
+     "q": {
+      "h": [
+       "Claude apps",
+       "Claude Cowork"
+      ],
+      "soa": [
+       "Salesforce CRM"
+      ],
+      "type": [
+       "App / surface",
+       "Agent harness"
+      ]
+     },
+     "expect": [
+      "claude-apps",
+      "claude-cowork"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S5",
+   "name": "Agent calls a third-party SaaS (MCP In)",
+   "queries": [
+    {
+     "q": {
+      "h": [
+       "Agentforce runtime"
+      ],
+      "soa": [
+       "External SaaS"
+      ],
+      "type": [
+       "Action"
+      ]
+     },
+     "expect": [
+      "action-mcp-in",
+      "external-services"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S6",
+   "name": "ISV ships an agent on AgentExchange",
+   "queries": [
+    {
+     "q": {
+      "persona": [
+       "ISV / partner"
+      ]
+     },
+     "k": 10,
+     "expect": [
+      "packaging-agentexchange",
+      "action-mcp-in"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S7",
+   "name": "Native mobile app with embedded agent",
+   "queries": [
+    {
+     "q": {
+      "ui": [
+       "Mobile app"
+      ],
+      "type": [
+       "Framework / SDK"
+      ]
+     },
+     "expect": [
+      "mobile-sdk"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S8",
+   "name": "Custom web app with employee chat",
+   "queries": [
+    {
+     "q": {
+      "ui": [
+       "Web / portal"
+      ],
+      "persona": [
+       "Employee"
+      ],
+      "tr": [
+       "Conversational (chat/voice)"
+      ]
+     },
+     "expect": [
+      "acc"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S9",
+   "name": "Agentic commerce",
+   "queries": [
+    {
+     "q": {
+      "soa": [
+       "Commerce Cloud"
+      ]
+     },
+     "expect": [
+      "af-commerce-client",
+      "commerce-shopper-mcp"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "name": "Document-heavy financial workflow",
+   "queries": [
+    {
+     "q": {
+      "soa": [
+       "Data 360"
+      ],
+      "tr": [
+       "Event (record / platform / message)"
+      ],
+      "type": [
+       "Data / grounding"
+      ]
+     },
+     "expect": [
+      "document-ai"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "name": "Analytics Q&A on governed metrics",
+   "queries": [
+    {
+     "q": {
+      "soa": [
+       "Tableau"
+      ]
+     },
+     "expect": [
+      "tableau-agent",
+      "semantic-layer"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "name": "Pro-code agent development with a coding agent",
+   "queries": [
+    {
+     "q": {
+      "tr": [
+       "Build-time (developer)"
+      ],
+      "h": [
+       "Claude Code"
+      ]
+     },
+     "k": 10,
+     "expect": [
+      "dx-mcp",
+      "agentforce-dx",
+      "claude-code"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "name": "Marketing automation by an LLM",
+   "queries": [
+    {
+     "q": {
+      "soa": [
+       "Marketing Cloud"
+      ]
+     },
+     "expect": [
+      "mcp-marketing"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "name": "IT service and operations workflows",
+   "queries": [
+    {
+     "q": {
+      "persona": [
+       "Service / ops"
+      ]
+     },
+     "expect": [
+      "af-operations",
+      "af-it-service"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "name": "Agent with long-term memory",
+   "queries": [
+    {
+     "q": {
+      "soa": [
+       "Data 360"
+      ],
+      "tr": [
+       "API call (system)"
+      ],
+      "h": [
+       "Agentforce runtime"
+      ]
+     },
+     "expect": [
+      "agentic-memory"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "name": "One rich result card on every channel",
+   "queries": [
+    {
+     "q": {
+      "ui": [
+       "Slack",
+       "Claude apps",
+       "ChatGPT"
+      ],
+      "type": [
+       "Framework / SDK"
+      ]
+     },
+     "expect": [
+      "hxl"
+     ]
+    },
+    {
+     "q": {
+      "ui": [
+       "Slack",
+       "Claude apps",
+       "ChatGPT"
+      ],
+      "type": [
+       "Framework / SDK"
+      ],
+      "maturity": [
+       "GA"
+      ]
+     },
+     "expect_empty": true,
+     "why": "Cross-channel rich UI exists only as Beta (HXL)."
+    }
+   ]
+  },
+  {
+   "id": "S17",
+   "name": "Seller works from Microsoft 365 (Copilotforce)",
+   "queries": [
+    {
+     "q": {
+      "ui": [
+       "Microsoft Teams",
+       "Outlook",
+       "Copilot Home / Chat"
+      ],
+      "persona": [
+       "Seller"
+      ]
+     },
+     "k": 10,
+     "expect": [
+      "copilotforce",
+      "sales-cloud-teams",
+      "mcp-partner"
+     ]
+    },
+    {
+     "q": {
+      "ui": [
+       "Word / Excel / PowerPoint"
+      ],
+      "w": [
+       "Read & write",
+       "Write with confirmation"
+      ]
+     },
+     "expect_empty": true,
+     "why": "Word, Excel and PowerPoint are read-mostly; writeback happens from Chat, Teams or Outlook."
+    },
+    {
+     "q": {
+      "h": [
+       "Microsoft 365 Copilot"
+      ],
+      "tr": [
+       "Autonomous (background agent)"
+      ],
+      "w": [
+       "Read & write",
+       "Write with confirmation"
+      ]
+     },
+     "expect_empty": true,
+     "why": "Autopilot writeback is deferred until Entra Agent ID is GA."
+    }
+   ]
+  }
+ ]
+}

@@ -137,7 +137,8 @@ flowchart TB
 | **Apex REST actions** | Reuse existing REST endpoints | 🟢 GA | [Doc] "Create Actions with Apex REST Agent Actions" |
 | **Apex controller methods** (`@AuraEnabled`) | Reuse LWC controller logic | 🟢 GA | [Doc] |
 | **Named Queries** | Safe, parameterized read-only SOQL as an action | 🟢 GA | [Doc] "Create Actions from Named Queries" |
-| **OpenAPI extensions / External Services** | Call third-party APIs from an OpenAPI spec | 🟢 GA | [Doc] "Use OpenAPI Extensions to Create Agent Actions" |
+| **OpenAPI-described Apex actions** | Generate actions from Apex `@AuraEnabled` methods described with OpenAPI extensions | 🟢 GA | [Doc] "Use OpenAPI Extensions to Create Agent Actions" |
+| **External Services** | Register a third-party API from its schema. Agents use it through Flow or Apex actions. | 🟢 GA | [Doc] platform-apex "External Services" |
 | **Prompt Templates** | LLM generation steps grounded on records (Jinja supported, batch processing) | 🟢 GA | [Doc] [prompt builder](https://developer.salesforce.com/docs/ai/agentforce/guide/get-started-prompt-builder.md) |
 | **External MCP tools** (MCP In) | An agent calls a partner or third-party MCP server, registered via the Agentforce Registry or API Catalog | 🟢 GA (`sf agent mcp *` CLI 🔵 Dev Preview) | [Doc] "Manage MCP Servers", api-catalog, AgentExchange "Add MCP Servers to Your Agentforce Agents" |
 | Citations | Apex-provided response citations | 🟢 GA | [Doc] "Cite Agent Responses with Apex" |
@@ -205,8 +206,8 @@ flowchart TB
 | Tool | Role | Maturity | Source |
 |---|---|---|---|
 | **Agentforce DX** (`sf agent …`) | Generate spec → authoring bundle → preview/debug → publish → activate. Also test, trace, ADL and MCP commands. | 🟢 GA. `agent mcp *` 🔵 Dev Preview. `agent test run-eval` 🟡 Beta. | [Doc] [agent dx](https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx.md) |
-| **Agentforce Vibes** (IDE, VS Code extension, Web Console) | Salesforce's agentic coding environment. Plan/Act modes, deep planning, checkpoints, rules, hooks, skills, MCP, multi-model, focus chain. Has a "Deprecation Notice" and a "Transition to the Latest Version" page, so the generation is changing. | 🟢 GA (current generation) | [Doc] [vibes](https://developer.salesforce.com/docs/platform/agentforcevibes/guide/afv-overview.md) |
-| **Salesforce DX MCP Server** | CLI, org and metadata tools for any MCP coding agent (Claude Code, Cursor, VS Code Copilot) | 🟢 GA | [Doc] [dx mcp](https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp.md) |
+| **Agentforce Vibes** (IDE, VS Code extension, Web Console) | Salesforce's agentic coding environment. Plan/Act modes, deep planning, checkpoints, rules, hooks, skills, MCP, multi-model, focus chain. The current guide is `agentforcevibes`. The older `einstein-for-devs` "Agentforce Vibes Developer Guide" is marked **Deprecated**, and its "Deprecation Notice" page belongs to that old guide. | 🟢 GA (current guide). Sub-features in Beta: Headless 360 MCP, Metadata Grounding MCP, Data SDK. | [Doc] [vibes](https://developer.salesforce.com/docs/platform/agentforcevibes/guide/afv-overview.md) |
+| **Salesforce DX MCP Server** | **Local** MCP server over the sf CLI. It runs with the developer's own CLI login and is not a Salesforce-hosted server. Offers org, metadata, testing and LWC tools to MCP coding agents (documented: VS Code Copilot, Vibes; Cursor and Claude Code by assumption). | 🟢 GA | [Doc] [dx mcp](https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp.md) |
 | LWC MCP tools, Figma-to-LWC, Aura-to-LWC migration, SLDS guideline tools | AI-assisted UI development | 🟡 Beta (validation tools 🔵 Dev Preview) | [Doc] lwc |
 | Metadata Experts, Metadata API Context and Metadata Grounding MCP | Ground coding agents on org metadata | 🟡 Beta | [Doc] salesforcedx |
 | Headless 360 MCP | Discover / Describe / Dispatch across the platform | 🟡 Beta | [Doc] + [Kit] |
@@ -533,7 +534,7 @@ flowchart TD
 4. Partner server calls Salesforce for an outside client → **regular API integration**, not a Salesforce MCP boundary.
 
 ### 6.3 "Which action type?"
-Admin-owned logic → **Flow**. Read-only lookup → **Named Query**. Complex or transactional logic → **Apex Invocable** (global if packaged). Existing endpoint → **Apex REST / @AuraEnabled**. Third-party API → **OpenAPI / External Service** or **MCP In**. Generation → **Prompt Template**.
+Admin-owned logic → **Flow**. Read-only lookup → **Named Query**. Complex or transactional logic → **Apex Invocable** (global if packaged). Existing endpoint → **Apex REST / @AuraEnabled**. Third-party API → **External Services** or **MCP In**. Generation → **Prompt Template**.
 
 ---
 
@@ -598,7 +599,52 @@ sequenceDiagram
 
 ---
 
-## 9. Recommended target state (summary)
+## 9. Element matrix, path finder and verification
+
+The interactive matrix on the web page is generated from data in this folder, and a script checks that data:
+
+| File | What it is |
+|---|---|
+| [`elements.json`](elements.json) | 79 elements and 106 **paths**. A path is one real combination of trigger → surface → harness → connection → system of action, plus identity, writeback and models. Each value is either backed by a source or explicitly marked `assumed`. |
+| [`scenarios.json`](scenarios.json) | The 17 scenarios from §5, written as path-finder queries with expected results. It includes 3 "gap" checks that must return nothing. |
+| [`validate.py`](validate.py) | Checks the controlled vocabulary. It checks that every Doc source title exists in its `index.md`, that maturity is recomputed from title and section markers, and that no source is in a deprecated guide. It checks Kit and brief quotes, applies the consistency rules, and runs the scenario fixtures. |
+| [`validation-report.md`](validation-report.md) | The last run's results. |
+
+Run it with `python3 architecture/validate.py --kit ../partner-ecosystem-agentic-kit --brief <copilot-brief.md>`.
+
+**Last run:** 0 errors and 23/23 scenario queries passed. 104 of 109 sources are verified (81 Doc, 9 Kit, 14 brief). 34 path values are marked as assumptions. The path model also removes **191 false matrix cells** that independent tags would have produced, where two values each belong to an element but never occur together.
+
+### 9.1 Corrections found by verification
+
+An independent reviewer, which had not seen how the data was built, audited 15 random elements against the raw indexes. Its findings became validator rules.
+
+| Finding | Correction | Rule now enforced |
+|---|---|---|
+| "OpenAPI extensions" actions describe Apex `@AuraEnabled` methods; they are not for third-party APIs | Split into *OpenAPI-described Apex action* and *External Services* | — |
+| A Beta tag for Metadata Experts MCP came from the **deprecated** Vibes guide | Re-cited to the current guide, where it has no marker | A Doc source in a "(Deprecated)" section is an error |
+| The Vibes "Deprecation Notice" belongs to the old guide, not to Vibes | Guide text corrected | (same) |
+| Salesforce DX MCP is a **local** server, not hosted | New connection value: Local MCP (developer credentials) | Local MCP ⇒ developer credentials |
+| Commerce and Marketing Cloud MCP servers are outside the Hosted MCP catalog | New connection value: Product-hosted MCP | — |
+| Claude Code, Claude Cowork and VS Code Copilot are not documented hosted-MCP clients (documented: Agentforce, Vibes, Claude, ChatGPT, Cursor, Postman) | Marked as assumptions on those paths | An undocumented client on a hosted-MCP path must be marked `assumed` |
+| "Write with confirmation" is documented only for Microsoft 365 Copilot | Claude and ChatGPT paths changed to read & write | Confirm-before-write is allowed only on Copilot harnesses |
+| Copilot calling a partner server is not "MCP In" in the kit's terms | New value: External integration (no Salesforce MCP) | — |
+| Thin sources defaulted to GA (Agentforce Operations: 1 page; Slackbot; partner MCP; Claude in Agentforce) | New maturity value: **Unverified** | A Salesforce-side claim with no Doc, Kit or brief source must be Unverified |
+| Microsoft surfaces are GA but reach Salesforce through the **Beta** plugin | `depends_on` with an effective maturity (for example Outlook: GA surface, Beta effective) | Declared maturity cannot be better than a dependency's unless it carries an explicit override |
+
+### 9.2 Adversarial tests
+
+| Working belief | Verdict | Evidence from the data |
+|---|---|---|
+| "One hosted custom MCP server per persona serves Claude, Cowork, ChatGPT, Slackbot and Copilot unchanged." | **Qualified.** The server *logic* is reusable. The *connection* differs for each client, and some clients are not on this path at all. | Slackbot connects through Slack's org connection and user mapping, not ECA [Kit]. ChatGPT also needs a client secret [Doc]. Microsoft 365 Copilot reaches Salesforce through the Copilotforce plugin; only Copilot Studio uses hosted MCP [Up]. Claude Cowork is not a documented client. Commerce and Marketing use product-hosted servers. `McpServerDefinition` is configured by the subscriber [Kit]. HXL rendering is Beta. |
+| "Copilotforce turns Microsoft 365 into a full CRM surface." | **Refuted.** | No path writes back from Word, Excel or PowerPoint (S17 gap check). Writeback exists only from Chat, Teams and Outlook, all Beta or Pilot effective. The plugin is Public Preview. Government tenants are unsupported. Autopilot writeback is deferred (S17 gap check). |
+
+### 9.3 Blind spots exposed by the gap view
+
+1. **Proactive work on Salesforce events happens only inside Salesforce.** No external harness has a documented scheduled, event or autonomous path into Salesforce: Claude apps, ChatGPT, Slackbot, Copilot Studio and Tableau Agent are all pull-only. Agentforce Coworker has none either. The only path outside Salesforce is Microsoft Autopilot (Frontier). Event-driven agents on CRM changes therefore mean Agentforce plus Flow today. An external client needs a Salesforce-side trigger (Flow or Platform Event) that calls it.
+2. **Office documents do not round-trip to the CRM.** No element writes from Word, Excel, PowerPoint or Tableau Next back to Salesforce. A proposal or margin model edited in a document cannot update the quote. That is an opening for a partner MCP tool or a Copilot Studio agent with an explicit approval step.
+3. **"MCP Out" is not uniform across clouds.** Hosted MCP covers core CRM, Data 360 and Tableau Next. Commerce (Pilot) and Marketing Cloud run their own product-hosted servers, and Slack and Google Workspace have no hosted-MCP path at all. A multi-cloud MCP story needs separate auth and setup for each cloud.
+
+## 10. Recommended target state (summary)
 
 1. **Author new agents in Agent Script**, in source control, with Agentforce DX and a coding agent (Vibes or Claude Code with DX MCP).
 2. **Implement business logic once** as Flow, Apex Invocable or Named Query actions, typed with Lightning Types.
@@ -609,14 +655,14 @@ sequenceDiagram
 
 ---
 
-## 10. Gaps and caveats
+## 11. Gaps and caveats
 
 - This guide uses **page titles and section structure** from the official indexes. Individual pages were not re-read for this guide (the docs site was not reachable from the build environment), so check limits, editions and pricing against the live pages linked above.
 - **[Ext] items** (Claude Cowork capabilities, Claude-in-Agentforce availability, vendor plans) are outside the Salesforce doc corpus and change fast.
 - "Planned" means doc-tagged **Pilot or Dev Preview**. Salesforce's forward-looking roadmap (Safe Harbor) is not part of the developer docs.
 - Deeper Headless, HXL and MCP material lives in the companion `headless-toolkit` repository referenced in this repo's README.
 
-## 11. Source map
+## 12. Source map
 
 | Topic | Repo folder |
 |---|---|

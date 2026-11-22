@@ -12,6 +12,9 @@ resolver_tests: "tests/test_resolver.py"
 skill_routing: "docs/skill-routing.md"
 skill_benchmark_holdouts: "examples/skills-holdout-cases.json"
 skill_benchmark_status: "NOT_EXECUTED"
+skill_benchmark_runbook: "benchmarks/README.md"
+skill_benchmark_comparer: "benchmarks/compare.py"
+public_evidence_slice: "docs/hosted-mcp-flex-credits-evidence.md"
 reference_resolution: "Paths above are relative to solution-intelligence; paths in each layer are relative to that layer's root. Resolve refs to commit SHAs per run."
 layers:
   technical:

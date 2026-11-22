@@ -34,6 +34,8 @@ Before mapping a process, function or functional skill to commercial requirement
 | [Process resolver prompt](prompts/resolve-process-commercial.md) | Reusable Claude/agent workflow from process or skill to entitlement, package and billing. |
 | [Pricing build prompt](../pricing-intelligence/prompts/build-graph.md) | Implementation work including the process/capability bridge and acceptance cases. |
 | [Resolver pilot quickstart](RESOLVER-QUICKSTART.md) | Run the deliberately synthetic relationship graph; distinguish prototype coverage from real licensing verification. |
+| [Hosted MCP/Flex Credit evidence](docs/hosted-mcp-flex-credits-evidence.md) | Narrow source-observed technical/price facts with missing licensing and MCP metering edges clearly blocked. |
+| [Independent benchmark runbook](benchmarks/README.md) | Six holdout prompts and reproducible baseline-vs-candidate grading; actual agent runs still pending. |
 
 The required trace is process/step → capability → implementation/functional skill → exact technical feature → required entitlement/license → providing offer/package → applicable billing metric, rate and allowance. Each relation has its own evidence and applicability. Keep authoring/delivery skills distinct from runtime functional skills, commercial offers distinct from managed packages, and permissions distinct from purchased rights.
 

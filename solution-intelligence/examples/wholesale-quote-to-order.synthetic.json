@@ -1,0 +1,273 @@
+{
+  "graph_version": "0.1.0",
+  "metadata": {
+    "data_class": "SYNTHETIC_DEMO_NOT_VENDOR_EVIDENCE",
+    "description": "Fictional entitlement, license and implementation routes to test traversal; NOT a Salesforce commercial mapping."
+  },
+  "nodes": [
+    {
+      "id": "P-Q2O",
+      "kind": "process"
+    },
+    {
+      "id": "S-QUOTE",
+      "kind": "process_step"
+    },
+    {
+      "id": "CAP-QUOTE",
+      "kind": "capability"
+    },
+    {
+      "id": "OPTION-NATIVE",
+      "kind": "implementation_option"
+    },
+    {
+      "id": "OPTION-MCP",
+      "kind": "implementation_option"
+    },
+    {
+      "id": "FEATURE-MANAGED",
+      "kind": "technical_feature"
+    },
+    {
+      "id": "FEATURE-CORE",
+      "kind": "technical_feature"
+    },
+    {
+      "id": "VARIANT-MANAGED",
+      "kind": "product_variant"
+    },
+    {
+      "id": "VARIANT-CORE",
+      "kind": "product_variant"
+    },
+    {
+      "id": "GROUP-ROOT",
+      "kind": "requirement_group",
+      "operator": "ALL_OF"
+    },
+    {
+      "id": "GROUP-ADDON",
+      "kind": "requirement_group",
+      "operator": "ANY_OF"
+    },
+    {
+      "id": "ENT-BASE",
+      "kind": "access_entitlement"
+    },
+    {
+      "id": "ENT-ADDON-A",
+      "kind": "access_entitlement"
+    },
+    {
+      "id": "ENT-ADDON-B",
+      "kind": "access_entitlement"
+    },
+    {
+      "id": "ENT-API",
+      "kind": "access_entitlement"
+    },
+    {
+      "id": "OFFER-BASE",
+      "kind": "commercial_offer"
+    },
+    {
+      "id": "OFFER-A",
+      "kind": "commercial_offer"
+    },
+    {
+      "id": "OFFER-B",
+      "kind": "commercial_offer"
+    },
+    {
+      "id": "OFFER-API",
+      "kind": "commercial_offer"
+    },
+    {
+      "id": "METER-UNKNOWN",
+      "kind": "pricing_metric"
+    },
+    {
+      "id": "METER-SEATS",
+      "kind": "pricing_metric"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C-DEMO",
+      "evidence_status": "UNKNOWN",
+      "evidence_refs": []
+    },
+    {
+      "id": "C-CONTEXT",
+      "evidence_status": "INFERRED",
+      "applicability": {
+        "region": "EU"
+      },
+      "evidence_refs": []
+    }
+  ],
+  "edges": [
+    {
+      "id": "E01",
+      "source": "P-Q2O",
+      "target": "S-QUOTE",
+      "predicate": "HAS_STEP",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E02",
+      "source": "S-QUOTE",
+      "target": "CAP-QUOTE",
+      "predicate": "REQUIRES_CAPABILITY",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E03",
+      "source": "CAP-QUOTE",
+      "target": "OPTION-NATIVE",
+      "predicate": "REALIZED_BY",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E04",
+      "source": "CAP-QUOTE",
+      "target": "OPTION-MCP",
+      "predicate": "REALIZED_BY",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E05",
+      "source": "OPTION-NATIVE",
+      "target": "FEATURE-MANAGED",
+      "predicate": "USES_FEATURE",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E06",
+      "source": "OPTION-MCP",
+      "target": "FEATURE-CORE",
+      "predicate": "USES_FEATURE",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E07",
+      "source": "FEATURE-MANAGED",
+      "target": "VARIANT-MANAGED",
+      "predicate": "PART_OF",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E08",
+      "source": "FEATURE-CORE",
+      "target": "VARIANT-CORE",
+      "predicate": "PART_OF",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E09",
+      "source": "FEATURE-MANAGED",
+      "target": "GROUP-ROOT",
+      "predicate": "REQUIRES",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E10",
+      "source": "GROUP-ROOT",
+      "target": "ENT-BASE",
+      "predicate": "HAS_MEMBER",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E11",
+      "source": "GROUP-ROOT",
+      "target": "GROUP-ADDON",
+      "predicate": "HAS_MEMBER",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E12",
+      "source": "GROUP-ADDON",
+      "target": "ENT-ADDON-A",
+      "predicate": "HAS_MEMBER",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E13",
+      "source": "GROUP-ADDON",
+      "target": "ENT-ADDON-B",
+      "predicate": "HAS_MEMBER",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E14",
+      "source": "FEATURE-CORE",
+      "target": "ENT-API",
+      "predicate": "REQUIRES",
+      "claim_id": "C-CONTEXT"
+    },
+    {
+      "id": "E15",
+      "source": "OFFER-BASE",
+      "target": "ENT-BASE",
+      "predicate": "INCLUDES",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E16",
+      "source": "OFFER-A",
+      "target": "ENT-ADDON-A",
+      "predicate": "INCLUDES",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E17",
+      "source": "OFFER-B",
+      "target": "ENT-ADDON-B",
+      "predicate": "INCLUDES",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E18",
+      "source": "OFFER-API",
+      "target": "ENT-API",
+      "predicate": "INCLUDES",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E19",
+      "source": "OPTION-MCP",
+      "target": "METER-UNKNOWN",
+      "predicate": "GENERATES_USAGE",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E20",
+      "source": "OFFER-BASE",
+      "target": "METER-SEATS",
+      "predicate": "BILLED_BY",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E21",
+      "source": "OFFER-A",
+      "target": "METER-SEATS",
+      "predicate": "BILLED_BY",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E22",
+      "source": "OFFER-B",
+      "target": "METER-SEATS",
+      "predicate": "BILLED_BY",
+      "claim_id": "C-DEMO"
+    },
+    {
+      "id": "E23",
+      "source": "OFFER-API",
+      "target": "METER-SEATS",
+      "predicate": "BILLED_BY",
+      "claim_id": "C-DEMO"
+    }
+  ]
+}

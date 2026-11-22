@@ -156,8 +156,19 @@ class Graph:
                     issues.append(f"{cid}: missing context {key}")
                 elif context[key] != required:
                     issues.append(f"{cid}: inapplicable {key} (requires {required!r})")
-        verified = bool(ids) and all(s == "VERIFIED" for s in statuses) and not issues
-        return {"claim_ids": ids, "verified": verified, "gaps": unique_sorted(issues)}
+        # This pilot loads caller-supplied JSON and NEVER verifies live source content.
+        # Even a well-formed VERIFIED claim can be forged in that JSON. A separate,
+        # trusted source ingestion/attestation stage is required before promotion.
+        if ids:
+            issues.append("Independent source validation unavailable in structural pilot")
+        return {
+            "claim_ids": ids,
+            "verified": False,
+            "structurally_consistent": bool(ids) and all(
+                status == "VERIFIED" for status in statuses
+            ) and len(issues) == 1,
+            "gaps": unique_sorted(issues),
+        }
 
     def expand_requirement(self, node_id, seen=frozenset()):
         """Return DNF alternatives: [(frozenset(requirements), frozenset(edge IDs))]."""
@@ -213,11 +224,65 @@ class Graph:
             if self.nodes[e["source"]]["kind"] == "commercial_offer"
         ]
 
+    def offer_conditions(self, offer_id, seen=frozenset()):
+        """Explain candidate offer dependencies without assuming orderability.
+
+        A relationship edge is not customer eligibility evidence; the caller
+        must independently validate its claim, scope and effective period.
+        """
+        if offer_id in seen:
+            raise GraphError(f"commercial offer prerequisite cycle at {offer_id}")
+        nodes = self.nodes
+        if nodes[offer_id]["kind"] != "commercial_offer":
+            raise GraphError(f"{offer_id}: expected commercial_offer")
+        requires = self.edges_from(offer_id, "REQUIRES")
+        eligibility = self.edges_from(offer_id, "ELIGIBLE_WITH")
+        parents = self.edges_to(offer_id, "AVAILABLE_FOR_PURCHASE")
+        tracks = []
+        edge_ids = {e["id"] for e in requires + eligibility + parents}
+        gaps = ["Offer is a candidate only; purchase eligibility and contract applicability unverified"]
+        for edge in requires:
+            target = edge["target"]
+            kind = nodes[target]["kind"]
+            if kind == "commercial_offer":
+                sub = self.offer_conditions(target, seen | {offer_id})
+                edge_ids.update(sub["dependency_edge_ids"])
+                tracks.append({"required_offer": target, "alternatives": sub["requirement_routes"]})
+                gaps.extend(sub["gaps"])
+            elif kind == "requirement_group":
+                choices = self.expand_requirement(target)
+                tracks.append({
+                    "requirement_group_id": target,
+                    "alternatives": [sorted(items) for items, _ in choices],
+                })
+                for _, path_ids in choices:
+                    edge_ids.update(path_ids)
+            else:
+                tracks.append({"required_node": target})
+                gaps.append(f"Prerequisite {target} requires independent entitlement mapping")
+        for edge in eligibility:
+            gaps.append(f"Eligibility constraint {edge['target']} not established for customer")
+        if parents:
+            gaps.append("Add-on availability requires qualifying base offer; ownership not checked")
+        return {
+            "offer_id": offer_id,
+            "candidate_status": "NOT_CUSTOMER_VALIDATED",
+            "requirement_routes": tracks,
+            "eligibility_node_ids": unique_sorted(e["target"] for e in eligibility),
+            "available_from_offer_ids": unique_sorted(e["source"] for e in parents),
+            "dependency_edge_ids": sorted(edge_ids),
+            "gaps": unique_sorted(gaps),
+        }
+
     def resolve(self, requested_id, context=None):
         context = context or {}
         node = self.nodes.get(requested_id)
-        if node is None or node["kind"] not in {"process", "process_step", "capability"}:
-            raise GraphError("query ID must identify a known process, process_step or capability")
+        if node is None or node["kind"] not in {
+            "process", "process_step", "capability", "functional_skill"
+        }:
+            raise GraphError(
+                "query ID must identify a known process, process_step, capability or functional_skill"
+            )
         scope = []
         if node["kind"] == "process":
             for step_edge in self.edges_from(requested_id, "HAS_STEP"):
@@ -226,6 +291,9 @@ class Graph:
         elif node["kind"] == "process_step":
             for cap_edge in self.edges_from(requested_id, "REQUIRES_CAPABILITY"):
                 scope.append((requested_id, cap_edge["target"], [cap_edge]))
+        elif node["kind"] == "functional_skill":
+            for delivered in self.edges_from(requested_id, "DELIVERS"):
+                scope.append((None, delivered["target"], [delivered]))
         else:
             scope.append((None, requested_id, []))
 
@@ -241,6 +309,13 @@ class Graph:
         alternatives, missing, mapped = [], [], []
         for step, cap, base_edges in scope:
             impl_edges = self.edges_from(cap, "REALIZED_BY")
+            if node["kind"] == "functional_skill":
+                impl_edges = [
+                    e for e in impl_edges
+                    if any(x["target"] == requested_id for x in self.edges_from(
+                        e["target"], "USES_SKILL"
+                    ))
+                ]
             if not impl_edges:
                 missing.append(cap)
                 continue
@@ -284,9 +359,15 @@ class Graph:
                                 f"{req_id} is a prerequisite; technical/commercial provision not established"
                             )
                     offer_metrics = {}
+                    offer_assessments = {}
                     for offer_id in unique_sorted(
                         offer for offers in offer_options.values() for offer in offers
                     ):
+                        assessment = self.offer_conditions(offer_id)
+                        offer_assessments[offer_id] = assessment
+                        gap_notes.extend(assessment["gaps"])
+                        dependency_ids = set(assessment["dependency_edge_ids"])
+                        path_edges.extend(e for e in self.edges if e["id"] in dependency_ids)
                         billing_edges = self.edges_from(offer_id, "BILLED_BY")
                         path_edges.extend(billing_edges)
                         offer_metrics[offer_id] = unique_sorted(e["target"] for e in billing_edges)
@@ -311,6 +392,7 @@ class Graph:
                         "product_variant_ids": unique_sorted(e["target"] for e in variant_edges),
                         "requirements": sorted(reqs),
                         "providing_offer_candidates": offer_options,
+                        "offer_candidate_assessments": offer_assessments,
                         "offer_billing_metric_candidates": offer_metrics,
                         "usage_meter_ids": meters,
                         "trace_edge_ids": unique_sorted(e["id"] for e in path_edges),
@@ -346,9 +428,31 @@ class Graph:
         }
 
     def impact(self, changed_id):
-        if changed_id not in self.nodes:
-            raise GraphError(f"unknown node {changed_id}")
-        queue, visited = deque([changed_id]), {changed_id}
+        """Trace a node, claim or source snapshot into potentially affected processes.
+
+        This is a structural *superset* of impact, not proof of a real vendor
+        update. Claim/source links use explicit claim IDs and snapshot IDs.
+        """
+        changed_is_claim = changed_id in self.claims
+        if changed_id not in self.nodes and not changed_is_claim:
+            raise GraphError(f"unknown node or claim {changed_id}")
+        claim_ids = set()
+        if changed_is_claim:
+            claim_ids.add(changed_id)
+        if changed_id in self.nodes and self.nodes[changed_id]["kind"] == "source_snapshot":
+            for cid, claim in self.claims.items():
+                snapshots = set(claim.get("source_snapshot_ids") or [])
+                snapshots.update(
+                    x.get("snapshot_id") for x in (claim.get("evidence_refs") or [])
+                    if isinstance(x, dict)
+                )
+                if changed_id in snapshots:
+                    claim_ids.add(cid)
+        roots = [changed_id] if changed_id in self.nodes else []
+        for e in self.edges:
+            if e["claim_id"] in claim_ids:
+                roots.extend((e["source"], e["target"]))
+        queue, visited = deque(unique_sorted(roots)), set(roots)
         reached = defaultdict(set)
         while queue:
             current = queue.popleft()
@@ -357,6 +461,11 @@ class Graph:
             next_ids = []
             if kind == "commercial_offer":
                 next_ids.extend(e["target"] for e in self.edges_from(current, "INCLUDES"))
+                next_ids.extend(
+                    e["source"] for e in self.edges_to(
+                        current, "REQUIRES", "ELIGIBLE_WITH", "AVAILABLE_FOR_PURCHASE"
+                    )
+                )
             if kind == "price_observation":
                 next_ids.extend(e["target"] for e in self.edges_from(current, "PRICES"))
             if kind == "pricing_metric":
@@ -365,25 +474,29 @@ class Graph:
                 )
             if kind in REQUIREMENT_KINDS or kind == "requirement_group":
                 next_ids.extend(
-                    e["source"] for e in self.edges_to(current, "REQUIRES", "HAS_MEMBER")
+                    e["source"] for e in self.edges_to(
+                        current, "REQUIRES", "HAS_MEMBER", "ELIGIBLE_WITH", "INCLUDES"
+                    )
                 )
+            if kind == "functional_skill":
+                next_ids.extend(e["target"] for e in self.edges_from(current, "DELIVERS"))
+                next_ids.extend(e["source"] for e in self.edges_to(current, "USES_SKILL"))
             if kind == "technical_feature":
                 next_ids.extend(e["source"] for e in self.edges_to(current, "USES_FEATURE"))
             if kind == "implementation_option":
                 next_ids.extend(e["source"] for e in self.edges_to(current, "REALIZED_BY"))
             if kind == "capability":
-                next_ids.extend(
-                    e["source"] for e in self.edges_to(current, "REQUIRES_CAPABILITY")
-                )
+                next_ids.extend(e["source"] for e in self.edges_to(current, "REQUIRES_CAPABILITY"))
             if kind == "process_step":
                 next_ids.extend(e["source"] for e in self.edges_to(current, "HAS_STEP"))
-            for nxt in sorted(set(next_ids)):
+            for nxt in unique_sorted(next_ids):
                 if nxt not in visited:
                     visited.add(nxt)
                     queue.append(nxt)
         return {
             "contract_version": VERSION, "data_class": self.meta.get("data_class", "UNSPECIFIED"),
             "changed_id": changed_id,
+            "affected_claim_ids": sorted(claim_ids),
             "impacted": {kind: sorted(reached[kind]) for kind in sorted(reached)},
         }
 

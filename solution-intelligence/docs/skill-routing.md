@@ -36,7 +36,7 @@ The ChatGPT plugin is not automatically active in Claude Code. Project skills ar
 
 ## A/B quality assurance
 
-Keep the baseline skills/prompt unchanged. Use [holdout cases](../examples/skills-holdout-cases.json) as inputs; run baseline and optimized **on the same pinned sources, model and tools**, then independently grade outcomes. Record:
+Keep the baseline skills/prompt unchanged. Use [holdout cases](../examples/skills-holdout-cases.json) as inputs and [the benchmark runbook](../benchmarks/README.md) for independent grading; run baseline and optimized **on the same pinned sources, model and tools**, then independently grade outcomes. Record:
 - routing precision (did the correct owner run?);
 - source/ref and claim/edge trace completeness;
 - license/edition/consumption semantic correctness;

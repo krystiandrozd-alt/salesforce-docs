@@ -12,6 +12,8 @@ seed_data: data/seed-eu-2026-11-22.yaml
 
 # Salesforce Pricing & Licensing Knowledge Graph
 
+> **Implementation status (2026-11-22):** Four project Claude skills and an initial deterministic Flex Credit CLI are committed. See [USAGE_WITH_CLAUDE.md](USAGE_WITH_CLAUDE.md). The full licensing graph, source crawler, interactive calculator and commercial SKU database are still unimplemented; PR remains draft.
+
 ## 1. Purpose and decision
 
 Build a **provenance-first, temporal licensing knowledge graph** across Salesforce products, editions, entitlements, bundles, purchasing models, and published prices. The graph should answer commercial and architecture questions without confusing commercial SKUs, technical licenses, product capabilities, and consumption metrics.

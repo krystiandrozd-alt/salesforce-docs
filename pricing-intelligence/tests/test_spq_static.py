@@ -14,7 +14,7 @@ def words(s):
     return len(s.split())
 
 class StaticSkillPromptQualityTests(unittest.TestCase):
-    def test_originals_and_candidates_exist_without_overlay(self):
+    def test_deployed_canonical_skills_and_audit_candidates_exist(self):
         for name in NAMES:
             with self.subTest(name=name):
                 self.assertTrue((ROOT / ".claude/skills" / name / "SKILL.md").is_file())
@@ -29,11 +29,27 @@ class StaticSkillPromptQualityTests(unittest.TestCase):
                 self.assertIn("name: " + name, m.group(1))
                 self.assertRegex(m.group(1).lower(), r"do not use|only when|not for|do not trigger")
 
-    def test_candidate_text_is_smaller_proxy_only(self):
-        before = sum(words((ROOT / ".claude/skills" / n / "SKILL.md").read_text(encoding="utf-8")) for n in NAMES)
-        after = sum(words((CANDIDATES / "skills" / n / "SKILL.md").read_text(encoding="utf-8")) for n in NAMES)
-        self.assertLess(after, before, "Token proxy does not prove runtime savings.")
-        self.assertGreater(after, 0)
+    def test_audit_baseline_word_counts_are_pinned_not_live_canonical(self):
+        # From REPORT.md's original frozen baseline (feature branch pre-SPQ).
+        baseline = 2255
+        proposed = sum(words((CANDIDATES / "skills" / n / "SKILL.md").read_text(encoding="utf-8")) for n in NAMES)
+        self.assertLess(proposed, baseline, "Only a word-count proxy, not observed runtime speed.")
+        self.assertGreater(proposed, 0)
+
+    def test_deployed_skills_match_reviewed_candidates_except_safety_bridges(self):
+        for name in NAMES:
+            live = (ROOT / ".claude/skills" / name / "SKILL.md").read_text(encoding="utf-8")
+            proposal = (CANDIDATES / "skills" / name / "SKILL.md").read_text(encoding="utf-8")
+            with self.subTest(name=name):
+                self.assertTrue(live.startswith("---\\n"))
+                self.assertIn("name: " + name, live)
+                if name == "sf-pricing-agentforce-bridge":
+                    self.assertIn("sf config set target-org", live)
+                    self.assertIn("Do not", live)
+                else:
+                    self.assertIn("AGENTS.md", live)
+                    if name not in ("sf-pricing-research", "sf-license-compare"):
+                        self.assertEqual(live, proposal)
 
     def test_shared_contract_keeps_key_security_guards(self):
         txt = (CANDIDATES / "AGENTS.md").read_text(encoding="utf-8").lower()

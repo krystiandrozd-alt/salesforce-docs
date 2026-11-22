@@ -1,0 +1,312 @@
+{
+ "schema": "faceted-registry-vocab/1",
+ "facets": {
+  "trigger": {
+   "definition": "What causes one execution to start.",
+   "pmest": "Ranganathan: Energy",
+   "values": [
+    {
+     "value": "user-command",
+     "definition": "A person starts it explicitly (slash command, argument-hint, user-invocable: true, or a commands/ file)."
+    },
+    {
+     "value": "model-selected",
+     "definition": "The model decides to use it from its description or tool schema (autonomous selection while a person is present)."
+    },
+    {
+     "value": "delegated",
+     "definition": "Another skill, router or agent starts it (user-invocable: false, agent file, or router-assigned advisor role)."
+    },
+    {
+     "value": "time",
+     "definition": "A clock starts it (cron expression or one-shot run_once_at)."
+    },
+    {
+     "value": "event",
+     "definition": "A harness or external event starts it (hook lifecycle event, webhook, PR activity)."
+    }
+   ]
+  },
+  "ui": {
+   "definition": "Surface through which a human sees or steers the result while it runs.",
+   "pmest": "Ranganathan: Personality",
+   "values": [
+    {
+     "value": "chat",
+     "definition": "Result is conversational text in the transcript."
+    },
+    {
+     "value": "command-menu",
+     "definition": "Offered as an entry in the slash/command picker with a typed argument hint."
+    },
+    {
+     "value": "rendered-artifact",
+     "definition": "Produces a rendered page, artifact or HTML preview the person opens."
+    },
+    {
+     "value": "file-deliverable",
+     "definition": "Produces a document file (docx, xlsx, pptx, pdf, plugin package) as the result."
+    },
+    {
+     "value": "embedded-app",
+     "definition": "Draws an interactive viewer/canvas inside the host (MCP app, PDF viewer, diagram canvas)."
+    },
+    {
+     "value": "desktop-control",
+     "definition": "Drives the person's browser or desktop (computer-use, Claude in Chrome)."
+    },
+    {
+     "value": "none",
+     "definition": "Nothing human-facing at runtime (headless, background, tool plumbing)."
+    }
+   ]
+  },
+  "system": {
+   "definition": "External system of record the element reads from or writes to (access level stored per value).",
+   "pmest": "Ranganathan: Matter",
+   "values": [
+    {
+     "value": "crm",
+     "definition": "Customer/pipeline records: accounts, contacts, leads, opportunities."
+    },
+    {
+     "value": "salesforce-platform",
+     "definition": "Salesforce org/platform metadata and runtime: Apex, flows, OmniStudio, Data Cloud, packaging."
+    },
+    {
+     "value": "email",
+     "definition": "Mailboxes and mail marketing inboxes (read, draft, send)."
+    },
+    {
+     "value": "calendar",
+     "definition": "Calendars, scheduling links and availability."
+    },
+    {
+     "value": "chat-messaging",
+     "definition": "Team chat and messaging (Slack, Teams, RingCentral)."
+    },
+    {
+     "value": "docs-storage",
+     "definition": "File storage and office documents (Drive, Box, Sheets, Docs, Adobe assets)."
+    },
+    {
+     "value": "docs-knowledge",
+     "definition": "Wikis and knowledge bases (Notion, Confluence, Guru)."
+    },
+    {
+     "value": "project-tracker",
+     "definition": "Work-item trackers (Jira, Asana, Linear, monday, ClickUp, Trello)."
+    },
+    {
+     "value": "source-control",
+     "definition": "Git hosting and CI (GitHub repos, PRs, Actions)."
+    },
+    {
+     "value": "database",
+     "definition": "Operational databases (Postgres/Neon) and their branches, roles and migrations."
+    },
+    {
+     "value": "data-warehouse",
+     "definition": "Analytical warehouses and BI query engines (Snowflake, BigQuery, Databricks, Hex)."
+    },
+    {
+     "value": "analytics",
+     "definition": "Product, web and SEO analytics (Amplitude, Pendo, Ahrefs, Similarweb, Supermetrics)."
+    },
+    {
+     "value": "design-tool",
+     "definition": "Design and diagram tools (Figma, Canva, Adobe, Excalidraw, Mermaid)."
+    },
+    {
+     "value": "finance-erp",
+     "definition": "Accounting, ERP, payroll and spend (QuickBooks, Xero, Gusto, Expensify)."
+    },
+    {
+     "value": "payments-commerce",
+     "definition": "Payments and storefronts (Stripe, PayPal, Square, Shopify, Wix)."
+    },
+    {
+     "value": "marketing-automation",
+     "definition": "Campaign, sequence and ad execution (Klaviyo, Mailchimp, Outreach, TikTok Ads)."
+    },
+    {
+     "value": "sales-intelligence",
+     "definition": "Prospect and company data vendors (Apollo, ZoomInfo, Clay, Lusha, Crunchbase, Common Room)."
+    },
+    {
+     "value": "call-transcripts",
+     "definition": "Meeting and call recordings/transcripts (Gong, Fireflies, Otter, Zoom, Plaud, Granola)."
+    },
+    {
+     "value": "support-desk",
+     "definition": "Ticketing, ITSM and customer-feedback desks (Intercom, Zendesk, Zoho Desk)."
+    },
+    {
+     "value": "monitoring-incident",
+     "definition": "Observability and incident response (Datadog, PagerDuty)."
+    },
+    {
+     "value": "cms-content",
+     "definition": "Content management and headless CMS (Sanity, AEM)."
+    },
+    {
+     "value": "web-reference",
+     "definition": "Public documentation and web reference (Microsoft Learn, Context7, WebFetch targets, Academy)."
+    },
+    {
+     "value": "workspace-files",
+     "definition": "Files and code in the working directory of the session."
+    },
+    {
+     "value": "claude-runtime",
+     "definition": "Claude's own configuration and runtime: sessions, scheduled tasks, environments, plugins, memory."
+    },
+    {
+     "value": "none",
+     "definition": "Acts on nothing outside the conversation (pure reasoning / drafting)."
+    }
+   ]
+  },
+  "connection": {
+   "definition": "Transport the element uses to reach that system.",
+   "pmest": "Ranganathan: Matter (means)",
+   "values": [
+    {
+     "value": "mcp",
+     "definition": "Reaches the system through an MCP server or connector."
+    },
+    {
+     "value": "cli",
+     "definition": "Reaches the system by shell commands or bundled scripts (sf, npx, python, git, curl)."
+    },
+    {
+     "value": "http",
+     "definition": "Reaches public web endpoints directly (WebFetch / WebSearch / plain HTTP)."
+    },
+    {
+     "value": "native-tool",
+     "definition": "Uses harness built-in file tools (Read, Edit, Write, Glob, Grep) only."
+    },
+    {
+     "value": "none",
+     "definition": "No declared channel; text in, text out."
+    }
+   ]
+  },
+  "harness": {
+   "definition": "Agent runtime / product surface in which the element is loaded.",
+   "pmest": "Ranganathan: Space",
+   "values": [
+    {
+     "value": "claude-code",
+     "definition": "Claude Code (terminal, desktop-code, cloud sessions)."
+    },
+    {
+     "value": "claude-ai",
+     "definition": "Claude web/mobile chat."
+    },
+    {
+     "value": "claude-desktop",
+     "definition": "Claude desktop app chat."
+    },
+    {
+     "value": "cowork",
+     "definition": "Claude Cowork (desktop or remote)."
+    },
+    {
+     "value": "codex",
+     "definition": "OpenAI Codex."
+    },
+    {
+     "value": "cursor",
+     "definition": "Cursor."
+    },
+    {
+     "value": "copilot",
+     "definition": "GitHub Copilot."
+    },
+    {
+     "value": "devin",
+     "definition": "Devin."
+    },
+    {
+     "value": "kimi",
+     "definition": "Kimi."
+    },
+    {
+     "value": "antigravity",
+     "definition": "Antigravity."
+    },
+    {
+     "value": "muse",
+     "definition": "Muse."
+    }
+   ]
+  },
+  "model": {
+   "definition": "Model the element pins; `inherit` means it runs on whatever the host session uses.",
+   "pmest": "Ranganathan: Time",
+   "values": [
+    {
+     "value": "inherit",
+     "definition": "Runs on the host session's model; the manifest pins none."
+    },
+    {
+     "value": "haiku",
+     "definition": "Pinned to a Haiku-class model."
+    },
+    {
+     "value": "sonnet",
+     "definition": "Pinned to a Sonnet-class model."
+    },
+    {
+     "value": "opus",
+     "definition": "Pinned to an Opus-class model."
+    },
+    {
+     "value": "fable",
+     "definition": "Pinned to a Fable-class model."
+    }
+   ]
+  },
+  "type": {
+   "definition": "Packaging kind of the element as declared by its manifest.",
+   "pmest": "Ranganathan: Personality (kind)",
+   "values": [
+    {
+     "value": "skill",
+     "definition": "SKILL.md bundle of instructions (plus references/scripts)."
+    },
+    {
+     "value": "command",
+     "definition": "Markdown slash-command file under commands/."
+    },
+    {
+     "value": "agent",
+     "definition": "Sub-agent definition under agents/ with its own model and prompt."
+    },
+    {
+     "value": "plugin",
+     "definition": "Distribution package declared by plugin.json that ships other elements."
+    },
+    {
+     "value": "mcp-server",
+     "definition": "MCP server or connector exposing tools (from .mcp.json or the session tool registry)."
+    },
+    {
+     "value": "scheduled-task",
+     "definition": "Stored prompt fired by a schedule (routine / trigger)."
+    },
+    {
+     "value": "hook",
+     "definition": "Shell/Python handler bound to a harness lifecycle event."
+    }
+   ]
+  }
+ },
+ "access_levels": {
+  "read": "Only read-like operations are evidenced.",
+  "write": "At least one create/update/delete/send/merge-like operation is evidenced or granted.",
+  "unknown": "Manifest names the system but gives no operation list."
+ }
+}

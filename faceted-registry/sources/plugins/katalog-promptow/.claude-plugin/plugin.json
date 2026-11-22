@@ -1,0 +1,9 @@
+{
+  "name": "katalog-promptow",
+  "version": "0.1.0",
+  "description": "Katalog roboczy KD jako skille: jakość polecenia, krytyka i decyzje, weryfikacja, presales/RFP, architektura, notatki w vaulcie, delegowanie. Każda technika ma warunek użycia i warunek, przy którym nie warto jej stosować.",
+  "author": {
+    "name": "Krystian"
+  },
+  "keywords": ["prompty", "presales", "rfp", "adr", "weryfikacja", "obsidian", "delegowanie"]
+}

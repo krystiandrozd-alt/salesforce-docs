@@ -1,0 +1,2535 @@
+{
+ "n": 496,
+ "facets": {
+  "trigger": {
+   "counts": {
+    "model-selected": 429,
+    "user-command": 77,
+    "delegated": 41,
+    "time": 8,
+    "event": 4
+   },
+   "multi_valued_elements": 63,
+   "mean_values": 1.13,
+   "default_only_elements": 0,
+   "unused_values": [],
+   "overlaps": [],
+   "entropy_bits": 1.1,
+   "top_share": 0.86
+  },
+  "ui": {
+   "counts": {
+    "chat": 183,
+    "none": 129,
+    "rendered-artifact": 88,
+    "command-menu": 77,
+    "file-deliverable": 17,
+    "embedded-app": 12,
+    "desktop-control": 6
+   },
+   "multi_valued_elements": 16,
+   "mean_values": 1.03,
+   "default_only_elements": 311,
+   "unused_values": [],
+   "overlaps": [],
+   "entropy_bits": 2.24,
+   "top_share": 0.37
+  },
+  "system": {
+   "counts": {
+    "salesforce-platform": 88,
+    "email": 87,
+    "crm": 87,
+    "docs-knowledge": 75,
+    "claude-runtime": 72,
+    "docs-storage": 67,
+    "none": 66,
+    "design-tool": 64,
+    "project-tracker": 57,
+    "chat-messaging": 53,
+    "workspace-files": 50,
+    "finance-erp": 44,
+    "payments-commerce": 32,
+    "calendar": 30,
+    "sales-intelligence": 26,
+    "source-control": 25,
+    "call-transcripts": 21,
+    "support-desk": 21,
+    "analytics": 18,
+    "data-warehouse": 17,
+    "web-reference": 15,
+    "marketing-automation": 15,
+    "cms-content": 15,
+    "monitoring-incident": 7,
+    "database": 4
+   },
+   "multi_valued_elements": 234,
+   "mean_values": 2.13,
+   "default_only_elements": 66,
+   "unused_values": [],
+   "overlaps": [
+    {
+     "a": "crm",
+     "b": "email",
+     "jaccard": 0.5,
+     "n": 58
+    }
+   ],
+   "entropy_bits": 4.34,
+   "top_share": 0.18
+  },
+  "connection": {
+   "counts": {
+    "mcp": 334,
+    "none": 100,
+    "cli": 66,
+    "http": 50,
+    "native-tool": 48
+   },
+   "multi_valued_elements": 58,
+   "mean_values": 1.21,
+   "default_only_elements": 100,
+   "unused_values": [],
+   "overlaps": [
+    {
+     "a": "http",
+     "b": "native-tool",
+     "jaccard": 0.85,
+     "n": 45
+    }
+   ],
+   "entropy_bits": 1.84,
+   "top_share": 0.67
+  },
+  "harness": {
+   "counts": {
+    "claude-code": 493,
+    "codex": 65,
+    "cursor": 58,
+    "claude-ai": 52,
+    "cowork": 41,
+    "claude-desktop": 32,
+    "antigravity": 17,
+    "devin": 17,
+    "kimi": 17,
+    "muse": 17,
+    "copilot": 6
+   },
+   "multi_valued_elements": 97,
+   "mean_values": 1.64,
+   "default_only_elements": 96,
+   "unused_values": [],
+   "overlaps": [
+    {
+     "a": "claude-ai",
+     "b": "claude-desktop",
+     "jaccard": 0.62,
+     "n": 32
+    },
+    {
+     "a": "claude-ai",
+     "b": "cowork",
+     "jaccard": 0.55,
+     "n": 33
+    },
+    {
+     "a": "claude-desktop",
+     "b": "cowork",
+     "jaccard": 0.78,
+     "n": 32
+    },
+    {
+     "a": "codex",
+     "b": "cursor",
+     "jaccard": 0.89,
+     "n": 58
+    },
+    {
+     "a": "devin",
+     "b": "kimi",
+     "jaccard": 1.0,
+     "n": 17
+    },
+    {
+     "a": "devin",
+     "b": "antigravity",
+     "jaccard": 1.0,
+     "n": 17
+    },
+    {
+     "a": "devin",
+     "b": "muse",
+     "jaccard": 1.0,
+     "n": 17
+    },
+    {
+     "a": "kimi",
+     "b": "antigravity",
+     "jaccard": 1.0,
+     "n": 17
+    },
+    {
+     "a": "kimi",
+     "b": "muse",
+     "jaccard": 1.0,
+     "n": 17
+    },
+    {
+     "a": "antigravity",
+     "b": "muse",
+     "jaccard": 1.0,
+     "n": 17
+    }
+   ],
+   "entropy_bits": 2.17,
+   "top_share": 0.99
+  },
+  "model": {
+   "counts": {
+    "inherit": 490,
+    "sonnet": 4,
+    "haiku": 1,
+    "opus": 1
+   },
+   "multi_valued_elements": 0,
+   "mean_values": 1.0,
+   "default_only_elements": 490,
+   "unused_values": [
+    "fable"
+   ],
+   "overlaps": [],
+   "entropy_bits": 0.11,
+   "top_share": 0.99
+  },
+  "type": {
+   "counts": {
+    "skill": 340,
+    "mcp-server": 100,
+    "plugin": 25,
+    "command": 15,
+    "scheduled-task": 8,
+    "agent": 5,
+    "hook": 3
+   },
+   "multi_valued_elements": 0,
+   "mean_values": 1.0,
+   "default_only_elements": 0,
+   "unused_values": [],
+   "overlaps": [],
+   "entropy_bits": 1.42,
+   "top_share": 0.69
+  }
+ },
+ "pairs": {
+  "triggerxui": {
+   "stats": {
+    "nmi": 0.355,
+    "cramers_v": 0.401,
+    "H_a": 0.706,
+    "H_b": 1.526
+   },
+   "cells": {
+    "model-selected|chat": 149,
+    "delegated|chat": 34,
+    "model-selected|embedded-app": 8,
+    "model-selected|rendered-artifact": 86,
+    "model-selected|desktop-control": 6,
+    "model-selected|file-deliverable": 17,
+    "model-selected|command-menu": 62,
+    "user-command|command-menu": 77,
+    "user-command|chat": 1,
+    "user-command|rendered-artifact": 5,
+    "delegated|rendered-artifact": 2,
+    "user-command|embedded-app": 4,
+    "delegated|none": 5,
+    "model-selected|none": 113,
+    "event|none": 4,
+    "time|none": 8
+   },
+   "empty_cells": 19,
+   "total_cells": 35,
+   "max_cell": 149
+  },
+  "triggerxsystem": {
+   "stats": {
+    "nmi": 0.25,
+    "cramers_v": 0.414,
+    "H_a": 0.706,
+    "H_b": 2.977
+   },
+   "cells": {
+    "model-selected|salesforce-platform": 64,
+    "model-selected|workspace-files": 47,
+    "delegated|claude-runtime": 1,
+    "delegated|salesforce-platform": 24,
+    "delegated|chat-messaging": 8,
+    "model-selected|none": 54,
+    "model-selected|claude-runtime": 71,
+    "model-selected|docs-knowledge": 65,
+    "model-selected|chat-messaging": 43,
+    "model-selected|email": 83,
+    "model-selected|finance-erp": 42,
+    "model-selected|crm": 84,
+    "model-selected|docs-storage": 59,
+    "model-selected|web-reference": 15,
+    "model-selected|calendar": 29,
+    "model-selected|data-warehouse": 16,
+    "user-command|none": 13,
+    "model-selected|payments-commerce": 32,
+    "model-selected|design-tool": 62,
+    "model-selected|source-control": 17,
+    "model-selected|database": 3,
+    "model-selected|marketing-automation": 15,
+    "model-selected|call-transcripts": 17,
+    "user-command|call-transcripts": 7,
+    "user-command|chat-messaging": 16,
+    "user-command|design-tool": 9,
+    "user-command|docs-knowledge": 25,
+    "user-command|docs-storage": 9,
+    "model-selected|monitoring-incident": 7,
+    "model-selected|sales-intelligence": 24,
+    "model-selected|project-tracker": 50,
+    "model-selected|support-desk": 20,
+    "user-command|crm": 12,
+    "user-command|project-tracker": 22,
+    "user-command|support-desk": 13,
+    "user-command|email": 10,
+    "delegated|docs-storage": 6,
+    "delegated|data-warehouse": 1,
+    "delegated|database": 1,
+    "delegated|none": 5,
+    "model-selected|cms-content": 11,
+    "user-command|cms-content": 6,
+    "user-command|data-warehouse": 3,
+    "user-command|database": 1,
+    "model-selected|analytics": 17,
+    "user-command|analytics": 8,
+    "user-command|source-control": 5,
+    "user-command|monitoring-incident": 3,
+    "user-command|workspace-files": 5,
+    "delegated|docs-knowledge": 7,
+    "delegated|email": 3,
+    "delegated|project-tracker": 6,
+    "delegated|workspace-files": 2,
+    "delegated|crm": 2,
+    "delegated|finance-erp": 2,
+    "delegated|support-desk": 1,
+    "user-command|finance-erp": 5,
+    "user-command|marketing-automation": 1,
+    "user-command|calendar": 4,
+    "user-command|claude-runtime": 1,
+    "user-command|sales-intelligence": 3,
+    "delegated|call-transcripts": 2,
+    "delegated|design-tool": 1,
+    "event|none": 3,
+    "time|source-control": 7,
+    "time|email": 1,
+    "event|source-control": 1
+   },
+   "empty_cells": 58,
+   "total_cells": 125,
+   "max_cell": 84
+  },
+  "triggerxconnection": {
+   "stats": {
+    "nmi": 0.097,
+    "cramers_v": 0.193,
+    "H_a": 0.706,
+    "H_b": 1.124
+   },
+   "cells": {
+    "model-selected|mcp": 288,
+    "delegated|mcp": 36,
+    "model-selected|none": 83,
+    "model-selected|cli": 61,
+    "user-command|none": 11,
+    "model-selected|http": 50,
+    "model-selected|native-tool": 47,
+    "user-command|mcp": 65,
+    "delegated|none": 5,
+    "user-command|cli": 3,
+    "user-command|native-tool": 1,
+    "event|cli": 4,
+    "time|none": 7,
+    "time|mcp": 1
+   },
+   "empty_cells": 11,
+   "total_cells": 25,
+   "max_cell": 288
+  },
+  "triggerxharness": {
+   "stats": {
+    "nmi": 0.084,
+    "cramers_v": 0.208,
+    "H_a": 0.706,
+    "H_b": 0.691
+   },
+   "cells": {
+    "model-selected|claude-ai": 28,
+    "model-selected|claude-code": 426,
+    "model-selected|claude-desktop": 8,
+    "model-selected|codex": 36,
+    "model-selected|cowork": 17,
+    "model-selected|cursor": 29,
+    "delegated|claude-ai": 24,
+    "delegated|claude-code": 41,
+    "delegated|claude-desktop": 24,
+    "delegated|codex": 24,
+    "delegated|cowork": 24,
+    "delegated|cursor": 24,
+    "user-command|claude-code": 77,
+    "model-selected|copilot": 6,
+    "model-selected|antigravity": 16,
+    "model-selected|devin": 16,
+    "model-selected|kimi": 16,
+    "model-selected|muse": 16,
+    "user-command|codex": 5,
+    "user-command|cursor": 5,
+    "event|antigravity": 2,
+    "event|claude-code": 4,
+    "event|codex": 2,
+    "event|cursor": 2,
+    "event|devin": 2,
+    "event|kimi": 2,
+    "event|muse": 2,
+    "time|claude-code": 8
+   },
+   "empty_cells": 27,
+   "total_cells": 55,
+   "max_cell": 426
+  },
+  "triggerxmodel": {
+   "stats": {
+    "nmi": 0.45,
+    "cramers_v": 0.281,
+    "H_a": 0.706,
+    "H_b": 0.076
+   },
+   "cells": {
+    "model-selected|inherit": 429,
+    "delegated|inherit": 36,
+    "user-command|inherit": 77,
+    "delegated|sonnet": 4,
+    "delegated|haiku": 1,
+    "event|inherit": 4,
+    "time|inherit": 7,
+    "time|opus": 1
+   },
+   "empty_cells": 17,
+   "total_cells": 25,
+   "max_cell": 429
+  },
+  "triggerxtype": {
+   "stats": {
+    "nmi": 0.372,
+    "cramers_v": 0.762,
+    "H_a": 0.706,
+    "H_b": 0.982
+   },
+   "cells": {
+    "model-selected|skill": 304,
+    "delegated|skill": 36,
+    "user-command|skill": 56,
+    "user-command|command": 15,
+    "delegated|agent": 5,
+    "model-selected|plugin": 25,
+    "user-command|plugin": 6,
+    "event|plugin": 1,
+    "model-selected|mcp-server": 100,
+    "time|scheduled-task": 8,
+    "event|hook": 3
+   },
+   "empty_cells": 24,
+   "total_cells": 35,
+   "max_cell": 304
+  },
+  "uixsystem": {
+   "stats": {
+    "nmi": 0.262,
+    "cramers_v": 0.381,
+    "H_a": 1.526,
+    "H_b": 2.977
+   },
+   "cells": {
+    "chat|salesforce-platform": 75,
+    "chat|workspace-files": 22,
+    "chat|claude-runtime": 56,
+    "chat|chat-messaging": 11,
+    "embedded-app|none": 5,
+    "rendered-artifact|none": 5,
+    "chat|none": 36,
+    "desktop-control|none": 2,
+    "file-deliverable|none": 2,
+    "chat|docs-knowledge": 12,
+    "desktop-control|chat-messaging": 1,
+    "desktop-control|email": 1,
+    "desktop-control|finance-erp": 2,
+    "desktop-control|claude-runtime": 3,
+    "desktop-control|crm": 2,
+    "desktop-control|docs-storage": 3,
+    "desktop-control|salesforce-platform": 2,
+    "chat|crm": 15,
+    "chat|email": 11,
+    "rendered-artifact|web-reference": 4,
+    "rendered-artifact|chat-messaging": 10,
+    "rendered-artifact|claude-runtime": 9,
+    "rendered-artifact|docs-storage": 40,
+    "file-deliverable|workspace-files": 15,
+    "chat|calendar": 6,
+    "chat|data-warehouse": 6,
+    "command-menu|none": 13,
+    "file-deliverable|payments-commerce": 3,
+    "file-deliverable|salesforce-platform": 1,
+    "chat|design-tool": 19,
+    "chat|source-control": 7,
+    "file-deliverable|docs-storage": 3,
+    "chat|web-reference": 6,
+    "rendered-artifact|calendar": 11,
+    "rendered-artifact|email": 53,
+    "file-deliverable|claude-runtime": 6,
+    "file-deliverable|source-control": 1,
+    "rendered-artifact|source-control": 2,
+    "rendered-artifact|workspace-files": 8,
+    "file-deliverable|design-tool": 3,
+    "file-deliverable|data-warehouse": 1,
+    "rendered-artifact|crm": 51,
+    "rendered-artifact|design-tool": 28,
+    "rendered-artifact|salesforce-platform": 7,
+    "chat|database": 2,
+    "chat|docs-storage": 7,
+    "chat|marketing-automation": 4,
+    "chat|call-transcripts": 3,
+    "command-menu|call-transcripts": 7,
+    "command-menu|chat-messaging": 16,
+    "command-menu|design-tool": 9,
+    "command-menu|docs-knowledge": 25,
+    "command-menu|docs-storage": 9,
+    "chat|monitoring-incident": 1,
+    "chat|payments-commerce": 8,
+    "chat|sales-intelligence": 8,
+    "file-deliverable|chat-messaging": 1,
+    "file-deliverable|project-tracker": 1,
+    "chat|project-tracker": 9,
+    "command-menu|crm": 12,
+    "command-menu|project-tracker": 22,
+    "command-menu|support-desk": 13,
+    "command-menu|email": 10,
+    "command-menu|cms-content": 6,
+    "command-menu|data-warehouse": 3,
+    "command-menu|database": 1,
+    "command-menu|analytics": 8,
+    "command-menu|source-control": 5,
+    "command-menu|monitoring-incident": 3,
+    "command-menu|workspace-files": 5,
+    "chat|finance-erp": 7,
+    "chat|support-desk": 1,
+    "command-menu|finance-erp": 5,
+    "command-menu|marketing-automation": 1,
+    "command-menu|calendar": 4,
+    "embedded-app|docs-storage": 2,
+    "rendered-artifact|docs-knowledge": 25,
+    "rendered-artifact|project-tracker": 5,
+    "command-menu|claude-runtime": 1,
+    "rendered-artifact|call-transcripts": 3,
+    "rendered-artifact|sales-intelligence": 6,
+    "rendered-artifact|cms-content": 2,
+    "chat|cms-content": 5,
+    "rendered-artifact|finance-erp": 20,
+    "rendered-artifact|marketing-automation": 6,
+    "rendered-artifact|payments-commerce": 17,
+    "rendered-artifact|support-desk": 4,
+    "file-deliverable|docs-knowledge": 2,
+    "file-deliverable|finance-erp": 3,
+    "desktop-control|workspace-files": 1,
+    "command-menu|sales-intelligence": 3,
+    "none|none": 10,
+    "none|call-transcripts": 10,
+    "none|docs-knowledge": 14,
+    "none|chat-messaging": 15,
+    "none|design-tool": 5,
+    "none|docs-storage": 9,
+    "none|project-tracker": 20,
+    "none|crm": 10,
+    "none|salesforce-platform": 3,
+    "none|email": 15,
+    "none|analytics": 10,
+    "none|data-warehouse": 7,
+    "none|calendar": 9,
+    "none|monitoring-incident": 3,
+    "none|source-control": 11,
+    "none|web-reference": 5,
+    "none|sales-intelligence": 9,
+    "none|finance-erp": 10,
+    "none|payments-commerce": 6,
+    "none|support-desk": 3,
+    "none|workspace-files": 1,
+    "none|marketing-automation": 4,
+    "none|cms-content": 2,
+    "embedded-app|workspace-files": 3,
+    "embedded-app|design-tool": 3,
+    "none|database": 1,
+    "none|claude-runtime": 1
+   },
+   "empty_cells": 57,
+   "total_cells": 175,
+   "max_cell": 75
+  },
+  "uixconnection": {
+   "stats": {
+    "nmi": 0.164,
+    "cramers_v": 0.296,
+    "H_a": 1.526,
+    "H_b": 1.124
+   },
+   "cells": {
+    "chat|mcp": 75,
+    "embedded-app|none": 5,
+    "rendered-artifact|none": 6,
+    "chat|none": 65,
+    "desktop-control|mcp": 4,
+    "file-deliverable|none": 5,
+    "desktop-control|cli": 2,
+    "chat|cli": 46,
+    "rendered-artifact|cli": 7,
+    "rendered-artifact|mcp": 75,
+    "file-deliverable|cli": 6,
+    "file-deliverable|mcp": 5,
+    "command-menu|none": 11,
+    "chat|http": 18,
+    "file-deliverable|http": 4,
+    "chat|native-tool": 17,
+    "rendered-artifact|http": 30,
+    "command-menu|mcp": 65,
+    "command-menu|cli": 3,
+    "embedded-app|mcp": 7,
+    "rendered-artifact|native-tool": 29,
+    "file-deliverable|native-tool": 3,
+    "desktop-control|http": 1,
+    "desktop-control|native-tool": 1,
+    "command-menu|native-tool": 1,
+    "none|none": 14,
+    "none|mcp": 111,
+    "none|cli": 4
+   },
+   "empty_cells": 7,
+   "total_cells": 35,
+   "max_cell": 111
+  },
+  "uixharness": {
+   "stats": {
+    "nmi": 0.124,
+    "cramers_v": 0.169,
+    "H_a": 1.526,
+    "H_b": 0.691
+   },
+   "cells": {
+    "chat|claude-ai": 27,
+    "chat|claude-code": 183,
+    "chat|claude-desktop": 27,
+    "chat|codex": 54,
+    "chat|cowork": 32,
+    "chat|cursor": 50,
+    "embedded-app|claude-code": 12,
+    "rendered-artifact|claude-code": 87,
+    "desktop-control|claude-ai": 3,
+    "desktop-control|claude-desktop": 2,
+    "desktop-control|cowork": 3,
+    "file-deliverable|claude-code": 16,
+    "desktop-control|claude-code": 4,
+    "command-menu|claude-code": 77,
+    "rendered-artifact|claude-ai": 3,
+    "rendered-artifact|claude-desktop": 3,
+    "rendered-artifact|cowork": 5,
+    "file-deliverable|cowork": 2,
+    "chat|copilot": 4,
+    "chat|antigravity": 15,
+    "chat|devin": 15,
+    "chat|kimi": 15,
+    "chat|muse": 15,
+    "command-menu|codex": 5,
+    "command-menu|cursor": 5,
+    "none|claude-code": 129,
+    "none|codex": 6,
+    "none|copilot": 2,
+    "none|antigravity": 2,
+    "none|cursor": 3,
+    "none|devin": 2,
+    "none|kimi": 2,
+    "none|muse": 2,
+    "embedded-app|claude-ai": 4,
+    "none|claude-ai": 15
+   },
+   "empty_cells": 42,
+   "total_cells": 77,
+   "max_cell": 183
+  },
+  "uixmodel": {
+   "stats": {
+    "nmi": 0.217,
+    "cramers_v": 0.108,
+    "H_a": 1.526,
+    "H_b": 0.076
+   },
+   "cells": {
+    "chat|inherit": 183,
+    "embedded-app|inherit": 12,
+    "rendered-artifact|inherit": 88,
+    "desktop-control|inherit": 6,
+    "file-deliverable|inherit": 17,
+    "command-menu|inherit": 77,
+    "none|sonnet": 4,
+    "none|haiku": 1,
+    "none|inherit": 123,
+    "none|opus": 1
+   },
+   "empty_cells": 25,
+   "total_cells": 35,
+   "max_cell": 183
+  },
+  "uixtype": {
+   "stats": {
+    "nmi": 0.635,
+    "cramers_v": 0.432,
+    "H_a": 1.526,
+    "H_b": 0.982
+   },
+   "cells": {
+    "chat|skill": 183,
+    "embedded-app|skill": 2,
+    "rendered-artifact|skill": 88,
+    "desktop-control|skill": 6,
+    "file-deliverable|skill": 17,
+    "command-menu|skill": 56,
+    "command-menu|command": 15,
+    "embedded-app|command": 4,
+    "none|agent": 5,
+    "none|plugin": 19,
+    "command-menu|plugin": 6,
+    "none|mcp-server": 94,
+    "embedded-app|mcp-server": 6,
+    "none|scheduled-task": 8,
+    "none|hook": 3
+   },
+   "empty_cells": 34,
+   "total_cells": 49,
+   "max_cell": 183
+  },
+  "systemxconnection": {
+   "stats": {
+    "nmi": 0.314,
+    "cramers_v": 0.419,
+    "H_a": 2.977,
+    "H_b": 1.124
+   },
+   "cells": {
+    "salesforce-platform|mcp": 35,
+    "workspace-files|mcp": 25,
+    "claude-runtime|mcp": 13,
+    "chat-messaging|mcp": 50,
+    "none|none": 51,
+    "claude-runtime|none": 27,
+    "none|mcp": 9,
+    "docs-knowledge|none": 2,
+    "workspace-files|none": 8,
+    "email|mcp": 84,
+    "finance-erp|mcp": 44,
+    "claude-runtime|cli": 31,
+    "crm|cli": 6,
+    "docs-storage|cli": 4,
+    "salesforce-platform|cli": 34,
+    "crm|none": 2,
+    "email|none": 2,
+    "web-reference|cli": 6,
+    "docs-storage|mcp": 62,
+    "workspace-files|cli": 14,
+    "calendar|mcp": 29,
+    "salesforce-platform|none": 20,
+    "data-warehouse|none": 2,
+    "payments-commerce|none": 1,
+    "design-tool|none": 12,
+    "source-control|none": 10,
+    "docs-storage|none": 1,
+    "web-reference|http": 4,
+    "web-reference|mcp": 10,
+    "calendar|cli": 1,
+    "chat-messaging|cli": 1,
+    "email|cli": 1,
+    "source-control|cli": 4,
+    "workspace-files|http": 8,
+    "design-tool|http": 31,
+    "web-reference|none": 2,
+    "data-warehouse|cli": 2,
+    "chat-messaging|none": 2,
+    "claude-runtime|native-tool": 6,
+    "salesforce-platform|native-tool": 3,
+    "claude-runtime|http": 6,
+    "salesforce-platform|http": 3,
+    "database|cli": 1,
+    "design-tool|cli": 2,
+    "marketing-automation|none": 1,
+    "none|cli": 7,
+    "call-transcripts|mcp": 21,
+    "design-tool|mcp": 50,
+    "docs-knowledge|mcp": 73,
+    "workspace-files|native-tool": 7,
+    "crm|mcp": 79,
+    "data-warehouse|mcp": 13,
+    "monitoring-incident|mcp": 7,
+    "payments-commerce|mcp": 31,
+    "sales-intelligence|mcp": 26,
+    "source-control|mcp": 11,
+    "project-tracker|mcp": 57,
+    "support-desk|mcp": 21,
+    "database|mcp": 3,
+    "cms-content|mcp": 15,
+    "analytics|mcp": 18,
+    "marketing-automation|mcp": 14,
+    "docs-knowledge|cli": 1,
+    "support-desk|cli": 1,
+    "cms-content|cli": 3,
+    "crm|http": 19,
+    "crm|native-tool": 19,
+    "design-tool|native-tool": 30,
+    "finance-erp|http": 26,
+    "finance-erp|native-tool": 26,
+    "marketing-automation|http": 9,
+    "marketing-automation|native-tool": 9,
+    "payments-commerce|http": 22,
+    "payments-commerce|native-tool": 22,
+    "docs-knowledge|http": 28,
+    "docs-knowledge|native-tool": 28,
+    "email|http": 21,
+    "email|native-tool": 21,
+    "web-reference|native-tool": 2,
+    "none|http": 2,
+    "none|native-tool": 2,
+    "calendar|http": 7,
+    "calendar|native-tool": 7,
+    "chat-messaging|http": 6,
+    "chat-messaging|native-tool": 6,
+    "support-desk|http": 4,
+    "support-desk|native-tool": 4,
+    "sales-intelligence|http": 7,
+    "sales-intelligence|native-tool": 7,
+    "docs-storage|http": 4,
+    "docs-storage|native-tool": 4,
+    "project-tracker|http": 7,
+    "project-tracker|native-tool": 7,
+    "cms-content|http": 1,
+    "cms-content|native-tool": 1
+   },
+   "empty_cells": 30,
+   "total_cells": 125,
+   "max_cell": 84
+  },
+  "systemxharness": {
+   "stats": {
+    "nmi": 0.199,
+    "cramers_v": 0.199,
+    "H_a": 2.977,
+    "H_b": 0.691
+   },
+   "cells": {
+    "salesforce-platform|claude-ai": 28,
+    "salesforce-platform|claude-code": 88,
+    "salesforce-platform|claude-desktop": 28,
+    "salesforce-platform|codex": 28,
+    "salesforce-platform|cowork": 28,
+    "salesforce-platform|cursor": 27,
+    "workspace-files|claude-ai": 5,
+    "workspace-files|claude-code": 49,
+    "workspace-files|claude-desktop": 4,
+    "workspace-files|codex": 8,
+    "workspace-files|cowork": 7,
+    "workspace-files|cursor": 8,
+    "claude-runtime|claude-ai": 2,
+    "claude-runtime|claude-code": 71,
+    "claude-runtime|claude-desktop": 1,
+    "claude-runtime|codex": 11,
+    "claude-runtime|cowork": 5,
+    "claude-runtime|cursor": 10,
+    "chat-messaging|claude-ai": 5,
+    "chat-messaging|claude-code": 52,
+    "chat-messaging|claude-desktop": 4,
+    "chat-messaging|codex": 3,
+    "chat-messaging|cowork": 6,
+    "chat-messaging|cursor": 3,
+    "none|claude-code": 65,
+    "none|claude-ai": 2,
+    "none|claude-desktop": 1,
+    "none|cowork": 3,
+    "docs-knowledge|claude-code": 75,
+    "email|claude-ai": 2,
+    "email|claude-desktop": 1,
+    "email|cowork": 3,
+    "finance-erp|claude-ai": 1,
+    "finance-erp|claude-desktop": 1,
+    "finance-erp|cowork": 1,
+    "crm|claude-code": 87,
+    "docs-storage|claude-code": 67,
+    "email|claude-code": 86,
+    "web-reference|claude-code": 15,
+    "calendar|claude-code": 30,
+    "data-warehouse|claude-code": 17,
+    "payments-commerce|claude-code": 32,
+    "design-tool|claude-code": 64,
+    "source-control|claude-code": 25,
+    "database|claude-code": 4,
+    "marketing-automation|claude-code": 15,
+    "call-transcripts|claude-code": 21,
+    "call-transcripts|cowork": 1,
+    "docs-knowledge|cowork": 2,
+    "monitoring-incident|claude-code": 7,
+    "sales-intelligence|claude-code": 26,
+    "project-tracker|claude-code": 57,
+    "project-tracker|cowork": 4,
+    "support-desk|claude-code": 21,
+    "cms-content|claude-code": 15,
+    "analytics|claude-code": 18,
+    "finance-erp|claude-code": 43,
+    "web-reference|codex": 4,
+    "web-reference|copilot": 4,
+    "none|codex": 9,
+    "none|copilot": 2,
+    "claude-runtime|copilot": 1,
+    "none|cursor": 7,
+    "cms-content|codex": 11,
+    "cms-content|cursor": 11,
+    "payments-commerce|codex": 2,
+    "payments-commerce|cursor": 2,
+    "design-tool|codex": 1,
+    "design-tool|cursor": 1,
+    "source-control|codex": 3,
+    "source-control|cursor": 3,
+    "crm|cowork": 2,
+    "design-tool|cowork": 1,
+    "marketing-automation|cowork": 1,
+    "payments-commerce|cowork": 1,
+    "claude-runtime|antigravity": 9,
+    "claude-runtime|devin": 9,
+    "claude-runtime|kimi": 9,
+    "claude-runtime|muse": 9,
+    "source-control|antigravity": 2,
+    "source-control|devin": 2,
+    "source-control|kimi": 2,
+    "source-control|muse": 2,
+    "workspace-files|antigravity": 6,
+    "workspace-files|devin": 6,
+    "workspace-files|kimi": 6,
+    "workspace-files|muse": 6,
+    "none|antigravity": 5,
+    "none|devin": 5,
+    "none|kimi": 5,
+    "none|muse": 5,
+    "crm|codex": 1,
+    "design-tool|claude-ai": 3,
+    "docs-storage|claude-ai": 3,
+    "cms-content|claude-ai": 1,
+    "web-reference|claude-ai": 3,
+    "docs-knowledge|claude-ai": 1,
+    "calendar|claude-ai": 1,
+    "database|claude-ai": 1,
+    "call-transcripts|claude-ai": 1,
+    "crm|claude-ai": 1,
+    "source-control|claude-ai": 1
+   },
+   "empty_cells": 173,
+   "total_cells": 275,
+   "max_cell": 88
+  },
+  "systemxmodel": {
+   "stats": {
+    "nmi": 0.269,
+    "cramers_v": 0.161,
+    "H_a": 2.977,
+    "H_b": 0.076
+   },
+   "cells": {
+    "salesforce-platform|inherit": 88,
+    "workspace-files|inherit": 50,
+    "claude-runtime|inherit": 72,
+    "chat-messaging|inherit": 52,
+    "none|inherit": 64,
+    "docs-knowledge|inherit": 72,
+    "email|inherit": 86,
+    "finance-erp|inherit": 44,
+    "crm|inherit": 87,
+    "docs-storage|inherit": 65,
+    "web-reference|inherit": 15,
+    "calendar|inherit": 30,
+    "data-warehouse|inherit": 17,
+    "payments-commerce|inherit": 32,
+    "design-tool|inherit": 63,
+    "source-control|inherit": 25,
+    "database|inherit": 4,
+    "marketing-automation|inherit": 15,
+    "call-transcripts|inherit": 19,
+    "monitoring-incident|inherit": 7,
+    "sales-intelligence|inherit": 26,
+    "project-tracker|inherit": 56,
+    "support-desk|inherit": 21,
+    "cms-content|inherit": 15,
+    "analytics|inherit": 18,
+    "none|sonnet": 1,
+    "call-transcripts|sonnet": 2,
+    "docs-knowledge|sonnet": 3,
+    "chat-messaging|sonnet": 1,
+    "design-tool|sonnet": 1,
+    "docs-storage|sonnet": 2,
+    "project-tracker|sonnet": 1,
+    "none|haiku": 1,
+    "email|opus": 1
+   },
+   "empty_cells": 91,
+   "total_cells": 125,
+   "max_cell": 88
+  },
+  "systemxtype": {
+   "stats": {
+    "nmi": 0.255,
+    "cramers_v": 0.369,
+    "H_a": 2.977,
+    "H_b": 0.982
+   },
+   "cells": {
+    "salesforce-platform|skill": 85,
+    "workspace-files|skill": 44,
+    "claude-runtime|skill": 71,
+    "chat-messaging|skill": 35,
+    "none|skill": 50,
+    "docs-knowledge|skill": 57,
+    "email|skill": 71,
+    "finance-erp|skill": 34,
+    "crm|skill": 76,
+    "docs-storage|skill": 55,
+    "web-reference|skill": 10,
+    "calendar|skill": 19,
+    "data-warehouse|skill": 10,
+    "payments-commerce|skill": 26,
+    "design-tool|skill": 53,
+    "source-control|skill": 14,
+    "database|skill": 3,
+    "marketing-automation|skill": 11,
+    "call-transcripts|skill": 8,
+    "monitoring-incident|skill": 4,
+    "sales-intelligence|skill": 14,
+    "project-tracker|skill": 34,
+    "support-desk|skill": 17,
+    "cms-content|skill": 8,
+    "analytics|skill": 6,
+    "call-transcripts|command": 2,
+    "chat-messaging|command": 2,
+    "design-tool|command": 1,
+    "docs-knowledge|command": 3,
+    "docs-storage|command": 2,
+    "none|command": 5,
+    "workspace-files|command": 1,
+    "crm|command": 1,
+    "sales-intelligence|command": 2,
+    "calendar|command": 1,
+    "analytics|command": 1,
+    "project-tracker|command": 1,
+    "cms-content|command": 4,
+    "none|agent": 2,
+    "call-transcripts|agent": 2,
+    "docs-knowledge|agent": 3,
+    "chat-messaging|agent": 1,
+    "design-tool|agent": 1,
+    "docs-storage|agent": 2,
+    "project-tracker|agent": 1,
+    "crm|plugin": 5,
+    "salesforce-platform|plugin": 2,
+    "call-transcripts|plugin": 3,
+    "design-tool|plugin": 4,
+    "project-tracker|plugin": 11,
+    "none|plugin": 7,
+    "sales-intelligence|plugin": 3,
+    "chat-messaging|plugin": 11,
+    "docs-knowledge|plugin": 9,
+    "email|plugin": 11,
+    "analytics|plugin": 4,
+    "data-warehouse|plugin": 2,
+    "calendar|plugin": 6,
+    "monitoring-incident|plugin": 1,
+    "source-control|plugin": 1,
+    "web-reference|plugin": 1,
+    "workspace-files|plugin": 1,
+    "support-desk|plugin": 2,
+    "docs-storage|plugin": 2,
+    "cms-content|plugin": 1,
+    "finance-erp|plugin": 1,
+    "payments-commerce|plugin": 1,
+    "analytics|mcp-server": 7,
+    "finance-erp|mcp-server": 9,
+    "sales-intelligence|mcp-server": 7,
+    "project-tracker|mcp-server": 10,
+    "data-warehouse|mcp-server": 5,
+    "docs-storage|mcp-server": 6,
+    "calendar|mcp-server": 4,
+    "design-tool|mcp-server": 5,
+    "crm|mcp-server": 5,
+    "monitoring-incident|mcp-server": 2,
+    "workspace-files|mcp-server": 4,
+    "call-transcripts|mcp-server": 6,
+    "source-control|mcp-server": 2,
+    "email|mcp-server": 4,
+    "docs-knowledge|mcp-server": 3,
+    "support-desk|mcp-server": 2,
+    "marketing-automation|mcp-server": 4,
+    "cms-content|mcp-server": 2,
+    "chat-messaging|mcp-server": 4,
+    "web-reference|mcp-server": 4,
+    "payments-commerce|mcp-server": 5,
+    "salesforce-platform|mcp-server": 1,
+    "database|mcp-server": 1,
+    "claude-runtime|mcp-server": 1,
+    "source-control|scheduled-task": 7,
+    "email|scheduled-task": 1,
+    "none|hook": 2,
+    "source-control|hook": 1
+   },
+   "empty_cells": 80,
+   "total_cells": 175,
+   "max_cell": 85
+  },
+  "connectionxharness": {
+   "stats": {
+    "nmi": 0.081,
+    "cramers_v": 0.152,
+    "H_a": 1.124,
+    "H_b": 0.691
+   },
+   "cells": {
+    "mcp|claude-ai": 52,
+    "mcp|claude-code": 332,
+    "mcp|claude-desktop": 32,
+    "mcp|codex": 46,
+    "mcp|cowork": 39,
+    "mcp|cursor": 39,
+    "none|claude-code": 100,
+    "cli|claude-code": 65,
+    "http|claude-code": 50,
+    "native-tool|claude-code": 48,
+    "cli|cowork": 1,
+    "none|cowork": 1,
+    "cli|codex": 16,
+    "cli|copilot": 4,
+    "mcp|copilot": 6,
+    "none|codex": 10,
+    "none|cursor": 10,
+    "cli|cursor": 12,
+    "http|cowork": 2,
+    "native-tool|cowork": 2,
+    "none|antigravity": 8,
+    "none|devin": 8,
+    "none|kimi": 8,
+    "none|muse": 8,
+    "cli|antigravity": 9,
+    "cli|devin": 9,
+    "cli|kimi": 9,
+    "cli|muse": 9
+   },
+   "empty_cells": 27,
+   "total_cells": 55,
+   "max_cell": 332
+  },
+  "connectionxmodel": {
+   "stats": {
+    "nmi": 0.079,
+    "cramers_v": 0.061,
+    "H_a": 1.124,
+    "H_b": 0.076
+   },
+   "cells": {
+    "mcp|inherit": 330,
+    "none|inherit": 98,
+    "cli|inherit": 66,
+    "http|inherit": 50,
+    "native-tool|inherit": 48,
+    "none|sonnet": 1,
+    "mcp|sonnet": 3,
+    "none|haiku": 1,
+    "mcp|opus": 1
+   },
+   "empty_cells": 16,
+   "total_cells": 25,
+   "max_cell": 330
+  },
+  "connectionxtype": {
+   "stats": {
+    "nmi": 0.163,
+    "cramers_v": 0.262,
+    "H_a": 1.124,
+    "H_b": 0.982
+   },
+   "cells": {
+    "mcp|skill": 203,
+    "none|skill": 80,
+    "cli|skill": 60,
+    "http|skill": 50,
+    "native-tool|skill": 47,
+    "mcp|command": 9,
+    "none|command": 5,
+    "native-tool|command": 1,
+    "cli|command": 2,
+    "none|agent": 2,
+    "mcp|agent": 3,
+    "mcp|plugin": 18,
+    "none|plugin": 6,
+    "cli|plugin": 1,
+    "mcp|mcp-server": 100,
+    "none|scheduled-task": 7,
+    "mcp|scheduled-task": 1,
+    "cli|hook": 3
+   },
+   "empty_cells": 17,
+   "total_cells": 35,
+   "max_cell": 203
+  },
+  "harnessxmodel": {
+   "stats": {
+    "nmi": 0.024,
+    "cramers_v": 0.026,
+    "H_a": 0.691,
+    "H_b": 0.076
+   },
+   "cells": {
+    "claude-ai|inherit": 52,
+    "claude-code|inherit": 487,
+    "claude-desktop|inherit": 32,
+    "codex|inherit": 65,
+    "cowork|inherit": 41,
+    "cursor|inherit": 58,
+    "copilot|inherit": 6,
+    "antigravity|inherit": 17,
+    "devin|inherit": 17,
+    "kimi|inherit": 17,
+    "muse|inherit": 17,
+    "claude-code|sonnet": 4,
+    "claude-code|haiku": 1,
+    "claude-code|opus": 1
+   },
+   "empty_cells": 41,
+   "total_cells": 55,
+   "max_cell": 487
+  },
+  "harnessxtype": {
+   "stats": {
+    "nmi": 0.066,
+    "cramers_v": 0.12,
+    "H_a": 0.691,
+    "H_b": 0.982
+   },
+   "cells": {
+    "claude-ai|skill": 33,
+    "claude-code|skill": 337,
+    "claude-desktop|skill": 32,
+    "codex|skill": 54,
+    "cowork|skill": 41,
+    "cursor|skill": 50,
+    "copilot|skill": 4,
+    "antigravity|skill": 15,
+    "devin|skill": 15,
+    "kimi|skill": 15,
+    "muse|skill": 15,
+    "claude-code|command": 15,
+    "codex|command": 4,
+    "cursor|command": 4,
+    "claude-code|agent": 5,
+    "claude-code|plugin": 25,
+    "codex|plugin": 4,
+    "copilot|plugin": 1,
+    "cursor|plugin": 2,
+    "antigravity|plugin": 1,
+    "devin|plugin": 1,
+    "kimi|plugin": 1,
+    "muse|plugin": 1,
+    "claude-code|mcp-server": 100,
+    "codex|mcp-server": 2,
+    "cursor|mcp-server": 1,
+    "copilot|mcp-server": 1,
+    "claude-ai|mcp-server": 19,
+    "claude-code|scheduled-task": 8,
+    "antigravity|hook": 1,
+    "claude-code|hook": 3,
+    "codex|hook": 1,
+    "cursor|hook": 1,
+    "devin|hook": 1,
+    "kimi|hook": 1,
+    "muse|hook": 1
+   },
+   "empty_cells": 41,
+   "total_cells": 77,
+   "max_cell": 337
+  },
+  "modelxtype": {
+   "stats": {
+    "nmi": 0.854,
+    "cramers_v": 0.612,
+    "H_a": 0.076,
+    "H_b": 0.982
+   },
+   "cells": {
+    "inherit|skill": 340,
+    "inherit|command": 15,
+    "sonnet|agent": 4,
+    "haiku|agent": 1,
+    "inherit|plugin": 25,
+    "inherit|mcp-server": 100,
+    "inherit|scheduled-task": 7,
+    "opus|scheduled-task": 1,
+    "inherit|hook": 3
+   },
+   "empty_cells": 26,
+   "total_cells": 35,
+   "max_cell": 340
+  }
+ },
+ "associations": [
+  {
+   "a": "trigger:user-command",
+   "b": "ui:command-menu",
+   "phi": 1.0,
+   "n11": 77,
+   "p_b_given_a": 1.0,
+   "p_a_given_b": 1.0
+  },
+  {
+   "a": "trigger:time",
+   "b": "type:scheduled-task",
+   "phi": 1.0,
+   "n11": 8,
+   "p_b_given_a": 1.0,
+   "p_a_given_b": 1.0
+  },
+  {
+   "a": "ui:none",
+   "b": "type:mcp-server",
+   "phi": 0.78,
+   "n11": 94,
+   "p_b_given_a": 0.73,
+   "p_a_given_b": 0.94
+  },
+  {
+   "a": "trigger:delegated",
+   "b": "harness:claude-desktop",
+   "phi": 0.64,
+   "n11": 24,
+   "p_b_given_a": 0.59,
+   "p_a_given_b": 0.75
+  },
+  {
+   "a": "system:none",
+   "b": "connection:none",
+   "phi": 0.56,
+   "n11": 51,
+   "p_b_given_a": 0.77,
+   "p_a_given_b": 0.51
+  },
+  {
+   "a": "trigger:delegated",
+   "b": "harness:cowork",
+   "phi": 0.55,
+   "n11": 24,
+   "p_b_given_a": 0.59,
+   "p_a_given_b": 0.59
+  },
+  {
+   "a": "ui:rendered-artifact",
+   "b": "system:email",
+   "phi": 0.52,
+   "n11": 53,
+   "p_b_given_a": 0.6,
+   "p_a_given_b": 0.61
+  },
+  {
+   "a": "ui:chat",
+   "b": "type:skill",
+   "phi": 0.52,
+   "n11": 183,
+   "p_b_given_a": 1.0,
+   "p_a_given_b": 0.54
+  },
+  {
+   "a": "system:finance-erp",
+   "b": "connection:native-tool",
+   "phi": 0.52,
+   "n11": 26,
+   "p_b_given_a": 0.59,
+   "p_a_given_b": 0.54
+  },
+  {
+   "a": "system:payments-commerce",
+   "b": "connection:native-tool",
+   "phi": 0.52,
+   "n11": 22,
+   "p_b_given_a": 0.69,
+   "p_a_given_b": 0.46
+  },
+  {
+   "a": "system:finance-erp",
+   "b": "connection:http",
+   "phi": 0.51,
+   "n11": 26,
+   "p_b_given_a": 0.59,
+   "p_a_given_b": 0.52
+  },
+  {
+   "a": "system:payments-commerce",
+   "b": "connection:http",
+   "phi": 0.51,
+   "n11": 22,
+   "p_b_given_a": 0.69,
+   "p_a_given_b": 0.44
+  }
+ ],
+ "hypotheses": {
+  "type:plugin -> connection:mcp": {
+   "P(b|a)": 0.72,
+   "P(a|b)": 0.054,
+   "n_a": 25,
+   "n_b": 334,
+   "n_both": 18,
+   "base_rate_b": 0.673
+  },
+  "type:mcp-server -> connection:mcp": {
+   "P(b|a)": 1.0,
+   "P(a|b)": 0.299,
+   "n_a": 100,
+   "n_b": 334,
+   "n_both": 100,
+   "base_rate_b": 0.673
+  },
+  "type:scheduled-task -> trigger:time": {
+   "P(b|a)": 1.0,
+   "P(a|b)": 1.0,
+   "n_a": 8,
+   "n_b": 8,
+   "n_both": 8,
+   "base_rate_b": 0.016
+  },
+  "trigger:time -> type:scheduled-task": {
+   "P(b|a)": 1.0,
+   "P(a|b)": 1.0,
+   "n_a": 8,
+   "n_b": 8,
+   "n_both": 8,
+   "base_rate_b": 0.016
+  },
+  "trigger:event -> type:hook": {
+   "P(b|a)": 0.75,
+   "P(a|b)": 1.0,
+   "n_a": 4,
+   "n_b": 3,
+   "n_both": 3,
+   "base_rate_b": 0.006
+  },
+  "trigger:user-command -> ui:command-menu": {
+   "P(b|a)": 1.0,
+   "P(a|b)": 1.0,
+   "n_a": 77,
+   "n_b": 77,
+   "n_both": 77,
+   "base_rate_b": 0.155
+  },
+  "type:command -> trigger:user-command": {
+   "P(b|a)": 1.0,
+   "P(a|b)": 0.195,
+   "n_a": 15,
+   "n_b": 77,
+   "n_both": 15,
+   "base_rate_b": 0.155
+  },
+  "type:agent -> trigger:delegated": {
+   "P(b|a)": 1.0,
+   "P(a|b)": 0.122,
+   "n_a": 5,
+   "n_b": 41,
+   "n_both": 5,
+   "base_rate_b": 0.083
+  },
+  "type:mcp-server -> trigger:model-selected": {
+   "P(b|a)": 1.0,
+   "P(a|b)": 0.233,
+   "n_a": 100,
+   "n_b": 429,
+   "n_both": 100,
+   "base_rate_b": 0.865
+  },
+  "type:mcp-server -> ui:none": {
+   "P(b|a)": 0.94,
+   "P(a|b)": 0.729,
+   "n_a": 100,
+   "n_b": 129,
+   "n_both": 94,
+   "base_rate_b": 0.26
+  },
+  "connection:mcp -> type:mcp-server": {
+   "P(b|a)": 0.299,
+   "P(a|b)": 1.0,
+   "n_a": 334,
+   "n_b": 100,
+   "n_both": 100,
+   "base_rate_b": 0.202
+  }
+ },
+ "duplicate_candidates": [
+  {
+   "a": "skill:org-skill/frontend-design",
+   "b": "skill:frontend-design/frontend-design",
+   "name_jaccard": 1.0,
+   "facets_identical": 7,
+   "kind": "same-name"
+  },
+  {
+   "a": "skill:marketing/competitive-brief",
+   "b": "skill:product-management/competitive-brief",
+   "name_jaccard": 1.0,
+   "facets_identical": 6,
+   "kind": "same-name"
+  },
+  {
+   "a": "skill:org-skill/frontend-design",
+   "b": "skill:design-superpowers/design",
+   "name_jaccard": 0.5,
+   "facets_identical": 6,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:design-superpowers/design",
+   "b": "skill:engineering/system-design",
+   "name_jaccard": 0.5,
+   "facets_identical": 6,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:design-superpowers/design",
+   "b": "skill:frontend-design/frontend-design",
+   "name_jaccard": 0.5,
+   "facets_identical": 6,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:product-management/roadmap-update",
+   "b": "skill:productivity/update",
+   "name_jaccard": 0.5,
+   "facets_identical": 6,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:product-management/stakeholder-update",
+   "b": "skill:productivity/update",
+   "name_jaccard": 0.5,
+   "facets_identical": 6,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:common-room/account-research",
+   "b": "skill:sales/account-research",
+   "name_jaccard": 1.0,
+   "facets_identical": 5,
+   "kind": "same-name"
+  },
+  {
+   "a": "skill:common-room/call-prep",
+   "b": "skill:sales/call-prep",
+   "name_jaccard": 1.0,
+   "facets_identical": 5,
+   "kind": "same-name"
+  },
+  {
+   "a": "skill:sales/lead-triage",
+   "b": "skill:small-business/lead-triage",
+   "name_jaccard": 1.0,
+   "facets_identical": 5,
+   "kind": "same-name"
+  },
+  {
+   "a": "skill:org-skill/social-content",
+   "b": "skill:small-business/social-content-engine",
+   "name_jaccard": 0.67,
+   "facets_identical": 5,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:org-skill/canvas-design",
+   "b": "skill:design-superpowers/design",
+   "name_jaccard": 0.5,
+   "facets_identical": 5,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:org-skill/docs",
+   "b": "skill:microsoft-docs/microsoft-docs",
+   "name_jaccard": 0.5,
+   "facets_identical": 5,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:design-superpowers/figma-setup",
+   "b": "skill:sales/setup",
+   "name_jaccard": 0.5,
+   "facets_identical": 5,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:brand-voice/discover-brand",
+   "b": "command:brand-voice/discover-brand",
+   "name_jaccard": 1.0,
+   "facets_identical": 4,
+   "kind": "same-name"
+  },
+  {
+   "a": "skill:common-room/weekly-prep-brief",
+   "b": "command:common-room/weekly-brief",
+   "name_jaccard": 0.67,
+   "facets_identical": 4,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:oem-isv-advisor/implementation-best-practices",
+   "b": "skill:sanity/sanity-best-practices",
+   "name_jaccard": 0.5,
+   "facets_identical": 4,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:org-skill/enxoo-design",
+   "b": "skill:design-superpowers/design",
+   "name_jaccard": 0.5,
+   "facets_identical": 4,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:org-skill/pdf",
+   "b": "skill:pdf-viewer/view-pdf",
+   "name_jaccard": 0.5,
+   "facets_identical": 4,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:product-management/product-brainstorming",
+   "b": "skill:superpowers/brainstorming",
+   "name_jaccard": 0.5,
+   "facets_identical": 4,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:productivity/update",
+   "b": "skill:sales/update-opportunity",
+   "name_jaccard": 0.5,
+   "facets_identical": 4,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:design/design-system",
+   "b": "skill:engineering/system-design",
+   "name_jaccard": 1.0,
+   "facets_identical": 3,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:org-skill/skill-creator",
+   "b": "skill:microsoft-docs/microsoft-skill-creator",
+   "name_jaccard": 0.67,
+   "facets_identical": 3,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:sales/account-plan",
+   "b": "command:common-room/generate-account-plan",
+   "name_jaccard": 0.67,
+   "facets_identical": 3,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:org-skill/sf-debug",
+   "b": "skill:engineering/debug",
+   "name_jaccard": 0.5,
+   "facets_identical": 3,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:claude-md-management/claude-md-improver",
+   "b": "command:claude-md-management/revise-claude-md",
+   "name_jaccard": 0.5,
+   "facets_identical": 3,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:design-superpowers/design",
+   "b": "skill:design/design-critique",
+   "name_jaccard": 0.5,
+   "facets_identical": 3,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:design-superpowers/design",
+   "b": "skill:design/design-handoff",
+   "name_jaccard": 0.5,
+   "facets_identical": 3,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:design-superpowers/design",
+   "b": "skill:design/design-system",
+   "name_jaccard": 0.5,
+   "facets_identical": 3,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:engineering/code-review",
+   "b": "skill:superpowers/receiving-code-review",
+   "name_jaccard": 0.67,
+   "facets_identical": 2,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:engineering/code-review",
+   "b": "skill:superpowers/requesting-code-review",
+   "name_jaccard": 0.67,
+   "facets_identical": 2,
+   "kind": "similar-name"
+  },
+  {
+   "a": "skill:sanity/sanity-migration",
+   "b": "command:sanity/sanity",
+   "name_jaccard": 0.5,
+   "facets_identical": 2,
+   "kind": "similar-name"
+  }
+ ],
+ "signature_groups": [
+  {
+   "size": 23,
+   "ids": [
+    "skill:sales/account-context",
+    "skill:sales/account-plan",
+    "skill:sales/account-tiering",
+    "skill:sales/close-plan",
+    "skill:sales/competitive-intelligence",
+    "skill:sales/create-an-asset",
+    "skill:sales/crm-hygiene-check",
+    "skill:sales/customer-health",
+    "skill:sales/deal-advance-gap",
+    "skill:sales/deal-review",
+    "skill:sales/deal-signals",
+    "skill:sales/deal-slip-scenario",
+    "skill:sales/expansion-whitespace",
+    "skill:sales/handle-objection",
+    "skill:sales/inbox-sweep",
+    "skill:sales/lead-triage",
+    "skill:sales/log-activity",
+    "skill:sales/renewal-radar",
+    "skill:sales/rep-context",
+    "skill:sales/route-lead",
+    "skill:sales/stakeholder-map",
+    "skill:sales/team-pipeline",
+    "skill:sales/win-loss-review"
+   ]
+  },
+  {
+   "size": 22,
+   "ids": [
+    "skill:org-skill/brand-guidelines",
+    "skill:org-skill/docs",
+    "skill:org-skill/du-weekly-team-review",
+    "skill:org-skill/frontend-design",
+    "skill:org-skill/internal-comms",
+    "skill:org-skill/learn",
+    "skill:org-skill/platform-custom-field-generate",
+    "skill:org-skill/tmf-oda-salesforce-architect",
+    "skill:design/user-research",
+    "skill:engineering/documentation",
+    "skill:engineering/system-design",
+    "skill:engineering/tech-debt",
+    "skill:engineering/testing-strategy",
+    "skill:frontend-design/frontend-design",
+    "skill:katalog-promptow/del-delegowanie",
+    "skill:katalog-promptow/kry-krytyka-decyzje",
+    "skill:katalog-promptow/met-jakosc-polecenia",
+    "skill:katalog-promptow/rfp-presales",
+    "skill:katalog-promptow/wer-weryfikacja",
+    "skill:operations/compliance-tracking",
+    "skill:operations/process-optimization",
+    "skill:operations/risk-assessment"
+   ]
+  },
+  {
+   "size": 20,
+   "ids": [
+    "skill:oem-isv-advisor/data-360-implementation-advisor",
+    "skill:oem-isv-advisor/development-environment",
+    "skill:oem-isv-advisor/environment-portfolio",
+    "skill:oem-isv-advisor/managed-2gp-foundation",
+    "skill:oem-isv-advisor/namespace-access-governance",
+    "skill:oem-isv-advisor/operations-release",
+    "skill:oem-isv-advisor/org-provisioning-diagnostics",
+    "skill:oem-isv-advisor/package-ancestry-dependencies",
+    "skill:oem-isv-advisor/package-migration-transfer",
+    "skill:oem-isv-advisor/package-release-promotion",
+    "skill:oem-isv-advisor/package-version-validation",
+    "skill:oem-isv-advisor/packageability-assessment",
+    "skill:oem-isv-advisor/packaging-distribution",
+    "skill:oem-isv-advisor/packaging-strategy",
+    "skill:oem-isv-advisor/pbo-dev-hub-foundation",
+    "skill:oem-isv-advisor/platform-constraints",
+    "skill:oem-isv-advisor/scratch-org-shape",
+    "skill:oem-isv-advisor/security-readiness",
+    "skill:oem-isv-advisor/solution-discovery",
+    "skill:oem-isv-advisor/tableau-next-implementation-advisor"
+   ]
+  },
+  {
+   "size": 11,
+   "ids": [
+    "skill:org-skill/platform-data-manage",
+    "skill:org-skill/sf-ai-agentforce-testing",
+    "skill:org-skill/sf-ai-agentforce",
+    "skill:org-skill/sf-data",
+    "skill:org-skill/sf-datacloud-act",
+    "skill:org-skill/sf-datacloud-harmonize",
+    "skill:org-skill/sf-debug",
+    "skill:org-skill/sf-deploy",
+    "skill:org-skill/sf-flex-estimator",
+    "skill:org-skill/sf-flow",
+    "skill:org-skill/sf-testing"
+   ]
+  },
+  {
+   "size": 10,
+   "ids": [
+    "mcp:asana",
+    "mcp:atlassian",
+    "mcp:atlassian:https-mcp-atlassian-com-v2-mcp",
+    "mcp:clickup",
+    "mcp:linear",
+    "mcp:monday",
+    "mcp:monday-com",
+    "mcp:trello",
+    "mcp:zapier",
+    "mcp:zoho-projects"
+   ]
+  },
+  {
+   "size": 9,
+   "ids": [
+    "mcp:airwallex",
+    "mcp:docusign",
+    "mcp:expensify",
+    "mcp:gusto",
+    "mcp:intuit-quickbooks",
+    "mcp:myob",
+    "mcp:ramp",
+    "mcp:xero",
+    "mcp:zoho-books"
+   ]
+  },
+  {
+   "size": 8,
+   "ids": [
+    "skill:org-skill/data360-schema-get",
+    "skill:org-skill/omnistudio-datamapper-generate",
+    "skill:org-skill/omnistudio-epc-catalog-generate",
+    "skill:org-skill/omnistudio-integration-procedure-generate",
+    "skill:org-skill/sf-industry-cme-epc-model",
+    "skill:org-skill/sf-industry-commoncore-datamapper",
+    "skill:org-skill/sf-industry-commoncore-integration-procedure",
+    "skill:org-skill/sf-industry-commoncore-omniscript"
+   ]
+  },
+  {
+   "size": 8,
+   "ids": [
+    "skill:org-skill/enxoo-artifact-forge",
+    "skill:org-skill/platform-soql-query",
+    "skill:org-skill/sf-ai-agentforce-observability",
+    "skill:org-skill/sf-apex",
+    "skill:org-skill/sf-industry-commoncore-callable-apex",
+    "skill:org-skill/sf-integration",
+    "skill:org-skill/sf-metadata",
+    "skill:org-skill/sf-soql"
+   ]
+  },
+  {
+   "size": 7,
+   "ids": [
+    "mcp:ahrefs",
+    "mcp:amplitude",
+    "mcp:amplitude-eu",
+    "mcp:pendo",
+    "mcp:similarweb",
+    "mcp:similarweb:https-mcp-similarweb-com-mcp",
+    "mcp:supermetrics"
+   ]
+  },
+  {
+   "size": 7,
+   "ids": [
+    "mcp:apollo",
+    "mcp:apollo-io",
+    "mcp:clay",
+    "mcp:common-room",
+    "mcp:crunchbase",
+    "mcp:lusha",
+    "mcp:zoominfo"
+   ]
+  },
+  {
+   "size": 7,
+   "ids": [
+    "task:trig_01MmVB7YTDVWxjnxQTi5bHmf",
+    "task:trig_01Q1x2WvGrKGHzqynUUL1xMZ",
+    "task:trig_01KGRZYYYdeGfQYMoSAYp2DM",
+    "task:trig_01MpqCtB94SiKmzmMva8Mijy",
+    "task:trig_016NZe2PvobQdN2x5kFGud7k",
+    "task:trig_01WYpn1PEkDRNUDvfbvBhGUg",
+    "task:trig_014zgyG6bC6eh3Jc6hUMKU7y"
+   ]
+  }
+ ],
+ "distinct_signatures": 284,
+ "risk": [
+  {
+   "id": "task:trig_01Q1x2WvGrKGHzqynUUL1xMZ",
+   "name": "Re-check PRs #33 #34",
+   "type": "scheduled-task",
+   "unattended_by": [
+    "time"
+   ],
+   "system": "source-control",
+   "access": "write",
+   "note": null,
+   "enabled": false,
+   "evidence": {
+    "file": "session/scheduled-tasks.json",
+    "line": 22,
+    "quote": "\"prompt\": \"Safety-net check-in on krystiandrozd-alt/tmf-workbench #34 (head e90dcc2; CI runs action_required, awaiting owner approval) and #",
+    "kind": "inferred",
+    "rule": "prompt-merge-verb"
+   }
+  },
+  {
+   "id": "task:trig_01KGRZYYYdeGfQYMoSAYp2DM",
+   "name": "Re-check PRs #33 #34",
+   "type": "scheduled-task",
+   "unattended_by": [
+    "time"
+   ],
+   "system": "source-control",
+   "access": "write",
+   "note": null,
+   "enabled": false,
+   "evidence": {
+    "file": "session/scheduled-tasks.json",
+    "line": 32,
+    "quote": "\"prompt\": \"Safety-net check-in on krystiandrozd-alt/tmf-workbench #34 (head e90dcc2 by Copilot; its CI runs were action_required, waiting fo",
+    "kind": "inferred",
+    "rule": "prompt-merge-verb"
+   }
+  },
+  {
+   "id": "task:trig_01MpqCtB94SiKmzmMva8Mijy",
+   "name": "Re-check PRs #33 #34",
+   "type": "scheduled-task",
+   "unattended_by": [
+    "time"
+   ],
+   "system": "source-control",
+   "access": "write",
+   "note": null,
+   "enabled": false,
+   "evidence": {
+    "file": "session/scheduled-tasks.json",
+    "line": 42,
+    "quote": "\"prompt\": \"Safety-net check-in on krystiandrozd-alt/tmf-workbench #34 (head e90dcc2 by Copilot; its CI runs were action_required, waiting fo",
+    "kind": "inferred",
+    "rule": "prompt-merge-verb"
+   }
+  },
+  {
+   "id": "task:trig_016NZe2PvobQdN2x5kFGud7k",
+   "name": "Re-check PR #34",
+   "type": "scheduled-task",
+   "unattended_by": [
+    "time"
+   ],
+   "system": "source-control",
+   "access": "write",
+   "note": null,
+   "enabled": false,
+   "evidence": {
+    "file": "session/scheduled-tasks.json",
+    "line": 52,
+    "quote": "\"prompt\": \"Safety-net check-in on krystiandrozd-alt/tmf-workbench#34 (head 3c0e808, CI 8/8 green, Codex P2 fixed+resolved). Re-check merge s",
+    "kind": "inferred",
+    "rule": "prompt-merge-verb"
+   }
+  },
+  {
+   "id": "task:trig_01WYpn1PEkDRNUDvfbvBhGUg",
+   "name": "Re-check PR #33 CI",
+   "type": "scheduled-task",
+   "unattended_by": [
+    "time"
+   ],
+   "system": "source-control",
+   "access": "write",
+   "note": null,
+   "enabled": false,
+   "evidence": {
+    "file": "session/scheduled-tasks.json",
+    "line": 62,
+    "quote": "\"prompt\": \"Safety-net check-in on krystiandrozd-alt/tmf-workbench#33 (head 087db5a). User chose option 2: freeze regen is fixed separately o",
+    "kind": "inferred",
+    "rule": "prompt-merge-verb"
+   }
+  },
+  {
+   "id": "task:trig_014zgyG6bC6eh3Jc6hUMKU7y",
+   "name": "Re-check PR #33 CI",
+   "type": "scheduled-task",
+   "unattended_by": [
+    "time"
+   ],
+   "system": "source-control",
+   "access": "write",
+   "note": null,
+   "enabled": false,
+   "evidence": {
+    "file": "session/scheduled-tasks.json",
+    "line": 72,
+    "quote": "\"prompt\": \"Safety-net check-in on krystiandrozd-alt/tmf-workbench#33: re-check merge state, CI (freeze-verify was red from pre-existing READ",
+    "kind": "inferred",
+    "rule": "prompt-merge-verb"
+   }
+  },
+  {
+   "id": "task:trig_01519L56jdsSg5eRKoqwCrfu",
+   "name": "Briefing",
+   "type": "scheduled-task",
+   "unattended_by": [
+    "time"
+   ],
+   "system": "email",
+   "access": "write",
+   "note": "capability: unrestricted connector grant exposes write tools; prompt intent is read-only",
+   "enabled": true,
+   "evidence": {
+    "file": "session/mcp-tools.txt",
+    "line": 135,
+    "quote": "mcp__Gmail__apply_sensitive_message_label",
+    "kind": "inferred",
+    "rule": "granted-tool-verb"
+   }
+  },
+  {
+   "id": "hook:session/stop-hook-git-check.sh",
+   "name": "stop-hook-git-check.sh",
+   "type": "hook",
+   "unattended_by": [
+    "event"
+   ],
+   "system": "source-control",
+   "access": "write",
+   "note": null,
+   "enabled": true,
+   "evidence": {
+    "file": "session/hooks/stop-hook-git-check.sh",
+    "line": 75,
+    "quote": "if git merge-base --is-ancestor \"$sha\" \"$head\" 2>/dev/null &&",
+    "kind": "inferred",
+    "rule": "git-verb"
+   }
+  }
+ ],
+ "risk_summary": {
+  "unattended_elements": 12,
+  "flagged_write": 8,
+  "flagged_unknown": 0
+ },
+ "latent_unattended": [
+  {
+   "id": "skill:org-skill/morning",
+   "write_systems": [
+    "claude-runtime",
+    "chat-messaging"
+   ],
+   "file": "org-skills/morning/SKILL.md",
+   "line": 14,
+   "quote": "When I ask to set this up as a recurring task, infer which language the brief should be in: during the interactive session, the language I w"
+  },
+  {
+   "id": "skill:brand-voice/discover-brand",
+   "write_systems": [
+    "docs-knowledge"
+   ],
+   "file": "plugins/brand-voice/skills/discover-brand/SKILL.md",
+   "line": 3,
+   "quote": "description: \"This skill orchestrates autonomous discovery of brand materials across enterprise platforms (Notion, Confluence, Google Drive,"
+  },
+  {
+   "id": "skill:cowork-plugin-management/cowork-plugin-customizer",
+   "write_systems": [
+    "claude-runtime"
+   ],
+   "file": "plugins/cowork-plugin-management/skills/cowork-plugin-customizer/SKILL.md",
+   "line": 35,
+   "quote": "For **scoped customization** and **general customization** (not generic plugin setup), check whether the user provided free-form context alo"
+  },
+  {
+   "id": "skill:cowork-plugin-management/create-cowork-plugin",
+   "write_systems": [
+    "claude-runtime",
+    "project-tracker"
+   ],
+   "file": "plugins/cowork-plugin-management/skills/create-cowork-plugin/SKILL.md",
+   "line": 157,
+   "quote": "- **Agents (uncommon)** \u2014 Are there autonomous multi-step tasks? (validation, generation, analysis)"
+  },
+  {
+   "id": "skill:sales/account-context",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/account-context/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/account-plan",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/account-plan/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/account-research",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/account-research/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/account-tiering",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/account-tiering/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/call-prep",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/call-prep/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/call-summary",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage",
+    "call-transcripts"
+   ],
+   "file": "plugins/sales/skills/call-summary/SKILL.md",
+   "line": 16,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/close-plan",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/close-plan/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/competitive-intelligence",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/competitive-intelligence/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/create-an-asset",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/create-an-asset/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/crm-hygiene-check",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/crm-hygiene-check/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/customer-health",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/customer-health/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/customer-voice",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/customer-voice/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/daily-briefing",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/daily-briefing/SKILL.md",
+   "line": 3,
+   "quote": "description: Morning rundown - today's meetings with account context, opps closing soon with stale flags, waiting customer emails, and the d"
+  },
+  {
+   "id": "skill:sales/deal-advance-gap",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/deal-advance-gap/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/deal-review",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/deal-review/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/deal-signals",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/deal-signals/SKILL.md",
+   "line": 3,
+   "quote": "description: Proactive watch over your book - deals gone quiet, close dates slipping into view, champion changes, renewal windows opening, c"
+  },
+  {
+   "id": "skill:sales/deal-slip-scenario",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/deal-slip-scenario/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/draft-outreach",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/draft-outreach/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/end-of-day",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/end-of-day/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/expansion-whitespace",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/expansion-whitespace/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/forecast",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/forecast/SKILL.md",
+   "line": 16,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/handle-objection",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/handle-objection/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/inbox-sweep",
+   "write_systems": [
+    "email",
+    "crm",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/inbox-sweep/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/lead-triage",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/lead-triage/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/log-activity",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/log-activity/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/pipeline-review",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/pipeline-review/SKILL.md",
+   "line": 16,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/renewal-radar",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/renewal-radar/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/rep-context",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/rep-context/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/route-lead",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/route-lead/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/schedule-meeting",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage",
+    "calendar"
+   ],
+   "file": "plugins/sales/skills/schedule-meeting/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/setup",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/setup/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/stakeholder-map",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/stakeholder-map/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/team-pipeline",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/team-pipeline/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/update-opportunity",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage",
+    "cms-content"
+   ],
+   "file": "plugins/sales/skills/update-opportunity/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/weekly-wrap",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/weekly-wrap/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  },
+  {
+   "id": "skill:sales/win-loss-review",
+   "write_systems": [
+    "crm",
+    "email",
+    "docs-storage"
+   ],
+   "file": "plugins/sales/skills/win-loss-review/SKILL.md",
+   "line": 15,
+   "quote": "- Scheduled or unattended runs take the actions the user set the schedule up to take, within the permissions its connectors allow; anything "
+  }
+ ],
+ "source_strength": {
+  "overall": {
+   "explicit": 1945,
+   "default": 1064,
+   "inferred": 1523
+  },
+  "per_facet": {
+   "trigger": {
+    "explicit": 434,
+    "inferred": 125
+   },
+   "ui": {
+    "default": 312,
+    "inferred": 123,
+    "explicit": 77
+   },
+   "system": {
+    "inferred": 989,
+    "default": 66,
+    "explicit": 1
+   },
+   "connection": {
+    "inferred": 280,
+    "default": 100,
+    "explicit": 218
+   },
+   "harness": {
+    "explicit": 713,
+    "default": 96,
+    "inferred": 6
+   },
+   "model": {
+    "default": 490,
+    "explicit": 6
+   },
+   "type": {
+    "explicit": 496
+   }
+  }
+ },
+ "completeness": {
+  "elements_all_7_facets": 496,
+  "values_total": 4532,
+  "values_with_source": 4532
+ }
+}

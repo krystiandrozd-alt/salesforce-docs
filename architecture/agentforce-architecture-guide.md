@@ -4,7 +4,7 @@
 
 > Built from this repository's catalog of Salesforce's official `llms-*.txt` indexes (refreshed 2026-11-06) and the companion
 > [`partner-ecosystem-agentic-kit`](https://github.com/krystiandrozd-alt/partner-ecosystem-agentic-kit) advisor references.
-> Written 2026-11-22.
+> Written 2026-11-22. Updated 2026-11-22 with the Microsoft 365 Copilot / Copilotforce surfaces announced at Ignite on 17 November 2026 (§2.8, §4.9, S17).
 
 ---
 
@@ -19,6 +19,7 @@ Every product row carries one of these source labels:
 | **[Doc]** | Appears as a page, section or metadata type in this repo's Salesforce doc catalog (`*/index.md`). The doc link is given. |
 | **[Kit]** | Taken from the partner-kit advisor references (practitioner rules, decision guides). |
 | **[Ext]** | General market knowledge that is **not** in the doc catalog (for example Anthropic's Claude products, partnership announcements). Check it against current vendor sources before you put it in front of a customer. |
+| **[Up]** | From the user-supplied pre-sales brief *Microsoft Copilot (Ignite 2026) and Salesforce Agentforce/AIforce for Telco, v3, §13* (19 Nov 2026). That brief cites the Microsoft Copilot Blog and the Salesforce Copilotforce newsroom post, both dated 17 Nov 2026. Its statuses are vendor-announced and do not come from the Salesforce developer docs. |
 | **[Inf]** | An architectural inference drawn by combining documented pieces. |
 
 ### 0.2 Maturity legend ("GA vs planned")
@@ -52,6 +53,7 @@ flowchart TB
     EXT["External AI clients via MCP<br/>Claude · ChatGPT · Cursor · Slackbot"]
     TAB["Tableau Next / Tableau Agent"]
     COM["Agentforce Commerce Client"]
+    M365["Microsoft 365 Copilot<br/>Copilotforce plugin · Teams · Outlook ·<br/>Word · Excel · PowerPoint · Cowork"]
   end
 
   subgraph L2["② Agent runtime"]
@@ -97,6 +99,7 @@ flowchart TB
   L2 --> L5
   L3 --> L5
   EXT -. MCP Out .-> HOST --> L3
+  M365 -. plugin / Agent API / MCP Out .-> HOST
   MCPIN -. MCP In .-> L2
   L6 -. builds/deploys .-> L2
 ```
@@ -158,6 +161,7 @@ flowchart TB
 | **Agentforce Coworker UI** | Search, ask and update, chats, delegation, quick pages | 🟢 GA · Quick Page 🟡 Beta | [Doc] |
 | **Tableau Next embedding / Tableau Agent** | Embed the analytics agent (`AnalyticsAgent`, `AgentProps`, style tokens) | 🟢 GA | [Doc] [tableau agent](https://developer.salesforce.com/docs/analytics/sdk/guide/sdk-integration-embed-agent.md) |
 | **Agentforce Commerce Client** | Shopper-facing agent for B2C storefronts | 🟢 GA · Shopper MCP tools 🟠 Pilot | [Doc] [commerce client](https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/agentforce-commerce-client-overview.md) |
+| **Microsoft 365 Copilot (Copilotforce plugin)** | Sales Cloud skills, plus partner MCP tools, available in every Copilot surface: Home, Chat, Cowork, Teams, Outlook, Word, Excel and PowerPoint. See §2.8. | 🟡 Public Preview (Beta) for the plugin · Sales Cloud in Teams 🟠 Pilot | [Up] |
 
 ### 2.4 Data, grounding, memory (Data 360)
 
@@ -212,6 +216,42 @@ flowchart TB
 | **AgentExchange** | Marketplace for agents, actions, MCP servers and templates (listing, security review, checkout, analytics) | 🟢 GA | [Doc] platform-pkg-exchange |
 | Billing | Flex Credits, Digital Wallet consumption (Coworker, memory, Vibes) | 🟢 GA | [Doc] |
 
+### 2.8 Microsoft 365 Copilot surfaces (Copilotforce) [Up]
+
+Microsoft 365 Copilot is a set of connected surfaces, not a single UI. The **Copilotforce plugin** is installed once by an admin. It then exposes Sales Cloud skills, and partner MCP tools (for example a telco partner's Communications Cloud operations), the same way on every surface.
+
+How the surfaces divide the work:
+- Teams and Copilot Home for live interaction.
+- Word, Excel and PowerPoint for deliverables.
+- Workspaces and Cowork for account work that runs over several days.
+- Outlook for daily triage.
+- SharePoint and OneDrive as the document memory behind all of them.
+
+| Surface | Primary purpose | How Salesforce data arrives | Writeback | Main users | Status |
+|---|---|---|---|---|---|
+| **Copilot Home** | Single chat and Cowork composer. Auto routing picks a model per task (Anthropic, OpenAI or Microsoft). | Copilotforce plugin as a connected skill, plus partner MCP | ✅ with explicit user confirmation. Salesforce validation rules apply. | AE, SE, CSM | 🟡 Public Preview (via AgentExchange and the Copilot plugin directory) |
+| **Copilot Chat** | Quick natural-language Q&A | Same plugin, single-shot queries | ✅ (confirmed) | All sellers | 🟡 (plugin) |
+| **Cowork** (Microsoft 365) | Long-running, multi-step delegated work: plans, calls tools, assembles a deliverable | Plugin, 350+ connectors, MCP skills, and Work IQ context from Teams, Outlook and SharePoint | Produces a deliverable (brief, plan, research report) | AE, SE | 🟢 GA core · advanced features in Frontier |
+| **Workspaces** | Persistent context per account or deal: files, conversations, agents, pinned tools. Evolved from Notebooks. | Pinned plugin skills, files and conversations | via skills | AE, CSM, pod teams | 🔵 Frontier (early access) |
+| **Copilot Studio** | Agent builder for custom prompts, tools and guardrails | Three paths: Salesforce REST, **Agentforce Agent API**, **Salesforce Hosted MCP** | per agent design | Partner, operator IT | 🟢 GA (deploys to Managed Runtime) |
+| **Outlook** | Email triage, drafting, meeting prep | Plugin skill, plus Work IQ synthesis of mailbox context | ✅ activity logging, CRM-grounded replies | Everyone | 🟢 Copilot GA · plugin via Work IQ |
+| **Teams** | Live chat, channels and meetings. It has three layers: Sales Cloud in Teams, Agentforce Coworker, and adaptive cards. | Sales Cloud in Teams native app, Agentforce Coworker, adaptive cards | ✅ via adaptive cards on supported opportunity fields, with validation rules | AE, SE, CSM, ops | Sales Cloud in Teams 🟠 Pilot · Coworker in the Teams flow |
+| **Word** | Proposals, briefs, SOWs | Plugin returns structured text and tables | ❌ read-mostly | SE, proposal team | 🟢 GA |
+| **Excel** | Analysis, models, pivots | Plugin, plus Fabric OneLake federation over Data 360 | ❌ analysis only | RevOps, finance, SE | 🟢 GA |
+| **PowerPoint** | QBR, close-plan and pipeline decks. "Pipeline Review & Action Plans" is one of the three Salesforce-named Copilot workflows and ships natively. | Plugin | ❌ | Sales leaders, CSM | 🟢 GA (workflow) |
+| **SharePoint / OneDrive** | Document memory: past proposals, win themes, product sheets | Indexed by Work IQ as grounding. Nothing from Salesforce flows into it automatically. | n/a | Everyone, indirectly | 🟢 GA |
+| **Autopilot** | Tenant-resident autonomous agent that runs on a schedule or trigger, with an Entra Agent ID | Plugin plus any exposed MCP tool | ⚠️ start read-only or notify-only | Early adopters | 🔵 Frontier. Entra Agent ID GA expected Dec 2026. |
+| **Managed Runtime** | Hosting for agents built in Cowork, Code or Studio | Indirect: hosts agents that call Salesforce | per agent | Operator IT | 🟢 GA |
+
+**Not available or not ready yet [Up]:**
+- GCC, GCC High and DoD tenants: the Salesforce plugin is not supported.
+- Word, Excel, PowerPoint and Outlook have no standalone native integration. They reach Salesforce through Copilot.
+- Word, Excel and PowerPoint are read-mostly. Writeback happens from Copilot Chat, Teams or Outlook.
+- Autopilot writeback to Salesforce should wait for Entra Agent ID GA (Dec 2026) because of the governance risk.
+- EU pricing and final availability for Salesforce in Copilot have not been published.
+
+**Architecture reading [Inf].** Microsoft 365 Copilot is a fourth kind of client, alongside Salesforce-native surfaces, Claude/ChatGPT over MCP, and Slack. It reaches the **same back end** as the others: the plugin's Sales Cloud skills, the Agentforce Agent API, or a Salesforce hosted MCP server. A partner's MCP server (MCP In for Agentforce) can be offered to Copilot as well. So the per-persona action layer from §9 serves Microsoft 365 users unchanged.
+
 ---
 
 ## 3. Maturity radar — what is GA and what is planned
@@ -224,6 +264,7 @@ flowchart TB
 | Data | ADL, Document AI, Memory & Context, Semantic Layer, telemetry DMOs | — | — | Data 360 Legacy MCP server |
 | MCP Out | Standard and custom hosted servers, Claude/ChatGPT/Cursor clients | Headless 360, CRM Analytics, Metadata Grounding servers | B2C Commerce shopper tools | Beta-era hosted servers (EOL page) |
 | Dev tooling | Vibes, DX MCP, Testing Center | LWC MCP tools, Metadata MCPs, `run-eval`, Data SDK | React validate/optimize, org policies | Older Vibes generation (deprecation notice) |
+| Microsoft 365 [Up] | Copilot Studio, Managed Runtime, Word/Excel/PowerPoint/Outlook, Cowork core | Copilotforce plugin (Public Preview) | Sales Cloud in Teams (Pilot), Workspaces and Autopilot (Frontier) | — (GCC, GCC High and DoD not supported) |
 
 **Direction of travel [Inf].** The docs point to four trends:
 
@@ -328,6 +369,28 @@ flowchart TB
 
 **Key insight [Inf].** These tools do not compete for the same data path. One **hosted custom MCP server** curated per persona, for example Account 360, opportunity search and write, pipeline forecast, renewals and quote creation Apex tools, can serve Claude, Claude Cowork, ChatGPT and Slackbot at the same time. Agentforce Coworker and Employee agents use the same Apex and Flow logic natively as agent actions. **Build the logic once as actions, then expose it everywhere.**
 
+### 4.9 Microsoft 365 Copilot vs Salesforce-native vs Claude [Up + Inf]
+
+> **Naming trap: three things called "Cowork".**
+> - **Microsoft 365 Copilot Cowork** handles long-running delegated work inside Microsoft 365.
+> - **Claude Cowork** is Anthropic's desktop agent.
+> - **Agentforce Coworker** is Salesforce's employee search-and-act workspace.
+>
+> Always name the vendor.
+
+| | **Microsoft 365 Copilot + Copilotforce** | **Agentforce (Lightning, Coworker, Slack)** | **Claude / Claude Cowork + hosted MCP** |
+|---|---|---|---|
+| Home of the user | Outlook, Teams, Word, Excel, PowerPoint | Salesforce UI, Slack | Claude apps, desktop |
+| Path to Salesforce | Copilotforce plugin skills · Studio via REST, Agent API or Hosted MCP | Native actions | Hosted custom MCP server (ECA + OAuth) |
+| Long-running work | M365 Cowork, Workspaces (Frontier), Autopilot (Frontier) | Agentforce Operations, scheduled flows, autonomous agents | Claude Cowork tasks [Ext] |
+| Document memory | SharePoint/OneDrive via Work IQ | Data 360 + ADL | Local files, project knowledge, connectors [Ext] |
+| Model choice | Auto routing across Anthropic, OpenAI and Microsoft | Salesforce Models API catalog, including Claude in the trust boundary [Ext] | Claude models |
+| Writeback | Chat, Teams cards, Outlook (confirmed). Not from Word, Excel or PowerPoint. | Full, with permissions | Via MCP mutation tools |
+| Agent identity | Entra Agent ID (GA Dec 2026) | Salesforce user / integration user | OAuth user via ECA |
+| Custom agent builder | Copilot Studio → Managed Runtime | Agent Script + Agentforce DX | Claude Code / Agent SDK [Ext] |
+| Not yet | GCC, GCC High and DoD tenants · EU pricing | — | Client-dependent HXL rendering |
+| Pick when | The seller lives in Microsoft 365 and output is Office documents | Process-embedded CRM work under Salesforce governance | Cross-tool research and document work outside both suites |
+
 ---
 
 ## 5. Scenarios — recommended architectures
@@ -401,6 +464,26 @@ Each scenario lists the components (with maturity), the request flow, and the ma
 - **Components:** Apex Invocable → Lightning Type → **HXL widget** 🟡 rendered in the Agentforce Employee agent **and** exposed through a hosted MCP tool `uiResource` to Slackbot, Claude and ChatGPT [Doc + Kit].
 - **Risk:** Beta. The MCP channel needs `McpServerDefinition` resource wiring after Setup.
 
+### S17. Seller works from Microsoft 365 all day (Copilotforce) [Up]
+- **Components:** Copilotforce plugin 🟡 · partner MCP server, for example telco Communications Cloud tools such as `serviceability_check` · Agentforce Coworker in Teams · Sales Cloud in Teams 🟠 · Copilot Studio agents through the Agent API or Hosted MCP · Fabric OneLake federation over Data 360 · Work IQ over SharePoint.
+- **One AE's morning, nine surfaces, one Salesforce record under each action:**
+  1. **Outlook:** CRM-grounded replies are drafted and one escalation is flagged.
+  2. **Teams channel:** a won deal is posted automatically as an adaptive card.
+  3. **Copilot Home:** a ranked list of deals that need attention, including one slipped close date.
+  4. **Workspace:** overnight Cowork research on a key pursuit.
+  5. **Teams meeting:** a private serviceability check through partner MCP.
+  6. **PowerPoint:** the Pipeline Review deck.
+  7. **Word:** a proposal built from the quote and past-win language.
+  8. **Excel:** a discount-margin check on live Fabric pricing.
+  9. **Outlook:** the proposal is sent and the activity is logged to Salesforce.
+- **Custom-agent variant:** a Copilot Studio agent, for example a service-credit agent. It reads SLA breaches from Service Cloud and contract terms from Communications Cloud, computes the credit, and drafts a notice for review. It is hosted on Managed Runtime.
+- **Risk:**
+  - The plugin is Public Preview.
+  - Teams is Pilot.
+  - Workspaces and Autopilot are Frontier. Keep Autopilot read-only or notify-only until Entra Agent ID is GA (Dec 2026).
+  - Government tenants are not supported.
+  - EU pricing is unpublished.
+
 ### Scenario → product heat map
 
 | Scenario | Agent Script | ADL / Data 360 | Hosted MCP | MCP In | ACC | Mobile SDK | Voice | Coworker | HXL | Claude / Cowork |
@@ -415,6 +498,7 @@ Each scenario lists the components (with maturity), the request flow, and the ma
 | S8 Web app | ● | | | | ● | | | | | |
 | S12 Pro-code DevEx | ● | ○ | ○ | ○ | | | | | ○ | ● (Claude Code) |
 | S16 Cross-channel card | ○ | | ● | | | | | | ● | ● |
+| S17 Microsoft 365 seller (Copilotforce) | ○ | ○ (Fabric federation) | ● | ● (partner MCP) | | | | ● (in Teams) | | ○ (Anthropic models via Auto routing) |
 
 ● core · ○ optional
 
@@ -437,6 +521,7 @@ flowchart TD
   C -->|Slack| C3[Slackbot + hosted MCP / Slack apps]
   C -->|Own web app| C4[ACC Web SDK or React UIBundle]
   C -->|Claude / Cowork / ChatGPT| C5[Hosted custom MCP server]
+  C -->|Microsoft 365: Outlook / Teams / Office| C6[Copilotforce plugin · Copilot Studio via Agent API or Hosted MCP]
   A -->|A system| D[Agent API / Models API]
 ```
 
@@ -517,7 +602,7 @@ sequenceDiagram
 
 1. **Author new agents in Agent Script**, in source control, with Agentforce DX and a coding agent (Vibes or Claude Code with DX MCP).
 2. **Implement business logic once** as Flow, Apex Invocable or Named Query actions, typed with Lightning Types.
-3. **Expose that logic two ways:** natively to Agentforce agents (Lightning, Coworker, Chat, Mobile, Voice), and through **one curated hosted custom MCP server per persona** to Claude, Claude Cowork, ChatGPT and Slackbot.
+3. **Expose that logic two ways:** natively to Agentforce agents (Lightning, Coworker, Chat, Mobile, Voice), and through **one curated hosted custom MCP server per persona** to Claude, Claude Cowork, ChatGPT and Slackbot. Microsoft 365 Copilot reaches the same logic through the Copilotforce plugin or Copilot Studio.
 4. **Ground on Data 360**: ADL for knowledge, the semantic layer for metrics, Memory & Context for continuity.
 5. **Gate production with tests and tracing**, using the Testing API in CI and telemetry DMOs.
 6. **Adopt Beta pieces selectively** (HXL, Headless 360 MCP, Coworker Quick Page). Treat Pilot and Dev Preview as **planned** and keep them out of production.
@@ -551,4 +636,5 @@ sequenceDiagram
 | Tableau Next agent | [`analytics/`](../analytics/index.md) |
 | Agentic enterprise tutorials | [`data-ae/`](../data-ae/index.md) |
 | Slack | [`salesforce-slack-sdk/`](../salesforce-slack-sdk/index.md) |
+| Microsoft 365 Copilot / Copilotforce surfaces | User-supplied brief *Microsoft Copilot (Ignite 2026) and Salesforce Agentforce/AIforce for Telco, v3, §13*, citing the Microsoft Copilot Blog and the Salesforce newsroom (17 Nov 2026) |
 | Partner decision rules | `partner-ecosystem-agentic-kit/skills/{agentforce-implementation-advisor,headless-mcp-advisor,slack-implementation-advisor}` |

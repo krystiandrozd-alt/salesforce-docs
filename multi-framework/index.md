@@ -2,7 +2,7 @@
 
 Source: [llms-multi-framework.txt](https://developer.salesforce.com/docs/llms-multi-framework.txt).
 
-Full link list extracted programmatically from the live source file (53 page links across 2 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (53 page links across 2 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
 ## Salesforce Multi-Framework (35 pages)
 
@@ -40,7 +40,7 @@ Full link list extracted programmatically from the live source file (53 page lin
 | Style Your Apps | https://developer.salesforce.com/docs/platform/multiframework/guide/mfw-styling.md |
 | Test Your App | https://developer.salesforce.com/docs/platform/multiframework/guide/mfw-testing.md |
 | Use Third-Party JavaScript Libraries | https://developer.salesforce.com/docs/platform/multiframework/guide/mfw-third-party-libraries.md |
-| Embed Your App in Salesforce with Microfrontends (Beta) | https://developer.salesforce.com/docs/platform/multiframework/guide/mfw-ui-embedding.md |
+| Embed Your App in Salesforce with Microfrontends | https://developer.salesforce.com/docs/platform/multiframework/guide/mfw-ui-embedding.md |
 | Salesforce Multi-Framework Overview | https://developer.salesforce.com/docs/platform/multiframework/guide/multiframework-overview.md |
 | Integrate Agentforce Conversation Client | https://developer.salesforce.com/docs/platform/multiframework/guide/reactdev-acc.md |
 

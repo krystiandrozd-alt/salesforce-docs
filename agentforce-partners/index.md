@@ -2,7 +2,7 @@
 
 Source: [llms-agentforce-partners.txt](https://developer.salesforce.com/docs/llms-agentforce-partners.txt).
 
-Full link list extracted programmatically from the live source file (7 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (7 page links across 1 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
 ## Agentforce Partner Onboarding Guide (7 pages)
 

@@ -2,7 +2,7 @@
 
 Source: [llms-platform-apex.txt](https://developer.salesforce.com/docs/llms-platform-apex.txt).
 
-Full link list extracted programmatically from the live source file (2881 page links across 2 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (2880 page links across 2 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
 ## Apex Developer Guide (550 pages)
 
@@ -559,7 +559,7 @@ Full link list extracted programmatically from the live source file (2881 page l
 | OAuth 2.0 Token Exchange Handler Examples | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/token-exchange-handler.md |
 | Apex Versioned Behavior Changes | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/versioned-behavior-changes.md |
 
-## Apex Reference Guide (2331 pages)
+## Apex Reference Guide (2330 pages)
 
 | Page | URL |
 |---|---|
@@ -1368,6 +1368,7 @@ Full link list extracted programmatically from the live source file (2881 page l
 | ConnectApi.ManagedContentChannelCreateRepresentation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-managed-content-channel-create-representatio.md |
 | ConnectApi.ManagedContentChannelUpdateRepresentation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-managed-content-channel-update-representatio.md |
 | ConnectApi.ManagedContentDocumentCloneInput | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-managed-content-document-clone.md |
+| ConnectApi.ManagedContentExternalSourceInput | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-managed-content-external-source.md |
 | ConnectApi.ManagedContentItemsDeleteInput | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-managed-content-items-delete.md |
 | ConnectApi.ManagedContentMetadataCollectionInput | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-managed-content-metadata-collection.md |
 | ConnectApi.ManagedContentProviderInstanceInput | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-managed-content-provider-instance.md |
@@ -2683,8 +2684,6 @@ Full link list extracted programmatically from the live source file (2881 page l
 | ProcessPaymentStatusHandler Interface | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-interface-richmessaging-processpaymentstatushandler.md |
 | ContentDownloadHandlerFactory Interface | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-interface-sfc-contentdownloadhandlerfactory.md |
 | AsyncCartProcessor Interface | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-interface-sfdc-checkout-asynccartprocessor.md |
-| Example Implementation to Associate SurveySubjects with SurveyInvitation and SurveyResponses | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-interface-sfdc-surveys-associate-surveysubject-example.md |
-| SurveyInvitationLinkShortener Interface | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-interface-sfdc-surveys-surveyinvitationlinkshortener.md |
 | MilestoneTriggerTimeCalculator Interface | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-interface-support-milestonetriggertimecalculator.md |
 | Callable Interface | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-interface-system-callable.md |
 | Comparator Interface | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-interface-system-comparator.md |

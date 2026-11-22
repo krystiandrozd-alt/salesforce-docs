@@ -2,9 +2,9 @@
 
 Source: [llms-genai.txt](https://developer.salesforce.com/docs/llms-genai.txt).
 
-Full link list extracted programmatically from the live source file (351 page links across 2 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (364 page links across 2 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
-## Agentforce Developer Guide (193 pages)
+## Agentforce Developer Guide (206 pages)
 
 | Page | URL |
 |---|---|
@@ -85,6 +85,7 @@ Full link list extracted programmatically from the live source file (351 page li
 | Fetch Data | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-patterns-fetch-data.md |
 | Filtering | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-patterns-filtering.md |
 | Multi-Topic Multi-Turn Workflows | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-patterns-multi-turn.md |
+| Response Formats by Connection | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-patterns-render-rules.md |
 | Required Topic Workflow | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-patterns-required-flow.md |
 | Resource References | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-patterns-resource-references.md |
 | System Overrides | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-patterns-system-overrides.md |
@@ -99,12 +100,14 @@ Full link list extracted programmatically from the live source file (351 page li
 | Conditional Expressions | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-ref-expressions.md |
 | Reasoning Instructions | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-ref-instructions.md |
 | Supported Operators | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-ref-operators.md |
+| Render Rules | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-ref-render-rules.md |
 | Tools (Reasoning Actions) | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-ref-tools.md |
 | Utils | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-ref-utils.md |
 | Variables (List) | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-ref-variables-list.md |
 | Variables (System) | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-ref-variables-system.md |
 | Variables (Custom and Linked) | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-ref-variables.md |
 | Reference | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-reference.md |
+| Agentforce Safety Protections | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-safety-protections.md |
 | ElevenLabs Flash v2.5 Voices | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-voice-catalog-flash-2-5.md |
 | ElevenLabs Flash v2 Voices | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-voice-catalog-flash-2.md |
 | Kotoba Voices | https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-voice-catalog-kotoba.md |
@@ -116,6 +119,7 @@ Full link list extracted programmatically from the live source file (351 page li
 | Response Format Examples | https://developer.salesforce.com/docs/ai/agentforce/guide/custom-connections-response-formats.md |
 | Troubleshooting | https://developer.salesforce.com/docs/ai/agentforce/guide/custom-connections-troubleshooting.md |
 | Build a Custom Chat Client with Custom Connections | https://developer.salesforce.com/docs/ai/agentforce/guide/custom-connections.md |
+| Delete an Agent Action That Other Subagents Reference | https://developer.salesforce.com/docs/ai/agentforce/guide/delete-referenced-actions.md |
 | Inline Mode in Enhanced Chat v2 | https://developer.salesforce.com/docs/ai/agentforce/guide/enhanced-chat-inline-mode.md |
 | Summarization Action Errors | https://developer.salesforce.com/docs/ai/agentforce/guide/error-ref-abstractive-summarization.md |
 | Agent Service Reasoner Errors | https://developer.salesforce.com/docs/ai/agentforce/guide/error-ref-agent-svc-reasoner.md |
@@ -178,13 +182,20 @@ Full link list extracted programmatically from the live source file (351 page li
 | Plugins and Skills | https://developer.salesforce.com/docs/ai/agentforce/guide/skills-plugins.md |
 | Example: Configure String Replacement for Agent Username | https://developer.salesforce.com/docs/ai/agentforce/guide/string-replace-example.md |
 | Supported Models | https://developer.salesforce.com/docs/ai/agentforce/guide/supported-models.md |
+| Build Tests with AiTestingDefinition Metadata | https://developer.salesforce.com/docs/ai/agentforce/guide/testing-api-agentforce-build-tests.md |
+| Run Tests with Agentforce Testing Connect API | https://developer.salesforce.com/docs/ai/agentforce/guide/testing-api-agentforce-connect.md |
+| Get Started with Agentforce Testing API | https://developer.salesforce.com/docs/ai/agentforce/guide/testing-api-agentforce-get-started.md |
+| Turn-Level Testing Workflow | https://developer.salesforce.com/docs/ai/agentforce/guide/testing-api-agentforce-turn-level.md |
+| Authentication | https://developer.salesforce.com/docs/ai/agentforce/guide/testing-api-auth.md |
 | Build Tests in Metadata API | https://developer.salesforce.com/docs/ai/agentforce/guide/testing-api-build-tests.md |
 | Deploy and Run Tests in the Command Line | https://developer.salesforce.com/docs/ai/agentforce/guide/testing-api-cli.md |
 | Run Tests in Connect API | https://developer.salesforce.com/docs/ai/agentforce/guide/testing-api-connect.md |
 | Considerations | https://developer.salesforce.com/docs/ai/agentforce/guide/testing-api-considerations.md |
+| Conversational and Voice Testing Workflow | https://developer.salesforce.com/docs/ai/agentforce/guide/testing-api-conversational.md |
 | Refine Test Cases with Custom Evaluation Criteria | https://developer.salesforce.com/docs/ai/agentforce/guide/testing-api-custom-evaluation-criteria.md |
 | Create Custom Scorers | https://developer.salesforce.com/docs/ai/agentforce/guide/testing-api-custom-scorers.md |
 | Get Started | https://developer.salesforce.com/docs/ai/agentforce/guide/testing-api-get-started.md |
+| Legacy Testing API | https://developer.salesforce.com/docs/ai/agentforce/guide/testing-api-legacy.md |
 | Custom Scorer Invocable Actions | https://developer.salesforce.com/docs/ai/agentforce/guide/testing-api-scorer-actions.md |
 | Use Test Results to Improve Your Agent | https://developer.salesforce.com/docs/ai/agentforce/guide/testing-api-use-results.md |
 | Test Agents Using Testing API | https://developer.salesforce.com/docs/ai/agentforce/guide/testing-api.md |
@@ -198,8 +209,10 @@ Full link list extracted programmatically from the live source file (351 page li
 | Tooling Objects | https://developer.salesforce.com/docs/ai/agentforce/references/agents-metadata-tooling/agents-tooling.md |
 | All Classes | https://developer.salesforce.com/docs/ai/agentforce/references/citations/citations-reference.md |
 | All Classes | https://developer.salesforce.com/docs/ai/agentforce/references/models-apex-api/models-apex-reference.md |
-| Connect API Resources | https://developer.salesforce.com/docs/ai/agentforce/references/testing-api/testing-connect-reference.md |
-| Metadata API Resources | https://developer.salesforce.com/docs/ai/agentforce/references/testing-api/testing-metadata-reference.md |
+| Agentforce Testing Connect API | https://developer.salesforce.com/docs/ai/agentforce/references/testing-api/testing-agentforce-connect-reference.md |
+| Agentforce Testing Metadata API | https://developer.salesforce.com/docs/ai/agentforce/references/testing-api/testing-agentforce-metadata-reference.md |
+| Connect API (Legacy) | https://developer.salesforce.com/docs/ai/agentforce/references/testing-api/testing-connect-reference.md |
+| Metadata API (Legacy) | https://developer.salesforce.com/docs/ai/agentforce/references/testing-api/testing-metadata-reference.md |
 | Summary | https://developer.salesforce.com/docs/ai/agentforce/references/testing-api/testing-reference-summary.md |
 
 ## Agentforce Mobile SDK (158 pages)

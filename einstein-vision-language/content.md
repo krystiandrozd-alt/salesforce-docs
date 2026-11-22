@@ -10,7 +10,8 @@ Section breakdown:
 *Source: [`llms-einstein-vision-language.txt`](https://developer.salesforce.com/docs/llms-einstein-vision-language.txt) — official aggregated index (developer doc page), overview section.*
 
 
-*Last refreshed 2026-11-06: 48 pages in 1 sections (counts from the live source).*
+
+*Last refreshed 2026-11-22: 48 pages in 1 sections (counts from the live source).*
 
 ## Extraction notes
 

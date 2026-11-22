@@ -2,9 +2,9 @@
 
 Source: [llms-marketing-cloud-mobilepush.txt](https://developer.salesforce.com/docs/llms-marketing-cloud-mobilepush.txt).
 
-Full link list extracted programmatically from the live source file (607 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (618 page links across 1 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
-## Salesforce Engagement SDK (607 pages)
+## Salesforce Engagement SDK (618 pages)
 
 | Page | URL |
 |---|---|
@@ -31,7 +31,7 @@ Full link list extracted programmatically from the live source file (607 page li
 | Installation | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/flutter-install-and-configure.md |
 | Migration Checklist | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/flutter-migration-checklist.md |
 | Flutter Unified Plugin | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/flutter-setup.md |
-| Unified Platform Support | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/hybrid-platform-support-for-unified-mobile-sdk.md |
+| Hybrid Platform Support | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/hybrid-platform-support-for-unified-mobile-sdk.md |
 | Installation | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/install-and-configure.md |
 | Analytics on Android | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_analytics_android_implement.md |
 | Track Cart Contents on Android | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_analytics_android_recommendations_integrate_cart_track.md |
@@ -172,13 +172,16 @@ Full link list extracted programmatically from the live source file (607 page li
 | Upgrade Location Messaging on Android | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_android_v10_location_messaging.md |
 | Upgrade Contact Registration on Android | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_android_v10_register_contacts.md |
 | Upgrade Runtime Toggles on Android | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_android_v10_runtime_toggles.md |
-| Upgrade Android to Version 10 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_android_v10.md |
+| Upgrade Android to SDK Version 10 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_android_v10.md |
 | Upgrade In-App Messaging on Android | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_android_v11_in_app_messaging.md |
 | Update Imports on Android | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_android_v11_update_imports.md |
-| Upgrade Android to Version 11 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_android_v11.md |
-| Upgrade Android to Version 8.2 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_android_v8_2.md |
-| Upgrade Android to Version 8 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_android_v8.md |
-| Upgrade Android to Version 9 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_android_v9.md |
+| Upgrade Android to SDK Version 11 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_android_v11.md |
+| Upgrade Inbox Messaging on Android | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_android_v12_inbox_messaging.md |
+| Update Imports on Android | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_android_v12_update_imports.md |
+| Upgrade Android to SDK Version 12 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_android_v12.md |
+| Upgrade Android to SDK Version 8.2 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_android_v8_2.md |
+| Upgrade Android to SDK Version 8 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_android_v8.md |
+| Upgrade Android to SDK Version 9 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_android_v9.md |
 | Upgrade Analytics on iOS | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_ios_v10_analytics.md |
 | Upgrade CocoaPods Configuration on iOS | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_ios_v10_cocoapods.md |
 | Upgrade Contact Attributes on iOS | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_ios_v10_contact_attributes.md |
@@ -188,14 +191,18 @@ Full link list extracted programmatically from the live source file (607 page li
 | Upgrade Location Messaging on iOS | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_ios_v10_location_messaging.md |
 | Upgrade Contact Registration on iOS | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_ios_v10_register_contacts.md |
 | Upgrade Runtime Toggles on iOS | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_ios_v10_runtime_toggles.md |
-| Upgrade iOS to Version 10 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_ios_v10.md |
+| Upgrade iOS to SDK Version 10 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_ios_v10.md |
 | Upgrade In-App Messaging on iOS | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_ios_v11_in_app_messaging.md |
 | Update Imports on iOS | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_ios_v11_update_imports.md |
-| Upgrade iOS to Version 11 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_ios_v11.md |
-| Upgrade iOS to Version 8 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_ios_v8.md |
-| Upgrade iOS to Version 9 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_ios_v9.md |
+| Upgrade iOS to SDK Version 11 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_ios_v11.md |
+| Upgrade Inbox Messaging on iOS | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_ios_v12_inbox_messaging.md |
+| Update Imports on iOS | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_ios_v12_update_imports.md |
+| Upgrade iOS to SDK Version 12 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_ios_v12.md |
+| Upgrade iOS to SDK Version 8 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_ios_v8.md |
+| Upgrade iOS to SDK Version 9 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_ios_v9.md |
 | Upgrade to SDK Version 10 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_v10.md |
 | Upgrade to SDK Version 11 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_v11.md |
+| Upgrade to SDK Version 12 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_v12.md |
 | Upgrade to SDK Version 8 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_v8.md |
 | Upgrade to SDK Version 9 | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade_v9.md |
 | Upgrade the SDK | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_engagement_upgrade.md |
@@ -213,6 +220,9 @@ Full link list extracted programmatically from the live source file (607 page li
 | In-App Messages on Android | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_next_in-app_messages_android.md |
 | In-App Messages on iOS | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_next_in-app_messages_ios.md |
 | In-App Messages | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_next_in-app_messages.md |
+| Implement Mobile Inbox on Android | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_next_inbox_messages_android.md |
+| Implement Mobile Inbox on iOS | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_next_inbox_messages_ios.md |
+| Mobile Inbox | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_next_inbox_messages.md |
 | Integrate the Android SDK | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_next_integrate_android.md |
 | Add SDK Dependencies with CocoaPods | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_next_integrate_ios_cocoapods.md |
 | Configure the SDK for iOS | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_next_integrate_ios_configure.md |
@@ -231,6 +241,7 @@ Full link list extracted programmatically from the live source file (607 page li
 | Enable Push Notifications | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_next_push_notifications_android_enable.md |
 | Request Runtime Notification Permission | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_next_push_notifications_android_permission_request.md |
 | Push Notifications for Android | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_next_push_notifications_android.md |
+| Manage the App Icon Badge | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_next_push_notifications_ios_badging.md |
 | Enable iOS Push Notifications | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_next_push_notifications_ios_enable.md |
 | Display Interactive Notifications | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_next_push_notifications_ios_interactive_notifications.md |
 | Send Rich Notifications | https://developer.salesforce.com/docs/marketing/mobile-unified-sdk/guide/mc_next_push_notifications_ios_rich_notifications.md |

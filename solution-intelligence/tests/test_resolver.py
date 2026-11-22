@@ -193,8 +193,10 @@ class ResolverTests(unittest.TestCase):
              "predicate": "AVAILABLE_FOR_PURCHASE", "claim_id": "C-DEMO"},
         ])
         rows = Graph(d).resolve("CAP-QUOTE")["alternatives"]
-        by_id = rows[0]["offer_candidate_assessments"]
-        assessment = by_id["OFFER-A"]
+        assessment = next(
+            row["offer_candidate_assessments"]["OFFER-A"]
+            for row in rows if "OFFER-A" in row["offer_candidate_assessments"]
+        )
         self.assertEqual(assessment["candidate_status"], "NOT_CUSTOMER_VALIDATED")
         self.assertIn("OFFER-BASE", assessment["available_from_offer_ids"])
         self.assertIn("ENT-BASE", assessment["eligibility_node_ids"])

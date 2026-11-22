@@ -1,6 +1,6 @@
 # Agent operating contract — Salesforce Pricing Intelligence
 
-Scope: the pricing-intelligence folder only. Do not modify unrelated Salesforce developer documentation.
+Scope: the pricing-intelligence folder only. Do not modify unrelated Salesforce developer documentation. For cross-repository requests also read [the explicit skill routing matrix](../solution-intelligence/docs/skill-routing.md). In ChatGPT, prefer the GitHub-first `sf-pricing-intelligence` for commercial research; `sf-pricing-intelligence-spq-pilot` is experimental and must not run unless a controlled A/B benchmark is explicitly requested. Do not confuse ChatGPT plugin selection with Claude Code project skill installation.
 
 ## Intent and handoff
 - General Salesforce pricing tool request → `sf-pricing-intelligence` unified entry point (selects appropriate specialist and protects unknowns).

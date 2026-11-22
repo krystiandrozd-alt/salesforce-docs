@@ -1,0 +1,181 @@
+{
+  "schema_version": "0.2.0",
+  "analysis_date": "2026-11-22",
+  "scope": {
+    "region": "EU",
+    "product": "Communications Cloud",
+    "currency": "EUR",
+    "unit": "USER",
+    "display_period": "MONTH",
+    "billing": "ANNUAL"
+  },
+  "github": {
+    "repository": "krystiandrozd-alt/salesforce-docs",
+    "default_branch": "master",
+    "default_branch_price_tree_status": "NOT_FOUND",
+    "verified_pricing_branch": "feature/pricing-licensing-knowledge-graph-20261122",
+    "verified_head_sha": "6da8886c2cf2f1aecceb9270398dd98b0673b6e7",
+    "seed_path": "pricing-intelligence/data/seed-eu-2026-11-22.yaml",
+    "seed_version": "0.1.0"
+  },
+  "source_observations": [
+    {
+      "id": "GITHUB_SEED",
+      "url": "https://github.com/krystiandrozd-alt/salesforce-docs/blob/feature/pricing-licensing-knowledge-graph-20261122/pricing-intelligence/data/seed-eu-2026-11-22.yaml",
+      "source_type": "CURATED_HISTORICAL_SEED",
+      "observed_at": "2026-11-22",
+      "crawl_age": "NOT_APPLICABLE",
+      "offers": [
+        {
+          "edition": "Growth",
+          "amount": "325"
+        },
+        {
+          "edition": "Advanced",
+          "amount": "475"
+        }
+      ]
+    },
+    {
+      "id": "EU_PAGE_OLDER",
+      "url": "https://www.salesforce.com/eu/communications/pricing/",
+      "source_type": "OFFICIAL_SALESFORCE_EU_CACHED",
+      "observed_at": "2026-11-22",
+      "crawl_age": "about 3-4 months at evaluation",
+      "offers": [
+        {
+          "edition": "Growth",
+          "amount": "325"
+        },
+        {
+          "edition": "Advanced",
+          "amount": "475"
+        },
+        {
+          "edition": "Agentforce 1 Sales",
+          "amount": "850"
+        },
+        {
+          "edition": "Agentforce 1 Service",
+          "amount": "850"
+        }
+      ]
+    },
+    {
+      "id": "EU_PAGE_NEWER",
+      "url": "https://www.salesforce.com/eu/communications/pricing/?bc=OTH",
+      "source_type": "OFFICIAL_SALESFORCE_EU_INDEXED_VARIANT",
+      "observed_at": "2026-11-22",
+      "crawl_age": "about 1 month at evaluation",
+      "offers": [
+        {
+          "edition": "Growth",
+          "amount": "300"
+        },
+        {
+          "edition": "Advanced",
+          "amount": "450"
+        },
+        {
+          "edition": "Sales Max",
+          "amount": "800"
+        },
+        {
+          "edition": "Service Max",
+          "amount": "800"
+        },
+        {
+          "edition": "Sales & Service Max",
+          "amount": "825",
+          "is_comparison_table_only": true
+        }
+      ]
+    }
+  ],
+  "normalized_facts": [
+    {
+      "offer": "Communications Cloud Growth",
+      "historic_amount": "325",
+      "newer_indexed_amount": "300",
+      "status": "CONFLICTED",
+      "effective_date": "UNKNOWN"
+    },
+    {
+      "offer": "Communications Cloud Advanced",
+      "historic_amount": "475",
+      "newer_indexed_amount": "450",
+      "status": "CONFLICTED",
+      "effective_date": "UNKNOWN"
+    },
+    {
+      "offer": "Communications Cloud Sales Max",
+      "newer_indexed_amount": "800",
+      "status": "SOURCE_VERIFIED",
+      "source_id": "EU_PAGE_NEWER",
+      "effective_date": "UNKNOWN"
+    },
+    {
+      "offer": "Communications Cloud Service Max",
+      "newer_indexed_amount": "800",
+      "status": "SOURCE_VERIFIED",
+      "source_id": "EU_PAGE_NEWER",
+      "effective_date": "UNKNOWN"
+    },
+    {
+      "offer": "Communications Cloud Sales & Service Max",
+      "newer_indexed_amount": "825",
+      "status": "SOURCE_VERIFIED",
+      "source_id": "EU_PAGE_NEWER",
+      "effective_date": "UNKNOWN"
+    }
+  ],
+  "other_observations": [
+    {
+      "offer": "Communications Cloud B2B BSS Suite",
+      "amount": "4000000",
+      "currency": "EUR",
+      "original_unit": "ORG",
+      "display_period": "YEAR",
+      "qualifier": "STARTING_FROM",
+      "source_id": "EU_PAGE_OLDER",
+      "current_validity": "UNKNOWN"
+    },
+    {
+      "offer": "Communications Cloud B2C BSS Suite",
+      "amount": "4000000",
+      "currency": "EUR",
+      "original_unit": "ORG",
+      "display_period": "YEAR",
+      "qualifier": "STARTING_FROM",
+      "source_id": "EU_PAGE_OLDER",
+      "current_validity": "UNKNOWN"
+    }
+  ],
+  "conflict": {
+    "status": "CONFLICTED",
+    "kind": "SOURCE_VARIANT_AND_TEMPORAL_PRICE_DISAGREEMENT",
+    "cannot_infer": [
+      "binding current EU price",
+      "edition rename/supersession between Agentforce 1 and Max",
+      "customer SKU",
+      "customer discount",
+      "contract entitlements"
+    ],
+    "resolution_requirements": [
+      "fresh direct official EU snapshot with timestamp",
+      "official edition transition/price effective-date evidence where relevant",
+      "Salesforce commercial confirmation for quote or applicable Order Form"
+    ]
+  },
+  "execution": {
+    "github_files": "READ",
+    "official_web_sources": "READ_INDEXED_AND_CACHED",
+    "source_reconciliation": "EXECUTED",
+    "pricing_cli": "NOT_APPLICABLE",
+    "repository_unittests": "NOT_RUN_IN_THIS_WORKFLOW",
+    "external_parity": "NOT_RUN",
+    "salesforce_org": "NOT_USED",
+    "artifact_status": "RESEARCH_ONLY"
+  },
+  "note": "The static report captures disagreement, not a binding or guaranteed-current Salesforce quote. Source crawl age is approximate; no effective-date proof."
+}

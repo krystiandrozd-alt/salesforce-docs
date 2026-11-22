@@ -2,7 +2,7 @@
 
 Version: 0.2.1 · 2026-11-22 · **Design contract; a synthetic-only structural pilot exists, but the full commercial resolver is not implemented.**
 
-The runnable [structural pilot](../RESOLVER-QUICKSTART.md) tests a strict subset of this contract. It does not ingest the registries, verify actual licensing or calculate prices.
+The runnable [structural pilot](../RESOLVER-QUICKSTART.md) tests a strict subset of this contract. It supports explicit functional-skill queries, preliminary offer dependency inspection and claim/source impact; however it does not ingest the registries, verify actual licensing, establish customer eligibility or calculate prices. Its `evidence_verified` flag is intentionally false until trusted independent source attestation exists.
 
 ## Contents
 

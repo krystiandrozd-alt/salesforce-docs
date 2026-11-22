@@ -1,0 +1,38 @@
+name: Salesforce Pricing Calculator Tests
+
+on:
+  pull_request:
+    paths:
+      - "pricing-intelligence/**"
+      - ".claude/skills/sf-*/**"
+      - ".github/workflows/sf-pricing-tests.yml"
+  push:
+    paths:
+      - "pricing-intelligence/**"
+      - ".claude/skills/sf-*/**"
+
+permissions:
+  contents: read
+
+jobs:
+  verify-pricing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile calculator and tests
+        run: python -m compileall -q pricing-intelligence/credit_calculator.py pricing-intelligence/tests
+      - name: Run deterministic calculator fixtures
+        run: python -m unittest discover -s pricing-intelligence/tests -v
+      - name: Verify sample output
+        run: |
+          python pricing-intelligence/credit_calculator.py --scenario pricing-intelligence/examples/agentforce-example.json > /tmp/sf-pricing-output.json
+          python - <<'PY'
+          import json
+          d=json.load(open('/tmp/sf-pricing-output.json'))
+          assert d["priced_credits_only"] == "100040"
+          assert d["status"] == "ESTIMATE_NOT_QUOTE"
+          print("sample verified: 100,040 Flex Credits")
+          PY

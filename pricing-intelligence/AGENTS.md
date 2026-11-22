@@ -30,6 +30,15 @@ Scope: the pricing-intelligence folder only. Do not modify unrelated Salesforce 
 9. Research/audit are read-only by default. No procurement, sending, publishing or editing prices without explicit request.
 10. Tests passing means fixture compliance, not independent Salesforce billing/contract parity.
 
+## Agentforce Labs / native Salesforce mode
+
+- **Public pricing and local calculator mode needs no Salesforce CLI, Labs device authentication, Salesforce org or deploy permission.** Do not require or initiate those steps for a general price lookup.
+- If the user explicitly requests a Salesforce-native pricing agent, Agent Script file, org-backed action or deployment, route to `.claude/skills/sf-pricing-agentforce-bridge/SKILL.md` and first read https://labs.agentforce.com/llms.txt and the Claude-specific https://labs.agentforce.com/api/docs/skills.md.
+- For native org tasks, check Salesforce CLI and sfdx-project.json, verify the org with a read-only Organization query and explicit --target-org, and keep raw `sf org list auth --json` and tokens out of chat/logs.
+- Official Claude Code Agentforce lifecycle path uses the Agentforce ADLC plugin, agentforce-generate and agentforce-test; do not mistake local pricing skills for deployment skills.
+- Native Agentforce work requires user authorization before changing org metadata, running live actions or publishing. An authenticated org is not approval to modify it.
+- Audit and comparison: audits/2026-11-22-agentforce-labs-llms-alignment.md. No Salesforce org connection, MCP deployment or Agentforce ADLC execution is claimed.
+
 ## Response requirements
 Answer with: scope, inputs/assumptions, source/version, result, command or artifact, unknowns, and verification status. Keep evidence [VERIFIED], interpretation [INFERRED], gaps [UNKNOWN], disagreements [CONFLICTED].
 

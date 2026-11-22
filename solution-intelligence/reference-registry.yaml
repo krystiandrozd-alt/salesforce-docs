@@ -125,6 +125,14 @@ references:
     path: pricing-intelligence/data/seed-eu-2026-11-22.yaml
     role: historical_candidates
     limits: "Partial dated seed; revalidate each commercial assertion before use."
+  - reference_id: OFFICIAL_HOSTED_MCP_OVERVIEW
+    url: https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html
+    role: primary_technical_source
+    limits: "Source says intended for customers with Flex Credits; not sufficient to price MCP operation."
+  - reference_id: OFFICIAL_AGENTFORCE_EU_CREDITS
+    url: https://www.salesforce.com/eu/agentforce/pricing/
+    role: primary_commercial_source
+    limits: "Public €500 / 100k credits observation; not a specific Hosted MCP usage multiplier."
   - reference_id: OFFICIAL_COMMUNICATIONS_PRICING
     url: https://www.salesforce.com/eu/communications/pricing/
     role: primary_source_candidate

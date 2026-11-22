@@ -9,6 +9,9 @@ resolver_entrypoint: "resolver.py"
 resolver_quickstart: "RESOLVER-QUICKSTART.md"
 resolver_fixture: "examples/wholesale-quote-to-order.synthetic.json"
 resolver_tests: "tests/test_resolver.py"
+skill_routing: "docs/skill-routing.md"
+skill_benchmark_holdouts: "examples/skills-holdout-cases.json"
+skill_benchmark_status: "NOT_EXECUTED"
 reference_resolution: "Paths above are relative to solution-intelligence; paths in each layer are relative to that layer's root. Resolve refs to commit SHAs per run."
 layers:
   technical:

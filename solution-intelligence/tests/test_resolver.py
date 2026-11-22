@@ -143,6 +143,101 @@ class ResolverTests(unittest.TestCase):
         native = [row for row in a if row["implementation_option_id"] == "OPTION-NATIVE"]
         self.assertEqual(native[0]["providing_offer_candidates"]["ENT-BASE"], ["OFFER-BASE"])
 
+    def test_functional_skill_query_routes_only_matching_options(self):
+        d = fixture()
+        d["nodes"].append({"id": "SK-QUOTE", "kind": "functional_skill"})
+        d["edges"].extend([
+            {"id": "S-DELIVERS", "source": "SK-QUOTE", "target": "CAP-QUOTE",
+             "predicate": "DELIVERS", "claim_id": "C-DEMO"},
+            {"id": "S-USED", "source": "OPTION-MCP", "target": "SK-QUOTE",
+             "predicate": "USES_SKILL", "claim_id": "C-DEMO"},
+        ])
+        rows = Graph(d).resolve("SK-QUOTE")["alternatives"]
+        self.assertEqual({row["implementation_option_id"] for row in rows}, {"OPTION-MCP"})
+        self.assertEqual(rows[0]["functional_skill_ids"], ["SK-QUOTE"])
+
+    def test_skill_without_implementation_keeps_capability_unmapped(self):
+        d = fixture()
+        d["nodes"].append({"id": "SK-MISSING-IMPL", "kind": "functional_skill"})
+        d["edges"].append({
+            "id": "SK-DELIVERS-ONLY", "source": "SK-MISSING-IMPL", "target": "CAP-QUOTE",
+            "predicate": "DELIVERS", "claim_id": "C-DEMO",
+        })
+        result = Graph(d).resolve("SK-MISSING-IMPL")
+        self.assertEqual(result["route_status"], "NO_VERIFIED_ROUTE")
+        self.assertEqual(result["coverage"]["unmapped"], ["CAP-QUOTE"])
+
+    def test_verified_claim_label_does_not_bypass_independent_source_gate(self):
+        d = fixture()
+        d["claims"][0]["evidence_status"] = "VERIFIED"
+        d["claims"][0]["evidence_refs"] = [{
+            "url": "https://example.org/fictional-doc",
+            "locator": "paragraph 1",
+            "retrieved_at": "2026-11-22",
+        }]
+        rows = Graph(d).resolve("CAP-QUOTE")["alternatives"]
+        self.assertTrue(all(not x["evidence_verified"] for x in rows))
+        self.assertTrue(any(
+            "Independent source validation unavailable" in gap
+            for row in rows for gap in row["gaps"]
+        ))
+
+    def test_offer_requires_and_eligibility_are_exposed_not_assumed(self):
+        d = fixture()
+        d["edges"].extend([
+            {"id": "O-REQ", "source": "OFFER-A", "target": "OFFER-BASE",
+             "predicate": "REQUIRES", "claim_id": "C-DEMO"},
+            {"id": "O-ELIGIBLE", "source": "OFFER-A", "target": "ENT-BASE",
+             "predicate": "ELIGIBLE_WITH", "claim_id": "C-DEMO"},
+            {"id": "O-ADDON", "source": "OFFER-BASE", "target": "OFFER-A",
+             "predicate": "AVAILABLE_FOR_PURCHASE", "claim_id": "C-DEMO"},
+        ])
+        rows = Graph(d).resolve("CAP-QUOTE")["alternatives"]
+        by_id = rows[0]["offer_candidate_assessments"]
+        assessment = by_id["OFFER-A"]
+        self.assertEqual(assessment["candidate_status"], "NOT_CUSTOMER_VALIDATED")
+        self.assertIn("OFFER-BASE", assessment["available_from_offer_ids"])
+        self.assertIn("ENT-BASE", assessment["eligibility_node_ids"])
+        self.assertTrue(assessment["requirement_routes"])
+        self.assertIn("O-REQ", assessment["dependency_edge_ids"])
+        self.assertIn("O-ELIGIBLE", assessment["dependency_edge_ids"])
+        self.assertIn("O-ADDON", assessment["dependency_edge_ids"])
+
+    def test_offer_prerequisite_cycle_is_blocked(self):
+        d = fixture()
+        d["edges"].extend([
+            {"id": "O-A-REQ", "source": "OFFER-A", "target": "OFFER-B",
+             "predicate": "REQUIRES", "claim_id": "C-DEMO"},
+            {"id": "O-B-REQ", "source": "OFFER-B", "target": "OFFER-A",
+             "predicate": "REQUIRES", "claim_id": "C-DEMO"},
+        ])
+        with self.assertRaisesRegex(GraphError, "commercial offer prerequisite cycle"):
+            Graph(d).resolve("CAP-QUOTE")
+
+    def test_claim_to_process_impact(self):
+        impact = Graph(fixture()).impact("C-CONTEXT")
+        self.assertIn("C-CONTEXT", impact["affected_claim_ids"])
+        self.assertIn("P-Q2O", impact["impacted"]["process"])
+
+    def test_snapshot_to_claim_to_process_impact(self):
+        d = fixture()
+        d["nodes"].append({"id": "SNAP-A", "kind": "source_snapshot"})
+        d["claims"][1]["source_snapshot_ids"] = ["SNAP-A"]
+        impact = Graph(d).impact("SNAP-A")
+        self.assertEqual(impact["affected_claim_ids"], ["C-CONTEXT"])
+        self.assertIn("P-Q2O", impact["impacted"]["process"])
+
+    def test_addon_change_propagates_via_available_for_purchase(self):
+        d = fixture()
+        d["edges"].append({
+            "id": "O-ADDON", "source": "OFFER-BASE", "target": "OFFER-A",
+            "predicate": "AVAILABLE_FOR_PURCHASE", "claim_id": "C-DEMO",
+        })
+        impact = Graph(d).impact("OFFER-A")
+        self.assertIn("OFFER-BASE", impact["impacted"]["commercial_offer"])
+        self.assertIn("P-Q2O", impact["impacted"]["process"])
+
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -41,7 +41,7 @@ class StaticSkillPromptQualityTests(unittest.TestCase):
             live = (ROOT / ".claude/skills" / name / "SKILL.md").read_text(encoding="utf-8")
             proposal = (CANDIDATES / "skills" / name / "SKILL.md").read_text(encoding="utf-8")
             with self.subTest(name=name):
-                self.assertTrue(live.startswith("---\\n"))
+                self.assertTrue(live.startswith('---' + chr(10)))
                 self.assertIn("name: " + name, live)
                 if name == "sf-pricing-agentforce-bridge":
                     self.assertIn("sf config set target-org", live)

@@ -1,0 +1,40 @@
+version: 0.1
+as_of: "2026-11-22"
+purpose: "Source routing / ownership, not a merged corpus"
+layers:
+  technical:
+    repo: "krystiandrozd-alt/salesforce-docs"
+    ref: "master"
+    root: "."
+    entrypoints: ["README.md", "salesforce-platform-docs-content-list.md"]
+    coverage: "54 product-specific indexes and source-linked summaries"
+    priority_for: ["Salesforce platform/product APIs", "technical concepts"]
+    verify_live_for: ["current GA/Beta status", "new capabilities", "security guidance"]
+  headless:
+    repo: "krystiandrozd-alt/headless-toolkit"
+    ref: "master"
+    root: "."
+    entrypoints:
+      - "README.md"
+      - "get-started/content.md"
+      - "headless-experience-layer-hxl-beta/content.md"
+      - "hosted-mcp-servers/content.md"
+      - "multi-framework-microfrontend/content.md"
+    priority_for: ["headless architecture", "HXL", "hosted MCP", "multi-framework", "microfrontend"]
+    verify_live_for: ["beta status", "supported surfaces", "API and MCP security", "licensing implications"]
+  commercial:
+    repo: "krystiandrozd-alt/salesforce-docs"
+    ref: "feature/pricing-licensing-knowledge-graph-20261122"
+    root: "pricing-intelligence"
+    entrypoints:
+      - "AGENTS.md"
+      - "docs/agent-io-contract.md"
+      - "schema/scenario.schema.json"
+    agent_skill: "sf-pricing-intelligence"
+    calculator: "credit_calculator.py"
+    priority_for: ["commercial public list observations", "entitlement analysis", "supported Flex Credit calculation"]
+    verify_live_for: ["price", "units", "buying model", "rate-card validity"]
+evidence_statuses: ["VERIFIED", "INFERRED", "UNKNOWN", "CONFLICTED"]
+unverified_never_zero: true
+contracts_private: true
+default_external_actions: "read-only"

@@ -36,6 +36,16 @@ Run the same 16 prompts on original and pilot under identical Claude Code model,
 
 Block release on any credential exposure, unauthorized org change, invented binding quote, TBA-as-zero, or holdout regression. If the paired runs are missing, label behavioral improvement INCONCLUSIVE.
 
-The private ChatGPT plugin remains at its existing release; Git-based skill changes do not automatically update it. Its proposed revised instructions remain in audit PR #9.
+The original private ChatGPT pricing plugin remains unchanged: https://chatgpt.com/plugins/plugins_6b02de2e09948191b22c8a38645cc902 .
+A **separate private pilot plugin** was created for a clean A/B comparison without overwriting it: https://chatgpt.com/plugins/plugins_6b0310056314819187b100d9b96317a8 .
+The pilot's source is the independently packaged SPQ-reviewed skill and policy snapshot. Neither plugin contains a live GitHub connector or hosted rate calculator; compare only under the same actual tool and source availability.
+
+## Side-by-side ChatGPT plugin benchmark
+
+1. Open the baseline plugin and the pilot plugin separately, with the same model and tool permissions where supported.
+2. Use the same prompts from paired-eval-suite.json, including R01-R12 development cases and H01-H04 holdouts. Keep default prompt wording unchanged between the two plugins.
+3. Capture actual response, source URLs/sections, tool-execution evidence, unpriced items and any unintended Salesforce org behavior for each run.
+4. Grade independently against expected_skill and must_observe. Missing execution or untrusted quote = failure; do not award points merely for repeating safety text.
+5. Record observed cost/latency only if the platform exposes them. Promotion stays blocked while baseline/candidate statuses are NOT_RUN.
 
 **Release state: PILOT BRANCH — CI can pass, but live Claude behavior benchmark and commercial contract validation remain required.**

@@ -2,6 +2,8 @@
 
 **Use in Claude Code on `krystiandrozd-alt/salesforce-docs` when the user requests to implement or extend the pricing graph.** This is a **build workflow**, not a public-price question. Do not execute every stage automatically.
 
+The original `pricing-intelligence/prompts/build-graph.md` remains the detailed acceptance checklist. Do **not** delete its required source cases, negative tests, coverage tracking or safety gates when splitting work into stages. Each stage must cite the matching original acceptance criteria before passing its gate.
+
 ## Context and hard constraints
 
 Read `pricing-intelligence/README.md`, `pricing-intelligence/AGENTS.md`, source registry, seeded facts and prior audit. Reuse the existing calculator, CI, and six specialist skills; preserve unrelated files. Official source of public prices: https://www.salesforce.com/eu/pricing/ and each specific Salesforce product pricing/rate-card page.

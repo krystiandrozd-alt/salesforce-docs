@@ -6,11 +6,11 @@ import unittest
 ROOT = Path(__file__).resolve().parents[2]
 PROJECT = ROOT / 'pricing-intelligence'
 SKILLS = ROOT / '.claude' / 'skills'
-EXPECTED = ('sf-pricing-research', 'sf-license-compare', 'sf-flex-credit-estimate',
-            'sf-pricing-audit', 'sf-pricing-agentforce-bridge')
+EXPECTED = ('sf-pricing-intelligence', 'sf-pricing-research', 'sf-license-compare',
+            'sf-flex-credit-estimate', 'sf-pricing-audit', 'sf-pricing-agentforce-bridge')
 
 class AgentContractTests(unittest.TestCase):
-    def test_all_five_project_skills_have_frontmatter_and_trigger(self):
+    def test_all_six_project_skills_have_frontmatter_and_trigger(self):
         for name in EXPECTED:
             with self.subTest(skill=name):
                 path = SKILLS / name / 'SKILL.md'
@@ -21,6 +21,15 @@ class AgentContractTests(unittest.TestCase):
                 self.assertIsNotNone(match)
                 self.assertIn('name: ' + name, match.group(1))
                 self.assertRegex(match.group(1), r'(?m)^description: .+')
+
+    def test_orchestrator_routes_and_blocks_unpriced_headless(self):
+        content = (SKILLS / 'sf-pricing-intelligence' / 'SKILL.md').read_text(encoding='utf-8').lower()
+        for required in ('sf-pricing-research', 'sf-license-compare',
+                         'sf-flex-credit-estimate', 'sf-pricing-audit',
+                         'sf-pricing-agentforce-bridge', '--list-meters',
+                         'headless', 'tba', 'not_run', 'not a binding quote'):
+            with self.subTest(required=required):
+                self.assertIn(required.lower(), content)
 
     def test_cli_and_agent_docs_exist(self):
         required = ('AGENTS.md', 'CLAUDE.md', 'docs/agent-io-contract.md',

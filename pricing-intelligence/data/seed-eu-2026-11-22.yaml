@@ -1,0 +1,289 @@
+# Salesforce pricing and licensing graph — curated seed
+# Scope: a small verified public-source sample, NOT complete Salesforce pricing
+# Date reviewed: 2026-11-22. Individual web caches may be older.
+version: "0.1.0"
+as_of: "2026-11-22"
+region: EU
+status: CURATED_SAMPLE_NOT_QUOTE
+notes:
+  - "Price amounts and billing units are preserved as published, including USD amounts on EU pages."
+  - "These are price observations rather than confirmed orderable SKUs."
+  - "Missing evidence means UNKNOWN, not FALSE."
+  - "A product marketed as an edition is not assumed to be the technical Salesforce UserLicense."
+
+sources:
+  - id: sf-hub
+    url: https://www.salesforce.com/eu/pricing/
+    observed_at: "2026-11-22"
+    type: OFFICIAL_NAVIGATION_INDEX
+  - id: sf-sales
+    url: https://www.salesforce.com/eu/sales/pricing/
+    observed_at: "2026-11-22"
+    type: OFFICIAL_PRODUCT_PRICING
+  - id: sf-comms
+    url: https://www.salesforce.com/eu/communications/pricing/
+    observed_at: "2026-11-22"
+    type: OFFICIAL_INDUSTRY_PRICING
+  - id: sf-agentforce
+    url: https://www.salesforce.com/eu/agentforce/pricing/
+    observed_at: "2026-11-22"
+    type: OFFICIAL_PRODUCT_PRICING
+  - id: sf-marketing
+    url: https://www.salesforce.com/eu/marketing/pricing/
+    observed_at: "2026-11-22"
+    type: OFFICIAL_PRODUCT_PRICING
+  - id: sf-marketing-intelligence
+    url: https://www.salesforce.com/eu/marketing/analytics/pricing/
+    observed_at: "2026-11-22"
+    type: OFFICIAL_DETAILED_PRODUCT_PRICING
+  - id: sf-data360
+    url: https://www.salesforce.com/eu/data/pricing/
+    observed_at: "2026-11-22"
+    type: OFFICIAL_PRODUCT_PRICING
+
+product_families:
+  - id: family-sales
+    name: Sales Cloud
+  - id: family-comms
+    name: Communications Cloud
+  - id: family-agentforce
+    name: Agentforce
+  - id: family-marketing
+    name: Marketing Cloud
+  - id: family-data360
+    name: Data 360
+
+offers:
+  - id: offer-sales-core
+    family_id: family-sales
+    name: Sales Cloud Core
+    offer_type: EDITION
+    sku: null
+  - id: offer-sales-max
+    family_id: family-sales
+    name: Sales Cloud Max
+    offer_type: EDITION
+    sku: null
+  - id: offer-comms-growth
+    family_id: family-comms
+    name: Communications Cloud Growth
+    offer_type: EDITION
+    sku: null
+  - id: offer-comms-advanced
+    family_id: family-comms
+    name: Communications Cloud Advanced
+    offer_type: EDITION
+    sku: null
+  - id: offer-comms-b2b-bss
+    family_id: family-comms
+    name: Communications Cloud B2B BSS Suite
+    offer_type: ORG_SUITE
+    sku: null
+  - id: offer-agentforce-flex
+    family_id: family-agentforce
+    name: Agentforce Flex Credits
+    offer_type: CREDIT_PACK
+    sku: null
+  - id: offer-agentforce-conversation
+    family_id: family-agentforce
+    name: Agentforce Conversations
+    offer_type: CONSUMPTION
+    sku: null
+  - id: offer-marketing-next-growth
+    family_id: family-marketing
+    name: Marketing Cloud Next Growth Edition
+    offer_type: EDITION
+    sku: null
+  - id: offer-marketing-intelligence
+    family_id: family-marketing
+    name: Marketing Intelligence
+    offer_type: PRODUCT
+    sku: null
+  - id: offer-data360-profiles
+    family_id: family-data360
+    name: Data 360 Profiles
+    offer_type: PROFILE_PACKAGE
+    sku: null
+
+capabilities:
+  - id: cap-slack-business-plus
+    name: Slack Business+
+  - id: cap-tableau-next
+    name: Tableau Next
+  - id: cap-revenue-cloud-advanced-comms
+    name: Revenue Cloud Advanced for Communications
+
+price_observations:
+  - id: price-sales-core-eur
+    offer_id: offer-sales-core
+    amount: 195
+    currency: EUR
+    unit: USER
+    unit_quantity: 1
+    display_period: MONTH
+    billing_cadence: ANNUAL
+    qualifier: PUBLIC_LIST_PRICE
+    source_id: sf-sales
+    source_section: Core
+    verification: SOURCE_VERIFIED
+  - id: price-sales-max-eur
+    offer_id: offer-sales-max
+    amount: 550
+    currency: EUR
+    unit: USER
+    unit_quantity: 1
+    display_period: MONTH
+    billing_cadence: ANNUAL
+    qualifier: PUBLIC_LIST_PRICE
+    source_id: sf-sales
+    source_section: Max
+    verification: SOURCE_VERIFIED
+  - id: price-comms-growth-eur
+    offer_id: offer-comms-growth
+    amount: 325
+    currency: EUR
+    unit: USER
+    unit_quantity: 1
+    display_period: MONTH
+    billing_cadence: ANNUAL
+    qualifier: PUBLIC_LIST_PRICE
+    source_id: sf-comms
+    source_section: Communications Cloud Growth
+    verification: SOURCE_VERIFIED
+  - id: price-comms-advanced-eur
+    offer_id: offer-comms-advanced
+    amount: 475
+    currency: EUR
+    unit: USER
+    unit_quantity: 1
+    display_period: MONTH
+    billing_cadence: ANNUAL
+    qualifier: PUBLIC_LIST_PRICE
+    source_id: sf-comms
+    source_section: Communications Cloud Advanced
+    verification: SOURCE_VERIFIED
+  - id: price-comms-b2b-bss-eur
+    offer_id: offer-comms-b2b-bss
+    amount: 4000000
+    currency: EUR
+    unit: ORG
+    unit_quantity: 1
+    display_period: YEAR
+    billing_cadence: UNKNOWN
+    qualifier: STARTING_FROM
+    source_id: sf-comms
+    source_section: Communications Cloud B2B BSS Suite
+    verification: SOURCE_VERIFIED
+  - id: price-agentforce-flex-eur
+    offer_id: offer-agentforce-flex
+    amount: 500
+    currency: EUR
+    unit: CREDIT
+    unit_quantity: 100000
+    display_period: ONE_TIME_PACKAGE
+    billing_cadence: CONTRACT_DEPENDENT
+    qualifier: PUBLIC_LIST_PRICE
+    source_id: sf-agentforce
+    source_section: Flex Credits
+    verification: SOURCE_VERIFIED
+  - id: price-agentforce-conversation-eur
+    offer_id: offer-agentforce-conversation
+    amount: 2
+    currency: EUR
+    unit: CONVERSATION
+    unit_quantity: 1
+    display_period: USAGE
+    billing_cadence: PRE_PURCHASE
+    qualifier: PUBLIC_LIST_PRICE
+    source_id: sf-agentforce
+    source_section: Conversations
+    verification: SOURCE_VERIFIED
+  - id: price-marketing-next-growth-eur
+    offer_id: offer-marketing-next-growth
+    amount: 1500
+    currency: EUR
+    unit: ORG
+    unit_quantity: 1
+    display_period: MONTH
+    billing_cadence: ANNUAL
+    qualifier: PUBLIC_LIST_PRICE
+    source_id: sf-marketing
+    source_section: Marketing Cloud Next Growth Edition
+    verification: SOURCE_VERIFIED
+  - id: price-data360-profiles-usd
+    offer_id: offer-data360-profiles
+    amount: 240
+    currency: USD
+    unit: PROFILE
+    unit_quantity: 1000
+    display_period: YEAR
+    billing_cadence: UNKNOWN
+    qualifier: PUBLIC_LIST_PRICE
+    source_id: sf-data360
+    source_section: Comparison Table
+    verification: SOURCE_VERIFIED
+  - id: price-marketing-intelligence-summary-conflicted
+    offer_id: offer-marketing-intelligence
+    amount: 10000
+    currency: EUR
+    unit: USER
+    unit_quantity: 1
+    display_period: MONTH
+    billing_cadence: ANNUAL
+    qualifier: PUBLIC_LIST_PRICE
+    source_id: sf-marketing
+    source_section: Marketing Intelligence
+    verification: CONFLICTED
+  - id: price-marketing-intelligence-detail-conflicted
+    offer_id: offer-marketing-intelligence
+    amount: 10000
+    currency: EUR
+    unit: ORG
+    unit_quantity: 1
+    display_period: MONTH
+    billing_cadence: ANNUAL
+    qualifier: PUBLIC_LIST_PRICE
+    source_id: sf-marketing-intelligence
+    source_section: Marketing Intelligence
+    verification: CONFLICTED
+
+relationships:
+  - id: edge-sales-core-slack
+    from: offer-sales-core
+    predicate: INCLUDES
+    to: cap-slack-business-plus
+    source_id: sf-sales
+    source_section: Core
+    verification: SOURCE_VERIFIED
+  - id: edge-sales-core-tableau
+    from: offer-sales-core
+    predicate: INCLUDES
+    to: cap-tableau-next
+    source_id: sf-sales
+    source_section: Core
+    verification: SOURCE_VERIFIED
+  - id: edge-comms-advanced-rca
+    from: offer-comms-advanced
+    predicate: INCLUDES
+    to: cap-revenue-cloud-advanced-comms
+    source_id: sf-comms
+    source_section: Communications Cloud Advanced
+    verification: SOURCE_VERIFIED
+
+conflicts:
+  - id: conflict-marketing-intelligence-billing-unit
+    kind: PRICING_UNIT_DISAGREEMENT
+    offer_id: offer-marketing-intelligence
+    price_observation_ids:
+      - price-marketing-intelligence-summary-conflicted
+      - price-marketing-intelligence-detail-conflicted
+    resolution: UNRESOLVED
+    rule: "Exclude both observations from firm calculations until commercial clarification."
+
+validation_requirements:
+  must_reference_sources: true
+  disallow_invented_skus: true
+  disallow_unsourced_fx_conversion: true
+  do_not_treat_missing_as_false: true
+  do_not_treat_optional_as_included: true
+  preserve_historical_observations: true

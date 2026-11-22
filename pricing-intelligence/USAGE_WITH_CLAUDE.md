@@ -1,6 +1,6 @@
 # Salesforce pricing intelligence — Claude Code quick start
 
-> **Current status (2026-11-22):** Four project-scoped Claude skills, a limited sourced price seed, a machine-readable 2026-11-03 Flex Credit rate card, and a deterministic Python credit-estimation CLI are committed to draft PR #8. No UI, comprehensive product collector, customer SKU book, or negotiated pricing module has been implemented. GitHub Actions run https://github.com/krystiandrozd-alt/salesforce-docs/actions/runs/45020898343 succeeded (13/13 fixture tests); live Salesforce calculator parity and contract applicability remain unverified.
+> **Current status (2026-11-22):** Five project-scoped Claude skills, a limited sourced price seed, a machine-readable 2026-11-03 Flex Credit rate card, and a deterministic Python credit-estimation CLI are committed to draft PR #8. No UI, comprehensive product collector, customer SKU book, or negotiated pricing module has been implemented. GitHub Actions run https://github.com/krystiandrozd-alt/salesforce-docs/actions/runs/45020898343 succeeded (13/13 fixture tests); live Salesforce calculator parity and contract applicability remain unverified.
 
 ## Use in Claude Code
 
@@ -13,6 +13,7 @@
 | /sf-license-compare | Build cross-cloud licensing matrix, identify bundle inclusions, prerequisites and unknowns |
 | /sf-flex-credit-estimate | Turn monthly Agentforce / Data 360 usage into source-versioned Flex Credit estimates |
 | /sf-pricing-audit | Audit a price assertion, a comparison or calculator result against official sources and executable tests |
+| /sf-pricing-agentforce-bridge | Only for a requested Salesforce-native Agentforce agent: verify CLI/org, use official ADLC plugin, build/test Agent Script with authorization |
 
 Example prompts:
 - /sf-pricing-research Compare Sales Cloud Core and Max EU prices and included capabilities, citing original sections.
@@ -47,6 +48,17 @@ Data 360 rows means individual rows (not millions of rows): a quantity of "10000
 - The EU public amount of EUR 500/100,000 credits is an *equivalent list rate*, not proof of pack rounding, prepaid purchasing, inclusion limits or negotiated customer terms.
 - Do not add Conversation pricing to Flex Credit usage in a single calculator scenario without checking product and org eligibility separately.
 - This CLI does not price seat licenses, Data 360 profile purchase models, platform login credits, services, tax, migrations or implementation.
+
+
+## Agentforce Labs guidance — separate mode
+
+The official [Agentforce Labs `llms.txt`](https://labs.agentforce.com/llms.txt) guides **Salesforce org-bound Agentforce development**, not public Salesforce price research. No Salesforce org login, Salesforce CLI setup, LabBox or native Agentforce plugin is needed for the four public-price/local-calculator workflows.
+
+If asked to author, deploy or test an Agentforce agent in a Salesforce org, use `/sf-pricing-agentforce-bridge`, follow the official [Salesforce Development Skills guide](https://labs.agentforce.com/api/docs/skills.md) and prefer `agentforce-adlc@claude-plugins-official` for Claude Code native Agentforce lifecycle. Verify existing `sf` CLI and sfdx-project.json, authenticate privately, confirm the intended org with a read-only Organization query and explicit `--target-org` before any changes; do not disclose auth JSON or credentials.
+
+Agent Script makes deterministic action chains possible, but the current credit CLI is **not automatically available as a native Agentforce action or an MCP service**. A separate controlled adapter and live org validation are required. Connecting an org is not authorization to deploy.
+
+See [Labs alignment audit](audits/2026-11-22-agentforce-labs-llms-alignment.md) and [agent input/output contract](docs/agent-io-contract.md).
 
 ## Planned architecture improvements (priority order)
 

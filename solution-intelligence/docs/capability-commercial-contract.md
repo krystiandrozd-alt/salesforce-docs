@@ -1,6 +1,8 @@
 # Process, capability, license and billing contract
 
-Version: 0.2.0 · 2026-11-22 · **Design contract; the relationship resolver is not implemented.**
+Version: 0.2.1 · 2026-11-22 · **Design contract; a synthetic-only structural pilot exists, but the full commercial resolver is not implemented.**
+
+The runnable [structural pilot](../RESOLVER-QUICKSTART.md) tests a strict subset of this contract. It does not ingest the registries, verify actual licensing or calculate prices.
 
 ## Contents
 

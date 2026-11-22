@@ -1,19 +1,16 @@
 ---
 name: sf-pricing-research
-description: Research and verify current public Salesforce prices, editions, add-ons, billing units and evidence from official Salesforce sources; use for product pricing lookups.
+description: Find or verify current published Salesforce product and edition prices, region-specific billing terms and rate-card facts. Do not use for customer-specific signed quotes or org metadata changes.
 ---
 
-# Salesforce Pricing Research
+# Salesforce Published Pricing — Research (SPQ pilot)
 
-Use to answer what Salesforce publishes, NOT to generate a customer quote.
+Read shared evidence and output rules from pricing-intelligence/AGENTS.md.
 
-1. Read pricing-intelligence/README.md and pricing-intelligence/data/seed-eu-2026-11-22.yaml. This seed is an incomplete historical sample.
-2. Establish region, currency, product, edition, and relevant date. Go from https://www.salesforce.com/eu/pricing/ to the specific product pricing page and any official detailed page or rate card. Cite the precise edition/section.
-3. Record offer, amount, original currency, pricing qualifier (starting-from/contact-sales/fixed), unit denominator, display period, payment cadence, region, bundle contents, allowances, purchase model and source date separately. UNKNOWN is not zero.
-4. Recheck high-impact amounts on the live page rather than relying exclusively on the seed. When public sources disagree, preserve competing observations as CONFLICTED; do not silently select one.
-5. Do not turn marketing editions into technical licenses or invent orderable SKUs. Do not convert USD on EU pages to EUR unless a sourced FX conversion is explicitly requested.
-6. Remain read-only unless the user explicitly asks to update data. When updating, add a timestamped sourced observation without destroying history.
+1. Scope named product, edition, region, date, and currency. If region absent, label any EU assumption rather than presenting it as the user's contract region.
+2. Open the **exact** official product-specific Salesforce pricing page and linked detail/rate card, not just the EU pricing hub. Record URL, section, observed timestamp and product context.
+3. Extract `offer`, `amount`, `original_currency`, `unit_quantity`, `unit`, `display_period`, `billing_cadence`, `buying_model`, `qualifier` (FROM/FIXED/CONTACT_SALES), and any verified included entitlements. Never infer a technical license or SKU.
+4. Compare with stored observations for temporal or denominator conflict. A historical YAML entry is not current evidence. Preserve both conflicting observations; label CONFLICTED.
+5. If access is blocked or rate absent, say UNKNOWN; if a source contains USD on an EU URL, retain USD. Do not silently convert or produce a customer quote.
 
-Return: Offer | Published price | Unit and term | Included vs optional | Source/section | Checked date | Evidence status.
-
-Keep negotiated customer terms outside the public Git repository. Mark all public pricing as indicative rather than a binding quote.
+**Output:** table of offer/price/unit/terms/source and status; then a short section for unresolved eligibility, conflict, or missing coverage. Only update data on explicit request, append evidence rather than overwriting history.

@@ -1,0 +1,28 @@
+name: Solution Intelligence structural resolver
+on:
+  pull_request:
+    paths:
+      - "solution-intelligence/**"
+      - ".github/workflows/solution-intelligence-resolver.yml"
+  push:
+    paths:
+      - "solution-intelligence/**"
+      - ".github/workflows/solution-intelligence-resolver.yml"
+jobs:
+  synthetic-graph-contract:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run synthetic structural contract tests
+        run: python -m unittest discover -s solution-intelligence/tests -v
+      - name: Verify partial status and no invented price
+        run: |
+          python solution-intelligence/resolver.py \
+            --graph solution-intelligence/examples/wholesale-quote-to-order.synthetic.json \
+            --resolve P-Q2O --context '{"region":"EU","as_of":"2026-11-22"}' > /tmp/resolve.json
+          python -c 'import json; d=json.load(open("/tmp/resolve.json")); assert d["route_status"] == "PARTIAL"; assert d["commercial_total"] is None'

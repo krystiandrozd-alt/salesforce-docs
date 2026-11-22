@@ -30,6 +30,9 @@ Read `pricing-intelligence/workflows/github-first/WORKFLOW.md` before use.
    variants. Label `CONFLICTED` where the effective price or edition taxonomy
    is unresolved. Newer crawl timestamp is a clue, NOT a contract effective date.
 
+7. Any missing or non-applicable public evidence is `UNKNOWN`, not FALSE or zero.
+   Customer price applicability remains `UNKNOWN` until verified against an approved Order Form.
+
 ## Routing
 
 - PRICE: return edition, original currency, unit, cadence, URL/section and conflict status.

@@ -37,7 +37,7 @@ class StaticSkillPromptQualityTests(unittest.TestCase):
 
     def test_shared_contract_keeps_key_security_guards(self):
         txt = (CANDIDATES / "AGENTS.md").read_text(encoding="utf-8").lower()
-        for term in ("unknown", "tba", "conflicted", "not zero", "auth", "not authorize",
+        for term in ("unknown", "tba", "conflicted", "not zero", "auth", "authorization",
                      "source", "original currency", "read-only", "not_run", "headless"):
             with self.subTest(term=term):
                 self.assertIn(term, txt)

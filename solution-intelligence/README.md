@@ -28,6 +28,7 @@ Before mapping a process, function or functional skill to commercial requirement
 
 | Reference | Purpose |
 | --- | --- |
+| [Skill routing and prerequisites](docs/skill-routing.md) | Ownership, GitHub-first production pricing versus SPQ pilot, upstream Salesforce Skills access gates. |
 | [Source manifest](source-manifest.yaml) and [reference registry](reference-registry.yaml) | Canonical ownership, exact repository paths and per-run commit resolution. |
 | [Capability and commercial contract](docs/capability-commercial-contract.md) | Typed many-to-many relations, prerequisites, evidence, billing and output definitions. |
 | [Process resolver prompt](prompts/resolve-process-commercial.md) | Reusable Claude/agent workflow from process or skill to entitlement, package and billing. |
@@ -36,7 +37,7 @@ Before mapping a process, function or functional skill to commercial requirement
 
 The required trace is process/step → capability → implementation/functional skill → exact technical feature → required entitlement/license → providing offer/package → applicable billing metric, rate and allowance. Each relation has its own evidence and applicability. Keep authoring/delivery skills distinct from runtime functional skills, commercial offers distinct from managed packages, and permissions distinct from purchased rights.
 
-The target resolver must support forward search and reverse impact lookup, explicit `ALL_OF` / `ANY_OF` prerequisites, existing-entitlement comparison and an evidence path for every output row. Semantic search finds candidates; typed, scoped relationships establish supported conclusions. Unknown licensing, inclusion or billing remains unknown.
+The target production resolver must support forward search and reverse impact lookup, explicit `ALL_OF` / `ANY_OF` prerequisites, existing-entitlement comparison and an evidence path for every output row. The current pilot now accepts process, step, capability **and functional-skill IDs**, but returns candidate offers, not verified customer orderability. Semantic search finds candidates; typed, scoped relationships establish supported conclusions. Unknown licensing, inclusion or billing remains unknown.
 
 **Implementation status:** the contract, source routing and prompts are present. A **synthetic-data structural resolver with 16 automated tests** is now available at [resolver.py](resolver.py); see [quickstart](RESOLVER-QUICKSTART.md). A verified/ingested commercial graph, complete licensing/allowance logic, cross-repository runtime adapters and an MCP/API endpoint are **not** implemented. The existing limited Flex Credit CLI is a separate working component.
 

@@ -1,6 +1,6 @@
 ---
 name: sf-flex-credit-estimate
-description: Produce source-versioned Agentforce and Data 360 Flex Credit estimates using the repository's deterministic Python engine. Do not apply to Conversations-only billing, technical license grants or unsupported Headless rates.
+description: Produce source-versioned Agentforce and Data 360 Flex Credit estimates using the repository's deterministic Python engine. Do not use for Conversations-only billing, technical license grants, unsupported Headless rates, or customer billing invoices.
 ---
 
 # Flex Credit Estimation (candidate)

@@ -1,11 +1,17 @@
 ---
 name: sf-pricing-agentforce-bridge
-description: Build or integrate Salesforce pricing intelligence as an Agentforce agent in an explicitly authorized Salesforce org; use Salesforce CLI, ADLC skills, and Agent Script only for org-bound Agentforce work.
+description: Build or integrate Salesforce pricing intelligence as an Agentforce agent in an explicitly authorized Salesforce org; use Salesforce CLI, ADLC skills, and Agent Script only for org-bound Agentforce work. Do not use for public price research, offline credit estimates or licensing comparisons.
 ---
 
 # Salesforce Pricing → Agentforce Bridge
 
 **Trigger only** when the user requests native Salesforce Agentforce agent authoring, extension, deployment, testing, or org-backed actions. Do NOT use this skill for public Salesforce price research, local Flex Credit calculation or offline license comparison.
+
+## Compatibility with maintained Salesforce skills
+
+Use `forcedotcom/sf-skills` `agentforce-generate` and `agentforce-test` only for native Agent Script work. The upstream skill may instruct `sf config set target-org`; do **not** follow that side effect here. Preserve the user's default org and use explicit `--target-org <alias>` on supported org-bound commands. If the requested action cannot be completed without changing defaults, stop and request specific approval. Check supported flags with the installed CLI and keep authentication JSON/token output private; upstream generic examples do not override this project's credential controls.
+
+`platform-docs-get` can supply technical Salesforce documentation, but not evidence of Salesforce commercial price applicability or proof that a rate-card PDF has been reconciled. Do not install all official Salesforce skills merely for public pricing questions.
 
 ## Read authoritative guidance
 

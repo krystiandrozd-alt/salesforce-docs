@@ -26,8 +26,8 @@ class AgentContractTests(unittest.TestCase):
         content = (SKILLS / 'sf-pricing-intelligence' / 'SKILL.md').read_text(encoding='utf-8').lower()
         for required in ('sf-pricing-research', 'sf-license-compare',
                          'sf-flex-credit-estimate', 'sf-pricing-audit',
-                         'sf-pricing-agentforce-bridge', '--list-meters',
-                         'headless', 'tba', 'not_run', 'not a binding quote'):
+                         'sf-pricing-agentforce-bridge', 'not_run',
+                         'unpriced rate', 'no explicit org authorization'):
             with self.subTest(required=required):
                 self.assertIn(required.lower(), content)
 
@@ -48,8 +48,30 @@ class AgentContractTests(unittest.TestCase):
 
     def test_owning_skill_does_not_require_salesforce_org_for_public_pricing(self):
         content = (PROJECT / 'AGENTS.md').read_text(encoding='utf-8').lower()
-        self.assertIn('public pricing and local calculator mode needs no salesforce cli', content)
-        self.assertIn('not approval to modify', content)
+        self.assertIn('no salesforce org login', content)
+        self.assertIn('connection ≠ authorization', content)
+        self.assertIn('headless platform interaction', content)
+
+    def test_upstream_sf_skills_do_not_mutate_default_org(self):
+        content = (SKILLS / 'sf-pricing-agentforce-bridge' / 'SKILL.md').read_text(encoding='utf-8').lower()
+        self.assertIn('sf config set target-org', content)
+        self.assertIn('do **not** follow', content)
+        self.assertIn('--target-org', content)
+        self.assertIn('keep authentication json/token output private', content)
+
+    def test_staged_build_prompt_preserves_original_acceptance_criteria(self):
+        original = (PROJECT / 'prompts' / 'build-graph.md').read_text(encoding='utf-8')
+        staged = (PROJECT / 'prompts' / 'build-graph-staged.md').read_text(encoding='utf-8')
+        self.assertIn('Live evidence cases that MUST be tested', original)
+        self.assertIn('prompts/build-graph.md', staged)
+        self.assertIn('Do **not** delete its required source cases', staged)
+        self.assertIn('Gate A', staged)
+        self.assertIn('Gate C', staged)
+
+    def test_research_uses_sf_docs_for_technical_not_commercial_facts(self):
+        content = (SKILLS / 'sf-pricing-research' / 'SKILL.md').read_text(encoding='utf-8').lower()
+        self.assertIn('platform-docs-get', content)
+        self.assertIn('does not validate pricing pdfs', content)
 
 if __name__ == '__main__':
     unittest.main()

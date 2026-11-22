@@ -1,24 +1,16 @@
 ---
 name: sf-flex-credit-estimate
-description: Calculate reproducible Agentforce and Data 360 Flex Credit usage estimates from versioned rate data; use for Salesforce AI consumption forecasts and scenarios.
+description: Produce source-versioned Agentforce and Data 360 Flex Credit estimates using the repository's deterministic Python engine. Do not use for Conversations-only billing, technical license grants, unsupported Headless rates, or customer billing invoices.
 ---
 
-# Salesforce Flex Credit Estimate
+# Flex Credit Estimation (SPQ pilot)
 
-Use deterministic calculation software rather than doing rate-card arithmetic in free text.
+Read pricing-intelligence/AGENTS.md and docs/agent-io-contract.md. Calculation is deterministic software; the LLM chooses assumptions, not arithmetic.
 
-1. Read pricing-intelligence/data/rate-card-2026-11-03.json and pricing-intelligence/calculator/README.md. Official rate-card PDF: https://www.salesforce.com/en-us/wp-content/uploads/sites/4/assets/pdf/agentforce/Flex-Credits-Rate-Card-11.3.2026.pdf . Rates require contract applicability and visual-table review before commercial use.
-2. Record the org, relevant rate-card contract generation, use case, period, monthly volumes, environment, metering unit, actions per interaction, included allowance, and price currency; label unavailable details UNKNOWN.
-3. Build a JSON scenario with pricing_model FLEX_CREDITS and usage array. Each entry needs month YYYY-MM, meter ID from the rate JSON, environment production or sandbox, and quantity as a decimal string in the meter's native units. Nonzero included_credits requires allowance_source.
-4. Execute from repository root:
+1. Check availability of actual repository checkout, Python runtime and applicable rate-card version. Do not claim the local tool is exposed through ChatGPT or an Agentforce org.
+2. Execute `python pricing-intelligence/credit_calculator.py --list-meters` to discover valid meter IDs/native units. If not executable, return a JSON scenario with `execution_status: NOT_RUN`.
+3. Capture `month`, `meter`, `environment`, `quantity` (decimal string in native units), assumed actions per interaction, and any included allowance with its source. Reject unsupported purchase models and missing assumptions.
+4. Validate against pricing-intelligence/schema/scenario.schema.json then execute `python pricing-intelligence/credit_calculator.py --scenario <scenario.json>` when authorized runtime is available. Preserve stdout result/error and version.
+5. Data 360 production tiers reset per meter/calendar month. Headless Platform Interaction TBA or unknown sandbox rates → `INCOMPLETE_UNPRICEABLE_USAGE`, never zero or full TCO.
 
-    python pricing-intelligence/credit_calculator.py --scenario pricing-intelligence/examples/agentforce-example.json
-
-5. For tests:
-
-    python -m unittest discover -s pricing-intelligence/tests -v
-
-6. Inspect machine-readable response: priced_lines, unpriceable_usage, monthly tier breakdown, priced_credits_only, allowance_assumption, net_priced_credits_only and partial_list_price_equivalent.
-7. Headless Platform Interaction is TBA; return UNPRICEABLE, not zero. Slackbot sandbox multiplier is unspecified in the cited table. Conversation pricing is not compatible with this Flex Credit calculator. Data 360 tiers reset by meter and calendar month. Do not add license costs automatically.
-
-Return scenario assumptions, exact volume per meter, source/version, credits, partial list equivalent, all unpriced usage, and explicit ESTIMATE — NOT A SALESFORCE QUOTE. Never call a partial amount the full solution TCO.
+**Output:** input JSON or artifact path, exact command and execution_status, rate version/source, per-line credits, partial list-price equivalent, unpriced usage, assumptions and ESTIMATE_NOT_QUOTE. Do not equate usage-equivalent rate with invoice/pack purchasing.

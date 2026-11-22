@@ -19,12 +19,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # SPQ pilot compares to fixed original commit; no overwrites
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Compile calculator and tests
         run: python -m compileall -q pricing-intelligence/credit_calculator.py pricing-intelligence/tests
-      - name: Run deterministic calculator fixtures
+      - name: Run calculator, agent contract, and SPQ pilot static tests
         run: python -m unittest discover -s pricing-intelligence/tests -v
       - name: Verify sample output
         run: |

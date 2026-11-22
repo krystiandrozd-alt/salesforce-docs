@@ -1,14 +1,15 @@
 # Salesforce pricing intelligence — Claude Code quick start
 
-> **Current status (2026-11-22):** Five project-scoped Claude skills, a limited sourced price seed, a machine-readable 2026-11-03 Flex Credit rate card, and a deterministic Python credit-estimation CLI are committed to draft PR #8. No UI, comprehensive product collector, customer SKU book, or negotiated pricing module has been implemented. GitHub Actions run https://github.com/krystiandrozd-alt/salesforce-docs/actions/runs/45020898343 succeeded (13/13 initial calculator fixtures); a later [17/17 test run](https://github.com/krystiandrozd-alt/salesforce-docs/actions/runs/45021458675) also checks five skill metadata/paths and org-mode safety gates; live Salesforce calculator parity and contract applicability remain unverified.
+> **Current status (2026-11-22):** Six project-scoped Claude skills, a limited sourced price seed, a machine-readable 2026-11-03 Flex Credit rate card, and a deterministic Python credit-estimation CLI are committed to draft PR #8. No UI, comprehensive product collector, customer SKU book, or negotiated pricing module has been implemented. GitHub Actions run https://github.com/krystiandrozd-alt/salesforce-docs/actions/runs/45020898343 succeeded (13/13 initial calculator fixtures); a later [17/17 test run](https://github.com/krystiandrozd-alt/salesforce-docs/actions/runs/45021458675) checked five earlier skills; the unified sixth skill has additional CI tests; live Salesforce calculator parity and contract applicability remain unverified.
 
 ## Use in Claude Code
 
 1. Check out this repository and the PR feature branch. Claude Code loads project skills from .claude/skills/ when launched from the repository (or a subfolder). No user-global installation needed.
-2. Use the skill directly as a Claude Code command, or allow Claude to choose it based on its description.
+2. Use `/sf-pricing-intelligence` for general requests, or call a specialist skill directly. Claude may select a relevant skill based on its description.
 
 | Skill command | Use |
 |---|---|
+| /sf-pricing-intelligence | Unified entry point; routes pricing, license comparisons, credit calculation and audits |
 | /sf-pricing-research | Find and verify current published Salesforce edition prices and source evidence |
 | /sf-license-compare | Build cross-cloud licensing matrix, identify bundle inclusions, prerequisites and unknowns |
 | /sf-flex-credit-estimate | Turn monthly Agentforce / Data 360 usage into source-versioned Flex Credit estimates |

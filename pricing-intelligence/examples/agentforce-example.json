@@ -1,0 +1,19 @@
+{
+  "scenario_name": "Example: 5000 Agentforce actions plus Data 360 preparation",
+  "pricing_model": "FLEX_CREDITS",
+  "usage": [
+    {
+      "month": "2026-12",
+      "meter": "agentforce-standard-action",
+      "environment": "production",
+      "quantity": "5000"
+    },
+    {
+      "month": "2026-12",
+      "meter": "data360-prep",
+      "environment": "production",
+      "quantity": "1000000"
+    }
+  ],
+  "included_credits": "0"
+}

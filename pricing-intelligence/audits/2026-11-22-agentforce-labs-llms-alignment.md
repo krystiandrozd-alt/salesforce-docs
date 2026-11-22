@@ -47,7 +47,7 @@ The top-level llms.txt mentions selecting agentforce-generate and agentforce-tes
 - Factual source reviewed via direct fetch of llms.txt, skills.md, agent-script.md, platform-mcp.md. GitHub files inspected: pricing-intelligence/AGENTS.md, CLAUDE.md, sf-flex-credit-estimate skill and USAGE_WITH_CLAUDE.md.
 - Files added: docs/agent-io-contract.md; .claude/skills/sf-pricing-agentforce-bridge/SKILL.md; this audit.
 - Local rate calculator previously passed 13 fixture tests (GitHub Actions: https://github.com/krystiandrozd-alt/salesforce-docs/actions/runs/45020898343).
-- Not run: Salesforce CLI discovery, Salesforce org auth or Organization query, native ADLC installation, Agent Script tests, publishing, MCP activation. Those require an actual org-bound request and environment.
-- Pending: current CI readback for new skill docs; add or run lightweight skill-integrity fixture; check prompting behavior in Claude Code separately before claiming native Agentforce compatibility.
+- Not run: Salesforce CLI discovery, Salesforce org auth or Organization query, native ADLC installation, Agent Script tests, publishing, MCP activation, or live Claude Code behavioral routing. These require a real org-bound request and environment.
+- Verified GitHub Actions: https://github.com/krystiandrozd-alt/salesforce-docs/actions/runs/45021458675 completed successfully with 17/17 offline tests (13 credit-calculation fixtures + 4 agent-contract integrity checks); example output remained 100,040 Flex Credits.
 
 **Acceptance:** PASS WITH CAVEAT for designing Claude *public pricing skills*. BLOCK for claiming native Agentforce integration or deployment until the org is confirmed and ADLC tests run.

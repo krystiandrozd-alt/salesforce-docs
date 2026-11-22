@@ -1,6 +1,6 @@
 ---
 name: sf-pricing-agentforce-bridge
-description: Build or integrate Salesforce pricing intelligence as an Agentforce agent in an explicitly authorized Salesforce org; use Salesforce CLI, ADLC skills, and Agent Script only for org-bound Agentforce work.
+description: Build or integrate Salesforce pricing intelligence as an Agentforce agent in an explicitly authorized Salesforce org; use Salesforce CLI, ADLC skills, and Agent Script only for org-bound Agentforce work. Do not use for public price research, offline credit estimates or licensing comparisons.
 ---
 
 # Salesforce Pricing → Agentforce Bridge

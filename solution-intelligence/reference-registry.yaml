@@ -88,6 +88,20 @@ references:
     path: solution-intelligence/examples/skills-holdout-cases.json
     role: synthetic_quality_cases
     limits: "Unexecuted holdout prompts; no claimed baseline/candidate behavior."
+  - reference_id: SKILL_BENCHMARK_RUNBOOK
+    repository_key: solution_checkout
+    path: solution-intelligence/benchmarks/README.md
+    role: instructions
+    limits: "Real baseline/candidate model runs not executed in this PR."
+  - reference_id: SKILL_BENCHMARK_COMPARER
+    repository_key: solution_checkout
+    path: solution-intelligence/benchmarks/compare.py
+    role: structural_benchmark_tool
+  - reference_id: HOSTED_MCP_CREDIT_EVIDENCE
+    repository_key: solution_checkout
+    path: solution-intelligence/docs/hosted-mcp-flex-credits-evidence.md
+    role: source_observation
+    limits: "Partial technical/public-pricing chain; contract eligibility and MCP meter unresolved."
   - reference_id: SOLUTION_RESOLVER_PILOT
     repository_key: solution_checkout
     path: solution-intelligence/resolver.py

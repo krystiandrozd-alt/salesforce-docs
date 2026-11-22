@@ -3,6 +3,8 @@
 Scope: the pricing-intelligence folder only. Do not modify unrelated Salesforce developer documentation.
 
 ## Intent and handoff
+- General Salesforce pricing tool request → `sf-pricing-intelligence` unified entry point (selects appropriate specialist and protects unknowns).
+
 - Public price lookup → sf-pricing-research (live official pricing pages, exact edition).
 - Licensing options and bundles → sf-license-compare (source-backed entitlements).
 - Flex Credit consumption → sf-flex-credit-estimate (deterministic CLI).

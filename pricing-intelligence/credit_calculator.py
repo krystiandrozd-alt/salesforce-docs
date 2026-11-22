@@ -3,6 +3,7 @@
 import argparse
 import json
 import re
+import sys
 from collections import defaultdict
 from decimal import Decimal, InvalidOperation, ROUND_HALF_UP
 from pathlib import Path
@@ -52,7 +53,32 @@ def tiered_credits(units, multipliers, thresholds):
         raise ValueError("tiered usage not fully allocated")
     return consumed, breakdown
 
+def meter_catalog(rate_card):
+    """Tool-discoverable meter metadata; no implicit source-price extrapolation."""
+    return {
+        "contract_version": "1.0",
+        "rate_card_version": rate_card["rate_card_version"],
+        "source_url": rate_card["source_url"],
+        "review_status": rate_card.get("status", "UNKNOWN"),
+        "meters": [
+            {"id": meter_id, "unit": meter["unit"], "unit_size": meter["unit_size"],
+             "environments": {
+                 env: ("TIERED" if env == "production" and "production_tiers" in meter
+                       else "AVAILABLE" if meter.get(env) is not None else "UNPRICEABLE")
+                 for env in ("production", "sandbox")}
+            for meter_id, meter in sorted(rate_card["rate_meters"].items())
+        ]
+    }
+
+
 def calculate(scenario, rate_card):
+    if not isinstance(scenario, dict):
+        raise ValueError("scenario must be a JSON object")
+    allowed = {"scenario_id", "scenario_name", "pricing_model", "usage",
+               "included_credits", "allowance_source"}
+    unknown = set(scenario) - allowed
+    if unknown:
+        raise ValueError(f"unsupported scenario fields: {sorted(unknown)}")
     if scenario.get("pricing_model") != "FLEX_CREDITS":
         raise ValueError("Only FLEX_CREDITS scenarios supported; Conversations cannot be combined here")
     raw = scenario.get("usage")
@@ -63,6 +89,9 @@ def calculate(scenario, rate_card):
     for i, item in enumerate(raw):
         if not isinstance(item, dict):
             raise ValueError(f"usage[{i}]: expected object")
+        unexpected = set(item) - {"month", "meter", "environment", "quantity"}
+        if unexpected:
+            raise ValueError(f"usage[{i}]: unsupported fields {sorted(unexpected)}")
         key = (item.get("month"), item.get("meter"), item.get("environment"))
         month, meter, environment = key
         if not isinstance(month, str) or not re.fullmatch(r"20[0-9]{2}-(0[1-9]|1[0-2])", month):
@@ -101,6 +130,10 @@ def calculate(scenario, rate_card):
     equivalent = net * number(list_rate["amount"], "list price") / number(list_rate["per_credits"], "credit denominator")
     equivalent = equivalent.quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
     return {
+        "contract_version": "1.0",
+        "scenario_id": scenario.get("scenario_id"),
+        "scenario_name": scenario.get("scenario_name"),
+        "rate_card_review_status": rate_card.get("status", "UNKNOWN"),
         "status": "INCOMPLETE_UNPRICEABLE_USAGE" if unpriceable else "ESTIMATE_NOT_QUOTE",
         "rate_card_version": rate_card["rate_card_version"],
         "rate_card_source": rate_card["source_url"],
@@ -116,12 +149,19 @@ def calculate(scenario, rate_card):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--scenario", required=True, type=Path, help="JSON scenario path")
+    parser.add_argument("--scenario", help="Scenario JSON path, or '-' for stdin")
+    parser.add_argument("--list-meters", action="store_true", help="Return JSON meter catalog for agents")
     parser.add_argument("--rates", type=Path, default=DEFAULT_RATES)
     args = parser.parse_args()
+    if not args.list_meters and not args.scenario:
+        parser.error("provide --scenario PATH/- or --list-meters")
     try:
-        output = calculate(json.loads(args.scenario.read_text(encoding="utf-8")),
-                           json.loads(args.rates.read_text(encoding="utf-8")))
+        rate_card = json.loads(args.rates.read_text(encoding="utf-8"))
+        if args.list_meters:
+            output = meter_catalog(rate_card)
+        else:
+            raw = sys.stdin.read() if args.scenario == "-" else Path(args.scenario).read_text(encoding="utf-8")
+            output = calculate(json.loads(raw), rate_card)
     except (ValueError, KeyError, TypeError, OSError, json.JSONDecodeError) as exc:
         parser.exit(2, f"ERROR: {exc}\n")
     print(json.dumps(output, indent=2, ensure_ascii=False))

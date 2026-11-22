@@ -2,7 +2,8 @@
 
 This folder is a pricing knowledge graph + Flex Credit estimator, not the larger Salesforce developer documentation catalog.
 
-Read AGENTS.md for the shared safety, evidence and output contract. Use one relevant project skill from the repository's .claude/skills directory:
+Read AGENTS.md for the shared safety, evidence and output contract. For general Salesforce pricing requests, start with **`/sf-pricing-intelligence`** as the single entry point; it delegates to the relevant worker below and uses the deterministic calculator when appropriate. Use the specialist directly when the intent is already explicit:
+
 - sf-pricing-research — public source verification.
 - sf-license-compare — edition/bundle/technical license research.
 - sf-flex-credit-estimate — deterministic rate-card calculator.

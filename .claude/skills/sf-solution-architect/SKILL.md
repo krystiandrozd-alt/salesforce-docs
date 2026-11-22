@@ -5,7 +5,7 @@ description: Evidence-first Salesforce solution architecture; connect official d
 
 # Salesforce Solution Architect — combined source + pattern + pricing
 
-Read `solution-intelligence/README.md` and `solution-intelligence/source-manifest.yaml` before proceeding. Route source retrieval and pricing execution to the canonical repositories/skills. **Do not clone, mutate, deploy or install things without a user request.**
+Read `solution-intelligence/README.md`, `solution-intelligence/source-manifest.yaml` and `solution-intelligence/RESOLVER-QUICKSTART.md` before proceeding. Route source retrieval and pricing execution to the canonical repositories/skills. **Do not clone, mutate, deploy or install things without a user request.**
 
 ## Responsibilities and boundaries
 
@@ -49,6 +49,10 @@ Do not imply public pricing is a contract quote, or unsupported meters are free.
 
 ### 5. Evidence and quality gate
 Use VERIFIED / INFERRED / UNKNOWN / CONFLICTED on material claims, with URL/section and source date. Include alternatives considered, beta compatibility, permission/identity handling, customer-specific gap, rate-card verification status, scenario replay command and independent commercial audit. If a pricing tool did not run, label NOT_RUN.
+
+## Structural resolver pilot (opt-in, not factual source)
+
+For a **structural demonstration** with explicit graph JSON, run `python solution-intelligence/resolver.py --graph <file> --resolve <process-or-capability-id>` or `--impact <node-id>`. The checked-in fixture is **SYNTHETIC** and cannot substantiate Salesforce licenses, offers or prices. Its outputs only demonstrate joins, `ALL_OF`/`ANY_OF`, claim IDs and reverse impact; `commercial_total` stays null and `calculation_status` stays NOT_RUN. Never treat these as results for a customer's real environment. Use source-based research for real product/license questions; defer numerical calculation to the separate pricing skill and supported CLI. Full commercial graph and MCP/API adapter are not built.
 
 ## Output contract
 

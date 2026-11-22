@@ -1,0 +1,110 @@
+version: "0.2.0"
+as_of: "2026-11-22"
+purpose: "Resolvable navigation pointers; claim evidence is recorded separately."
+path_rule: "Repository paths are relative to the declared repository root."
+resolution_rule: "Resolve each moving ref to a commit SHA per run; retain commit, path, hash and retrieval timestamp."
+repositories:
+  solution_checkout:
+    repository: krystiandrozd-alt/salesforce-docs
+    ref_policy: current_checkout
+    discovery_ref: feature/solution-architecture-headless-pricing-20261122
+  technical_catalog:
+    repository: krystiandrozd-alt/salesforce-docs
+    ref_policy: resolve_at_run
+    discovery_ref: master
+  headless_catalog:
+    repository: krystiandrozd-alt/headless-toolkit
+    ref_policy: resolve_at_run
+    discovery_ref: master
+    inspected_commit: f8bb9553f93f296f1088dc7ab00c9752ed1af3f1
+  commercial_catalog:
+    repository: krystiandrozd-alt/salesforce-docs
+    ref_policy: resolve_at_run
+    discovery_ref: feature/pricing-licensing-knowledge-graph-20261122
+references:
+  - reference_id: SOLUTION_OVERVIEW
+    repository_key: solution_checkout
+    path: solution-intelligence/README.md
+    role: instructions
+  - reference_id: SOURCE_MANIFEST
+    repository_key: solution_checkout
+    path: solution-intelligence/source-manifest.yaml
+    role: routing
+  - reference_id: CAPABILITY_COMMERCIAL_CONTRACT
+    repository_key: solution_checkout
+    path: solution-intelligence/docs/capability-commercial-contract.md
+    role: contract
+  - reference_id: PROCESS_COMMERCIAL_PROMPT
+    repository_key: solution_checkout
+    path: solution-intelligence/prompts/resolve-process-commercial.md
+    role: instructions
+  - reference_id: TECHNICAL_INDEX
+    repository_key: technical_catalog
+    path: salesforce-platform-docs-content-list.md
+    role: discovery
+  - reference_id: HEADLESS_INDEX
+    repository_key: headless_catalog
+    path: README.md
+    role: discovery
+  - reference_id: FUNCTIONAL_SKILLS_CATALOG
+    repository_key: headless_catalog
+    path: aiforce-claudeforce/salesforce-in-claude-skills-reference.md
+    role: discovery
+    limits: "Catalog candidates; verify upstream IDs, current availability and commercial prerequisites."
+  - reference_id: HEADLESS_MCP_PATTERNS
+    repository_key: headless_catalog
+    path: hosted-mcp-servers/content.md
+    role: discovery
+  - reference_id: HEADLESS_HXL_PATTERNS
+    repository_key: headless_catalog
+    path: headless-experience-layer-hxl-beta/content.md
+    role: discovery
+  - reference_id: PRICING_OPERATING_RULES
+    repository_key: solution_checkout
+    path: pricing-intelligence/AGENTS.md
+    role: instructions
+  - reference_id: PRICING_IO_CONTRACT
+    repository_key: solution_checkout
+    path: pricing-intelligence/docs/agent-io-contract.md
+    role: contract
+  - reference_id: PRICING_BUILD_PROMPT
+    repository_key: solution_checkout
+    path: pricing-intelligence/prompts/build-graph.md
+    role: instructions
+  - reference_id: PRICING_SCENARIO_SCHEMA
+    repository_key: solution_checkout
+    path: pricing-intelligence/schema/scenario.schema.json
+    role: executable_contract
+  - reference_id: PRICING_CALCULATOR
+    repository_key: solution_checkout
+    path: pricing-intelligence/credit_calculator.py
+    role: implementation
+  - reference_id: COMMERCIAL_SEED
+    repository_key: commercial_catalog
+    path: pricing-intelligence/data/seed-eu-2026-11-22.yaml
+    role: historical_candidates
+    limits: "Partial dated seed; revalidate each commercial assertion before use."
+  - reference_id: OFFICIAL_COMMUNICATIONS_PRICING
+    url: https://www.salesforce.com/eu/communications/pricing/
+    role: primary_source_candidate
+    limits: "Capture exact offer/section/conditions; missing rendered table marks are unknown."
+  - reference_id: OFFICIAL_FUNCTIONAL_SKILLS
+    url: https://help.salesforce.com/s/articleView?id=sales.skills_ref.htm&type=5
+    role: primary_source_candidate
+    limits: "Must retrieve the actual article body; a Help shell is not evidence."
+run_snapshot_fields:
+  - reference_id
+  - repository
+  - resolved_commit
+  - path
+  - original_url
+  - retrieved_at
+  - content_hash
+  - retrieval_status
+  - locator
+evidence_policy:
+  pointer_is_not_claim_evidence: true
+  summaries_require_original_source_verification: true
+  unresolved_reference_blocks_affected_claim: true
+  unavailable_repository_does_not_imply_missing_feature: true
+  record_local_commercial_snapshot_and_canonical_upstream_separately: true

@@ -4,7 +4,7 @@
 
 ## Goal
 
-Enable an architect/consultant/AI agent to move from a verified Salesforce capability to a justified implementation pattern and an appropriately qualified price/TCO estimate.
+Enable an architect/consultant/AI agent to move from a designed business process, capability or functional skill to a justified implementation, required licenses/entitlements, eligible packages and an appropriately qualified billing/TCO view.
 
 Three independent, source-owned layers:
 
@@ -22,13 +22,30 @@ Use `/sf-solution-architect` (project skill at `../.claude/skills/sf-solution-ar
 
 The skill coordinates documentation lookup, solution-pattern selection and the existing `/sf-pricing-intelligence` skill. It does **not** reimplement the existing six pricing skills or the Python estimator.
 
+## Required process-to-commercial references
+
+Before mapping a process, function or functional skill to commercial requirements, read the following in order:
+
+| Reference | Purpose |
+| --- | --- |
+| [Source manifest](source-manifest.yaml) and [reference registry](reference-registry.yaml) | Canonical ownership, exact repository paths and per-run commit resolution. |
+| [Capability and commercial contract](docs/capability-commercial-contract.md) | Typed many-to-many relations, prerequisites, evidence, billing and output definitions. |
+| [Process resolver prompt](prompts/resolve-process-commercial.md) | Reusable Claude/agent workflow from process or skill to entitlement, package and billing. |
+| [Pricing build prompt](../pricing-intelligence/prompts/build-graph.md) | Implementation work including the process/capability bridge and acceptance cases. |
+
+The required trace is process/step → capability → implementation/functional skill → exact technical feature → required entitlement/license → providing offer/package → applicable billing metric, rate and allowance. Each relation has its own evidence and applicability. Keep authoring/delivery skills distinct from runtime functional skills, commercial offers distinct from managed packages, and permissions distinct from purchased rights.
+
+The target resolver must support forward search and reverse impact lookup, explicit `ALL_OF` / `ANY_OF` prerequisites, existing-entitlement comparison and an evidence path for every output row. Semantic search finds candidates; typed, scoped relationships establish supported conclusions. Unknown licensing, inclusion or billing remains unknown.
+
+**Implementation status:** the contract, source routing and prompts are present. A populated process-to-license graph, relationship search API and its end-to-end runtime tests still need implementation. The existing limited Flex Credit CLI is a separate working component.
+
 ## Typical workflow
 
 1. **Scope:** current process, personas, channels, existing Salesforce clouds/org, volumes, NFRs, region, constraints.
-2. **Source:** locate exact product/feature/API docs in salesforce-docs; verify critical/recent claims in live official vendor pages; identify missing org evidence.
+2. **Source:** decompose process steps into capabilities; find functional-skill candidates in Headless Toolkit and exact product/feature/API docs in salesforce-docs; verify critical/recent claims in live official vendor pages; identify missing org evidence.
 3. **Design:** compare native Lightning/LWC vs Multi-Framework vs Microfrontend vs HXL Beta vs API/MCP integration. Do not force headless if native is better.
 4. **Validate:** auth, identity, permission checks, state changes, governance, eventing, latency, failure/retry, release and beta support.
-5. **Price:** create a distinct bill of materials: commercial offers, technical entitlements, credit meters, recurring charges, services and TCO assumptions. Delegate pricing evidence/calculation to existing pricing skills.
+5. **Price:** resolve required rights/licenses, offer/package inclusion versus add-on purchase, conditional dependencies and usage metrics for each implementation. Create a distinct bill of materials, deduplicate shared entitlements/allowances and delegate commercial evidence/calculation to existing pricing skills.
 6. **Audit:** trace every material claim to an evidence URL, source repo/ref and timestamp. Record conflicts, unpriced meters and missing contract data separately.
 
 ## Deliverables
@@ -40,7 +57,7 @@ The skill coordinates documentation lookup, solution-pattern selection and the e
 - Risk/readiness matrix: beta/GA evidence, security, environments, required access, gaps, tests and owners.
 - Executive-facing option comparison: native-first, hybrid/headless, and headless-first where feasible; separate product facts from recommended design.
 
-See `source-manifest.yaml` for ownership and update discipline.
+See [source-manifest.yaml](source-manifest.yaml) for ownership and update discipline and [reference-registry.yaml](reference-registry.yaml) for resolvable pointers. Trace source changes back to affected skills, capabilities, process steps and BOM lines.
 
 ## Example request
 
@@ -53,3 +70,4 @@ See `source-manifest.yaml` for ownership and update discipline.
 - HXL is Beta in captured docs; confirm current support and release status.
 - Pricing feature branch is draft. Flex Credit CLI covers a limited set of meter scenarios; Headless Platform Interaction pricing may be TBA. A rate-card unit test is not proof of live billing parity.
 - No GitHub/Claude/ChatGPT installation or MCP runtime connection is provided by this repository file alone.
+

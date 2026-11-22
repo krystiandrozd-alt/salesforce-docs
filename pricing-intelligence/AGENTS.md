@@ -4,6 +4,7 @@ Scope: the pricing-intelligence folder only. Do not modify unrelated Salesforce 
 
 ## Intent and handoff
 - General Salesforce pricing tool request → `sf-pricing-intelligence` unified entry point (selects appropriate specialist and protects unknowns).
+- Process/function/functional-skill → license/package/billing request → first read [the process resolver prompt](../solution-intelligence/prompts/resolve-process-commercial.md) and [relationship contract](../solution-intelligence/docs/capability-commercial-contract.md); retain existing commercial specialist/calculator ownership and IDs. This cross-folder reference does not authorize unrelated catalog edits.
 
 - Public price lookup → sf-pricing-research (live official pricing pages, exact edition).
 - Licensing options and bundles → sf-license-compare (source-backed entitlements).
@@ -46,3 +47,4 @@ Answer with: scope, inputs/assumptions, source/version, result, command or artif
 
 ## Stop
 If a required meter, currency, product dependency, allowance or governing contract is missing, give a bounded partial answer with a blocker; do not invent it.
+

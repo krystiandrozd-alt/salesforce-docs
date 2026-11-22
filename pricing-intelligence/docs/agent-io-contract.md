@@ -66,6 +66,16 @@ Recommended response shape:
 
 Do not label the source as VERIFIED without actually checking its applicable page, pricing metric and version. Internal unit tests only verify local arithmetic against the committed fixtures.
 
+## Process/capability bridge envelope v0.2
+
+For a request starting from a designed function, process or functional skill, read the [capability and commercial contract](../../solution-intelligence/docs/capability-commercial-contract.md) and [resolver prompt](../../solution-intelligence/prompts/resolve-process-commercial.md). Resolve sources through the [reference registry](../../solution-intelligence/reference-registry.yaml).
+
+The solution layer supplies a separate envelope: `request_id`, capability and implementation IDs, exact feature/product variant, required entitlement groups, offer candidates, billable-event-to-metric claims, context (actor, surface, access mode, region, as-of date, environment), quantities/periods, existing-entitlement evidence, source snapshots and blockers. Return sourced commercial IDs, inclusion/purchase status, prerequisites, billing/allowance conditions and gaps to the same request and capability IDs. A technical feature citation does not prove a license or package inclusion.
+
+**This does not change the calculator's v1 JSON schema.** Keep graph/reference fields outside its scenario input. Discover meter IDs with `--list-meters`, retain an explicit graph-to-calculator mapping and project only supported quantities/models into a validated scenario. Do not automatically pass unknown allowances as zero or combine incompatible buying models. The current calculator interface does not resolve offer eligibility, shared multi-pool allowances or full solution TCO; unresolved allocation is a blocker or an explicitly scoped scenario assumption.
+
+The relationship resolver is a planned component. If it or the calculator did not run, report `NOT_RUN`; do not imply that reading the prompt executed a tool. Preserve priced subtotals, unpriceable usage and commercial gaps separately.
+
 ## Org-dependent extension gate (Agentforce Labs alignment)
 
 Only if asked to build or deploy an Agentforce agent in a Salesforce org: follow `.claude/skills/sf-pricing-agentforce-bridge/SKILL.md` and official `https://labs.agentforce.com/llms.txt`. Verify CLI/project, authenticated org using a harmless Organization query, choose an explicit target alias and retrieve the existing authoring bundle before editing. Ask before installs/deployments/activations outside the authorized task. An org connection does not constitute permission to mutate org metadata.
@@ -73,3 +83,4 @@ Only if asked to build or deploy an Agentforce agent in a Salesforce org: follow
 ## Tests
 
 From repository root: `python -m unittest discover -s pricing-intelligence/tests -v`. CI provides independent runtime evidence for fixture compatibility, not actual Salesforce financial billing equivalence.
+

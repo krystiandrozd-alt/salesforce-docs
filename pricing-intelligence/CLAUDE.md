@@ -15,9 +15,12 @@ Before an org-bound change: confirm sf CLI, Salesforce project, authorized targe
 
 For multi-stage work, conduct source lookup → license mapping → deterministic estimate → independent audit; do not run every skill for a simple lookup.
 
+When the request starts from a designed business process, capability or functional skill, read [the process resolver prompt](../solution-intelligence/prompts/resolve-process-commercial.md) and [relationship contract](../solution-intelligence/docs/capability-commercial-contract.md). Use their typed evidence paths to reach the commercial inputs; do not infer package inclusion from a technical feature or skill name. The resolver is specified, not yet implemented.
+
 Read docs/agent-io-contract.md for CLI input/output. Use --list-meters before selecting a meter. Never call calculations quote-ready and never assume an existing Salesforce commercial contract.
 
 Run tests from repository root:
 python -m unittest discover -s pricing-intelligence/tests -v
 
 The PR implements a CLI and fixtures, not a deployed interactive calculator or complete source collector.
+

@@ -1,6 +1,11 @@
-version: 0.1
+version: "0.2.0"
 as_of: "2026-11-22"
-purpose: "Source routing / ownership, not a merged corpus"
+purpose: "Source routing and process-to-license relationship contract, not a merged corpus"
+reference_registry: "reference-registry.yaml"
+capability_commercial_contract: "docs/capability-commercial-contract.md"
+resolver_prompt: "prompts/resolve-process-commercial.md"
+resolver_runtime_status: "NOT_IMPLEMENTED"
+reference_resolution: "Paths above are relative to solution-intelligence; paths in each layer are relative to that layer's root. Resolve refs to commit SHAs per run."
 layers:
   technical:
     repo: "krystiandrozd-alt/salesforce-docs"
@@ -20,7 +25,8 @@ layers:
       - "headless-experience-layer-hxl-beta/content.md"
       - "hosted-mcp-servers/content.md"
       - "multi-framework-microfrontend/content.md"
-    priority_for: ["headless architecture", "HXL", "hosted MCP", "multi-framework", "microfrontend"]
+      - "aiforce-claudeforce/salesforce-in-claude-skills-reference.md"
+    priority_for: ["headless architecture", "functional skill discovery", "HXL", "hosted MCP", "multi-framework", "microfrontend"]
     verify_live_for: ["beta status", "supported surfaces", "API and MCP security", "licensing implications"]
   commercial:
     repo: "krystiandrozd-alt/salesforce-docs"
@@ -35,6 +41,22 @@ layers:
     priority_for: ["commercial public list observations", "entitlement analysis", "supported Flex Credit calculation"]
     verify_live_for: ["price", "units", "buying model", "rate-card validity"]
 evidence_statuses: ["VERIFIED", "INFERRED", "UNKNOWN", "CONFLICTED"]
+pricing_status_adapter:
+  SOURCE_VERIFIED: "VERIFIED for the same exact sourced assertion; preserve original status"
+  RETIRED: "lifecycle_status only; do not treat as evidence confidence"
+relationship_resolution:
+  canonical_contract: "docs/capability-commercial-contract.md"
+  stable_ids_required: true
+  joins_by_display_name_forbidden: true
+  claim_evidence_per_edge: true
+  requirement_groups: ["ALL_OF", "ANY_OF"]
+  semantic_matches: "CANDIDATES_ONLY"
+  directions: ["process_to_commercial", "commercial_change_to_process"]
+  preserve_product_generation: true
+  distinguish_functional_and_delivery_skills: true
+  verify_customer_applicability_separately: true
+  preserve_existing_calculator_schema: true
 unverified_never_zero: true
 contracts_private: true
 default_external_actions: "read-only"
+

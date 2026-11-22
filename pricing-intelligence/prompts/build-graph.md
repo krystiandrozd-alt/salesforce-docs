@@ -5,12 +5,16 @@
 Implement a **working, source-grounded and version-controlled licensing knowledge graph** in the existing repository:
 
 Repository: https://github.com/krystiandrozd-alt/salesforce-docs  
-Working namespace: pricing-intelligence/  
+Working namespaces: pricing-intelligence/ for canonical commercial data and calculations; solution-intelligence/ for process/capability relationships and adapters.  
 Authoritative public index: https://www.salesforce.com/eu/pricing/  
 Target region: EU; capture date: current run date.  
 Starting artifacts:
 - pricing-intelligence/README.md
 - pricing-intelligence/data/seed-eu-2026-11-22.yaml
+- solution-intelligence/source-manifest.yaml
+- solution-intelligence/reference-registry.yaml
+- solution-intelligence/docs/capability-commercial-contract.md
+- solution-intelligence/prompts/resolve-process-commercial.md
 
 Do **not** replace this with a long pricing report, decorative graph image, generic sales brochure, or unverified SKU database. Implement the schema, curated claims, source discovery, queries, tests, and coverage reporting.
 
@@ -37,6 +41,18 @@ C. Answer **how it is billed**: per user, org, member, login, action, Flex Credi
 D. Answer **what is included vs separately purchased**: Slack, Tableau, Agentforce, Data 360, Marketing Cloud, support plans and industry BSS suites.
 E. Answer **what changed**: new/renamed/removed products, updated price, metric, currency, included allowance, support level or dependency.
 F. Return supporting evidence and uncertainty for every answer.
+G. Resolve a designed process, capability or functional skill to implementation → exact technical feature → required entitlement/license → providing edition/package/add-on → billing metric, rate and allowance, with source-backed relationships.
+H. Reverse this lookup to show which functional skills, capabilities and process steps are affected by an offer, entitlement, rate or source change.
+
+## Process and functional-skill integration
+
+Read the [capability and commercial contract](../../solution-intelligence/docs/capability-commercial-contract.md) and [reference registry](../../solution-intelligence/reference-registry.yaml) before defining the bridge. The contract owns bridge entity types, relation direction, applicability, query output and acceptance cases. Existing commercial entities retain their IDs and ownership here. Source references in the registry are navigation pointers; claim records must cite the exact supporting source content.
+
+Distinguish runtime functional skills from delivery/authoring skills and commercial packages from managed packages. Use Headless Toolkit to discover functional skills and implementation patterns, SF Docs to resolve exact technical features/generations, and Pricing Intelligence to establish commercial requirements. Semantic matching finds candidates; it must not manufacture licensing edges. Preserve one-to-many/many-to-many mappings, `ALL_OF` / `ANY_OF` prerequisites and alternative buying models.
+
+Implement forward process-to-commercial resolution and reverse impact queries over typed, evidenced relations. Return coverage for every requested capability, including unmapped ones. Required rights, already-owned entitlements and incremental purchases are separate views. Deduplicate shared entitlements and allowances by owner, environment, pool and period. A skill/tool invocation is not automatically a billed action.
+
+Keep the bridge request/result envelope outside the existing calculator scenario. Discover valid calculator meter IDs and create explicit mappings; preserve its current input contract. Unknown eligibility, price, allowance scope or meter blocks the affected conclusion and is never zero. The goal is an executable resolver plus source evidence; this prompt's existence does not establish completion.
 
 ## Build stages
 
@@ -65,6 +81,8 @@ Implement schema/graph.schema.json (JSON Schema 2020-12 or equivalent Pydantic m
 - source_snapshot
 - conflict
 - customer_contract_override (schema only, not populated)
+
+Add process, process_step, functional_skill, delivery_skill, implementation_option, product_variant, technical_feature, permission_requirement, surface and requirement_group bridge entities as defined in the solution contract. Reference existing capability, offer, entitlement, license, metric, allowance, claim and source IDs instead of copying commercial entities. Validate edge endpoint types and referential integrity across namespaces.
 
 Include:
 - stable IDs and aliases; different IDs for editions when names change meaning
@@ -103,7 +121,14 @@ Implement a deterministic normalized graph exporter with nodes and directed type
 - show all unresolved price observations or unit conflicts
 - diff two capture dates
 
-Seed it from the provided verified YAML, then expand through source-backed discoveries.
+Treat the provided historical partial YAML seed as candidate claims; validate their structure and current applicability before promoting individual assertions, then expand through source-backed discoveries.
+
+Also support:
+- resolve a process/capability/functional skill to applicable license and package alternatives with complete evidence paths
+- show included versus separately purchased components and all required dependency groups
+- show subscription and consumption metrics without treating unsupported charges as free
+- find impacted skills, capabilities, processes and BOM lines when a source, offer or rate changes
+- return partial/unmapped coverage, conflicts, stale claims and customer-applicability gaps
 
 ### Stage 4 — proof, tests, handoff
 
@@ -118,6 +143,16 @@ Create automated tests, fixture pages, a runbook and a sample query report. Incl
 - Marketing Intelligence overview per-user vs detailed per-org conflict silently resolved
 - same Starter Suite counted twice when it appears on Sales, Service and Marketing pages
 - B2B BSS Suite org/year treated as a user license
+- functional runtime skill confused with a developer/delivery skill
+- managed-package and core product variants joined by a similar feature name
+- `ALL_OF` / `ANY_OF` license prerequisites flattened into a mandatory purchase list
+- shared allowance deducted once per capability or applied across an unverified pool/reset period
+- one skill invocation assumed to equal one metered action
+- missing customer entitlement evidence treated as owned or unowned
+- a dangling reference, wrong edge endpoint, dependency cycle or missing required condition silently accepted
+- a changed commercial claim fails to identify affected process/capability rows
+
+Cover all [bridge acceptance cases](../../solution-intelligence/docs/capability-commercial-contract.md#acceptance-cases), including deterministic replay. Use synthetic fixtures for resolver behavior and separately verified live sources for factual claims.
 
 Do not equate a passed unit test with truth of an external price; document which claims received independent source review.
 
@@ -144,6 +179,8 @@ Do not equate a passed unit test with truth of an external price; document which
 8. A clear README with example commands, limitations, and explicit remaining work.
 9. A sample query output explaining at least five cross-product questions with traceable source URL/section.
 10. A PR containing code, tests, data, and a factual completion summary. Do not merge without review.
+11. A process/capability-to-commercial resolver and reverse impact query with stable IDs, source snapshots, per-edge evidence, explicit unknowns and a complete output row for every requested requirement.
+12. Reference integrity checks and an end-to-end telco example satisfying the first implementation slice in the solution contract; report implemented behavior separately from remaining design requirements.
 
 ## Required response format after execution
 
@@ -161,3 +198,4 @@ Report:
 Proceed to full-scale collection ONLY if the curated graph passes all validation tests and a reviewer can reproduce five answers from the source evidence. If source access or parsing is unreliable, stop at a source registry + curated graph and do not claim complete price intelligence.
 
 **Deliver a useful, smaller graph that is correct rather than an impressively large graph that is wrong.**
+

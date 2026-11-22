@@ -1,6 +1,6 @@
 # Salesforce Solution Intelligence — architecture + headless + commercial
 
-**Status:** draft integration contract. This is a documentation/agent orchestration layer, NOT a connected Salesforce org, an MCP server, an executable Headless Toolkit, or a quote-ready pricing system.
+**Status:** draft cross-repository contract with a runnable **synthetic-only structural resolver pilot**. This is NOT a connected Salesforce org, MCP server, executable Headless Toolkit, verified product/license database or quote-ready pricing system.
 
 ## Goal
 
@@ -32,12 +32,13 @@ Before mapping a process, function or functional skill to commercial requirement
 | [Capability and commercial contract](docs/capability-commercial-contract.md) | Typed many-to-many relations, prerequisites, evidence, billing and output definitions. |
 | [Process resolver prompt](prompts/resolve-process-commercial.md) | Reusable Claude/agent workflow from process or skill to entitlement, package and billing. |
 | [Pricing build prompt](../pricing-intelligence/prompts/build-graph.md) | Implementation work including the process/capability bridge and acceptance cases. |
+| [Resolver pilot quickstart](RESOLVER-QUICKSTART.md) | Run the deliberately synthetic relationship graph; distinguish prototype coverage from real licensing verification. |
 
 The required trace is process/step → capability → implementation/functional skill → exact technical feature → required entitlement/license → providing offer/package → applicable billing metric, rate and allowance. Each relation has its own evidence and applicability. Keep authoring/delivery skills distinct from runtime functional skills, commercial offers distinct from managed packages, and permissions distinct from purchased rights.
 
 The target resolver must support forward search and reverse impact lookup, explicit `ALL_OF` / `ANY_OF` prerequisites, existing-entitlement comparison and an evidence path for every output row. Semantic search finds candidates; typed, scoped relationships establish supported conclusions. Unknown licensing, inclusion or billing remains unknown.
 
-**Implementation status:** the contract, source routing and prompts are present. A populated process-to-license graph, relationship search API and its end-to-end runtime tests still need implementation. The existing limited Flex Credit CLI is a separate working component.
+**Implementation status:** the contract, source routing and prompts are present. A **synthetic-data structural resolver with 16 automated tests** is now available at [resolver.py](resolver.py); see [quickstart](RESOLVER-QUICKSTART.md). A verified/ingested commercial graph, complete licensing/allowance logic, cross-repository runtime adapters and an MCP/API endpoint are **not** implemented. The existing limited Flex Credit CLI is a separate working component.
 
 ## Typical workflow
 

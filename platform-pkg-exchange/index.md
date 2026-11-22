@@ -2,7 +2,7 @@
 
 Source: [llms-platform-pkg-exchange.txt](https://developer.salesforce.com/docs/llms-platform-pkg-exchange.txt).
 
-Full link list extracted programmatically from the live source file (763 page links across 4 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (766 page links across 4 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
 ## Application Installation Guide (20 pages)
 
@@ -29,7 +29,7 @@ Full link list extracted programmatically from the live source file (763 page li
 | App Rollout | https://developer.salesforce.com/docs/platform/appexchange-install-guide/guide/appexchange-install-rollout.md |
 | What Is AgentExchange? | https://developer.salesforce.com/docs/platform/appexchange-install-guide/guide/appexchange-install-whatis.md |
 
-## ISVforce Guide (404 pages)
+## ISVforce Guide (407 pages)
 
 | Page | URL |
 |---|---|
@@ -321,6 +321,7 @@ Full link list extracted programmatically from the live source file (763 page li
 | Migrate Existing Orders to the Go-To-Market App | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-coa-transition.md |
 | Prerequisites and Considerations | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-considerations-prerequisites.md |
 | Your Customers and the Go-To-Market App | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-customers.md |
+| Edit Trial Length and Seats for 2GPs with PSLs in the Go-To-Market App | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-edit-trial-length.md |
 | Get Started with the AgentExchange Go-To-Market App | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-get-started.md |
 | AgentExchange Go-To-Market App Guide | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-intro.md |
 | Understand Licensing in the Go-To-Market App | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-licensing.md |
@@ -330,6 +331,8 @@ Full link list extracted programmatically from the live source file (763 page li
 | Understand Products in the Go-To-Market App | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-product-types.md |
 | Create a New Version of a Partner Provisionable Product | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-psl-versioning.md |
 | Use Permission Set Licenses to Sell Tier-Based Products | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-psl.md |
+| Trial, Management, and Subscriber Fields on Tenant License Records | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-marketplace-trial-management-fields.md |
+| View Customer Consumption Data in a Partner Business Org | https://developer.salesforce.com/docs/platform/isvforce/guide/partner-track-consumption.md |
 | Secure Your Agentforce Custom Actions | https://developer.salesforce.com/docs/platform/isvforce/guide/secure-agentforce-actions.md |
 | Validate User-Controlled Data Added to a Prompt | https://developer.salesforce.com/docs/platform/isvforce/guide/secure-agentforce-prompt-injection-data.md |
 | Use Random Sequence Enclosures and Prompt Sandwiching | https://developer.salesforce.com/docs/platform/isvforce/guide/secure-agentforce-prompt-injection-enclosure.md |
@@ -647,7 +650,7 @@ Full link list extracted programmatically from the live source file (763 page li
 | Subscriber Snapshots | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/app-analytics-subscriber-snapshots.md |
 | Test Custom Integrations | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/app-analytics-test-custom-integrations.md |
 | App Analytics Use Cases | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/app-analytics-use-cases.md |
-| Salesforce AI Skill for Post-Install Configuration | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/dev2gp_managed_packaging_ai_skills.md |
+| Salesforce AI Skills for Managed Packages | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/dev2gp_managed_packaging_ai_skills.md |
 | Considerations for Promoting Packages with Dependencies | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/dev2gp-considerations-pkg-dependency.md |
 | Develop and Package Agent Templates Using Scratch Orgs | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/dev2gp-package-agent-templates.md |
 | Package a Custom Flow Connector as a 2GP Managed Package | https://developer.salesforce.com/docs/platform/pkg2-dev/guide/dev2gp-package-custom-flow-connector.md |

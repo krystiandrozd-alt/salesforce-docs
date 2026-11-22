@@ -2,9 +2,9 @@
 
 Source: [llms-industries-health.txt](https://developer.salesforce.com/docs/llms-industries-health.txt).
 
-Full link list extracted programmatically from the live source file (1851 page links across 2 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (1852 page links across 2 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
-## Health Cloud Developer Guide (1063 pages)
+## Health Cloud Developer Guide (1064 pages)
 
 | Page | URL |
 |---|---|
@@ -25,6 +25,7 @@ Full link list extracted programmatically from the live source file (1851 page l
 | Schedule Home Visits Manually Action | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/actions-obj-schedule-home-visits-manually.md |
 | Schedule Recurring Home Visit Action | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/actions-obj-schedule-recurring-home-visit.md |
 | Update Appointment Action | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/actions-obj-update-appointment.md |
+| Schedule Home Health Care Visits Action | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/actions-schedule-home-healthcare-visits.md |
 | attributeName | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/apex-class-docai-attribute-attributename.md |
 | confidenceScore | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/apex-class-docai-attribute-confidencescore.md |
 | fieldApiName | https://developer.salesforce.com/docs/industries/health-cloud-dev-guide/guide/apex-class-docai-attribute-fieldapiname.md |

@@ -2,7 +2,7 @@
 
 Source: [llms-service-cloud.txt](https://developer.salesforce.com/docs/llms-service-cloud.txt).
 
-Full link list extracted programmatically from the live source file (2586 page links across 28 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (2586 page links across 28 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
 ## Enhanced In-App Chat (72 pages)
 

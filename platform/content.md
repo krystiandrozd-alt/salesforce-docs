@@ -17,12 +17,12 @@ Section breakdown:
 - **Lightning Aura Components Developer Guide** — 502 pages
 - **Experience Cloud Developer Guide** — 67 pages
 - **Actions Developer Guide** — 77 pages
-- **SOAP API Developer Guide** — 208 pages
+- **SOAP API Developer Guide** — 209 pages
 - **Visualforce Developer Guide** — 494 pages
 - **Data Loader Guide** — 50 pages
 - **Big Objects Implementation Guide** — 11 pages
 - **Best Practices for Deployments with Large Data Volumes** — 34 pages
-- **Platform Events Developer Guide** — 240 pages
+- **Platform Events Developer Guide** — 241 pages
 - **Salesforce Mobile Notifications Implementation Guide** — 28 pages
 - **AJAX Toolkit Developer Guide** — 32 pages
 - **Canvas Developer Guide** — 126 pages
@@ -36,7 +36,8 @@ Section breakdown:
 *Source: [`llms-platform.txt`](https://developer.salesforce.com/docs/llms-platform.txt) — official aggregated index (developer doc page), overview section.*
 
 
-*Last refreshed 2026-11-06: 2882 pages in 27 sections (counts from the live source).*
+
+*Last refreshed 2026-11-22: 2884 pages in 27 sections (counts from the live source).*
 
 ## Extraction notes
 

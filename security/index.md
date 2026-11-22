@@ -2,7 +2,7 @@
 
 Source: [llms-security.txt](https://developer.salesforce.com/docs/llms-security.txt).
 
-Full link list extracted programmatically from the live source file (165 page links across 9 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (165 page links across 9 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
 ## Access Amazon RDS Data Sources Using Salesforce Connect (10 pages)
 

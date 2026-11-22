@@ -2,9 +2,9 @@
 
 Source: [llms-industries-fsc-ins.txt](https://developer.salesforce.com/docs/llms-industries-fsc-ins.txt).
 
-Full link list extracted programmatically from the live source file (1677 page links across 2 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (1746 page links across 2 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
-## Financial Services Cloud Developer Guide (709 pages)
+## Financial Services Cloud Developer Guide (778 pages)
 
 | Page | URL |
 |---|---|
@@ -37,6 +37,12 @@ Full link list extracted programmatically from the live source file (1677 page l
 | getLightningContinuation(requestId, params, devName, input) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-commonserviceexcellence-integrationhandler-getlightningcontinuation.md |
 | getOmniContinuation(requestId, params, options, devName, input) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-commonserviceexcellence-integrationhandler-getomnicontinuation.md |
 | IntegrationHandler Methods | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-commonserviceexcellence-integrationhandler-methods.md |
+| addNodes(hierarchyId, flexibleHierarchyAddNodesInputRepresentation) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-flexiblehierarchyconnect-addnodes-1.md |
+| deleteNodes(hierarchyId, deleteFlexibleHierarchyNodesInputRepresentation) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-flexiblehierarchyconnect-deletenodes-1.md |
+| getFlexibleHierarchyConfig(hierarchyId, context) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-flexiblehierarchyconnect-getflexiblehierarchyconfig-1.md |
+| getFlexibleHierarchyNodeDetails(hierarchyId, nodeId, offset, pageSize, sortField, sortOrder, context) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-flexiblehierarchyconnect-getflexiblehierarchynodedetails-1.md |
+| getFlexibleHierarchySummaryRollupDetails(hierarchyId, nodeMeasureType, offset) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-flexiblehierarchyconnect-getsummaryrollupdetails-1.md |
+| searchFlexibleHierarchy(hierarchyId, searchQuery, entityType) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-flexiblehierarchyconnect-searchflexiblehierarchy-1.md |
 | validateFlexibleHierarchiesBulk(flexibleHierarchyBulkValidationInputRepresentation) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-flexiblehierarchyconnect-validateflexiblehierarchiesbulk-1.md |
 | createComplaint(complaintMgmtRequestData) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-icomplaintmgmtconnectfamily-createcomplaint-1.md |
 | ethocaAlertCallback(disputeManagementRequestData) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-idisputemanagementconnectfamily-ethocaalertcallback-1.md |
@@ -44,18 +50,44 @@ Full link list extracted programmatically from the live source file (1677 page l
 | ConnectApi.CaseParticipantInfoWrapper | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-input-case-participant-info-wrappe.md |
 | ConnectApi.ComplaintInfoWrapper | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-input-complaint-info-wrappe.md |
 | ConnectApi.ComplaintMgmtRequestInputRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-input-complaint-mgmt.md |
+| ConnectApi.DeleteFlexibleHierarchyNodesInputRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-input-delete-flexible-hierarchy-nodes.md |
 | ConnectApi.DocumentInfoAttributesWrapper | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-input-document-info-attributes-wrappe.md |
 | ConnectApi.EthocaAlertCallbackInputRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-input-ethoca-alert-callback.md |
 | ConnectApi.EthocaEvent | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-input-ethoca-event.md |
 | ConnectApi.EthocaLinks | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-input-ethoca-links.md |
+| ConnectApi.FlexibleHierarchyAddNodesInputRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-input-flexible-hierarchy-add-nodes.md |
 | ConnectApi.FlexibleHierarchyBulkValidationFilterInputRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-input-flexible-hierarchy-bulk-validation-filter.md |
 | ConnectApi.FlexibleHierarchyBulkValidationInputRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-input-flexible-hierarchy-bulk-validation.md |
 | ConnectApi.FlexibleHierarchyFiltersInputRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-input-flexible-hierarchy-filters.md |
+| ConnectApi.FlexibleHierarchyNodeInputRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-input-flexible-hierarchy-node.md |
+| ConnectApi.FlexibleHierarchyRelationInputRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-input-flexible-hierarchy-relation.md |
 | ConnectApi.GenericObjectWrapper | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-input-generic-object-wrappe.md |
 | ConnectApi.ComplaintMgmtOutputRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-complaint-mgmt-output.md |
+| ConnectApi.DeleteFlexibleHierarchyNodesRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-delete-flexible-hierarchy-nodes.md |
+| ConnectApi.EntityFieldRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-entity-field.md |
 | ConnectApi.EthocaAlertCallbackOutputRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-ethoca-alert-callback-output.md |
+| ConnectApi.FlexibleHierarchyAddNodesRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-add-nodes.md |
+| ConnectApi.FlexibleHierarchyAddedNodeRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-added-node.md |
+| ConnectApi.FlexibleHierarchyAddedRelationOutputRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-added-relation-output.md |
 | ConnectApi.FlexibleHierarchyBulkValidationRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-bulk-validation.md |
+| ConnectApi.FlexibleHierarchyConfigRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-config.md |
+| ConnectApi.FlexibleHierarchyConfigurationFieldsToDisplayRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-configuration-fields-to-display.md |
+| ConnectApi.FlexibleHierarchyConfigurationOutputRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-configuration-output.md |
+| ConnectApi.FlexibleHierarchyConfigurationRelationshipRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-configuration-relationship.md |
+| ConnectApi.FlexibleHierarchyConfigurationSummaryRollupRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-configuration-summary-rollup.md |
+| ConnectApi.FlexibleHierarchyNodeDetailsRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-node-details.md |
+| ConnectApi.FlexibleHierarchyNodeOutputRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-node-output.md |
+| ConnectApi.FlexibleHierarchyNodeRelationOutputRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-node-relation-output.md |
+| ConnectApi.FlexibleHierarchyNodeSummaryRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-node-summary.md |
+| ConnectApi.FlexibleHierarchyPaginatedOutputRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-paginated-output.md |
+| ConnectApi.FlexibleHierarchyReferenceEntityRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-reference-entity.md |
+| ConnectApi.FlexibleHierarchySearchNodeRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-search-node.md |
+| ConnectApi.FlexibleHierarchySearchReferenceRecordRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-search-reference-record.md |
+| ConnectApi.FlexibleHierarchySearchRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-search.md |
 | ConnectApi.FlexibleHierarchyStatusRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-status.md |
+| ConnectApi.FlexibleHierarchySummaryRollupDetailsPaginationRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-summary-rollup-details-pagination.md |
+| ConnectApi.FlexibleHierarchySummaryRollupDetailsRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-summary-rollup-details.md |
+| ConnectApi.FlexibleHierarchySummaryRollupRecordRepresentation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-flexible-hierarchy-summary-rollup-record.md |
 | ConnectApi.RecordAlertActionInfoCollection | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-record-alert-action-info-collection.md |
 | ConnectApi.RecordAlertActionInfo | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-record-alert-action-info.md |
 | ConnectApi.RecordAlertCollection | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/apex-connectapi-output-record-alert-collection.md |
@@ -158,6 +190,7 @@ Full link list extracted programmatically from the live source file (1677 page l
 | Case Participant Info Wrapper | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-case-participant-info-wrappe.md |
 | Complaint Info Wrapper | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-complaint-info-wrappe.md |
 | Complaint Management Request Input | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-complaint-mgmt-request-input.md |
+| Flexible Hierarchy Delete Nodes Input | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-delete-flexible-hierarchy-nodes-input.md |
 | Document Info Attributes Wrapper | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-document-info-attributes-wrappe.md |
 | Mapper Input Representation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-entity-mapper-input.md |
 | Ethoca Alert Callback Input | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-ethoca-alert-callback-input.md |
@@ -172,10 +205,16 @@ Full link list extracted programmatically from the live source file (1677 page l
 | Financial Goal Party Input | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-financial-goal-party-input.md |
 | Financial Goal Patch Input | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-financial-goal-patch-input.md |
 | Financial Goal Query Input | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-financial-goal-query-input.md |
+| Flexible Hierarchy Add Nodes Input | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-flexible-hierarchy-add-nodes-input.md |
 | Flexible Hierarchy Bulk Validation Filter Input | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-flexible-hierarchy-bulk-validation-filter-input.md |
 | Flexible Hierarchy Bulk Validation Input | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-flexible-hierarchy-bulk-validation-input.md |
 | Flexible Hierarchy Check Sync Input | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-flexible-hierarchy-check-sync-input.md |
+| Flexible Hierarchy Edit Node Relation Input | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-flexible-hierarchy-edit-node-relations-input.md |
+| Flexible Hierarchy Edit Reference Relation Input | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-flexible-hierarchy-edit-nodes-reference-relation-input.md |
+| Flexible Hierarchy Edit Relations Input | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-flexible-hierarchy-edit-relations-input.md |
 | Flexible Hierarchy Filters Input | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-flexible-hierarchy-filters-input.md |
+| Flexible Hierarchy Node Input | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-flexible-hierarchy-node-input.md |
+| Flexible Hierarchy Relation Input | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-flexible-hierarchy-relation-input.md |
 | Flexible Hierarchy Rule-Based Creation Input | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-flexible-hierarchy-rule-based-creation-input.md |
 | Generic Object Wrapper | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-generic-object-wrappe.md |
 | Intake Success Screen Management Input | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-requests-intake-success-screen-management-input.md |
@@ -219,18 +258,25 @@ Full link list extracted programmatically from the live source file (1677 page l
 | Financial Goal Update | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-financial-goal-patch.md |
 | Financial Goals Query | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-financial-goal-query.md |
 | Financial Goals | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-financial-goals-create.md |
+| Flexible Hierarchy Add Nodes (PATCH) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-flexible-hierarchy-add-nodes.md |
 | Flexible Hierarchy Apply Rules (POST) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-flexible-hierarchy-apply-rules.md |
 | Flexible Hierarchy Bulk Validation (POST) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-flexible-hierarchy-bulk-validate.md |
+| Flexible Hierarchy by ID (GET) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-flexible-hierarchy-by-id.md |
 | Flexible Hierarchy Check Synchronization (POST) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-flexible-hierarchy-check-sync.md |
+| Flexible Hierarchy Configuration (GET) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-flexible-hierarchy-configuration.md |
+| Flexible Hierarchy Delete Nodes (PATCH) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-flexible-hierarchy-delete-nodes.md |
+| Flexible Hierarchy Edit Node Relations (PATCH) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-flexible-hierarchy-edit-node-relations.md |
 | Flexible Hierarchy Job Run Item by ID (GET) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-flexible-hierarchy-job-run-item.md |
 | Flexible Hierarchy Job Run Items (GET) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-flexible-hierarchy-job-run-items.md |
 | Flexible Hierarchy Job Run by ID (GET, DELETE) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-flexible-hierarchy-job-run.md |
 | Flexible Hierarchy Job Runs (GET) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-flexible-hierarchy-job-runs.md |
 | Flexible Hierarchy Records (GET) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-flexible-hierarchy-records.md |
 | Flexible Hierarchy Root Records (GET) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-flexible-hierarchy-root-records.md |
+| Flexible Hierarchy Search (GET) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-flexible-hierarchy-search.md |
 | Flexible Hierarchy Snapshot Search (GET) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-flexible-hierarchy-snapshot-search.md |
 | Flexible Hierarchy Snapshot by Version (GET) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-flexible-hierarchy-snapshot.md |
 | Flexible Hierarchy Snapshots (GET) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-flexible-hierarchy-snapshots.md |
+| Flexible Hierarchy Summary Rollups (GET) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-flexible-hierarchy-summary-rollups.md |
 | Record Alerts (Financial Accounts) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-get-financial-account-alerts.md |
 | Bulk Record Alerts (Financial Accounts) | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-get-financial-accounts-bulk-alerts.md |
 | Mortgage Application | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-resources-get-patch-mortgage.md |
@@ -277,6 +323,8 @@ Full link list extracted programmatically from the live source file (1677 page l
 | Client Snapshot Field | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-client-snapshot-field.md |
 | Household Account Snapshot Response | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-client-snapshot.md |
 | Complaint Management Output | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-complaint-mgmt-output.md |
+| Flexible Hierarchy Delete Nodes Response | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-delete-flexible-hierarchy-nodes.md |
+| Flexible Hierarchy Entity Field Details | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-entity-field.md |
 | Mapper Result Representation | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-entity-mapper-result-representation.md |
 | Mapper Result | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-entity-mapper-result.md |
 | Ethoca Alert Callback Output | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-ethoca-alert-callback-output.md |
@@ -288,10 +336,17 @@ Full link list extracted programmatically from the live source file (1677 page l
 | Financial Goals Create Output | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-financial-goals-create-output.md |
 | Financial Goals Create Result | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-financial-goals-create-result.md |
 | Financial Goals List Output | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-financial-goals-list-output.md |
+| Flexible Hierarchy Add Nodes Response | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-add-nodes.md |
+| Flexible Hierarchy Added Node Details | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-added-node.md |
+| Flexible Hierarchy Added Relation Details | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-added-relation-output.md |
 | Flexible Hierarchy Bulk Validation Details | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-bulk-validation.md |
 | Flexible Hierarchy Check Sync Response | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-check-sync.md |
+| Flexible Hierarchy Configuration Response | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-config.md |
+| Flexible Hierarchy Configuration Fields to Display Details | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-configuration-fields-to-display.md |
+| Flexible Hierarchy Configuration Details | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-configuration-output.md |
 | Flexible Hierarchy Configuration Relationship Details | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-configuration-relationship.md |
 | Flexible Hierarchy Configuration Summary Rollup Details | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-configuration-summary-rollup.md |
+| Flexible Hierarchy Edit Relations Response | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-edit-relations.md |
 | Flexible Hierarchy Job Runs Response | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-job-run-collection.md |
 | Flexible Hierarchy Job Run Delete Response | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-job-run-delete.md |
 | Flexible Hierarchy Job Run Items Response | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-job-run-item-collection.md |
@@ -299,9 +354,14 @@ Full link list extracted programmatically from the live source file (1677 page l
 | Flexible Hierarchy Job Run Item Response | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-job-run-item.md |
 | Flexible Hierarchy Job Run Details | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-job-run-list-item.md |
 | Flexible Hierarchy Job Run Response | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-job-run.md |
+| Flexible Hierarchy Node Details Response | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-node-details.md |
+| Flexible Hierarchy Node Details | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-node-output.md |
+| Flexible Hierarchy Node Relation Details | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-node-relation-output.md |
+| Flexible Hierarchy Node Summary Details | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-node-summary.md |
 | Flexible Hierarchy Pagination Details | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-paginated-output.md |
 | Flexible Hierarchy Record Search Record Details | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-record-search-record.md |
 | Flexible Hierarchy Record Search Response | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-record-search.md |
+| Flexible Hierarchy Reference Entity Details | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-reference-entity.md |
 | Flexible Hierarchy Root Record Details | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-root-record.md |
 | Flexible Hierarchy Root Records Response | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-root-records.md |
 | Flexible Hierarchy Rule-Based Creation Response | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-rule-based-creation.md |
@@ -320,6 +380,9 @@ Full link list extracted programmatically from the live source file (1677 page l
 | Flexible Hierarchy Snapshot Details | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-snapshot-summary.md |
 | Flexible Hierarchy Snapshot Response | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-snapshot.md |
 | Flexible Hierarchy Status | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-status.md |
+| Flexible Hierarchy Summary Rollup Pagination Details | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-summary-rollup-details-pagination.md |
+| Flexible Hierarchy Summary Rollups Response | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-summary-rollup-details.md |
+| Flexible Hierarchy Summary Rollup Record Details | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-flexible-hierarchy-summary-rollup-record.md |
 | Mortgage Information Response | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-get-mortgage-response.md |
 | Mortgage Information Output | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-get-mortgage-result.md |
 | Insight Quick Action | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/connect-responses-insight-quick-action.md |
@@ -413,6 +476,12 @@ Full link list extracted programmatically from the live source file (1677 page l
 | Client Detail | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/fsc-client-detail-business-apis.md |
 | Previous Versions | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/fsc-dev-guide-pdf-archive.md |
 | Flexible Hierarchies | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/fsc-flexible-hierarchy-business-apis.md |
+| Edit and Validate Hierarchies | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/fsc-flexible-hierarchy-edit-apis.md |
+| Track Hierarchy Jobs | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/fsc-flexible-hierarchy-job-apis.md |
+| Flexible Hierarchy MCP Server | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/fsc-flexible-hierarchy-mcp-server.md |
+| Create and Synchronize Rule-Based Hierarchies | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/fsc-flexible-hierarchy-rule-based-apis.md |
+| Work with Hierarchy Snapshots | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/fsc-flexible-hierarchy-snapshot-apis.md |
+| Find and View Hierarchies | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/fsc-flexible-hierarchy-view-apis.md |
 | Intelligent Referral Management | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/fsc-intelligent-referral-management-business-apis.md |
 | Managed Package Objects | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/fsc-managed-package-objects-parent.md |
 | Icon | https://developer.salesforce.com/docs/industries/fsc-dev-guide/guide/fsc-meta-icon.md |

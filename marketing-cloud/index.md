@@ -2,32 +2,39 @@
 
 Source: [llms-marketing-cloud.txt](https://developer.salesforce.com/docs/llms-marketing-cloud.txt).
 
-Full link list extracted programmatically from the live source file (2177 page links across 10 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (2182 page links across 10 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
-## Marketing Cloud Next (65 pages)
+## Marketing Cloud Next (72 pages)
 
 | Page | URL |
 |---|---|
 | Configure your Org | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-administration.md |
 | Python Code Example for Encoding a JWT | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-connect-apis-data-cloud-jwt-encode.md |
 | Connect to Data 360 Connect API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-connect-apis-data-cloud.md |
-| Connect to Direct Email Send API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-connect-apis-direct-send.md |
+| Connect to Direct Send APIs | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-connect-apis-direct-send.md |
 | Which API Should I Use? | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-connect-apis-info.md |
 | Connect to REST-based APIs | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-connect-apis-rest.md |
 | Connect to SOAP API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-connect-apis-soap.md |
 | Connect to the API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-connect-apis.md |
+| Send Email Transactional Messages Through Direct Send API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-direct-send-email.md |
+| Send Push Transactional Messages Through Direct Send API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-direct-send-push.md |
+| Send RCS Transactional Messages Through Direct Send API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-direct-send-rcs.md |
+| Handle Responses, Errors, and Retries in Direct Send API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-direct-send-responses-errors.md |
+| Send SMS Transactional Messages Through Direct Send API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-direct-send-sms.md |
+| Send WhatsApp Transactional Messages Through Direct Send API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-direct-send-whatsapp.md |
 | Get Started | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-getting-started.md |
 | Action Component Blocks | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-component-blocks-action.md |
 | Content Component Blocks | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-component-blocks-content.md |
 | Form Component Blocks | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-component-blocks-form.md |
 | Layout Component Blocks | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-component-blocks-layout.md |
 | List Component Blocks | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-component-blocks-list.md |
-| Component Blocks | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-component-blocks.md |
+| Manage Component Blocks | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-component-blocks.md |
 | Manage Custom Fonts | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-custom-fonts.md |
 | Manage Email Templates | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-email-templates.md |
 | Manage Emails | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-emails.md |
 | Manage Content Folders | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-folders.md |
-| Integrate Form Submissions | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-form-handlers.md |
+| Manage Form Handlers | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-form-handlers.md |
+| Manage Images | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-images.md |
 | Manage Landing Page Templates | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-landing-pages-templates.md |
 | Manage Landing Pages | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-landing-pages.md |
 | Publish Content Items | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-publish.md |
@@ -63,9 +70,9 @@ Full link list extracted programmatically from the live source file (2177 page l
 | Get a List of Segments | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-segments-get.md |
 | Publish a Segment | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-segments-publish.md |
 | Manage Segments | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-segments.md |
-| Send Transactional Messages with an On-Demand Flow | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-transactional-messages-on-demand-flow.md |
+| Send Email Transactional Messages Through On-Demand Flow | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-transactional-messages-on-demand-flow.md |
 | Manage Transactional Messages | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-transactional-messages.md |
-| Send Transactional Messages with Direct Email Send API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-transactions-messages-direct-send.md |
+| Send Transactional Messages Through Direct Send API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-transactions-messages-direct-send.md |
 | Documentation | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-resources-documentation.md |
 | Developer Tools | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-resources-tools.md |
 | Trailhead Modules | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-resources-trailhead.md |
@@ -74,7 +81,7 @@ Full link list extracted programmatically from the live source file (2177 page l
 | Security | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-security.md |
 | Summary | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/references/mc-summary/mc-summary.md |
 
-## Marketing Cloud Engagement APIs and Programmatic Languages (1137 pages)
+## Marketing Cloud Engagement APIs and Programmatic Languages (1135 pages)
 
 | Page | URL |
 |---|---|
@@ -201,8 +208,6 @@ Full link list extracted programmatically from the live source file (2177 page l
 | Authentication | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/authentication.md |
 | Authorization Code Reference | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/authorization-code.md |
 | Automation Studio Events | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/automation_studio_events.md |
-| Automation Activity Types | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/automation-activity-types.md |
-| Automation Schedules | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/automation-schedules.md |
 | Automation Studio API | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/automation-studio-api.md |
 | Automation | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/automation.md |
 | AutomationActivity | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/automationactivity.md |
@@ -1075,43 +1080,43 @@ Full link list extracted programmatically from the live source file (2177 page l
 | Retrieve Sent Message by MessageId | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_chat_messaging/OTTretrieveSentMessage.md |
 | Send Message to Recipient | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_chat_messaging/OTTsendMessageToRecipient.md |
 | Add Contact Preferences | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/addContactPreferences.md |
-| Add Contact Preferences by Contact ID | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/addContactPreferencesById.md |
-| Insert Attribute Values by ID | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/attributeSetsDataIDInsert.md |
-| Update Attribute Values by ID | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/attributeSetsDataIDUpdate.md |
+| Add Contact Preferences | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/addContactPreferencesById.md |
+| Create Attribute Values | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/attributeSetsDataIDInsert.md |
+| Update Attribute Values | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/attributeSetsDataIDUpdate.md |
 | Search Attribute Sets by Name | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/attributeSetsDataName.md |
 | Remove Contact from a Journey | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/contactExitRequest.md |
-| Get Contact's Exit Status from a Journey | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/contactExitStatus.md |
-| Get List of Journeys the Contact is in | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/contactMembershipRequest.md |
+| Retrieve Journey Exit Status for a Contact | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/contactExitStatus.md |
+| Retrieve Journey Status of a Contact | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/contactMembershipRequest.md |
 | Configure Settings for Deleting Contacts | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/ContactsDeleteConfigStatus.md |
-| Get Contact Delete Requests Details | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/ContactsDeleteRequestsDetails.md |
-| Get Contact Delete Requests Summary | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/ContactsDeleteRequestsSummary.md |
-| Get Status of the Contact Delete Operation | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/ContactsDeleteStatus.md |
-| Get Status of the Contact Restrict Operation | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/ContactsRestrictStatus.md |
+| Retrieve Details of Contact Delete Requests | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/ContactsDeleteRequestsDetails.md |
+| Retrieve Contact Delete Requests Summary | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/ContactsDeleteRequestsSummary.md |
+| Retrieve Status of the Contact Delete Operation | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/ContactsDeleteStatus.md |
+| Retrieve Status of the Contact Restrict Operation | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/ContactsRestrictStatus.md |
 | Create Contacts | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/createContacts.md |
 | Create Population | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/createPopulationAttributeGroup.md |
-| Delete Contacts by ID | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/DeleteByContactIDs.md |
+| Delete Contacts | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/DeleteByContactIDs.md |
 | Delete Contacts by Key | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/DeleteByContactKeys.md |
 | Delete Contacts by List Reference | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/DeleteByListReference.md |
-| Get or Create Contacts by Key and Type | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/establish-contacts-detail.md |
-| Get All Contact and associated Address | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/fetchContactsAddressesBySearchCriteria.md |
-| Get Contact count based on search criteria | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/fetchContactsAddressesCountSearchCriteria.md |
-| Get Contact Preferences by Contact ID | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getContactPreferencesById.md |
-| Get Contact Preferences by Contact Key | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getContactPreferencesByKey.md |
-| Get Custom Object Info | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getCustomObject.md |
-| Get Delete Options | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getDeleteOptions.md |
-| Get list of contact delete operations | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getListOfContactDeleteOperations.md |
-| Restrict Contacts by ID | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/restrict-contact-id.md |
+| Retrieve or Create Contacts by Key and Type | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/establish-contacts-detail.md |
+| Search Contacts and Attributes | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/fetchContactsAddressesBySearchCriteria.md |
+| Retrieve Contact Count | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/fetchContactsAddressesCountSearchCriteria.md |
+| Retrieve Contact Preferences | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getContactPreferencesById.md |
+| Retrieve Contact Preferences by Contact Key | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getContactPreferencesByKey.md |
+| Retrieve Custom Object Info | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getCustomObject.md |
+| Retrieve Delete Options | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getDeleteOptions.md |
+| Retrieve a List of Contact Deletion Operations | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getListOfContactDeleteOperations.md |
+| Restrict Contacts | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/restrict-contact-id.md |
 | Restrict Contacts by Key | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/restrict-contact-key.md |
 | Restrict Contacts by List Reference | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/restrict-contact-listreference.md |
-| Get All Attribute Set Definitions | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveAllAttributeSetDefinitions.md |
+| Retrieve All Attribute Set Definitions | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveAllAttributeSetDefinitions.md |
 | Search Attribute Groups by Schema | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveAttributeGroups.md |
 | Search Attribute Group ID by Schema | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveAttributeGroupsID.md |
-| Get Attribute Set Definitions by ID | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveAttributeSetDefinitions.md |
-| Get Contact Key for Email Addresses | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveContactKey.md |
-| Retrieves relationship details | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveCustomObjectFieldRelationships.md |
+| Retrieve an Attribute Set Definition | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveAttributeSetDefinitions.md |
+| Retrieve Contact Key for Email Addresses | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveContactKey.md |
+| Retrieve Relationship Details | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveCustomObjectFieldRelationships.md |
 | Retry Failed Delete Request | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/RetryContactDelete.md |
 | Retry Failed Restrict Request | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/RetryContactRestrict.md |
-| Get Schemas Collection | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/schemasCollection.md |
+| Retrieve Schema Collection | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/schemasCollection.md |
 | Search Contact Preferences by Reference Type | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/searchContactPreferencesByReferenceType.md |
 | Update Contacts | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/updateContacts.md |
 | Create Callback | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_event_notification/createCallback.md |

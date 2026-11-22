@@ -65,7 +65,7 @@ def meter_catalog(rate_card):
              "environments": {
                  env: ("TIERED" if env == "production" and "production_tiers" in meter
                        else "AVAILABLE" if meter.get(env) is not None else "UNPRICEABLE")
-                 for env in ("production", "sandbox")}
+                 for env in ("production", "sandbox")}}
             for meter_id, meter in sorted(rate_card["rate_meters"].items())
         ]
     }

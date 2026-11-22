@@ -5,7 +5,7 @@ description: Evidence-first Salesforce solution architecture; connect official d
 
 # Salesforce Solution Architect — combined source + pattern + pricing
 
-Read `solution-intelligence/README.md`, `solution-intelligence/source-manifest.yaml` and `solution-intelligence/RESOLVER-QUICKSTART.md` before proceeding. Route source retrieval and pricing execution to the canonical repositories/skills. **Do not clone, mutate, deploy or install things without a user request.**
+Read `solution-intelligence/README.md`, `solution-intelligence/source-manifest.yaml`, `solution-intelligence/docs/skill-routing.md` and `solution-intelligence/RESOLVER-QUICKSTART.md` before proceeding. Route source retrieval and pricing execution to the canonical repositories/skills. **Do not clone, mutate, deploy or install things without a user request.**
 
 ## Responsibilities and boundaries
 
@@ -49,6 +49,10 @@ Do not imply public pricing is a contract quote, or unsupported meters are free.
 
 ### 5. Evidence and quality gate
 Use VERIFIED / INFERRED / UNKNOWN / CONFLICTED on material claims, with URL/section and source date. Include alternatives considered, beta compatibility, permission/identity handling, customer-specific gap, rate-card verification status, scenario replay command and independent commercial audit. If a pricing tool did not run, label NOT_RUN.
+
+## Skill routing and prerequisites
+
+This project skill owns end-to-end process-to-solution orchestration, **not** all specialist tools. For an exclusively commercial question route directly to the canonical `sf-pricing-intelligence` (GitHub-first in ChatGPT; project-scope Claude equivalent in Claude Code). The separate `sf-pricing-intelligence-spq-pilot` is for explicitly approved A/B testing only, never routine quotation research. Salesforce upstream skills can assist only if their actual plugin/CLI/MCP prerequisites and target org are verified. `platform-capability-search` requires the complete Salesforce Development plugin and is not a generic orchestrator; `platform-metadata-discovery-get` requires authorized org context; `agentforce-architecture-analyze` is for a specific Agentforce agent. No skill registry entry is proof of availability, org rights or licensing.
 
 ## Structural resolver pilot (opt-in, not factual source)
 

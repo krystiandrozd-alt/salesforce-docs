@@ -4,7 +4,11 @@ purpose: "Source routing and process-to-license relationship contract, not a mer
 reference_registry: "reference-registry.yaml"
 capability_commercial_contract: "docs/capability-commercial-contract.md"
 resolver_prompt: "prompts/resolve-process-commercial.md"
-resolver_runtime_status: "NOT_IMPLEMENTED"
+resolver_runtime_status: "SYNTHETIC_STRUCTURAL_PILOT_ONLY"
+resolver_entrypoint: "resolver.py"
+resolver_quickstart: "RESOLVER-QUICKSTART.md"
+resolver_fixture: "examples/wholesale-quote-to-order.synthetic.json"
+resolver_tests: "tests/test_resolver.py"
 reference_resolution: "Paths above are relative to solution-intelligence; paths in each layer are relative to that layer's root. Resolve refs to commit SHAs per run."
 layers:
   technical:

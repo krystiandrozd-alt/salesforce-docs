@@ -5,6 +5,8 @@ description: Author, test or integrate a pricing-related Salesforce Agentforce a
 
 # Agentforce Native Development Bridge (SPQ pilot)
 
+Read `pricing-intelligence/AGENTS.md` for shared permissions, evidence boundaries and release requirements.
+
 Use this skill only after confirmed **org-bound** user intent. Follow https://labs.agentforce.com/llms.txt and Claude-specific ADLC guidance at https://labs.agentforce.com/api/docs/skills.md. Keep pricing business rules in the deterministic engine, not Agent Script narrative.
 
 **Boundary:** Public Salesforce price research is not a native agent-build request. A connected org is **not authorization** to modify its metadata. Native actions require a named target and user approval.

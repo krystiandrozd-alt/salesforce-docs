@@ -5,12 +5,13 @@ Synthesis written independently from the source index below (not copied text).
 Developer and implementation documentation for Salesforce Personalization (formerly Interaction Studio), covering real-time behavioral tracking, AI-driven decisioning, campaign configuration, web and mobile SDK integration, and personalized experience delivery across digital channels.
 
 Section breakdown:
-- **Salesforce Personalization** — 50 pages
+- **Salesforce Personalization** — 53 pages
 
 *Source: [`llms-einstein-personalization.txt`](https://developer.salesforce.com/docs/llms-einstein-personalization.txt) — official aggregated index (developer doc page), overview section.*
 
 
-*Last refreshed 2026-11-06: 50 pages in 1 sections (counts from the live source).*
+
+*Last refreshed 2026-11-22: 53 pages in 1 sections (counts from the live source).*
 
 ## Extraction notes
 

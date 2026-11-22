@@ -2,7 +2,7 @@
 
 Source: [llms-platform-apex.txt](https://developer.salesforce.com/docs/llms-platform-apex.txt).
 
-Full link list extracted programmatically from the live source file (2881 page links across 2 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (2880 page links across 2 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
 ## Apex Developer Guide (550 pages)
 
@@ -163,8 +163,8 @@ Full link list extracted programmatically from the live source file (2881 page l
 | Considerations for the Apex Connector Framework | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-connector-considerations.md |
 | GitHub Issues Custom Adapter for Salesforce Connect | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-connector-example-github-issues.md |
 | GitHub Custom Adapter for Salesforce Connect | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-connector-example-github.md |
-| Google Booksâ„¢ Custom Adapter for Salesforce Connect | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-connector-example-google-books.md |
-| Google Driveâ„¢ Custom Adapter for Salesforce Connect | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-connector-example-google-drive.md |
+| Google Books™ Custom Adapter for Salesforce Connect | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-connector-example-google-books.md |
+| Google Drive™ Custom Adapter for Salesforce Connect | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-connector-example-google-drive.md |
 | Loopback Custom Adapter for Salesforce Connect | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-connector-example-loopback.md |
 | Stack Overflow Custom Adapter for Salesforce Connect | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-connector-example-stackoverflow.md |
 | Apex Connector Framework Examples | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-connector-examples.md |
@@ -213,9 +213,9 @@ Full link list extracted programmatically from the live source file (2881 page l
 | Apex Developer Guide | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-dev-guide.md |
 | Apex Development Process | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-dev-process-chapter.md |
 | Bulk DML Exception Handling | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-dml-bulk-exceptions.md |
-| sObjects That Donâ€™t Support DML Operations | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-dml-non-dml-objects.md |
+| sObjects That Don’t Support DML Operations | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-dml-non-dml-objects.md |
 | Mixed DML Operations in Test Methods | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-dml-non-mix-sobjects-test-methods.md |
-| sObjects That Canâ€™t Be Used Together in DML Operations | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-dml-non-mix-sobjects.md |
+| sObjects That Can’t Be Used Together in DML Operations | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-dml-non-mix-sobjects.md |
 | Document Apex Constructs and Features | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-doc-constructs.md |
 | ApexDoc Examples | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-doc-examples.md |
 | ApexDoc Comment Structure and Tags | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-doc-format.md |
@@ -288,7 +288,7 @@ Full link list extracted programmatically from the live source file (2881 page l
 | Sorting Lists of sObjects | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-list-sorting-sobject.md |
 | Design Managed Apex for Agentforce | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-manpkgs-agent.md |
 | Apex in Managed Packages | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-manpkgs-behavior-intro.md |
-| Apex Code Items That Arenâ€™t Versioned | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-manpkgs-behavior-not-versioned.md |
+| Apex Code Items That Aren’t Versioned | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-manpkgs-behavior-not-versioned.md |
 | Testing Versioned Behavior in Apex Code | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-manpkgs-behavior-testing.md |
 | Version Apex Code Behavior | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-manpkgs-behavior.md |
 | Develop and Distribute Apex for Managed Packages | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-manpkgs-chapter.md |
@@ -426,7 +426,7 @@ Full link list extracted programmatically from the live source file (2881 page l
 | Follow a Record | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/connectapi-examples-follow-record.md |
 | Get Allowed Item Types | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/connectapi-examples-get-allowed-item-types.md |
 | Get an Authentication URL | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/connectapi-examples-get-an-authentication-url.md |
-| Get Feed Elements From Another Userâ€™s Feed | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/connectapi-examples-get-feed-elements-another-user.md |
+| Get Feed Elements From Another User’s Feed | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/connectapi-examples-get-feed-elements-another-user.md |
 | Get Site-Specific Feed Elements from a Feed | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/connectapi-examples-get-feed-elements-community-scoped.md |
 | Get Feed Elements From a Feed | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/connectapi-examples-get-feed-elements.md |
 | Get a File Preview | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/connectapi-examples-get-file-preview.md |
@@ -559,7 +559,7 @@ Full link list extracted programmatically from the live source file (2881 page l
 | OAuth 2.0 Token Exchange Handler Examples | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/token-exchange-handler.md |
 | Apex Versioned Behavior Changes | https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/versioned-behavior-changes.md |
 
-## Apex Reference Guide (2331 pages)
+## Apex Reference Guide (2330 pages)
 
 | Page | URL |
 |---|---|
@@ -946,8 +946,8 @@ Full link list extracted programmatically from the live source file (2881 page l
 | DataCategory Class | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-class-schema-datacategory.md |
 | DataCategoryGroupSobjectTypePair Class | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-class-schema-datacategorygroupsobjecttypepair.md |
 | DescribeColorResult Class | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-class-schema-describecolorresult.md |
-| Describeâ€‹DataCategoryGroupResult Class | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-class-schema-describedatacategorygroupresult.md |
-| Describeâ€‹DataCategoryGroupStructureResult Class | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-class-schema-describedatacategorygroupstructureresult.md |
+| Describe​DataCategoryGroupResult Class | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-class-schema-describedatacategorygroupresult.md |
+| Describe​DataCategoryGroupStructureResult Class | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-class-schema-describedatacategorygroupstructureresult.md |
 | DescribeIconResult Class | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-class-schema-describeiconresult.md |
 | DescribeTabResult Class | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-class-schema-describetabresult.md |
 | DescribeTabSetResult Class | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-class-schema-describetabsetresult.md |
@@ -1245,7 +1245,7 @@ Full link list extracted programmatically from the live source file (2881 page l
 | ConnectApi.CdpSegmentInput | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-cdp-segment.md |
 | ConnectApi.ChangeItemFeeTaxInputRepresentation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-change-item-fee-tax.md |
 | ConnectApi.ChangeItemFeeWithTaxInputRepresentation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-change-item-fee-with-tax.md |
-| ConnectApi.ChangeItemFeeâ€‹InputRepresentation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-change-item-fee.md |
+| ConnectApi.ChangeItemFee​InputRepresentation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-change-item-fee.md |
 | ConnectApi.ChangeItemInputRepresentation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-change-item.md |
 | ConnectApi.ChangeOrderAdjustmentGroupSummaryInputRepresentation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-change-order-adjustment-group-summary.md |
 | ConnectApi.ChangeOrderDeliveryGroupSummaryInputRepresentation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-change-order-delivery-group-summary.md |
@@ -1302,8 +1302,8 @@ Full link list extracted programmatically from the live source file (2881 page l
 | ConnectApi.DmoFilterLimitInput | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-dmo-filter-limit.md |
 | ConnectApi.DoubleList | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-double-list-inpu.md |
 | ConnectApi.EgressPropertiesInput | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-egress-properties.md |
-| ConnectApi.â€‹EinsteinLlmâ€‹Additionalâ€‹ConfigInput | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-einstein-llm-additional-config.md |
-| ConnectApi.â€‹EinsteinPromptâ€‹Templateâ€‹GenerationsInput | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-einstein-prompt-template-generations.md |
+| ConnectApi.​EinsteinLlm​Additional​ConfigInput | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-einstein-llm-additional-config.md |
+| ConnectApi.​EinsteinPrompt​Template​GenerationsInput | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-einstein-prompt-template-generations.md |
 | ConnectApi.EnsureFundsAsyncInputRepresentation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-ensure-funds-async.md |
 | ConnectApi.EnsurePaymentCreditInputRepresentation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-ensure-payment-credit.md |
 | ConnectApi.EnsureRefundsAsyncInputRepresentation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-ensure-refunds-async.md |
@@ -1368,6 +1368,7 @@ Full link list extracted programmatically from the live source file (2881 page l
 | ConnectApi.ManagedContentChannelCreateRepresentation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-managed-content-channel-create-representatio.md |
 | ConnectApi.ManagedContentChannelUpdateRepresentation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-managed-content-channel-update-representatio.md |
 | ConnectApi.ManagedContentDocumentCloneInput | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-managed-content-document-clone.md |
+| ConnectApi.ManagedContentExternalSourceInput | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-managed-content-external-source.md |
 | ConnectApi.ManagedContentItemsDeleteInput | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-managed-content-items-delete.md |
 | ConnectApi.ManagedContentMetadataCollectionInput | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-managed-content-metadata-collection.md |
 | ConnectApi.ManagedContentProviderInstanceInput | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-input-managed-content-provider-instance.md |
@@ -1876,19 +1877,19 @@ Full link list extracted programmatically from the live source file (2881 page l
 | ConnectApi.EinsteinLlmGenerationGenAiCitedReference | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-llm-generation-gen-ai-cited-reference.md |
 | ConnectApi.EinsteinLlmGenerationGenAiSourceContentInfo | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-llm-generation-gen-ai-source-content-info.md |
 | ConnectApi.EinsteinLlmGenerationGenAiSourceReferenceInfo | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-llm-generation-gen-ai-source-reference-info.md |
-| ConnectApi.â€‹EinsteinLLMâ€‹GenerationItemâ€‹Output | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-llm-generation-item.md |
-| ConnectApi.â€‹EinsteinLlmâ€‹Generationâ€‹ContentQualityâ€‹Output | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-llm-generations-content-quality.md |
-| ConnectApi.â€‹EinsteinLlmâ€‹Generationâ€‹SafetyScoreâ€‹Output | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-llm-generations-safety-score.md |
+| ConnectApi.​EinsteinLLM​GenerationItem​Output | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-llm-generation-item.md |
+| ConnectApi.​EinsteinLlm​Generation​ContentQuality​Output | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-llm-generations-content-quality.md |
+| ConnectApi.​EinsteinLlm​Generation​SafetyScore​Output | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-llm-generations-safety-score.md |
 | ConnectApi.EinsteinPromptRecordCollectionOutputRepresentation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-prompt-record-collection-output.md |
 | ConnectApi.EinsteinPromptRecordFieldRepresentation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-prompt-record-field.md |
 | ConnectApi.EinsteinPromptRecordRepresentation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-prompt-record.md |
 | ConnectApi.EinsteinPromptTemplateAttachmentExclusionInfo | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-prompt-template-attachment-exclusion-info.md |
 | ConnectApi.EinsteinPromptTemplateAttachment | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-prompt-template-attachment.md |
-| ConnectApi.â€‹EinsteinPromptâ€‹Templateâ€‹GenerationsError | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-prompt-template-generations-error.md |
-| ConnectApi.â€‹EinsteinPromptâ€‹Templateâ€‹Generationsâ€‹Representation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-prompt-template-generations.md |
-| ConnectApi.â€‹EinsteinPromptâ€‹TemplateMaskâ€‹Contentâ€‹Representation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-prompt-template-mask-content.md |
-| ConnectApi.â€‹EinsteinPromptâ€‹TemplateMaskDataâ€‹Representation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-prompt-template-mask-data.md |
-| ConnectApi.â€‹EinsteinPromptâ€‹TemplateMaskSettingsâ€‹Representation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-prompt-template-mask-settings.md |
+| ConnectApi.​EinsteinPrompt​Template​GenerationsError | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-prompt-template-generations-error.md |
+| ConnectApi.​EinsteinPrompt​Template​Generations​Representation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-prompt-template-generations.md |
+| ConnectApi.​EinsteinPrompt​TemplateMask​Content​Representation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-prompt-template-mask-content.md |
+| ConnectApi.​EinsteinPrompt​TemplateMaskData​Representation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-prompt-template-mask-data.md |
+| ConnectApi.​EinsteinPrompt​TemplateMaskSettings​Representation | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-prompt-template-mask-settings.md |
 | ConnectApi.EinsteinPromptTemplateMergeFieldInformationContext | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-einstein-prompt-template-merge-field-information-conte.md |
 | ConnectApi.EmailAttachment | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-email-attachment.md |
 | ConnectApi.EmailMergeFieldCollectionInfo | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-email-merge-field-collection.md |
@@ -2453,7 +2454,7 @@ Full link list extracted programmatically from the live source file (2881 page l
 | ConnectApi.TrackedChangeBundleCapability | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-tracked-change-bundle-capability.md |
 | ConnectApi.TrackedChangesCapability | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-tracked-changes-capability.md |
 | ConnectApi.TrackedChangeAttachment | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-trackedchangeattachment.md |
-| ConnectApi.â€‹TrackedChangeItem | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-trackedchangeitem.md |
+| ConnectApi.​TrackedChangeItem | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-trackedchangeitem.md |
 | ConnectApi.TextSegment | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-txtmsgseg.md |
 | ConnectApi.TypeAndFilter | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-type-and-filter.md |
 | ConnectApi.UnauthenticatedUser | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-connectapi-output-unauth-user.md |
@@ -2683,8 +2684,6 @@ Full link list extracted programmatically from the live source file (2881 page l
 | ProcessPaymentStatusHandler Interface | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-interface-richmessaging-processpaymentstatushandler.md |
 | ContentDownloadHandlerFactory Interface | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-interface-sfc-contentdownloadhandlerfactory.md |
 | AsyncCartProcessor Interface | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-interface-sfdc-checkout-asynccartprocessor.md |
-| Example Implementation to Associate SurveySubjects with SurveyInvitation and SurveyResponses | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-interface-sfdc-surveys-associate-surveysubject-example.md |
-| SurveyInvitationLinkShortener Interface | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-interface-sfdc-surveys-surveyinvitationlinkshortener.md |
 | MilestoneTriggerTimeCalculator Interface | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-interface-support-milestonetriggertimecalculator.md |
 | Callable Interface | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-interface-system-callable.md |
 | Comparator Interface | https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-interface-system-comparator.md |

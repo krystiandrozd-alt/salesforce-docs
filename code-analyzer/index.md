@@ -2,7 +2,7 @@
 
 Source: [llms-code-analyzer.txt](https://developer.salesforce.com/docs/llms-code-analyzer.txt).
 
-Full link list extracted programmatically from the live source file (74 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (74 page links across 1 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
 ## Salesforce Code Analyzer (74 pages)
 

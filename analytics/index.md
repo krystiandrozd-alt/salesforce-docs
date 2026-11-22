@@ -2,7 +2,7 @@
 
 Source: [llms-analytics.txt](https://developer.salesforce.com/docs/llms-analytics.txt).
 
-Full link list extracted programmatically from the live source file (1013 page links across 16 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (1023 page links across 16 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
 ## Analytics Dashboard Component (17 pages)
 
@@ -408,7 +408,7 @@ Full link list extracted programmatically from the live source file (1013 page l
 | Package Your Tableau Next App | https://developer.salesforce.com/docs/analytics/tableau-next-isv-dev/guide/tn-package-your-app.md |
 | Workflow for Tableau Next Scratch Orgs | https://developer.salesforce.com/docs/analytics/tableau-next-isv-dev/guide/tn-scratch-org-workflow.md |
 
-## App Template Framework (44 pages)
+## App Template Framework (54 pages)
 
 | Page | URL |
 |---|---|
@@ -430,6 +430,16 @@ Full link list extracted programmatically from the live source file (1013 page l
 | Rules Reference | https://developer.salesforce.com/docs/analytics/app-template-framework/guide/atf-rules-reference.md |
 | Static Functions | https://developer.salesforce.com/docs/analytics/app-template-framework/guide/atf-rules-static-functions.md |
 | string Functions | https://developer.salesforce.com/docs/analytics/app-template-framework/guide/atf-rules-string-functions.md |
+| Definition Apex Reference | https://developer.salesforce.com/docs/analytics/app-template-framework/guide/atf-template-apex-api-definition.md |
+| Layout Definition Apex Reference | https://developer.salesforce.com/docs/analytics/app-template-framework/guide/atf-template-apex-api-layout-definition.md |
+| Page Layout Apex Reference | https://developer.salesforce.com/docs/analytics/app-template-framework/guide/atf-template-apex-api-page-layout.md |
+| Panel and Items Apex Reference | https://developer.salesforce.com/docs/analytics/app-template-framework/guide/atf-template-apex-api-panel-item.md |
+| Variable Types Apex Reference | https://developer.salesforce.com/docs/analytics/app-template-framework/guide/atf-template-apex-api-variable-types.md |
+| Template Configuration Modifier Apex Reference | https://developer.salesforce.com/docs/analytics/app-template-framework/guide/atf-template-apex-api.md |
+| Apex Template Configuration Modifiers | https://developer.salesforce.com/docs/analytics/app-template-framework/guide/atf-template-apex.md |
+| Understanding template-info.json | https://developer.salesforce.com/docs/analytics/app-template-framework/guide/atf-template-info.md |
+| The Template Object | https://developer.salesforce.com/docs/analytics/app-template-framework/guide/atf-template-obj.md |
+| Update an Existing Template | https://developer.salesforce.com/docs/analytics/app-template-framework/guide/atf-update-template.md |
 | BaseTemplateInstalledReadiness | https://developer.salesforce.com/docs/analytics/app-template-framework/guide/BaseTemplateInstalledReadiness.md |
 | BulkDeleteAssets | https://developer.salesforce.com/docs/analytics/app-template-framework/guide/BulkDeleteAssets.md |
 | ContentAssetUpsert | https://developer.salesforce.com/docs/analytics/app-template-framework/guide/ContentAssetUpsert.md |

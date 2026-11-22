@@ -2,9 +2,9 @@
 
 Source: [llms-platform-obj-meta-tool.txt](https://developer.salesforce.com/docs/llms-platform-obj-meta-tool.txt).
 
-Full link list extracted programmatically from the live source file (2498 page links across 3 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (2758 page links across 3 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
-## Metadata API Developer Guide (681 pages)
+## Metadata API Developer Guide (697 pages)
 
 | Page | URL |
 |---|---|
@@ -93,6 +93,22 @@ Full link list extracted programmatically from the live source file (2498 page l
 | SOAP Headers | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-headers/meta-headers.md |
 | SessionHeader | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-headers/meta-sessionheader.md |
 | Previous Version PDFs | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-previous-versions/v67.0/metadata-previous-versions-pdfs.md |
+| CustomObject Additional Reference | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/customobject.md |
+| CustomObjectTranslation Language Support: End-User Languages | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/customobjectranslation-language-support-enduser.md |
+| CustomObjectTranslation Language Support: Fully Supported Languages | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/customobjectranslation-language-support-standard.md |
+| ArticleType | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/meta-articletype.md |
+| Custom Metadata Types (CustomObject) | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/meta-custommetadatatypes.md |
+| DigitalExperienceBundle: Marketing Workspace Bundle and Folders | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/meta-digitalexperiencebundle-marketing.md |
+| DigitalExperienceBundle: Site Workspace Bundle and Folders | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/meta-digitalexperiencebundle-site.md |
+| FeatureParameterBoolean | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/meta-featureparameterboolean.md |
+| FeatureParameterDate | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/meta-featureparameterdate.md |
+| FeatureParameterInteger | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/meta-featureparameterinteger.md |
+| MarketingObject | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/meta-marketingobject.md |
+| ScndTelephPrvdOtbdDtl | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/meta-scndtelephprvdotbddtl.md |
+| SecondaryTelephonyProvider | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/meta-secondarytelephonyprovider.md |
+| Settings | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/meta-settings.md |
+| TelephonyProvider | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/meta-telephonyprovider.md |
+| TrustedTelephonyProvider | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/meta-trustedtelephonyprovider.md |
 | Metadata Types Reference | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/meta-types-list.md |
 | AccountingFieldMapping | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/metadata-accountingfieldmapping.md |
 | AccountingModelConfig | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/metadata-accountingmodelconfig.md |
@@ -666,11 +682,11 @@ Full link list extracted programmatically from the live source file (2498 page l
 | Workflow | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/metadata-workflow.md |
 | WorkforceEngagementSettings | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/metadata-workforceengagementsettings.md |
 | WorkSkillRouting | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/metadata-workskillrouting.md |
-| CustomObject Additional Reference | https://developer.salesforce.com/docs/platform/api-metadata/references/metadata-types-ref/customobject.md |
-| CustomObjectTranslation Language Support: End-User Languages | https://developer.salesforce.com/docs/platform/api-metadata/references/metadata-types-ref/customobjectranslation-language-support-enduser.md |
-| CustomObjectTranslation Language Support: Fully Supported Languages | https://developer.salesforce.com/docs/platform/api-metadata/references/metadata-types-ref/customobjectranslation-language-support-standard.md |
-| Settings | https://developer.salesforce.com/docs/platform/api-metadata/references/metadata-types-ref/meta-settings.md |
-| StandardValueSet Names and Standard Picklist Fields | https://developer.salesforce.com/docs/platform/api-metadata/references/metadata-types-ref/standardvalueset-names.md |
+| StandardValueSet Names and Standard Picklist Fields | https://developer.salesforce.com/docs/platform/api-metadata/references/meta-types/standardvalueset-names.md |
+| BaseSharingRule | https://developer.salesforce.com/docs/platform/api-metadata/references/metadata-types-ref/meta-basesharingrule.md |
+| CriteriaBasedSharingRule | https://developer.salesforce.com/docs/platform/api-metadata/references/metadata-types-ref/meta-cbsrule.md |
+| EmbeddedServiceFieldService | https://developer.salesforce.com/docs/platform/api-metadata/references/metadata-types-ref/meta-embeddedservicefieldservice.md |
+| OwnerSharingRule | https://developer.salesforce.com/docs/platform/api-metadata/references/metadata-types-ref/meta-ownersharingrule.md |
 | AsyncResult | https://developer.salesforce.com/docs/platform/api-metadata/references/result-objects/meta-asyncresult.md |
 | CancelDeployResult | https://developer.salesforce.com/docs/platform/api-metadata/references/result-objects/meta-canceldeployresult.md |
 | DeleteResult | https://developer.salesforce.com/docs/platform/api-metadata/references/result-objects/meta-deleteresult.md |
@@ -690,7 +706,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | ListMetadataQuery | https://developer.salesforce.com/docs/platform/api-metadata/references/utility-calls/meta-listmetadataquery.md |
 | Utility Calls | https://developer.salesforce.com/docs/platform/api-metadata/references/utility-calls/meta-utility-calls-intro.md |
 
-## Tooling API Developer Guide (316 pages)
+## Tooling API Developer Guide (345 pages)
 
 | Page | URL |
 |---|---|
@@ -727,6 +743,15 @@ Full link list extracted programmatically from the live source file (2498 page l
 | Tooling Objects | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-general/reference-objects-tooling.md |
 | ApiFault Element | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-general/tooling-api-objects-fault-set.md |
 | System Fields | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-general/tooling-system-fields.md |
+| EmbeddedServiceFieldService | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects-ref/tooling-api-objects-embeddedservicefieldservice.md |
+| EventDelivery | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects-ref/tooling-api-objects-eventdelivery.md |
+| EventSubscription | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects-ref/tooling-api-objects-eventsubscription.md |
+| ExternalDataTransportFieldTemplate | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects-ref/tooling-api-objects-externaldatatransportfieldtemplate.md |
+| ExternalDataTransportObjectTemplate | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects-ref/tooling-api-objects-externaldatatransportobjecttemplate.md |
+| FlowTestResult | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects-ref/tooling-api-objects-flowtestresult.md |
+| MetadataComponentDependency (Beta) Bulk API 2.0 Usage | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects-ref/tooling-api-objects-metadatacomponentdependency-bulk2-usage.md |
+| MetadataComponentDependency (Beta) Tooling API Usage | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects-ref/tooling-api-objects-metadatacomponentdependency-tooling-usage.md |
+| ServiceFieldDataType | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects-ref/tooling-api-objects-servicefielddatatype.md |
 | Tooling API Objects | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/reference-objects-list.md |
 | AccountPlanObjMeasCalcCond | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-accountplanobjmeascalccond.md |
 | AccountPlanObjMeasCalcDef | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-accountplanobjmeascalcdef.md |
@@ -755,6 +780,26 @@ Full link list extracted programmatically from the live source file (2498 page l
 | ApexTestSuite | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-apextestsuite.md |
 | ApexTrigger | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-apextrigger.md |
 | ApexTriggerMember | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-apextriggermember.md |
+| ApexResult | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-apexresult.md |
+| ConversationChannelDefinition | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-conversationchanneldefinition.md |
+| DeployDetails | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-deploydetails.md |
+| HeapDump | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-heapdump.md |
+| InvocableActionExtension | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-invocableactionextension.md |
+| LightningOutApp | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-lightningoutapp.md |
+| MarketingHierarchyGroupDef | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-marketinghierarchygroupdef.md |
+| MarketingHierarchyGroupNodeDef | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-marketinghierarchygroupnodedef.md |
+| MarketingHierarchyNodeDef | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-marketinghierarchynodedef.md |
+| MktHierGrpNodeRuleDef | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-mkthiergrpnoderuledef.md |
+| MLField | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-mlfield.md |
+| QueryResult | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-queryresult.md |
+| SandboxProcessStage | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-sandboxprocessstage.md |
+| ScndTelephPrvdOtbdDtl | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-scndtelephprvdotbddtl.md |
+| SecondaryTelephonyProvider | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-secondarytelephonyprovider.md |
+| SOQLResult | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-soqlresult.md |
+| SvcCatalogFulfillFlowItem | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-svccatalogfulfillflowitem.md |
+| SymbolTable | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-symboltable.md |
+| TelephonyProvider | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-telephonyprovider.md |
+| TrustedTelephonyProvider | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-api-objects-trustedtelephonyprovider.md |
 | AssignmentRule | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-assignmentrule.md |
 | AuraDefinition | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-auradefinition.md |
 | AuraDefinitionBundle | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-auradefinitionbundle.md |
@@ -1011,7 +1056,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | WorkSkillRoutingAttribute | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-workskillroutingattribute.md |
 | Previous Version PDFs | https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-previous-versions/v67.0/tooling-previous-versions-pdfs.md |
 
-## Object Reference for the Salesforce Platform (1501 pages)
+## Object Reference for the Salesforce Platform (1716 pages)
 
 | Page | URL |
 |---|---|
@@ -1054,16 +1099,118 @@ Full link list extracted programmatically from the live source file (2498 page l
 | Associated Objects | https://developer.salesforce.com/docs/platform/object-reference/references/associated-objects/sforce-api-associated-objects-list.md |
 | StandardObjectName OwnerSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/associated-objects/sforce-api-associated-objects-ownersharingrule.md |
 | StandardObjectName Share | https://developer.salesforce.com/docs/platform/object-reference/references/associated-objects/sforce-api-associated-objects-share.md |
+| Knowledge__DataCategorySelection | https://developer.salesforce.com/docs/platform/object-reference/references/custom-objects/object-knowledge__datacategoryselection.md |
+| Knowledge__Feed | https://developer.salesforce.com/docs/platform/object-reference/references/custom-objects/object-knowledge__feed.md |
+| Knowledge__ka | https://developer.salesforce.com/docs/platform/object-reference/references/custom-objects/object-knowledge__ka.md |
+| Knowledge__kav | https://developer.salesforce.com/docs/platform/object-reference/references/custom-objects/object-knowledge__kav.md |
 | Custom Objects | https://developer.salesforce.com/docs/platform/object-reference/references/custom-objects/sforce-api-custom-objects-list.md |
-| Custom Object __c __c | https://developer.salesforce.com/docs/platform/object-reference/references/custom-objects/sforce-api-objects-custom-object__c.md |
+| Custom Object __c | https://developer.salesforce.com/docs/platform/object-reference/references/custom-objects/sforce-api-objects-custom-object__c.md |
 | Custom Metadata Type__mdt | https://developer.salesforce.com/docs/platform/object-reference/references/custom-objects/sforce-api-objects-custommetadatatype__mdt.md |
 | Custom Object__Feed | https://developer.salesforce.com/docs/platform/object-reference/references/custom-objects/sforce-api-objects-customobject__feed.md |
 | FSL__Time_Dependency__c | https://developer.salesforce.com/docs/platform/object-reference/references/custom-objects/sforce-api-objects-fsl__time-dependency__c.md |
+| EventLogFile Supported Event Types | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/eventlogfile-supported-event-types.md |
+| Apex Callout Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-apexcallout.md |
+| Apex Execution Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-apexexecution.md |
+| Apex Inline Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-apexinline.md |
+| Apex REST API Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-apexrestapi.md |
+| Apex SOAP Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-apexsoap.md |
+| Apex Trigger Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-apextrigger.md |
+| Apex Unexpected Exception Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-apexunexpectedexception.md |
+| API Total Usage | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-apitotalusage.md |
+| Asynchronous Report Run Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-asyncreportrun.md |
+| Blocked Redirect Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-blockedredirect.md |
+| Bulk API Request Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-bulkapi-request.md |
+| Bulk API Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-bulkapi.md |
+| Bulk API 2.0 Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-bulkapi2.md |
+| Change Set Operation Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-changesetoperation.md |
+| Composite API Subrequest Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-composite-api-subrequest.md |
+| Composite API Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-composite-api.md |
+| Concurrent Long-Running Apex Limit Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-concurrentlongrunningapexlimit.md |
+| Console Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-console.md |
+| Content Distribution Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-contentdistribution.md |
+| Content Document Link Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-contentdocument.md |
+| Content Transfer Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-contenttransfer.md |
+| Continuation Callout Summary Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-continuationcalloutsummary.md |
+| CORS Violation Record Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-cors-violation.md |
+| CSP Violation Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-cspviolation.md |
+| Dashboard Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-dashboard.md |
+| Database Save Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-databasesaveevent.md |
+| Document Attachment Downloads Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-documentattach.md |
+| External Cross-Org Callout Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-externalcrossorgcallout.md |
+| External Custom Apex Callout Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-externalcustomapexcallout.md |
+| External Data Source Callout Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-externaldatasourcecallout.md |
+| External OData Callout Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-externalodatacallout.md |
+| Flow Execution Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-flowexecution.md |
+| GraphQL Query Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-graphql-query.md |
+| Group Membership Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-groupmembership.md |
+| Hostname Redirects Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-hostnameredirects.md |
+| Insecure External Assets Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-insecureexternalassets.md |
+| Insufficient Access Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-insufficientaccess.md |
+| Invocable Action Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-invocableaction.md |
+| Knowledge Article View Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-knowledgearticleview.md |
+| Aura Request Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-lightning-component.md |
+| Lightning Error Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-lightningerror.md |
+| Lightning Interaction Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-lightninginteraction.md |
+| Lightning Logger Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-lightninglogger.md |
+| Lightning Page View Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-lightningpageview.md |
+| Lightning Performance Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-lightningperformance.md |
+| LOGIN_STATUS Values | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-login-status.md |
+| Login Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-login.md |
+| Login As Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-loginas.md |
+| Logout Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-logout.md |
+| Metadata API Operation Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-metadataapi.md |
+| Multiblock Report Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-multiblock.md |
+| Named Credential Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-namedcredential.md |
+| One Commerce Usage Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-onecommerceusage.md |
+| Package Install Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-packageinstall.md |
+| Permission Update Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-permissionupdate.md |
+| Platform Encryption Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-platformencryption.md |
+| Pricing Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-pricing.md |
+| Queued Execution Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-queuedexec.md |
+| Report Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-report.md |
+| Report Export Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-reportexport.md |
+| REST API Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-restapi.md |
+| Sandbox Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-sandbox.md |
+| Search Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-search.md |
+| Search Click Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-searchclick.md |
+| Sites Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-sites.md |
+| SOAP API Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-soapapi.md |
+| Time-Based Workflow Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-timebasedworkflow.md |
+| Transaction Security Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-transaction.md |
+| UI Telemetry Navigation Timing Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-uitelemetrynavigationtiming.md |
+| UI Telemetry Resource Timing Event | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-uitelemetryresourcetiming.md |
+| Unique Query Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-unique-query-event-elf.md |
+| URI Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-uri.md |
+| Visualforce Request Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-visualforce.md |
+| Wave Change Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-wavechange.md |
+| Wave Download Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-wavedownload.md |
+| Wave Interaction Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-waveinteraction.md |
+| Wave Performance Event Type | https://developer.salesforce.com/docs/platform/object-reference/references/eventlogfile-supported-event-types/object-eventlogfile-waveperformance.md |
 | Object Interfaces | https://developer.salesforce.com/docs/platform/object-reference/references/object-interfaces/object-interfaces-list.md |
 | PriceAdjustmentGroup | https://developer.salesforce.com/docs/platform/object-reference/references/object-interfaces/sforce-api-interfaces-priceadjustmentgroup.md |
 | PriceAdjustmentItem | https://developer.salesforce.com/docs/platform/object-reference/references/object-interfaces/sforce-api-interfaces-priceadjustmentitem.md |
 | SalesTransaction | https://developer.salesforce.com/docs/platform/object-reference/references/object-interfaces/sforce-api-interfaces-salestransaction.md |
 | Previous Version PDFs | https://developer.salesforce.com/docs/platform/object-reference/references/object-previous-versions/v67.0/object-reference-previous-versions-pdfs.md |
+| AsyncOpSyndicationFeedFile | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/object-asyncopsyndicationfeedfile.md |
+| EntityHistory | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/object-entityhistory.md |
+| FeedPost | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/object-feedpost.md |
+| Goal | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/object-goal.md |
+| GoalLink | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/object-goallink.md |
+| ManagedContentInfo | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/object-managedcontentinfo.md |
+| SiteDomain | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/object-sitedomain.md |
+| UserProfile | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/object-userprofile.md |
+| WorkCoaching | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/object-workcoaching.md |
+| WorkFeedback | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/object-workfeedback.md |
+| WorkFeedbackQuestion | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/object-workfeedbackquestion.md |
+| WorkFeedbackQuestionSet | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/object-workfeedbackquestionset.md |
+| WorkFeedbackRequest | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/object-workfeedbackrequest.md |
+| WorkGoal | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/object-workgoal.md |
+| WorkGoalCollaborator | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/object-workgoalcollaborator.md |
+| WorkGoalLink | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/object-workgoallink.md |
+| WorkReward | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/object-workreward.md |
+| WorkRewardFund | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/object-workrewardfund.md |
+| WorkRewardFundType | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/object-workrewardfundtype.md |
+| Retired Objects Reference | https://developer.salesforce.com/docs/platform/object-reference/references/retired-objects/retired-objects.md |
 | AbnExperiment | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-abnexperiment.md |
 | AbnExperimentCohort | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-abnexperimentcohort.md |
 | AcceptedEventRelation | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-acceptedeventrelation.md |
@@ -1073,15 +1220,18 @@ Full link list extracted programmatically from the live source file (2498 page l
 | AccountContactRelation | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-accountcontactrelation.md |
 | AccountContactRole | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-accountcontactrole.md |
 | AccountInsight | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-accountinsight.md |
+| AccountOwnerSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-accountownersharingrule.md |
 | AccountPartner | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-accountpartner.md |
 | AccountPlan | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-accountplan.md |
 | AccountPlanObjective | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-accountplanobjective.md |
 | AccountPlanObjectiveMeasure | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-accountplanobjectivemeasure.md |
 | AccountPlanObjMeasCalcCond | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-accountplanobjmeascalccond.md |
 | AccountPlanObjMeasCalcDef | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-accountplanobjmeascalcdef.md |
+| AccountPlanObjMeasCalcDefLocalization | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-accountplanobjmeascalcdeflocalization.md |
 | AccountPlanObjMeasRela | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-accountplanobjmeasrela.md |
 | AccountRelationship | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-accountrelationship.md |
 | AccountShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-accountshare.md |
+| AccountTag | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-accounttag.md |
 | AccountTeamMember | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-accountteammember.md |
 | AccountTerritoryAssignmentRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-accountterritoryassignmentrule.md |
 | AccountTerritoryAssignmentRuleItem | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-accountterritoryassignmentruleitem.md |
@@ -1125,7 +1275,10 @@ Full link list extracted programmatically from the live source file (2498 page l
 | AiJobRun | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-aijobrun.md |
 | AiJobRunItem | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-aijobrunitem.md |
 | AiModelLanguage | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-aimodellanguage.md |
+| AITrustAttribute | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-aitrustattribute.md |
+| AITrustAttrSetup | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-aitrustattrsetup.md |
 | AllowedEmailDomain | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-allowedemaildomain.md |
+| AlternativePaymentMethod | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-alternativepaymentmethod.md |
 | AnalyticsAssetAction | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-analyticsassetaction.md |
 | AnalyticsChangeEventLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-analyticschangeeventlog.md |
 | AnalyticsContainerWidgetDef | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-analyticscontainerwidgetdef.md |
@@ -1175,7 +1328,9 @@ Full link list extracted programmatically from the live source file (2498 page l
 | Approval | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-approval.md |
 | ApprovalAlertContentDef | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-approvalalertcontentdef.md |
 | ApprovalDelegation | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-approvaldelegation.md |
+| ApprovalSubmission | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-approvalsubmission.md |
 | ApprovalSubmissionDetail | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-approvalsubmissiondetail.md |
+| ApprovalWorkItem | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-approvalworkitem.md |
 | ApprovalWorkItemCondition | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-approvalworkitemcondition.md |
 | ApprovalWorkItemCriteria | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-approvalworkitemcriteria.md |
 | AppTabMember | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-apptabmember.md |
@@ -1196,12 +1351,14 @@ Full link list extracted programmatically from the live source file (2498 page l
 | AssetAttribute | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-assetattribute.md |
 | AssetContractRelationship | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-assetcontractrelationship.md |
 | AssetDowntimePeriod | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-assetdowntimeperiod.md |
+| AssetOwnerSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-assetownersharingrule.md |
 | AssetRateAdjustment | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-assetrateadjustment.md |
 | AssetRateCardEntry | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-assetratecardentry.md |
 | AssetRelationship | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-assetrelationship.md |
 | AssetShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-assetshare.md |
 | AssetStatePeriod | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-assetstateperiod.md |
 | AssetStatePeriodAttribute | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-assetstateperiodattribute.md |
+| AssetTag | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-assettag.md |
 | AssetTokenEvent | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-assettokenevent.md |
 | AssetWarranty | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-assetwarranty.md |
 | AssignedResource | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-assignedresource.md |
@@ -1295,13 +1452,16 @@ Full link list extracted programmatically from the live source file (2498 page l
 | CallCenterRoutingMap | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-callcenterroutingmap.md |
 | CallCoachingMediaProvider | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-callcoachingmediaprovider.md |
 | CallCtrAgentFavTrfrDest | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-callctragentfavtrfrdest.md |
+| CallCtrAgentFavTrfrDestShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-callctragentfavtrfrdestshare.md |
 | Campaign | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-campaign.md |
 | CampaignExt | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-campaignext.md |
 | CampaignInfluence | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-campaigninfluence.md |
 | CampaignInfluenceModel | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-campaigninfluencemodel.md |
 | CampaignMember | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-campaignmember.md |
 | CampaignMemberStatus | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-campaignmemberstatus.md |
+| CampaignOwnerSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-campaignownersharingrule.md |
 | CampaignShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-campaignshare.md |
+| CardPaymentMethod | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-cardpaymentmethod.md |
 | CartCheckoutSession | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-cartcheckoutsession.md |
 | CartDeliveryGroup | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-cartdeliverygroup.md |
 | CartDeliveryGroupMethod | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-cartdeliverygroupmethod.md |
@@ -1315,16 +1475,25 @@ Full link list extracted programmatically from the live source file (2498 page l
 | CaseArticle | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-casearticle.md |
 | CaseComment | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-casecomment.md |
 | CaseContactRole | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-casecontactrole.md |
+| CaseHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-casehistory.md |
 | CaseHistory2 | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-casehistory2.md |
 | CaseMilestone | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-casemilestone.md |
+| CaseOwnerSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-caseownersharingrule.md |
 | CaseParticipant | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-caseparticipant.md |
 | CaseRelatedIssue | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-caserelatedissue.md |
 | CaseShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-caseshare.md |
 | CaseSolution | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-casesolution.md |
 | CaseStatus | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-casestatus.md |
 | CaseSubjectParticle | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-casesubjectparticle.md |
+| CaseTag | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-casetag.md |
+| CaseTeamMember | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-caseteammember.md |
+| CaseTeamRole | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-caseteamrole.md |
+| CaseTeamTemplate | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-caseteamtemplate.md |
+| CaseTeamTemplateMember | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-caseteamtemplatemember.md |
+| CaseTeamTemplateRecord | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-caseteamtemplaterecord.md |
 | CategoryData | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-categorydata.md |
 | CategoryNode | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-categorynode.md |
+| CategoryNodeLocalization | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-categorynodelocalization.md |
 | ChangeRequest | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-changerequest.md |
 | ChangeRequestRelatedIssue | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-changerequestrelatedissue.md |
 | ChangeRequestRelatedItem | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-changerequestrelateditem.md |
@@ -1352,6 +1521,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | CombinedAttachment | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-combinedattachment.md |
 | CommerceEntitlementBuyerGroup | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-commerceentitlementbuyergroup.md |
 | CommerceEntitlementPolicy | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-commerceentitlementpolicy.md |
+| CommerceEntitlementPolicyShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-commerceentitlementpolicyshare.md |
 | CommerceEntitlementProduct | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-commerceentitlementproduct.md |
 | CommissionSchedule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-commissionschedule.md |
 | CommissionScheduleAssignment | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-commissionscheduleassignment.md |
@@ -1371,6 +1541,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | ContactCleanInfo | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contactcleaninfo.md |
 | ContactDailyMetric | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contactdailymetric.md |
 | ContactMonthlyMetric | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contactmonthlymetric.md |
+| ContactOwnerSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contactownersharingrule.md |
 | ContactPointAddress | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contactpointaddress.md |
 | ContactPointConsent | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contactpointconsent.md |
 | ContactPointEmail | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contactpointemail.md |
@@ -1378,8 +1549,10 @@ Full link list extracted programmatically from the live source file (2498 page l
 | ContactPointPhone | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contactpointphone.md |
 | ContactPointTypeConsent | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contactpointtypeconsent.md |
 | ContactRequest | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contactrequest.md |
+| ContactRequestShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contactrequestshare.md |
 | ContactShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contactshare.md |
 | ContactSuggestionInsight | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contactsuggestioninsight.md |
+| ContactTag | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contacttag.md |
 | ContCalloutSummaryEventLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contcalloutsummaryeventlog.md |
 | ContentAsset | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contentasset.md |
 | ContentDistribution | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contentdistribution.md |
@@ -1387,6 +1560,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | ContentDistributionView | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contentdistributionview.md |
 | ContentDocLinkEventLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contentdoclinkeventlog.md |
 | ContentDocument | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contentdocument.md |
+| ContentDocumentHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contentdocumenthistory.md |
 | ContentDocumentLink | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contentdocumentlink.md |
 | ContentDocumentListViewMapping | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contentdocumentlistviewmapping.md |
 | ContentDocumentSubscription | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contentdocumentsubscription.md |
@@ -1408,6 +1582,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | ContentUserSubscription | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contentusersubscription.md |
 | ContentVersion | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contentversion.md |
 | ContentVersionComment | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contentversioncomment.md |
+| ContentVersionHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contentversionhistory.md |
 | ContentVersionRating | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contentversionrating.md |
 | ContentWorkspace | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contentworkspace.md |
 | ContentWorkspaceDoc | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contentworkspacedoc.md |
@@ -1421,6 +1596,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | ContractLineOutcome | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contractlineoutcome.md |
 | ContractLineOutcomeData | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contractlineoutcomedata.md |
 | ContractStatus | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contractstatus.md |
+| ContractTag | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-contracttag.md |
 | ConvAnalysisSummary | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-convanalysissummary.md |
 | ConvAnalysisTopic | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-convanalysistopic.md |
 | ConvAnalysisTopicEntry | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-convanalysistopicentry.md |
@@ -1461,6 +1637,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | CustomReportType | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-customreporttype.md |
 | Dashboard | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-dashboard.md |
 | DashboardComponent | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-dashboardcomponent.md |
+| DashboardTag | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-dashboardtag.md |
 | DataAssessmentFieldMetric | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-dataassessmentfieldmetric.md |
 | DataAssessmentMetric | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-dataassessmentmetric.md |
 | DataAssessmentValueMetric | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-dataassessmentvaluemetric.md |
@@ -1524,6 +1701,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | DigitalSignature | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-digitalsignature.md |
 | DigitalWallet | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-digitalwallet.md |
 | Division | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-division.md |
+| DivisionLocalization | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-divisionlocalization.md |
 | DocAtchDownloadEventLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-docatchdownloadeventlog.md |
 | DocProcReview | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-docprocreview.md |
 | Document | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-document.md |
@@ -1585,6 +1763,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | EventRelation | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-eventrelation.md |
 | EventRelayConfig | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-eventrelayconfig.md |
 | EventRelayFeedback | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-eventrelayfeedback.md |
+| EventTag | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-eventtag.md |
 | EventWhoRelation | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-eventwhorelation.md |
 | Expense | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-expense.md |
 | ExpenseReport | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-expensereport.md |
@@ -1594,6 +1773,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | ExtConvParticipantIntegDef | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-extconvparticipantintegdef.md |
 | ExtDataShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-extdatashare.md |
 | ExternalAccountHierarchy | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-externalaccounthierarchy.md |
+| ExternalAccountHierarchyHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-externalaccounthierarchyhistory.md |
 | ExternalClientApplication | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-externalclientapplication.md |
 | ExternalDataSource | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-externaldatasource.md |
 | ExternalDataUserAuth | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-externaldatauserauth.md |
@@ -1622,6 +1802,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | FeedPollChoice | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-feedpollchoice.md |
 | FeedPollVote | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-feedpollvote.md |
 | FeedRevision | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-feedrevision.md |
+| FeedSignal | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-feedsignal.md |
 | FeedTrackedChange | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-feedtrackedchange.md |
 | FieldChangeSnapshot | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-fieldchangesnapshot.md |
 | FieldHistoryArchive | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-fieldhistoryarchive.md |
@@ -1638,6 +1819,9 @@ Full link list extracted programmatically from the live source file (2498 page l
 | FlowInterview | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-flowinterview.md |
 | FlowInterviewLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-flowinterviewlog.md |
 | FlowInterviewLogEntry | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-flowinterviewlogentry.md |
+| FlowInterviewLogOwnerSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-flowinterviewlogownersharingrule.md |
+| FlowInterviewOwnerSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-flowinterviewownersharingrule.md |
+| FlowInterviewShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-flowinterviewshare.md |
 | FlowNavMetricEventLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-flownavmetriceventlog.md |
 | FlowOrchestration | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-floworchestration.md |
 | FlowOrchestrationInstance | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-floworchestrationinstance.md |
@@ -1660,6 +1844,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | FolderedContentDocument | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-folderedcontentdocument.md |
 | ForecastingAdjustment | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-forecastingadjustment.md |
 | ForecastingColumnDefinition | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-forecastingcolumndefinition.md |
+| ForecastingColumnDefinitionLocalization | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-forecastingcolumndefinitionlocalization.md |
 | ForecastingCustomCategory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-forecastingcustomcategory.md |
 | ForecastingCustomData | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-forecastingcustomdata.md |
 | ForecastingDisplayedFamily | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-forecastingdisplayedfamily.md |
@@ -1697,6 +1882,10 @@ Full link list extracted programmatically from the live source file (2498 page l
 | FunctionInvocationRequest | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-functioninvocationrequest.md |
 | FunctionReference | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-functionreference.md |
 | GenAIConversationSummary | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-genaiconversationsummary.md |
+| GenAiFunctionDefinition | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-genaifunctiondefinition.md |
+| GenAiPlannerDefinition | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-genaiplannerdefinition.md |
+| GenAiPlannerFunctionDef | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-genaiplannerfunctiondef.md |
+| GenAiPluginDefinition | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-genaiplugindefinition.md |
 | GenOpPlanReferenceRecord | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-genopplanreferencerecord.md |
 | GenOpPlanRequest | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-genopplanrequest.md |
 | GeoCountry | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-geocountry.md |
@@ -1726,6 +1915,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | IncidentRelatedItem | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-incidentrelateditem.md |
 | Individual | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-individual.md |
 | IndividualApplicationItem | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-individualapplicationitem.md |
+| IndividualHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-individualhistory.md |
 | IndividualShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-individualshare.md |
 | InsufficientAccessEventLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-insufficientaccesseventlog.md |
 | InternalOrganizationUnit | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-internalorganizationunit.md |
@@ -1742,15 +1932,20 @@ Full link list extracted programmatically from the live source file (2498 page l
 | JobProfile | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-jobprofile.md |
 | JobProfileQueueGroup | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-jobprofilequeuegroup.md |
 | KnowledgeableUser | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-knowledgeableuser.md |
+| KnowledgeArticle | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-knowledgearticle.md |
 | KnowledgeArticleEventLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-knowledgearticleeventlog.md |
+| KnowledgeArticleVersion | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-knowledgearticleversion.md |
+| KnowledgeArticleVersionHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-knowledgearticleversionhistory.md |
 | KnwlgBlockArticleRefField | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-knwlgblockarticlereffield.md |
 | LandingPage | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-landingpage.md |
 | Lead | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-lead.md |
 | LeadCleanInfo | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-leadcleaninfo.md |
 | LeadDailyMetric | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-leaddailymetric.md |
 | LeadMonthlyMetric | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-leadmonthlymetric.md |
+| LeadOwnerSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-leadownersharingrule.md |
 | LeadShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-leadshare.md |
 | LeadStatus | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-leadstatus.md |
+| LeadTag | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-leadtag.md |
 | LearningContent | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-learningcontent.md |
 | LearningItem | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-learningitem.md |
 | LearningItemAssignment | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-learningitemassignment.md |
@@ -1768,6 +1963,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | LightningPageViewEventLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-lightningpagevieweventlog.md |
 | LightningPrfmEventLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-lightningprfmeventlog.md |
 | LinkedArticle | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-linkedarticle.md |
+| LinkedArticleHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-linkedarticlehistory.md |
 | ListEmail | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-listemail.md |
 | ListEmailIndividualRecipient | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-listemailindividualrecipient.md |
 | ListEmailMonthlyMetric | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-listemailmonthlymetric.md |
@@ -1777,6 +1973,8 @@ Full link list extracted programmatically from the live source file (2498 page l
 | ListViewChart | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-listviewchart.md |
 | ListViewChartInstance | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-listviewchartinstance.md |
 | LiveAgentSession | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-liveagentsession.md |
+| LiveAgentSessionHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-liveagentsessionhistory.md |
+| LiveAgentSessionShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-liveagentsessionshare.md |
 | LiveChatBlockingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-livechatblockingrule.md |
 | LiveChatButton | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-livechatbutton.md |
 | LiveChatButtonDeployment | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-livechatbuttondeployment.md |
@@ -1787,6 +1985,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | LiveChatSensitiveDataRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-livechatsensitivedatarule.md |
 | LiveChatTranscript | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-livechattranscript.md |
 | LiveChatTranscriptEvent | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-livechattranscriptevent.md |
+| LiveChatTranscriptShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-livechattranscriptshare.md |
 | LiveChatTranscriptSkill | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-livechattranscriptskill.md |
 | LiveChatUserConfig | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-livechatuserconfig.md |
 | LiveChatUserConfigProfile | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-livechatuserconfigprofile.md |
@@ -1837,9 +2036,12 @@ Full link list extracted programmatically from the live source file (2498 page l
 | MetadataApiOpEventLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-metadataapiopeventlog.md |
 | MetadataPackage | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-metadatapackage.md |
 | MetadataPackageVersion | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-metadatapackageversion.md |
+| Metric | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-metric.md |
+| MetricDataLink | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-metricdatalink.md |
 | MigratedEmail | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-migratedemail.md |
 | MilestoneType | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-milestonetype.md |
 | MktJourneyDcsnSetup | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-mktjourneydcsnsetup.md |
+| MlIntentUtteranceSuggestion | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-mlintentutterancesuggestion.md |
 | MLModel | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-mlmodel.md |
 | MLModelFactor | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-mlmodelfactor.md |
 | MLModelFactorComponent | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-mlmodelfactorcomponent.md |
@@ -1862,6 +2064,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | NamespaceRegistry | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-namespaceregistry.md |
 | NavigationLinkSet | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-navigationlinkset.md |
 | NavigationMenuItem | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-navigationmenuitem.md |
+| NavigationMenuItemLocalization | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-navigationmenuitemlocalization.md |
 | Network | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-network.md |
 | NetworkAffinity | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-networkaffinity.md |
 | NetworkAuthApiSettings | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-networkauthapisettings.md |
@@ -1875,6 +2078,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | NetworkUserHistoryRecent | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-networkuserhistoryrecent.md |
 | Note | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-note.md |
 | NoteAndAttachment | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-noteandattachment.md |
+| NoteTag | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-notetag.md |
 | OauthCustomScope | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-oauthcustomscope.md |
 | OauthCustomScopeApp | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-oauthcustomscopeapp.md |
 | OauthToken | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-oauthtoken.md |
@@ -1899,22 +2103,26 @@ Full link list extracted programmatically from the live source file (2498 page l
 | OmniSupervisorConfigUser | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-omnisupervisorconfiguser.md |
 | OpenActivity | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-openactivity.md |
 | OperatingHours | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-operatinghours.md |
+| OperatingHoursHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-operatinghourshistory.md |
 | OperatingHoursHoliday | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-operatinghoursholiday.md |
 | Opportunity | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-opportunity.md |
 | OpportunityCompetitor | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-opportunitycompetitor.md |
 | OpportunityContactRole | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-opportunitycontactrole.md |
 | OpportunityContactRoleSuggestionInsight | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-opportunitycontactrolesuggestioninsight.md |
+| OpportunityFieldHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-opportunityfieldhistory.md |
 | OpportunityHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-opportunityhistory.md |
 | OpportunityInsight | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-opportunityinsight.md |
 | OpportunityLineItem | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-opportunitylineitem.md |
 | OpportunityLineItemSchedule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-opportunitylineitemschedule.md |
 | OpportunityLineItemSplit | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-opportunitylineitemsplit.md |
+| OpportunityOwnerSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-opportunityownersharingrule.md |
 | OpportunityPartner | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-opportunitypartner.md |
 | OpportunityRelatedDeleteLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-opportunityrelateddeletelog.md |
 | OpportunityShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-opportunityshare.md |
 | OpportunitySplit | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-opportunitysplit.md |
 | OpportunitySplitType | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-opportunitysplittype.md |
 | OpportunityStage | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-opportunitystage.md |
+| OpportunityTag | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-opportunitytag.md |
 | OpportunityTeamMember | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-opportunityteammember.md |
 | OppSalesMethodology | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-oppsalesmethodology.md |
 | OppSalesMethodologyItem | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-oppsalesmethodologyitem.md |
@@ -1927,6 +2135,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | OrderDeliveryGroup | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-orderdeliverygroup.md |
 | OrderDeliveryGroupSummary | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-orderdeliverygroupsummary.md |
 | OrderDeliveryMethod | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-orderdeliverymethod.md |
+| OrderHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-orderhistory.md |
 | OrderItem | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-orderitem.md |
 | OrderItemAdjustmentLineItem | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-orderitemadjustmentlineitem.md |
 | OrderItemAdjustmentLineSummary | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-orderitemadjustmentlinesummary.md |
@@ -1939,6 +2148,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | OrderItemTaxLineItem | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-orderitemtaxlineitem.md |
 | OrderItemTaxLineItemSummary | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-orderitemtaxlineitemsummary.md |
 | OrderItemType | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-orderitemtype.md |
+| OrderOwnerSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-orderownersharingrule.md |
 | OrderPaymentSummary | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-orderpaymentsummary.md |
 | OrderPaymentSummaryReference | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-orderpaymentsummaryreference.md |
 | OrderShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-ordershare.md |
@@ -1983,6 +2193,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | PaymentCredit | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-paymentcredit.md |
 | PaymentCreditLinePayment | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-paymentcreditlinepayment.md |
 | PaymentCreditTransaction | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-paymentcredittransaction.md |
+| PaymentGateway | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-paymentgateway.md |
 | PaymentGatewayLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-paymentgatewaylog.md |
 | PaymentGatewayProvider | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-paymentgatewayprovider.md |
 | PaymentGroup | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-paymentgroup.md |
@@ -1992,6 +2203,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | PaymentLineInvoice | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-paymentlineinvoice.md |
 | PaymentLink | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-paymentlink.md |
 | PaymentLinkEvent | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-paymentlinkevent.md |
+| PaymentMethod | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-paymentmethod.md |
 | PaymentSchedule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-paymentschedule.md |
 | PaymentScheduleItem | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-paymentscheduleitem.md |
 | PaymentSchedulePolicy | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-paymentschedulepolicy.md |
@@ -2011,6 +2223,8 @@ Full link list extracted programmatically from the live source file (2498 page l
 | PermissionSetLicenseDefinition | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-permissionsetlicensedefinition.md |
 | PermissionSetTabSetting | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-permissionsettabsetting.md |
 | PermissionUpdateEventLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-permissionupdateeventlog.md |
+| PersnlBatchDcsnKeyField | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-persnlbatchdcsnkeyfield.md |
+| PersnlBatchDcsnPersnlPoint | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-persnlbatchdcsnpersnlpoint.md |
 | PersnlBatchDecision | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-persnlbatchdecision.md |
 | PersonAccountOwnerPowerUser | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-personaccountownerpoweruser.md |
 | PersonalizationDecision | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-personalizationdecision.md |
@@ -2025,6 +2239,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | PipelineInspectionListView | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-pipelineinspectionlistview.md |
 | PipelineInspectionSumField | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-pipelineinspectionsumfield.md |
 | PipelineInspMetricConfig | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-pipelineinspmetricconfig.md |
+| PipelineInspMetricConfigLocalization | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-pipelineinspmetricconfiglocalization.md |
 | PlatformAction | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-platformaction.md |
 | PlatformEventUsageMetric | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-platformeventusagemetric.md |
 | PlatformStatusAlertEvent | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-platformstatusalertevent.md |
@@ -2090,6 +2305,10 @@ Full link list extracted programmatically from the live source file (2498 page l
 | ProductTransfer | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-producttransfer.md |
 | ProductWarrantyTerm | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-productwarrantyterm.md |
 | Profile | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-profile.md |
+| ProfileSkill | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-profileskill.md |
+| ProfileSkillEndorsement | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-profileskillendorsement.md |
+| ProfileSkillShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-profileskillshare.md |
+| ProfileSkillUser | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-profileskilluser.md |
 | ProgramProduct | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-programproduct.md |
 | ProgramRebateType | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-programrebatetype.md |
 | Promotion | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-promotion.md |
@@ -2103,8 +2322,12 @@ Full link list extracted programmatically from the live source file (2498 page l
 | PromotionTier | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-promotiontier.md |
 | Prompt | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-prompt.md |
 | PromptAction | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-promptaction.md |
+| PromptActionOwnerSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-promptactionownersharingrule.md |
+| PromptActionShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-promptactionshare.md |
 | PromptError | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-prompterror.md |
+| PromptLocalization | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-promptlocalization.md |
 | PromptVersion | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-promptversion.md |
+| PromptVersionLocalization | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-promptversionlocalization.md |
 | ProrationPolicy | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-prorationpolicy.md |
 | Prospect | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-prospect.md |
 | PublicComplaint | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-publiccomplaint.md |
@@ -2113,6 +2336,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | PushUpgradeCustomization | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-pushupgradecustomization.md |
 | PymtSchdDistributionMethod | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-pymtschddistributionmethod.md |
 | Question | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-question.md |
+| QuestionDataCategorySelection | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-questiondatacategoryselection.md |
 | QuestionReportAbuse | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-questionreportabuse.md |
 | QuestionSubscription | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-questionsubscription.md |
 | QueuedExecutionEventLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-queuedexecutioneventlog.md |
@@ -2141,6 +2365,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | RecordsetFilterCriteriaRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-recordsetfiltercriteriarule.md |
 | RecordsetFltrCritMonitor | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-recordsetfltrcritmonitor.md |
 | RecordType | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-recordtype.md |
+| RecordTypeLocalization | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-recordtypelocalization.md |
 | RedirectWhitelistUrl | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-redirectwhitelisturl.md |
 | Refund | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-refund.md |
 | RefundLinePayment | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-refundlinepayment.md |
@@ -2153,7 +2378,9 @@ Full link list extracted programmatically from the live source file (2498 page l
 | Report | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-report.md |
 | ReportEventLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-reporteventlog.md |
 | ReportExportEventLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-reportexporteventlog.md |
+| ReportTag | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-reporttag.md |
 | ReputationLevel | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-reputationlevel.md |
+| ReputationLevelLocalization | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-reputationlevellocalization.md |
 | ReputationPointsRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-reputationpointsrule.md |
 | ResourceAbsence | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-resourceabsence.md |
 | ResourcePreference | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-resourcepreference.md |
@@ -2163,6 +2390,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | ReturnOrderItemAdjustment | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-returnorderitemadjustment.md |
 | ReturnOrderItemTax | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-returnorderitemtax.md |
 | ReturnOrderLineItem | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-returnorderlineitem.md |
+| ReturnOrderOwnerSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-returnorderownersharingrule.md |
 | RevenueAsyncOperation | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-revenueasyncoperation.md |
 | RevenueTransactionErrorLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-revenuetransactionerrorlog.md |
 | Review | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-review.md |
@@ -2192,6 +2420,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | SchedulingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-schedulingrule.md |
 | SchedulingRuleParameter | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-schedulingruleparameter.md |
 | Scontrol | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-scontrol.md |
+| ScontrolLocalization | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-scontrollocalization.md |
 | Scorecard | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-scorecard.md |
 | ScorecardAssociation | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-scorecardassociation.md |
 | ScorecardMetric | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-scorecardmetric.md |
@@ -2216,14 +2445,18 @@ Full link list extracted programmatically from the live source file (2498 page l
 | ServiceChannelStatus | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-servicechannelstatus.md |
 | ServiceChannelStatusField | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-servicechannelstatusfield.md |
 | ServiceContract | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-servicecontract.md |
+| ServiceContractOwnerSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-servicecontractownersharingrule.md |
 | ServiceCrew | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-servicecrew.md |
 | ServiceCrewMember | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-servicecrewmember.md |
+| ServiceCrewOwnerSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-servicecrewownersharingrule.md |
 | ServicePresenceStatus | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-servicepresencestatus.md |
 | ServiceReport | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-servicereport.md |
 | ServiceReportLayout | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-servicereportlayout.md |
 | ServiceRequest | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-servicerequest.md |
 | ServiceResource | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-serviceresource.md |
 | ServiceResourceCapacity | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-serviceresourcecapacity.md |
+| ServiceResourceCapacityHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-serviceresourcecapacityhistory.md |
+| ServiceResourceOwnerSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-serviceresourceownersharingrule.md |
 | ServiceResourcePreference | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-serviceresourcepreference.md |
 | ServiceResourceSkill | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-serviceresourceskill.md |
 | ServiceSetupProvisioning | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-servicesetupprovisioning.md |
@@ -2247,10 +2480,13 @@ Full link list extracted programmatically from the live source file (2498 page l
 | SfdcPartnerTntPkgLicense | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-sfdcpartnertntpkglicense.md |
 | ShapeRepresentation | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-shaperepresentation.md |
 | Shift | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-shift.md |
+| ShiftHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-shifthistory.md |
+| ShiftOwnerSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-shiftownersharingrule.md |
 | ShiftPattern | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-shiftpattern.md |
 | ShiftPatternEntry | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-shiftpatternentry.md |
 | ShiftSegment | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-shiftsegment.md |
 | ShiftSegmentType | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-shiftsegmenttype.md |
+| ShiftShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-shiftshare.md |
 | ShiftStatus | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-shiftstatus.md |
 | ShiftTemplate | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-shifttemplate.md |
 | Shipment | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-shipment.md |
@@ -2265,6 +2501,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | Site | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-site.md |
 | SiteDetail | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-sitedetail.md |
 | SiteEventLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-siteeventlog.md |
+| SiteHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-sitehistory.md |
 | SiteRedirectMapping | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-siteredirectmapping.md |
 | Skill | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-skill.md |
 | SkillProfile | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-skillprofile.md |
@@ -2278,6 +2515,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | SocialPost | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-socialpost.md |
 | Solution | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-solution.md |
 | SolutionStatus | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-solutionstatus.md |
+| SolutionTag | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-solutiontag.md |
 | SourceCodeRepoProvider | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-sourcecoderepoprovider.md |
 | SourceCodeRepository | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-sourcecoderepository.md |
 | SourceCodeRepositoryBranch | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-sourcecoderepositorybranch.md |
@@ -2316,6 +2554,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | TaskPriority | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-taskpriority.md |
 | TaskRelation | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-taskrelation.md |
 | TaskStatus | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-taskstatus.md |
+| TaskTag | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-tasktag.md |
 | TaskWhoRelation | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-taskwhorelation.md |
 | TaxEngine | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-taxengine.md |
 | TaxEngineInteractionLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-taxengineinteractionlog.md |
@@ -2324,6 +2563,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | TaxPolicy | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-taxpolicy.md |
 | TaxRate | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-taxrate.md |
 | TaxTreatment | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-taxtreatment.md |
+| TenantConsumptionAlert | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-tenantconsumptionalert.md |
 | TenantScrAIPrmptInjection | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-tenantscraiprmptinjection.md |
 | TenantSecurityAIGtwyUsage | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-tenantsecurityaigtwyusage.md |
 | TenantSecurityAlertRuleSelectedTenant | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-tenantsecurityalertruleselectedtenant.md |
@@ -2379,6 +2619,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | Territory2 | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-territory2.md |
 | Territory2AlignmentLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-territory2alignmentlog.md |
 | Territory2Model | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-territory2model.md |
+| Territory2ModelHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-territory2modelhistory.md |
 | Territory2ObjectExclusion | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-territory2objectexclusion.md |
 | Territory2ObjSharingConfig | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-territory2objsharingconfig.md |
 | Territory2Type | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-territory2type.md |
@@ -2390,9 +2631,11 @@ Full link list extracted programmatically from the live source file (2498 page l
 | TimeSheet | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-timesheet.md |
 | TimeSheetEntry | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-timesheetentry.md |
 | TimeSlot | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-timeslot.md |
+| TimeSlotHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-timeslothistory.md |
 | TodayGoal | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-todaygoal.md |
 | Topic | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-topic.md |
 | TopicAssignment | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-topicassignment.md |
+| TopicLocalization | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-topiclocalization.md |
 | TopicUserEvent | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-topicuserevent.md |
 | TopInsight | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-topinsight.md |
 | TransactionSecurityEventLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-transactionsecurityeventlog.md |
@@ -2427,13 +2670,17 @@ Full link list extracted programmatically from the live source file (2498 page l
 | UserConfigTransferButton | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-userconfigtransferbutton.md |
 | UserConfigTransferSkill | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-userconfigtransferskill.md |
 | UserCustomBadge | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-usercustombadge.md |
+| UserCustomBadgeLocalization | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-usercustombadgelocalization.md |
 | UserDailyMetric | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-userdailymetric.md |
+| UserDailyMetricOwnerSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-userdailymetricownersharingrule.md |
 | UserDefinedLabel | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-userdefinedlabel.md |
 | UserDefinedLabelAssignment | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-userdefinedlabelassignment.md |
 | UserDevice | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-userdevice.md |
 | UserDeviceApplication | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-userdeviceapplication.md |
+| UserDeviceHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-userdevicehistory.md |
 | UserEmailCalendarSync | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-useremailcalendarsync.md |
 | UserEmailPreferredPerson | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-useremailpreferredperson.md |
+| UserEmailPreferredPersonShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-useremailpreferredpersonshare.md |
 | UserLicense | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-userlicense.md |
 | UserListView | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-userlistview.md |
 | UserListViewCriterion | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-userlistviewcriterion.md |
@@ -2441,6 +2688,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | UserLogin | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-userlogin.md |
 | UserMembershipSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-usermembershipsharingrule.md |
 | UserMonthlyMetric | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-usermonthlymetric.md |
+| UserMonthlyMetricOwnerSharingRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-usermonthlymetricownersharingrule.md |
 | UserPackageLicense | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-userpackagelicense.md |
 | UserPermissionAccess | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-userpermissionaccess.md |
 | UserPreference | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-userpreference.md |
@@ -2473,6 +2721,7 @@ Full link list extracted programmatically from the live source file (2498 page l
 | VideoCallRecording | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-videocallrecording.md |
 | VideoCallRecordingStructure | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-videocallrecordingstructure.md |
 | VideoCallTranscript | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-videocalltranscript.md |
+| VideoClipSpecification | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-videoclipspecification.md |
 | VisualforceAccessMetrics | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-visualforceaccessmetrics.md |
 | VisualforceRequestEventLog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-visualforcerequesteventlog.md |
 | VoiceCall | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-voicecall.md |
@@ -2489,21 +2738,32 @@ Full link list extracted programmatically from the live source file (2498 page l
 | WebCart | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-webcart.md |
 | WebCartAdjustmentBasis | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-webcartadjustmentbasis.md |
 | WebCartAdjustmentGroup | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-webcartadjustmentgroup.md |
+| WebCartHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-webcarthistory.md |
 | WebLink | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-weblink.md |
+| WebLinkLocalization | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-weblinklocalization.md |
 | WebStoreCatalog | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-webstorecatalog.md |
 | WebStoreInventorySource | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-webstoreinventorysource.md |
 | WebStoreNetwork | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-webstorenetwork.md |
 | WebStorePricebook | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-webstorepricebook.md |
 | Wishlist | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-wishlist.md |
 | WishlistItem | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-wishlistitem.md |
+| WorkAccess | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workaccess.md |
+| WorkAccessShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workaccessshare.md |
+| WorkBadge | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workbadge.md |
 | WorkforceCapacity | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workforcecapacity.md |
 | WorkforceCapacityUnit | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workforcecapacityunit.md |
+| WorkGoalCollaboratorHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workgoalcollaboratorhistory.md |
+| WorkGoalHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workgoalhistory.md |
+| WorkGoalShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workgoalshare.md |
 | WorkItem | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workitem.md |
 | WorkItemComponent | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workitemcomponent.md |
 | WorkItemEvent | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workitemevent.md |
 | WorkOrder | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workorder.md |
+| WorkOrderHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workorderhistory.md |
 | WorkOrderLineItem | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workorderlineitem.md |
+| WorkOrderLineItemHistory | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workorderlineitemhistory.md |
 | WorkOrderLineItemStatus | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workorderlineitemstatus.md |
+| WorkOrderShare | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workordershare.md |
 | WorkOrderStatus | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workorderstatus.md |
 | WorkPlan | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workplan.md |
 | WorkPlanSelectionRule | https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-workplanselectionrule.md |

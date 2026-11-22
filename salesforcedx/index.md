@@ -2,7 +2,7 @@
 
 Source: [llms-salesforcedx.txt](https://developer.salesforce.com/docs/llms-salesforcedx.txt).
 
-Full link list extracted programmatically from the live source file (857 page links across 12 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (858 page links across 12 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
 ## Salesforce Extensions for Visual Studio Code (58 pages)
 
@@ -67,7 +67,7 @@ Full link list extracted programmatically from the live source file (857 page li
 | Command Palette | https://developer.salesforce.com/docs/platform/sfvscode-extensions/guide/vscode-commands.md |
 | Salesforce Extensions for Visual Studio Code | https://developer.salesforce.com/docs/platform/sfvscode-extensions/guide/vscode-overview.md |
 
-## Agentforce Vibes Developer Guide (49 pages)
+## Agentforce Vibes Developer Guide (50 pages)
 
 | Page | URL |
 |---|---|
@@ -78,6 +78,7 @@ Full link list extracted programmatically from the live source file (857 page li
 | Usage Metrics | https://developer.salesforce.com/docs/platform/agentforcevibes/guide/afv-admin-usage-metrics.md |
 | Build an Agent | https://developer.salesforce.com/docs/platform/agentforcevibes/guide/afv-agentdev-overview.md |
 | Understand Agentic Development | https://developer.salesforce.com/docs/platform/agentforcevibes/guide/afv-agentic-dev.md |
+| Agents.md | https://developer.salesforce.com/docs/platform/agentforcevibes/guide/afv-agentsmd.md |
 | Org Policies (Developer Preview) | https://developer.salesforce.com/docs/platform/agentforcevibes/guide/afv-ai-governance.md |
 | Metadata API Context MCP Server | https://developer.salesforce.com/docs/platform/agentforcevibes/guide/afv-apicontextmcp.md |
 | Best Practices | https://developer.salesforce.com/docs/platform/agentforcevibes/guide/afv-best-practices.md |
@@ -800,7 +801,7 @@ Full link list extracted programmatically from the live source file (857 page li
 | Specify Unpackaged Metadata or Apex Access for Apex Tests (Unlocked Packages) | https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-unlocked-pkg-unpackaged-md.md |
 | Use Branches in Unlocked Packaging | https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-unlocked-pkg-use-branches.md |
 | View Package Details | https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-unlocked-pkg-view-pkg-details.md |
-| Whatâ€™s an Unlocked Package? | https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-unlocked-pkg-whats-a-package.md |
+| What’s an Unlocked Package? | https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-unlocked-pkg-whats-a-package.md |
 | Workflow for Unlocked Packages | https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-unlocked-pkg-workflow.md |
 | Schedule a Push Upgrade Using CLI | https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-unlocked-push-upgrade-cli.md |
 | Project Setup | https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-workspace-setup.md |

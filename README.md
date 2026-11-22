@@ -20,19 +20,19 @@ Every product-specific `llms-*.txt` section now has its own folder here. See [`s
 
 | Product | Links | `index.md` size |
 |---|---|---|
-| [product-docs](product-docs/) | 12,977 | 1.87 MB |
-| [commerce-cloud](commerce-cloud/) | 6,864 | 900 KB |
-| [data-cloud](data-cloud/) | 4,322 | 615 KB |
-| [industries](industries/) | 4,021 | 592 KB |
+| [product-docs](product-docs/) | 12,710 | 1.84 MB |
+| [commerce-cloud](commerce-cloud/) | 6,878 | 902 KB |
+| [data-cloud](data-cloud/) | 4,348 | 619 KB |
+| [industries](industries/) | 4,023 | 592 KB |
 | [platform-field-ref](platform-field-ref/) | 2,712 | 444 KB |
-| [platform-apex](platform-apex/) | 2,881 | 442 KB |
-| [platform](platform/) | 2,882 | 399 KB |
+| [platform-apex](platform-apex/) | 2,880 | 442 KB |
+| [platform](platform/) | 2,884 | 399 KB |
+| [platform-obj-meta-tool](platform-obj-meta-tool/) | 2,758 | 392 KB |
 | [service-cloud](service-cloud/) | 2,586 | 373 KB |
-| [platform-obj-meta-tool](platform-obj-meta-tool/) | 2,498 | 351 KB |
-| [marketing-cloud](marketing-cloud/) | 2,177 | 303 KB |
+| [marketing-cloud](marketing-cloud/) | 2,182 | 303 KB |
 
 These are reproduced **in full**, not condensed, per explicit instruction — including `product-docs`, the largest single index.
 
 ## Source
 
-All entries trace back to `developer.salesforce.com/docs/llms-*.txt` and the pages they link to. Captured starting 2026-10-24. Last refreshed 2026-11-06 with [`scripts/refresh_from_llms.py`](scripts/refresh_from_llms.py).
+All entries trace back to `developer.salesforce.com/docs/llms-*.txt` and the pages they link to. Captured starting 2026-10-24. Last refreshed 2026-11-22 with [`scripts/refresh_from_llms.py`](scripts/refresh_from_llms.py).

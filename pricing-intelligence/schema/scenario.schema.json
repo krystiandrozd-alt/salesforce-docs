@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/krystiandrozd-alt/salesforce-docs/blob/master/pricing-intelligence/schema/scenario.schema.json",
+  "title": "Salesforce Flex Credit estimate scenario v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "pricing_model",
+    "usage"
+  ],
+  "properties": {
+    "scenario_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "scenario_name": {
+      "type": "string",
+      "maxLength": 250
+    },
+    "pricing_model": {
+      "const": "FLEX_CREDITS"
+    },
+    "included_credits": {
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+        },
+        {
+          "type": "integer",
+          "minimum": 0
+        }
+      ]
+    },
+    "allowance_source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "usage": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "month",
+          "meter",
+          "environment",
+          "quantity"
+        ],
+        "properties": {
+          "month": {
+            "type": "string",
+            "pattern": "^20[0-9]{2}-(0[1-9]|1[0-2])$"
+          },
+          "meter": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Use --list-meters to discover valid identifiers; do not guess."
+          },
+          "environment": {
+            "enum": [
+              "production",
+              "sandbox"
+            ]
+          },
+          "quantity": {
+            "oneOf": [
+              {
+                "type": "string",
+                "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+              },
+              {
+                "type": "integer",
+                "minimum": 0
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "included_credits": {
+            "type": "string",
+            "not": {
+              "const": "0"
+            }
+          }
+        },
+        "required": [
+          "included_credits"
+        ]
+      },
+      "then": {
+        "required": [
+          "allowance_source"
+        ]
+      }
+    }
+  ],
+  "description": "Input syntax only; semantics require Python validator, official rate-card applicability and eligibility review."
+}

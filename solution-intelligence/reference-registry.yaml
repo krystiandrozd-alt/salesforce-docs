@@ -79,6 +79,15 @@ references:
     repository_key: solution_checkout
     path: pricing-intelligence/credit_calculator.py
     role: implementation
+  - reference_id: SKILL_ROUTING_POLICY
+    repository_key: solution_checkout
+    path: solution-intelligence/docs/skill-routing.md
+    role: instructions
+  - reference_id: SKILL_BENCHMARK_HOLDOUTS
+    repository_key: solution_checkout
+    path: solution-intelligence/examples/skills-holdout-cases.json
+    role: synthetic_quality_cases
+    limits: "Unexecuted holdout prompts; no claimed baseline/candidate behavior."
   - reference_id: SOLUTION_RESOLVER_PILOT
     repository_key: solution_checkout
     path: solution-intelligence/resolver.py

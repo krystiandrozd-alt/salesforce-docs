@@ -27,13 +27,15 @@ Exit code 0 means the **structural query completed**, not that all claims are ve
 - Process → step → capability → alternative implementation → technical feature/product variant → requirement group → right/entitlement → candidate offer and billing metric.
 - Separate `ALL_OF` / `ANY_OF` alternatives, cycle detection and a 256-alternative safety limit.
 - Trace IDs and gaps for evidence, source freshness, scope/applicability, dates, missing billing and unknown usage.
-- Reverse impact exploration for offers, entitlements and meters.
+- Reverse impact exploration for offers, entitlements, meters, claims and explicit source-snapshot IDs.
+- Optional queries by `functional_skill` ID when the graph includes `DELIVERS` and `USES_SKILL` edges.
+- Candidate offer dependency inspection (`REQUIRES`, `ELIGIBLE_WITH`, `AVAILABLE_FOR_PURCHASE`); purchasing/ownership decisions remain unresolved.
 - `commercial_total: null` and `calculation_status: NOT_RUN`: **no fabricated numbers**.
 
 ## Not implemented — do not claim these work
 
-- Live ingestion or source verification from Salesforce Docs, Headless Toolkit or Pricing Intelligence. The reference registry remains navigation metadata only.
-- Commercial offer prerequisite closure, full buying model and customer-specific ownership/eligibility evaluation.
+- Live ingestion or source verification from Salesforce Docs, Headless Toolkit or Pricing Intelligence. The reference registry remains navigation metadata only. **Even input claims labeled VERIFIED cannot make this pilot return `evidence_verified=true`; source attestation is absent.**
+- Full conditional commercial offer prerequisite closure, buying model selection and customer-specific ownership/eligibility evaluation. The pilot only exposes offer prerequisites as unverified candidates.
 - Calculation of actual price observations, regional rates, included allowances, pooled credit allocation, overages or implementation TCO.
 - Adapter to the existing pricing Flex Credit calculator. This pilot does not call or replace that CLI.
 - Search API/MCP server, similarity index, complete evidence snapshots, source-to-BOM diffs and production data refresh.

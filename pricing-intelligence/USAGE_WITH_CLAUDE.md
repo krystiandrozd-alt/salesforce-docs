@@ -1,6 +1,6 @@
 # Salesforce pricing intelligence — Claude Code quick start
 
-> **Current status (2026-11-22):** Five project-scoped Claude skills, a limited sourced price seed, a machine-readable 2026-11-03 Flex Credit rate card, and a deterministic Python credit-estimation CLI are committed to draft PR #8. No UI, comprehensive product collector, customer SKU book, or negotiated pricing module has been implemented. GitHub Actions run https://github.com/krystiandrozd-alt/salesforce-docs/actions/runs/45020898343 succeeded (13/13 fixture tests); live Salesforce calculator parity and contract applicability remain unverified.
+> **Current status (2026-11-22):** Five project-scoped Claude skills, a limited sourced price seed, a machine-readable 2026-11-03 Flex Credit rate card, and a deterministic Python credit-estimation CLI are committed to draft PR #8. No UI, comprehensive product collector, customer SKU book, or negotiated pricing module has been implemented. GitHub Actions run https://github.com/krystiandrozd-alt/salesforce-docs/actions/runs/45020898343 succeeded (13/13 initial calculator fixtures); a later [17/17 test run](https://github.com/krystiandrozd-alt/salesforce-docs/actions/runs/45021458675) also checks five skill metadata/paths and org-mode safety gates; live Salesforce calculator parity and contract applicability remain unverified.
 
 ## Use in Claude Code
 

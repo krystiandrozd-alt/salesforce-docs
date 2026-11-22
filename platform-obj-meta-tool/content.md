@@ -5,14 +5,15 @@ Overview as published in the source index (short official description, not page 
 No overview text in source — title-only index.
 
 Section breakdown:
-- **Metadata API Developer Guide** — 681 pages
-- **Tooling API Developer Guide** — 316 pages
-- **Object Reference for the Salesforce Platform** — 1501 pages
+- **Metadata API Developer Guide** — 697 pages
+- **Tooling API Developer Guide** — 345 pages
+- **Object Reference for the Salesforce Platform** — 1716 pages
 
 *Source: [`llms-platform-obj-meta-tool.txt`](https://developer.salesforce.com/docs/llms-platform-obj-meta-tool.txt) — official aggregated index (developer doc page), overview section.*
 
 
-*Last refreshed 2026-11-06: 2498 pages in 3 sections (counts from the live source).*
+
+*Last refreshed 2026-11-22: 2758 pages in 3 sections (counts from the live source).*
 
 ## Extraction notes
 

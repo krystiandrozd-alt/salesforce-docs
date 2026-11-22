@@ -2,7 +2,7 @@
 
 Source: [llms-industries.txt](https://developer.salesforce.com/docs/llms-industries.txt).
 
-Full link list extracted programmatically from the live source file (4021 page links across 15 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (4023 page links across 15 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
 ## Communications, Media, Energy and Utilities APIs (Managed Package) (435 pages)
 
@@ -487,7 +487,7 @@ Full link list extracted programmatically from the live source file (4021 page l
 | Standard Objects | https://developer.salesforce.com/docs/industries/advanced-orders-for-telesales/references/advanced-orders-for-telesales-objects/standard-objects.md |
 | StoreAssortment | https://developer.salesforce.com/docs/industries/advanced-orders-for-telesales/references/advanced-orders-for-telesales-objects/store-assortment.md |
 | UnitofMeasure | https://developer.salesforce.com/docs/industries/advanced-orders-for-telesales/references/advanced-orders-for-telesales-objects/unit-of-measure.md |
-| Advanced Order â€” Assortment Input | https://developer.salesforce.com/docs/industries/advanced-orders-for-telesales/references/advanced-orders-for-telesales-rest/advanced-order-assortment-input.md |
+| Advanced Order — Assortment Input | https://developer.salesforce.com/docs/industries/advanced-orders-for-telesales/references/advanced-orders-for-telesales-rest/advanced-order-assortment-input.md |
 | Advanced Order Delivery Date Input | https://developer.salesforce.com/docs/industries/advanced-orders-for-telesales/references/advanced-orders-for-telesales-rest/advanced-order-delivery-date-input.md |
 | Advanced Order Delivery Date Output | https://developer.salesforce.com/docs/industries/advanced-orders-for-telesales/references/advanced-orders-for-telesales-rest/advanced-order-delivery-date-output.md |
 | Advanced Order Product List Input | https://developer.salesforce.com/docs/industries/advanced-orders-for-telesales/references/advanced-orders-for-telesales-rest/advanced-order-product-list-input.md |
@@ -974,7 +974,7 @@ Full link list extracted programmatically from the live source file (4021 page l
 | DelegateAccessDef | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/tooling-api-objects-delegateaccessdef.md |
 | DelegateAccsDataSetObj | https://developer.salesforce.com/docs/industries/edu-cloud-dev-guide/guide/tooling-api-objects-delegateaccsdatasetobj.md |
 
-## Industries Common Resources Developer Guide (1467 pages)
+## Industries Common Resources Developer Guide (1469 pages)
 
 | Page | URL |
 |---|---|
@@ -1084,6 +1084,7 @@ Full link list extracted programmatically from the live source file (4021 page l
 | ConnectApi.ComplianceProcedureEvaluationInfo | https://developer.salesforce.com/docs/industries/industries-common-dev/guide/apex-connectapi-input-compliance-procedure-evaluation-info.md |
 | ConnectApi.ComplianceProcedureEvaluationRequest | https://developer.salesforce.com/docs/industries/industries-common-dev/guide/apex-connectapi-input-compliance-procedure-evaluation-request.md |
 | ConnectApi.EngagementCustomFieldsInput | https://developer.salesforce.com/docs/industries/industries-common-dev/guide/apex-connectapi-input-custom-fields.md |
+| ConnectApi.DecisionTableBulkLookupOptions | https://developer.salesforce.com/docs/industries/industries-common-dev/guide/apex-connectapi-input-decision-table-bulk-lookup-options.md |
 | ConnectApi.DecisionTableCondition | https://developer.salesforce.com/docs/industries/industries-common-dev/guide/apex-connectapi-input-decision-table-condition-representatio.md |
 | ConnectApi.DecisionTableInput | https://developer.salesforce.com/docs/industries/industries-common-dev/guide/apex-connectapi-input-decision-table.md |
 | ConnectApi.EngagementAttendeeCreateInput | https://developer.salesforce.com/docs/industries/industries-common-dev/guide/apex-connectapi-input-engagement-attendee-create.md |
@@ -1257,6 +1258,7 @@ Full link list extracted programmatically from the live source file (4021 page l
 | Decision Matrix Variable Input | https://developer.salesforce.com/docs/industries/industries-common-dev/guide/connect-requests-decision-matrix-variable.md |
 | Decision Model Export Input | https://developer.salesforce.com/docs/industries/industries-common-dev/guide/connect-requests-decision-model-export-input.md |
 | Decision Table Bulk Input | https://developer.salesforce.com/docs/industries/industries-common-dev/guide/connect-requests-decision-table-bulk-input.md |
+| Decision Table Bulk Lookup Options | https://developer.salesforce.com/docs/industries/industries-common-dev/guide/connect-requests-decision-table-bulk-lookup-options.md |
 | Decision Table Condition List Input | https://developer.salesforce.com/docs/industries/industries-common-dev/guide/connect-requests-decision-table-condition-list-input.md |
 | Decision Table Condition Input | https://developer.salesforce.com/docs/industries/industries-common-dev/guide/connect-requests-decision-table-condition.md |
 | Decision Table Definition Input | https://developer.salesforce.com/docs/industries/industries-common-dev/guide/connect-requests-decision-table-definition-input.md |

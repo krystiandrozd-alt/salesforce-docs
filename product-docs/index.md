@@ -2,9 +2,9 @@
 
 Source: [llms-product-docs.txt](https://developer.salesforce.com/docs/llms-product-docs.txt).
 
-Full link list extracted programmatically from the live source file (12977 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (12710 page links across 1 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
-## Pages (12977 pages)
+## Pages (12710 pages)
 
 | Page | URL |
 |---|---|
@@ -150,9 +150,9 @@ Full link list extracted programmatically from the live source file (12977 page 
 | More About DML | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_dml_database_more.htm |
 | Setting DML Options | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_dml_database_dmloptions.htm |
 | Transaction Control | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_transaction_control.htm |
-| sObjects That Canâ€™t Be Used Together in DML Operations | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_dml_non_mix_sobjects.htm |
+| sObjects That Can’t Be Used Together in DML Operations | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_dml_non_mix_sobjects.htm |
 | Mixed DML Operations in Test Methods | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_dml_non_mix_sobjects_test_methods.htm |
-| sObjects That Donâ€™t Support DML Operations | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_dml_non_dml_objects.htm |
+| sObjects That Don’t Support DML Operations | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_dml_non_dml_objects.htm |
 | Bulk DML Exception Handling | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_dml_bulk_exceptions.htm |
 | Things You Should Know about Data in Apex | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_dml_limitations.htm |
 | Locking Records | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_locking_records.htm |
@@ -295,7 +295,7 @@ Full link list extracted programmatically from the live source file (12977 page 
 | Connect in Apex | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/connectAPI_overview.htm |
 | Connect in Apex Examples | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/connectapi_examples.htm |
 | Get Feed Elements From a Feed | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/connectapi_examples_get_feed_elements.htm |
-| Get Feed Elements From Another Userâ€™s Feed | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/connectapi_examples_get_feed_elements_another_user.htm |
+| Get Feed Elements From Another User’s Feed | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/connectapi_examples_get_feed_elements_another_user.htm |
 | Get Site-Specific Feed Elements from a Feed | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/connectapi_examples_get_feed_elements_community_scoped.htm |
 | Post a Feed Element | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/connectapi_examples_post_feed_element.htm |
 | Post a Feed Element with a Mention | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/connectapi_examples_post_feed_element_mention.htm |
@@ -431,8 +431,8 @@ Full link list extracted programmatically from the live source file (12977 page 
 | Apex Connector Framework Examples | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_connector_examples.htm |
 | GitHub Issues Custom Adapter for Salesforce Connect | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_connector_example_github_issues.htm |
 | GitHub Custom Adapter for Salesforce Connect | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_connector_example_github.htm |
-| Google Driveâ„¢ Custom Adapter for Salesforce Connect | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_connector_example_google_drive.htm |
-| Google Booksâ„¢ Custom Adapter for Salesforce Connect | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_connector_example_google_books.htm |
+| Google Drive™ Custom Adapter for Salesforce Connect | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_connector_example_google_drive.htm |
+| Google Books™ Custom Adapter for Salesforce Connect | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_connector_example_google_books.htm |
 | Loopback Custom Adapter for Salesforce Connect | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_connector_example_loopback.htm |
 | Stack Overflow Custom Adapter for Salesforce Connect | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_connector_example_stackoverflow.htm |
 | Salesforce Reports and Dashboards API via Apex | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_analytics_intro.htm |
@@ -539,7 +539,7 @@ Full link list extracted programmatically from the live source file (12977 page 
 | Develop and Distribute Apex for Managed Packages | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_manpkgs_chapter.htm |
 | Apex Versioning in Managed Packages | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_manpkgs_package_versions.htm |
 | Version Apex Code Behavior | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_manpkgs_behavior.htm |
-| Apex Code Items That Arenâ€™t Versioned | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_manpkgs_behavior_not_versioned.htm |
+| Apex Code Items That Aren’t Versioned | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_manpkgs_behavior_not_versioned.htm |
 | Deprecate Managed Apex | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_manpkgs_deprecated.htm |
 | Testing Versioned Behavior in Apex Code | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_manpkgs_behavior_testing.htm |
 | Prevent Field Name Collisions in Managed SOQL Queries | https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_manpkgs_dynamic_soql.htm |
@@ -2028,7 +2028,7 @@ Full link list extracted programmatically from the live source file (12977 page 
 | ConnectApi Namespace | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_classes_connect_api.htm |
 | ActionLinks Class | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_ActionLinks_static_methods.htm |
 | ActionLinks Methods | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_ActionLinks_static_methods.htm |
-| createActionLinkGroupDefinitionâ€‹(communityId, actionLinkGroup) | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_ActionLinks_static_methods.htm |
+| createActionLinkGroupDefinition​(communityId, actionLinkGroup) | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_ActionLinks_static_methods.htm |
 | deleteActionLinkGroupDefinition(communityId, actionLinkGroupId) | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_ActionLinks_static_methods.htm |
 | getActionLink(communityId, actionLinkId) | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_ActionLinks_static_methods.htm |
 | getActionLinkDiagnosticInfo(communityId, actionLinkId) | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_ActionLinks_static_methods.htm |
@@ -2798,7 +2798,7 @@ Full link list extracted programmatically from the live source file (12977 page 
 | CommerceSearchConnectFamily Class | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_CommerceSearchConnectFamily_static_methods.htm |
 | CommerceSearchConnectFamily Methods | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_CommerceSearchConnectFamily_static_methods.htm |
 | searchProducts(webstoreId, searchTerm, categoryId, sortRuleId, grouping, fields, refinements, pageParam, pageSize, effectiveAccountId, includeQuantityRule) | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_CommerceSearchConnectFamily_static_methods.htm |
-| searchProducts(webstoreId, searchTerm, categoryId, sortRuleId, searchFields, grouping, fields, refinements, page, pageSize, effectiveAccountId, effectiveBuyerGroupIds, includeQuantityRule, includeProductâ€‹VariationInfo) | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_CommerceSearchConnectFamily_static_methods.htm |
+| searchProducts(webstoreId, searchTerm, categoryId, sortRuleId, searchFields, grouping, fields, refinements, page, pageSize, effectiveAccountId, effectiveBuyerGroupIds, includeQuantityRule, includeProduct​VariationInfo) | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_CommerceSearchConnectFamily_static_methods.htm |
 | CommerceSearchSettings Class | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_CommerceSearchSettings_static_methods.htm |
 | CommerceSearchSettings Methods | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_CommerceSearchSettings_static_methods.htm |
 | createCommerceSearchIndex(webstoreId, indexBuildType) | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_CommerceSearchSettings_static_methods.htm |
@@ -2963,7 +2963,7 @@ Full link list extracted programmatically from the live source file (12977 page 
 | postOrder(orderInput) | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_Datacloud_static_methods.htm |
 | EinsteinLLM Class | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_EinsteinLLM_static_methods.htm |
 | EinsteinLLM Methods | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_EinsteinLLM_static_methods.htm |
-| generateâ€‹MessagesForâ€‹PromptTemplateâ€‹(promptTemplateâ€‹DevName, promptâ€‹Templateâ€‹GenerationsInput) | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_EinsteinLLM_static_methods.htm |
+| generate​MessagesFor​PromptTemplate​(promptTemplate​DevName, prompt​Template​GenerationsInput) | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_EinsteinLLM_static_methods.htm |
 | getPromptTemplates(query, sortBy, offset, pageLimit, fields, type, relatedEntity, isActive) | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_EinsteinLLM_static_methods.htm |
 | EmailMergeFieldService Class | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_EmailMergeFieldService_static_methods.htm |
 | EmailMergeFieldService Methods | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ConnectAPI_EmailMergeFieldService_static_methods.htm |
@@ -3570,7 +3570,7 @@ Full link list extracted programmatically from the live source file (12977 page 
 | ConnectApi.CdpSegmentDbtModelInput | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_input_cdp_segment_dbt_model.htm |
 | ConnectApi.CdpSegmentInput | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_input_cdp_segment.htm |
 | ConnectApi.ChangeInputRepresentation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_input_change.htm |
-| ConnectApi.ChangeItemFeeâ€‹InputRepresentation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_input_change_item_fee.htm |
+| ConnectApi.ChangeItemFee​InputRepresentation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_input_change_item_fee.htm |
 | ConnectApi.ChangeItemFeeTaxInputRepresentation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_input_change_item_fee_tax.htm |
 | ConnectApi.ChangeItemFeeWithTaxInputRepresentation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_input_change_item_fee_with_tax.htm |
 | ConnectApi.ChangeItemInputRepresentation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_input_change_item.htm |
@@ -3629,8 +3629,8 @@ Full link list extracted programmatically from the live source file (12977 page 
 | ConnectApi.DmoFilterLimitInput | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_input_dmo_filter_limit.htm |
 | ConnectApi.DoubleList | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_input_double_list_inpu.htm |
 | ConnectApi.EgressPropertiesInput | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_input_egress_properties.htm |
-| ConnectApi.â€‹EinsteinLlmâ€‹Additionalâ€‹ConfigInput | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_input_einstein_llm_additional_config.htm |
-| ConnectApi.â€‹EinsteinPromptâ€‹Templateâ€‹GenerationsInput | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_input_einstein_prompt_template_generations.htm |
+| ConnectApi.​EinsteinLlm​Additional​ConfigInput | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_input_einstein_llm_additional_config.htm |
+| ConnectApi.​EinsteinPrompt​Template​GenerationsInput | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_input_einstein_prompt_template_generations.htm |
 | ConnectApi.EnsurePaymentCreditInputRepresentation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_input_ensure_payment_credit.htm |
 | ConnectApi.EnsureFundsAsyncInputRepresentation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_input_ensure_funds_async.htm |
 | ConnectApi.EnsureRefundsAsyncInputRepresentation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_input_ensure_refunds_async.htm |
@@ -4164,22 +4164,22 @@ Full link list extracted programmatically from the live source file (12977 page 
 | ConnectApi.EgressPropertiesRepresentation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_egress_properties.htm |
 | ConnectApi.EinsteinLlmGenAiSourceReference | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_llm_gen_ai_source_reference.htm |
 | ConnectApi.EinsteinLlmGenerationCitationOutput | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_llm_generation_citation.htm |
-| ConnectApi.â€‹EinsteinLlmâ€‹Generationâ€‹ContentQualityâ€‹Output | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_llm_generations_content_quality.htm |
+| ConnectApi.​EinsteinLlm​Generation​ContentQuality​Output | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_llm_generations_content_quality.htm |
 | ConnectApi.EinsteinLlmGenerationGenAiCitedReference | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_llm_generation_gen_ai_cited_reference.htm |
 | ConnectApi.EinsteinLlmGenerationGenAiSourceContentInfo | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_llm_generation_gen_ai_source_content_info.htm |
 | ConnectApi.EinsteinLlmGenerationGenAiSourceReferenceInfo | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_llm_generation_gen_ai_source_reference_info.htm |
-| ConnectApi.â€‹EinsteinLLMâ€‹GenerationItemâ€‹Output | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_llm_generation_item.htm |
-| ConnectApi.â€‹EinsteinLlmâ€‹Generationâ€‹SafetyScoreâ€‹Output | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_llm_generations_safety_score.htm |
+| ConnectApi.​EinsteinLLM​GenerationItem​Output | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_llm_generation_item.htm |
+| ConnectApi.​EinsteinLlm​Generation​SafetyScore​Output | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_llm_generations_safety_score.htm |
 | ConnectApi.EinsteinPromptRecordCollectionOutputRepresentation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_prompt_record_collection_output.htm |
 | ConnectApi.EinsteinPromptRecordFieldRepresentation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_prompt_record_field.htm |
 | ConnectApi.EinsteinPromptRecordRepresentation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_prompt_record.htm |
 | ConnectApi.EinsteinPromptTemplateAttachment | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_prompt_template_attachment.htm |
 | ConnectApi.EinsteinPromptTemplateAttachmentExclusionInfo | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_prompt_template_attachment_exclusion_info.htm |
-| ConnectApi.â€‹EinsteinPromptâ€‹Templateâ€‹GenerationsError | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_prompt_template_generations_error.htm |
-| ConnectApi.â€‹EinsteinPromptâ€‹Templateâ€‹Generationsâ€‹Representation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_prompt_template_generations.htm |
-| ConnectApi.â€‹EinsteinPromptâ€‹TemplateMaskâ€‹Contentâ€‹Representation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_prompt_template_mask_content.htm |
-| ConnectApi.â€‹EinsteinPromptâ€‹TemplateMaskDataâ€‹Representation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_prompt_template_mask_data.htm |
-| ConnectApi.â€‹EinsteinPromptâ€‹TemplateMaskSettingsâ€‹Representation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_prompt_template_mask_settings.htm |
+| ConnectApi.​EinsteinPrompt​Template​GenerationsError | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_prompt_template_generations_error.htm |
+| ConnectApi.​EinsteinPrompt​Template​Generations​Representation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_prompt_template_generations.htm |
+| ConnectApi.​EinsteinPrompt​TemplateMask​Content​Representation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_prompt_template_mask_content.htm |
+| ConnectApi.​EinsteinPrompt​TemplateMaskData​Representation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_prompt_template_mask_data.htm |
+| ConnectApi.​EinsteinPrompt​TemplateMaskSettings​Representation | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_prompt_template_mask_settings.htm |
 | ConnectApi.EinsteinPromptTemplateMergeFieldInformationContext | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_einstein_prompt_template_merge_field_information_contex.htm |
 | ConnectApi.EmailAddress | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_emailAddress.htm |
 | ConnectApi.EmailAttachment | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_email_attachment.htm |
@@ -4725,7 +4725,7 @@ Full link list extracted programmatically from the live source file (12977 page 
 | ConnectApi.TopicSuggestionPage | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_topicSuggestionPage.htm |
 | ConnectApi.TopicSummary | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_topic_summary.htm |
 | ConnectApi.TrackedChangeBundleCapability | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_tracked_change_bundle_capability.htm |
-| ConnectApi.â€‹TrackedChangeItem | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_TrackedChangeItem.htm |
+| ConnectApi.​TrackedChangeItem | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_TrackedChangeItem.htm |
 | ConnectApi.TrackedChangesCapability | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_tracked_changes_capability.htm |
 | ConnectApi.TypeAndFilter | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_type_and_filter.htm |
 | ConnectApi.UnauthenticatedUser | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_connectapi_output_unauth_user.htm |
@@ -7173,14 +7173,14 @@ Full link list extracted programmatically from the live source file (12977 page 
 | getColor() | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_schema_describecolorresult.htm |
 | getContext() | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_schema_describecolorresult.htm |
 | getTheme() | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_schema_describecolorresult.htm |
-| Describeâ€‹DataCategoryGroupResult Class | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_Schema_DescribeDataCategoryGroupResult.htm |
+| Describe​DataCategoryGroupResult Class | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_Schema_DescribeDataCategoryGroupResult.htm |
 | DescribeDataCategoryGroupResult Methods | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_Schema_DescribeDataCategoryGroupResult.htm |
 | getCategoryCount() | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_Schema_DescribeDataCategoryGroupResult.htm |
 | getDescription() | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_Schema_DescribeDataCategoryGroupResult.htm |
 | getLabel() | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_Schema_DescribeDataCategoryGroupResult.htm |
 | getName() | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_Schema_DescribeDataCategoryGroupResult.htm |
 | getSobject() | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_Schema_DescribeDataCategoryGroupResult.htm |
-| Describeâ€‹DataCategoryGroupStructureResult Class | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_Schema_DescribeDataCategoryGroupStructureResult.htm |
+| Describe​DataCategoryGroupStructureResult Class | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_Schema_DescribeDataCategoryGroupStructureResult.htm |
 | DescribeDataCategoryGroupStructureResult Methods | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_Schema_DescribeDataCategoryGroupStructureResult.htm |
 | getDescription() | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_Schema_DescribeDataCategoryGroupStructureResult.htm |
 | getLabel() | https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_Schema_DescribeDataCategoryGroupStructureResult.htm |
@@ -10262,6 +10262,8 @@ Full link list extracted programmatically from the live source file (12977 page 
 | OmniSupervisorConfig | https://developer.salesforce.com/docs/atlas.en-us.api_tooling.meta/api_tooling/tooling_api_objects_omnisupervisorconfig.htm |
 | OperationLog | https://developer.salesforce.com/docs/atlas.en-us.api_tooling.meta/api_tooling/tooling_api_objects_operationlog.htm |
 | OpportunitySplitType | https://developer.salesforce.com/docs/atlas.en-us.api_tooling.meta/api_tooling/tooling_api_objects_opportunitysplittype.htm |
+| Order | https://developer.salesforce.com/docs/atlas.en-us.api_tooling.meta/api_tooling/tooling_api_objects_order.htm |
+| OrderSummary | https://developer.salesforce.com/docs/atlas.en-us.api_tooling.meta/api_tooling/tooling_api_objects_ordersummary.htm |
 | OrgDomainLog | https://developer.salesforce.com/docs/atlas.en-us.api_tooling.meta/api_tooling/tooling_api_objects_mydomainlog.htm |
 | OutboundNetworkConnection | https://developer.salesforce.com/docs/atlas.en-us.api_tooling.meta/api_tooling/tooling_api_objects_outboundnetworkconnection.htm |
 | OutboundNetworkConnProperty | https://developer.salesforce.com/docs/atlas.en-us.api_tooling.meta/api_tooling/tooling_api_objects_outboundnetworkconnproperty.htm |
@@ -10390,14 +10392,14 @@ Full link list extracted programmatically from the live source file (12977 page 
 | Pattern Approach | https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_pat_approach.htm |
 | Pattern Selection Guide | https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_selection_guide.htm |
 | Middleware Terms and Definitions | https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_middleware_definitions.htm |
-| Remote Process Invocationâ€”Request and Reply | https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_remote_process_invocation_state.htm |
-| Remote Process Invocationâ€”Fire and Forget | https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_remote_process_invocation_fire_forget.htm |
+| Remote Process Invocation—Request and Reply | https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_remote_process_invocation_state.htm |
+| Remote Process Invocation—Fire and Forget | https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_remote_process_invocation_fire_forget.htm |
 | Batch Data Synchronization | https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_batch_data_sync.htm |
 | Remote Call-In | https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_remote_call_in.htm |
 | UI Update Based on Data Changes | https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_ui_updates_from_data_changes.htm |
 | Data Virtualization | https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_data_virtualization.htm |
-| Resourcesâ€”External | https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_resources_external.htm |
-| Resourcesâ€”Salesforce | https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_resources_internal.htm |
+| Resources—External | https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_resources_external.htm |
+| Resources—Salesforce | https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_resources_internal.htm |
 | Security Considerations | https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_security_considerations.htm |
 | Event Driven Architecture | https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_event_driven_architecture.htm |
 | Overview of Salesforce Objects and Fields | https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm |
@@ -12303,275 +12305,6 @@ Full link list extracted programmatically from the live source file (12977 page 
 | WorkTypeGroup | https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_worktypegroup.htm |
 | WorkTypeGroupMember | https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_worktypegroupmember.htm |
 | Data Model | https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/data_model.htm |
-| Get Started with User Interface API | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_get_started.htm |
-| User Interface API Release Notes | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_get_started_release_notes.htm |
-| User Interface API Quick Start | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_quick_start_postman.htm |
-| User Interface API Sample Apps | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_get_started_sample_apps.htm |
-| Authentication, Versioning, Limits, ETag, and More | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_get_started_intro.htm |
-| Status Codes and Error Responses | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_errors.htm |
-| API End-of-Life Policy | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/api_ui_eol.htm |
-| User Interface API Features | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_features_overview.htm |
-| Work with Records | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_features_records.htm |
-| Get Child Records | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_features_records_child_relationships.htm |
-| Build UI for Picklists | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_features_records_dependent_picklist.htm |
-| Upload Binary Files | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_features_records_binary_upload.htm |
-| Prevent Record Duplication with Idempotent Record Writes | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_features_records_idempotent.htm |
-| Upload Files | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_features_records_content_document.htm |
-| Work with Actions | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_features_actions.htm |
-| Manage Favorites | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_features_favorites.htm |
-| Work with List Views | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_features_list_views.htm |
-| Manage Apps | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_features_apps.htm |
-| User Interface API Resources | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_overview.htm |
-| Records | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_record.htm |
-| Get Record Data and Object Metadata | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_record_ui.htm |
-| Get Record Layout Metadata | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_record_layout.htm |
-| Get a Directory of Supported Objects | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_object_info_directory.htm |
-| Get Object Metadata | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_object_info.htm |
-| Get a Batch of Object Metadata | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_object_info_batch.htm |
-| Get Values for a Picklist Field | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_picklist_values.htm |
-| Get Values for All Picklist Fields of a Record Type | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_picklist_values_collection.htm |
-| Get Child Records | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_child_relationships.htm |
-| Get a Record | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_record_get.htm |
-| Get a Batch of Records | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_records_batch.htm |
-| Create or Clone a Record | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_records_create.htm |
-| Create a Batch of Records | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_records_batch_post.htm |
-| Get Default Values to Clone a Record | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_record_defaults_clone.htm |
-| Get Default Values to Clone a Recordâ€”Lightweight | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_record_defaults_template_clone.htm |
-| Get Default Values to Create a Record | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_record_defaults_create.htm |
-| Get Default Values to Create a Recordâ€”Lightweight | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_record_defaults_template_create.htm |
-| Update a Record | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_record_patch.htm |
-| Update a Batch of Records | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_records_batch_update.htm |
-| Delete a Record | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_record_delete.htm |
-| Delete a Batch of Records | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_records_batch_delete.htm |
-| Get Lookup Field Suggestions With POST | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_lookup_post.htm |
-| Check for Duplicate Records | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_predupe_create.htm |
-| Get Duplicate Management Configuration for a Specified Object | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_duplicates_get.htm |
-| Upload a File | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_records_contentversion.htm |
-| Upload a New File Version | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_records_contentdocument.htm |
-| Actions | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_actions.htm |
-| Get Global Actions | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_global.htm |
-| Get Record Detail Actions | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_action_record.htm |
-| Get Record Edit Actions | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_action_record_edit.htm |
-| Get Related List Actions with URL Parameters | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_related_list.htm |
-| Get Related List Actions with a Request Body | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_related_list_actions_get.htm |
-| Get a Batch of Related List Actions with URL Parameters | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_related_lists_batch.htm |
-| Get a Batch of Related List Actions with a Request Body | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_related_list_actions_batch_get.htm |
-| Get Related List Record Actions | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_related_list_record.htm |
-| Get List View Header Actions | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_list_view.htm |
-| Get List View Record Actions | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_list_view_record.htm |
-| Get List View Chart Actions | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_list_view_chart.htm |
-| Get Lightning Page Actions | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_flexipage.htm |
-| Get Lookup Field Actions | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_lookup.htm |
-| Get MRU List View Actions | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_mru_list.htm |
-| Get Photo Actions | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_photo.htm |
-| Get a Quick Action Layout | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_quick_action_layout.htm |
-| Perform Quick Actions | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_perform_action.htm |
-| Update a Record with a Quick Action | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_update_action.htm |
-| Favorites | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_favorites.htm |
-| Create a Favorite | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_favorites_create.htm |
-| Get a Favorite | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_favorite_get.htm |
-| Get Favorites | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_favorites_get.htm |
-| Update a Favorite | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_favorite_update.htm |
-| Update a Batch of Favorites | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_favorites_batch_update.htm |
-| Delete a Favorite | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_favorite_delete.htm |
-| Update Usage of a Favorite | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_favorites_usage_update.htm |
-| Lists | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_list_views.htm |
-| Get List View Metadata | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_list_views_md.htm |
-| Get a Batch of List View Metadata | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_list_views_md_batch.htm |
-| Update List View Metadata | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_list_views_md_patch.htm |
-| Delete List View Metadata | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_list_views_md_delete.htm |
-| Get List Views for an Object | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_lists_object_get.htm |
-| Create a List View for an Object | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_lists_object_post.htm |
-| Get Metadata for a List View Object | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_lists_object_md_get.htm |
-| Get List View Records with URL Parameters | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_list_views_records.htm |
-| Get List View Records with a Request Body | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_list_view_records_post.htm |
-| Get List View Preferences | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_list_preferences_get.htm |
-| Update List View Preferences | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_list_preferences_update.htm |
-| Get Related Lists for an Object | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_related_list_object.htm |
-| Get Related List Records with URL Parameters | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_related_list_records.htm |
-| Get Related List Records with a Request Body | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_related_list_records_get.htm |
-| Get Related List Metadata | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_related_list_info_md.htm |
-| Get Related List Record Count | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_related_list_count.htm |
-| Get a Batch of Related List Metadata | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_related_list_info_batch.htm |
-| Get a Batch of Related List Records with URL Parameters | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_related_list_records_batch.htm |
-| Get a Batch of Related List Records with a Request Body | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_related_list_records_batch_get.htm |
-| Get a Batch of Related List Record Counts | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_related_list_count_batch.htm |
-| Update Related List Metadata | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_related_list_info_md_patch.htm |
-| Get Related List User Preferences | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_related_list_preferences_get.htm |
-| Get a Batch of Related List User Preferences | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_related_list_preferences_batch_get.htm |
-| Update Related List User Preferences | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_related_list_preferences_patch.htm |
-| Apps | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_apps_overview.htm |
-| Get Apps | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_apps.htm |
-| Get an App | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_apps_id.htm |
-| Update Last Selected App | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_apps_id_update.htm |
-| Get Last Selected App | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_apps_selected.htm |
-| Get Personalized Navigation Items | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_apps_user_nav_items.htm |
-| Get All Navigation Items | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_all_nav_items.htm |
-| Update Personalized Navigation Items | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_apps_update_nav_items.htm |
-| Get Active Theme | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_themes_active.htm |
-| Session CSRF Token | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_session_csrf.htm |
-| User Interface API Request Bodies | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_overview.htm |
-| Action Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_action_input.htm |
-| Action Related List Single Batch Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_action_related_list_single_batch_input.htm |
-| Action Related Lists Batch Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_action_related_list_batch_input.htm |
-| Batch Record Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_batch_input.htm |
-| Content Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_content_input.htm |
-| Batch Operation Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_batch_operation_input.htm |
-| Favorite Batch Collection Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_favorite_batch_collection_input.htm |
-| Favorite Batch Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_favorite_batch_input.htm |
-| Favorite Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_favorite_input.htm |
-| List Filter By Info Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_list_filter_by_info_input.htm |
-| List Info Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_list_info_input.htm |
-| List Info Post Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_list_info_post_input.htm |
-| List Order By Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_list_order_by_input.htm |
-| List Preferences Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_list_preferences_input.htm |
-| List Records Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_list_records_input.htm |
-| List Scope Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_list_scope_input.htm |
-| List User Preference Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_list_user_preference_input.htm |
-| Lookup Post Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_lookup_post_input.htm |
-| Navigation Item Collection Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_navigation_item_collection_input.htm |
-| Navigation Item Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_navigation_item_input.htm |
-| Page Reference Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_page_reference_input.htm |
-| Perform Action Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_perform_action_input.htm |
-| Record Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_record_input.htm |
-| Related List Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_related_list_input.htm |
-| Related List Records Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_related_list_record_input.htm |
-| Related List Records Batch Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_related_list_record_batch_input.htm |
-| Related List User Preferences Input | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_requests_related_list_user_preferences_input.htm |
-| User Interface API Response Bodies | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_overview.htm |
-| User Interface API Top-Level Response Bodies | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_top_level.htm |
-| Action | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_action.htm |
-| App | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_app.htm |
-| Apps | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_apps.htm |
-| Batch Results | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_batch_results.htm |
-| Content Document Composite | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_contentdocumentcomposite.htm |
-| CSRF Token | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_csrf_token.htm |
-| Duplicates | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_duplicates.htm |
-| Duplicates Configuration | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_duplicates_configuration.htm |
-| Favorite | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_favorite.htm |
-| Favorite Collection | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_favorite_collection.htm |
-| List Info | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_metadata.htm |
-| List Info Summary Collection | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_info_summary_collection.htm |
-| List Object Info | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_object_info.htm |
-| List Preferences | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_preferences.htm |
-| List Record Collection | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_record_collection.htm |
-| Lookup Values | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_lookup_values.htm |
-| Navigation Items | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_nav_items.htm |
-| Object Info | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_object_info.htm |
-| Object Info Directory | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_object_info_directory.htm |
-| Picklist Values | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_picklist_values.htm |
-| Picklist Values Collection | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_picklist_values_collection.htm |
-| Quick Action Execution | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_perform_action.htm |
-| Quick Action Layout | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_quick_action_layout.htm |
-| Record | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_record.htm |
-| Record Collection | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_record_collection.htm |
-| Record Defaults | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_record_defaults.htm |
-| Record Defaults Template Clone | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_record_defaults_template_clone.htm |
-| Record Defaults Template Create | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_record_defaults_template_create.htm |
-| Record Layout | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_record_layout.htm |
-| Record UI | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_record_ui.htm |
-| Related List Info | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_related_list_metadata.htm |
-| Related List Info Summary Collection | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_related_list_summary_collection.htm |
-| Related List Record Collection | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_related_list_record_collection.htm |
-| Related List Record Count | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_related_list_record_count.htm |
-| Related List User Preferences | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_related_list_user_preferences.htm |
-| Simplified Batch Results | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_batch_results_simplified.htm |
-| Theme | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_theme.htm |
-| User Interface API Nested Response Bodies | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_nested.htm |
-| Advanced Lookup Display Info | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_advanced_lookup_display_info.htm |
-| Advanced Lookup Display Info Field | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_advanced_lookup_display_info_field.htm |
-| Advanced Lookup Info | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_advanced_lookup_info.htm |
-| Batch Result Item | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_batch_result.htm |
-| Canvas Layout Component | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_canvas_layout_component.htm |
-| Case Status Picklist Value Attributes | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_case_status_picklist_values.htm |
-| Child Relationship | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_child_relationship.htm |
-| Custom Link Layout Component | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_custom_link_layout_component.htm |
-| Display Layout | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_display_layout.htm |
-| Display Layout and Matching Info | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_display_layout_and_matching_info.htm |
-| Duplicate Record Error | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_duplicate_record_error.htm |
-| Duplicate Result Info | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_duplicate_result_info.htm |
-| Duplicate Rule | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_duplicate_rule.htm |
-| Duplicate Rule Filter | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_duplicate_rule_filter.htm |
-| Duplicate Rule Filter Item | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_duplicate_rule_filter_item.htm |
-| Error Message | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_error_message.htm |
-| Error with Output | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_error_with_output.htm |
-| Field | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_field.htm |
-| Field Layout Component | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_field_layout_component.htm |
-| Field Value | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_field_value.htm |
-| Filtered Lookup Info | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_filtered_lookup_info.htm |
-| Lead Status Picklist Value Attributes | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_lead_status_picklist_values.htm |
-| List Column | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_column.htm |
-| List Column Inline Edit Attributes | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_column_inline_edit_attributes.htm |
-| List Filter by Info | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_filter_by_info.htm |
-| List Info Share | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_info_share.htm |
-| List Info Share Category | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_info_share_category.htm |
-| List Info Summary | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_info_summary.htm |
-| List Inline Edit Details | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_inline_edit_details.htm |
-| List Object Column | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_object_column.htm |
-| List Object Picklist Value | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_object_picklist_value.htm |
-| List Object Quick Filter Overrides | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_object_quick_filter_overrides.htm |
-| List Object Scope | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_object_scope.htm |
-| List Object Scope Available Entity | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_object_scope_available_entity.htm |
-| List Order By Info | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_order_by_info.htm |
-| List Reference | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_reference.htm |
-| List Scope | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_scope.htm |
-| List Scope Entity | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_scope_entity.htm |
-| List Scope Related Entity | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_scope_related_entity.htm |
-| List User Preference | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_user_preference.htm |
-| Location Field | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_location_field.htm |
-| Lookup Metadata | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_lookup_metadata.htm |
-| Lookup Metadata Target Info | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_lookup_metadata_target_info.htm |
-| Match | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_match.htm |
-| Match Result | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_match_result.htm |
-| Match Result Info | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_match_result_info.htm |
-| Match Rule | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_match_rule.htm |
-| Matching Info | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_matching_info.htm |
-| Navigation Item | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_nav_item.htm |
-| Object Action | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_object_action.htm |
-| Object Info Directory Entry | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_object_info_directory_entry.htm |
-| Opportunity Stage Picklist Value Attributes | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_opportunity_stage_picklist_values.htm |
-| Page Reference | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_page_reference.htm |
-| Picklist Value | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_picklist_value.htm |
-| Platform Action | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_platform_action.htm |
-| Record Exceptions | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_record_exception.htm |
-| Record Exception Error | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_record_exception_error.htm |
-| Record Layout Component | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_record_layout_component.htm |
-| Record Layout Item | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_record_layout_item.htm |
-| Record Layout Row | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_record_layout_row.htm |
-| Record Layout Save Option | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_record_layout_save_option.htm |
-| Record Layout Section | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_record_layout_section.htm |
-| Record Layout Section User State | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_record_layout_section_user_state.htm |
-| Record Layout User State | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_record_layout_user_state.htm |
-| Record Template Clone | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_record_template_clone.htm |
-| Record Template Create | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_record_template_create.htm |
-| Record Type Info | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_record_type_info.htm |
-| Reference To Info | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_reference_to_info.htm |
-| Related List Column | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_related_list_column.htm |
-| Related List Info Summary | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_related_list_summary.htm |
-| Related List Reference | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_related_list_reference.htm |
-| Report Layout Component | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_report_layout_component.htm |
-| Theme Banner | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_theme_banner.htm |
-| Theme Image | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_theme_image.htm |
-| Theme Info | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_theme_info.htm |
-| Visualforce Layout Component | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_visualforce_layout_component.htm |
-| Work Step Status Picklist Value Attributes | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_workstep_picklist_values.htm |
-| User Interface API Appendices | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_appendices.htm |
-| Supported Objects | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_get_started_supported_objects.htm |
-| All Supported Objects | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_all_supported_objects.htm |
-| List View Supported Objects | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_list_view_supported_objects.htm |
-| Most Recently Used List View Supported Objects | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_mru_list_view_supported_objects.htm |
-| Retired Resources | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_appendices_retired_resources.htm |
-| Get Lookup Field Suggestions | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_lookup_get.htm |
-| Get Lookup Field Suggestions for a Specified Object | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_lookup_object_get.htm |
-| Get List Views for an Object (Deprecated) | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_list_views_object.htm |
-| Get List View Records and Metadata (Deprecated) | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_list_views_records_md.htm |
-| Get Most Recently Used List View Records (Deprecated) | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_mru_list_views_records.htm |
-| Get Most Recently Used List View Metadata (Deprecated) | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_mru_list_views_md.htm |
-| Get Most Recently Used List View Records and Metadata (Deprecated) | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_resources_mru_list_views_records_md.htm |
-| Retired Response Bodies | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_appendices_retired_outputs.htm |
-| List UI | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_ui.htm |
-| List View Summary | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_view_summary.htm |
-| List View Summary Collection | https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_responses_list_view_summary_collection.htm |
 | Introduction to Mobile Development | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/preface_intro.htm |
 | About Salesforce Mobile Apps | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/preface_arch.htm |
 | Customize the Salesforce Mobile App, or Create a Custom App? | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/intro_S1_vs_custom_apps.htm |
@@ -12580,8 +12313,8 @@ Full link list extracted programmatically from the live source file (12977 page 
 | Sending Feedback | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/preface_feedback.htm |
 | Introduction to Salesforce Mobile SDK Development | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/intro.htm |
 | About Native, HTML, and Hybrid Development | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/intro_choose_scenario.htm |
-| Enough Talk; Iâ€™m Ready | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/intro_quickstart.htm |
-| Whatâ€™s New in Mobile SDK 11.1 | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/gs_whatsnew.htm |
+| Enough Talk; I’m Ready | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/intro_quickstart.htm |
+| What’s New in Mobile SDK 11.1 | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/gs_whatsnew.htm |
 | What Was New in Recent Releases | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/gs_whatswasnew.htm |
 | Getting Started With Mobile SDK 11.1 for iOS and Android | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/gs_getting_started.htm |
 | Developer Edition or Sandbox Environment? | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/intro_de_sandbox.htm |
@@ -12612,7 +12345,7 @@ Full link list extracted programmatically from the live source file (12977 page 
 | Creating an iOS Swift Project Manually | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/ios_new_native_project_manual.htm |
 | Create an Xcode Swift Project | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/ios_new_native_manual_create_xcode_project.htm |
 | Add Mobile SDK Libraries to Your Project | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/ios_new_native_manual_clone_sdk.htm |
-| Configure Your Projectâ€™s Build Settings | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/ios_new_native_manual_configure_build.htm |
+| Configure Your Project’s Build Settings | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/ios_new_native_manual_configure_build.htm |
 | Option 1: Import Mobile SDK Template Files | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/ios_new_native_manual_details.htm |
 | Option 2: Add Mobile SDK Setup Code Manually | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/ios_new_native_no_template.htm |
 | Use with with | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/ios_cocoapods.htm |
@@ -12750,7 +12483,7 @@ Full link list extracted programmatically from the live source file (12977 page 
 | Managing Soups | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/offline_managing_soups.htm |
 | Get the Database Size | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/offline_soup_dbsize.htm |
 | Clear a Soup | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/offline_soup_clear.htm |
-| Retrieve a Soupâ€™s Index Specs | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/offline_soup_retrieve_index_specs.htm |
+| Retrieve a Soup’s Index Specs | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/offline_soup_retrieve_index_specs.htm |
 | Change Existing Index Specs on a Soup | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/offline_soup_change_index_specs.htm |
 | Reindex a Soup | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/offline_soup_reindex.htm |
 | Remove a Soup | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/offline_soup_remove.htm |
@@ -12777,7 +12510,7 @@ Full link list extracted programmatically from the live source file (12977 page 
 | Syncing Up by External ID | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/entity_framework_native_sync_up_external_id.htm |
 | Stopping and Restarting Sync Operations | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/entity_framework_stop_start_sync_operations.htm |
 | About Sync Task Errors | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/entity_framework_sync_task_errors.htm |
-| Handling â€œGhostâ€ Records After Sync Down Operations | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/entity_framework_sync_ghosts.htm |
+| Handling “Ghost” Records After Sync Down Operations | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/entity_framework_sync_ghosts.htm |
 | Using Standard Targets | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/entity_framework_standard_targets.htm |
 | Using the MRU Sync Down Target | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/entity_framework_sync_down_target_mru.htm |
 | Using the SOQL Sync Down Target | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/entity_framework_sync_down_target_soql.htm |
@@ -12854,7 +12587,7 @@ Full link list extracted programmatically from the live source file (12977 page 
 | OAuth 2.0 Web Server Flow | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/oauth_web_server_flow.htm |
 | OAuth 2.0 User-Agent Flow | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/oauth_useragent_flow.htm |
 | OAuth 2.0 Refresh Token Flow | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/oauth_refresh_token_flow.htm |
-| Mobile SDK Login and Authentication Flowâ€”Detailed Look | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/oauth_mobilesdk_detail.htm |
+| Mobile SDK Login and Authentication Flow—Detailed Look | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/oauth_mobilesdk_detail.htm |
 | Scope Parameter Values | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/oauth_scope_parameter_values.htm |
 | Using Identity URLs | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/oauth_using_identity_urls.htm |
 | Setting Custom Login Servers in Android Apps | https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/oauth_custom_login_host.htm |

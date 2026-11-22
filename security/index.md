@@ -2,7 +2,7 @@
 
 Source: [llms-security.txt](https://developer.salesforce.com/docs/llms-security.txt).
 
-Full link list extracted programmatically from the live source file (165 page links across 9 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (165 page links across 9 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
 ## Access Amazon RDS Data Sources Using Salesforce Connect (10 pages)
 
@@ -121,7 +121,7 @@ Full link list extracted programmatically from the live source file (165 page li
 | Configure Headless Identity Settings in Experience Cloud | https://developer.salesforce.com/docs/platform/headless-identity-impl-guide/guide/headless-identity-login-registration-settings.md |
 | Headless Login: Send a Token Request | https://developer.salesforce.com/docs/platform/headless-identity-impl-guide/guide/headless-identity-login-token-exchange.md |
 | Configure Experience Cloud Site Membership | https://developer.salesforce.com/docs/platform/headless-identity-impl-guide/guide/headless-identity-membership.md |
-| Headless Forgot Password Flow: Change the Userâ€™s Password | https://developer.salesforce.com/docs/platform/headless-identity-impl-guide/guide/headless-identity-postman-changepassword.md |
+| Headless Forgot Password Flow: Change the User’s Password | https://developer.salesforce.com/docs/platform/headless-identity-impl-guide/guide/headless-identity-postman-changepassword.md |
 | Headless Forgot Password Flow: Send a Password Reset Request | https://developer.salesforce.com/docs/platform/headless-identity-impl-guide/guide/headless-identity-postman-forgotpassword-initialize.md |
 | Headless Registration and Headless Login Flows: Get User Info | https://developer.salesforce.com/docs/platform/headless-identity-impl-guide/guide/headless-identity-postman-getuserinfo.md |
 | Headless Login: Send an Authorization Request | https://developer.salesforce.com/docs/platform/headless-identity-impl-guide/guide/headless-identity-postman-login-authorize.md |
@@ -170,9 +170,9 @@ Full link list extracted programmatically from the live source file (165 page li
 | Before You Start | https://developer.salesforce.com/docs/platform/scoping-rules-dev-guide/guide/scoping-rules-before-you-start.md |
 | Considerations for Scoping Rules | https://developer.salesforce.com/docs/platform/scoping-rules-dev-guide/guide/scoping-rules-considerations.md |
 | Previous Versions | https://developer.salesforce.com/docs/platform/scoping-rules-dev-guide/guide/scoping-rules-dev-guide-pdf-archive.md |
-| Display a Departmentâ€™s Records by Default | https://developer.salesforce.com/docs/platform/scoping-rules-dev-guide/guide/scoping-rules-example-dept.md |
-| Display a Divisionâ€™s Tasks by Default | https://developer.salesforce.com/docs/platform/scoping-rules-dev-guide/guide/scoping-rules-example-division.md |
-| Display a Branch Locationâ€™s Records by Default | https://developer.salesforce.com/docs/platform/scoping-rules-dev-guide/guide/scoping-rules-example-location.md |
+| Display a Department’s Records by Default | https://developer.salesforce.com/docs/platform/scoping-rules-dev-guide/guide/scoping-rules-example-dept.md |
+| Display a Division’s Tasks by Default | https://developer.salesforce.com/docs/platform/scoping-rules-dev-guide/guide/scoping-rules-example-division.md |
+| Display a Branch Location’s Records by Default | https://developer.salesforce.com/docs/platform/scoping-rules-dev-guide/guide/scoping-rules-example-location.md |
 | Scope Records Using Multiple String or ID Values in Record Criteria | https://developer.salesforce.com/docs/platform/scoping-rules-dev-guide/guide/scoping-rules-example-multiple-values.md |
 | Example Scenarios | https://developer.salesforce.com/docs/platform/scoping-rules-dev-guide/guide/scoping-rules-examples.md |
 | Scoping Rules Overview | https://developer.salesforce.com/docs/platform/scoping-rules-dev-guide/guide/scoping-rules-intro.md |

@@ -2,7 +2,7 @@
 
 Source: [llms-industries-mfg-auto.txt](https://developer.salesforce.com/docs/llms-industries-mfg-auto.txt).
 
-Full link list extracted programmatically from the live source file (400 page links across 2 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (404 page links across 2 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
 ## Automotive Cloud Developer Guide (163 pages)
 
@@ -172,7 +172,7 @@ Full link list extracted programmatically from the live source file (400 page li
 | WorkTypeGroupMember | https://developer.salesforce.com/docs/industries/automotive-cloud/guide/sforce-api-objects-worktypegroupmember.md |
 | Timeline in Automotive Cloud | https://developer.salesforce.com/docs/industries/automotive-cloud/guide/timeline-dev.md |
 
-## Manufacturing Cloud Developer Guide (237 pages)
+## Manufacturing Cloud Developer Guide (241 pages)
 
 | Page | URL |
 |---|---|
@@ -283,8 +283,10 @@ Full link list extracted programmatically from the live source file (400 page li
 | GenericVisitTaskContext | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/mfg-sforce-api-objects-genericvisittaskcontext.md |
 | GnrcVstKeyPerformanceInd | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/mfg-sforce-api-objects-gnrcvstkeyperformanceind.md |
 | GnrcVstTaskContextRelation | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/mfg-sforce-api-objects-gnrcvsttaskcontextrelation.md |
+| GRNItemBatchUnusableQtyDtl | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/mfg-sforce-api-objects-grnitembatchunusableqtydtl.md |
 | GRNItemProductionBatch | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/mfg-sforce-api-objects-grnitemproductionbatch.md |
 | GRNItemSerializedProduct | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/mfg-sforce-api-objects-grnitemserializedproduct.md |
+| GRNItemUnusableQtyDetail | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/mfg-sforce-api-objects-grnitemunusableqtydetail.md |
 | ProductItemAddlTrxn | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/mfg-sforce-api-objects-productitemaddltrxn.md |
 | TelemetryActionDefinition | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/mfg-telemetryactiondefinition-metadata-api.md |
 | TelemetryActionDefStep | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/mfg-telemetryactiondefstep-metadata-api.md |
@@ -365,6 +367,7 @@ Full link list extracted programmatically from the live source file (400 page li
 | ProdtSvcCmpnPreferredPartner | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/sforce-api-objects-prodtsvccmpnpreferredpartner.md |
 | ProdtSvcCmpnWorkType | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/sforce-api-objects-prodtsvccmpnworktype.md |
 | ProductBatchItem | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/sforce-api-objects-productbatchitem.md |
+| ProductBatchItemQuantityDtl | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/sforce-api-objects-productbatchitemquantitydtl.md |
 | ProductConsumed | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/sforce-api-objects-productconsumed.md |
 | ProductConsumedState | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/sforce-api-objects-productconsumedstate.md |
 | ProductFaultCode | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/sforce-api-objects-productfaultcode.md |
@@ -372,6 +375,7 @@ Full link list extracted programmatically from the live source file (400 page li
 | ProductInvSearchableField | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/sforce-api-objects-productinvsearchablefield.md |
 | ProductionBatch | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/sforce-api-objects-productionbatch.md |
 | ProductItem | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/sforce-api-objects-productitem.md |
+| ProductItemQuantityDetail | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/sforce-api-objects-productitemquantitydetail.md |
 | ProductItemTransaction | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/sforce-api-objects-productitemtransaction.md |
 | ProductLaborCode | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/sforce-api-objects-productlaborcode.md |
 | ProductRelatedMaterial | https://developer.salesforce.com/docs/industries/mfg-api-devguide/guide/sforce-api-objects-productrelatedmaterial.md |

@@ -7,11 +7,13 @@ API reference and developer guide for Salesforce Industries Core, covering the C
 Section breakdown:
 - **Consumer Goods Cloud Integration Service API** — 1 pages
 - **Consumer Goods Cloud Developer Guide** — 627 pages
+- **Consumer Goods Cloud Developer Guide** — 228 pages
 
 *Source: [`llms-industries-core.txt`](https://developer.salesforce.com/docs/llms-industries-core.txt) — official aggregated index (developer doc page), overview section.*
 
 
-*Last refreshed 2026-11-06: 628 pages in 2 sections (counts from the live source).*
+
+*Last refreshed 2026-11-22: 856 pages in 3 sections (counts from the live source).*
 
 ## Extraction notes
 

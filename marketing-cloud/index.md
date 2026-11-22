@@ -2,32 +2,39 @@
 
 Source: [llms-marketing-cloud.txt](https://developer.salesforce.com/docs/llms-marketing-cloud.txt).
 
-Full link list extracted programmatically from the live source file (2177 page links across 10 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (2182 page links across 10 sections). Last refreshed 2026-11-22 by `scripts/refresh_from_llms.py`.
 
-## Marketing Cloud Next (65 pages)
+## Marketing Cloud Next (72 pages)
 
 | Page | URL |
 |---|---|
 | Configure your Org | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-administration.md |
 | Python Code Example for Encoding a JWT | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-connect-apis-data-cloud-jwt-encode.md |
 | Connect to Data 360 Connect API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-connect-apis-data-cloud.md |
-| Connect to Direct Email Send API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-connect-apis-direct-send.md |
+| Connect to Direct Send APIs | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-connect-apis-direct-send.md |
 | Which API Should I Use? | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-connect-apis-info.md |
 | Connect to REST-based APIs | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-connect-apis-rest.md |
 | Connect to SOAP API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-connect-apis-soap.md |
 | Connect to the API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-connect-apis.md |
+| Send Email Transactional Messages Through Direct Send API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-direct-send-email.md |
+| Send Push Transactional Messages Through Direct Send API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-direct-send-push.md |
+| Send RCS Transactional Messages Through Direct Send API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-direct-send-rcs.md |
+| Handle Responses, Errors, and Retries in Direct Send API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-direct-send-responses-errors.md |
+| Send SMS Transactional Messages Through Direct Send API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-direct-send-sms.md |
+| Send WhatsApp Transactional Messages Through Direct Send API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-direct-send-whatsapp.md |
 | Get Started | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-getting-started.md |
 | Action Component Blocks | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-component-blocks-action.md |
 | Content Component Blocks | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-component-blocks-content.md |
 | Form Component Blocks | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-component-blocks-form.md |
 | Layout Component Blocks | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-component-blocks-layout.md |
 | List Component Blocks | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-component-blocks-list.md |
-| Component Blocks | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-component-blocks.md |
+| Manage Component Blocks | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-component-blocks.md |
 | Manage Custom Fonts | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-custom-fonts.md |
 | Manage Email Templates | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-email-templates.md |
 | Manage Emails | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-emails.md |
 | Manage Content Folders | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-folders.md |
-| Integrate Form Submissions | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-form-handlers.md |
+| Manage Form Handlers | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-form-handlers.md |
+| Manage Images | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-images.md |
 | Manage Landing Page Templates | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-landing-pages-templates.md |
 | Manage Landing Pages | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-landing-pages.md |
 | Publish Content Items | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-content-publish.md |
@@ -63,9 +70,9 @@ Full link list extracted programmatically from the live source file (2177 page l
 | Get a List of Segments | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-segments-get.md |
 | Publish a Segment | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-segments-publish.md |
 | Manage Segments | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-segments.md |
-| Send Transactional Messages with an On-Demand Flow | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-transactional-messages-on-demand-flow.md |
+| Send Email Transactional Messages Through On-Demand Flow | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-transactional-messages-on-demand-flow.md |
 | Manage Transactional Messages | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-transactional-messages.md |
-| Send Transactional Messages with Direct Email Send API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-transactions-messages-direct-send.md |
+| Send Transactional Messages Through Direct Send API | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-manage-transactions-messages-direct-send.md |
 | Documentation | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-resources-documentation.md |
 | Developer Tools | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-resources-tools.md |
 | Trailhead Modules | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-resources-trailhead.md |
@@ -74,67 +81,67 @@ Full link list extracted programmatically from the live source file (2177 page l
 | Security | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-security.md |
 | Summary | https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/references/mc-summary/mc-summary.md |
 
-## Marketing Cloud Engagement APIs and Programmatic Languages (1137 pages)
+## Marketing Cloud Engagement APIs and Programmatic Languages (1135 pages)
 
 | Page | URL |
 |---|---|
-| 1â€“99 General | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/0_99.md |
-| 100â€“199 Perform and Schedule Method | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/100_199_perform_and_schedule_method.md |
-| 1000â€“1999 Account Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/1000_1999_account_object.md |
-| 108000â€“108999 SMS Member Short Code | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/108000_108999_sms_member_short_code.md |
-| 11000â€“11999 AccountUser Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/11000_11999_accountuser_object.md |
-| 110000â€“110999 SMS Member Shared Short Code | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/110000_110999_sms_member_shared_short_code.md |
-| 111000â€“111999 Publication | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/111000_111999_publication.md |
-| 12000â€“12099 Subscriber Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/12000_12099_subscriber_object.md |
-| 13000â€“13099 List Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/13000_13099_list_object.md |
-| 14000â€“14099 Subscriber Validation | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/14000_14099_subscriber_validation.md |
-| 17000â€“17999 TriggeredSendDefinition Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/17000_17999_triggeredsenddefinition_object.md |
-| 18000â€“18999 | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/18999.md |
-| 200â€“299 Asynchronous Operation | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/200_299_asynchronous_operation.md |
-| 20000â€“20099 SalesforceSend Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/20000_20099_salesforcesend_object.md |
-| 21000â€“21099 ContentArea Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/21000_21099_contentarea_object.md |
-| 24000â€“24999 SendClassification Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/24000_24999_sendclassification_object.md |
-| 302000â€“302999 Template | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/302000_302999_template.md |
-| 303000â€“303999 Filter Activity | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/303000_303999_filter_activity.md |
-| 31000â€“31999 ExtractRequest Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/31000_31999_extractrequest_object.md |
-| 310000â€“310099 DataExtension Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/310000_310099_dataextension_object.md |
-| 32000â€“32099 VoiceTriggeredSend Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/32000_32099_voicetriggeredsend_object.md |
-| 33000â€“33999 SMSTriggeredSend Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/33000_33999_smstriggeredsend_object.md |
-| 332000â€“332999 Role Validation | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/332000_332999_role_validation.md |
-| 333000â€“333999 FeatureConfig Validation Codes | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/333000_333999_featureconfig_validation_codes.md |
-| 346000â€“346999 SMS Shared Short Code | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/346000_346999_sms_shared_short_code.md |
-| 350000â€“350999 Content Validation | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/350000_350999_content_validation.md |
-| 355000â€“355999 Program | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/355000_355999_program.md |
-| 373000â€“373999 FilterDefinition Object Error Codes | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/373000_373999_filterdefinition_object_error_codes.md |
-| 380000â€“380999 SMS MT Configuration | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/380000_380999_sms_mt_configuration.md |
-| 388000â€“389999 TimeZone and Locale Objects | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/388000_389999_timezone_and_locale_objects.md |
-| 396000â€“396999 Data Folder | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/396000_396999_data_folder.md |
-| 400â€“499 Subscription Validation | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/400_499_subscription_validation.md |
-| 4000â€“4099 Email Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/4000_4099_email_object.md |
-| 40000â€“40999 SenderProfile Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/40000_40999_senderprofile_object.md |
-| 402000â€“402999 Reply Mail Management Configuration Error Codes | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/402000_402999_reply_mail_management_configuration_error_codes.md |
-| 408000â€“408999 Navigation Tab | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/408000_408999_navigation_tab.md |
-| 409000â€“409999 Audience Builder | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/409000_409999_audience_builder.md |
-| 41000â€“41999 DeliveryProfile Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/41000_41999_deliveryprofile_object.md |
-| 42000â€“42999 EmailSendDefinition Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/42000_42999_emailsenddefinition_object.md |
-| 43000â€“43999 ImportDefinition Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/43000_43999_importdefinition_object.md |
-| 435000â€“435999 Send SMS MO Keyword | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/435000_435999_send_sms_mo_keyword.md |
-| 439000â€“439999 Help MO Keyword | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/439000_439999_help_mo_keyword.md |
-| 44000â€“44999 Campaign Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/44000_44999_campaign_object.md |
-| 440000â€“440999 Send Email MO Keyword | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/440000_440999_send_email_mo_keyword.md |
-| 441000â€“441999 SMS Triggered Send Definition | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/441000_441999_sms_triggered_send_definition.md |
-| 446000â€“446999 Double Opt In SMS Messages | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/446000_446999_double_opt_in_sms_messages.md |
-| 447000â€“447999 Unsubscribe From SMS Publication | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/447000_447999_unsubscribe_from_sms_publication.md |
-| 50000â€“50999 Notifications | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/50000_50999_notifications.md |
-| 54000â€“54999 User Access | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/54000_54999_user_access.md |
-| 55000â€“55999 Salutation | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/55000_55999_salutation.md |
-| 56000â€“56999 Business Rule | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/56000_56999_business_rule.md |
-| 63000â€“63999 Public Key Management | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/63000_63999_public_key_management.md |
-| 67000â€“67999 Property Definition | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/67000_67999_property_definition.md |
-| 68000â€“68099 SaveOption Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/68000_68099_saveoption_object.md |
-| 69000â€“69099 Portfolio Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/69000_69099_portfolio_object.md |
-| 7000â€“7099 Send Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/7000_7099_send_object.md |
-| 70000â€“70999 Custom Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/70000_70999_custom_object.md |
+| 1–99 General | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/0_99.md |
+| 100–199 Perform and Schedule Method | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/100_199_perform_and_schedule_method.md |
+| 1000–1999 Account Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/1000_1999_account_object.md |
+| 108000–108999 SMS Member Short Code | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/108000_108999_sms_member_short_code.md |
+| 11000–11999 AccountUser Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/11000_11999_accountuser_object.md |
+| 110000–110999 SMS Member Shared Short Code | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/110000_110999_sms_member_shared_short_code.md |
+| 111000–111999 Publication | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/111000_111999_publication.md |
+| 12000–12099 Subscriber Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/12000_12099_subscriber_object.md |
+| 13000–13099 List Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/13000_13099_list_object.md |
+| 14000–14099 Subscriber Validation | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/14000_14099_subscriber_validation.md |
+| 17000–17999 TriggeredSendDefinition Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/17000_17999_triggeredsenddefinition_object.md |
+| 18000–18999 | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/18999.md |
+| 200–299 Asynchronous Operation | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/200_299_asynchronous_operation.md |
+| 20000–20099 SalesforceSend Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/20000_20099_salesforcesend_object.md |
+| 21000–21099 ContentArea Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/21000_21099_contentarea_object.md |
+| 24000–24999 SendClassification Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/24000_24999_sendclassification_object.md |
+| 302000–302999 Template | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/302000_302999_template.md |
+| 303000–303999 Filter Activity | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/303000_303999_filter_activity.md |
+| 31000–31999 ExtractRequest Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/31000_31999_extractrequest_object.md |
+| 310000–310099 DataExtension Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/310000_310099_dataextension_object.md |
+| 32000–32099 VoiceTriggeredSend Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/32000_32099_voicetriggeredsend_object.md |
+| 33000–33999 SMSTriggeredSend Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/33000_33999_smstriggeredsend_object.md |
+| 332000–332999 Role Validation | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/332000_332999_role_validation.md |
+| 333000–333999 FeatureConfig Validation Codes | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/333000_333999_featureconfig_validation_codes.md |
+| 346000–346999 SMS Shared Short Code | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/346000_346999_sms_shared_short_code.md |
+| 350000–350999 Content Validation | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/350000_350999_content_validation.md |
+| 355000–355999 Program | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/355000_355999_program.md |
+| 373000–373999 FilterDefinition Object Error Codes | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/373000_373999_filterdefinition_object_error_codes.md |
+| 380000–380999 SMS MT Configuration | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/380000_380999_sms_mt_configuration.md |
+| 388000–389999 TimeZone and Locale Objects | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/388000_389999_timezone_and_locale_objects.md |
+| 396000–396999 Data Folder | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/396000_396999_data_folder.md |
+| 400–499 Subscription Validation | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/400_499_subscription_validation.md |
+| 4000–4099 Email Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/4000_4099_email_object.md |
+| 40000–40999 SenderProfile Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/40000_40999_senderprofile_object.md |
+| 402000–402999 Reply Mail Management Configuration Error Codes | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/402000_402999_reply_mail_management_configuration_error_codes.md |
+| 408000–408999 Navigation Tab | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/408000_408999_navigation_tab.md |
+| 409000–409999 Audience Builder | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/409000_409999_audience_builder.md |
+| 41000–41999 DeliveryProfile Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/41000_41999_deliveryprofile_object.md |
+| 42000–42999 EmailSendDefinition Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/42000_42999_emailsenddefinition_object.md |
+| 43000–43999 ImportDefinition Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/43000_43999_importdefinition_object.md |
+| 435000–435999 Send SMS MO Keyword | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/435000_435999_send_sms_mo_keyword.md |
+| 439000–439999 Help MO Keyword | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/439000_439999_help_mo_keyword.md |
+| 44000–44999 Campaign Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/44000_44999_campaign_object.md |
+| 440000–440999 Send Email MO Keyword | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/440000_440999_send_email_mo_keyword.md |
+| 441000–441999 SMS Triggered Send Definition | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/441000_441999_sms_triggered_send_definition.md |
+| 446000–446999 Double Opt In SMS Messages | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/446000_446999_double_opt_in_sms_messages.md |
+| 447000–447999 Unsubscribe From SMS Publication | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/447000_447999_unsubscribe_from_sms_publication.md |
+| 50000–50999 Notifications | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/50000_50999_notifications.md |
+| 54000–54999 User Access | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/54000_54999_user_access.md |
+| 55000–55999 Salutation | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/55000_55999_salutation.md |
+| 56000–56999 Business Rule | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/56000_56999_business_rule.md |
+| 63000–63999 Public Key Management | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/63000_63999_public_key_management.md |
+| 67000–67999 Property Definition | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/67000_67999_property_definition.md |
+| 68000–68099 SaveOption Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/68000_68099_saveoption_object.md |
+| 69000–69099 Portfolio Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/69000_69099_portfolio_object.md |
+| 7000–7099 Send Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/7000_7099_send_object.md |
+| 70000–70999 Custom Object | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/70000_70999_custom_object.md |
 | Access Token for Web and Public App Integrations | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/access-token-app.md |
 | Access Token for Server-to-Server Integrations | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/access-token-s2s.md |
 | Access Token Reference | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/access-token.md |
@@ -201,8 +208,6 @@ Full link list extracted programmatically from the live source file (2177 page l
 | Authentication | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/authentication.md |
 | Authorization Code Reference | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/authorization-code.md |
 | Automation Studio Events | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/automation_studio_events.md |
-| Automation Activity Types | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/automation-activity-types.md |
-| Automation Schedules | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/automation-schedules.md |
 | Automation Studio API | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/automation-studio-api.md |
 | Automation | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/automation.md |
 | AutomationActivity | https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/automationactivity.md |
@@ -1075,43 +1080,43 @@ Full link list extracted programmatically from the live source file (2177 page l
 | Retrieve Sent Message by MessageId | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_chat_messaging/OTTretrieveSentMessage.md |
 | Send Message to Recipient | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_chat_messaging/OTTsendMessageToRecipient.md |
 | Add Contact Preferences | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/addContactPreferences.md |
-| Add Contact Preferences by Contact ID | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/addContactPreferencesById.md |
-| Insert Attribute Values by ID | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/attributeSetsDataIDInsert.md |
-| Update Attribute Values by ID | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/attributeSetsDataIDUpdate.md |
+| Add Contact Preferences | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/addContactPreferencesById.md |
+| Create Attribute Values | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/attributeSetsDataIDInsert.md |
+| Update Attribute Values | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/attributeSetsDataIDUpdate.md |
 | Search Attribute Sets by Name | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/attributeSetsDataName.md |
 | Remove Contact from a Journey | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/contactExitRequest.md |
-| Get Contact's Exit Status from a Journey | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/contactExitStatus.md |
-| Get List of Journeys the Contact is in | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/contactMembershipRequest.md |
+| Retrieve Journey Exit Status for a Contact | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/contactExitStatus.md |
+| Retrieve Journey Status of a Contact | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/contactMembershipRequest.md |
 | Configure Settings for Deleting Contacts | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/ContactsDeleteConfigStatus.md |
-| Get Contact Delete Requests Details | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/ContactsDeleteRequestsDetails.md |
-| Get Contact Delete Requests Summary | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/ContactsDeleteRequestsSummary.md |
-| Get Status of the Contact Delete Operation | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/ContactsDeleteStatus.md |
-| Get Status of the Contact Restrict Operation | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/ContactsRestrictStatus.md |
+| Retrieve Details of Contact Delete Requests | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/ContactsDeleteRequestsDetails.md |
+| Retrieve Contact Delete Requests Summary | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/ContactsDeleteRequestsSummary.md |
+| Retrieve Status of the Contact Delete Operation | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/ContactsDeleteStatus.md |
+| Retrieve Status of the Contact Restrict Operation | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/ContactsRestrictStatus.md |
 | Create Contacts | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/createContacts.md |
 | Create Population | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/createPopulationAttributeGroup.md |
-| Delete Contacts by ID | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/DeleteByContactIDs.md |
+| Delete Contacts | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/DeleteByContactIDs.md |
 | Delete Contacts by Key | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/DeleteByContactKeys.md |
 | Delete Contacts by List Reference | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/DeleteByListReference.md |
-| Get or Create Contacts by Key and Type | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/establish-contacts-detail.md |
-| Get All Contact and associated Address | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/fetchContactsAddressesBySearchCriteria.md |
-| Get Contact count based on search criteria | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/fetchContactsAddressesCountSearchCriteria.md |
-| Get Contact Preferences by Contact ID | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getContactPreferencesById.md |
-| Get Contact Preferences by Contact Key | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getContactPreferencesByKey.md |
-| Get Custom Object Info | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getCustomObject.md |
-| Get Delete Options | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getDeleteOptions.md |
-| Get list of contact delete operations | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getListOfContactDeleteOperations.md |
-| Restrict Contacts by ID | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/restrict-contact-id.md |
+| Retrieve or Create Contacts by Key and Type | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/establish-contacts-detail.md |
+| Search Contacts and Attributes | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/fetchContactsAddressesBySearchCriteria.md |
+| Retrieve Contact Count | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/fetchContactsAddressesCountSearchCriteria.md |
+| Retrieve Contact Preferences | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getContactPreferencesById.md |
+| Retrieve Contact Preferences by Contact Key | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getContactPreferencesByKey.md |
+| Retrieve Custom Object Info | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getCustomObject.md |
+| Retrieve Delete Options | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getDeleteOptions.md |
+| Retrieve a List of Contact Deletion Operations | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/getListOfContactDeleteOperations.md |
+| Restrict Contacts | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/restrict-contact-id.md |
 | Restrict Contacts by Key | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/restrict-contact-key.md |
 | Restrict Contacts by List Reference | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/restrict-contact-listreference.md |
-| Get All Attribute Set Definitions | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveAllAttributeSetDefinitions.md |
+| Retrieve All Attribute Set Definitions | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveAllAttributeSetDefinitions.md |
 | Search Attribute Groups by Schema | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveAttributeGroups.md |
 | Search Attribute Group ID by Schema | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveAttributeGroupsID.md |
-| Get Attribute Set Definitions by ID | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveAttributeSetDefinitions.md |
-| Get Contact Key for Email Addresses | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveContactKey.md |
-| Retrieves relationship details | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveCustomObjectFieldRelationships.md |
+| Retrieve an Attribute Set Definition | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveAttributeSetDefinitions.md |
+| Retrieve Contact Key for Email Addresses | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveContactKey.md |
+| Retrieve Relationship Details | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/retrieveCustomObjectFieldRelationships.md |
 | Retry Failed Delete Request | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/RetryContactDelete.md |
 | Retry Failed Restrict Request | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/RetryContactRestrict.md |
-| Get Schemas Collection | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/schemasCollection.md |
+| Retrieve Schema Collection | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/schemasCollection.md |
 | Search Contact Preferences by Reference Type | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/searchContactPreferencesByReferenceType.md |
 | Update Contacts | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_contacts/updateContacts.md |
 | Create Callback | https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_event_notification/createCallback.md |
@@ -1245,10 +1250,10 @@ Full link list extracted programmatically from the live source file (2177 page l
 | Include RSS Content in an Email | https://developer.salesforce.com/docs/marketing/marketing-cloud-ampscript/guide/mc-ampscript-examples-rss-feed-email.md |
 | Display Send-Time Content Contextually | https://developer.salesforce.com/docs/marketing/marketing-cloud-ampscript/guide/mc-ampscript-examples-send-time-content.md |
 | Code Examples | https://developer.salesforce.com/docs/marketing/marketing-cloud-ampscript/guide/mc-ampscript-examples.md |
-| Get Started with AMPscript Developmentâ€”Lesson 1 | https://developer.salesforce.com/docs/marketing/marketing-cloud-ampscript/guide/mc-ampscript-get-started-learning-lesson-1.md |
-| Get Started with AMPscript Developmentâ€”Lesson 2 | https://developer.salesforce.com/docs/marketing/marketing-cloud-ampscript/guide/mc-ampscript-get-started-learning-lesson-2.md |
-| Get Started with AMPscript Developmentâ€”Lesson 3 | https://developer.salesforce.com/docs/marketing/marketing-cloud-ampscript/guide/mc-ampscript-get-started-learning-lesson-3.md |
-| Get Started with AMPscript Developmentâ€”Lesson 4 | https://developer.salesforce.com/docs/marketing/marketing-cloud-ampscript/guide/mc-ampscript-get-started-learning-lesson-4.md |
+| Get Started with AMPscript Development—Lesson 1 | https://developer.salesforce.com/docs/marketing/marketing-cloud-ampscript/guide/mc-ampscript-get-started-learning-lesson-1.md |
+| Get Started with AMPscript Development—Lesson 2 | https://developer.salesforce.com/docs/marketing/marketing-cloud-ampscript/guide/mc-ampscript-get-started-learning-lesson-2.md |
+| Get Started with AMPscript Development—Lesson 3 | https://developer.salesforce.com/docs/marketing/marketing-cloud-ampscript/guide/mc-ampscript-get-started-learning-lesson-3.md |
+| Get Started with AMPscript Development—Lesson 4 | https://developer.salesforce.com/docs/marketing/marketing-cloud-ampscript/guide/mc-ampscript-get-started-learning-lesson-4.md |
 | Getting Started | https://developer.salesforce.com/docs/marketing/marketing-cloud-ampscript/guide/mc-ampscript-get-started.md |
 | Data Structures | https://developer.salesforce.com/docs/marketing/marketing-cloud-ampscript/guide/mc-ampscript-guide-data-structures.md |
 | Install the AMPscript Core Extension | https://developer.salesforce.com/docs/marketing/marketing-cloud-ampscript/guide/mc-ampscript-guide-development-core-extension-install.md |

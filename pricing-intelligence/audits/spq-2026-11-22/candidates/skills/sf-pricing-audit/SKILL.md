@@ -1,6 +1,6 @@
 ---
 name: sf-pricing-audit
-description: Independently verify Salesforce pricing claims, licensing relationships, prompt/skill reliability and Flex Credit estimates; use before commercial decisions or requested audits. Do not change the audited source without approval.
+description: Independently verify Salesforce pricing claims, licensing relationships, prompt/skill reliability and Flex Credit estimates; use before commercial decisions or requested audits. Do not use for a routine one-line price lookup; do not change the audited source without approval.
 ---
 
 # Salesforce Pricing Verification (candidate)

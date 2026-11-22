@@ -1,16 +1,16 @@
 ---
 name: sf-pricing-audit
-description: Audit Salesforce pricing and licensing claims, graph integrity, usage calculations, source freshness, conflicts and gaps before commercial decisions.
+description: Independently verify Salesforce pricing claims, licensing relationships, prompt/skill reliability and Flex Credit estimates; use before commercial decisions or requested audits. Do not use for a routine one-line price lookup; do not change the audited source without approval.
 ---
 
-# Salesforce Pricing Evidence Audit
+# Salesforce Pricing Verification (SPQ pilot)
 
-This skill is READ-ONLY unless the user separately authorizes repairs.
+Use pricing-intelligence/AGENTS.md for evidence vocabulary and authorization rules. Audit is read-only by default.
 
-1. Source check: open the specific official Salesforce product pricing section, rate-card version and contract terms if permitted. Check amount, unit, currency, product edition, qualifier, billing period, region and effective date. A public page does not prove a customer entitlement.
-2. Semantics check: detect missing source sections, technical license versus commercial edition conflation, optional versus included errors, bundle double counting, contract prerequisites, invalid SKUs, conversions without an FX source, and competing price units.
-3. Calculation check: run Python unittest discovery under pricing-intelligence/tests and the sample calculator command. Confirm production/sandbox, tier crossing, calendar month reset, allowances, unpriceable Headless and partial totals. Passing fixtures does not prove billing parity.
-4. Coverage check: enumerate EU pricing hub product and industry links, classify verified / pending / contact-sales / blocked, and report unresolved conflicts. The initial seed alone is not full portfolio coverage.
-5. Release gate: BLOCK for unsourced or contradictory high-impact billing claims, REVIEW for untested contracts or source conflicts, PASS WITH CAVEAT for bounded validated estimates, PASS only for explicitly checked scope.
+1. **Source check:** decompose high-impact claims; verify on the specific official URL/section/version, not just a source list. Record `SUPPORTED`, `CONTRADICTED`, `UNKNOWN`, `CONFLICTED`.
+2. **Semantic check:** commercial edition vs technical license, included vs optional, SKU invention, buying model vs billing cadence, currency and period, bundle double-counting, version/applicability.
+3. **Runtime check:** if executable, run `python -m unittest discover -s pricing-intelligence/tests -v` and re-run the supplied scenario. Record actual exit codes/logs. Fixtures do not prove Salesforce billing parity.
+4. **Coverage:** compare registered links to the EU pricing hub and report verified, pending, CONTACT_SALES and inaccessible sources. Missing is not false.
+5. **Release gate:** BLOCK for a binding quote resting on unresolved unit/entitlement or an unauthorized action; REVIEW for missing external validation; PASS WITH CAVEAT only for bounded evidence-backed use; PASS only within observed scope.
 
-Return a findings table: ID | Severity | Atomic claim | Source and check date | Contradiction/gap | Action. Separate observed fact, inference and UNKNOWN. Preserve earlier historical observations in any approved fixes.
+**Output:** `claim_id | scope | observed evidence | issue | severity | correction | retest status`. Keep fixes in a proposed patch until explicit approval; never replace historical observations silently.

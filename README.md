@@ -4,6 +4,10 @@ A per-product content catalog built from Salesforce's aggregated [`llms.txt`](ht
 
 Designed to be read by an AI assistant (Claude or otherwise) as grounding material: each finished product gets its own folder with an `index.md` (complete page-by-page link list, extracted programmatically from the live source) and a `content.md` (a short synthesis written independently from the source, with citations — not copied prose).
 
+## For AI agents
+
+Start with [`AGENT_GUIDE.md`](AGENT_GUIDE.md): how to combine this catalog with the Salesforce Docs MCP connector, which connector collection covers each folder (and where it doesn't), and the evidence rules for citing official pages.
+
 ## Status: 54 of 54 products done
 
 Every product-specific `llms-*.txt` section now has its own folder here. See [`salesforce-platform-docs-content-list.md`](salesforce-platform-docs-content-list.md) for the full 54-row table with links — that file is the authoritative index.

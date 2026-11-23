@@ -4,9 +4,11 @@ A per-product content catalog built from Salesforce's aggregated [`llms.txt`](ht
 
 Designed to be read by an AI assistant (Claude or otherwise) as grounding material: each finished product gets its own folder with an `index.md` (complete page-by-page link list, extracted programmatically from the live source) and a `content.md` (a short synthesis written independently from the source, with citations — not copied prose).
 
-## Status: 54 of 54 products done
+## Status: 54 of 54 products done (+ SF Pi supplement)
 
 Every product-specific `llms-*.txt` section now has its own folder here. See [`salesforce-platform-docs-content-list.md`](salesforce-platform-docs-content-list.md) for the full 54-row table with links — that file is the authoritative index.
+
+**Supplement (not from `llms.txt`):** [sf-pi/](sf-pi/) catalogs Salesforce's open-source [SF Pi](https://github.com/salesforce/sf-pi) extension bundle for the Pi coding agent, including Labs run notes and links into the [upstream SF Pi docs](https://opensource.salesforce.com/sf-pi/).
 
 > Note: `headless-experience-layer`, `headless-three-sixty`, `hosted-mcp-servers`, and `multi-framework` are also covered in much greater depth in the companion repo [headless-toolkit](https://github.com/krystiandrozd-alt/headless-toolkit) (restructured per-area with grounded content, launch-announcement blogs, and the AIforce/Claudeforce brand hierarchy). Treat `headless-toolkit` as the primary source for those four; the folders here are the lighter per-`llms.txt` link catalog, kept for completeness rather than duplicating that deeper work.
 

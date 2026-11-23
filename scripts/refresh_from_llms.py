@@ -14,6 +14,8 @@ What it does:
 - regenerates salesforce-platform-docs-content-list.md (keeps existing row
   descriptions, uses the official description for new rows) and the status,
   count and top-ten parts of README.md;
+- preserves any "## Supplemental catalogs (outside `llms.txt`)" section and
+  never treats SUPPLEMENTAL_SLUGS folders as disappeared products;
 - reports areas that disappeared from llms.txt (folders are left untouched).
 """
 from __future__ import annotations
@@ -28,6 +30,12 @@ ROOT = Path(__file__).resolve().parent.parent
 LLMS = "https://developer.salesforce.com/docs/llms.txt"
 LINK = re.compile(r"^\s*- \[(.+?)\]\((https?://[^)\s]+)\)(?::\s*(.*))?$")
 LIST_FILE = ROOT / "salesforce-platform-docs-content-list.md"
+# Hand-maintained catalogs that are not regenerated from llms.txt.
+SUPPLEMENTAL_SLUGS = frozenset({"sf-pi"})
+SUPPLEMENTAL_SECTION = re.compile(
+    r"(^## Supplemental catalogs \(outside `llms\.txt`\)\n.*)\Z",
+    re.MULTILINE | re.DOTALL,
+)
 
 
 def fetch_all() -> tuple[list[tuple[str, str, str]], dict[str, str]]:
@@ -151,12 +159,32 @@ def old_descriptions() -> dict[str, str]:
     return d
 
 
+def extract_supplemental_section(text: str) -> str:
+    """Keep the hand-maintained supplemental catalogs block across refreshes."""
+    m = SUPPLEMENTAL_SECTION.search(text)
+    return m.group(1).rstrip() + "\n" if m else ""
+
+
+def disappeared_slugs(area_slugs: set[str]) -> list[str]:
+    """Folders with index.md that left llms.txt, excluding supplemental catalogs."""
+    return sorted(
+        p.name
+        for p in ROOT.iterdir()
+        if p.is_dir()
+        and (p / "index.md").exists()
+        and p.name not in area_slugs
+        and p.name not in SUPPLEMENTAL_SLUGS
+    )
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--date", default=date.today().isoformat())
     a = ap.parse_args()
     today = a.date
     descs = old_descriptions()
+    prior_list = LIST_FILE.read_text(encoding="utf-8") if LIST_FILE.exists() else ""
+    supplemental = extract_supplemental_section(prior_list)
     areas, texts = fetch_all()
     rows, sizes, created = [], [], []
     for i, (slug, title, desc) in enumerate(areas, 1):
@@ -170,8 +198,7 @@ def main() -> int:
             d += f" **{n:,} links.**"
         rows.append(f"| {i} | ✅ | {title} | [folder]({slug}/) | {d} |")
         sizes.append((slug, n, (ROOT / slug / "index.md").stat().st_size))
-    gone = sorted(p.name for p in ROOT.iterdir() if p.is_dir() and (p / "index.md").exists()
-                  and p.name not in {s for s, _, _ in areas})
+    gone = disappeared_slugs({s for s, _, _ in areas})
     total = len(areas)
     lst = [
         "# Salesforce Developer Documentation — Content List (Index)",
@@ -191,10 +218,21 @@ def main() -> int:
     ]
     if gone:
         lst += ["## No longer listed in llms.txt", "", *[f"- [{g}]({g}/) — kept as an archived snapshot" for g in gone], ""]
+    if supplemental:
+        if lst[-1] != "":
+            lst.append("")
+        lst.append(supplemental.rstrip("\n"))
+        lst.append("")
     LIST_FILE.write_text("\n".join(lst), encoding="utf-8")
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     readme = re.sub(r"all \d+ product-specific", f"all {total} product-specific", readme)
-    readme = re.sub(r"## Status: \d+ of \d+ products done", f"## Status: {total} of {total} products done", readme)
+    # Keep any trailing status note (e.g. "(+ SF Pi supplement)") after "done".
+    readme = re.sub(
+        r"## Status: \d+ of \d+ products done",
+        f"## Status: {total} of {total} products done",
+        readme,
+        count=1,
+    )
     readme = re.sub(r"full \d+-row table", f"full {total}-row table", readme)
     top = sorted(sizes, key=lambda s: -s[2])[:10]
     table = "| Product | Links | `index.md` size |\n|---|---|---|\n" + "\n".join(

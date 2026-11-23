@@ -11,7 +11,7 @@ Section breakdown:
 - **Penny Perfect Pricing Developer Guide** — 33 pages
 - **Accounting Subledger Developer Guide** — 11 pages
 - **Education Cloud Developer Guide** — 391 pages
-- **Industries Common Resources Developer Guide** — 1467 pages
+- **Industries Common Resources Developer Guide** — 1469 pages
 - **Energy and Utilities Cloud Developer Guide** — 129 pages
 - **Communications, Media, Energy and Utilities (CME) Developer Guide** — 132 pages
 - **Media Cloud Developer Guide** — 226 pages
@@ -23,9 +23,8 @@ Section breakdown:
 
 *Source: [`llms-industries.txt`](https://developer.salesforce.com/docs/llms-industries.txt) — official aggregated index (developer doc page), overview section.*
 
-
-*Last refreshed 2026-11-06: 4021 pages in 15 sections (counts from the live source).*
+*Last refreshed 2026-11-23: 4023 pages in 15 sections (counts from the live source).*
 
 ## Extraction notes
 
-Built from the index file's own "Overview" blurb and section listing — one fetch, programmatic extraction, no deep page-by-page review. See [index.md](index.md) for the full 4010-page link list.
+Built from the index file's own "Overview" blurb and section listing — one fetch, programmatic extraction, no deep page-by-page review. See [index.md](index.md) for the full <!--pages-->4023<!--/pages-->-page link list.

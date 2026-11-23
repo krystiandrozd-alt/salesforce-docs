@@ -4,7 +4,7 @@ Synthesis written independently from the two sources below (not copied text).
 
 ## What's in the aggregated doc index
 
-829 pages across 5 sections: the core **Lightning Web Components Developer Guide** (689 pages — by far the bulk: framework fundamentals, lifecycle, wire service, events, testing, deployment, etc.), **Security for Lightning Components** (73 pages — Lightning Web Security and the legacy Locker Service model), **SLDS Linter** (17), **SLDS Validator** (9), and **UI Test Automation Model / UTAM** (41).
+<!--pages-->830<!--/pages--> pages across <!--sections-->5<!--/sections--> sections: the core **Lightning Web Components Developer Guide** (<!--pages:Lightning Web Components Developer Guide-->689<!--/pages--> pages — by far the bulk: framework fundamentals, lifecycle, wire service, events, testing, deployment, etc.), **Security for Lightning Components** (<!--pages:Security for Lightning Components-->73<!--/pages--> pages — Lightning Web Security and the legacy Locker Service model), **SLDS Linter** (17), **SLDS Validator** (9), and **UI Test Automation Model / UTAM** (41).
 
 *Source: [`llms-lwc.txt`](https://developer.salesforce.com/docs/llms-lwc.txt) — official aggregated index (developer doc page), overview section.*
 
@@ -25,8 +25,7 @@ It organizes LWC resources into four groups:
 
 This index's **Security** section and the Developer Center's **Tools** both surface **two parallel security models**: Lightning Web Security (LWS, current) and Lightning Locker (legacy) — each with its own console/viewer pair (LWS Console + Distortion Viewer vs. Locker Console + API Viewer). Don't assume they're interchangeable; check which one an org/runtime actually uses before citing either tool.
 
-
-*Last refreshed 2026-11-06: 829 pages in 5 sections (counts from the live source).*
+*Last refreshed 2026-11-23: 830 pages in 5 sections (counts from the live source).*
 
 ## Extraction notes
 

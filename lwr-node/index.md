@@ -2,7 +2,7 @@
 
 Source: [llms-lwr-node.txt](https://developer.salesforce.com/docs/llms-lwr-node.txt).
 
-Full link list extracted programmatically from the live source file (146 page links across 2 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (146 unique page links across 2 sections; duplicate URLs removed: 0). Last refreshed 2026-11-23 by `scripts/refresh_from_llms.py`.
 
 ## Lightning Web Runtime (71 pages)
 

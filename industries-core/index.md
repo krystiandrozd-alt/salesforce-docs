@@ -2,7 +2,7 @@
 
 Source: [llms-industries-core.txt](https://developer.salesforce.com/docs/llms-industries-core.txt).
 
-Full link list extracted programmatically from the live source file (628 page links across 2 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (856 unique page links across 3 sections; duplicate URLs removed: 0). Last refreshed 2026-11-23 by `scripts/refresh_from_llms.py`.
 
 ## Consumer Goods Cloud Integration Service API (1 pages)
 
@@ -641,3 +641,236 @@ Full link list extracted programmatically from the live source file (628 page li
 | UI Edit Access Rights Customization | https://developer.salesforce.com/docs/industries/retail-api/guide/tpm-ui-edit-access.md |
 | tpmGenericUtils Module | https://developer.salesforce.com/docs/industries/retail-api/guide/tpmgenericutils-module-reference.md |
 | UI Customization | https://developer.salesforce.com/docs/industries/retail-api/guide/ui-customization.md |
+
+## Consumer Goods Cloud Developer Guide (228 pages)
+
+| Page | URL |
+|---|---|
+| Get Started with Consumer Goods Cloud | https://developer.salesforce.com/docs/industries/retail-execution-platform/guide/Guides.md |
+| Object and Attribute Mapping | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/cg_object_attribute_mapping.md |
+| Requests | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/cg_re_connect_apis_requests.md |
+| Resources | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/cg_re_connect_apis_resources.md |
+| Responses | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/cg_re_connect_apis_responses.md |
+| Retail Execution Platform Objects | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/cg_retail_execution_core_objects_wrapper.md |
+| Add Products to Survey Input | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_add_products_to_survey_input.md |
+| Assortment Product UI Config Input | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_assortment_prodt_ui_config_input.md |
+| Create Automatic Visit Planning Visits Input | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_create_automatic_visit_planning_visits_input.md |
+| Create Job List Visits Input | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_create_job_list_visits_input.md |
+| Create Trip List Input | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_create_trip_list_input.md |
+| Flatten Account Internal Organization Unit Hierarchy Input | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_flatten_account_iou_hierarchy_input.md |
+| Generate Visits from Trip List Input | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_generate_visits_from_trip_list_input.md |
+| Get Assessment Entities Input | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_get_assessment_entities_input.md |
+| Get Job List Input | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_get_job_list_input.md |
+| Materialize Account Team Member Periods Input | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_materialize_acct_team_member_periods_input.md |
+| Prepare Assessment Task Input | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_prepare_assessment_task_input.md |
+| Propagate Promotion Channels Input | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_propagate_promotion_channels_input.md |
+| Propagate Store Assortment Input | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_propagate_store_assortment_input.md |
+| Reorganize Order Distribution Input | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_reorganize_order_distribution_input.md |
+| Reorganize Visit Distribution Input | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_reorganize_visit_distribution_input.md |
+| Save Assortment Product List Module Input | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_save_assortment_prodt_list_mdl_input.md |
+| Save Assortment Product Record | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_save_assortment_product_record.md |
+| Save Survey Answers Input | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_save_survey_answers_input.md |
+| Survey Answer | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_survey_answer.md |
+| Visit Planning Accounts Input | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_visit_planning_accounts_input.md |
+| Visit Planning Available Users Input | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_requests_visit_planning_available_users_input.md |
+| Add Products to Survey | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_add_products_to_survey.md |
+| Create Assortment Product UI Config | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_create_assortment_prodt_ui_config.md |
+| Create Automatic Visit Planning Visits | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_create_automatic_visit_planning_visits.md |
+| Create Job List Visits | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_create_job_list_visits.md |
+| Create Trip List | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_create_trip_list.md |
+| Delete Assortment Product UI Config | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_delete_assortment_prodt_ui_config.md |
+| Deploy Mobility FieldSets | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_deploy_mobility_fieldsets.md |
+| Flatten Account Internal Organization Unit Hierarchy | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_flatten_account_iou_hierarchy.md |
+| Generate Visits from Trip List | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_generate_visits_from_trip_list.md |
+| Get Assessment Entities | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_get_assessment_entities.md |
+| Get Assortment Product UI Configs | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_get_assortment_prodt_ui_configs.md |
+| Get Assortment Product List | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_get_assortment_product_list.md |
+| Get Exception Counts | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_get_exception_counts.md |
+| Get Job List | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_get_job_list.md |
+| Get Mobility FieldSet Status | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_get_mobility_fieldset_status.md |
+| Get Product Internal Organization Unit List | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_get_product_iou_list.md |
+| Get Product Survey | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_get_product_survey.md |
+| Get Products | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_get_products.md |
+| Get Store Check | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_get_store_check.md |
+| Get Trip Lists | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_get_trip_lists.md |
+| Get Visit Planning Accounts | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_get_visit_planning_accounts.md |
+| Get Visit Planning Available Users | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_get_visit_planning_available_users.md |
+| Materialize Account Team Member Periods | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_materialize_acct_team_member_periods.md |
+| Prepare Assessment Task | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_prepare_assessment_task.md |
+| Propagate Promotion Channels | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_propagate_promotion_channels.md |
+| Propagate Store Assortment | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_propagate_store_assortment.md |
+| Reorganize Order Distribution | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_reorganize_order_distribution.md |
+| Reorganize Visit Distribution | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_reorganize_visit_distribution.md |
+| Save Assortment Product List Module | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_save_assortment_prodt_list_mdl.md |
+| Save Survey Answers | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_save_survey_answers.md |
+| Update Assortment Product UI Config | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_resources_update_assortment_prodt_ui_config.md |
+| Assessment Entities Output | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_assessment_entities_output.md |
+| Assessment Entity Record | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_assessment_entity_record.md |
+| Assortment Product UI Config List | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_assortment_prodt_ui_config_list_output.md |
+| Assortment Product UI Config | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_assortment_prodt_ui_config.md |
+| Assortment Product List Output | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_assortment_product_list_output.md |
+| Assortment Product List Record | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_assortment_product_list_record.md |
+| Datatable Column Config | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_datatable_column_config.md |
+| Exception Counts Output | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_exception_counts_output.md |
+| Flatten Account Internal Organization Unit Hierarchy Failed Record | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_flatten_account_iou_failed_record.md |
+| Flatten Account Internal Organization Unit Hierarchy | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_flatten_account_iou_hierarchy_output.md |
+| Generate Visits from Trip List | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_generate_visits_from_trip_list_output.md |
+| Get Products Output | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_get_products_output.md |
+| Indicator Output | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_indicator_output.md |
+| Job List | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_job_list_output.md |
+| Job | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_job.md |
+| Materialize Account Team Member Periods Result | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_materialize_acct_team_member_periods_output.md |
+| Mobility FieldSet Deploy Result | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_mobility_fieldset_deploy_result_output.md |
+| Mobility FieldSet Fields Not Accessible and Ignored Result | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_mobility_fieldset_fields_ignored_result.md |
+| Mobility FieldSet Object Update Result | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_mobility_fieldset_object_update_result.md |
+| Mobility FieldSet Status | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_mobility_fieldset_status_output.md |
+| Picklist Value Output | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_picklist_value_output.md |
+| Prepare Assessment Task Failed Record | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_prepare_asmt_task_failed_record.md |
+| Prepare Assessment Task | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_prepare_assessment_task_output.md |
+| Product Catalog Item Output | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_product_catalog_item_output.md |
+| Product Internal Organization Unit List | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_product_internal_organization_unit_list_output.md |
+| Product Internal Organization Unit | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_product_internal_organization_unit.md |
+| Product Output | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_product_output.md |
+| Product Survey Metadata Output | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_product_survey_metadata_output.md |
+| Product Survey Output | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_product_survey_output.md |
+| Propagate Promotion Channels | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_propagate_promotion_channels_output.md |
+| Propagate Store Assortment Failed Record | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_propagate_store_assortment_failed_record.md |
+| Propagate Store Assortment | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_propagate_store_assortment_output.md |
+| Reorganize Order Distribution Failed Record | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_reorg_order_dstr_failed_record.md |
+| Reorganize Visit Distribution Failed Record | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_reorg_visit_dstr_failed_record.md |
+| Reorganize Order Distribution | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_reorganize_order_distribution_output.md |
+| Reorganize Visit Distribution | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_reorganize_visit_distribution_output.md |
+| Response Status | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_response_status.md |
+| Retail Listing Module | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_retail_listing_module.md |
+| Save Error Output | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_save_error_output.md |
+| Save Survey Answers Output | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_save_survey_answers_output.md |
+| Store Check Metadata Output | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_store_check_metadata_output.md |
+| Store Check Output | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_store_check_output.md |
+| Task Definition Output | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_task_definition_output.md |
+| Trip List Collection | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_trip_list_collection_output.md |
+| Trip List Creation | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_trip_list_creation_output.md |
+| Trip List | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_trip_list.md |
+| Visit Planning Account Assignment Details | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_visit_planning_account_assignment_details.md |
+| Visit Planning Account Details | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_visit_planning_account_details.md |
+| Visit Planning Accounts | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_visit_planning_accounts_output.md |
+| Visit Planning Available User Details | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_visit_planning_available_user_details.md |
+| Visit Planning Available Users | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_visit_planning_available_users_output.md |
+| Visit Planning Create Visits | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/connect_responses_visit_planning_create_visits_output.md |
+| Consumer Goods Cloud Enhanced Platform Data Model | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/consumer-goods-cloud-enhanced-platform-data-model.md |
+| Penny Perfect Pricing Objects | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/penny-perfect-pricing-objects.md |
+| Retail Execution Platform Connect APIs | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/retail-execution-connect-apis.md |
+| Account | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_account.md |
+| AccountAccountRelation | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_accountaccountrelation.md |
+| AccountFlattenedHierarchy | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_accountflattenedhierarchy.md |
+| AccountInternalOrgUnit | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_accountinternalorgunit.md |
+| AccountProductCategoryClsfn | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_accountproductcategoryclsfn.md |
+| AccountRole | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_accountrole.md |
+| AccountTeamMemberPeriod | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_accountteammemberperiod.md |
+| AccountVisitSchedulePlan | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_accountvisitscheduleplan.md |
+| ActionableList | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_actionablelist.md |
+| ActionableListMember | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_actionablelistmember.md |
+| AsmtTaskDefTemplateIndDef | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_asmttaskdeftemplateinddef.md |
+| AsmtTskDefAcct | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_asmttskdefacct.md |
+| AsmtTskDefActionableList | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_asmttskdefactionablelist.md |
+| AsmtTskDefProdt | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_asmttskdefprodt.md |
+| AsmtTskDefTmpl | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_asmttskdeftmpl.md |
+| AssessmentIndDefinedValue | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_assessmentinddefinedvalue.md |
+| AssessmentIndicatorDefinition | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_assessmentindicatordefinition.md |
+| AssessmentIndValue | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_assessmentindvalue.md |
+| AssessmentTask | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_assessmenttask.md |
+| AssessmentTaskContentDocument | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_assessmenttaskcontentdocument.md |
+| AssessmentTaskDefinition | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_assessmenttaskdefinition.md |
+| AssessmentTaskIndDefinition | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_assessmenttaskinddefinition.md |
+| AssessmentTaskOrder | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_assessmenttaskorder.md |
+| Asset | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_asset.md |
+| Assortment | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_assortment.md |
+| AssortmentListingModule | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_assortmentlistingmodule.md |
+| AssortmentProdtListMdl | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_assortmentprodtlistmdl.md |
+| AssortmentProdtUiConfig | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_assortmentprodtuiconfig.md |
+| AssortmentProduct | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_assortmentproduct.md |
+| AssortmentSpec | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_assortmentspec.md |
+| Contact | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_contact.md |
+| ContentDocument | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_contentdocument.md |
+| ContentDocumentLink | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_contentdocumentlink.md |
+| ContentVersion | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_contentversion.md |
+| DigitalSignature | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_digitalsignature.md |
+| Event | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_event.md |
+| InStoreLocation | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_instorelocation.md |
+| InternalOrganizationUnit | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_internalorganizationunit.md |
+| InternalOrgUnitUser | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_internalorgunituser.md |
+| Location | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_location.md |
+| LocationAssortment | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_locationassortment.md |
+| LocationUserAssignment | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_locationuserassignment.md |
+| MdseLimitTrxnSpec | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_mdselimittrxnspec.md |
+| MerchandiseLimit | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_merchandiselimit.md |
+| MerchandiseLimitSpec | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_merchandiselimitspec.md |
+| MerchandiseLimitTrxn | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_merchandiselimittrxn.md |
+| MerchandisingSection | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_merchandisingsection.md |
+| MobileDeepLink | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_mobiledeeplink.md |
+| ObjectTerritory2Association | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_objectterritory2association.md |
+| ObjectTerritory2AssociationPeriod | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_objectterritory2associationperiod.md |
+| OperatingHours | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_operatinghours.md |
+| Order | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_order.md |
+| OrderItem | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_orderitem.md |
+| OrderItemSpec | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_orderitemspec.md |
+| OrderItemSpecRule | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_orderitemspecrule.md |
+| OrderSpec | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_orderspec.md |
+| OrderSpecAssortment | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_orderspecassortment.md |
+| OrderSpecOrderItemSpec | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_orderspecorderitemspec.md |
+| OrdItmSpecInvTrxnSpec | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_orditmspecinvtrxnspec.md |
+| OrdItmSpecMdseTrxnSpec | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_orditmspecmdsetrxnspec.md |
+| PartyRoleRelation | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_partyrolerelation.md |
+| Presentation | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_presentation.md |
+| PresentationLinkedPage | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_presentationlinkedpage.md |
+| PresentationPage | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_presentationpage.md |
+| PresentationPartyAccess | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_presentationpartyaccess.md |
+| Product2 | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_product2.md |
+| ProductCatalog | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_productcatalog.md |
+| ProductCatalogQual | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_productcatalogqual.md |
+| ProductCategory | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_productcategory.md |
+| ProductCategoryProduct | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_productcategoryproduct.md |
+| ProductInternalOrgUnit | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_productinternalorgunit.md |
+| ProductItem | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_productitem.md |
+| ProductItemAddlTrxn | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_productitemaddltrxn.md |
+| ProductItemSpec | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_productitemspec.md |
+| ProductItemTransaction | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_productitemtransaction.md |
+| ProductItemTrxnSpec | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_productitemtrxnspec.md |
+| ProductPlanningNode | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_productplanningnode.md |
+| ProductPlnNodeRel | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_productplnnoderel.md |
+| ProductUnitOfMeasure | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_productunitofmeasure.md |
+| Promotion | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_promotion.md |
+| PromotionChannel | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_promotionchannel.md |
+| PromotionPresentation | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_promotionpresentation.md |
+| PromotionTactic | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_promotiontactic.md |
+| PromotionTacticProduct | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_promotiontacticproduct.md |
+| PromotionTacticSpec | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_promotiontacticspec.md |
+| RetailListingModule | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_retaillistingmodule.md |
+| RetailStore | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_retailstore.md |
+| RetailVisitKpi | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_retailvisitkpi.md |
+| Route | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_route.md |
+| RoutePoint | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_routepoint.md |
+| StoreAssortment | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_storeassortment.md |
+| Task | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_task.md |
+| Territory2 | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_territory2.md |
+| TimeSheet | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_timesheet.md |
+| TimeSheetEntry | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_timesheetentry.md |
+| TimeSheetEntrySpec | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_timesheetentryspec.md |
+| TimeSheetSpec | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_timesheetspec.md |
+| TimeSlot | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_timeslot.md |
+| Tour | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_tour.md |
+| TourTemplate | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_tourtemplate.md |
+| TourTemplateRelRecord | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_tourtemplaterelrecord.md |
+| TourTmplAsmtTskDef | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_tourtmplasmttskdef.md |
+| TradeDgtSgnSpecSet | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_tradedgtsgnspecset.md |
+| TradeDgtSignatureSpec | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_tradedgtsignaturespec.md |
+| TradeInternalOrgUnit | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_tradeinternalorgunit.md |
+| TradePromotion | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_tradepromotion.md |
+| TradePromotionSpec | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_tradepromotionspec.md |
+| TradePromSpecTacticSpec | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_tradepromspectacticspec.md |
+| UnitOfMeasure | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_unitofmeasure.md |
+| User | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_user.md |
+| UserTerritory2Association | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_userterritory2association.md |
+| UserTerritory2AssociationPeriod | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_userterritory2associationperiod.md |
+| Visit | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_visit.md |
+| VisitSpec | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/sforce_api_objects_visitspec.md |
+| Retail Execution Platform Standard Objects | https://developer.salesforce.com/docs/industries/retail-execution-platform/references/retail-execution-reference/standard-objects.md |

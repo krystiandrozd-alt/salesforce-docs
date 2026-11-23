@@ -2,7 +2,11 @@
 
 A per-product content catalog built from Salesforce's aggregated [`llms.txt`](https://developer.salesforce.com/docs/llms.txt) index (the `llmstxt.org`-standard list of all 54 product-specific documentation sections under `developer.salesforce.com`).
 
-Designed to be read by an AI assistant (Claude or otherwise) as grounding material: each finished product gets its own folder with an `index.md` (complete page-by-page link list, extracted programmatically from the live source) and a `content.md` (a short synthesis written independently from the source, with citations — not copied prose).
+Designed to be read by an AI assistant (Claude or otherwise) as grounding material: each finished product gets its own folder with an `index.md` (complete page-by-page link list, extracted programmatically from the live source) and a `content.md` (a short description based on the overview in the source file's header, plus a breakdown into sections).
+
+## For AI agents
+
+Start with [`AGENT_GUIDE.md`](AGENT_GUIDE.md): how to combine this catalog with the Salesforce Docs MCP connector, which connector collection covers each folder (and where it doesn't), and the evidence rules for citing official pages.
 
 ## Status: 54 of 54 products done
 
@@ -12,27 +16,27 @@ Every product-specific `llms-*.txt` section now has its own folder here. See [`s
 
 ## Format per product folder
 
-- `index.md` — every page link from that product's `llms-{product}.txt`, extracted programmatically (not hand-copied) to make even the largest indexes tractable and accurate.
-- `scripts/refresh_from_llms.py` (repo root) — regenerates every `index.md`, the content list and README counts from the live `llms.txt`; keeps hand-written `content.md` prose.
-- `content.md` — a short synthesis from the index file's own overview text, with a section breakdown and a link back to `index.md` for the full list. Citations given per claim; no large verbatim copying (copyright).
+- `index.md` — every unique page link from that product's `llms-{product}.txt`, extracted programmatically (not hand-copied) to make even the largest indexes tractable and accurate. A URL that the source lists more than once appears once; the header says how many duplicates were removed.
+- `scripts/refresh_from_llms.py` (repo root) — regenerates every `index.md`, the content list and README counts from the live `llms.txt`; keeps hand-written `content.md` prose and updates the page counts marked in it.
+- `content.md` — a short description based on the overview in the source file's header, plus a section breakdown with page counts and a link to `index.md`. It is not a page-by-page synthesis and carries no per-claim citations.
 
 ## The ten largest indexes (by `index.md` size, from the refresh script)
 
 | Product | Links | `index.md` size |
 |---|---|---|
-| [product-docs](product-docs/) | 12,977 | 1.87 MB |
-| [commerce-cloud](commerce-cloud/) | 6,864 | 900 KB |
-| [data-cloud](data-cloud/) | 4,322 | 615 KB |
-| [industries](industries/) | 4,021 | 592 KB |
+| [product-docs](product-docs/) | 6,266 | 925 KB |
+| [commerce-cloud](commerce-cloud/) | 6,878 | 902 KB |
+| [data-cloud](data-cloud/) | 4,348 | 619 KB |
+| [industries](industries/) | 4,023 | 592 KB |
 | [platform-field-ref](platform-field-ref/) | 2,712 | 444 KB |
-| [platform-apex](platform-apex/) | 2,881 | 442 KB |
-| [platform](platform/) | 2,882 | 399 KB |
+| [platform-apex](platform-apex/) | 2,880 | 442 KB |
+| [platform](platform/) | 2,884 | 399 KB |
+| [platform-obj-meta-tool](platform-obj-meta-tool/) | 2,758 | 392 KB |
 | [service-cloud](service-cloud/) | 2,586 | 373 KB |
-| [platform-obj-meta-tool](platform-obj-meta-tool/) | 2,498 | 351 KB |
-| [marketing-cloud](marketing-cloud/) | 2,177 | 303 KB |
+| [marketing-cloud](marketing-cloud/) | 2,182 | 304 KB |
 
 These are reproduced **in full**, not condensed, per explicit instruction — including `product-docs`, the largest single index.
 
 ## Source
 
-All entries trace back to `developer.salesforce.com/docs/llms-*.txt` and the pages they link to. Captured starting 2026-10-24. Last refreshed 2026-11-06 with [`scripts/refresh_from_llms.py`](scripts/refresh_from_llms.py).
+All entries trace back to `developer.salesforce.com/docs/llms-*.txt` and the pages they link to. Captured starting 2026-10-24. Last refreshed 2026-11-23 with [`scripts/refresh_from_llms.py`](scripts/refresh_from_llms.py).

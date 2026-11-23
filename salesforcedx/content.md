@@ -6,7 +6,7 @@ Developer tooling documentation for the Salesforce Platform, covering Salesforce
 
 Section breakdown:
 - **Salesforce Extensions for Visual Studio Code** — 58 pages
-- **Agentforce Vibes Developer Guide** — 49 pages
+- **Agentforce Vibes Developer Guide** — 50 pages
 - **Agentforce Vibes Developer Guide (Deprecated)** — 57 pages
 - **Agentforce Vibes IDE** — 65 pages
 - **Salesforce CLI Plugin Developer Guide** — 35 pages
@@ -20,9 +20,8 @@ Section breakdown:
 
 *Source: [`llms-salesforcedx.txt`](https://developer.salesforce.com/docs/llms-salesforcedx.txt) — official aggregated index (developer doc page), overview section.*
 
-
-*Last refreshed 2026-11-06: 857 pages in 12 sections (counts from the live source).*
+*Last refreshed 2026-11-23: 858 pages in 12 sections (counts from the live source).*
 
 ## Extraction notes
 
-Built from the index file's own "Overview" blurb and section listing — one fetch, programmatic extraction, no deep page-by-page review. See [index.md](index.md) for the full 853-page link list.
+Built from the index file's own "Overview" blurb and section listing — one fetch, programmatic extraction, no deep page-by-page review. See [index.md](index.md) for the full <!--pages-->858<!--/pages-->-page link list.

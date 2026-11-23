@@ -18,9 +18,8 @@ Section breakdown:
 
 *Source: [`llms-industries-integrations.txt`](https://developer.salesforce.com/docs/llms-industries-integrations.txt) — official aggregated index (developer doc page), overview section.*
 
-
-*Last refreshed 2026-11-06: 284 pages in 10 sections (counts from the live source).*
+*Last refreshed 2026-11-23: 284 pages in 10 sections (counts from the live source).*
 
 ## Extraction notes
 
-Built from the index file's own "Overview" blurb and section listing — one fetch, programmatic extraction, no deep page-by-page review. See [index.md](index.md) for the full 278-page link list.
+Built from the index file's own "Overview" blurb and section listing — one fetch, programmatic extraction, no deep page-by-page review. See [index.md](index.md) for the full <!--pages-->284<!--/pages-->-page link list.

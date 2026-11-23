@@ -6,8 +6,7 @@ Agentforce Operations exposes a REST API for managing Agentforce Operations work
 
 *Source: [`llms-agentforce-operations.txt`](https://developer.salesforce.com/docs/llms-agentforce-operations.txt) — official aggregated index (developer doc page), overview section.*
 
-
-*Last refreshed 2026-11-06: 1 pages in 1 sections (counts from the live source).*
+*Last refreshed 2026-11-23: 1 pages in 1 sections (counts from the live source).*
 
 ## Extraction notes
 

@@ -210,3 +210,7 @@ Use **[prompts/build-graph.md](prompts/build-graph.md)** in Claude Code or anoth
 - Track product rename/deprecation with identity-stable IDs and historical aliases.
 - Respect crawling limits, site terms, and public-page copyright; retain factual extraction and citations rather than reproducing full proprietary tables verbatim.
 - Escalate contested commercial and legal interpretations to Salesforce account team.
+
+## Executable public feature mapping pilot (2026-11-23)
+
+Feature → entitlement → edition/add-on → unknown SKU lookup is implemented at repository root as [`feature_sku_resolver.py`](../feature_sku_resolver.py), backed by [`salesforce_pricing_tree.json`](../salesforce_pricing_tree.json). Documentation: [`FEATURE_LICENSE_MAPPING.md`](../FEATURE_LICENSE_MAPPING.md). Its public claims require independent attestation; it cannot resolve a customer contract or true orderable SKU. `--graph-fragment` emits compatible nodes for the Solution Intelligence structural graph; no canonical customer-side integration is yet deployed. Test suite: [`test_feature_sku_resolver.py`](../solution-intelligence/tests/test_feature_sku_resolver.py).

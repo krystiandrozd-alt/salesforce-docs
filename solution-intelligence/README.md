@@ -75,3 +75,6 @@ See [source-manifest.yaml](source-manifest.yaml) for ownership and update discip
 - Pricing feature branch is draft. Flex Credit CLI covers a limited set of meter scenarios; Headless Platform Interaction pricing may be TBA. A rate-card unit test is not proof of live billing parity.
 - No GitHub/Claude/ChatGPT installation or MCP runtime connection is provided by this repository file alone.
 
+## Public feature-to-offer mapping fragment (2026-11-23)
+
+The [feature SKU resolver](../feature_sku_resolver.py) and [data catalog](../salesforce_pricing_tree.json) provide a **public, unverified** feature/edition/add-on lookup and `--graph-fragment` export. This adds a composable `technical_feature → ANY_OF entitlement paths → candidate commercial_offer` slice, but not independently attested sources, customer entitlements, live orderable SKUs or prices. [Run and caveats](../FEATURE_LICENSE_MAPPING.md). A graph merge requires stable feature IDs and an explicit crosswalk where architectures use different identifiers.

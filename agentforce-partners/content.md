@@ -6,8 +6,7 @@ This is documentation for Salesforce partners (not end customers) implementing A
 
 *Source: [`llms-agentforce-partners.txt`](https://developer.salesforce.com/docs/llms-agentforce-partners.txt) — official aggregated index (developer doc page), overview section.*
 
-
-*Last refreshed 2026-11-06: 7 pages in 1 sections (counts from the live source).*
+*Last refreshed 2026-11-23: 7 pages in 1 sections (counts from the live source).*
 
 ## Extraction notes
 

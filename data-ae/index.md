@@ -2,7 +2,7 @@
 
 Source: [llms-data-ae.txt](https://developer.salesforce.com/docs/llms-data-ae.txt).
 
-Full link list extracted programmatically from the live source file (40 page links across 5 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (40 unique page links across 5 sections; duplicate URLs removed: 0). Last refreshed 2026-11-23 by `scripts/refresh_from_llms.py`.
 
 ## Get Started (3 pages)
 

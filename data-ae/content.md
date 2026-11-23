@@ -13,9 +13,8 @@ Section breakdown:
 
 *Source: [`llms-data-ae.txt`](https://developer.salesforce.com/docs/llms-data-ae.txt) — official aggregated index (developer doc page), overview section.*
 
-
-*Last refreshed 2026-11-06: 40 pages in 5 sections (counts from the live source).*
+*Last refreshed 2026-11-23: 40 pages in 5 sections (counts from the live source).*
 
 ## Extraction notes
 
-Built from the index file's own "Overview" blurb and section listing — one fetch, programmatic extraction, no deep page-by-page review. See [index.md](index.md) for the full 40-page link list.
+Built from the index file's own "Overview" blurb and section listing — one fetch, programmatic extraction, no deep page-by-page review. See [index.md](index.md) for the full <!--pages-->40<!--/pages-->-page link list.

@@ -2,7 +2,7 @@
 
 Source: [llms-platform.txt](https://developer.salesforce.com/docs/llms-platform.txt).
 
-Full link list extracted programmatically from the live source file (2882 page links across 27 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (2884 unique page links across 27 sections; duplicate URLs removed: 0). Last refreshed 2026-11-23 by `scripts/refresh_from_llms.py`.
 
 ## Publisher and Quick Action Developer Guide (25 pages)
 
@@ -860,7 +860,7 @@ Full link list extracted programmatically from the live source file (2882 page l
 | Headers | https://developer.salesforce.com/docs/platform/api-asynch/guide/async-api-headers.md |
 | About URIs | https://developer.salesforce.com/docs/platform/api-asynch/guide/asynch-api-basics-about-uri.md |
 | Request Basics | https://developer.salesforce.com/docs/platform/api-asynch/guide/asynch-api-basics-intro.md |
-| Set a Session Header | https://developer.salesforce.com/docs/platform/api-asynch/guide/asynch-api-basics-session-header.md |
+| Set an Authorization or Session Header | https://developer.salesforce.com/docs/platform/api-asynch/guide/asynch-api-basics-session-header.md |
 | Add a Batch to a Job | https://developer.salesforce.com/docs/platform/api-asynch/guide/asynch-api-batches-create.md |
 | Handle Failed Records in Batches | https://developer.salesforce.com/docs/platform/api-asynch/guide/asynch-api-batches-failed-records.md |
 | Get Information for All Batches in a Job | https://developer.salesforce.com/docs/platform/api-asynch/guide/asynch-api-batches-get-info-all.md |
@@ -1643,7 +1643,7 @@ Full link list extracted programmatically from the live source file (2882 page l
 | Record Tax Transaction Action | https://developer.salesforce.com/docs/platform/api-action/guide/b2b-d2c-comm-actions-record-tax-txn.md |
 | PlatformAction | https://developer.salesforce.com/docs/platform/api-action/guide/sforce-api-objects-platformaction.md |
 
-## SOAP API Developer Guide (208 pages)
+## SOAP API Developer Guide (209 pages)
 
 | Page | URL |
 |---|---|
@@ -1810,6 +1810,7 @@ Full link list extracted programmatically from the live source file (2882 page l
 | CallOptions | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-header-calloptions.md |
 | DebuggingHeader | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-header-debuggingheader.md |
 | DisableFeedTrackingHeader | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-header-disablefeedtracking.md |
+| DpopProofHeader | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-header-dpopproofheader.md |
 | DuplicateRuleHeader | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-header-duplicateruleheader.md |
 | EmailHeader | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-header-emailheader.md |
 | LimitInfoHeader | https://developer.salesforce.com/docs/platform/api/guide/sforce-api-header-limitinfo.md |
@@ -2465,7 +2466,7 @@ Full link list extracted programmatically from the live source file (2882 page l
 | Underlying Concepts | https://developer.salesforce.com/docs/platform/salesforce-large-data-volumes-bp/guide/ldv-deployments-underlying-concepts.md |
 | Previous Versions | https://developer.salesforce.com/docs/platform/salesforce-large-data-volumes-bp/guide/salesforce-large-data-volumes-bp-pdf-archive.md |
 
-## Platform Events Developer Guide (240 pages)
+## Platform Events Developer Guide (241 pages)
 
 | Page | URL |
 |---|---|
@@ -2693,6 +2694,7 @@ Full link list extracted programmatically from the live source file (2882 page l
 | ReportEvent | https://developer.salesforce.com/docs/platform/platform-events/guide/sforce-api-objects-reportevent.md |
 | ReportEventStream | https://developer.salesforce.com/docs/platform/platform-events/guide/sforce-api-objects-reporteventstream.md |
 | SalesMeetingBookedEvent | https://developer.salesforce.com/docs/platform/platform-events/guide/sforce-api-objects-salesmeetingbookedevent.md |
+| SavedPaymentMethodEvent | https://developer.salesforce.com/docs/platform/platform-events/guide/sforce-api-objects-savedpaymentmethodevent.md |
 | SearchIndexJobStatusEvent | https://developer.salesforce.com/docs/platform/platform-events/guide/sforce-api-objects-searchindexjobstatusevent.md |
 | ServiceAppointmentEvent | https://developer.salesforce.com/docs/platform/platform-events/guide/sforce-api-objects-serviceappointmentevent.md |
 | SessionHijackingEvent | https://developer.salesforce.com/docs/platform/platform-events/guide/sforce-api-objects-sessionhijackingevent.md |

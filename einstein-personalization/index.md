@@ -2,9 +2,9 @@
 
 Source: [llms-einstein-personalization.txt](https://developer.salesforce.com/docs/llms-einstein-personalization.txt).
 
-Full link list extracted programmatically from the live source file (50 page links across 1 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (53 unique page links across 1 sections; duplicate URLs removed: 0). Last refreshed 2026-11-23 by `scripts/refresh_from_llms.py`.
 
-## Salesforce Personalization (50 pages)
+## Salesforce Personalization (53 pages)
 
 | Page | URL |
 |---|---|
@@ -32,6 +32,7 @@ Full link list extracted programmatically from the live source file (50 page lin
 | Integrate Salesforce Personalization with Modern Frontend Frameworks | https://developer.salesforce.com/docs/marketing/einstein-personalization/guide/integrate-personalization-modern-frontend-frameworks.md |
 | Integrate the Salesforce Interactions SDK | https://developer.salesforce.com/docs/marketing/einstein-personalization/guide/integrate-salesforce-interactions-sdk.md |
 | Personalization Invocable Actions | https://developer.salesforce.com/docs/marketing/einstein-personalization/guide/invocable-actions.md |
+| JavaScript Lifecycle Hooks for Web Experience Templates | https://developer.salesforce.com/docs/marketing/einstein-personalization/guide/javascript-lifecycle-hooks-web-experience-templates.md |
 | Overview | https://developer.salesforce.com/docs/marketing/einstein-personalization/guide/overview.md |
 | Personalization Content Click Attribution DMO | https://developer.salesforce.com/docs/marketing/einstein-personalization/guide/personalization-content-click-attribution.md |
 | Personalization Content View Attribution DMO | https://developer.salesforce.com/docs/marketing/einstein-personalization/guide/personalization-content-view-attribution-dmo.md |
@@ -57,4 +58,6 @@ Full link list extracted programmatically from the live source file (50 page lin
 | Set Up Content Zones | https://developer.salesforce.com/docs/marketing/einstein-personalization/guide/set-up-content-zones.md |
 | Set Up Dynamic Context Variables | https://developer.salesforce.com/docs/marketing/einstein-personalization/guide/set-up-dynamic-context-variables.md |
 | Use Personalization Decisions in Flows | https://developer.salesforce.com/docs/marketing/einstein-personalization/guide/show-personalized-recommendations-in-flows.md |
+| Substitution Variable Reference for Web Experience Templates | https://developer.salesforce.com/docs/marketing/einstein-personalization/guide/substitution-variable-reference-web-experience-templates.md |
+| Substitution Variables in Web Experience Templates | https://developer.salesforce.com/docs/marketing/einstein-personalization/guide/substitution-variables-web-experience-templates.md |
 | Track Personalization Engagement | https://developer.salesforce.com/docs/marketing/einstein-personalization/guide/track-personalization-engagement.md |

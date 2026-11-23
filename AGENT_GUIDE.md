@@ -31,10 +31,10 @@ Adapted from the evidence rules in Salesforce's [`sf-pi` SF Docs agent guide](ht
 
 | Catalog folder (links) | Connector coverage | Use instead |
 | --- | --- | --- |
-| `platform-apex` (2,881) | `developer/platform-apex`: 2 docs | `legacydeveloper/apexref` (Apex Reference), `legacydeveloper/apexcode` (Apex Developer Guide) |
-| `platform-obj-meta-tool` (2,498) | none | `legacydeveloper/object_reference`, `legacydeveloper/api_meta`, `legacydeveloper/api_tooling` |
+| `platform-apex` (2,880) | `developer/platform-apex`: 2 docs | `legacydeveloper/apexref` (Apex Reference), `legacydeveloper/apexcode` (Apex Developer Guide) |
+| `platform-obj-meta-tool` (2,758) | none | `legacydeveloper/object_reference`, `legacydeveloper/api_meta`, `legacydeveloper/api_tooling` |
 | `platform-field-ref` (2,712) | none | Closest: `legacydeveloper/object_reference` (fields per object); else the catalog link via web access |
-| `product-docs` (12,977, legacy `.htm` links) | none under `developer/*` | The matching `legacydeveloper/*` area where one exists; else web access |
+| `product-docs` (6,266 unique, legacy `.htm` links) | none under `developer/*` | The matching `legacydeveloper/*` area where one exists; else web access |
 | `personalization` (614) | `developer/personalization`: 95 docs | Connector first, then the catalog link via web access |
 | `metadata-coverage` (42), `my-trust-center` (3) | none | Catalog link via web access |
 

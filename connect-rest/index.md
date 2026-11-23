@@ -2,7 +2,7 @@
 
 Source: [llms-connect-rest.txt](https://developer.salesforce.com/docs/llms-connect-rest.txt).
 
-Full link list extracted programmatically from the live source file (81 page links across 4 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (109 unique page links across 5 sections; duplicate URLs removed: 0). Last refreshed 2026-11-23 by `scripts/refresh_from_llms.py`.
 
 ## Connect REST API Developer Guide (49 pages)
 
@@ -58,7 +58,37 @@ Full link list extracted programmatically from the live source file (81 page lin
 | Retired Resources | https://developer.salesforce.com/docs/platform/connect-rest-api/guide/retired_resources.md |
 | About the API Families | https://developer.salesforce.com/docs/platform/connect-rest-api/references/connect-rest-api-about/about.md |
 
-## CRM Analytics REST API Developer Guide (15 pages)
+## User Interface API Developer Guide (25 pages)
+
+| Page | URL |
+|---|---|
+| PDF Archive | https://developer.salesforce.com/docs/platform/user-interface/guide/pdf_archive.md |
+| All Supported Objects | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-all-supported-objects.md |
+| Retired Resources | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-appendices-retired-resources.md |
+| User Interface API Appendices | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-appendices.md |
+| Status Codes and Error Responses | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-errors.md |
+| Work with Actions | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-features-actions.md |
+| Manage Apps | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-features-apps.md |
+| Manage Favorites | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-features-favorites.md |
+| Work with List Views | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-features-list-views.md |
+| User Interface API Features | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-features-overview.md |
+| Upload Binary Files | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-features-records-binary-upload.md |
+| Get Child Records | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-features-records-child-relationships.md |
+| Upload Files | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-features-records-content-document.md |
+| Build UI for Picklists | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-features-records-dependent-picklist.md |
+| Prevent Record Duplication with Idempotent Record Writes | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-features-records-idempotent.md |
+| Work with Records | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-features-records.md |
+| Authentication, Versioning, Limits, ETag, and More | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-get-started-intro.md |
+| User Interface API Release Notes | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-get-started-release-notes.md |
+| User Interface API Sample Apps | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-get-started-sample-apps.md |
+| Supported Objects | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-get-started-supported-objects.md |
+| Get Started with User Interface API | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-get-started.md |
+| List View Supported Objects | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-list-view-supported-objects.md |
+| Most Recently Used List View Supported Objects | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-mru-list-view-supported-objects.md |
+| User Interface API Quick Start | https://developer.salesforce.com/docs/platform/user-interface/guide/ui-api-quick-start-postman.md |
+| API End-of-Life Policy | https://developer.salesforce.com/docs/platform/user-interface/guide/user-interface-eol.md |
+
+## CRM Analytics REST API Developer Guide (16 pages)
 
 | Page | URL |
 |---|---|
@@ -75,10 +105,11 @@ Full link list extracted programmatically from the live source file (81 page lin
 | Use Postman to Send a CRM Analytics Request | https://developer.salesforce.com/docs/platform/crm-analytics/guide/bi-send-postman-request.md |
 | Examples | https://developer.salesforce.com/docs/platform/crm-analytics/guide/crm-analytics-examples.md |
 | Quick Start | https://developer.salesforce.com/docs/platform/crm-analytics/guide/crma-rest-api-quick-start.md |
+| PDF Archive | https://developer.salesforce.com/docs/platform/crm-analytics/guide/pdf_archive.md |
 | Prerequisites | https://developer.salesforce.com/docs/platform/crm-analytics/guide/prerequisites.md |
 | Set Up Your Postman Collection | https://developer.salesforce.com/docs/platform/crm-analytics/guide/set-up-postman-collection.md |
 
-## Einstein Discovery REST API Developer Guide (11 pages)
+## Einstein Discovery REST API Developer Guide (12 pages)
 
 | Page | URL |
 |---|---|
@@ -93,13 +124,15 @@ Full link list extracted programmatically from the live source file (81 page lin
 | Einstein Discovery REST API Overview | https://developer.salesforce.com/docs/platform/einstein-discovery/guide/bi-rest-sdd-overview.md |
 | Release Notes | https://developer.salesforce.com/docs/platform/einstein-discovery/guide/bi-rest-sdd-releasenotes.md |
 | Examples | https://developer.salesforce.com/docs/platform/einstein-discovery/guide/einstein-discovery-examples.md |
+| PDF Archive | https://developer.salesforce.com/docs/platform/einstein-discovery/guide/pdf_archive.md |
 
-## Data Prep Recipe REST API Developer Guide (6 pages)
+## Data Prep Recipe REST API Developer Guide (7 pages)
 
 | Page | URL |
 |---|---|
 | API End-of-Life Policy | https://developer.salesforce.com/docs/platform/data-prep-recipe/guide/bi-rest-api-rest-eol.md |
 | Connect REST API Authorization | https://developer.salesforce.com/docs/platform/data-prep-recipe/guide/bi-rest-authentication.md |
+| PDF Archive | https://developer.salesforce.com/docs/platform/data-prep-recipe/guide/pdf_archive.md |
 | Manage, Schedule, and Run Recipes with REST APIs | https://developer.salesforce.com/docs/platform/data-prep-recipe/guide/sforce-build-manage-recipes.md |
 | Examples | https://developer.salesforce.com/docs/platform/data-prep-recipe/guide/sforce-recipes-api-examples.md |
 | Data Prep Recipe REST API Overview | https://developer.salesforce.com/docs/platform/data-prep-recipe/guide/sforce-recipes-api-overview.md |

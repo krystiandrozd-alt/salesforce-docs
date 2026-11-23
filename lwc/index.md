@@ -2,7 +2,7 @@
 
 Source: [llms-lwc.txt](https://developer.salesforce.com/docs/llms-lwc.txt).
 
-Full link list extracted programmatically from the live source file (829 page links across 5 sections). Last refreshed 2026-11-06 by `scripts/refresh_from_llms.py`.
+Full link list extracted programmatically from the live source file (830 unique page links across 5 sections; duplicate URLs removed: 0). Last refreshed 2026-11-23 by `scripts/refresh_from_llms.py`.
 
 ## Lightning Web Components Developer Guide (689 pages)
 
@@ -776,7 +776,7 @@ Full link list extracted programmatically from the live source file (829 page li
 | URL Protocol Schemes Allowed | https://developer.salesforce.com/docs/platform/lightning-components-security/guide/lws-url-schemes.md |
 | When to Enable LWS | https://developer.salesforce.com/docs/platform/lightning-components-security/guide/lws-when.md |
 
-## SLDS Linter (17 pages)
+## SLDS Linter (18 pages)
 
 | Page | URL |
 |---|---|
@@ -797,6 +797,7 @@ Full link list extracted programmatically from the live source file (829 page li
 | Scan Your Code | https://developer.salesforce.com/docs/platform/slds-linter/guide/use-scan-code.md |
 | Use SLDS Linter Rules with Salesforce Code Analyzer | https://developer.salesforce.com/docs/platform/slds-linter/guide/use-work-with-code-analyzer.md |
 | Work With SLDS Linter | https://developer.salesforce.com/docs/platform/slds-linter/guide/use-work-with-linter-intro.md |
+| Use SLDS Linter for React Component Files (Beta) | https://developer.salesforce.com/docs/platform/slds-linter/guide/use-work-with-react-component-files.md |
 
 ## SLDS Validator (9 pages)
 

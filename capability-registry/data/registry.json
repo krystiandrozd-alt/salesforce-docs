@@ -1,0 +1,335 @@
+{
+  "schema_version": "0.1.0",
+  "as_of": "2026-11-23",
+  "scope": "READ_ONLY_DISCOVERY_NOT_EXECUTION",
+  "providers": [
+    {"id": "provider-salesforce", "display_name": "Salesforce"},
+    {"id": "provider-microsoft", "display_name": "Microsoft"},
+    {"id": "provider-anthropic", "display_name": "Anthropic"}
+  ],
+  "products": [
+    {"id": "product-salesforce-platform", "provider_id": "provider-salesforce", "display_name": "Salesforce platform", "vendor_product_id": null},
+    {"id": "product-microsoft-365-copilot", "provider_id": "provider-microsoft", "display_name": "Microsoft 365 Copilot", "vendor_product_id": null},
+    {"id": "product-anthropic-claude", "provider_id": "provider-anthropic", "display_name": "Claude", "vendor_product_id": null}
+  ],
+  "surfaces": [
+    {"id": "surface-claudeforce", "provider_id": "provider-anthropic", "display_name": "Claudeforce"},
+    {"id": "surface-copilotforce", "provider_id": "provider-microsoft", "display_name": "Copilotforce"}
+  ],
+  "processes": [
+    {"id": "process-b2b-telecom-sales", "display_name": "B2B telecommunications sales", "model_status": "PILOT_BRIEF"}
+  ],
+  "process_steps": [
+    {"id": "step-lead", "process_id": "process-b2b-telecom-sales", "step_order": 1, "display_name": "Lead"},
+    {"id": "step-account-prep", "process_id": "process-b2b-telecom-sales", "step_order": 2, "display_name": "Account preparation"},
+    {"id": "step-opportunity", "process_id": "process-b2b-telecom-sales", "step_order": 3, "display_name": "Opportunity"},
+    {"id": "step-quote", "process_id": "process-b2b-telecom-sales", "step_order": 4, "display_name": "Quote"},
+    {"id": "step-approval", "process_id": "process-b2b-telecom-sales", "step_order": 5, "display_name": "Approval"},
+    {"id": "step-order", "process_id": "process-b2b-telecom-sales", "step_order": 6, "display_name": "Order"},
+    {"id": "step-follow-up", "process_id": "process-b2b-telecom-sales", "step_order": 7, "display_name": "Follow-up"}
+  ],
+  "business_capabilities": [
+    {"id": "cap-lead-qualification", "display_name": "Qualify a B2B telecommunications lead"},
+    {"id": "cap-account-preparation", "display_name": "Prepare a customer account for B2B sales"},
+    {"id": "cap-opportunity-field-suggestions", "display_name": "Suggest updates to opportunity fields from sales context"},
+    {"id": "cap-quote-creation", "display_name": "Create a B2B telecommunications quote"}
+  ],
+  "process_step_capabilities": [
+    {"id": "psc-lead", "process_step_id": "step-lead", "capability_id": "cap-lead-qualification"},
+    {"id": "psc-account", "process_step_id": "step-account-prep", "capability_id": "cap-account-preparation"},
+    {"id": "psc-opp", "process_step_id": "step-opportunity", "capability_id": "cap-opportunity-field-suggestions"},
+    {"id": "psc-quote", "process_step_id": "step-quote", "capability_id": "cap-quote-creation"}
+  ],
+  "skill_definitions": [
+    {
+      "id": "skill-sales-agentforce-pipeline-management-configure",
+      "provider_id": "provider-salesforce",
+      "vendor_skill_id": "sales-agentforce-pipeline-management-configure",
+      "classification": "DEVELOPER_DELIVERY"
+    },
+    {
+      "id": "skill-account-context",
+      "provider_id": "provider-salesforce",
+      "vendor_skill_id": "account-context",
+      "classification": "BUSINESS_FUNCTIONAL"
+    }
+  ],
+  "skill_versions": [
+    {
+      "id": "skillver-sales-pipeline-configure-1.0",
+      "skill_id": "skill-sales-agentforce-pipeline-management-configure",
+      "version_label": "1.0",
+      "published": "YES",
+      "product_available": "UNKNOWN",
+      "installed": "UNKNOWN",
+      "configured": "UNKNOWN",
+      "authorized": "UNKNOWN",
+      "executable": "UNKNOWN",
+      "entitled": "UNKNOWN"
+    },
+    {
+      "id": "skillver-account-context-catalog",
+      "skill_id": "skill-account-context",
+      "version_label": "CATALOG",
+      "published": "UNKNOWN",
+      "product_available": "UNKNOWN",
+      "installed": "UNKNOWN",
+      "configured": "UNKNOWN",
+      "authorized": "UNKNOWN",
+      "executable": "UNKNOWN",
+      "entitled": "UNKNOWN"
+    }
+  ],
+  "agent_definitions": [
+    {
+      "id": "agent-sales-mgmt-template-named-by-skill",
+      "provider_id": "provider-salesforce",
+      "classification": "CONFIGURABLE_TEMPLATE",
+      "display_name": "Sales Management agent template named by a delivery skill"
+    }
+  ],
+  "agent_versions": [
+    {
+      "id": "agentver-sales-mgmt-template-doc",
+      "agent_id": "agent-sales-mgmt-template-named-by-skill",
+      "version_label": "UNVERIFIED",
+      "vendor_agent_ids": ["SalesMgmt__NGASalesAgent", "SalesMgmt__SalesAgent"],
+      "published": "UNKNOWN",
+      "product_available": "UNKNOWN",
+      "installed": "UNKNOWN",
+      "configured": "UNKNOWN",
+      "authorized": "UNKNOWN",
+      "executable": "UNKNOWN",
+      "entitled": "UNKNOWN"
+    }
+  ],
+  "source_snapshots": [
+    {
+      "id": "snap-sf-skills-pipeline-20261123",
+      "repository": "forcedotcom/sf-skills",
+      "resolved_commit": "b09f91fe832e19b1f8c5eddd3bfb418640d997b4",
+      "path": "skills/sales-agentforce-pipeline-management-configure/SKILL.md",
+      "original_url": "https://github.com/forcedotcom/sf-skills/blob/b09f91fe832e19b1f8c5eddd3bfb418640d997b4/skills/sales-agentforce-pipeline-management-configure/SKILL.md",
+      "retrieved_at": "2026-11-23",
+      "retrieval_status": "READ"
+    },
+    {
+      "id": "snap-headless-toolkit-20261123",
+      "repository": "krystiandrozd-alt/headless-toolkit",
+      "resolved_commit": "f8bb9553f93f296f1088dc7ab00c9752ed1af3f1",
+      "path": "aiforce-claudeforce/salesforce-in-claude-skills-reference.md",
+      "original_url": "https://github.com/krystiandrozd-alt/headless-toolkit/blob/f8bb9553f93f296f1088dc7ab00c9752ed1af3f1/aiforce-claudeforce/salesforce-in-claude-skills-reference.md",
+      "retrieved_at": "2026-11-23",
+      "retrieval_status": "READ"
+    },
+    {
+      "id": "snap-license-resolver-pointer-20261123",
+      "repository": "krystiandrozd-alt/salesforce-docs",
+      "resolved_commit": "1b57c105971b51d6ca8a085ad7277bbffde9c247",
+      "path": "pricing-intelligence/data/feature-entitlements-2026-11-23.json",
+      "original_url": null,
+      "retrieved_at": "2026-11-23",
+      "retrieval_status": "POINTER_NOT_REVERIFIED"
+    },
+    {
+      "id": "snap-local-skill-path-20261123",
+      "repository": null,
+      "resolved_commit": null,
+      "path": ".claude/skills/sales-agentforce-pipeline-management-configure/SKILL.md",
+      "original_url": null,
+      "retrieved_at": "2026-11-23",
+      "retrieval_status": "ABSENT_AT_ONE_PATH"
+    }
+  ],
+  "evidence_claims": [
+    {
+      "id": "ev-skill-published",
+      "snapshot_id": "snap-sf-skills-pipeline-20261123",
+      "locator": "YAML name and metadata.version",
+      "supported_fact": "forcedotcom/sf-skills publishes sales-agentforce-pipeline-management-configure at metadata version 1.0.",
+      "evidence_status": "VERIFIED"
+    },
+    {
+      "id": "ev-skill-names-templates",
+      "snapshot_id": "snap-sf-skills-pipeline-20261123",
+      "locator": "Phase 0 org assessment",
+      "supported_fact": "The skill file names AgentTemplate values SalesMgmt__NGASalesAgent and SalesMgmt__SalesAgent as setup signals.",
+      "evidence_status": "VERIFIED"
+    },
+    {
+      "id": "ev-skill-scope",
+      "snapshot_id": "snap-sf-skills-pipeline-20261123",
+      "locator": "Scope",
+      "supported_fact": "The skill configures Agentforce Pipeline Management, including the Sales Management agent and opportunity field-update suggestions. It does not describe account preparation, quoting, or order capture.",
+      "evidence_status": "VERIFIED"
+    },
+    {
+      "id": "ev-skill-license-statement",
+      "snapshot_id": "snap-sf-skills-pipeline-20261123",
+      "locator": "Prerequisites / Edition",
+      "supported_fact": "The skill file states a prerequisite of Enterprise, Performance, Unlimited, or Developer Edition with an Agentforce for Sales add-on, or Agentforce 1 Sales Edition. This statement is not a pricing-graph entitlement.",
+      "evidence_status": "VERIFIED"
+    },
+    {
+      "id": "ev-catalog-lists-account-context",
+      "snapshot_id": "snap-headless-toolkit-20261123",
+      "locator": "Account Intelligence and Research table",
+      "supported_fact": "The headless catalog lists skill ID account-context as See Account Context. The file is a synthesis of Help articles and was not re-checked against the live Help page in this run.",
+      "evidence_status": "VERIFIED"
+    },
+    {
+      "id": "ev-commercial-pointer",
+      "snapshot_id": "snap-license-resolver-pointer-20261123",
+      "locator": "feature/feature-license-resolver-20261123",
+      "supported_fact": "A separate branch holds feature and offer IDs such as feature-tmf-apis and offer-comms-advanced. This slice did not re-read the pricing pages and does not copy prices.",
+      "evidence_status": "UNKNOWN"
+    },
+    {
+      "id": "ev-local-install-unchecked",
+      "snapshot_id": "snap-local-skill-path-20261123",
+      "locator": "user profile .claude/skills",
+      "supported_fact": "That one local path did not contain the skill file. Other install locations were not scanned, so installation stays unknown.",
+      "evidence_status": "UNKNOWN"
+    }
+  ],
+  "relationship_claims": [
+    {
+      "id": "rel-skill-names-template",
+      "source_id": "skillver-sales-pipeline-configure-1.0",
+      "target_id": "agentver-sales-mgmt-template-doc",
+      "relationship_type": "DOCUMENT_NAMES",
+      "applicability": "Skill documentation names template API values. It does not prove the template is published, installed, or entitled.",
+      "evidence_id": "ev-skill-names-templates",
+      "verification": "VERIFIED",
+      "observed_at": "2026-11-23"
+    },
+    {
+      "id": "rel-skill-configures-opportunity-suggestions",
+      "source_id": "skillver-sales-pipeline-configure-1.0",
+      "target_id": "cap-opportunity-field-suggestions",
+      "relationship_type": "DELIVERY_SKILL_CONFIGURES",
+      "applicability": "Delivery skill for org setup of opportunity field suggestions. Not a seller runtime action and not account preparation.",
+      "evidence_id": "ev-skill-scope",
+      "verification": "VERIFIED",
+      "observed_at": "2026-11-23"
+    },
+    {
+      "id": "rel-skill-license-statement",
+      "source_id": "skillver-sales-pipeline-configure-1.0",
+      "target_id": "lic-pipeline-skill-stated-prerequisite",
+      "relationship_type": "DOCUMENT_STATES_PREREQUISITE",
+      "applicability": "The skill file states a commercial prerequisite. Entitlement and price remain unknown.",
+      "evidence_id": "ev-skill-license-statement",
+      "verification": "VERIFIED",
+      "observed_at": "2026-11-23"
+    },
+    {
+      "id": "rel-catalog-candidate-account-context",
+      "source_id": "skillver-account-context-catalog",
+      "target_id": "cap-account-preparation",
+      "relationship_type": "CATALOG_CANDIDATE",
+      "applicability": "Catalog candidate for account context. Live Help article, product availability, install, authorization, and entitlement were not verified.",
+      "evidence_id": "ev-catalog-lists-account-context",
+      "verification": "CANDIDATE",
+      "observed_at": "2026-11-23"
+    }
+  ],
+  "licensing_links": [
+    {
+      "id": "lic-pipeline-skill-stated-prerequisite",
+      "subject_id": "skillver-sales-pipeline-configure-1.0",
+      "commercial_ref": null,
+      "price_status": "UNKNOWN",
+      "entitlement_status": "UNKNOWN",
+      "document_statement": "Skill file states Agentforce for Sales add-on or Agentforce 1 Sales Edition. No offer ID or price is copied.",
+      "relationship_claim_id": "rel-skill-license-statement"
+    }
+  ],
+  "epics": [
+    {"id": "epic-b2b-telecom-sales", "process_id": "process-b2b-telecom-sales", "display_name": "B2B telecommunications sales process"}
+  ],
+  "user_stories": [
+    {
+      "id": "story-qualify-lead",
+      "epic_id": "epic-b2b-telecom-sales",
+      "capability_id": "cap-lead-qualification",
+      "persona": "B2B telecommunications seller",
+      "statement": "Qualify a lead using confirmed customer and product context before an account is prepared.",
+      "business_outcome": "Sellers work only leads that match the agreed qualification rules."
+    },
+    {
+      "id": "story-prepare-account",
+      "epic_id": "epic-b2b-telecom-sales",
+      "capability_id": "cap-account-preparation",
+      "persona": "B2B telecommunications seller",
+      "statement": "Prepare a customer account with the records required for opportunity and quote work.",
+      "business_outcome": "Account context is complete enough for the next sales step."
+    },
+    {
+      "id": "story-create-quote",
+      "epic_id": "epic-b2b-telecom-sales",
+      "capability_id": "cap-quote-creation",
+      "persona": "B2B telecommunications seller",
+      "statement": "Create a quote from the prepared account and opportunity without treating an unknown license as included.",
+      "business_outcome": "A quote exists only when the selected implementation and commercial path are identified."
+    }
+  ],
+  "acceptance_criteria": [
+    {
+      "id": "ac-qualify-lead",
+      "user_story_id": "story-qualify-lead",
+      "given_text": "a lead and a qualification rule that is still an open decision",
+      "when_text": "a seller asks which agent or skill can qualify it",
+      "then_text": "the registry returns no vendor action and records the rule as unresolved"
+    },
+    {
+      "id": "ac-prepare-account",
+      "user_story_id": "story-prepare-account",
+      "given_text": "the account-preparation step and no verified Claudeforce or Copilotforce skill",
+      "when_text": "discovery runs for that capability",
+      "then_text": "the result lists the capability, an empty agent and skill match, and an explicit catalog gap"
+    },
+    {
+      "id": "ac-create-quote",
+      "user_story_id": "story-create-quote",
+      "given_text": "a quote capability with no verified action binding",
+      "when_text": "a seller asks for an executable quote action",
+      "then_text": "the registry returns no action and does not treat unknown pricing as free"
+    }
+  ],
+  "test_cases": [
+    {"id": "test-qualify-functional", "user_story_id": "story-qualify-lead", "kind": "FUNCTIONAL", "title": "Lead qualification has no invented agent"},
+    {"id": "test-qualify-security", "user_story_id": "story-qualify-lead", "kind": "SECURITY", "title": "Lead data is not sent to an unbound action"},
+    {"id": "test-account-functional", "user_story_id": "story-prepare-account", "kind": "FUNCTIONAL", "title": "Account preparation stays capability-centric across vendors"},
+    {"id": "test-account-security", "user_story_id": "story-prepare-account", "kind": "SECURITY", "title": "Account preparation does not run with unknown authorization"},
+    {"id": "test-quote-functional", "user_story_id": "story-create-quote", "kind": "FUNCTIONAL", "title": "Quote creation has no fabricated action"},
+    {"id": "test-quote-security", "user_story_id": "story-create-quote", "kind": "SECURITY", "title": "Quote creation does not infer a license from a skill file"}
+  ],
+  "coverage_gaps": [
+    {
+      "id": "gap-claudeforce-catalog",
+      "surface_id": "surface-claudeforce",
+      "reason": "headless-toolkit master f8bb955 was read. account-context is a catalog candidate only; the live Help article was not re-fetched, so availability stays unknown."
+    },
+    {
+      "id": "gap-copilotforce-catalog",
+      "surface_id": "surface-copilotforce",
+      "reason": "No Copilotforce agent, skill, or connector action was read in this slice."
+    },
+    {
+      "id": "gap-anthropic-skills",
+      "surface_id": null,
+      "reason": "Official Anthropic Agent Skills were not inventoried in this slice."
+    },
+    {
+      "id": "gap-account-preparation-actions",
+      "surface_id": null,
+      "reason": "No executable action, permission, or commercial entitlement is recorded for account preparation."
+    },
+    {
+      "id": "gap-commercial-not-reverified",
+      "surface_id": null,
+      "reason": "Pricing Intelligence IDs stay on their own branch. Unknown price is not free and unknown entitlement is not included."
+    }
+  ]
+}

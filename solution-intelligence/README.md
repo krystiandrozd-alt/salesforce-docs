@@ -63,6 +63,8 @@ The target production resolver must support forward search and reverse impact lo
 
 See [source-manifest.yaml](source-manifest.yaml) for ownership and update discipline and [reference-registry.yaml](reference-registry.yaml) for resolvable pointers. Trace source changes back to affected skills, capabilities, process steps and BOM lines.
 
+The read-only [capability registry](../capability-registry/README.md) is a discovery slice on top of these contracts. It does not copy pricing records, install skills, or execute actions.
+
 ## Example request
 
 > Assess a B2B wholesale telco sales workflow spanning Salesforce Communications Cloud, pricing/quoting, Microsoft Teams and a custom portal. Compare native Salesforce, hosted MCP, HXL and Multi-Framework; provide cited design alternatives, permission model, migration risks, and a price/usage scenario distinguishing known rates from UNKNOWN items.

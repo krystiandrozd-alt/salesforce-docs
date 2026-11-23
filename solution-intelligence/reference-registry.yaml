@@ -141,6 +141,11 @@ references:
     url: https://help.salesforce.com/s/articleView?id=sales.skills_ref.htm&type=5
     role: primary_source_candidate
     limits: "Must retrieve the actual article body; a Help shell is not evidence."
+  - reference_id: CAPABILITY_REGISTRY
+    repository_key: solution_checkout
+    path: capability-registry/README.md
+    role: discovery_slice
+    limits: "Read-only inventory. A published delivery skill is not an entitlement, installation, or executable action. Unreadable catalogs stay unknown."
 run_snapshot_fields:
   - reference_id
   - repository

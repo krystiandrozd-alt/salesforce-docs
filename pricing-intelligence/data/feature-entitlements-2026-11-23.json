@@ -1,0 +1,334 @@
+{
+  "schema_version": "1.0.0",
+  "as_of": "2026-11-23",
+  "scope": "BOUNDED_OFFICIAL_PUBLIC_CLAIMS_NOT_SKU_DATABASE",
+  "sources": [
+    {
+      "id": "source-comms-pricing",
+      "url": "https://www.salesforce.com/communications/pricing/",
+      "type": "OFFICIAL_PRODUCT_PRICING",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "source-revenue-pricing",
+      "url": "https://www.salesforce.com/sales/revenue-lifecycle-management/pricing/",
+      "type": "OFFICIAL_PRODUCT_PRICING",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "source-platform-addons",
+      "url": "https://www.salesforce.com/platform/pricing-add-ons/",
+      "type": "OFFICIAL_ADDON_PRICING",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "source-api-help",
+      "url": "https://help.salesforce.com/s/articleView?id=000005140&language=en_US&type=1",
+      "type": "OFFICIAL_TECHNICAL_HELP",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "id": "source-user-note",
+      "url": null,
+      "type": "UPLOADED_FEATURE_LICENSE_MAPPING_MD",
+      "checked_on": "2026-11-23"
+    }
+  ],
+  "offers": [
+    {
+      "id": "offer-comms-growth",
+      "name": "Communications Cloud Growth",
+      "type": "EDITION",
+      "product": "communications",
+      "billing": {
+        "unit": "USER",
+        "display_period": "MONTH",
+        "billing_cadence": "ANNUAL",
+        "price_observation_ref": "pricing-intelligence/data/seed-eu-2026-11-22.yaml#price-comms-growth-eur",
+        "region": "EU"
+      }
+    },
+    {
+      "id": "offer-comms-advanced",
+      "name": "Communications Cloud Advanced",
+      "type": "EDITION",
+      "product": "communications",
+      "billing": {
+        "unit": "USER",
+        "display_period": "MONTH",
+        "billing_cadence": "ANNUAL",
+        "price_observation_ref": "pricing-intelligence/data/seed-eu-2026-11-22.yaml#price-comms-advanced-eur",
+        "region": "EU"
+      }
+    },
+    {
+      "id": "offer-comms-b2b-bss",
+      "name": "Communications Cloud B2B BSS Suite",
+      "type": "ORG_SUITE",
+      "product": "communications",
+      "billing": {
+        "unit": "ORG",
+        "display_period": "YEAR",
+        "billing_cadence": "UNKNOWN",
+        "price_observation_ref": "pricing-intelligence/data/seed-eu-2026-11-22.yaml#price-comms-b2b-bss-eur",
+        "region": "EU",
+        "warning": "STARTING_FROM_REVIEW_REQUIRED"
+      }
+    },
+    {
+      "id": "offer-revenue-growth",
+      "name": "Revenue Cloud Growth",
+      "type": "EDITION",
+      "product": "sales",
+      "billing": {
+        "unit": "USER",
+        "display_period": "MONTH",
+        "billing_cadence": "ANNUAL",
+        "region": "US",
+        "currency": "USD",
+        "observed_amount": "150",
+        "qualifier": "PUBLIC_LIST_PRICE_NOT_QUOTE"
+      }
+    },
+    {
+      "id": "offer-revenue-advanced",
+      "name": "Revenue Cloud Advanced",
+      "type": "EDITION",
+      "product": "sales",
+      "billing": {
+        "unit": "USER",
+        "display_period": "MONTH",
+        "billing_cadence": "ANNUAL",
+        "region": "US",
+        "currency": "USD",
+        "observed_amount": "200",
+        "qualifier": "PUBLIC_LIST_PRICE_NOT_QUOTE"
+      }
+    },
+    {
+      "id": "offer-pro-suite",
+      "name": "Pro Suite",
+      "type": "EDITION",
+      "product": "ai-app-dev"
+    },
+    {
+      "id": "offer-professional",
+      "name": "Professional",
+      "type": "EDITION",
+      "product": "ai-app-dev"
+    },
+    {
+      "id": "offer-enterprise",
+      "name": "Enterprise",
+      "type": "EDITION",
+      "product": "ai-app-dev"
+    },
+    {
+      "id": "offer-unlimited",
+      "name": "Unlimited",
+      "type": "EDITION",
+      "product": "ai-app-dev"
+    },
+    {
+      "id": "addon-web-services-api",
+      "name": "Web Services API add-on",
+      "type": "ADDON",
+      "product": "ai-app-dev",
+      "billing": {
+        "unit": "USER",
+        "display_period": "MONTH",
+        "billing_cadence": "UNKNOWN",
+        "region": "US",
+        "currency": "USD",
+        "observed_amount": "25",
+        "qualifier": "PUBLIC_ADDON_PRICE_NOT_QUOTE"
+      }
+    }
+  ],
+  "features": [
+    {
+      "id": "feature-tmf-apis",
+      "name": "TMF APIs",
+      "aliases": [
+        "TM Forum APIs",
+        "Communications Data Model & TMF APIs"
+      ],
+      "product": "communications",
+      "capabilities": [
+        "Integration with TM Forum APIs"
+      ],
+      "skills": [],
+      "technical_license_status": "UNKNOWN"
+    },
+    {
+      "id": "feature-revenue-cpq",
+      "name": "Revenue Cloud CPQ",
+      "aliases": [
+        "CPQ",
+        "Configure Price Quote",
+        "Revenue Cloud Growth CPQ",
+        "Quoting & Configurator"
+      ],
+      "product": "sales",
+      "capabilities": [
+        "Configure Price Quote"
+      ],
+      "skills": [],
+      "technical_license_status": "UNKNOWN"
+    },
+    {
+      "id": "feature-industries-cpq",
+      "name": "Industries CPQ",
+      "aliases": [
+        "Communications CPQ",
+        "Telecom CPQ"
+      ],
+      "product": "communications",
+      "capabilities": [
+        "Telecom Configure Price Quote"
+      ],
+      "skills": [],
+      "technical_license_status": "UNKNOWN"
+    },
+    {
+      "id": "feature-web-services-api",
+      "name": "Web Services API",
+      "aliases": [
+        "Salesforce API access"
+      ],
+      "product": "ai-app-dev",
+      "capabilities": [
+        "External systems integration through Salesforce APIs"
+      ],
+      "skills": [],
+      "technical_license_status": "UNKNOWN"
+    },
+    {
+      "id": "feature-b2b-enterprise-catalog",
+      "name": "Enterprise Product Catalog for B2B Telecommunications",
+      "aliases": [
+        "B2B Enterprise Product Catalog",
+        "B2B EPC"
+      ],
+      "product": "communications",
+      "capabilities": [
+        "B2B Enterprise Product Catalog"
+      ],
+      "skills": [],
+      "technical_license_status": "UNKNOWN"
+    }
+  ],
+  "feature_entitlement_paths": [
+    {
+      "id": "path-tmf-growth",
+      "feature_id": "feature-tmf-apis",
+      "offer_id": "offer-comms-growth",
+      "relation": "INCLUDED_IN_EDITION",
+      "source_id": "source-comms-pricing",
+      "source_section": "Growth / TMF APIs",
+      "verification": "SOURCE_VERIFIED",
+      "conditions": [
+        "API availability, volumes and technical access require separate confirmation"
+      ]
+    },
+    {
+      "id": "path-tmf-advanced",
+      "feature_id": "feature-tmf-apis",
+      "offer_id": "offer-comms-advanced",
+      "relation": "INCLUDED_IN_EDITION",
+      "source_id": "source-comms-pricing",
+      "source_section": "Advanced: all tools and functionality of Growth",
+      "verification": "SOURCE_VERIFIED",
+      "conditions": [
+        "Edition-level inheritance only; no individual API entitlement inferred"
+      ]
+    },
+    {
+      "id": "path-revenue-cpq-growth",
+      "feature_id": "feature-revenue-cpq",
+      "offer_id": "offer-revenue-growth",
+      "relation": "INCLUDED_IN_EDITION",
+      "source_id": "source-revenue-pricing",
+      "source_section": "Revenue Cloud Growth: CPQ / Quoting & Configurator",
+      "verification": "SOURCE_VERIFIED",
+      "conditions": [
+        "Does not establish telecom Industries CPQ entitlement"
+      ]
+    },
+    {
+      "id": "path-revenue-cpq-advanced",
+      "feature_id": "feature-revenue-cpq",
+      "offer_id": "offer-revenue-advanced",
+      "relation": "INCLUDED_IN_EDITION",
+      "source_id": "source-revenue-pricing",
+      "source_section": "Revenue Cloud Advanced: Everything in Growth",
+      "verification": "SOURCE_VERIFIED",
+      "conditions": [
+        "Does not establish telecom Industries CPQ entitlement"
+      ]
+    },
+    {
+      "id": "path-web-services-api-addon",
+      "feature_id": "feature-web-services-api",
+      "offer_id": "addon-web-services-api",
+      "relation": "AVAILABLE_AS_ADDON",
+      "eligible_offer_ids": [
+        "offer-pro-suite",
+        "offer-professional"
+      ],
+      "source_id": "source-platform-addons",
+      "source_section": "Integration Services / Web Services API",
+      "verification": "SOURCE_VERIFIED",
+      "conditions": [
+        "Published price is not orderable SKU; individual access and limits require confirmation"
+      ]
+    },
+    {
+      "id": "path-web-services-enterprise",
+      "feature_id": "feature-web-services-api",
+      "offer_id": "offer-enterprise",
+      "relation": "INCLUDED_IN_EDITION",
+      "source_id": "source-platform-addons",
+      "source_section": "Integration Services / Web Services API: Included in Enterprise",
+      "verification": "SOURCE_VERIFIED",
+      "conditions": [
+        "Org API enablement and limits require separate validation"
+      ]
+    },
+    {
+      "id": "path-web-services-unlimited",
+      "feature_id": "feature-web-services-api",
+      "offer_id": "offer-unlimited",
+      "relation": "INCLUDED_IN_EDITION",
+      "source_id": "source-platform-addons",
+      "source_section": "Integration Services / Web Services API: Included in Unlimited",
+      "verification": "SOURCE_VERIFIED",
+      "conditions": [
+        "Org API enablement and limits require separate validation"
+      ]
+    },
+    {
+      "id": "path-b2b-catalog-bss-unverified",
+      "feature_id": "feature-b2b-enterprise-catalog",
+      "offer_id": "offer-comms-b2b-bss",
+      "relation": "DOCUMENTED_ELIGIBILITY",
+      "source_id": "source-user-note",
+      "source_section": "FEATURE_LICENSE_MAPPING.md / Example 2",
+      "verification": "UNVERIFIED",
+      "conditions": [
+        "User note only; commercial entitlement and add-on eligibility require official verification"
+      ]
+    }
+  ],
+  "sku_records": [],
+  "license_types": [
+    "COMMERCIAL_OFFER",
+    "ORDERABLE_SKU",
+    "USER_LICENSE",
+    "PERMISSION_SET_LICENSE",
+    "FEATURE_LICENSE",
+    "PERMISSION_SET",
+    "ORG_FEATURE",
+    "CONSUMPTION_METER"
+  ]
+}

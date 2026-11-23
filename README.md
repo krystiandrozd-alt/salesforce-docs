@@ -35,7 +35,7 @@ These are reproduced **in full**, not condensed, per explicit instruction — in
 
 ## Roadmap
 
-The link catalog covers all 54 current `llms.txt` sections. Later work stays inside that shape:
+The link catalog covers every section currently listed in `llms.txt`. Later work stays inside that shape:
 
 1. **Stay current with the live index.** Re-run [`scripts/refresh_from_llms.py`](scripts/refresh_from_llms.py) when Salesforce adds or retires a product section. A new section gets its own folder. A section that leaves `llms.txt` stays in the tree as an archived snapshot.
 2. **Deepen the ten largest syntheses.** Each `content.md` is a short overview taken from that index's own overview text. The next writing pass is a cited synthesis of the ten largest indexes: `product-docs`, `commerce-cloud`, `data-cloud`, `industries`, `platform-field-ref`, `platform-apex`, `platform`, `service-cloud`, `platform-obj-meta-tool`, and `marketing-cloud`. Page text stays on the official docs.

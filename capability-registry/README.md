@@ -23,6 +23,13 @@ A published delivery skill stays `executable=UNKNOWN` and `entitled=UNKNOWN`. An
 | Headless / Claudeforce catalog | `krystiandrozd-alt/headless-toolkit` | Not readable in this run |
 | Commercial offers and prices | Pricing Intelligence feature branches | Pointer only, not re-verified |
 | Delivery skill text | `forcedotcom/sf-skills` | One skill file read at commit `b09f91fe832e19b1f8c5eddd3bfb418640d997b4` |
+| TM Forum Open APIs | `tmforum-apis` | README plus org listing. Specification files not read |
+| Diagramforce skill | `MateuszDabrowski/diagramforce` | `cowork-skill/diagramforce/SKILL.md` at commit `19447f2c6ec5d8d6dfabfc11d0ef3a0bd92486fe` |
+| Tableau Next | `forcedotcom/sf-skills` | `tableau-next-asset-create` version 1.1 |
+| Tableau plugin | `tableau/tableau-plugin` | README plus seven skill folder names. Skill files not opened |
+| MuleSoft | `mulesoft/mulesoft-dx` | Skill folder names. No `SKILL.md` opened |
+| Experience Cloud | `forcedotcom/sf-skills` | Plugins `experience-cms`, `experience-lwc`, `experience-react`. Skill files not opened |
+| Slack | `forcedotcom/sf-skills` | `service-itsm-slack-itservice-configure` version 1.0. No Slack-company skill catalog found |
 
 Existing synthetic resolver fixtures stay fictional. This registry does not promote them.
 

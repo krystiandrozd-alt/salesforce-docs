@@ -5,12 +5,23 @@
   "providers": [
     {"id": "provider-salesforce", "display_name": "Salesforce"},
     {"id": "provider-microsoft", "display_name": "Microsoft"},
-    {"id": "provider-anthropic", "display_name": "Anthropic"}
+    {"id": "provider-anthropic", "display_name": "Anthropic"},
+    {"id": "provider-tmforum", "display_name": "TM Forum"},
+    {"id": "provider-diagramforce", "display_name": "Diagramforce"},
+    {"id": "provider-tableau", "display_name": "Tableau"},
+    {"id": "provider-mulesoft", "display_name": "MuleSoft"}
   ],
   "products": [
     {"id": "product-salesforce-platform", "provider_id": "provider-salesforce", "display_name": "Salesforce platform", "vendor_product_id": null},
     {"id": "product-microsoft-365-copilot", "provider_id": "provider-microsoft", "display_name": "Microsoft 365 Copilot", "vendor_product_id": null},
-    {"id": "product-anthropic-claude", "provider_id": "provider-anthropic", "display_name": "Claude", "vendor_product_id": null}
+    {"id": "product-anthropic-claude", "provider_id": "provider-anthropic", "display_name": "Claude", "vendor_product_id": null},
+    {"id": "product-tmforum-open-apis", "provider_id": "provider-tmforum", "display_name": "TM Forum Open APIs", "vendor_product_id": null},
+    {"id": "product-diagramforce", "provider_id": "provider-diagramforce", "display_name": "Diagramforce", "vendor_product_id": null},
+    {"id": "product-tableau-next", "provider_id": "provider-salesforce", "display_name": "Tableau Next", "vendor_product_id": null},
+    {"id": "product-tableau-plugin", "provider_id": "provider-tableau", "display_name": "Tableau plugin", "vendor_product_id": null},
+    {"id": "product-mulesoft", "provider_id": "provider-mulesoft", "display_name": "MuleSoft", "vendor_product_id": null},
+    {"id": "product-experience-cloud", "provider_id": "provider-salesforce", "display_name": "Experience Cloud", "vendor_product_id": null},
+    {"id": "product-slack-employee-service", "provider_id": "provider-salesforce", "display_name": "Slack for Employee Service", "vendor_product_id": null}
   ],
   "surfaces": [
     {"id": "surface-claudeforce", "provider_id": "provider-anthropic", "display_name": "Claudeforce"},
@@ -52,6 +63,24 @@
       "provider_id": "provider-salesforce",
       "vendor_skill_id": "account-context",
       "classification": "BUSINESS_FUNCTIONAL"
+    },
+    {
+      "id": "skill-diagramforce",
+      "provider_id": "provider-diagramforce",
+      "vendor_skill_id": "diagramforce",
+      "classification": "CUSTOM"
+    },
+    {
+      "id": "skill-tableau-next-asset-create",
+      "provider_id": "provider-salesforce",
+      "vendor_skill_id": "tableau-next-asset-create",
+      "classification": "ANALYTICAL"
+    },
+    {
+      "id": "skill-service-itsm-slack-itservice-configure",
+      "provider_id": "provider-salesforce",
+      "vendor_skill_id": "service-itsm-slack-itservice-configure",
+      "classification": "DEVELOPER_DELIVERY"
     }
   ],
   "skill_versions": [
@@ -72,6 +101,42 @@
       "skill_id": "skill-account-context",
       "version_label": "CATALOG",
       "published": "UNKNOWN",
+      "product_available": "UNKNOWN",
+      "installed": "UNKNOWN",
+      "configured": "UNKNOWN",
+      "authorized": "UNKNOWN",
+      "executable": "UNKNOWN",
+      "entitled": "UNKNOWN"
+    },
+    {
+      "id": "skillver-tableau-next-asset-create-1.1",
+      "skill_id": "skill-tableau-next-asset-create",
+      "version_label": "1.1",
+      "published": "YES",
+      "product_available": "UNKNOWN",
+      "installed": "UNKNOWN",
+      "configured": "UNKNOWN",
+      "authorized": "UNKNOWN",
+      "executable": "UNKNOWN",
+      "entitled": "UNKNOWN"
+    },
+    {
+      "id": "skillver-slack-itservice-configure-1.0",
+      "skill_id": "skill-service-itsm-slack-itservice-configure",
+      "version_label": "1.0",
+      "published": "YES",
+      "product_available": "UNKNOWN",
+      "installed": "UNKNOWN",
+      "configured": "UNKNOWN",
+      "authorized": "UNKNOWN",
+      "executable": "UNKNOWN",
+      "entitled": "UNKNOWN"
+    },
+    {
+      "id": "skillver-diagramforce-unversioned",
+      "skill_id": "skill-diagramforce",
+      "version_label": "UNVERSIONED",
+      "published": "YES",
       "product_available": "UNKNOWN",
       "installed": "UNKNOWN",
       "configured": "UNKNOWN",
@@ -139,6 +204,96 @@
       "original_url": null,
       "retrieved_at": "2026-11-23",
       "retrieval_status": "ABSENT_AT_ONE_PATH"
+    },
+    {
+      "id": "snap-tmforum-open-api-readme-20261123",
+      "repository": "tmforum-apis/Open_Api_And_Data_Model",
+      "resolved_commit": "cf5770b2ecafb2c8ae15a931ae8351fa04db467e",
+      "path": "README.md",
+      "original_url": "https://github.com/tmforum-apis/Open_Api_And_Data_Model/blob/cf5770b2ecafb2c8ae15a931ae8351fa04db467e/README.md",
+      "retrieved_at": "2026-11-23",
+      "retrieval_status": "READ"
+    },
+    {
+      "id": "snap-tmforum-org-search-20261123",
+      "repository": "tmforum-apis",
+      "resolved_commit": null,
+      "path": null,
+      "original_url": "https://github.com/tmforum-apis",
+      "retrieved_at": "2026-11-23",
+      "retrieval_status": "ORG_SEARCH"
+    },
+    {
+      "id": "snap-diagramforce-skill-20261123",
+      "repository": "MateuszDabrowski/diagramforce",
+      "resolved_commit": "19447f2c6ec5d8d6dfabfc11d0ef3a0bd92486fe",
+      "path": "cowork-skill/diagramforce/SKILL.md",
+      "original_url": "https://github.com/MateuszDabrowski/diagramforce/blob/19447f2c6ec5d8d6dfabfc11d0ef3a0bd92486fe/cowork-skill/diagramforce/SKILL.md",
+      "retrieved_at": "2026-11-23",
+      "retrieval_status": "READ"
+    },
+    {
+      "id": "snap-sf-skills-tableau-next-20261123",
+      "repository": "forcedotcom/sf-skills",
+      "resolved_commit": "b09f91fe832e19b1f8c5eddd3bfb418640d997b4",
+      "path": "skills/tableau-next-asset-create/SKILL.md",
+      "original_url": "https://github.com/forcedotcom/sf-skills/blob/b09f91fe832e19b1f8c5eddd3bfb418640d997b4/skills/tableau-next-asset-create/SKILL.md",
+      "retrieved_at": "2026-11-23",
+      "retrieval_status": "READ"
+    },
+    {
+      "id": "snap-tableau-plugin-20261123",
+      "repository": "tableau/tableau-plugin",
+      "resolved_commit": "0864ec2b85a1bcc545227e2769a6196493b31d43",
+      "path": "README.md",
+      "original_url": "https://github.com/tableau/tableau-plugin/blob/0864ec2b85a1bcc545227e2769a6196493b31d43/README.md",
+      "retrieved_at": "2026-11-23",
+      "retrieval_status": "READ"
+    },
+    {
+      "id": "snap-tableau-plugin-skills-20261123",
+      "repository": "tableau/tableau-plugin",
+      "resolved_commit": "0864ec2b85a1bcc545227e2769a6196493b31d43",
+      "path": "src/plugin/skills",
+      "original_url": "https://github.com/tableau/tableau-plugin/tree/0864ec2b85a1bcc545227e2769a6196493b31d43/src/plugin/skills",
+      "retrieved_at": "2026-11-23",
+      "retrieval_status": "DIRECTORY_LIST"
+    },
+    {
+      "id": "snap-mulesoft-dx-skills-20261123",
+      "repository": "mulesoft/mulesoft-dx",
+      "resolved_commit": "12fda215ab79721d65664457b4f765d11233f951",
+      "path": "skills/skills-metadata.yaml",
+      "original_url": "https://github.com/mulesoft/mulesoft-dx/blob/12fda215ab79721d65664457b4f765d11233f951/skills/skills-metadata.yaml",
+      "retrieved_at": "2026-11-23",
+      "retrieval_status": "READ"
+    },
+    {
+      "id": "snap-sf-skills-experience-plugins-20261123",
+      "repository": "forcedotcom/sf-skills",
+      "resolved_commit": "b09f91fe832e19b1f8c5eddd3bfb418640d997b4",
+      "path": "plugins/builder",
+      "original_url": "https://github.com/forcedotcom/sf-skills/tree/b09f91fe832e19b1f8c5eddd3bfb418640d997b4/plugins/builder",
+      "retrieved_at": "2026-11-23",
+      "retrieval_status": "DIRECTORY_LIST"
+    },
+    {
+      "id": "snap-sf-skills-slack-itsm-20261123",
+      "repository": "forcedotcom/sf-skills",
+      "resolved_commit": "b09f91fe832e19b1f8c5eddd3bfb418640d997b4",
+      "path": "skills/service-itsm-slack-itservice-configure/SKILL.md",
+      "original_url": "https://github.com/forcedotcom/sf-skills/blob/b09f91fe832e19b1f8c5eddd3bfb418640d997b4/skills/service-itsm-slack-itservice-configure/SKILL.md",
+      "retrieved_at": "2026-11-23",
+      "retrieval_status": "READ"
+    },
+    {
+      "id": "snap-slack-org-search-20261123",
+      "repository": "slackhq",
+      "resolved_commit": null,
+      "path": null,
+      "original_url": "https://github.com/slackhq",
+      "retrieved_at": "2026-11-23",
+      "retrieval_status": "ORG_SEARCH"
     }
   ],
   "evidence_claims": [
@@ -190,6 +345,76 @@
       "locator": "user profile .claude/skills",
       "supported_fact": "That one local path did not contain the skill file. Other install locations were not scanned, so installation stays unknown.",
       "evidence_status": "UNKNOWN"
+    },
+    {
+      "id": "ev-tmforum-readme-title",
+      "snapshot_id": "snap-tmforum-open-api-readme-20261123",
+      "locator": "README.md title",
+      "supported_fact": "tmforum-apis/Open_Api_And_Data_Model README is titled TM Forum Open API and Datamodel. The file body was empty in this read, so no API operation was copied.",
+      "evidence_status": "VERIFIED"
+    },
+    {
+      "id": "ev-tmforum-org-repos",
+      "snapshot_id": "snap-tmforum-org-search-20261123",
+      "locator": "GitHub org search tmforum-apis",
+      "supported_fact": "The public org lists Open API repositories including TMF620_ProductCatalog, TMF622_ProductOrder, TMF629_CustomerManagement, TMF637_ProductInventory, and TMF641_ServiceOrder. Their specification files were not opened.",
+      "evidence_status": "VERIFIED"
+    },
+    {
+      "id": "ev-diagramforce-skill-published",
+      "snapshot_id": "snap-diagramforce-skill-20261123",
+      "locator": "YAML name",
+      "supported_fact": "MateuszDabrowski/diagramforce publishes skill name diagramforce. The file has no version field. It authors importable diagram JSON for architecture, data models, field mappings, processes, Salesforce Flows, org charts, Gantt charts, and sequence diagrams. It is not a Salesforce, TM Forum, or Claude product entitlement.",
+      "evidence_status": "VERIFIED"
+    },
+    {
+      "id": "ev-tableau-next-skill",
+      "snapshot_id": "snap-sf-skills-tableau-next-20261123",
+      "locator": "YAML name and metadata.version",
+      "supported_fact": "forcedotcom/sf-skills publishes tableau-next-asset-create at metadata version 1.1, domain Tableau Next. The file routes Tableau Next semantic-model, viz, and dashboard work through a Tableau Next MCP server. A connected server was not observed, so availability stays unknown.",
+      "evidence_status": "VERIFIED"
+    },
+    {
+      "id": "ev-tableau-plugin-readme",
+      "snapshot_id": "snap-tableau-plugin-20261123",
+      "locator": "README title and platform table",
+      "supported_fact": "tableau/tableau-plugin is the Tableau plugin source. The README says one payload is built for OpenAI ChatGPT and Codex, Claude apps and Claude Code, and Amazon Quick. Install and authentication were not run.",
+      "evidence_status": "VERIFIED"
+    },
+    {
+      "id": "ev-tableau-plugin-skill-dirs",
+      "snapshot_id": "snap-tableau-plugin-skills-20261123",
+      "locator": "src/plugin/skills directory names",
+      "supported_fact": "The default branch lists skill folders tableau-about, tableau-content-viewer, tableau-dashboard-advisor, tableau-data-app-authoring, tableau-data-quality-sentinel, tableau-viz-critique, and tableau-workbook-authoring. Their SKILL.md files were not opened.",
+      "evidence_status": "VERIFIED"
+    },
+    {
+      "id": "ev-mulesoft-skill-dirs",
+      "snapshot_id": "snap-mulesoft-dx-skills-20261123",
+      "locator": "skills directory and skills/skills-metadata.yaml",
+      "supported_fact": "mulesoft/mulesoft-dx skills/skills-metadata.yaml sets the top-level category default to jtbd. The skills directory lists apply-native-policy-to-instance, apply-policy-to-api-instance, apply-universal-policy, curate-portal-assets, discover-portal-apis, manage-portal-applications, manage-portal-members-and-prospects, manage-portal-user-groups, mule-development, omni-gateway, platform-assistant, push-inventory-collector, request-api-access, run-service-scan-and-view-results, secure-agent, secure-api, secure-mcp-server, and setup-service-scanner. mule-development contains further skill folders including build-mule-integration and upgrade-mule-app. No MuleSoft SKILL.md was opened.",
+      "evidence_status": "VERIFIED"
+    },
+    {
+      "id": "ev-experience-plugins",
+      "snapshot_id": "snap-sf-skills-experience-plugins-20261123",
+      "locator": "plugins/builder directory names",
+      "supported_fact": "forcedotcom/sf-skills plugins/builder contains experience-cms, experience-lwc, and experience-react. A code search reported 59 SKILL.md paths whose names start with experience-. Those skill files were not opened.",
+      "evidence_status": "VERIFIED"
+    },
+    {
+      "id": "ev-slack-itsm-skill",
+      "snapshot_id": "snap-sf-skills-slack-itsm-20261123",
+      "locator": "YAML name, metadata.version, and Scope",
+      "supported_fact": "forcedotcom/sf-skills publishes service-itsm-slack-itservice-configure at metadata version 1.0. The file configures Slack for Employee Service in ITSM, including the EmployeeServiceSlackEnabled preference, Employee Slack Notifications, and a preferred Digital Experience site. That statement is not a Slack product entitlement and the setup was not run.",
+      "evidence_status": "VERIFIED"
+    },
+    {
+      "id": "ev-slack-org-search",
+      "snapshot_id": "snap-slack-org-search-20261123",
+      "locator": "GitHub search slackhq and slackapi",
+      "supported_fact": "Searches of slackhq and slackapi for an agent-skill or plugin catalog did not return one. Repositories such as slack-lints and slack-astra-app are not skill catalogs. No Slack-published SKILL.md was opened.",
+      "evidence_status": "VERIFIED"
     }
   ],
   "relationship_claims": [
@@ -330,6 +555,31 @@
       "id": "gap-commercial-not-reverified",
       "surface_id": null,
       "reason": "Pricing Intelligence IDs stay on their own branch. Unknown price is not free and unknown entitlement is not included."
+    },
+    {
+      "id": "gap-tmforum-specs-unread",
+      "surface_id": null,
+      "reason": "TM Forum Open API repository names were listed. Specification files were not read, so no TMF operation is a capability, action, or entitlement."
+    },
+    {
+      "id": "gap-tableau-plugin-skills-unread",
+      "surface_id": null,
+      "reason": "tableau/tableau-plugin skill folder names were listed. Their SKILL.md files were not opened, so those skills stay unpublished in this registry."
+    },
+    {
+      "id": "gap-mulesoft-skills-unread",
+      "surface_id": null,
+      "reason": "mulesoft/mulesoft-dx skill folder names were listed. No MuleSoft SKILL.md was opened, so none is published, available, or entitled here."
+    },
+    {
+      "id": "gap-experience-skills-unread",
+      "surface_id": null,
+      "reason": "Experience Cloud plugin folders and a 59-file skill-name search were recorded. Individual Experience Cloud SKILL.md files were not opened."
+    },
+    {
+      "id": "gap-slack-company-catalog",
+      "surface_id": null,
+      "reason": "No Slack-company agent-skill catalog was found. The only read Slack skill is Salesforce Employee Service setup."
     }
   ]
 }

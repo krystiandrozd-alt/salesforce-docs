@@ -1,0 +1,474 @@
+{
+  "schema_version": "0.1.0",
+  "as_of": "2026-11-23",
+  "region": "US_PUBLIC_PAGES_WITH_EU_VARIANTS_NOT_MERGED",
+  "catalog_status": "PUBLIC_FEATURE_PATHS_NOT_ORDERABLE_SKU_DATABASE",
+  "knowledge_owner": "salesforce-docs/pricing-intelligence",
+  "graph_integration": "solution-intelligence/resolver.py v0.1.0; --graph-fragment emits compatible nodes and claims",
+  "features": [
+    {
+      "id": "sf:feature:tmf-apis",
+      "name": "TMF APIs",
+      "aliases": [
+        "TM Forum APIs",
+        "Communications Data Model & TMF APIs"
+      ],
+      "product_contexts": [
+        "communications"
+      ],
+      "sku_direct_mapping": "UNKNOWN"
+    },
+    {
+      "id": "sf:feature:b2b-enterprise-product-catalog",
+      "name": "Enterprise Product Catalog for B2B Telecommunications",
+      "aliases": [
+        "B2B Enterprise Product Catalog",
+        "B2B EPC",
+        "Enterprise Product Catalog B2B"
+      ],
+      "product_contexts": [
+        "communications"
+      ],
+      "sku_direct_mapping": "UNKNOWN"
+    },
+    {
+      "id": "sf:feature:revenue-cloud-cpq",
+      "name": "CPQ and Subscription Management",
+      "aliases": [
+        "CPQ",
+        "Configure Price Quote",
+        "Configure, Price, Quote",
+        "Revenue Cloud CPQ"
+      ],
+      "product_contexts": [
+        "sales",
+        "revenue"
+      ],
+      "sku_direct_mapping": "UNKNOWN"
+    },
+    {
+      "id": "sf:feature:web-services-api",
+      "name": "Web Services API",
+      "aliases": [
+        "Salesforce API access",
+        "API Access"
+      ],
+      "product_contexts": [
+        "sales",
+        "service",
+        "platform",
+        "ai-app-dev"
+      ],
+      "sku_direct_mapping": "UNKNOWN"
+    }
+  ],
+  "offers": [
+    {
+      "id": "sf:offer:communications-growth",
+      "name": "Communications Cloud Growth",
+      "offer_type": "EDITION",
+      "product_contexts": [
+        "communications"
+      ],
+      "sku_status": "UNVERIFIED",
+      "orderable_sku": null
+    },
+    {
+      "id": "sf:offer:communications-advanced",
+      "name": "Communications Cloud Advanced",
+      "offer_type": "EDITION",
+      "product_contexts": [
+        "communications"
+      ],
+      "sku_status": "UNVERIFIED",
+      "orderable_sku": null
+    },
+    {
+      "id": "sf:offer:communications-b2b-bss-suite",
+      "name": "Communications Cloud B2B BSS Suite",
+      "offer_type": "ADD_ON",
+      "product_contexts": [
+        "communications"
+      ],
+      "sku_status": "UNVERIFIED",
+      "orderable_sku": null
+    },
+    {
+      "id": "sf:offer:revenue-growth",
+      "name": "Revenue Cloud Growth",
+      "offer_type": "ADD_ON_LISTING",
+      "product_contexts": [
+        "sales",
+        "revenue"
+      ],
+      "sku_status": "UNVERIFIED",
+      "orderable_sku": null
+    },
+    {
+      "id": "sf:offer:revenue-advanced",
+      "name": "Revenue Cloud Advanced",
+      "offer_type": "ADD_ON_LISTING",
+      "product_contexts": [
+        "sales",
+        "revenue"
+      ],
+      "sku_status": "UNVERIFIED",
+      "orderable_sku": null
+    },
+    {
+      "id": "sf:offer:professional",
+      "name": "Professional Edition",
+      "offer_type": "EDITION",
+      "product_contexts": [
+        "sales",
+        "platform",
+        "ai-app-dev"
+      ],
+      "sku_status": "UNVERIFIED",
+      "orderable_sku": null
+    },
+    {
+      "id": "sf:offer:pro-suite",
+      "name": "Pro Suite",
+      "offer_type": "EDITION",
+      "product_contexts": [
+        "sales",
+        "platform",
+        "ai-app-dev"
+      ],
+      "sku_status": "UNVERIFIED",
+      "orderable_sku": null
+    },
+    {
+      "id": "sf:offer:enterprise",
+      "name": "Enterprise Edition",
+      "offer_type": "EDITION",
+      "product_contexts": [
+        "sales",
+        "service",
+        "platform",
+        "ai-app-dev"
+      ],
+      "sku_status": "UNVERIFIED",
+      "orderable_sku": null
+    },
+    {
+      "id": "sf:offer:unlimited",
+      "name": "Unlimited Edition",
+      "offer_type": "EDITION",
+      "product_contexts": [
+        "sales",
+        "service",
+        "platform",
+        "ai-app-dev"
+      ],
+      "sku_status": "UNVERIFIED",
+      "orderable_sku": null
+    },
+    {
+      "id": "sf:offer:web-services-api-addon",
+      "name": "Web Services API add-on",
+      "offer_type": "ADD_ON",
+      "product_contexts": [
+        "sales",
+        "service",
+        "platform",
+        "ai-app-dev"
+      ],
+      "sku_status": "UNVERIFIED",
+      "orderable_sku": null
+    }
+  ],
+  "addons": [
+    {
+      "offer_id": "sf:offer:communications-b2b-bss-suite",
+      "availability": "AVAILABLE_FOR_PURCHASE_IN_EDITION_MATRIX",
+      "sku_status": "UNVERIFIED",
+      "edition_eligibility": "VERIFY_MATRIX_BY_DATE"
+    },
+    {
+      "offer_id": "sf:offer:revenue-growth",
+      "availability": "SOLD_AS_SEPARATE_ADD_ON_PER_PUBLIC_PAGE",
+      "sku_status": "UNVERIFIED",
+      "edition_eligibility": "UNKNOWN_CONTRACT_DEPENDENT"
+    },
+    {
+      "offer_id": "sf:offer:revenue-advanced",
+      "availability": "SOLD_AS_SEPARATE_ADD_ON_PER_PUBLIC_PAGE",
+      "sku_status": "UNVERIFIED",
+      "edition_eligibility": "UNKNOWN_CONTRACT_DEPENDENT"
+    },
+    {
+      "offer_id": "sf:offer:web-services-api-addon",
+      "availability": "AVAILABLE_FOR_PURCHASE_ON_PROFESSIONAL",
+      "sku_status": "UNVERIFIED",
+      "edition_eligibility": "PROFESSIONAL; PRO_SUITE_REVIEW_REQUIRED"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf:src:communications",
+      "url": "https://www.salesforce.com/communications/pricing/",
+      "section": "Communications Cloud Growth / Advanced; B2B BSS Suite; feature comparison",
+      "observed_at": "2026-11-23",
+      "authority": "OFFICIAL_PUBLIC",
+      "verification": "PUBLIC_PAGE_OBSERVED_NOT_CONTRACT",
+      "comment": "Site can render changing USD list prices and tier names."
+    },
+    {
+      "id": "sf:src:revenue",
+      "url": "https://www.salesforce.com/sales/revenue-lifecycle-management/revenue-optimization-pricing/",
+      "section": "Revenue Cloud Growth / Advanced",
+      "observed_at": "2026-11-23",
+      "authority": "OFFICIAL_PUBLIC",
+      "verification": "PUBLIC_PAGE_OBSERVED_NOT_CONTRACT",
+      "comment": "Public add-on presentation; no verified SKU."
+    },
+    {
+      "id": "sf:src:sales-addons",
+      "url": "https://www.salesforce.com/sales/pricing/add-ons/",
+      "section": "Revenue Cloud Growth / Revenue Cloud Advanced",
+      "observed_at": "2026-11-23",
+      "authority": "OFFICIAL_PUBLIC",
+      "verification": "PUBLIC_PAGE_OBSERVED_NOT_CONTRACT",
+      "comment": "Check base edition eligibility on quote."
+    },
+    {
+      "id": "sf:src:platform-addons",
+      "url": "https://www.salesforce.com/platform/pricing-add-ons/",
+      "section": "Web Services API",
+      "observed_at": "2026-11-23",
+      "authority": "OFFICIAL_PUBLIC",
+      "verification": "PUBLIC_PAGE_OBSERVED_NOT_CONTRACT",
+      "comment": "Matrix can vary by edition and page version."
+    },
+    {
+      "id": "sf:src:api-help",
+      "url": "https://help.salesforce.com/s/articleView?id=000005140&language=en_US&type=1",
+      "section": "Salesforce editions with API access",
+      "observed_at": "2026-11-23",
+      "authority": "OFFICIAL_PUBLIC",
+      "verification": "PUBLIC_PAGE_OBSERVED_NOT_CONTRACT",
+      "comment": "Professional may require paid API add-on; validate actual org limits."
+    },
+    {
+      "id": "sf:src:revenue-help",
+      "url": "https://help.salesforce.com/s/articleView?id=ind.revenue_licenses_areas_and_features.htm&language=en_US&type=5",
+      "section": "Revenue Cloud License Comparison",
+      "observed_at": "2026-11-23",
+      "authority": "OFFICIAL_PUBLIC",
+      "verification": "PUBLIC_PAGE_OBSERVED_NOT_CONTRACT",
+      "comment": "Functional areas vary by Revenue Cloud license."
+    }
+  ],
+  "feature_entitlement_paths": [
+    {
+      "id": "sf:path:tmf-growth",
+      "feature_id": "sf:feature:tmf-apis",
+      "relation": "INCLUDED_IN_EDITION",
+      "offer_id": "sf:offer:communications-growth",
+      "source_id": "sf:src:communications",
+      "source_section": "Communications Cloud Growth",
+      "applicable_editions": [],
+      "evidence_status": "PUBLIC_PAGE_OBSERVED",
+      "scope": "PUBLIC_MARKETING",
+      "sku_status": "UNVERIFIED",
+      "technical_entitlement_status": "UNKNOWN",
+      "notes": ""
+    },
+    {
+      "id": "sf:path:tmf-advanced",
+      "feature_id": "sf:feature:tmf-apis",
+      "relation": "INCLUDED_IN_EDITION",
+      "offer_id": "sf:offer:communications-advanced",
+      "source_id": "sf:src:communications",
+      "source_section": "Communications Cloud Advanced includes Growth",
+      "applicable_editions": [],
+      "evidence_status": "PUBLIC_PAGE_OBSERVED",
+      "scope": "PUBLIC_MARKETING",
+      "sku_status": "UNVERIFIED",
+      "technical_entitlement_status": "UNKNOWN",
+      "notes": "Marketing inheritance, not independent proof of API endpoints, call limits or technical rights."
+    },
+    {
+      "id": "sf:path:epc-bss",
+      "feature_id": "sf:feature:b2b-enterprise-product-catalog",
+      "relation": "AVAILABLE_AS_ADDON",
+      "offer_id": "sf:offer:communications-b2b-bss-suite",
+      "source_id": "sf:src:communications",
+      "source_section": "Communications Cloud B2B BSS Suite",
+      "applicable_editions": [],
+      "evidence_status": "PUBLIC_PAGE_OBSERVED",
+      "scope": "PUBLIC_MARKETING",
+      "sku_status": "UNVERIFIED",
+      "technical_entitlement_status": "UNKNOWN",
+      "notes": "Page says add ordering and enterprise product catalog capabilities. Specific eligibility per edition and SKU remain unknown."
+    },
+    {
+      "id": "sf:path:cpq-revenue-growth",
+      "feature_id": "sf:feature:revenue-cloud-cpq",
+      "relation": "AVAILABLE_AS_ADDON",
+      "offer_id": "sf:offer:revenue-growth",
+      "source_id": "sf:src:revenue",
+      "source_section": "Revenue Cloud Growth — streamlined CPQ and subscription management",
+      "applicable_editions": [],
+      "evidence_status": "PUBLIC_PAGE_OBSERVED",
+      "scope": "PUBLIC_MARKETING",
+      "sku_status": "UNVERIFIED",
+      "technical_entitlement_status": "UNKNOWN",
+      "notes": "Do not equate with Communications Industries CPQ or Salesforce CPQ legacy."
+    },
+    {
+      "id": "sf:path:cpq-revenue-advanced",
+      "feature_id": "sf:feature:revenue-cloud-cpq",
+      "relation": "DOCUMENTED_ELIGIBILITY",
+      "offer_id": "sf:offer:revenue-advanced",
+      "source_id": "sf:src:revenue-help",
+      "source_section": "Revenue Cloud Advanced License comparison",
+      "applicable_editions": [],
+      "evidence_status": "REVIEW_REQUIRED",
+      "scope": "PUBLIC_MARKETING",
+      "sku_status": "UNVERIFIED",
+      "technical_entitlement_status": "UNKNOWN",
+      "notes": "Exact advanced CPQ functional scope and purchase route require verification, not inferred from the product name."
+    },
+    {
+      "id": "sf:path:api-professional",
+      "feature_id": "sf:feature:web-services-api",
+      "relation": "AVAILABLE_AS_ADDON",
+      "offer_id": "sf:offer:web-services-api-addon",
+      "source_id": "sf:src:api-help",
+      "source_section": "Professional Edition API access",
+      "applicable_editions": [
+        "sf:offer:professional"
+      ],
+      "evidence_status": "PUBLIC_PAGE_OBSERVED",
+      "scope": "PUBLIC_MARKETING",
+      "sku_status": "UNVERIFIED",
+      "technical_entitlement_status": "UNKNOWN",
+      "notes": "Professional Edition: API not included by default and can be purchased."
+    },
+    {
+      "id": "sf:path:api-pro-suite",
+      "feature_id": "sf:feature:web-services-api",
+      "relation": "AVAILABLE_AS_ADDON",
+      "offer_id": "sf:offer:web-services-api-addon",
+      "source_id": "sf:src:platform-addons",
+      "source_section": "Web Services API / Pro Suite",
+      "applicable_editions": [
+        "sf:offer:pro-suite"
+      ],
+      "evidence_status": "REVIEW_REQUIRED",
+      "scope": "PUBLIC_MARKETING",
+      "sku_status": "UNVERIFIED",
+      "technical_entitlement_status": "UNKNOWN",
+      "notes": "Pro Suite row needs independently verified edition matrix and contract eligibility."
+    },
+    {
+      "id": "sf:path:api-enterprise",
+      "feature_id": "sf:feature:web-services-api",
+      "relation": "INCLUDED_IN_EDITION",
+      "offer_id": "sf:offer:enterprise",
+      "source_id": "sf:src:api-help",
+      "source_section": "Salesforce editions with API access",
+      "applicable_editions": [],
+      "evidence_status": "PUBLIC_PAGE_OBSERVED",
+      "scope": "PUBLIC_MARKETING",
+      "sku_status": "UNVERIFIED",
+      "technical_entitlement_status": "UNKNOWN",
+      "notes": "Edition-level API availability does not validate per-org API limits or permission."
+    },
+    {
+      "id": "sf:path:api-unlimited",
+      "feature_id": "sf:feature:web-services-api",
+      "relation": "INCLUDED_IN_EDITION",
+      "offer_id": "sf:offer:unlimited",
+      "source_id": "sf:src:api-help",
+      "source_section": "Salesforce editions with API access",
+      "applicable_editions": [],
+      "evidence_status": "PUBLIC_PAGE_OBSERVED",
+      "scope": "PUBLIC_MARKETING",
+      "sku_status": "UNVERIFIED",
+      "technical_entitlement_status": "UNKNOWN",
+      "notes": "Edition-level API availability does not validate per-org API limits or permission."
+    }
+  ],
+  "offer_observations": [
+    {
+      "id": "sf:obs:comms-bss",
+      "offer_id": "sf:offer:communications-b2b-bss-suite",
+      "source_id": "sf:src:communications",
+      "statement": "From $4,000,000 USD/org/year, enterprise catalog and ordering",
+      "observed_at": "2026-11-23",
+      "status": "PUBLIC_OBSERVATION_NEEDS_COMMERCIAL_REVIEW"
+    },
+    {
+      "id": "sf:obs:comms-tiers-variant",
+      "offer_id": "sf:offer:communications-growth",
+      "source_id": "sf:src:communications",
+      "statement": "Public variants differ ($325 vs $300 USD/user/month); no current price selected",
+      "observed_at": "2026-11-23",
+      "status": "CONFLICTED_TEMPORAL_OR_VARIANT"
+    }
+  ],
+  "price_observations": [
+    {
+      "id": "sf:price:bss-public-usd",
+      "offer_id": "sf:offer:communications-b2b-bss-suite",
+      "amount": 4000000,
+      "currency": "USD",
+      "unit": "ORG",
+      "unit_quantity": 1,
+      "display_period": "YEAR",
+      "qualifier": "FROM",
+      "source_id": "sf:src:communications",
+      "source_section": "Communications Cloud B2B BSS Suite",
+      "observed_at": "2026-11-23",
+      "verification": "REVIEW_REQUIRED",
+      "billable_quote_status": "NOT_CONFIRMED"
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "sf:conflict:comms-tier-prices",
+      "status": "UNRESOLVED",
+      "notes": "Pricing page variants show 325/475 and 300/450 USD/user/month; no timeless list price."
+    },
+    {
+      "id": "sf:conflict:bss-currency",
+      "status": "REVIEW_REQUIRED",
+      "notes": "This US public page states USD 4m/org/year; historical EU seed separately records EUR 4m. Keep region-specific observations distinct."
+    }
+  ],
+  "sku_records": [],
+  "license_types": [
+    {
+      "id": "commercial_offer",
+      "definition": "Edition, bundle or add-on marketed by Salesforce; not necessarily an orderable SKU."
+    },
+    {
+      "id": "orderable_sku",
+      "definition": "Order Form / price book orderable code; never inferred from marketing."
+    },
+    {
+      "id": "user_license",
+      "definition": "Salesforce UserLicense assigned to a user in an org."
+    },
+    {
+      "id": "permission_set_license",
+      "definition": "Salesforce PermissionSetLicense (PSL), not the same as a purchased SKU."
+    },
+    {
+      "id": "feature_license",
+      "definition": "Salesforce FeatureLicense, if applicable."
+    },
+    {
+      "id": "permission_set",
+      "definition": "Permission Set assignment or permissions, not a commercial license."
+    },
+    {
+      "id": "usage_entitlement",
+      "definition": "Metered capacity or credits; contract-specific."
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Salesforce feature entitlement public evidence graph",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "as_of",
+    "scope",
+    "features",
+    "offers",
+    "sources",
+    "feature_entitlement_paths",
+    "sku_records",
+    "license_types"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string",
+      "format": "date"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "url",
+          "type",
+          "checked_on"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "type": {
+            "type": "string"
+          },
+          "checked_on": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      }
+    },
+    "offers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "type",
+          "product"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "EDITION",
+              "ORG_SUITE",
+              "ADDON",
+              "CREDIT_PACK",
+              "CONSUMPTION"
+            ]
+          },
+          "product": {
+            "type": "string"
+          },
+          "billing": {
+            "type": "object",
+            "required": [
+              "unit",
+              "display_period",
+              "billing_cadence"
+            ]
+          }
+        }
+      }
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "aliases",
+          "product",
+          "technical_license_status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "product": {
+            "type": "string"
+          },
+          "technical_license_status": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "feature_entitlement_paths": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "feature_id",
+          "offer_id",
+          "relation",
+          "source_id",
+          "source_section",
+          "verification"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "feature_id": {
+            "type": "string"
+          },
+          "offer_id": {
+            "type": "string"
+          },
+          "relation": {
+            "enum": [
+              "INCLUDED_IN_EDITION",
+              "AVAILABLE_AS_ADDON",
+              "DOCUMENTED_ELIGIBILITY",
+              "REQUIRES",
+              "INCOMPATIBLE_WITH"
+            ]
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "source_section": {
+            "type": "string",
+            "minLength": 1
+          },
+          "verification": {
+            "enum": [
+              "SOURCE_VERIFIED",
+              "UNVERIFIED",
+              "INFERRED",
+              "CONFLICTED"
+            ]
+          }
+        }
+      }
+    },
+    "sku_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "offer_id",
+          "actual_sku",
+          "verification",
+          "official_evidence"
+        ]
+      }
+    },
+    "license_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

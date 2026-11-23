@@ -210,3 +210,9 @@ Use **[prompts/build-graph.md](prompts/build-graph.md)** in Claude Code or anoth
 - Track product rename/deprecation with identity-stable IDs and historical aliases.
 - Respect crawling limits, site terms, and public-page copyright; retain factual extraction and citations rather than reproducing full proprietary tables verbatim.
 - Escalate contested commercial and legal interpretations to Salesforce account team.
+
+## 11. Feature → Entitlement → SKU resolver pilot (2026-11-23)
+
+The bounded, executable feature licensing pilot now lives in [feature_license_resolver.py](feature_license_resolver.py), with [verified/unknown feature paths](data/feature-entitlements-2026-11-23.json), [schema](schema/feature-entitlements.schema.json), [tests](tests/test_feature_license_resolver.py) and [runbook](docs/feature-license-mapping.md). It distinguishes inclusion vs optional add-on, allows private customer inventory comparisons, returns explicit evidence/status, and never guesses SKU codes. Coverage is deliberately 5 features / 10 offers / 8 paths / **0 verified SKU codes**. This does **not** complete the full graph/crawler/contract work described above.
+
+Run: `python pricing-intelligence/feature_license_resolver.py --feature "TMF APIs" --product communications --edition "Communications Cloud Advanced"`.

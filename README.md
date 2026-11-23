@@ -33,6 +33,15 @@ Every product-specific `llms-*.txt` section now has its own folder here. See [`s
 
 These are reproduced **in full**, not condensed, per explicit instruction — including `product-docs`, the largest single index.
 
+## Roadmap
+
+The link catalog covers all 54 current `llms.txt` sections. Later work stays inside that shape:
+
+1. **Stay current with the live index.** Re-run [`scripts/refresh_from_llms.py`](scripts/refresh_from_llms.py) when Salesforce adds or retires a product section. A new section gets its own folder. A section that leaves `llms.txt` stays in the tree as an archived snapshot.
+2. **Deepen the ten largest syntheses.** Each `content.md` is a short overview taken from that index's own overview text. The next writing pass is a cited synthesis of the ten largest indexes: `product-docs`, `commerce-cloud`, `data-cloud`, `industries`, `platform-field-ref`, `platform-apex`, `platform`, `service-cloud`, `platform-obj-meta-tool`, and `marketing-cloud`. Page text stays on the official docs.
+3. **Fill empty product descriptions.** Connect REST, Data Loader, GraphQL API, Platform, and Platform Package Exchange have no overview text in the source index. Those rows pick up the official description when Salesforce publishes one.
+4. **Keep the headless areas as link catalogs.** Deeper writing for `headless-experience-layer`, `headless-three-sixty`, `hosted-mcp-servers`, and `multi-framework` lives in [headless-toolkit](https://github.com/krystiandrozd-alt/headless-toolkit).
+
 ## Source
 
 All entries trace back to `developer.salesforce.com/docs/llms-*.txt` and the pages they link to. Captured starting 2026-10-24. Last refreshed 2026-11-06 with [`scripts/refresh_from_llms.py`](scripts/refresh_from_llms.py).

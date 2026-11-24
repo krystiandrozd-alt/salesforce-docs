@@ -1,0 +1,219 @@
+# EU pricing hub source registry.
+# Discovery page read 2026-11-23: https://www.salesforce.com/eu/pricing/
+# Scope: every product under "Explore products by role", plus Communications only
+# from "Explore products by industry". Other industries are listed as out of scope.
+# This file stores navigation facts. It does not store prices, SKUs, or entitlements.
+# A pricing page not opened in this run stays NOT_OPENED. A seed id means the same
+# URL was recorded on 2026-11-22. That is not a fresh page read.
+version: "0.1.0"
+as_of: "2026-11-23"
+region: EU
+status: NAVIGATION_INDEX_NOT_PRICE_BOOK
+discovery:
+  id: sf-hub
+  url: https://www.salesforce.com/eu/pricing/
+  observed_at: "2026-11-23"
+  type: OFFICIAL_NAVIGATION_INDEX
+  retrieval_status: READ
+  page_modified_date_on_page: "2026-09-29"
+
+products:
+  - id: product-agentforce
+    name: Agentforce
+    branch: role
+    url: https://www.salesforce.com/eu/agentforce/pricing/
+    source_type: OFFICIAL_PRODUCT_PRICING
+    hub_link_status: READ
+    page_status: NOT_OPENED
+    prior_seed_source_id: sf-agentforce
+    prior_seed_observed_at: "2026-11-22"
+  - id: product-small-business
+    name: Small Business
+    branch: role
+    url: https://www.salesforce.com/eu/small-business/pricing/
+    source_type: OFFICIAL_PRODUCT_PRICING
+    hub_link_status: READ
+    page_status: NOT_OPENED
+    prior_seed_source_id: null
+    prior_seed_observed_at: null
+  - id: product-sales-cloud
+    name: Sales Cloud
+    branch: role
+    url: https://www.salesforce.com/eu/sales/pricing/
+    source_type: OFFICIAL_PRODUCT_PRICING
+    hub_link_status: READ
+    page_status: NOT_OPENED
+    prior_seed_source_id: sf-sales
+    prior_seed_observed_at: "2026-11-22"
+  - id: product-service-cloud
+    name: Service Cloud
+    branch: role
+    url: https://www.salesforce.com/eu/service/pricing/
+    source_type: OFFICIAL_PRODUCT_PRICING
+    hub_link_status: READ
+    page_status: NOT_OPENED
+    prior_seed_source_id: null
+    prior_seed_observed_at: null
+  - id: product-marketing-cloud
+    name: Marketing Cloud
+    branch: role
+    url: https://www.salesforce.com/eu/marketing/pricing/
+    source_type: OFFICIAL_PRODUCT_PRICING
+    hub_link_status: READ
+    page_status: NOT_OPENED
+    prior_seed_source_id: sf-marketing
+    prior_seed_observed_at: "2026-11-22"
+  - id: product-commerce-cloud
+    name: Commerce Cloud
+    branch: role
+    url: https://www.salesforce.com/eu/commerce/pricing/
+    source_type: OFFICIAL_PRODUCT_PRICING
+    hub_link_status: READ
+    page_status: NOT_OPENED
+    prior_seed_source_id: null
+    prior_seed_observed_at: null
+  - id: product-ai-app-dev
+    name: AI App Dev
+    branch: role
+    url: https://www.salesforce.com/eu/platform/enterprise-app-development/pricing/
+    source_type: OFFICIAL_PRODUCT_PRICING
+    hub_link_status: READ
+    page_status: NOT_OPENED
+    prior_seed_source_id: null
+    prior_seed_observed_at: null
+  - id: product-data-security-privacy
+    name: Data Security & Privacy
+    branch: role
+    url: https://www.salesforce.com/eu/platform/cloud-data-security/pricing/
+    source_type: OFFICIAL_PRODUCT_PRICING
+    hub_link_status: READ
+    page_status: NOT_OPENED
+    prior_seed_source_id: null
+    prior_seed_observed_at: null
+  - id: product-crm
+    name: CRM
+    branch: role
+    url: https://www.salesforce.com/eu/crm/pricing/
+    source_type: OFFICIAL_PRODUCT_PRICING
+    hub_link_status: READ
+    page_status: NOT_OPENED
+    prior_seed_source_id: null
+    prior_seed_observed_at: null
+  - id: product-einstein-ai
+    name: Einstein AI
+    branch: role
+    url: null
+    contact_url: https://www.salesforce.com/eu/artificial-intelligence/
+    source_type: CONTACT_SALES
+    hub_link_status: READ
+    page_status: NO_PRICING_PAGE
+    prior_seed_source_id: null
+    prior_seed_observed_at: null
+  - id: product-data-360
+    name: Data 360
+    branch: role
+    url: https://www.salesforce.com/eu/data/pricing/
+    source_type: OFFICIAL_PRODUCT_PRICING
+    hub_link_status: READ
+    page_status: NOT_OPENED
+    prior_seed_source_id: sf-data360
+    prior_seed_observed_at: "2026-11-22"
+  - id: product-informatica
+    name: Informatica
+    branch: role
+    url: https://www.informatica.com/products/cloud-integration/pricing.html
+    source_type: EXTERNAL_VENDOR_PRICING
+    hub_link_status: READ
+    page_status: NOT_OPENED
+    prior_seed_source_id: null
+    prior_seed_observed_at: null
+  - id: product-slack
+    name: Slack
+    branch: role
+    url: https://www.salesforce.com/eu/slack/pricing/
+    source_type: OFFICIAL_PRODUCT_PRICING
+    hub_link_status: READ
+    page_status: NOT_OPENED
+    prior_seed_source_id: null
+    prior_seed_observed_at: null
+  - id: product-analytics
+    name: Analytics
+    branch: role
+    url: https://www.salesforce.com/eu/analytics/pricing/
+    source_type: OFFICIAL_PRODUCT_PRICING
+    hub_link_status: READ
+    page_status: NOT_OPENED
+    prior_seed_source_id: null
+    prior_seed_observed_at: null
+  - id: product-mulesoft
+    name: MuleSoft
+    branch: role
+    url: https://www.salesforce.com/eu/mulesoft/pricing/
+    source_type: OFFICIAL_PRODUCT_PRICING
+    hub_link_status: READ
+    page_status: NOT_OPENED
+    prior_seed_source_id: null
+    prior_seed_observed_at: null
+  - id: product-net-zero
+    name: Net Zero
+    branch: role
+    url: https://www.salesforce.com/eu/net-zero/pricing/
+    source_type: OFFICIAL_PRODUCT_PRICING
+    hub_link_status: READ
+    page_status: NOT_OPENED
+    prior_seed_source_id: null
+    prior_seed_observed_at: null
+  - id: product-customer-success
+    name: Customer Success
+    branch: role
+    url: https://www.salesforce.com/eu/services/pricing/
+    source_type: OFFICIAL_PRODUCT_PRICING
+    hub_link_status: READ
+    page_status: NOT_OPENED
+    prior_seed_source_id: null
+    prior_seed_observed_at: null
+  - id: product-heroku
+    name: Heroku
+    branch: role
+    url: https://www.salesforce.com/eu/heroku/pricing/
+    source_type: OFFICIAL_PRODUCT_PRICING
+    hub_link_status: READ
+    page_status: NOT_OPENED
+    prior_seed_source_id: null
+    prior_seed_observed_at: null
+  - id: product-communications
+    name: Communications
+    branch: industry
+    url: https://www.salesforce.com/eu/communications/pricing/
+    source_type: OFFICIAL_INDUSTRY_PRICING
+    hub_link_status: READ
+    page_status: NOT_OPENED
+    prior_seed_source_id: sf-comms
+    prior_seed_observed_at: "2026-11-22"
+
+out_of_scope:
+  reason: "Industry branch limited to Communications for this registry."
+  industries:
+    - {name: Automotive, url: https://www.salesforce.com/eu/automotive/pricing/, hub_link_status: SEEN_EXCLUDED}
+    - {name: Construction & Real Estate, url: null, hub_link_status: SEEN_EXCLUDED, note: CONTACT_SALES}
+    - {name: Consumer Goods, url: https://www.salesforce.com/eu/consumer-goods/pricing/, hub_link_status: SEEN_EXCLUDED}
+    - {name: Education, url: https://www.salesforce.com/eu/education/pricing/, hub_link_status: SEEN_EXCLUDED}
+    - {name: Energy & Utilities, url: https://www.salesforce.com/eu/energy-utilities/cloud/pricing/, hub_link_status: SEEN_EXCLUDED}
+    - {name: Financial Services, url: https://www.salesforce.com/eu/financial-services/pricing/, hub_link_status: SEEN_EXCLUDED}
+    - {name: Healthcare & Life Sciences, url: https://www.salesforce.com/eu/healthcare/cloud/pricing/, hub_link_status: SEEN_EXCLUDED}
+    - {name: Manufacturing, url: https://www.salesforce.com/eu/manufacturing/cloud/pricing/, hub_link_status: SEEN_EXCLUDED}
+    - {name: Media, url: https://www.salesforce.com/eu/media/cloud/pricing/, hub_link_status: SEEN_EXCLUDED}
+    - {name: Nonprofit, url: https://www.salesforce.com/eu/nonprofit/pricing/, hub_link_status: SEEN_EXCLUDED}
+    - {name: Professional Services, url: null, hub_link_status: SEEN_EXCLUDED, note: CONTACT_SALES}
+    - {name: Public Sector, url: https://www.salesforce.com/eu/government/pricing/, hub_link_status: SEEN_EXCLUDED}
+    - {name: Retail, url: null, hub_link_status: SEEN_EXCLUDED, note: CONTACT_SALES}
+    - {name: Technology, url: null, hub_link_status: SEEN_EXCLUDED, note: CONTACT_SALES}
+    - {name: Travel, Transportation, & Hospitality, url: null, hub_link_status: SEEN_EXCLUDED, note: CONTACT_SALES}
+
+counts:
+  in_scope: 19
+  role: 18
+  industry: 1
+  pricing_page_not_opened: 18
+  no_pricing_page: 1
+  industries_excluded: 15

@@ -1,5 +1,7 @@
 # Salesforce Developer Documentation — Content Catalog
 
+Public repository: [`krystiandrozd-alt/salesforce-docs`](https://github.com/krystiandrozd-alt/salesforce-docs).
+
 A per-product content catalog built from Salesforce's aggregated [`llms.txt`](https://developer.salesforce.com/docs/llms.txt) index (the `llmstxt.org`-standard list of all 54 product-specific documentation sections under `developer.salesforce.com`).
 
 Designed to be read by an AI assistant (Claude or otherwise) as grounding material: each finished product gets its own folder with an `index.md` (complete page-by-page link list, extracted programmatically from the live source) and a `content.md` (a short synthesis written independently from the source, with citations — not copied prose).

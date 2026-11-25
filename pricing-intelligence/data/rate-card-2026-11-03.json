@@ -1,0 +1,262 @@
+{
+  "schema_version": "0.1.0",
+  "rate_card_version": "2026-11-03",
+  "captured_on": "2026-11-22",
+  "status": "TRANSCRIBED_OFFICIAL_PDF_PENDING_VISUAL_TABLE_CHECK",
+  "source_url": "https://www.salesforce.com/en-us/wp-content/uploads/sites/4/assets/pdf/agentforce/Flex-Credits-Rate-Card-11.3.2026.pdf",
+  "source_note": "Official textual PDF table verified; web PDF screenshot renderer returned cache miss. Recheck table visually before quote use.",
+  "list_price": {
+    "amount": "500",
+    "currency": "EUR",
+    "per_credits": "100000",
+    "region": "EU",
+    "source_url": "https://www.salesforce.com/eu/agentforce/pricing/",
+    "usage_equivalent_only": true
+  },
+  "data360_tier_thresholds_credits": [
+    "300000",
+    "1500000",
+    "12500000"
+  ],
+  "tier_scope": "per_meter_calendar_month_production_only",
+  "rate_meters": {
+    "agentforce-standard-action": {
+      "unit": "action",
+      "unit_size": "1",
+      "production": "20",
+      "sandbox": "16"
+    },
+    "agentforce-custom-action": {
+      "unit": "action",
+      "unit_size": "1",
+      "production": "20",
+      "sandbox": "16"
+    },
+    "agentforce-standard-voice-action": {
+      "unit": "voice_action",
+      "unit_size": "1",
+      "production": "30",
+      "sandbox": "24",
+      "qualification": "some contracts meter voice minutes instead"
+    },
+    "agentforce-custom-voice-action": {
+      "unit": "voice_action",
+      "unit_size": "1",
+      "production": "30",
+      "sandbox": "24",
+      "qualification": "some contracts meter voice minutes instead"
+    },
+    "llm-byo-starter-prompt": {
+      "unit": "prompt",
+      "unit_size": "1",
+      "production": "2",
+      "sandbox": "2",
+      "qualification": "applicable customer contracts only"
+    },
+    "llm-basic-prompt": {
+      "unit": "prompt",
+      "unit_size": "1",
+      "production": "2",
+      "sandbox": "2",
+      "qualification": "applicable customer contracts only"
+    },
+    "llm-standard-prompt": {
+      "unit": "prompt",
+      "unit_size": "1",
+      "production": "4",
+      "sandbox": "4",
+      "qualification": "applicable customer contracts only"
+    },
+    "llm-advanced-prompt": {
+      "unit": "prompt",
+      "unit_size": "1",
+      "production": "16",
+      "sandbox": "16",
+      "qualification": "applicable customer contracts only"
+    },
+    "help-agent-resolution": {
+      "unit": "resolution",
+      "unit_size": "1",
+      "production": "400",
+      "sandbox": "0"
+    },
+    "it-hr-agent-resolution": {
+      "unit": "resolution",
+      "unit_size": "1",
+      "production": "400",
+      "sandbox": "0"
+    },
+    "sales-leads-worked": {
+      "unit": "lead",
+      "unit_size": "1",
+      "production": "400",
+      "sandbox": "320"
+    },
+    "speech-to-text": {
+      "unit": "hour",
+      "unit_size": "1",
+      "production": "150",
+      "sandbox": "150"
+    },
+    "text-to-speech": {
+      "unit": "character",
+      "unit_size": "1000000",
+      "production": "6000",
+      "sandbox": "6000"
+    },
+    "speech-translation": {
+      "unit": "character",
+      "unit_size": "1000000",
+      "production": "4000",
+      "sandbox": "4000"
+    },
+    "personalization-decisioning": {
+      "unit": "decision",
+      "unit_size": "1000",
+      "production": "100",
+      "sandbox": "100"
+    },
+    "slackbot-standard-action": {
+      "unit": "action",
+      "unit_size": "1",
+      "production": "40",
+      "sandbox": null,
+      "qualification": "applies per Slack workspace; sandbox not separately specified"
+    },
+    "slackbot-advanced-action": {
+      "unit": "action",
+      "unit_size": "1",
+      "production": "200",
+      "sandbox": null,
+      "qualification": "applies per Slack workspace; sandbox not separately specified"
+    },
+    "headless-platform-interaction": {
+      "unit": "interaction",
+      "unit_size": "1",
+      "production": null,
+      "sandbox": null,
+      "rate_status": "TBA"
+    },
+    "data360-prep": {
+      "unit": "row",
+      "unit_size": "1000000",
+      "production_tiers": [
+        "40",
+        "32",
+        "16",
+        "8"
+      ],
+      "sandbox": "32"
+    },
+    "data360-unification": {
+      "unit": "row",
+      "unit_size": "1000000",
+      "production_tiers": [
+        "75000",
+        "60000",
+        "30000",
+        "15000"
+      ],
+      "sandbox": "60000"
+    },
+    "data360-segmentation": {
+      "unit": "row",
+      "unit_size": "1000000",
+      "production_tiers": [
+        "50",
+        "40",
+        "20",
+        "10"
+      ],
+      "sandbox": "40"
+    },
+    "data360-activation": {
+      "unit": "row",
+      "unit_size": "1000000",
+      "production_tiers": [
+        "60",
+        "48",
+        "24",
+        "12"
+      ],
+      "sandbox": "48"
+    },
+    "data360-zero-copy-sharing-out": {
+      "unit": "shared_row",
+      "unit_size": "1000000",
+      "production_tiers": [
+        "60",
+        "48",
+        "24",
+        "12"
+      ],
+      "sandbox": "48"
+    },
+    "data360-queries": {
+      "unit": "row",
+      "unit_size": "1000000",
+      "production_tiers": [
+        "3",
+        "2.4",
+        "1.2",
+        "0.6"
+      ],
+      "sandbox": "2.4"
+    },
+    "data360-unstructured-processing": {
+      "unit": "megabyte",
+      "unit_size": "1",
+      "production_tiers": [
+        "150",
+        "120",
+        "60",
+        "30"
+      ],
+      "sandbox": "120"
+    },
+    "data360-intelligent-processing": {
+      "unit": "megabyte",
+      "unit_size": "1",
+      "production_tiers": [
+        "600",
+        "480",
+        "240",
+        "120"
+      ],
+      "sandbox": "480"
+    },
+    "data360-streaming-pipeline": {
+      "unit": "row",
+      "unit_size": "1000000",
+      "production_tiers": [
+        "3500",
+        "2800",
+        "1400",
+        "700"
+      ],
+      "sandbox": "2800"
+    },
+    "data360-real-time-pipeline": {
+      "unit": "combined_event_api_action",
+      "unit_size": "1000000",
+      "production_tiers": [
+        "250000",
+        "200000",
+        "100000",
+        "50000"
+      ],
+      "sandbox": "200000"
+    },
+    "data360-code-extension": {
+      "unit": "compute_unit",
+      "unit_size": "1",
+      "production_tiers": [
+        "40",
+        "32",
+        "16",
+        "8"
+      ],
+      "sandbox": "32"
+    }
+  }
+}

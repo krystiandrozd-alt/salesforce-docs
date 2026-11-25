@@ -1,0 +1,1531 @@
+{
+ "I01": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "chat",
+   "file-deliverable"
+  ],
+  "system": [
+   "data-warehouse"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I02": {
+  "trigger": [
+   "user-command",
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "analytics"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I03": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "rendered-artifact"
+  ],
+  "system": [
+   "email",
+   "crm",
+   "sales-intelligence",
+   "marketing-automation"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I04": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "none"
+  ],
+  "connection": [
+   "none"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I05": {
+  "trigger": [
+   "user-command",
+   "model-selected"
+  ],
+  "ui": [
+   "rendered-artifact"
+  ],
+  "system": [
+   "crm"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I06": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "rendered-artifact",
+   "chat"
+  ],
+  "system": [
+   "design-tool",
+   "marketing-automation"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I07": {
+  "trigger": [
+   "delegated"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "data-warehouse"
+  ],
+  "connection": [
+   "none"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I08": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "docs-knowledge",
+   "docs-storage",
+   "chat-messaging",
+   "call-transcripts",
+   "design-tool",
+   "workspace-files"
+  ],
+  "connection": [
+   "mcp",
+   "native-tool"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I09": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "salesforce-platform",
+   "workspace-files"
+  ],
+  "connection": [
+   "native-tool"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I10": {
+  "trigger": [
+   "user-command",
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "design-tool",
+   "docs-knowledge"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I11": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "none"
+  ],
+  "connection": [
+   "none"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I12": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "web-reference",
+   "workspace-files"
+  ],
+  "connection": [
+   "native-tool",
+   "cli"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I13": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "web-reference"
+  ],
+  "connection": [
+   "cli"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I14": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "rendered-artifact"
+  ],
+  "system": [
+   "crm",
+   "email",
+   "chat-messaging",
+   "calendar"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I15": {
+  "trigger": [
+   "user-command",
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "none"
+  ],
+  "connection": [
+   "none"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I16": {
+  "trigger": [
+   "delegated"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "none"
+  ],
+  "connection": [
+   "none"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I17": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "workspace-files",
+   "source-control"
+  ],
+  "connection": [
+   "native-tool",
+   "cli"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I18": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "workspace-files"
+  ],
+  "connection": [
+   "native-tool"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I19": {
+  "trigger": [
+   "delegated",
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "salesforce-platform",
+   "workspace-files"
+  ],
+  "connection": [
+   "cli",
+   "native-tool"
+  ],
+  "harness": [
+   "claude-code",
+   "codex"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I20": {
+  "trigger": [
+   "user-command",
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "support-desk",
+   "crm",
+   "chat-messaging",
+   "project-tracker",
+   "docs-knowledge"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I21": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "rendered-artifact",
+   "chat"
+  ],
+  "system": [
+   "crm",
+   "email",
+   "calendar"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I22": {
+  "trigger": [
+   "user-command",
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "analytics"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I23": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "rendered-artifact"
+  ],
+  "system": [
+   "crm"
+  ],
+  "connection": [
+   "mcp",
+   "native-tool"
+  ],
+  "harness": [
+   "claude-ai",
+   "claude-desktop",
+   "claude-code",
+   "cowork"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I24": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "workspace-files",
+   "cms-content"
+  ],
+  "connection": [
+   "native-tool"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I25": {
+  "trigger": [
+   "model-selected",
+   "time"
+  ],
+  "ui": [
+   "rendered-artifact"
+  ],
+  "system": [
+   "crm",
+   "call-transcripts",
+   "web-reference"
+  ],
+  "connection": [
+   "mcp",
+   "native-tool"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I26": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "salesforce-platform"
+  ],
+  "connection": [
+   "cli"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I27": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "rendered-artifact"
+  ],
+  "system": [
+   "email",
+   "finance-erp"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I28": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "web-reference"
+  ],
+  "connection": [
+   "mcp",
+   "cli"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I29": {
+  "trigger": [
+   "user-command",
+   "model-selected"
+  ],
+  "ui": [
+   "rendered-artifact"
+  ],
+  "system": [
+   "crm"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I30": {
+  "trigger": [
+   "delegated",
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "salesforce-platform",
+   "workspace-files"
+  ],
+  "connection": [
+   "cli",
+   "native-tool"
+  ],
+  "harness": [
+   "claude-code",
+   "codex"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I31": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "rendered-artifact",
+   "file-deliverable"
+  ],
+  "system": [
+   "crm",
+   "docs-storage"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I32": {
+  "trigger": [
+   "user-command",
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "project-tracker",
+   "docs-knowledge",
+   "design-tool"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I33": {
+  "trigger": [
+   "user-command",
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "design-tool",
+   "workspace-files"
+  ],
+  "connection": [
+   "native-tool",
+   "cli"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I34": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "workspace-files"
+  ],
+  "connection": [
+   "native-tool"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "skill"
+  ]
+ },
+ "I35": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "none"
+  ],
+  "system": [
+   "docs-storage"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "mcp-server"
+  ]
+ },
+ "I36": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "none"
+  ],
+  "system": [
+   "finance-erp"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "mcp-server"
+  ]
+ },
+ "I37": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "none"
+  ],
+  "system": [
+   "cms-content"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "mcp-server"
+  ]
+ },
+ "I38": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "none"
+  ],
+  "system": [
+   "call-transcripts"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "mcp-server"
+  ]
+ },
+ "I39": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "none"
+  ],
+  "system": [
+   "email"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "mcp-server"
+  ]
+ },
+ "I40": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "none"
+  ],
+  "system": [
+   "project-tracker"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "mcp-server"
+  ]
+ },
+ "I41": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "none"
+  ],
+  "system": [
+   "payments-commerce"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "mcp-server"
+  ]
+ },
+ "I42": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "none"
+  ],
+  "system": [
+   "finance-erp"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "mcp-server"
+  ]
+ },
+ "I43": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "none"
+  ],
+  "system": [
+   "docs-storage"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "mcp-server"
+  ]
+ },
+ "I44": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "none"
+  ],
+  "system": [
+   "chat-messaging"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "mcp-server"
+  ]
+ },
+ "I45": {
+  "trigger": [
+   "user-command"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "none"
+  ],
+  "connection": [
+   "none"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "command"
+  ]
+ },
+ "I46": {
+  "trigger": [
+   "user-command"
+  ],
+  "ui": [
+   "embedded-app"
+  ],
+  "system": [
+   "workspace-files"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "command"
+  ]
+ },
+ "I47": {
+  "trigger": [
+   "user-command"
+  ],
+  "ui": [
+   "embedded-app"
+  ],
+  "system": [
+   "workspace-files"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "command"
+  ]
+ },
+ "I48": {
+  "trigger": [
+   "user-command"
+  ],
+  "ui": [
+   "embedded-app"
+  ],
+  "system": [
+   "workspace-files"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "command"
+  ]
+ },
+ "I49": {
+  "trigger": [
+   "delegated"
+  ],
+  "ui": [
+   "none"
+  ],
+  "system": [
+   "docs-knowledge",
+   "docs-storage"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "sonnet"
+  ],
+  "type": [
+   "agent"
+  ]
+ },
+ "I50": {
+  "trigger": [
+   "delegated"
+  ],
+  "ui": [
+   "none"
+  ],
+  "system": [
+   "docs-knowledge",
+   "docs-storage",
+   "chat-messaging",
+   "call-transcripts",
+   "design-tool"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "sonnet"
+  ],
+  "type": [
+   "agent"
+  ]
+ },
+ "I51": {
+  "trigger": [
+   "delegated"
+  ],
+  "ui": [
+   "none"
+  ],
+  "system": [
+   "workspace-files"
+  ],
+  "connection": [
+   "native-tool"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "sonnet"
+  ],
+  "type": [
+   "agent"
+  ]
+ },
+ "I52": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "web-reference"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "plugin"
+  ]
+ },
+ "I53": {
+  "trigger": [
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "cms-content"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "plugin"
+  ]
+ },
+ "I54": {
+  "trigger": [
+   "user-command",
+   "model-selected"
+  ],
+  "ui": [
+   "embedded-app"
+  ],
+  "system": [
+   "workspace-files"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "plugin"
+  ]
+ },
+ "I55": {
+  "trigger": [
+   "user-command",
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "project-tracker",
+   "calendar",
+   "email",
+   "chat-messaging",
+   "docs-knowledge"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "plugin"
+  ]
+ },
+ "I56": {
+  "trigger": [
+   "user-command",
+   "model-selected"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "chat-messaging",
+   "calendar",
+   "email",
+   "docs-knowledge",
+   "project-tracker"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "plugin"
+  ]
+ },
+ "I57": {
+  "trigger": [
+   "time"
+  ],
+  "ui": [
+   "none"
+  ],
+  "system": [
+   "source-control"
+  ],
+  "connection": [
+   "cli"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "scheduled-task"
+  ]
+ },
+ "I58": {
+  "trigger": [
+   "time"
+  ],
+  "ui": [
+   "none"
+  ],
+  "system": [
+   "source-control"
+  ],
+  "connection": [
+   "cli"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "scheduled-task"
+  ]
+ },
+ "I59": {
+  "trigger": [
+   "time"
+  ],
+  "ui": [
+   "chat"
+  ],
+  "system": [
+   "email",
+   "calendar",
+   "chat-messaging"
+  ],
+  "connection": [
+   "mcp"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "opus"
+  ],
+  "type": [
+   "scheduled-task"
+  ]
+ },
+ "I60": {
+  "trigger": [
+   "time"
+  ],
+  "ui": [
+   "none"
+  ],
+  "system": [
+   "source-control"
+  ],
+  "connection": [
+   "cli"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "scheduled-task"
+  ]
+ },
+ "I61": {
+  "trigger": [
+   "event"
+  ],
+  "ui": [
+   "none"
+  ],
+  "system": [
+   "none"
+  ],
+  "connection": [
+   "cli"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "hook"
+  ]
+ },
+ "I62": {
+  "trigger": [
+   "event"
+  ],
+  "ui": [
+   "none"
+  ],
+  "system": [
+   "source-control"
+  ],
+  "connection": [
+   "cli"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "hook"
+  ]
+ },
+ "I63": {
+  "trigger": [
+   "event"
+  ],
+  "ui": [
+   "none"
+  ],
+  "system": [
+   "none"
+  ],
+  "connection": [
+   "cli"
+  ],
+  "harness": [
+   "claude-code"
+  ],
+  "model": [
+   "inherit"
+  ],
+  "type": [
+   "hook"
+  ]
+ }
+}

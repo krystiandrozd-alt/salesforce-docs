@@ -1,0 +1,87 @@
+{
+  "_note": "Scheduled tasks from list_triggers (claude-code-remote MCP), 2026-11-22. Verbatim fields.",
+  "tasks": [
+    {
+      "id": "trig_01MmVB7YTDVWxjnxQTi5bHmf",
+      "name": "Re-check salesforce-docs PR #5",
+      "cron_expression": "",
+      "run_once_at": "2026-11-22T03:53:00Z",
+      "enabled": true,
+      "model": "",
+      "connectors": [],
+      "prompt": "Safety-net check-in on krystiandrozd-alt/salesforce-docs#5: re-check CI, comments and reviews; act on anything actionable, otherwise stop check-ins (user hasn't written since PR went up)."
+    },
+    {
+      "id": "trig_01Q1x2WvGrKGHzqynUUL1xMZ",
+      "name": "Re-check PRs #33 #34",
+      "cron_expression": "",
+      "run_once_at": "2026-11-05T19:57:00Z",
+      "enabled": false,
+      "model": "",
+      "connectors": [],
+      "prompt": "Safety-net check-in on krystiandrozd-alt/tmf-workbench #34 (head e90dcc2; CI runs action_required, awaiting owner approval) and #33 (head 087db5a; freeze-verify red until master has the freeze gen that #34 carries). Re-check CI, merge state, reviews; if #34 merged, merge master into neon-tls (no rebase) and confirm green. Act only on something new; if nothing new this is the 3rd in a row: stop re-arming and say once that check-ins stopped. Nothing-new streak: 2."
+    },
+    {
+      "id": "trig_01KGRZYYYdeGfQYMoSAYp2DM",
+      "name": "Re-check PRs #33 #34",
+      "cron_expression": "",
+      "run_once_at": "2026-11-05T15:55:00Z",
+      "enabled": false,
+      "model": "",
+      "connectors": [],
+      "prompt": "Safety-net check-in on krystiandrozd-alt/tmf-workbench #34 (head e90dcc2 by Copilot; its CI runs were action_required, waiting for owner approval; locally 60/60 related tests pass, self-loop partition verified) and #33 (head 087db5a, freeze-verify red until master has the freeze gen; #34 carries it). Re-check CI, merge state, reviews; if #34 merged, merge master into neon-tls (no rebase) and confirm green. Act only on something new; if nothing new, re-arm silently. Nothing-new streak: 1 (stop after 3)."
+    },
+    {
+      "id": "trig_01MpqCtB94SiKmzmMva8Mijy",
+      "name": "Re-check PRs #33 #34",
+      "cron_expression": "",
+      "run_once_at": "2026-11-05T11:53:00Z",
+      "enabled": false,
+      "model": "",
+      "connectors": [],
+      "prompt": "Safety-net check-in on krystiandrozd-alt/tmf-workbench #34 (head e90dcc2 by Copilot; its CI runs were action_required, waiting for owner approval; locally 60/60 related tests pass, self-loop partition verified) and #33 (head 087db5a, freeze-verify red until master has the freeze gen; #34 carries it). Re-check CI, merge state, reviews; if #34 merged, merge master into neon-tls (no rebase) and confirm green. Act only on something new. Nothing-new streak: 0."
+    },
+    {
+      "id": "trig_016NZe2PvobQdN2x5kFGud7k",
+      "name": "Re-check PR #34",
+      "cron_expression": "",
+      "run_once_at": "2026-11-05T05:11:00Z",
+      "enabled": false,
+      "model": "",
+      "connectors": [],
+      "prompt": "Safety-net check-in on krystiandrozd-alt/tmf-workbench#34 (head 3c0e808, CI 8/8 green, Codex P2 fixed+resolved). Re-check merge state, CI, any new Codex/human review threads; act only on something new. If #34 got merged, merge master into neon-tls (PR #33, no rebase) and confirm freeze-verify goes green there. Nothing-new streak: 0."
+    },
+    {
+      "id": "trig_01WYpn1PEkDRNUDvfbvBhGUg",
+      "name": "Re-check PR #33 CI",
+      "cron_expression": "",
+      "run_once_at": "2026-11-05T07:51:00Z",
+      "enabled": false,
+      "model": "",
+      "connectors": [],
+      "prompt": "Safety-net check-in on krystiandrozd-alt/tmf-workbench#33 (head 087db5a). User chose option 2: freeze regen is fixed separately on master by them, NOT in this PR. freeze-verify stays red until master gets the gen commit; once master is fixed, merge master into neon-tls (no rebase) and confirm green. Re-check merge state, CI, reviews; act only on something new. Nothing-new streak: 0."
+    },
+    {
+      "id": "trig_014zgyG6bC6eh3Jc6hUMKU7y",
+      "name": "Re-check PR #33 CI",
+      "cron_expression": "",
+      "run_once_at": "2026-11-05T03:35:00Z",
+      "enabled": false,
+      "model": "",
+      "connectors": [],
+      "prompt": "Safety-net check-in on krystiandrozd-alt/tmf-workbench#33: re-check merge state, CI (freeze-verify was red from pre-existing README drift on master) and review threads; act only on something new."
+    },
+    {
+      "id": "trig_01519L56jdsSg5eRKoqwCrfu",
+      "name": "Briefing",
+      "cron_expression": "CRON_TZ=Europe/Warsaw 30 14 * * 1-5",
+      "run_once_at": "",
+      "enabled": true,
+      "model": "claude-opus-4-6[1m]",
+      "connectors": [
+        "Gmail"
+      ],
+      "prompt": "Generate a briefing to help me catch up. Include:\n\n1. Schedule — List upcoming meetings and events with times, attendees, and any preparation needed\n2. Important emails — Summarize unread emails that need attention, grouped by urgency\n3. Messages requiring response — Flag any direct messages or mentions that need a reply\n4. Action items — List any pending tasks or follow-ups from recent activity\n\nKeep the briefing concise and scannable. If there's nothing notable in a section, skip it rather than saying \"nothing to report.\""
+    }
+  ]
+}

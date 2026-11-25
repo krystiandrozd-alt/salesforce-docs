@@ -1,0 +1,334 @@
+<meta charset="utf-8">
+<title>Facet Matrix</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: left control rail + matrix workspace; tabs switch Heatmap / Job lookup / Independence. */
+:root{
+  --bg:#f6f7f8; --panel:#ffffff; --ink:#1b2430; --ink2:#4a5666; --muted:#7a8696; --line:#dde2e8;
+  --accent:#0b6e8a; --accent-soft:#d6ecf2; --heat:11,110,138;
+  --gap:#c3cad3; --dup:#b86a00; --risk:#c4321f; --amber:#a76a00; --ok:#1d7a4d;
+  --font:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',sans-serif; --mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#11161c; --panel:#181f27; --ink:#e6ebf1; --ink2:#aab5c3; --muted:#7f8b9a; --line:#2a3440;
+  --accent:#5fc0da; --accent-soft:#1c3a45; --heat:95,192,218; --gap:#3b4653; --dup:#f0a640; --risk:#ff7a66; --amber:#e2a83a; --ok:#58c58b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11161c; --panel:#181f27; --ink:#e6ebf1; --ink2:#aab5c3; --muted:#7f8b9a; --line:#2a3440;
+  --accent:#5fc0da; --accent-soft:#1c3a45; --heat:95,192,218; --gap:#3b4653; --dup:#f0a640; --risk:#ff7a66; --amber:#e2a83a; --ok:#58c58b; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:14px/1.45 var(--font);margin:0;
+  padding-block:16px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1{font-size:20px;margin:0;font-weight:600;letter-spacing:-.01em}
+.sub{color:var(--ink2);margin:2px 0 0;max-width:70ch}
+header{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:flex-end;justify-content:space-between;margin-bottom:14px}
+.stats{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;color:var(--ink2)}
+.stats b{color:var(--ink);font-weight:500}
+nav.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-bottom:14px;flex-wrap:wrap}
+nav.tabs button{font:inherit;background:none;border:0;border-bottom:2px solid transparent;padding:8px 12px;color:var(--ink2);cursor:pointer}
+nav.tabs button[aria-selected=true]{color:var(--ink);border-bottom-color:var(--accent);font-weight:600}
+button:focus-visible,select:focus-visible,textarea:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:16px;align-items:start}
+@media(max-width:860px){.layout{grid-template-columns:minmax(0,1fr)}}
+.rail{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.rail h2,.panel h2{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 6px;font-weight:600}
+.axes{display:grid;grid-template-columns:1fr auto;gap:6px;align-items:end}
+label.f{display:flex;flex-direction:column;gap:2px;font-size:12px;color:var(--ink2)}
+select,textarea,input[type=number]{font:inherit;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:5px 6px;min-width:0;width:100%}
+.btn{font:inherit;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:5px 9px;cursor:pointer}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:500}
+.chips{display:flex;flex-wrap:wrap;gap:4px}
+.chip{font:inherit;font-size:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink2);border-radius:999px;padding:2px 8px;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent);color:var(--ink)}
+.chip small{font-family:var(--mono);color:var(--muted);margin-left:3px}
+details.fac{border-top:1px solid var(--line);padding-top:6px}
+details.fac summary{cursor:pointer;font-size:13px;font-weight:500;display:flex;justify-content:space-between}
+details.fac summary .sel{font-family:var(--mono);font-size:11px;color:var(--accent)}
+.tog{display:flex;gap:8px;align-items:flex-start;font-size:13px}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--ink2);margin-bottom:8px}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:-3px;margin-right:4px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px;min-width:0}
+.scroll{overflow-x:auto}
+table.hm{border-collapse:separate;border-spacing:2px;font-variant-numeric:tabular-nums}
+table.hm th{font-weight:500;font-size:12px;color:var(--ink2);padding:2px 4px;white-space:nowrap;background:none;text-align:right}
+table.hm thead th{vertical-align:bottom;text-align:left}
+table.hm thead th div{writing-mode:vertical-rl;transform:rotate(180deg);height:128px;text-align:left}
+table.hm th.tot,table.hm td.tot{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.cell{position:relative;width:40px;height:34px;border-radius:3px;border:0;font:500 12px var(--mono);cursor:pointer;color:var(--ink);padding:0;background:transparent}
+.cell.has{background:rgba(var(--heat),var(--a,.1))}
+.cell.has.dark{color:#fff}
+.cell.gap{background:repeating-linear-gradient(135deg,transparent 0 4px,var(--gap) 4px 5px);color:var(--muted);font-weight:400}
+.cell.gap.weak{background:none;box-shadow:inset 0 0 0 1px var(--line)}
+.cell.dup{box-shadow:0 0 0 2px var(--dup)}
+.cell.sel{outline:2px solid var(--ink);outline-offset:1px}
+.cell .rk{position:absolute;top:-3px;right:-3px;min-width:15px;height:15px;border-radius:8px;background:var(--risk);color:#fff;font:600 10px/15px var(--mono);text-align:center;padding:0 3px}
+.cell .rk.amb{background:var(--amber)}
+.tip{position:fixed;z-index:20;pointer-events:none;background:var(--ink);color:var(--bg);border-radius:4px;padding:6px 8px;font-size:12px;max-width:260px;display:none}
+ul.list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+li.el{border:1px solid var(--line);border-radius:5px;padding:8px 10px;background:var(--bg);min-width:0}
+li.el .top{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+li.el .nm{font-weight:600;overflow-wrap:anywhere}
+.badge{font:500 11px var(--mono);border-radius:3px;padding:1px 6px;background:var(--accent-soft);color:var(--ink)}
+.badge.r{background:var(--risk);color:#fff}.badge.a{background:var(--amber);color:#fff}.badge.m{background:transparent;border:1px solid var(--line);color:var(--muted)}
+.facs{display:flex;gap:4px 10px;flex-wrap:wrap;margin-top:4px;font-size:12px;color:var(--ink2)}
+.facs span b{color:var(--muted);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:.04em;margin-right:3px}
+.facs em{font-style:normal;color:var(--ink)}.facs em.hit{background:var(--accent-soft);border-radius:3px;padding:0 3px}
+details.src{margin-top:4px;font-size:12px}details.src summary{cursor:pointer;color:var(--accent)}
+.srcrow{display:grid;grid-template-columns:130px minmax(0,1fr);gap:6px;padding:3px 0;border-top:1px dashed var(--line)}
+.srcrow code,.srcrow a{font-family:var(--mono);font-size:11px;overflow-wrap:anywhere}
+.srcrow a{color:var(--accent)}
+.k-e{color:var(--ok)}.k-i{color:var(--amber)}.k-d{color:var(--muted)}
+.note{color:var(--ink2);font-size:13px;margin:4px 0 10px;max-width:80ch}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+table.nmi{border-collapse:separate;border-spacing:2px}table.nmi th{font-size:12px;font-weight:500;color:var(--ink2);padding:2px 6px;text-align:right}
+table.nmi td button{width:58px;height:34px;border:0;border-radius:3px;font:500 12px var(--mono);cursor:pointer;color:var(--ink);background:rgba(var(--heat),var(--a,.05))}
+table.nmi td button.dark{color:#fff}table.nmi td.diag{background:none}
+.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:2px 9px;margin:2px 4px 2px 0;font-size:12px;background:var(--bg);cursor:pointer;font-family:inherit;color:var(--ink)}
+.pill.off{opacity:.45;text-decoration:line-through}
+.score{font-family:var(--mono);font-size:12px;color:var(--ink2)}
+.empty{color:var(--muted);padding:12px 0}
+</style>
+
+<header>
+  <div>
+    <h1>Facet Matrix</h1>
+    <p class="sub">Seven facets over every skill, command, agent, plugin, MCP server, scheduled task and hook in the toolkit. Pick any two facets as axes, click a cell to list its elements with the manifest line each value came from.</p>
+  </div>
+  <div class="stats" id="stats"></div>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button role="tab" aria-selected="true" data-tab="heat">Heatmap</button>
+  <button role="tab" aria-selected="false" data-tab="job">Job lookup</button>
+  <button role="tab" aria-selected="false" data-tab="indep">Facet independence</button>
+</nav>
+
+<section id="tab-heat" class="layout">
+  <aside class="rail">
+    <div>
+      <h2>Axes</h2>
+      <div class="axes"><label class="f">Rows <select id="ay"></select></label><span></span>
+        <label class="f">Columns <select id="ax"></select></label>
+        <button class="btn" id="swap" title="Swap rows and columns" aria-label="Swap axes">⇅ Swap</button></div>
+    </div>
+    <div>
+      <h2>Overlay</h2>
+      <label class="tog"><input type="checkbox" id="risk"> <span><b>Risk:</b> unattended (time or event trigger) and write access to a system. Amber = system named, operations unknown.</span></label>
+      <label class="f" style="margin-top:8px">Crowded cell at ≥ <input type="number" id="crowd" min="2" value="15"></label>
+    </div>
+    <div>
+      <h2>Filters <button class="btn" id="clear" style="float:right;padding:1px 7px;font-size:11px">Clear</button></h2>
+      <div id="filters"></div>
+    </div>
+    <div class="score" id="perf"></div>
+  </aside>
+  <div style="min-width:0;display:flex;flex-direction:column;gap:12px">
+    <div class="panel">
+      <div class="legend">
+        <span><i style="background:rgba(var(--heat),.5)"></i>elements in cell</span>
+        <span><i style="background:repeating-linear-gradient(135deg,transparent 0 4px,var(--gap) 4px 5px);border:1px solid var(--line)"></i>gap: none, though independence predicts ≥ 3</span>
+        <span><i style="box-shadow:inset 0 0 0 1px var(--line)"></i>empty, expected &lt; 3 (probably structural)</span>
+        <span><i style="box-shadow:0 0 0 2px var(--dup);background:var(--bg)"></i>crowded: possible duplicates</span>
+        <span><i style="background:var(--risk);border-radius:8px"></i>risk</span>
+      </div>
+      <div class="scroll" id="hm"></div>
+    </div>
+    <div class="panel" id="detail"><div class="empty">Click a cell to list its elements.</div></div>
+  </div>
+</section>
+
+<section id="tab-job" hidden>
+  <div class="panel">
+    <h2>Describe the job</h2>
+    <p class="note">Free text is turned into facet values with a keyword lexicon. Each element is ranked by how many facets it matches, then by how many values. Switch a detected value off to see how the ranking moves.</p>
+    <textarea id="jobtxt" rows="3" placeholder="e.g. every morning summarise my unread email and calendar and post a digest to Slack"></textarea>
+    <div style="margin:8px 0;display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="jobgo">Find elements</button>
+      <button class="btn ex">Every morning, summarise my inbox and calendar into a briefing</button>
+      <button class="btn ex">When a pull request is opened, check CI and merge if green</button>
+      <button class="btn ex">Package my ISV app and prepare the Salesforce security review</button></div>
+    <div id="jobfacets"></div>
+  </div>
+  <div class="panel" style="margin-top:12px"><ul class="list" id="jobres"></ul></div>
+</section>
+
+<section id="tab-indep" hidden>
+  <div class="panel">
+    <h2>Are the facets independent?</h2>
+    <p class="note">Normalised mutual information between each facet pair (0 = independent, 1 = one determines the other), weighting multi-valued elements once. Left: all elements. Right: only authored elements (skills, commands, agents, plugins), where `type` implies less. Click a cell to open that pair as a heatmap.</p>
+    <div class="grid2"><div class="scroll" id="nmi1"></div><div class="scroll" id="nmi2"></div></div>
+  </div>
+</section>
+<div class="tip" id="tip"></div>
+
+<script>
+(function(){
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+let D, E, F, vi, masks, N;
+const state={ay:'trigger',ax:'type',filt:{},sel:null,risk:false,crowd:15,pass:null};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const safe=(f)=>{try{return f()}catch(e){return null}};
+
+fetch('data.json').then(r=>r.json()).then(init).catch(e=>{$('#hm').innerHTML='<div class="empty">Could not load data.json: '+esc(e)+'</div>'});
+
+function init(d){
+  D=d; E=d.elements; F=d.facets; N=E.length;
+  vi={}; F.forEach(f=>{vi[f]={}; D.vocab[f].forEach((v,i)=>vi[f][v[0]]=i)});
+  buildMasks(E);
+  const saved=safe(()=>JSON.parse(localStorage.getItem('fm-axes')||'null'));
+  if(saved&&F.includes(saved.ay)&&F.includes(saved.ax)){state.ay=saved.ay;state.ax=saved.ax}
+  const sel=F.map(f=>`<option value="${f}">${f}</option>`).join('');
+  $('#ay').innerHTML=sel; $('#ax').innerHTML=sel; $('#ay').value=state.ay; $('#ax').value=state.ax;
+  $('#ay').onchange=e=>{state.ay=e.target.value;state.sel=null;render()};
+  $('#ax').onchange=e=>{state.ax=e.target.value;state.sel=null;render()};
+  $('#swap').onclick=()=>{[state.ay,state.ax]=[state.ax,state.ay];$('#ay').value=state.ay;$('#ax').value=state.ax;state.sel=null;render()};
+  $('#risk').onchange=e=>{state.risk=e.target.checked;render()};
+  $('#crowd').onchange=e=>{state.crowd=Math.max(2,+e.target.value||15);render()};
+  $('#clear').onclick=()=>{state.filt={};buildFilters();render()};
+  $$('nav.tabs button').forEach(b=>b.onclick=()=>tab(b.dataset.tab));
+  $('#jobgo').onclick=jobRun; $$('.ex').forEach(b=>b.onclick=()=>{$('#jobtxt').value=b.textContent;jobRun()});
+  buildFilters(); render(); buildNmi();
+  const h=location.hash.slice(1); if(['job','indep'].includes(h)) tab(h);
+  bench();
+}
+function tab(t){
+  $$('nav.tabs button').forEach(b=>b.setAttribute('aria-selected',b.dataset.tab===t));
+  ['heat','job','indep'].forEach(x=>$('#tab-'+x).hidden=x!==t);
+  try{history.replaceState(null,'','#'+t)}catch(e){}
+}
+/* masks: one 32-bit word per facet per element (max 25 values per facet) */
+function buildMasks(els){
+  const m=new Uint32Array(els.length*F.length);
+  els.forEach((e,i)=>F.forEach((f,j)=>{let w=0;e.f[f].forEach(v=>w|=1<<vi[f][v[0]]);m[i*F.length+j]=w}));
+  masks=m; return m;
+}
+function filterMask(){return F.map(f=>{let w=0;(state.filt[f]||new Set()).forEach(v=>w|=1<<vi[f][v]);return w})}
+function runFilter(m,n,fm){ // returns Uint8Array pass flags
+  const out=new Uint8Array(n),k=F.length;
+  for(let i=0;i<n;i++){let ok=1;for(let j=0;j<k;j++){const q=fm[j];if(q&&!(m[i*k+j]&q)){ok=0;break}}out[i]=ok}
+  return out;
+}
+function isRisk(e){
+  const unatt=e.f.trigger.some(v=>v[0]==='time'||v[0]==='event'); if(!unatt) return 0;
+  let lvl=0; for(const s in e.a){ if(s==='none')continue; const l=e.a[s][0]; if(l==='write')return 2; if(l==='unknown')lvl=1 } return lvl;
+}
+function buildFilters(){
+  const cnt={}; F.forEach(f=>{cnt[f]={};E.forEach(e=>e.f[f].forEach(v=>cnt[f][v[0]]=(cnt[f][v[0]]||0)+1))});
+  $('#filters').innerHTML=F.map(f=>{
+    const s=state.filt[f]||new Set();
+    return `<details class="fac" ${s.size?'open':''}><summary><span>${f}</span><span class="sel">${s.size?s.size+' on':''}</span></summary>
+      <div class="chips" style="margin:6px 0">${D.vocab[f].map(([v,def])=>`<button class="chip" data-f="${f}" data-v="${v}" aria-pressed="${s.has(v)}" title="${esc(def)}">${v}<small>${cnt[f][v]||0}</small></button>`).join('')}</div></details>`}).join('');
+  $$('#filters .chip').forEach(b=>b.onclick=()=>{
+    const f=b.dataset.f,v=b.dataset.v;(state.filt[f]=state.filt[f]||new Set());
+    state.filt[f].has(v)?state.filt[f].delete(v):state.filt[f].add(v);
+    b.setAttribute('aria-pressed',state.filt[f].has(v));
+    const sm=b.closest('details').querySelector('.sel'); sm.textContent=state.filt[f].size?state.filt[f].size+' on':'';
+    render();
+  });
+}
+function render(){
+  const t0=performance.now();
+  state.pass=runFilter(masks,N,filterMask());
+  const els=[];for(let i=0;i<N;i++)if(state.pass[i])els.push(i);
+  safe(()=>localStorage.setItem('fm-axes',JSON.stringify({ay:state.ay,ax:state.ax})));
+  const rows=D.vocab[state.ay].map(v=>v[0]), cols=D.vocab[state.ax].map(v=>v[0]);
+  const cell={}, rowT={}, colT={}, risk={};
+  for(const i of els){const e=E[i], r=state.risk?isRisk(e):0;
+    for(const a of e.f[state.ay]){rowT[a[0]]=(rowT[a[0]]||0)+1;
+      for(const b of e.f[state.ax]){const k=a[0]+'|'+b[0];cell[k]=(cell[k]||0)+1;if(r){const q=risk[k]=risk[k]||[0,0];q[r-1]++}}}
+    for(const b of e.f[state.ax])colT[b[0]]=(colT[b[0]]||0)+1;}
+  const tot=els.length, max=Math.max(1,...Object.values(cell));
+  let h='<table class="hm"><thead><tr><th></th>'+cols.map(c=>`<th title="${esc(D.vocab[state.ax].find(v=>v[0]===c)[1])}"><div>${c}</div></th>`).join('')+'<th class="tot"><div>total</div></th></tr></thead><tbody>';
+  for(const r of rows){
+    h+=`<tr><th title="${esc(D.vocab[state.ay].find(v=>v[0]===r)[1])}">${r}</th>`;
+    for(const c of cols){
+      const n=cell[r+'|'+c]||0, exp=tot?((rowT[r]||0)*(colT[c]||0))/tot:0, k=r+'|'+c;
+      let cls='cell', st='', lab=n;
+      if(n){cls+=' has'; const a=.12+.78*Math.sqrt(n/max); st=`--a:${a.toFixed(2)}`; if(a>.55)cls+=' dark'}
+      else {cls+=' gap'+(exp<3?' weak':''); lab=exp>=3?'gap':'·'}
+      if(n>=state.crowd)cls+=' dup';
+      if(state.sel&&state.sel[0]===r&&state.sel[1]===c)cls+=' sel';
+      let rk=''; if(state.risk&&risk[k]){const q=risk[k]; rk=q[1]?`<span class="rk">${q[1]}</span>`:`<span class="rk amb">${q[0]}</span>`;}
+      h+=`<td><button class="${cls}" style="${st}" data-r="${r}" data-c="${c}" data-n="${n}" data-e="${exp.toFixed(1)}" aria-label="${r} and ${c}: ${n}">${lab}${rk}</button></td>`;
+    }
+    h+=`<td class="tot">${rowT[r]||0}</td></tr>`;
+  }
+  h+='<tr><th class="tot">total</th>'+cols.map(c=>`<td class="tot">${colT[c]||0}</td>`).join('')+`<td class="tot">${tot}</td></tr></tbody></table>`;
+  $('#hm').innerHTML=h;
+  $$('#hm .cell').forEach(b=>{
+    b.onclick=()=>{state.sel=[b.dataset.r,b.dataset.c];render();detail()};
+    b.onmouseenter=ev=>tip(ev,`<b>${b.dataset.r}</b> × <b>${b.dataset.c}</b><br>${b.dataset.n} element(s); independence predicts ${b.dataset.e}`);
+    b.onmouseleave=()=>$('#tip').style.display='none';
+  });
+  $('#stats').innerHTML=`<span><b>${tot}</b> / ${N} elements shown</span><span><b>${D.files.length}</b> source files</span>`;
+  $('#perf').textContent='filter + count: '+(performance.now()-t0).toFixed(1)+' ms';
+  if(state.sel)detail();
+}
+function tip(ev,html){const t=$('#tip');t.innerHTML=html;t.style.display='block';t.style.left=Math.min(ev.clientX+12,innerWidth-270)+'px';t.style.top=(ev.clientY+14)+'px'}
+function ref2html(r){return `<a href="${D.ghBase}${r[0]}#L${r[1]}" target="_blank" rel="noopener">${esc(D.files[r[0]].split('/').slice(-3).join('/'))}:${r[1]}</a>`}
+function elHtml(e,hl){
+  const rk=isRisk(e);
+  const facs=F.map(f=>`<span><b>${f}</b>${e.f[f].map(v=>`<em class="${hl&&hl.has(f+':'+v[0])?'hit':''}">${v[0]}</em>`).join(', ')}</span>`).join('');
+  const src=F.map(f=>e.f[f].map(v=>v[1].map(r=>`<div class="srcrow"><code>${f}:${v[0]}</code><span><span class="k-${r[2]}">${{e:'explicit',i:'inferred',d:'default'}[r[2]]}</span> ${D.files[r[0]]?ref2html(r):''}<br><code>${esc(r[3])}</code></span></div>`).join('')).join('')).join('');
+  const acc=Object.entries(e.a).filter(([s])=>s!=='none').map(([s,a])=>`${s}: ${a[0]}`).join(' · ');
+  return `<li class="el"><div class="top"><span class="nm">${esc(e.n)}</span><span class="badge">${e.t}</span>${e.p?`<span class="badge m">${esc(e.p)}</span>`:''}
+    ${rk===2?'<span class="badge r">risk: unattended + write</span>':rk===1?'<span class="badge a">risk: unattended, access unknown</span>':''}${e.en===false?'<span class="badge m">disabled</span>':''}</div>
+    <div class="facs">${facs}</div>${acc?`<div class="facs"><span><b>access</b>${esc(acc)}</span></div>`:''}
+    <details class="src"><summary>Sources</summary>${src}</details></li>`;
+}
+function detail(){
+  const [r,c]=state.sel; const idx=[];
+  for(let i=0;i<N;i++) if(state.pass[i]&&E[i].f[state.ay].some(v=>v[0]===r)&&E[i].f[state.ax].some(v=>v[0]===c)) idx.push(i);
+  const sigs={};idx.forEach(i=>{const s=F.map(f=>E[i].f[f].map(v=>v[0]).sort().join('+')).join('/');sigs[s]=(sigs[s]||0)+1});
+  const dupGroups=Object.values(sigs).filter(n=>n>1).reduce((a,n)=>a+n,0), maxG=Math.max(0,...Object.values(sigs));
+  const hl=new Set([state.ay+':'+r,state.ax+':'+c]);
+  $('#detail').innerHTML=`<h2>${state.ay}: ${r} × ${state.ax}: ${c}</h2>
+    <p class="note">${idx.length} element(s)${idx.length>=state.crowd?` · crowded cell. ${dupGroups} share an identical seven-facet signature (largest group ${maxG}), so they are candidate duplicates or one skill family.`:idx.length?'':' · empty cell: a gap.'}</p>
+    <ul class="list">${idx.slice(0,150).map(i=>elHtml(E[i],hl)).join('')}</ul>${idx.length>150?`<div class="empty">Showing 150 of ${idx.length}. Add a filter to narrow.</div>`:''}`;
+  $('#detail').scrollIntoView({block:'nearest',behavior:'smooth'});
+}
+/* ---------- job lookup ---------- */
+let jobOff=new Set();
+function jobParse(txt){
+  const t=txt.toLowerCase(), hits=[];
+  D.lexicon.forEach(([f,v,rx])=>{ if(new RegExp(rx,'i').test(t)) hits.push(f+':'+v) });
+  return [...new Set(hits)];
+}
+function jobRun(){ jobOff=new Set(); jobShow() }
+function jobShow(){
+  const txt=$('#jobtxt').value, hits=jobParse(txt);
+  $('#jobfacets').innerHTML=hits.length?'Detected: '+hits.map(h=>`<button class="pill ${jobOff.has(h)?'off':''}" data-h="${h}">${h}</button>`).join(''):'<span class="empty">No facet values recognised. Try naming a system, a schedule, or an output format.</span>';
+  $$('#jobfacets .pill').forEach(b=>b.onclick=()=>{jobOff.has(b.dataset.h)?jobOff.delete(b.dataset.h):jobOff.add(b.dataset.h);jobShow()});
+  const want=hits.filter(h=>!jobOff.has(h)), wf={};want.forEach(h=>{const[f,v]=h.split(':');(wf[f]=wf[f]||new Set()).add(v)});
+  const nf=Object.keys(wf).length, writeIntent=/\b(send|post|create|update|merge|publish|delete|log|write|draft)\b/i.test(txt);
+  const scored=[];
+  E.forEach((e,i)=>{let fm=0,vm=0;const mh=new Set();
+    for(const f in wf){const hit=e.f[f].filter(v=>wf[f].has(v[0]));if(hit.length){fm++;vm+=hit.length;hit.forEach(v=>mh.add(f+':'+v[0]))}}
+    if(fm)scored.push({e,fm,vm,mh,w:writeIntent&&Object.values(e.a).some(a=>a[0]==='write')?1:0})});
+  scored.sort((a,b)=>b.fm-a.fm||b.vm-a.vm||b.w-a.w||a.e.n.localeCompare(b.e.n));
+  $('#jobres').innerHTML=nf?scored.slice(0,30).map(s=>`<div class="score" style="margin:4px 0 -2px">${s.fm}/${nf} facets · ${s.vm} values</div>`+elHtml(s.e,s.mh)).join('')||'<div class="empty">No element matches.</div>':'';
+}
+/* ---------- independence ---------- */
+function buildNmi(){
+  const draw=(el,src)=>{
+    let h='<table class="nmi"><tr><th></th>'+F.map(f=>`<th style="text-align:center">${f}</th>`).join('')+'</tr>';
+    F.forEach((a,i)=>{h+=`<tr><th>${a}</th>`;F.forEach((b,j)=>{
+      if(i===j){h+='<td class="diag"></td>';return}
+      const k=i<j?a+'x'+b:b+'x'+a, v=src[k]??0;
+      h+=`<td><button data-a="${a}" data-b="${b}" class="${v>.5?'dark':''}" style="--a:${(.06+.85*v).toFixed(2)}" title="${a} × ${b}: ${v}">${v.toFixed(2)}</button></td>`});h+='</tr>'});
+    $(el).innerHTML=h+'</table>';
+  };
+  draw('#nmi1',D.nmi);draw('#nmi2',D.nmiAuthored);
+  $$('table.nmi button').forEach(b=>b.onclick=()=>{state.ay=b.dataset.a;state.ax=b.dataset.b;$('#ay').value=state.ay;$('#ax').value=state.ax;state.sel=null;tab('heat');render()});
+}
+/* ---------- benchmark: 500 elements ---------- */
+function bench(){
+  const reps=Math.ceil(500/N), big=[];for(let r=0;r<reps;r++)E.forEach(e=>big.push(e)); big.length=500;
+  const m=buildMasks(big); const fm=F.map((f,j)=>j===5?0:(j===0?3:0)); fm[2]=(1<<2)|(1<<3);
+  const times=[];for(let r=0;r<200;r++){const t=performance.now();const p=runFilter(m,500,fm);let c=0;for(let i=0;i<500;i++)if(p[i])c++;times.push(performance.now()-t)}
+  times.sort((a,b)=>a-b); window.__bench={n:500,median:times[100],p95:times[190]};
+  buildMasks(E);
+  $('#perf').textContent+=`  ·  500-element filter: median ${times[100].toFixed(3)} ms, p95 ${times[190].toFixed(3)} ms`;
+}
+})();
+</script>

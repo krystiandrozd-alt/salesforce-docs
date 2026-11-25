@@ -1,0 +1,4979 @@
+{
+ "version": 3,
+ "generated": "2026-11-22",
+ "vocab": {
+  "tr": [
+   "Conversational (chat/voice)",
+   "Manual (click / command)",
+   "Scheduled (time)",
+   "Event (record / platform / message)",
+   "API call (system)",
+   "Agent-invoked (tool call)",
+   "Autonomous (background agent)",
+   "Build-time (developer)"
+  ],
+  "ui": [
+   "Lightning Experience",
+   "Agentforce Coworker",
+   "Slack",
+   "Microsoft Teams",
+   "Outlook",
+   "Word / Excel / PowerPoint",
+   "Copilot Home / Chat",
+   "Web / portal",
+   "Mobile app",
+   "Voice / phone",
+   "Claude apps",
+   "ChatGPT",
+   "Tableau Next",
+   "IDE / terminal",
+   "Headless (no UI)"
+  ],
+  "soa": [
+   "Salesforce CRM",
+   "Data 360",
+   "Slack",
+   "Microsoft 365",
+   "Commerce Cloud",
+   "Marketing Cloud",
+   "Tableau",
+   "Communications Cloud",
+   "Google Workspace",
+   "External SaaS",
+   "Local files / code repo"
+  ],
+  "c": [
+   "Native (in-platform)",
+   "Hosted MCP (MCP Out)",
+   "Product-hosted MCP",
+   "Local MCP server (stdio)",
+   "External MCP (MCP In)",
+   "External integration (no Salesforce MCP)",
+   "REST / Agent API",
+   "SDK",
+   "CLI",
+   "Plugin / connector",
+   "SIP / telephony"
+  ],
+  "h": [
+   "Agentforce runtime",
+   "Agentforce Coworker",
+   "Agentforce Vibes",
+   "Claude Code",
+   "Claude Cowork",
+   "Claude apps",
+   "Microsoft 365 Copilot",
+   "Copilot Studio",
+   "ChatGPT",
+   "Slackbot",
+   "Tableau Agent",
+   "Cursor / VS Code Copilot",
+   "None (deterministic)"
+  ],
+  "m": [
+   "Salesforce Models API (multi-provider)",
+   "Anthropic Claude",
+   "OpenAI GPT",
+   "Microsoft Auto routing",
+   "Vendor-managed",
+   "None"
+  ],
+  "w": [
+   "Read & write",
+   "Write with confirmation",
+   "Read only",
+   "Not applicable"
+  ],
+  "id": [
+   "Salesforce user",
+   "User OAuth via ECA",
+   "Integration user",
+   "Guest / verified customer",
+   "Entra Agent ID",
+   "Developer credentials",
+   "Not applicable"
+  ],
+  "type": [
+   "Agent",
+   "Agent harness",
+   "App / surface",
+   "Action",
+   "Plugin / connector",
+   "MCP server",
+   "Process / workflow",
+   "Framework / SDK",
+   "Data / grounding",
+   "Model / trust",
+   "Dev tool"
+  ],
+  "persona": [
+   "Customer",
+   "Employee",
+   "Seller",
+   "Service / ops",
+   "Admin",
+   "Developer",
+   "ISV / partner",
+   "System"
+  ],
+  "maturity": [
+   "GA",
+   "Unverified",
+   "Beta",
+   "Pilot",
+   "Preview / Frontier",
+   "Legacy"
+  ],
+  "vendor": [
+   "Salesforce",
+   "Slack",
+   "Anthropic",
+   "Microsoft",
+   "OpenAI",
+   "Other / partner"
+  ],
+  "source": [
+   "Doc",
+   "Kit",
+   "Up",
+   "Inf",
+   "Ext"
+  ]
+ },
+ "elements": [
+  {
+   "id": "af-employee-agent",
+   "name": "Agentforce Employee agent",
+   "type": [
+    "Agent"
+   ],
+   "desc": "Internal agent in Lightning, Slack, ACC and mobile; reasons with Agent Script over CRM actions.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Employee"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Employee Agent Authentication"
+    },
+    {
+     "label": "Doc",
+     "folder": "agentforce-conversation-client",
+     "title": "Get Your Employee Agent ID"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Conversational (chat/voice)"
+     ],
+     "ui": [
+      "Lightning Experience",
+      "Slack",
+      "Web / portal",
+      "Mobile app"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Data 360"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "af-service-agent",
+   "name": "Agentforce Service agent",
+   "type": [
+    "Agent"
+   ],
+   "desc": "Customer-facing agent on Enhanced Chat v2, mobile, voice and custom connections, with escalation to humans.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Customer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "ServiceAgentConfiguration"
+    },
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Create Customer Chats using Enhanced Chat v2"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Conversational (chat/voice)"
+     ],
+     "ui": [
+      "Web / portal",
+      "Mobile app"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)",
+      "SDK"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Data 360"
+     ],
+     "id": [
+      "Guest / verified customer"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    },
+    {
+     "tr": [
+      "Event (record / platform / message)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Guest / verified customer"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "af-voice",
+   "name": "Agentforce Voice",
+   "type": [
+    "App / surface"
+   ],
+   "desc": "Voice channel: ElevenLabs and Kotoba voice models, SIP partner connectivity, TLS certificates.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Customer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Configure Voice Models"
+    },
+    {
+     "label": "Doc",
+     "folder": "agentforce-partners",
+     "title": "Support Agentforce Voice with SIP"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Conversational (chat/voice)"
+     ],
+     "ui": [
+      "Voice / phone"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "SIP / telephony"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Guest / verified customer"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "af-coworker",
+   "name": "Agentforce Coworker",
+   "type": [
+    "Agent harness",
+    "App / surface"
+   ],
+   "desc": "Employee workspace: searches Data 360, Slack and Google Workspace, answers, updates records, delegates to agents.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Employee"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "data-cloud",
+     "title": "Agentforce Coworker"
+    },
+    {
+     "label": "Doc",
+     "folder": "data-cloud",
+     "title": "Make Slack Searchable in Agentforce Coworker"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Conversational (chat/voice)",
+      "Manual (click / command)"
+     ],
+     "ui": [
+      "Agentforce Coworker"
+     ],
+     "h": [
+      "Agentforce Coworker"
+     ],
+     "c": [
+      "Native (in-platform)",
+      "Plugin / connector"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Data 360",
+      "Slack",
+      "Google Workspace"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    },
+    {
+     "tr": [
+      "Conversational (chat/voice)"
+     ],
+     "ui": [
+      "Microsoft Teams"
+     ],
+     "h": [
+      "Agentforce Coworker"
+     ],
+     "c": [
+      "Plugin / connector"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ],
+   "primary": true,
+   "note": "The Teams path comes from the Copilot brief (Coworker in the Teams flow)."
+  },
+  {
+   "id": "af-coworker-quickpage",
+   "name": "Coworker Quick Page",
+   "type": [
+    "App / surface"
+   ],
+   "desc": "Generates a quick page from a Coworker answer.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Employee"
+   ],
+   "maturity": "Beta",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "data-cloud",
+     "title": "Create a Quick Page with Agentforce Coworker (Beta)"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Manual (click / command)"
+     ],
+     "ui": [
+      "Agentforce Coworker"
+     ],
+     "h": [
+      "Agentforce Coworker"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Data 360"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read only",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "af-agent-api",
+   "name": "Headless agent via Agent API",
+   "type": [
+    "Agent"
+   ],
+   "desc": "Any agent driven programmatically: create session, stream messages, end session.",
+   "vendor": "Salesforce",
+   "persona": [
+    "System",
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Chat with Agents Using Agent API"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "API call (system)"
+     ],
+     "ui": [
+      "Headless (no UI)",
+      "Web / portal"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "REST / Agent API"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Data 360"
+     ],
+     "id": [
+      "Integration user",
+      "User OAuth via ECA"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "af-operations",
+   "name": "Agentforce Operations",
+   "type": [
+    "Process / workflow"
+   ],
+   "desc": "REST API for the Agentforce Operations workspace. The catalog has one page; scope beyond the API is not documented here.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Service / ops",
+    "Admin"
+   ],
+   "maturity": "Unverified",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "agentforce-operations",
+     "title": "Get Started"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "API call (system)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "None (deterministic)"
+     ],
+     "c": [
+      "REST / Agent API"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Integration user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ],
+     "assumed": [
+      "soa:Salesforce CRM",
+      "id:Integration user"
+     ]
+    }
+   ],
+   "maturity_override": "Only one doc page and no marker; maturity not established."
+  },
+  {
+   "id": "af-it-service",
+   "name": "Agentforce IT Service",
+   "type": [
+    "Agent"
+   ],
+   "desc": "IT service agent with its own objects, platform event and CMDB model.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Employee",
+    "Service / ops"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "service-cloud",
+     "title": "Agentforce IT Service Standard Objects"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Conversational (chat/voice)"
+     ],
+     "ui": [
+      "Lightning Experience"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    },
+    {
+     "tr": [
+      "Event (record / platform / message)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Integration user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "af-prospecting",
+   "name": "Prospecting Agent",
+   "type": [
+    "Agent"
+   ],
+   "desc": "Researches accounts, contacts and leads and recommends targets.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Seller"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "product-docs",
+     "title": "ProspectingAgentSpec"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Scheduled (time)",
+      "Autonomous (background agent)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    },
+    {
+     "tr": [
+      "Manual (click / command)"
+     ],
+     "ui": [
+      "Lightning Experience"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tableau-agent",
+   "name": "Tableau Agent",
+   "type": [
+    "Agent"
+   ],
+   "desc": "Analytics agent over the semantic layer, embeddable with the Tableau Next SDK.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Employee"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "analytics",
+     "title": "Embed the Tableau Agent"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Conversational (chat/voice)"
+     ],
+     "ui": [
+      "Tableau Next",
+      "Web / portal"
+     ],
+     "h": [
+      "Tableau Agent"
+     ],
+     "c": [
+      "Native (in-platform)",
+      "SDK"
+     ],
+     "soa": [
+      "Tableau",
+      "Data 360"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read only",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "af-commerce-client",
+   "name": "Agentforce Commerce Client",
+   "type": [
+    "Agent"
+   ],
+   "desc": "Shopper-facing agent for B2C storefronts.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Customer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "commerce-cloud",
+     "title": "Agentforce Commerce Client"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Conversational (chat/voice)"
+     ],
+     "ui": [
+      "Web / portal"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "SDK"
+     ],
+     "soa": [
+      "Commerce Cloud"
+     ],
+     "id": [
+      "Guest / verified customer"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "commerce-shopper-mcp",
+   "name": "Commerce shopper MCP tools",
+   "type": [
+    "MCP server"
+   ],
+   "desc": "Agentic MCP shopper tools for B2C Commerce.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Customer",
+    "Developer"
+   ],
+   "maturity": "Pilot",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "commerce-cloud",
+     "title": "Agentic MCP Shopper Tools Quick Start (Pilot)"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Claude apps",
+      "ChatGPT",
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Claude apps",
+      "ChatGPT"
+     ],
+     "c": [
+      "Product-hosted MCP"
+     ],
+     "soa": [
+      "Commerce Cloud"
+     ],
+     "id": [
+      "Guest / verified customer"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ],
+     "assumed": [
+      "h:Claude apps",
+      "h:ChatGPT",
+      "w:Read & write"
+     ]
+    }
+   ],
+   "note": "Hosted by B2C Commerce, not part of the Salesforce Hosted MCP catalog."
+  },
+  {
+   "id": "enhanced-chat-v2",
+   "name": "Enhanced Chat v2",
+   "type": [
+    "App / surface"
+   ],
+   "desc": "Customer web chat for service agents, with inline mode and custom-connection clients.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Customer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Create Customer Chats using Enhanced Chat v2"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Conversational (chat/voice)"
+     ],
+     "ui": [
+      "Web / portal"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "SDK",
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Guest / verified customer"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "einstein-bots",
+   "name": "Einstein Bots (Bot API)",
+   "type": [
+    "Agent"
+   ],
+   "desc": "Classic bot API v4–v5.1 and channel connector SDK. Agentforce supersedes it.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Customer"
+   ],
+   "maturity": "Legacy",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "bot-api",
+     "title": "Einstein Bots API"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Conversational (chat/voice)"
+     ],
+     "ui": [
+      "Web / portal"
+     ],
+     "h": [
+      "None (deterministic)"
+     ],
+     "c": [
+      "REST / Agent API"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Guest / verified customer"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ]
+    }
+   ],
+   "successor": "af-service-agent",
+   "maturity_override": "Legacy is an inference: the Bot API pages carry no Legacy marker."
+  },
+  {
+   "id": "action-flow",
+   "name": "Flow action",
+   "type": [
+    "Action"
+   ],
+   "desc": "Autolaunched Flow called by an agent or exposed as a hosted MCP tool.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Admin"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "hosted-mcp-servers",
+     "title": "Flows"
+    },
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "LWC & Flow Examples"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ]
+    },
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Claude apps",
+      "ChatGPT",
+      "IDE / terminal",
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Claude apps",
+      "ChatGPT",
+      "Cursor / VS Code Copilot",
+      "Agentforce Vibes",
+      "Claude Cowork",
+      "Claude Code"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ],
+     "assumed": [
+      "h:Claude Cowork",
+      "h:Claude Code"
+     ]
+    },
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Slack"
+     ],
+     "h": [
+      "Slackbot"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "flow-orchestration",
+   "name": "Flow orchestration (record-triggered / scheduled)",
+   "type": [
+    "Process / workflow"
+   ],
+   "desc": "Deterministic process that starts on a record change or a schedule and can call agents or prompts.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Admin",
+    "System"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "product-docs",
+     "title": "Flow"
+    },
+    {
+     "label": "Inf",
+     "basis": [
+      "action-flow",
+      "prompt-template",
+      "af-agent-api"
+     ]
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Event (record / platform / message)",
+      "Scheduled (time)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "None (deterministic)"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Integration user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)",
+      "None"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "action-apex-invocable",
+   "name": "Apex @InvocableMethod action",
+   "type": [
+    "Action"
+   ],
+   "desc": "Deterministic logic with validation and integration. Must be global when packaged or hosted as MCP.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Create Custom Actions Using Apex InvocableMethod"
+    },
+    {
+     "label": "Doc",
+     "folder": "hosted-mcp-servers",
+     "title": "Invocable Actions"
+    },
+    {
+     "label": "Kit",
+     "file": "skills/headless-mcp-advisor/references/decision-guide.md",
+     "text": "global"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ]
+    },
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Claude apps",
+      "ChatGPT",
+      "IDE / terminal",
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Claude apps",
+      "ChatGPT",
+      "Cursor / VS Code Copilot",
+      "Agentforce Vibes",
+      "Claude Cowork",
+      "Claude Code"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ],
+     "assumed": [
+      "h:Claude Cowork",
+      "h:Claude Code"
+     ]
+    },
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Slack"
+     ],
+     "h": [
+      "Slackbot"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ]
+    },
+    {
+     "tr": [
+      "API call (system)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "None (deterministic)"
+     ],
+     "c": [
+      "REST / Agent API"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "External SaaS"
+     ],
+     "id": [
+      "Integration user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "action-apex-rest",
+   "name": "Apex REST / @AuraEnabled action",
+   "type": [
+    "Action"
+   ],
+   "desc": "Reuses existing REST endpoints or LWC controller methods as agent actions.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Create Actions with Apex REST Agent Actions"
+    },
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Create Actions from Apex Controller Methods"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ]
+    },
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Claude apps",
+      "ChatGPT",
+      "IDE / terminal",
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Claude apps",
+      "ChatGPT",
+      "Cursor / VS Code Copilot",
+      "Agentforce Vibes",
+      "Claude Cowork",
+      "Claude Code"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ],
+     "assumed": [
+      "h:Claude Cowork",
+      "h:Claude Code"
+     ]
+    },
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Slack"
+     ],
+     "h": [
+      "Slackbot"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "action-named-query",
+   "name": "Named Query action",
+   "type": [
+    "Action"
+   ],
+   "desc": "Parameterized read-only SOQL exposed as an action.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Admin",
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Create Actions from Named Queries"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read only",
+     "m": [
+      "None"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "action-openapi",
+   "name": "OpenAPI-described Apex action",
+   "type": [
+    "Action"
+   ],
+   "desc": "Generates agent actions from Apex @AuraEnabled methods described with OpenAPI extensions.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Use OpenAPI Extensions to Create Agent Actions"
+    },
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Create Agent Actions"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "external-services",
+   "name": "External Services (third-party API)",
+   "type": [
+    "Action"
+   ],
+   "desc": "Registers a third-party API from its schema so Flow and Apex, and the agents that call them, can use it.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Admin",
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "platform-apex",
+     "title": "External Services"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "REST / Agent API"
+     ],
+     "soa": [
+      "External SaaS"
+     ],
+     "id": [
+      "Integration user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ],
+     "assumed": [
+      "h:Agentforce runtime"
+     ]
+    }
+   ],
+   "primary": true,
+   "note": "Agent use goes through Flow or Apex actions that call the External Service."
+  },
+  {
+   "id": "prompt-template",
+   "name": "Prompt Template (Prompt Builder)",
+   "type": [
+    "Action"
+   ],
+   "desc": "Grounded LLM generation, with Jinja and batch processing. Also exposable via hosted MCP.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Admin"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Prompt Builder"
+    },
+    {
+     "label": "Doc",
+     "folder": "hosted-mcp-servers",
+     "title": "Prompt Builder"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Data 360"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read only",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    },
+    {
+     "tr": [
+      "Manual (click / command)"
+     ],
+     "ui": [
+      "Lightning Experience"
+     ],
+     "h": [
+      "None (deterministic)"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read only",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    },
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Claude apps",
+      "ChatGPT"
+     ],
+     "h": [
+      "Claude apps",
+      "Claude Cowork",
+      "ChatGPT"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read only",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ],
+     "assumed": [
+      "h:Claude Cowork"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "action-mcp-in",
+   "name": "External MCP tool (MCP In)",
+   "type": [
+    "Action"
+   ],
+   "desc": "An agent calls a partner or third-party MCP server registered in the Agentforce Registry or API Catalog.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Admin",
+    "ISV / partner"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Manage MCP Servers"
+    },
+    {
+     "label": "Doc",
+     "folder": "api-catalog",
+     "title": "Example: Register and Manage an External MCP Server"
+    },
+    {
+     "label": "Kit",
+     "file": "skills/headless-mcp-advisor/references/decision-guide.md",
+     "text": "ExternalCredential"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "External MCP (MCP In)"
+     ],
+     "soa": [
+      "External SaaS"
+     ],
+     "id": [
+      "Integration user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "action-custom-scorer",
+   "name": "Custom scorer action",
+   "type": [
+    "Action"
+   ],
+   "desc": "Invocable action that scores agent test results.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Custom Scorer Invocable Actions"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "None (deterministic)"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Developer credentials"
+     ],
+     "w": "Not applicable",
+     "m": [
+      "Salesforce Models API (multi-provider)",
+      "None"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "adl",
+   "name": "Agentforce Data Libraries (ADL)",
+   "type": [
+    "Data / grounding"
+   ],
+   "desc": "Knowledge and file libraries for RAG, managed via the ADL API and sf agent adl.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Admin",
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Ground Your Agent with Data Libraries"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Data 360"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read only",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    },
+    {
+     "tr": [
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "IDE / terminal"
+     ],
+     "h": [
+      "None (deterministic)"
+     ],
+     "c": [
+      "CLI",
+      "REST / Agent API"
+     ],
+     "soa": [
+      "Data 360"
+     ],
+     "id": [
+      "Developer credentials"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "agentic-memory",
+   "name": "Agentic Memory & Context API",
+   "type": [
+    "Data / grounding"
+   ],
+   "desc": "Sessions, conversations, memory extraction and Get Context over real-time data graphs.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer",
+    "System"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "data-cloud",
+     "title": "About the Agentic Memory & Context API"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)",
+      "API call (system)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "REST / Agent API"
+     ],
+     "soa": [
+      "Data 360"
+     ],
+     "id": [
+      "Integration user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "semantic-layer",
+   "name": "Semantic Layer (Semantic Query API)",
+   "type": [
+    "Data / grounding"
+   ],
+   "desc": "Governed metrics and semantic models for agents and Tableau.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Employee",
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "data-cloud",
+     "title": "Semantic Query API"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)",
+      "API call (system)"
+     ],
+     "ui": [
+      "Headless (no UI)",
+      "Tableau Next"
+     ],
+     "h": [
+      "Agentforce runtime",
+      "Tableau Agent"
+     ],
+     "c": [
+      "REST / Agent API",
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Data 360",
+      "Tableau"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read only",
+     "m": [
+      "None"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "document-ai",
+   "name": "Document AI",
+   "type": [
+    "Data / grounding"
+   ],
+   "desc": "Extracts structured data from complex documents such as bank statements.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Admin"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "data-ae",
+     "title": "Build a Loan Prequalification Agent with Document AI"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Event (record / platform / message)",
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)",
+      "REST / Agent API"
+     ],
+     "soa": [
+      "Data 360"
+     ],
+     "id": [
+      "Integration user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "agent-telemetry",
+   "name": "Agent telemetry DMOs & session tracing",
+   "type": [
+    "Data / grounding"
+   ],
+   "desc": "AI Agent Session, Interaction, Step and Moment DMOs plus trace export, for observability.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Admin",
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "data-cloud",
+     "title": "AI Agent Session DMO"
+    },
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Export Agentforce Session Tracing Data"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Event (record / platform / message)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "None (deterministic)"
+     ],
+     "c": [
+      "Native (in-platform)",
+      "REST / Agent API"
+     ],
+     "soa": [
+      "Data 360"
+     ],
+     "id": [
+      "Integration user"
+     ],
+     "w": "Read only",
+     "m": [
+      "None"
+     ]
+    }
+   ],
+   "primary": true,
+   "note": "Trace export uses the OpenTelemetry API (otel-api)."
+  },
+  {
+   "id": "models-api",
+   "name": "Models API",
+   "type": [
+    "Model / trust"
+   ],
+   "desc": "Generate, chat and predict through REST or Apex, via the Trust Layer.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Models API"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "API call (system)",
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime",
+      "None (deterministic)"
+     ],
+     "c": [
+      "REST / Agent API",
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user",
+      "Integration user"
+     ],
+     "w": "Not applicable",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "trust-layer",
+   "name": "Einstein Trust Layer",
+   "type": [
+    "Model / trust"
+   ],
+   "desc": "Masking, toxicity scoring, feedback and citations on every Agentforce model call.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Admin"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Trust Layer"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime",
+      "Agentforce Coworker"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Not applicable"
+     ],
+     "w": "Not applicable",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "claude-in-agentforce",
+   "name": "Claude inside Agentforce",
+   "type": [
+    "Model / trust"
+   ],
+   "desc": "Claude offered as a model within the Salesforce trust boundary. Confirm current availability.",
+   "vendor": "Anthropic",
+   "persona": [
+    "Admin"
+   ],
+   "maturity": "Unverified",
+   "sources": [
+    {
+     "label": "Ext",
+     "note": "Salesforce–Anthropic partnership announcement, Oct 2025"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Not applicable"
+     ],
+     "w": "Not applicable",
+     "m": [
+      "Anthropic Claude",
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agent-script",
+   "name": "Agent Script",
+   "type": [
+    "Framework / SDK"
+   ],
+   "desc": "Agent language: blocks, transitions, variables, router, reasoning actions. AiAuthoringBundle carrier.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer",
+    "Admin"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Agent Script"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "IDE / terminal",
+      "Lightning Experience"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "CLI",
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Developer credentials"
+     ],
+     "w": "Not applicable",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "legacy-builder",
+   "name": "Legacy agent builder (topics/actions)",
+   "type": [
+    "Framework / SDK"
+   ],
+   "desc": "GenAiPlanner / GenAiPlugin / GenAiFunction agents that do not use Agent Script.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Admin"
+   ],
+   "maturity": "Legacy",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Create an Agent Without Using Agent Script (Legacy)"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "Lightning Experience"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Developer credentials"
+     ],
+     "w": "Not applicable",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ],
+   "successor": "agent-script"
+  },
+  {
+   "id": "lightning-types",
+   "name": "Lightning Types",
+   "type": [
+    "Framework / SDK"
+   ],
+   "desc": "Typed agent I/O with custom renderers and editors, for agents, Flow and Prompt Builder.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "lightning-type-systems",
+     "title": "Get Started with Lightning Types"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "Lightning Experience",
+      "Mobile app",
+      "Web / portal"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Developer credentials"
+     ],
+     "w": "Not applicable",
+     "m": [
+      "None"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lwc-agent-targets",
+   "name": "LWC Agentforce input/output targets",
+   "type": [
+    "Framework / SDK"
+   ],
+   "desc": "Custom LWC components rendered inside the agent conversation.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "lwc",
+     "title": "lightning__AgentforceOutput Target"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "Lightning Experience"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Developer credentials"
+     ],
+     "w": "Not applicable",
+     "m": [
+      "None"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hxl",
+   "name": "HXL widgets (UiWidgetBundle)",
+   "type": [
+    "Framework / SDK"
+   ],
+   "desc": "Portable rich-output widgets that render in the Employee agent and in Slackbot, Claude and ChatGPT via MCP.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer",
+    "ISV / partner"
+   ],
+   "maturity": "Beta",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "headless-experience-layer",
+     "title": "Learn About HXL"
+    },
+    {
+     "label": "Kit",
+     "file": "skills/headless-mcp-advisor/references/decision-guide.md",
+     "text": "HXL widgets"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "Lightning Experience"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Developer credentials"
+     ],
+     "w": "Not applicable",
+     "m": [
+      "None"
+     ]
+    },
+    {
+     "tr": [
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "Slack",
+      "Claude apps",
+      "ChatGPT"
+     ],
+     "h": [
+      "Slackbot",
+      "Claude apps",
+      "ChatGPT"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Not applicable",
+     "m": [
+      "None"
+     ]
+    }
+   ],
+   "primary": true,
+   "maturity_override": "The developer guide's section is titled '(Beta)'; the overview page title has no marker."
+  },
+  {
+   "id": "acc",
+   "name": "Agentforce Conversation Client (ACC)",
+   "type": [
+    "Framework / SDK"
+   ],
+   "desc": "Web SDK that embeds employee-agent chat in Lightning or external web apps.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Employee",
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "agentforce-conversation-client",
+     "title": "Introducing Agentforce Conversation Client"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Conversational (chat/voice)"
+     ],
+     "ui": [
+      "Web / portal",
+      "Lightning Experience"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "SDK"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "mobile-sdk",
+   "name": "Agentforce Mobile SDK",
+   "type": [
+    "Framework / SDK"
+   ],
+   "desc": "iOS, Android and React Native SDK with full UI or headless mode, theming and voice.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Customer",
+    "Employee",
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Agentforce Mobile SDK Overview"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Conversational (chat/voice)"
+     ],
+     "ui": [
+      "Mobile app"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "SDK"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user",
+      "Guest / verified customer"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "react-uibundle",
+   "name": "Multi-Framework React (UIBundle)",
+   "type": [
+    "Framework / SDK"
+   ],
+   "desc": "React apps on the platform with Data SDK (GraphQL) and ACC integration.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "multi-framework",
+     "title": "Salesforce Multi-Framework Overview"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "Lightning Experience",
+      "Web / portal"
+     ],
+     "h": [
+      "Agentforce Vibes",
+      "Claude Code"
+     ],
+     "c": [
+      "SDK",
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "microfrontends",
+   "name": "Microfrontends / UI embedding",
+   "type": [
+    "Framework / SDK"
+   ],
+   "desc": "Embed internally hosted (Beta) or external (Developer Preview) apps in Salesforce pages.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "Beta",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "multi-framework",
+     "title": "Embed an Internally Hosted App as a UI Bundle (Beta)"
+    },
+    {
+     "label": "Doc",
+     "folder": "multi-framework",
+     "title": "Embed an External Web App (Developer Preview)"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "Lightning Experience"
+     ],
+     "h": [
+      "None (deterministic)"
+     ],
+     "c": [
+      "SDK"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "External SaaS"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Not applicable",
+     "m": [
+      "None"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "apex-slack-sdk",
+   "name": "Apex SDK for Slack",
+   "type": [
+    "Framework / SDK"
+   ],
+   "desc": "Build Slack apps in Apex: surfaces, events, interactions.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "Beta",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "salesforce-slack-sdk",
+     "title": "Apex SDK for Slack (Beta)"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Event (record / platform / message)",
+      "Conversational (chat/voice)",
+      "Manual (click / command)"
+     ],
+     "ui": [
+      "Slack"
+     ],
+     "h": [
+      "None (deterministic)"
+     ],
+     "c": [
+      "SDK"
+     ],
+     "soa": [
+      "Slack",
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "mcp-sobject",
+   "name": "Hosted MCP: SObject Reads / Mutations / Deletes / All",
+   "type": [
+    "MCP server"
+   ],
+   "desc": "Standard Salesforce-hosted servers for record access by external AI clients.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Employee",
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "hosted-mcp-servers",
+     "title": "SObject Reads"
+    },
+    {
+     "label": "Doc",
+     "folder": "hosted-mcp-servers",
+     "title": "Configure Claude"
+    },
+    {
+     "label": "Doc",
+     "folder": "hosted-mcp-servers",
+     "title": "Configure ChatGPT"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Claude apps",
+      "ChatGPT"
+     ],
+     "h": [
+      "Claude apps",
+      "ChatGPT",
+      "Claude Cowork"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ],
+     "assumed": [
+      "h:Claude Cowork"
+     ]
+    },
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "IDE / terminal"
+     ],
+     "h": [
+      "Agentforce Vibes",
+      "Cursor / VS Code Copilot",
+      "Claude Code"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ],
+     "assumed": [
+      "h:Claude Code"
+     ]
+    },
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ]
+    },
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Slack"
+     ],
+     "h": [
+      "Slackbot"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ]
+    }
+   ],
+   "primary": true,
+   "note": "Reads is read-only; Mutations, Deletes and All add write access. Documented clients: Agentforce, Vibes, Claude, ChatGPT, Cursor, Postman."
+  },
+  {
+   "id": "mcp-custom",
+   "name": "Hosted custom MCP server (per persona)",
+   "type": [
+    "MCP server"
+   ],
+   "desc": "Curated tools from Apex, Flow, Prompt Templates, Apex REST and API Catalog. One logic layer for external clients.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Employee",
+    "Seller",
+    "ISV / partner"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "hosted-mcp-servers",
+     "title": "Build Custom MCP Servers"
+    },
+    {
+     "label": "Kit",
+     "file": "skills/headless-mcp-advisor/references/decision-guide.md",
+     "text": "McpServerDefinition"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Claude apps",
+      "ChatGPT"
+     ],
+     "h": [
+      "Claude apps",
+      "ChatGPT",
+      "Claude Cowork"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Data 360"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ],
+     "assumed": [
+      "h:Claude Cowork"
+     ]
+    },
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "IDE / terminal"
+     ],
+     "h": [
+      "Agentforce Vibes",
+      "Cursor / VS Code Copilot",
+      "Claude Code"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Data 360"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ],
+     "assumed": [
+      "h:Claude Code"
+     ]
+    },
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Data 360"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ]
+    },
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Slack"
+     ],
+     "h": [
+      "Slackbot"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ]
+    },
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Microsoft Teams",
+      "Copilot Home / Chat"
+     ],
+     "h": [
+      "Copilot Studio"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ]
+    }
+   ],
+   "primary": true,
+   "note": "Copilot Studio path per the Copilot brief. The subscriber configures McpServerDefinition; it is not packageable in 2GP (Kit)."
+  },
+  {
+   "id": "mcp-headless360",
+   "name": "Headless 360 MCP server",
+   "type": [
+    "MCP server"
+   ],
+   "desc": "Broad Discover / Describe / Dispatch access across the platform.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "Beta",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "hosted-mcp-servers",
+     "title": "Headless 360 (Beta)"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Claude apps",
+      "ChatGPT",
+      "IDE / terminal"
+     ],
+     "h": [
+      "Claude apps",
+      "ChatGPT",
+      "Cursor / VS Code Copilot",
+      "Agentforce Vibes",
+      "Claude Code"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ],
+     "assumed": [
+      "h:Claude Code"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mcp-data360-tableau",
+   "name": "Data 360 / Tableau Next MCP servers",
+   "type": [
+    "MCP server"
+   ],
+   "desc": "Standard hosted servers for Data 360 and Tableau Next.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Employee"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "hosted-mcp-servers",
+     "title": "Data 360"
+    },
+    {
+     "label": "Doc",
+     "folder": "hosted-mcp-servers",
+     "title": "Tableau Next"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Claude apps",
+      "ChatGPT",
+      "IDE / terminal"
+     ],
+     "h": [
+      "Claude apps",
+      "ChatGPT",
+      "Cursor / VS Code Copilot",
+      "Claude Cowork",
+      "Claude Code"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Data 360",
+      "Tableau"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read only",
+     "m": [
+      "None"
+     ],
+     "assumed": [
+      "h:Claude Cowork",
+      "h:Claude Code"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mcp-marketing",
+   "name": "Marketing Cloud Engagement MCP server",
+   "type": [
+    "MCP server"
+   ],
+   "desc": "Journeys, assets, contacts and automations for LLM-driven marketing.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Employee"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "marketing-cloud",
+     "title": "Set Up the MCP Server"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Claude apps",
+      "IDE / terminal"
+     ],
+     "h": [
+      "Claude apps",
+      "Claude Code"
+     ],
+     "c": [
+      "Product-hosted MCP"
+     ],
+     "soa": [
+      "Marketing Cloud"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ],
+     "assumed": [
+      "h:Claude apps",
+      "h:Claude Code",
+      "id:User OAuth via ECA"
+     ]
+    }
+   ],
+   "primary": true,
+   "note": "Documented under Marketing Cloud, not in the Salesforce Hosted MCP catalog; clients and auth are assumptions."
+  },
+  {
+   "id": "mcp-partner",
+   "name": "Partner MCP server (e.g. telco tools)",
+   "type": [
+    "MCP server"
+   ],
+   "desc": "Partner-hosted tools such as Communications Cloud serviceability checks, offered to Agentforce and Copilot.",
+   "vendor": "Other / partner",
+   "persona": [
+    "Seller",
+    "ISV / partner"
+   ],
+   "maturity": "Unverified",
+   "sources": [
+    {
+     "label": "Up",
+     "section": "§13",
+     "text": "Enxoo MCP"
+    },
+    {
+     "label": "Kit",
+     "file": "skills/headless-mcp-advisor/references/decision-guide.md",
+     "text": "Neither: external integration"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "External MCP (MCP In)"
+     ],
+     "soa": [
+      "Communications Cloud",
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Integration user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ],
+     "assumed": [
+      "id:Integration user"
+     ]
+    },
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Microsoft Teams",
+      "Copilot Home / Chat",
+      "Outlook"
+     ],
+     "h": [
+      "Microsoft 365 Copilot"
+     ],
+     "c": [
+      "External integration (no Salesforce MCP)"
+     ],
+     "soa": [
+      "Communications Cloud",
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Not applicable"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Microsoft Auto routing"
+     ],
+     "assumed": [
+      "w:Read & write"
+     ]
+    }
+   ],
+   "primary": true,
+   "depends_on": [
+    "copilotforce"
+   ],
+   "maturity_override": "The Agentforce path does not depend on the plugin; the Copilot path rides the Beta Copilotforce plugin.",
+   "note": "Copilot calling a partner server is an external integration in the kit's terms, not MCP In. The brief gives no status for it."
+  },
+  {
+   "id": "api-catalog",
+   "name": "API Catalog",
+   "type": [
+    "Process / workflow"
+   ],
+   "desc": "Registers APIs and external or custom hosted MCP servers.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Admin"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "api-catalog",
+     "title": "Example: Register and Manage an External MCP Server"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Manual (click / command)"
+     ],
+     "ui": [
+      "Lightning Experience"
+     ],
+     "h": [
+      "None (deterministic)"
+     ],
+     "c": [
+      "REST / Agent API",
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Not applicable",
+     "m": [
+      "None"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dx-mcp",
+   "name": "Salesforce DX MCP server",
+   "type": [
+    "MCP server",
+    "Dev tool"
+   ],
+   "desc": "Local MCP server over sf CLI: org, metadata, testing and LWC tools for any coding agent.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "salesforcedx",
+     "title": "Salesforce DX MCP Server and Tools"
+    },
+    {
+     "label": "Doc",
+     "folder": "salesforcedx",
+     "title": "Install and Configure the Salesforce DX MCP Server"
+    },
+    {
+     "label": "Doc",
+     "folder": "salesforcedx",
+     "title": "Quick Start Using the VS Code With Copilot MCP Client"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "IDE / terminal"
+     ],
+     "h": [
+      "Cursor / VS Code Copilot",
+      "Agentforce Vibes",
+      "Claude Code"
+     ],
+     "c": [
+      "Local MCP server (stdio)",
+      "CLI"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Local files / code repo"
+     ],
+     "id": [
+      "Developer credentials"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ],
+     "assumed": [
+      "h:Claude Code"
+     ]
+    }
+   ],
+   "primary": true,
+   "note": "Corrected in this version: it runs locally with the developer's CLI auth and is not a Salesforce-hosted server."
+  },
+  {
+   "id": "mcp-metadata-grounding",
+   "name": "Metadata Grounding MCP",
+   "type": [
+    "MCP server"
+   ],
+   "desc": "Hosted server that grounds coding agents on org metadata.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "Beta",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "salesforcedx",
+     "title": "Metadata Grounding MCP Server(Beta)"
+    },
+    {
+     "label": "Doc",
+     "folder": "hosted-mcp-servers",
+     "title": "Metadata Grounding (Beta)"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "IDE / terminal"
+     ],
+     "h": [
+      "Claude Code",
+      "Agentforce Vibes",
+      "Cursor / VS Code Copilot"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read only",
+     "m": [
+      "None"
+     ],
+     "assumed": [
+      "h:Claude Code"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mcp-metadata-experts",
+   "name": "Metadata Experts MCP",
+   "type": [
+    "MCP server"
+   ],
+   "desc": "Grounds the coding agent on metadata-type expertise.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "salesforcedx",
+     "title": "Metadata Experts MCP Server"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "IDE / terminal"
+     ],
+     "h": [
+      "Agentforce Vibes"
+     ],
+     "c": [
+      "Local MCP server (stdio)"
+     ],
+     "soa": [
+      "Local files / code repo"
+     ],
+     "id": [
+      "Developer credentials"
+     ],
+     "w": "Read only",
+     "m": [
+      "None"
+     ],
+     "assumed": [
+      "c:Local MCP server (stdio)"
+     ]
+    }
+   ],
+   "note": "The current Vibes guide has no Beta marker; the deprecated guide still says (Beta). Not in the hosted catalog, so tagged local as an assumption."
+  },
+  {
+   "id": "lwc-mcp-tools",
+   "name": "LWC MCP tools",
+   "type": [
+    "Dev tool"
+   ],
+   "desc": "LWC dev, Figma-to-LWC, Aura migration, SLDS and testing tools.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "Beta",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "lwc",
+     "title": "LWC MCP Tools Reference (Beta)"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "IDE / terminal"
+     ],
+     "h": [
+      "Claude Code",
+      "Agentforce Vibes",
+      "Cursor / VS Code Copilot"
+     ],
+     "c": [
+      "Local MCP server (stdio)"
+     ],
+     "soa": [
+      "Local files / code repo"
+     ],
+     "id": [
+      "Developer credentials"
+     ],
+     "w": "Read & write",
+     "m": [
+      "None"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agentforce-dx",
+   "name": "Agentforce DX (sf agent CLI)",
+   "type": [
+    "Dev tool"
+   ],
+   "desc": "Spec → authoring bundle → preview → publish → test → trace. The sf agent mcp commands are Developer Preview.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Agentforce DX"
+    },
+    {
+     "label": "Doc",
+     "folder": "salesforcedx",
+     "title": "agent mcp create (Developer Preview)"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Build-time (developer)",
+      "Manual (click / command)"
+     ],
+     "ui": [
+      "IDE / terminal"
+     ],
+     "h": [
+      "Claude Code",
+      "Agentforce Vibes",
+      "Cursor / VS Code Copilot"
+     ],
+     "c": [
+      "CLI"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Local files / code repo"
+     ],
+     "id": [
+      "Developer credentials"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "vibes",
+   "name": "Agentforce Vibes",
+   "type": [
+    "Agent harness",
+    "Dev tool"
+   ],
+   "desc": "Salesforce's agentic coding environment: Plan/Act, rules, hooks, skills, MCP, multi-model.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer",
+    "Admin"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "salesforcedx",
+     "title": "Agentforce Vibes Overview"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Build-time (developer)",
+      "Manual (click / command)"
+     ],
+     "ui": [
+      "IDE / terminal",
+      "Web / portal"
+     ],
+     "h": [
+      "Agentforce Vibes"
+     ],
+     "c": [
+      "Native (in-platform)",
+      "Local MCP server (stdio)",
+      "CLI"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Local files / code repo"
+     ],
+     "id": [
+      "Developer credentials"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    },
+    {
+     "tr": [
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "IDE / terminal",
+      "Web / portal"
+     ],
+     "h": [
+      "Agentforce Vibes"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ],
+   "primary": true,
+   "note": "Current guide: agentforcevibes. The older einstein-for-devs 'Agentforce Vibes Developer Guide' is marked Deprecated. Beta sub-features: Headless 360 MCP, Metadata Grounding MCP, Data SDK."
+  },
+  {
+   "id": "agentforce-builder",
+   "name": "Agentforce Builder",
+   "type": [
+    "App / surface"
+   ],
+   "desc": "Declarative agent builder in Setup, with AgentExchange asset access.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Admin"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "platform-pkg-exchange",
+     "title": "Access AgentExchange from Agentforce Builder"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "Lightning Experience"
+     ],
+     "h": [
+      "Agentforce runtime"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Not applicable",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "testing",
+   "name": "Testing Center / Testing API",
+   "type": [
+    "Process / workflow"
+   ],
+   "desc": "Test specs, custom criteria and scorers, run from CLI, Connect API or CI. run-eval is Beta.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "genai",
+     "title": "Test Agents Using Testing API"
+    },
+    {
+     "label": "Doc",
+     "folder": "salesforcedx",
+     "title": "agent test run-eval (Beta)"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Build-time (developer)",
+      "API call (system)"
+     ],
+     "ui": [
+      "Lightning Experience",
+      "IDE / terminal"
+     ],
+     "h": [
+      "None (deterministic)"
+     ],
+     "c": [
+      "REST / Agent API",
+      "CLI",
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Developer credentials"
+     ],
+     "w": "Not applicable",
+     "m": [
+      "Salesforce Models API (multi-provider)"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "code-analyzer",
+   "name": "Code Analyzer",
+   "type": [
+    "Dev tool"
+   ],
+   "desc": "Static analysis for Apex, JS and Flow in CLI, VS Code and CI.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "code-analyzer",
+     "title": "Produce Code Analyzer Reports for AppExchange Security Review"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Build-time (developer)",
+      "Event (record / platform / message)"
+     ],
+     "ui": [
+      "IDE / terminal"
+     ],
+     "h": [
+      "None (deterministic)"
+     ],
+     "c": [
+      "CLI"
+     ],
+     "soa": [
+      "Local files / code repo"
+     ],
+     "id": [
+      "Developer credentials"
+     ],
+     "w": "Not applicable",
+     "m": [
+      "None"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "packaging-agentexchange",
+   "name": "2GP packaging + AgentExchange",
+   "type": [
+    "Process / workflow"
+   ],
+   "desc": "Package GenAi* metadata, pass security review and list agents, actions and MCP servers.",
+   "vendor": "Salesforce",
+   "persona": [
+    "ISV / partner"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "platform-pkg-exchange",
+     "title": "ISVforce Guide: Build and Distribute AgentExchange Solutions"
+    },
+    {
+     "label": "Kit",
+     "file": "skills/agentforce-implementation-advisor/references/practitioner-knowledge.md",
+     "text": "GenAiPlannerBundle"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Manual (click / command)",
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "Web / portal",
+      "IDE / terminal"
+     ],
+     "h": [
+      "None (deterministic)"
+     ],
+     "c": [
+      "CLI",
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Developer credentials"
+     ],
+     "w": "Not applicable",
+     "m": [
+      "None"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "claude-code",
+   "name": "Claude Code",
+   "type": [
+    "Agent harness",
+    "Dev tool"
+   ],
+   "desc": "Anthropic's coding agent for terminal, IDE and CI. Uses DX MCP, sf CLI, skills and plugins for Salesforce work.",
+   "vendor": "Anthropic",
+   "persona": [
+    "Developer",
+    "ISV / partner"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Ext",
+     "note": "Anthropic product"
+    },
+    {
+     "label": "Kit",
+     "file": "README.md",
+     "text": "Claude Code"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Manual (click / command)",
+      "Scheduled (time)",
+      "Event (record / platform / message)",
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "IDE / terminal"
+     ],
+     "h": [
+      "Claude Code"
+     ],
+     "c": [
+      "CLI",
+      "Local MCP server (stdio)",
+      "Plugin / connector"
+     ],
+     "soa": [
+      "Local files / code repo",
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Developer credentials"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Anthropic Claude"
+     ]
+    },
+    {
+     "tr": [
+      "Manual (click / command)",
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "IDE / terminal"
+     ],
+     "h": [
+      "Claude Code"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Data 360"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Anthropic Claude"
+     ],
+     "assumed": [
+      "c:Hosted MCP (MCP Out)",
+      "h:Claude Code"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "claude-cowork",
+   "name": "Claude Cowork",
+   "type": [
+    "Agent harness",
+    "App / surface"
+   ],
+   "desc": "Anthropic's desktop agent for multi-step knowledge work across local files, connectors and plugins.",
+   "vendor": "Anthropic",
+   "persona": [
+    "Employee",
+    "Seller"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Ext",
+     "note": "Anthropic product"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Manual (click / command)",
+      "Scheduled (time)",
+      "Autonomous (background agent)"
+     ],
+     "ui": [
+      "Claude apps"
+     ],
+     "h": [
+      "Claude Cowork"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)",
+      "Plugin / connector"
+     ],
+     "soa": [
+      "Local files / code repo",
+      "Salesforce CRM",
+      "External SaaS"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Anthropic Claude"
+     ],
+     "assumed": [
+      "c:Hosted MCP (MCP Out)",
+      "h:Claude Cowork"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "claude-apps",
+   "name": "Claude apps + Salesforce connector",
+   "type": [
+    "App / surface"
+   ],
+   "desc": "Claude web and desktop connected to a hosted MCP server through a custom connector.",
+   "vendor": "Anthropic",
+   "persona": [
+    "Employee",
+    "Seller"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "hosted-mcp-servers",
+     "title": "Configure Claude"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Conversational (chat/voice)"
+     ],
+     "ui": [
+      "Claude apps"
+     ],
+     "h": [
+      "Claude apps"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Data 360"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Anthropic Claude"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "claude-plugins",
+   "name": "Claude plugins & skills (sf-skills, sales, ISV/OEM Advisor)",
+   "type": [
+    "Plugin / connector"
+   ],
+   "desc": "Packaged skills and commands that teach Claude Salesforce build and sales workflows.",
+   "vendor": "Anthropic",
+   "persona": [
+    "Developer",
+    "Seller",
+    "ISV / partner"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Kit",
+     "file": "README.md",
+     "text": "Claude Code"
+    },
+    {
+     "label": "Ext",
+     "note": "Anthropic plugin system"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Manual (click / command)",
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "IDE / terminal",
+      "Claude apps"
+     ],
+     "h": [
+      "Claude Code",
+      "Claude Cowork"
+     ],
+     "c": [
+      "Plugin / connector",
+      "CLI",
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Local files / code repo"
+     ],
+     "id": [
+      "Developer credentials",
+      "User OAuth via ECA"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Anthropic Claude"
+     ],
+     "assumed": [
+      "h:Claude Code",
+      "h:Claude Cowork"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chatgpt",
+   "name": "ChatGPT + Salesforce hosted MCP",
+   "type": [
+    "App / surface"
+   ],
+   "desc": "ChatGPT app/developer-mode connection to a hosted server (ECA, client secret).",
+   "vendor": "OpenAI",
+   "persona": [
+    "Employee"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "hosted-mcp-servers",
+     "title": "Configure ChatGPT"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Conversational (chat/voice)"
+     ],
+     "ui": [
+      "ChatGPT"
+     ],
+     "h": [
+      "ChatGPT"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read & write",
+     "m": [
+      "OpenAI GPT"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "cursor-copilot",
+   "name": "Cursor / VS Code Copilot",
+   "type": [
+    "Agent harness",
+    "Dev tool"
+   ],
+   "desc": "IDE coding agents connected to the DX MCP server and hosted servers.",
+   "vendor": "Other / partner",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Doc",
+     "folder": "hosted-mcp-servers",
+     "title": "Configure Cursor"
+    },
+    {
+     "label": "Doc",
+     "folder": "salesforcedx",
+     "title": "Quick Start Using the VS Code With Copilot MCP Client"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "IDE / terminal"
+     ],
+     "h": [
+      "Cursor / VS Code Copilot"
+     ],
+     "c": [
+      "Local MCP server (stdio)"
+     ],
+     "soa": [
+      "Local files / code repo",
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Developer credentials"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Vendor-managed"
+     ]
+    },
+    {
+     "tr": [
+      "Build-time (developer)"
+     ],
+     "ui": [
+      "IDE / terminal"
+     ],
+     "h": [
+      "Cursor / VS Code Copilot"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "User OAuth via ECA"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Vendor-managed"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "slackbot",
+   "name": "Slackbot + Salesforce MCP",
+   "type": [
+    "Agent"
+   ],
+   "desc": "Slackbot as an MCP client of Salesforce standard or custom hosted servers.",
+   "vendor": "Slack",
+   "persona": [
+    "Employee"
+   ],
+   "maturity": "Unverified",
+   "sources": [
+    {
+     "label": "Kit",
+     "file": "skills/headless-mcp-advisor/references/channel-rollout.md",
+     "text": "Slackbot"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Conversational (chat/voice)"
+     ],
+     "ui": [
+      "Slack"
+     ],
+     "h": [
+      "Slackbot"
+     ],
+     "c": [
+      "Hosted MCP (MCP Out)"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Slack"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Vendor-managed"
+     ]
+    }
+   ],
+   "primary": true,
+   "note": "Identity follows Slack's org connection and user mapping, not the ECA flow used for Claude and ChatGPT (Kit)."
+  },
+  {
+   "id": "copilotforce",
+   "name": "Copilotforce plugin",
+   "type": [
+    "Plugin / connector"
+   ],
+   "desc": "Sales Cloud skills and partner MCP tools in every Copilot surface. Installed once by an admin.",
+   "vendor": "Microsoft",
+   "persona": [
+    "Seller",
+    "Employee"
+   ],
+   "maturity": "Beta",
+   "sources": [
+    {
+     "label": "Up",
+     "section": "§13",
+     "text": "Public Preview (Beta)"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Conversational (chat/voice)",
+      "Manual (click / command)"
+     ],
+     "ui": [
+      "Copilot Home / Chat",
+      "Microsoft Teams",
+      "Outlook"
+     ],
+     "h": [
+      "Microsoft 365 Copilot"
+     ],
+     "c": [
+      "Plugin / connector",
+      "External MCP (MCP In)"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Communications Cloud"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Write with confirmation",
+     "m": [
+      "Microsoft Auto routing"
+     ]
+    },
+    {
+     "tr": [
+      "Manual (click / command)"
+     ],
+     "ui": [
+      "Word / Excel / PowerPoint"
+     ],
+     "h": [
+      "Microsoft 365 Copilot"
+     ],
+     "c": [
+      "Plugin / connector"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read only",
+     "m": [
+      "Microsoft Auto routing"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "m365-cowork",
+   "name": "Microsoft 365 Copilot Cowork",
+   "type": [
+    "Agent harness",
+    "App / surface"
+   ],
+   "desc": "Long-running delegated work: plans, calls tools, returns a brief or report.",
+   "vendor": "Microsoft",
+   "persona": [
+    "Seller"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Up",
+     "section": "§13",
+     "text": "GA core; Frontier for advanced features"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Manual (click / command)",
+      "Autonomous (background agent)"
+     ],
+     "ui": [
+      "Copilot Home / Chat"
+     ],
+     "h": [
+      "Microsoft 365 Copilot"
+     ],
+     "c": [
+      "Plugin / connector"
+     ],
+     "soa": [
+      "Microsoft 365",
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read only",
+     "m": [
+      "Microsoft Auto routing"
+     ]
+    }
+   ],
+   "primary": true,
+   "depends_on": [
+    "copilotforce"
+   ],
+   "maturity_override": "Microsoft surface is GA; Salesforce data arrives through the Beta Copilotforce plugin."
+  },
+  {
+   "id": "copilot-home",
+   "name": "Copilot Home / Chat",
+   "type": [
+    "App / surface"
+   ],
+   "desc": "Unified composer with Auto model routing. Writeback only after user confirmation.",
+   "vendor": "Microsoft",
+   "persona": [
+    "Seller",
+    "Employee"
+   ],
+   "maturity": "Beta",
+   "sources": [
+    {
+     "label": "Up",
+     "section": "§13",
+     "text": "Public Preview (Beta)"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Conversational (chat/voice)"
+     ],
+     "ui": [
+      "Copilot Home / Chat"
+     ],
+     "h": [
+      "Microsoft 365 Copilot"
+     ],
+     "c": [
+      "Plugin / connector"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Microsoft 365"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Write with confirmation",
+     "m": [
+      "Microsoft Auto routing"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "m365-workspaces",
+   "name": "Microsoft 365 Workspaces",
+   "type": [
+    "App / surface"
+   ],
+   "desc": "Persistent context per account or deal: files, conversations, agents, pinned tools.",
+   "vendor": "Microsoft",
+   "persona": [
+    "Seller"
+   ],
+   "maturity": "Preview / Frontier",
+   "sources": [
+    {
+     "label": "Up",
+     "section": "§13",
+     "text": "Frontier"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Manual (click / command)"
+     ],
+     "ui": [
+      "Copilot Home / Chat"
+     ],
+     "h": [
+      "Microsoft 365 Copilot"
+     ],
+     "c": [
+      "Plugin / connector"
+     ],
+     "soa": [
+      "Microsoft 365",
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read only",
+     "m": [
+      "Microsoft Auto routing"
+     ]
+    }
+   ],
+   "depends_on": [
+    "copilotforce"
+   ]
+  },
+  {
+   "id": "copilot-studio",
+   "name": "Copilot Studio agent",
+   "type": [
+    "Agent",
+    "Dev tool"
+   ],
+   "desc": "Custom agent built in Copilot Studio, reaching Salesforce via REST, Agent API or Hosted MCP; hosted on Managed Runtime.",
+   "vendor": "Microsoft",
+   "persona": [
+    "Developer",
+    "ISV / partner"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Up",
+     "section": "§13",
+     "text": "Three paths to Salesforce"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Build-time (developer)",
+      "Conversational (chat/voice)",
+      "Event (record / platform / message)"
+     ],
+     "ui": [
+      "Microsoft Teams",
+      "Copilot Home / Chat"
+     ],
+     "h": [
+      "Copilot Studio"
+     ],
+     "c": [
+      "REST / Agent API",
+      "Hosted MCP (MCP Out)",
+      "External MCP (MCP In)"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Communications Cloud",
+      "Microsoft 365"
+     ],
+     "id": [
+      "User OAuth via ECA",
+      "Integration user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Microsoft Auto routing"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "sales-cloud-teams",
+   "name": "Sales Cloud in Teams + adaptive cards",
+   "type": [
+    "App / surface"
+   ],
+   "desc": "Native Teams app: deal notifications, deal rooms, card-based opportunity updates with validation.",
+   "vendor": "Salesforce",
+   "persona": [
+    "Seller"
+   ],
+   "maturity": "Pilot",
+   "sources": [
+    {
+     "label": "Up",
+     "section": "§13",
+     "text": "Sales Cloud in Teams — Pilot"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Conversational (chat/voice)",
+      "Event (record / platform / message)"
+     ],
+     "ui": [
+      "Microsoft Teams"
+     ],
+     "h": [
+      "Microsoft 365 Copilot",
+      "Agentforce Coworker"
+     ],
+     "c": [
+      "Plugin / connector",
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read & write",
+     "m": [
+      "Microsoft Auto routing"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "outlook-copilot",
+   "name": "Outlook + Copilot",
+   "type": [
+    "App / surface"
+   ],
+   "desc": "Email triage, CRM-grounded replies and activity logging.",
+   "vendor": "Microsoft",
+   "persona": [
+    "Seller",
+    "Employee"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Up",
+     "section": "§13",
+     "text": "Outlook"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Conversational (chat/voice)",
+      "Manual (click / command)"
+     ],
+     "ui": [
+      "Outlook"
+     ],
+     "h": [
+      "Microsoft 365 Copilot"
+     ],
+     "c": [
+      "Plugin / connector"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Microsoft 365"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Write with confirmation",
+     "m": [
+      "Microsoft Auto routing"
+     ]
+    }
+   ],
+   "depends_on": [
+    "copilotforce"
+   ],
+   "maturity_override": "Copilot in Outlook is GA; Salesforce data arrives through the Beta Copilotforce plugin."
+  },
+  {
+   "id": "pipeline-review-ppt",
+   "name": "Pipeline Review & Action Plans (PowerPoint)",
+   "type": [
+    "Process / workflow"
+   ],
+   "desc": "Salesforce-named Copilot workflow that builds pipeline and close-plan decks.",
+   "vendor": "Microsoft",
+   "persona": [
+    "Seller"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Up",
+     "section": "§13",
+     "text": "Pipeline Review and Action Plans"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Manual (click / command)"
+     ],
+     "ui": [
+      "Word / Excel / PowerPoint"
+     ],
+     "h": [
+      "Microsoft 365 Copilot"
+     ],
+     "c": [
+      "Plugin / connector"
+     ],
+     "soa": [
+      "Salesforce CRM"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read only",
+     "m": [
+      "Microsoft Auto routing"
+     ]
+    }
+   ],
+   "primary": true,
+   "depends_on": [
+    "copilotforce"
+   ],
+   "maturity_override": "The brief calls the workflow GA (per the Salesforce newsroom) although the plugin it rides on is Public Preview; check before quoting."
+  },
+  {
+   "id": "word-excel",
+   "name": "Word / Excel drafting & models",
+   "type": [
+    "App / surface"
+   ],
+   "desc": "Proposals in Word, margin models in Excel. Read-mostly.",
+   "vendor": "Microsoft",
+   "persona": [
+    "Seller"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Up",
+     "section": "§13",
+     "text": "Word"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Manual (click / command)"
+     ],
+     "ui": [
+      "Word / Excel / PowerPoint"
+     ],
+     "h": [
+      "Microsoft 365 Copilot"
+     ],
+     "c": [
+      "Plugin / connector"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Microsoft 365"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read only",
+     "m": [
+      "Microsoft Auto routing"
+     ]
+    }
+   ],
+   "depends_on": [
+    "copilotforce"
+   ],
+   "maturity_override": "Word and Excel are GA; Salesforce data arrives through the Beta Copilotforce plugin."
+  },
+  {
+   "id": "fabric-federation",
+   "name": "Fabric OneLake federation",
+   "type": [
+    "Data / grounding"
+   ],
+   "desc": "Data 360 fields queryable from Excel and Fabric.",
+   "vendor": "Microsoft",
+   "persona": [
+    "Employee"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Up",
+     "section": "§13",
+     "text": "Fabric OneLake federation"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Manual (click / command)",
+      "API call (system)"
+     ],
+     "ui": [
+      "Word / Excel / PowerPoint"
+     ],
+     "h": [
+      "Microsoft 365 Copilot"
+     ],
+     "c": [
+      "REST / Agent API"
+     ],
+     "soa": [
+      "Data 360",
+      "Microsoft 365"
+     ],
+     "id": [
+      "Integration user"
+     ],
+     "w": "Read only",
+     "m": [
+      "None"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "work-iq",
+   "name": "Work IQ (SharePoint / OneDrive grounding)",
+   "type": [
+    "Data / grounding"
+   ],
+   "desc": "Indexes Microsoft 365 documents and mail as Copilot grounding. Salesforce data does not flow in automatically.",
+   "vendor": "Microsoft",
+   "persona": [
+    "Employee"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Up",
+     "section": "§13",
+     "text": "Work IQ"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Agent-invoked (tool call)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Microsoft 365 Copilot"
+     ],
+     "c": [
+      "Native (in-platform)"
+     ],
+     "soa": [
+      "Microsoft 365"
+     ],
+     "id": [
+      "Salesforce user"
+     ],
+     "w": "Read only",
+     "m": [
+      "Microsoft Auto routing"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "autopilot",
+   "name": "Autopilot",
+   "type": [
+    "Agent"
+   ],
+   "desc": "Tenant-resident autonomous agent on schedule or trigger with Entra Agent ID. Keep it read-only until Dec 2026.",
+   "vendor": "Microsoft",
+   "persona": [
+    "Seller",
+    "System"
+   ],
+   "maturity": "Preview / Frontier",
+   "sources": [
+    {
+     "label": "Up",
+     "section": "§13",
+     "text": "Autopilot"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "Scheduled (time)",
+      "Event (record / platform / message)",
+      "Autonomous (background agent)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Microsoft 365 Copilot"
+     ],
+     "c": [
+      "Plugin / connector",
+      "External MCP (MCP In)"
+     ],
+     "soa": [
+      "Salesforce CRM",
+      "Microsoft 365"
+     ],
+     "id": [
+      "Entra Agent ID"
+     ],
+     "w": "Read only",
+     "m": [
+      "Microsoft Auto routing"
+     ]
+    }
+   ],
+   "primary": true
+  },
+  {
+   "id": "managed-runtime",
+   "name": "Copilot Managed Runtime",
+   "type": [
+    "App / surface"
+   ],
+   "desc": "Hosting layer for agents built in Cowork, Code or Studio.",
+   "vendor": "Microsoft",
+   "persona": [
+    "Developer"
+   ],
+   "maturity": "GA",
+   "sources": [
+    {
+     "label": "Up",
+     "section": "§13",
+     "text": "Managed Runtime"
+    }
+   ],
+   "paths": [
+    {
+     "tr": [
+      "API call (system)",
+      "Event (record / platform / message)"
+     ],
+     "ui": [
+      "Headless (no UI)"
+     ],
+     "h": [
+      "Copilot Studio"
+     ],
+     "c": [
+      "REST / Agent API"
+     ],
+     "soa": [
+      "Microsoft 365"
+     ],
+     "id": [
+      "Entra Agent ID"
+     ],
+     "w": "Not applicable",
+     "m": [
+      "Microsoft Auto routing"
+     ]
+    }
+   ]
+  }
+ ]
+}

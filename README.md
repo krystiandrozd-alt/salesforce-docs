@@ -10,6 +10,10 @@ Every product-specific `llms-*.txt` section now has its own folder here. See [`s
 
 > Note: `headless-experience-layer`, `headless-three-sixty`, `hosted-mcp-servers`, and `multi-framework` are also covered in much greater depth in the companion repo [headless-toolkit](https://github.com/krystiandrozd-alt/headless-toolkit) (restructured per-area with grounded content, launch-announcement blogs, and the AIforce/Claudeforce brand hierarchy). Treat `headless-toolkit` as the primary source for those four; the folders here are the lighter per-`llms.txt` link catalog, kept for completeness rather than duplicating that deeper work.
 
+## Cross-product guides
+
+- [Agentforce 360 — Complete Architecture Guide](architecture/agentforce-architecture-guide.md): every GA and planned (Beta/Pilot/Dev Preview) Agentforce product, surface, action type, framework and tool, with side-by-side comparisons (including Agentforce Coworker vs Claude Cowork and the coding agents) and 16 reference scenarios.
+
 ## Format per product folder
 
 - `index.md` — every page link from that product's `llms-{product}.txt`, extracted programmatically (not hand-copied) to make even the largest indexes tractable and accurate.

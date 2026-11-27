@@ -10,6 +10,14 @@ Every product-specific `llms-*.txt` section now has its own folder here. See [`s
 
 > Note: `headless-experience-layer`, `headless-three-sixty`, `hosted-mcp-servers`, and `multi-framework` are also covered in much greater depth in the companion repo [headless-toolkit](https://github.com/krystiandrozd-alt/headless-toolkit) (restructured per-area with grounded content, launch-announcement blogs, and the AIforce/Claudeforce brand hierarchy). Treat `headless-toolkit` as the primary source for those four; the folders here are the lighter per-`llms.txt` link catalog, kept for completeness rather than duplicating that deeper work.
 
+## Curated views
+
+Hand-written entry pages that bring together several catalog areas for one job. Every link is checked against the generated indexes by [`scripts/check_views.py`](scripts/check_views.py).
+
+| View | For |
+|---|---|
+| [Communications Cloud — Telco Entry Page](views/communications.md) | Telco engagements: managed-package vs core track, CME APIs, TM Forum API availability, Revenue Management, Agentforce/MCP |
+
 ## Format per product folder
 
 - `index.md` — every page link from that product's `llms-{product}.txt`, extracted programmatically (not hand-copied) to make even the largest indexes tractable and accurate.

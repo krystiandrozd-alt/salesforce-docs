@@ -4,6 +4,8 @@ This folder is a link catalog. It is not the Salesforce Docs service that SF Pi 
 
 SF Pi does not see a page by reading an index whole. `product-docs/index.md` is about 1.87 MB and 12,977 links (6,533 unique pages). Loading it returns a file that is too large to use, so the page looks missing.
 
+For telco / Communications Cloud questions, open `views/communications.md` first. It lists the key pages and the TMF API availability tables.
+
 Find one page like this:
 
 1. Start at `salesforce-platform-docs-content-list.md` and open that product's `content.md`.

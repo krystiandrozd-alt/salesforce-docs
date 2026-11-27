@@ -1,5 +1,7 @@
 # Salesforce Developer Documentation — Content Catalog
 
+Public repository: [`krystiandrozd-alt/salesforce-docs`](https://github.com/krystiandrozd-alt/salesforce-docs).
+
 A per-product content catalog built from Salesforce's aggregated [`llms.txt`](https://developer.salesforce.com/docs/llms.txt) index (the `llmstxt.org`-standard list of all 54 product-specific documentation sections under `developer.salesforce.com`).
 
 Designed to be read by an AI assistant (Claude or otherwise) as grounding material: each finished product gets its own folder with an `index.md` (complete page-by-page link list, extracted programmatically from the live source) and a `content.md` (a short synthesis written independently from the source, with citations — not copied prose).
@@ -40,6 +42,15 @@ Hand-written entry pages that bring together several catalog areas for one job. 
 | [marketing-cloud](marketing-cloud/) | 2,177 | 303 KB |
 
 These are reproduced **in full**, not condensed, per explicit instruction — including `product-docs`, the largest single index.
+
+## Roadmap
+
+The link catalog covers every section currently listed in `llms.txt`. Later work stays inside that shape:
+
+1. **Stay current with the live index.** Re-run [`scripts/refresh_from_llms.py`](scripts/refresh_from_llms.py) when Salesforce adds or retires a product section. A new section gets its own folder. A section that leaves `llms.txt` stays in the tree as an archived snapshot.
+2. **Deepen the ten largest syntheses.** Each `content.md` is a short overview taken from that index's own overview text. The next writing pass is a cited synthesis of the ten largest indexes: `product-docs`, `commerce-cloud`, `data-cloud`, `industries`, `platform-field-ref`, `platform-apex`, `platform`, `service-cloud`, `platform-obj-meta-tool`, and `marketing-cloud`. Page text stays on the official docs.
+3. **Fill empty product descriptions.** Connect REST, Data Loader, GraphQL API, Platform, and Platform Package Exchange have no overview text in the source index. Those rows pick up the official description when Salesforce publishes one.
+4. **Keep the headless areas as link catalogs.** Deeper writing for `headless-experience-layer`, `headless-three-sixty`, `hosted-mcp-servers`, and `multi-framework` lives in [headless-toolkit](https://github.com/krystiandrozd-alt/headless-toolkit).
 
 ## Source
 
